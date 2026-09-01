@@ -68,7 +68,7 @@ function About({ isAboutOpen, hasAboutStarted, uiTheme }) {
           <br />
           <p>Thank To: HieuImBa, BeyBipuii, Thanh Nhi, Tuan Kien (AAA).</p>
           <br />
-          <p>Special Thank To: T. Kristen. For the most contribution.</p>
+          <p>Special Thank To: T. Kristen, who contributed the most.</p>
         </div>
       </div>
     </div>
