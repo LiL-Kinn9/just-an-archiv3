@@ -1,0 +1,273 @@
+/* ========================================================= */
+/* OVERLAY */
+/* ========================================================= */
+
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+
+  opacity: 0;
+  pointer-events: none;
+
+  background: rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(0px);
+
+  transition:
+    opacity 0.6s ease,
+    backdrop-filter 0.6s ease;
+}
+
+.nav-overlay.is-active {
+  opacity: 1;
+  pointer-events: auto;
+
+  backdrop-filter: blur(16px);
+}
+
+/* ========================================================= */
+/* NAV BUTTON WRAPPER */
+/* fade in / fade out */
+/* ========================================================= */
+
+.nav-btn-wrapper {
+  position: fixed;
+
+  top: 8px;
+  right: 8px;
+
+  z-index: 1000;
+
+  opacity: 1;
+  visibility: visible;
+
+  transition:
+    opacity 0.4s ease,
+    visibility 0s linear 0s;
+}
+
+.nav-btn-wrapper.ui-visible {
+  opacity: 1;
+
+  visibility: visible;
+
+  pointer-events: auto;
+}
+
+.nav-btn-wrapper.ui-hidden {
+  opacity: 0;
+
+  visibility: hidden;
+
+  pointer-events: none;
+
+  transition:
+    opacity 0.4s ease,
+    visibility 0s linear 0.4s;
+}
+
+/* ========================================================= */
+/* NAV BUTTON */
+/* hover animation only */
+/* ========================================================= */
+
+.nav-btn {
+  width: 22px;
+  height: 22px;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  display: block;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.6s ease,
+    filter 0.6s ease;
+}
+
+.nav-btn:hover {
+  transform: translateX(-2px);
+
+  filter: drop-shadow(0 4px 5px rgba(128, 128, 128, 0.4));
+}
+
+.nav-btn img {
+  width: 22px;
+  height: 22px;
+
+  display: block;
+
+  pointer-events: none;
+}
+
+.nav-btn:hover {
+  transform: translateX(-2px);
+
+  filter: drop-shadow(0 4px 5px rgba(128, 128, 128, 0.4));
+}
+
+.nav-btn img {
+  width: 22px;
+  height: 22px;
+}
+
+/* ========================================================= */
+/* MENU */
+/* ========================================================= */
+
+.nav-menu {
+  width: 300px;
+  height: 300px;
+
+  position: fixed;
+
+  top: 38px;
+  right: 8px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  gap: 12px;
+
+  z-index: 1000;
+}
+
+.nav-menu .nav-item:last-child {
+  align-self: flex-start;
+
+  margin-left: 90px;
+}
+
+/* ------------------------- */
+/* MENU INITIAL */
+/* ------------------------- */
+
+.nav-menu.not-started {
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+.nav-item {
+  opacity: 0;
+}
+
+/* ------------------------- */
+/* MENU OPEN / CLOSE */
+/* ------------------------- */
+
+.nav-menu.is-closed {
+  pointer-events: none;
+}
+
+.nav-menu.is-opened {
+  pointer-events: auto;
+}
+
+/* ========================================================= */
+/* MENU OPEN ANIMATION */
+/* ========================================================= */
+
+.nav-menu.is-opened .nav-item {
+  animation: slideFromRight 0.5s ease both;
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* MENU OPEN DELAY */
+
+.nav-menu.is-opened .nav-item:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.nav-menu.is-opened .nav-item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.nav-menu.is-opened .nav-item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.nav-menu.is-opened .nav-item:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+/* ========================================================= */
+/* MENU CLOSE ANIMATION */
+/* ========================================================= */
+
+.nav-menu.is-closed .nav-item {
+  animation: slideToRight 0.4s ease both;
+}
+
+@keyframes slideToRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+}
+
+/* MENU CLOSE DELAY */
+
+.nav-menu.is-closed .nav-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.nav-menu.is-closed .nav-item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.nav-menu.is-closed .nav-item:nth-child(3) {
+  animation-delay: 0s;
+}
+
+.nav-menu.is-closed .nav-item:nth-child(4) {
+  animation-delay: 0s;
+}
+
+/* ========================================================= */
+/* MENU BUTTON */
+/* ========================================================= */
+
+.nav-menu button {
+  color: var(--nav-color);
+
+  font-weight: 500;
+
+  transition:
+    transform 0.6s ease,
+    filter 0.6s ease,
+    color 0.6s ease;
+}
+
+.nav-menu button:hover {
+  transform: translateX(-2px);
+
+  filter: drop-shadow(
+    0 4px 5px color-mix(in srgb, var(--nav-color) 30%, transparent)
+  );
+
+  font-weight: 700;
+}
