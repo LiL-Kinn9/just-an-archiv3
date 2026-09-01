@@ -16,13 +16,15 @@ const artworks = [
     story: [
       "Từ bầu trời, một kẻ bị đàn áp khỏi địa đàng.",
 
-      "Hắn rơi bất định xuống trần gian, đôi cánh nguy ngoa tráng lệ dần tan biến, chừa lại sắc đen, một màu sâu thẳm hơn cả bản ngã của nhân loại, vấn đục đôi cánh.",
+      "Hắn rơi bất định xuống trần gian, đôi cánh nguy nga tráng lệ dần tan biến, chừa lại sắc đen, một màu sâu thẳm hơn cả bản ngã của nhân loại, vẩn đục đôi cánh.",
 
       "Hàng lệ trách than số phận.",
 
       "Hắn bảo:",
 
-      "Nhất định, một ngày nào đó, Tao sẽ mang cả thiên đàng xuống tận cùng mặt đất.",
+      '" Nhất định, một ngày nào đó. "',
+
+      '" Tao sẽ mang cả thiên đàng xuống tận cùng mặt đất. "',
 
       "Nụ cười trên môi hắn kéo dài được vài giây, hắn cứ thế tiếp tục rời khỏi bầu trời. Và ngất liệm đi.",
     ],
@@ -66,55 +68,61 @@ const artworks = [
       "/Detail/detail-3.png",
     ],
     story: [
-      "Mùa thu tới, hắn lang bạt tới gần một thành trì nằm ở phía bắc của lục địa Cvstovia.",
+      "Mùa thu tới, hắn lang bạt tới gần một thành trì nằm ở phía bắc của lục địa Cvstodia.",
 
       "Trên người không có lấy một mảnh vải, hắn cứ thế tiến vào sâu bên trong.",
 
       "Hắn chạm mặt vài người, kẻ thì nhìn hắn chăm chú, kẻ thì chẳng mảy may bận tâm tới sự hiện diện có phần kì lạ đó. Ánh mắt như có phần phán xét hắn.",
 
-      "Hắn không thoải mái với cảm giác này, cái mùi tanh tưởi từ lũ phàm nhân lúc nhúc chen chút nhau. Hắn trông thấy một tấm biển:",
+      "Hắn không thoải mái với cảm giác này, cái mùi tanh tưởi từ lũ phàm nhân lúc nhúc chen chúc nhau.",
+
+      "Cau mày, hắn trông thấy một tấm biển khổng lồ được treo giữa hai tòa tháp:",
 
       '" Chào mừng tới Manlanier, The City of Lambs. "',
 
-      "Chưa kịp đọc hết, hắn vô tình va vào một kẻ bí ẩn, kẻ đó khoác một chiếc áo choàng phủ kín cơ thể, ngay cả khuôn mặt cũng không rõ ràng.",
+      "Chưa kịp đọc hết, một kẻ bí ẩn va vào hắn, kẻ đó khoác một chiếc áo choàng bằng lông gấu, phủ kín cơ thể, ngay cả khuôn mặt cũng chẳng rõ ràng.",
 
       "Một người phụ nữ?",
 
-      "Hắn nhận ra điều đó qua cái cách cô khom người xuống, cố với tay nhặt nhạnh những quả ớt bị đánh rơi từ tay cô.",
+      "Hắn nhận ra điều đó qua cái cách cô khom người xuống, cố với tay nhặt nhạnh những quả ớt bị đánh rơi.",
 
       "Bản chất kiêu ngạo chỉ cho phép hắn đứng nhìn. Rồi hắn nói:",
 
       '" Có vẻ như nhà ngươi không thấy ta đang đi thì phải? "',
 
-      "Cô chẳng nói câu nào, dường như là chẳng bận tâm, cô nhẹ nhàng đứng dậy, nhìn hắn một lúc rồi lại bước đi tiếp.",
+      "Cô chẳng nói câu nào, dường như là chẳng bận tâm tới lời hắn, cô nhẹ nhàng đứng dậy, nhìn hắn một lúc rồi lại bước tiếp.",
 
-      "Cảm thấy như vừa bị xúc phạm, hắn không tin trên cõi này có kẻ dám phớt lờ câu từ của hắn.",
+      "Cảm thấy như vừa bị nhục mạ, hắn không tin trên cõi này có kẻ dám phớt lờ câu từ của hắn.",
 
-      "Bực mình, hắn tiến lại gần cô, rồi nói:",
+      "Với sự ấm ức, hắn tiến lại gần cô, rồi nói:",
 
-      '" Ta không có quá nhiều kiên nhẫn cho sự phản hồi. "',
+      '" Ta không có quá nhiều sự kiên nhẫn cho việc chờ ngươi phản hồi. "',
 
       "Cô khựng lại, quay mặt về phía hắn:",
 
-      '" Anh thừa biết là anh đang không mặc gì đúng không? "',
+      '" Anh thừa biết là anh đang không mặc gì đúng không? hủm? "',
 
       "Hắn ngơ ngác, chả hiểu cô đang nhắc tới điều gì.",
 
-      "Cô thở dài, bèn mời anh đi theo mình, có vẻ cô thấy tội nghiệp cho một kẻ khỏa thân lang thang trong thành phố như thế này. Hoặc có vẻ cô thấy tội nghiệp cho những người phải chứng kiến gã trong bộ diện đó.",
+      "Cô thở dài, bèn phải mời hắn đi theo mình, có vẻ cô thấy tội nghiệp cho một kẻ khỏa thân lang thang trong thành phố như thế này. Hoặc có vẻ cô thấy tội nghiệp cho những người phải chứng kiến gã trong bộ diện đó.",
 
       "Nàng dẫn hắn vào một tiệm may vá nhỏ ở cuối góc phố, hương vải mới toát ra trên từng gian kệ khiến hắn bất an, hầu như chả có một chút khái niệm gì về chúng.",
 
-      "Gã vương tay cảm nhận, cố chứng tỏ mình có sự am hiểu nhất định về những vật phẩm này. Cái tôi cao ngạo ép hắn phải làm thế.",
+      "Gã vươn tay cảm nhận, cố chứng tỏ mình có sự am hiểu nhất định về những thứ lạ lẫm này. Cái tôi cao ngạo buộc hắn phải làm thế.",
 
-      "Cô lặng lẽ quan sát, càng làm hắn nao núng. Hắn buộc phải lựa chọn nhanh hơn trước khi hắn có thêm sự hiểu biết.",
+      "Cô lặng lẽ quan sát, càng làm hắn nao núng. Hắn buộc phải nhanh chóng đưa ra lựa chọn trước khi hắn có thêm sự hiểu biết.",
 
-      '" Những thứ này. " Gã nói:',
+      '" Ta sẽ lấy những thứ này. " Gã nói:',
 
-      "Người chủ tiệm gật đầu:",
+      "Người chủ tiệm may gật đầu:",
 
-      '" 4 Chromee. "',
+      '" Ừa thì 4 Chromee. "',
 
-      "Gã ngơ ngác, nhìn một hồi lâu. Có lẽ phải cần làm gì đó ở khoảnh khắc này. Gã bèn nhìn cô.",
+      "Gã ngơ ngác, nhìn một hồi lâu.",
+
+      '" Anh có định trả tiền không đấy? "',
+
+      "Hắn lúng túng, có lẽ phải cần làm gì đó ở khoảnh khắc này. Gã bèn nhìn cô.",
 
       "Cô cho vào tay hắn 4 đồng Chromee rồi tỏ vẻ chán nản:",
 
@@ -124,17 +132,21 @@ const artworks = [
 
       "Anh vừa đặt những đồng bạc lên bàn, cũng là lúc cô ấy đã biến mất, anh vội vàng khoác lên người thứ vải lông sẫm màu rồi cũng rời đi ngay sau đó.",
 
-      "Rời khỏi cửa hàng, ngoài trời sắc xanh dần nhường cho màu vàng màu đỏ vương lại trên tán cây.",
+      "Rời khỏi cửa hàng, ngoài trời sắc xanh dần nhường cho màu vàng màu đỏ vương lại trên tán cây. Ánh nắng cũng dần nhạt đi.",
 
       "Anh muốn tận hưởng vẻ đẹp của mùa thu, của cơn gió nhè nhẹ lướt vào lòng bàn tay của mình. Nhưng rồi anh bắt đầu suy tư về hành động vừa rồi của cô.",
 
-      "Những chiếc lá dần mất đi sự chú ý từ anh, chợt một điều gì đó trong lòng thôi thúc hắn đuổi theo người phụ nữ đó, hắn cần một cái tên, một thứ để hắn nhớ tới, và vì có lẽ hắn cần phải quên một điều gì đó không được suôn sẻ trước đây.",
+      "Những chiếc lá dần mất đi sự chú ý từ anh, chợt một điều gì đó trong lòng thôi thúc bản thân mình đuổi theo người phụ nữ đó, anh cần một cái tên, một thứ để anh nhớ tới, và vì có lẽ anh cần phải quên đi một điều gì đó không được suôn sẻ trước đây.",
 
-      "Hắn không để sự suy diễn trong đầu quá lâu, chỉ cần cái tên của cô ta, hắn tự nói với lòng mình như thế.",
+      "Anh không để sự suy diễn trong đầu quá lâu, chỉ cần cái tên của cô ta, anh tự nhủ với lòng mình như thế.",
 
-      "Hắn bắt kịp, chạm vào vai nàng, nàng ngoảnh mặt lại vô tình làm rơi phần mũ choàng, thứ đã che khuất đi vẻ đẹp kiêu kỳ của nàng. Càng nhìn, hắn càng không nói nên lời, nàng có một bên mắt không bình thường, và chính sự bất thường đó lại lôi cuốn hắn tới kỳ lạ.",
+      "Anh bắt kịp, chạm vào vai nàng, nàng ngoảnh mặt lại vô tình làm rơi phần mũ choàng, thứ đã che khuất đi vẻ đẹp kiêu kỳ của nàng. Càng nhìn, anh càng không nói nên lời, nàng có một bên mắt không bình thường, và chính sự bất thường đó lại thu hút anh tới kỳ lạ.",
 
-      "Một màu vàng, à không. Một màu mất mát nào đó sâu tận bên trong tròng tử, nàng lạnh lùng ngước nhìn anh, cái dáng vẻ kiêu sa như không để một gã nào có thể với tới.",
+      "Một màu vàng, à không.",
+
+      "Một màu mất mát nào đó sâu tận bên trong tròng tử, nàng lạnh lùng ngước nhìn hắn, cái dáng vẻ kiêu sa như đang chiếm quyền kiểm soát cơ thể hắn.",
+
+      "hắn bất động.",
 
       "Lý trí không cho phép hắn hỏi cô bất cứ điều gì, nhưng trong cơn lúng túng này, hắn biết mình cần phải làm gì đó.",
 
@@ -150,7 +162,7 @@ const artworks = [
 
       "Hắn tò mò, bước theo sát sau lưng cô.",
 
-      "Cô nhặt bông cẩm chướng trắng, nhìn một hồi lâu,. Cô nói:",
+      "Cô nhặt bông cẩm chướng trắng, nhìn một hồi lâu. Cô nói:",
 
       '" Tôi muốn, ngày nào cũng có thể được nhìn những bó hoa trong nhà mình. "',
 
@@ -158,7 +170,7 @@ const artworks = [
 
       '" Nhưng giờ thì lại chẳng cần thiết nữa. "',
 
-      "Ngay sau đó, cô cẩn trọng đặt lại nhành hoa về lại chỗ cũ rồi tiến lại gần một hàng ghế ven lề, cô ngồi xuống tay, phải vỗ lên mặt ghế dường như muốn hắn ngồi cạnh mình.",
+      "Ngay sau đó, cô cẩn trọng đặt lại nhành hoa về lại chỗ cũ rồi tiến lại gần một hàng ghế ven lề, cô ngồi xuống, tay phải vỗ lên mặt ghế dường như muốn hắn ngồi cạnh mình.",
 
       "Hắn hoang mang, nhưng cũng hiếu kỳ tiếp cận, hắn ngồi cạnh cô không quá gần và cũng chẳng xa, vừa đủ một cẳng tay. Hắn nhìn cô suy tư.",
 
@@ -186,7 +198,7 @@ const artworks = [
 
       '"Nếu muốn hãy gọi tôi là Kristin."',
 
-      "Hắn chưa kịp hỏi, nhưng có vẻ cũng chẳng cần thiết nữa, hắn không cần phải hạ mình để ngõ lời.",
+      "Hắn chưa kịp hỏi, nhưng có vẻ cũng chẳng cần thiết nữa, hắn không cần phải hạ mình để ngỏ lời.",
 
       '"Còn anh, danh xưng của anh là gì?"',
 
@@ -196,7 +208,7 @@ const artworks = [
 
       "Hắn lặng thinh, kể từ khi rời khỏi bầu trời, hắn chẳng còn tha thiết cái tên mà Ngài thường gọi hắn.",
 
-      "Ánh mắt lang thang khắp con phố, mái nhà, cửa hiệu, rồi sự chú ý chỉa vào một tấm bảng cũ kĩ sau lưng Kristin.",
+      "Ánh mắt lang thang khắp con phố, mái nhà, cửa hiệu, rồi sự chú ý chĩa vào một tấm bảng cũ kĩ sau lưng Kristin.",
 
       "Có hai bức chân dung được vẽ bằng than chì, bên dưới là những hàng chữ lớn.",
 
@@ -204,7 +216,7 @@ const artworks = [
 
       '"DÉMON"',
 
-      "Bức chân dung thứ hai, bị xé mất quá một nửa. Phần còn xót lại vừa đủ lộ ra một con mắt đỏ rực, nhìn chằm chằm vào hắn.",
+      "Bức chân dung thứ hai, bị xé mất quá một nửa. Phần còn sót lại vừa đủ lộ ra một con mắt đỏ rực, nhìn chằm chằm vào hắn.",
 
       "Hắn lẩm bẩm:",
 
@@ -226,11 +238,11 @@ const artworks = [
 
       "Giọng nói của Kristin cắt đi dòng suy tư của hắn:",
 
-      '" Tôi nghĩ tôi cần phải ăn gì đó? anh thì sao? "',
+      '" Tôi nghĩ tôi cần phải ăn gì đó? Còn anh thì sao? "',
 
       "Hắn ậm ừ, chưa kịp phản hồi, cô vội nắm lấy bàn tay khô khốc của hắn, kéo hắn đi, sự nồng nhiệt của cô làm hắn ngỡ ngàng. Hắn chả dám hé một lời nào.",
 
-      "Cứ như thế, cả hai bọn họ tiến vào một quán xá dành cho những tay đua ngựa khét tiếng của cả vùng, Melanier.",
+      "Cứ như thế, cả hai bọn họ tiến vào một quán xá dành cho những tay đua ngựa khét tiếng của cả vùng, Ditovias.",
 
       "Mùi cừu nướng ngào ngạt khắp căn phòng. Nhưng có vẻ nơi này làm hắn ngộp ngạt, hắn khó chịu khi bị bao quanh quá nhiều bởi những kẻ phàm tục.",
 
@@ -250,29 +262,49 @@ const artworks = [
 
       '" Thế tại sao anh lại tới đây? Anh cần kiếm điều gì chăng? "',
 
-      "Trước câu hỏi đó, hắn tự ngẫm, hắn đang kiếm điều gì ư? hắn không rõ mục đích của mình. Hắn chỉ nhớ rằng, trước khi đặt chân tới chốn này, hắn đã chứng kiến vạn lần mặt trăng mặt trời thay phiên nhau.",
+      "Trước câu hỏi đó, hắn tự ngẫm, hắn đang kiếm điều gì ư? Hắn không rõ mục đích của mình. Hắn chỉ nhớ rằng, trước khi đặt chân tới chốn này, hắn đã chứng kiến vạn lần mặt trăng mặt trời thay phiên nhau.",
 
-      "Nhưng hắn nhớ rõ cái ngày hắn rơi xuống, sự lạc lõng bỗng ôm chùm lấy.",
+      "Nhưng hắn nhớ rõ cái ngày hắn rơi xuống, sự lạc lõng bỗng ôm trùm lấy.",
 
       '" Này, anh không cần phải nghĩ nhiều tới thế, cứ ăn đi đã. "',
 
-      "Giọng nói của cô đưa hắn về lại bàn ăn. Chẳng buồn nghĩ ngợi, hắn ăn ngấu nghiến phần ăn mà cô gọi cho hắn.",
+      "Giọng nói của cô đưa hắn về lại bàn ăn. Chẳng buồn nghĩ ngợi, hắn ăn ngấu nghiến những gì còn sót lại. Kể cả của cô ấy.",
 
       "Chợt có một tên quý tộc nồng nặc mùi rượu xông xênh bước vào, hắn ta là chủ của một trường đua ngựa nằm ở phía eo biển Canavia, đi kèm hắn là vài tên côn đồ to xác. Mục đích chính tới đây là để gieo thưởng, hắn bảo:",
 
-      '" Tụi mày có biết, cả vùng Manlanier này, cố truy tìm một kẻ có cặp cánh như tro tàn. Tao cần cái đầu của hắn đặt trên cái bàn này, Tao sẽ trả cho tụi bây 4000 Chromee nếu tìm thấy hắn và gấp mười lần nữa nếu cặp cánh đó tới tay bọn tao. "',
+      '" Tụi mày có biết, cả vùng Manlanier này, cố truy tìm một kẻ có cặp cánh như tro tàn. Tao cần cái đầu của hắn đặt trên cái bàn này, tao sẽ trả cho tụi bây 4000 Chromee nếu tìm thấy hắn và gấp mười lần nữa nếu cặp cánh đó tới tay bọn tao. "',
 
-      "Hắn tiến lại gần chiếc bàn mà Kristin và Drag đang ngồi, cô cố giữ lấy sự bình tĩnh vì bản năng sinh tồn của cô đang cố mách bảo có gì đó không đúng. Drag thật sự giống với những gì mà những lũ quý tộc mô tả. Cô cố nắm lấy tay của anh rồi định sẽ chạy khỏi nơi này. Không có đủ thời gian cho hành động đó, hắn tiếp cận và nói:",
+      "Hắn tiến lại gần chiếc bàn mà Kristin và Drag đang ngồi, cô cố giữ lấy sự bình tĩnh vì bản năng sinh tồn của cô đang cố mách bảo có gì đó không đúng.",
+
+      "Kẻ trước mặt mình thật sự giống với những gì mà những lũ quý tộc kia đang nói tới. Cô cố nắm lấy tay của anh rồi định sẽ chạy khỏi nơi này.",
+
+      "Đáng tiếc là không có đủ thời gian cho hành động đó, gã quý tộc tiếp cận và nói:",
 
       '" Nhìn cô có vẻ lúng túng nhỉ? Cô đang cố che giấu gì đó à? "',
 
       "Hắn quay sang nhìn gã đối diện cô, hắn nói:",
 
-      '" Còn mày, Trông mày quen lắm? Tao thấ... "',
+      '" Còn mày, trông mày quen lắm? Tao thấ... "',
 
-      "Chưa kịp dứt câu, Drag bóp nát cuống họng của gã, hắn kéo yết hầu của tên quý tộc xấu số và bỏ trong ly nước còn đang dở, vài giây trước khi tên quý tộc kịp nhắm mắt, hắn tận sát lũ đàn em bằng những cách tàn bạo nhất, hắn xé rời cánh tay, đập nát xương chậu, hắn ép một gã phải uống hết cái ly chứa yết hầu của kẻ mà gã phục tùng. Hắn không cho phép bất cứ ai dám ngênh ngang trước mặt hắn, đặc biệt là lũ hôi hám này.",
+      "Chưa kịp dứt câu, một bàn tay gân guốc chồm lấy cổ hắn.",
 
-      "Sau cơn hỗn loạn, màu đỏ tanh tươi đã nhuộm khắp Melanier trong sự tĩnh lặng.",
+      "Không một ai trong căn phòng kịp chứng kiến điều gì vừa xảy ra.",
+
+      "Hắn cố dùng hai tay để chặn lấy cuống họng nhói rát của mình, nhưng hành động đó dường như là vô nghĩa.",
+
+      "Một màu đỏ tươi rót đầy vào ly nước kèm cái yết hầu của gã quý tộc xấu số.",
+
+      "Drag nhòm những gã du côn còn lại.",
+
+      "Trong vài khắc ngắn ngủi, anh tóm lấy một tên rồi bẻ rời cánh tay của hắn.",
+
+      "Hắn vừa la hét vừa xin tha mạng. Những kẻ còn lại cũng chẳng thoát, có vẻ như chẳng một ai trong số họ còn đủ bộ phận cơ thể trên người",
+
+      "Chỉ chừa lại một gã. Hắn quỳ xuống.",
+
+      "Anh tỏ lòng nhân từ bằng cách ép hắn nốc cạn ly nước chứa cái yết hầu còn ấm nóng.",
+
+      "Sau cơn hỗn loạn, màu đỏ tanh tươi đã nhuộm khắp Ditovias trong sự tĩnh lặng.",
 
       '" Kristin? "',
 
@@ -316,21 +348,23 @@ const artworks = [
 
       "Chưa kịp mừng rỡ, bóng đen lao nhanh tới, buộc hắn phải bật lùi lại theo bản năng.",
 
-      "Hắn nhận ra kẻ trước mặt hắn là một trong những Darksiders. Nó cao lớn, vương cặp cánh dơi nhiều vuốt, nghiêng đầu nhìn về phía Drag.",
+      "Hắn nhận ra kẻ trước mặt hắn là một trong những Darksiders. Nó cao lớn, vươn cặp cánh dơi nhiều vuốt, nghiêng đầu nhìn về phía Drag.",
 
       "Anh nhanh nhẹn, vụt nhanh tới vị trí của nó, chủ động tấn công trước khi nó có cơ hội phản vệ.",
 
       "Nhưng rồi, anh nhìn thấy chiếc áo choàng của Kristin, nằm trên mảng cỏ.",
 
-      "Mắt anh rực đỏ, lao tới liên tục vung nắm đấm của mình về phía tên quái vật gớm ghiếc. Nó vụt nhanh qua anh, bay lên nóc chuồng ngựa.",
+      "Mắt anh rực đỏ, lao tới liên tục vung nắm đấm của mình về phía tên quái vật gớm ghiếc. Nó vụt nhanh qua anh, rồi bay lên nóc chuồng ngựa.",
 
-      "Anh nghe thấy tiếng của một vật nặng nề rời xuống mặt đất. Anh ngó xuống:",
+      "Bỗng nghe thấy tiếng của một vật nặng nề rơi xuống mặt đất. Anh ngó xuống:",
 
-      '" Ah..Fuck, thì ra mày cũng nhanh nhảu. "',
+      "Cả phần vai trái anh dường như tê liệt.",
 
-      "Máu anh rơi xuống không ngơi. Cơn đau dần truyền tới cơ thể.",
+      '" Ah..Fuck, hóa ra mày cũng nhanh đấy. "',
 
-      "Anh nghiến răng, bàn tay còn xót lại nắm chặt.",
+      "Máu anh rơi xuống không ngơi. Cơn đau dần truyền khắp cơ thể.",
+
+      "Anh nghiến răng, bàn tay còn sót lại nắm chặt.",
 
       "Anh nói:",
 
@@ -354,7 +388,7 @@ const artworks = [
 
       "Anh tìm thấy cô, một vết cào từ vai xuống. Máu đã thấm đẫm phần vải bên dưới.",
 
-      "Cô cố mở đôi mắt nặng trĩu, nhìn thấy hai chấm đỏ rực, cùng đôi cánh bóng tối che khuất cả vầng trăng",
+      "Cô cố mở đôi mắt nặng trĩu, nhìn thấy hai chấm đỏ rực, cùng đôi cánh bóng tối che khuất cả vầng trăng.",
 
       "Môi cô khẽ động như cố nói với anh điều gì đó:",
 
@@ -399,15 +433,15 @@ const artworks = [
 
       "Có lẽ, hắn nên rời khỏi cô, hắn lại mông lung. Hắn cần nhiều hơn là vài lí do.",
 
-      "Chợt hơi ấm tỏa ra từ lòng bàn tay hắn, cô đang nằm chặt lấy nó. Cảm giác nghi hoặc tan biến.",
+      "Chợt hơi ấm tỏa ra từ lòng bàn tay hắn, cô đang nắm chặt lấy nó. Cảm giác nghi hoặc tan biến.",
 
-      "Hắn mò mẫm lấy bàn tay cô hiếu kỳ, sự mềm mại, nhỏ nhắn, cứ như thể đó là lần cuối cùng cô kéo hắn tới Melanier vậy.",
+      "Hắn mò mẫm lấy bàn tay cô hiếu kỳ, sự mềm mại, nhỏ nhắn, cứ như thể đó là lần cuối cùng cô kéo hắn tới Ditovias vậy.",
 
       "Và hắn nhận ra rằng chiếc áo lông hắn mặc xuyên suốt chặng đường gần như vô giá trị.",
 
       "Rồi bỗng nhiên cô ghì hắn xuống, hắn không kịp phản ứng và có thật sự cần phản ứng?",
 
-      "Sau bên trong ngực, hắn nghe rõ những âm thanh không đều.",
+      "Sâu bên trong ngực, hắn nghe rõ những âm thanh không đều.",
 
       "Kình kịch",
 
@@ -415,13 +449,13 @@ const artworks = [
 
       "Cô tiến sát vào mặt hắn, mắt cô đảo ánh nhìn, từ cằm tới môi, rồi dừng ở mắt hắn, cô khẽ nói:",
 
-      '" em biết anh không an toàn như em nghĩ mà. "',
+      '" Em biết anh không phải là người an toàn. "',
 
       "Anh chả dám hé một lời, dường như có gì đó khóa chặt miệng anh. Bây giờ, anh chỉ cần thoát ra khỏi trạng thái này, nhưng tay cô đã ghì chặt hai tay anh xuống.",
 
       "Lại một lí do ngớ ngẩn mà anh tự đưa ra. Anh thừa sức làm vậy mà.",
 
-      "Cô trườn sát vào người anh. anh cảm nhận từng đường nét thân thể cô. Một sự ướt át bó xát trên bụng anh. Anh không hiểu và không cần hiểu.",
+      "Cô trườn sát vào người anh. Anh cảm nhận từng đường nét thân thể cô. Một sự ướt át bó xát trên bụng anh. Anh không hiểu và không cần hiểu.",
 
       "Môi cô chầm chậm khẽ chạm môi anh, hơi ấm của cô càng rõ ràng hơn. Nóng, anh thấy da anh như rực cháy.",
 
@@ -443,7 +477,7 @@ const artworks = [
 
       "Không thể dừng lại.",
 
-      "Bên tay còn lại như một bản năng, lướt xuống váy nàng. Nàng cố vịnh lại, nhưng anh thừa biết đó không phải điều nàng mong muốn.",
+      "Bên tay còn lại như một bản năng, lướt xuống váy nàng. Nàng cố vịn lại, nhưng anh thừa biết đó không phải điều nàng mong muốn.",
 
       "Nàng buông lỏng vừa đủ để anh tiếp tục cho sâu vào trong.",
 
@@ -455,11 +489,11 @@ const artworks = [
 
       "Anh tập trung lắng nghe. Càng nghe anh càng không muốn dừng lại.",
 
-      "Trong cơn mê mang, bỗng một cảm giác bỏng rát khắp vòm họng mình, lưỡi anh tê cứng lại.",
+      "Trong cơn mê man, bỗng một cảm giác bỏng rát khắp vòm họng mình, lưỡi anh tê cứng lại.",
 
       "Không, anh không có cảm giác gì ở lưỡi của mình nữa.",
 
-      "Máu bắt đàu chảy từ khóe miệng anh, lưỡi anh đã bị xé toạt.",
+      "Máu bắt đầu chảy từ khóe miệng anh, lưỡi anh đã bị xé toạc.",
 
       "Anh buông môi cô ra, dần lùi lại, nhưng chưa được nửa bước, anh nghe thấy có vật rơi xuống cạnh chân mình.",
 
@@ -467,11 +501,11 @@ const artworks = [
 
       "Anh khụy xuống, cắn chặt răng, nhìn cô.",
 
-      "Cô dơ tay, lau mép môi còn dính đầy máu của anh. Từ từ móc trong miệng, phần lưỡi mà anh thiếu.",
+      "Cô giơ tay, lau mép môi còn dính đầy máu của anh. Từ từ móc trong miệng, phần lưỡi mà anh thiếu.",
 
       "Không hiểu chuyện gì vừa xảy ra, cô ghé sát vào tai anh, chầm chậm nói:",
 
-      '" giờ thì em biết chắc đó là anh rồi. "',
+      '" Giờ thì em biết chắc đó là anh rồi. "',
 
       "Một thanh gươm vàng lập tức rực cháy cạnh tim hắn:",
 
@@ -557,7 +591,7 @@ const artworks = [
 
       "Một quả tim khổng lồ hạ xuống dưới tầng mây, bên trong đó là một bào thai đang quấn mình lại, không có da, không có thịt, chỉ là một bộ xương vàng óng ánh, rồi một luồng sáng soi thẳng vào hắn.",
 
-      "Hai bả vai bị xé toạt ngay lập tức. Ở vết rách đó, từng chiếc lông vũ phủ dày lên vai hắn rồi dang rộng ra. Ngài gọi hắn là:",
+      "Hai bả vai bị xé toạc ngay lập tức. Ở vết rách đó, từng chiếc lông vũ phủ dày lên vai hắn rồi dang rộng ra. Ngài gọi hắn là:",
 
       '" Đứa Con của Sự Mầu Nhiệm "',
 
@@ -577,13 +611,13 @@ const artworks = [
 
       "Chỉ là khoảng cách giữa anh và nàng chưa bao giờ xa tới vậy.",
 
-      "Anh nắm lấy chuôi kiếm mà nàng ghim vào người mình",
+      "Anh nắm lấy chuôi kiếm mà nàng ghim vào người mình.",
 
       "Kéo.",
 
-      "Tiếng kim loại cọ sát qua xương khiến anh nhức nhói",
+      "Tiếng kim loại cọ xát qua xương khiến anh nhức nhói.",
 
-      "Một lỗ hỏng nằm trên khoang ngực, dòng máu tuông ra chảy thành hàng trên người anh, rồi rớt xuống thành vệt.",
+      "Một lỗ hổng nằm trên khoang ngực, dòng máu tuôn ra chảy thành hàng trên người anh, rồi rớt xuống thành vệt.",
 
       "Có thứ gì đó ánh lên qua vết thương của anh. Không phải xương, cũng chả phải thịt. Một màu vàng kim nằm sâu bên trong lồng ngực đang rung theo từng nhịp.",
 
@@ -595,9 +629,9 @@ const artworks = [
 
       "Bỗng từng vệt máu rơi ngược vào không trung.",
 
-      "Anh dơ tay, ngón trỏ và ngón giữa khép lại chỉa thẳng vào cô.",
+      "Anh giơ tay, ngón trỏ và ngón giữa chắp lại chĩa thẳng vào cô.",
 
-      "Một vệt đỏ sắt lẹm phóng nhanh tới.",
+      "Một vệt đỏ sắc lẹm phóng nhanh tới.",
 
       "Nàng nghiêng người.",
 
@@ -627,7 +661,7 @@ const artworks = [
 
       "Từng hạt máu chảy xuống, nhỏ vào những bông cẩm chướng. Trắng chuyển đỏ.",
 
-      "Phần xương bắt đầu nhô ra vệt rách, nó kéo dài ra. Sắt như một lưỡi dao. Máu nàng bám lên nó, đỏ chuyển vàng. Cho tới khi một thanh gươm hoàn chỉnh nằm trong tay nàng.",
+      "Phần xương bắt đầu nhô ra vệt rách, nó kéo dài ra. Sắc như một lưỡi dao. Máu nàng bám lên nó, đỏ chuyển vàng. Cho tới khi một thanh gươm hoàn chỉnh nằm trong tay nàng.",
 
       "Kristin nhìn anh, thở dài:",
 
@@ -653,17 +687,17 @@ const artworks = [
 
       "Bỗng bàn tay hắn rát, nhưng hắn mặc kệ, lao nhanh về phía cô.",
 
-      "Lần này, cô không tránh. Thứ kim loại trên tay hắn tan chảy ngay lập tức. Vần sáng lại bao quanh đồng tử của cô.",
+      "Lần này, cô không tránh. Thứ kim loại trên tay hắn tan chảy ngay lập tức. Vầng sáng lại bao quanh đồng tử của cô.",
 
       "Anh bật lùi lại, vừa nhìn mắt cô, anh vừa lau đi thứ nóng rát trong tay mình.",
 
-      "Cô nghiêng mình, bỉu môi.",
+      "Cô nghiêng mình, bĩu môi.",
 
       "Anh nhận ra, anh nhớ chúng. Một màu mất mát.",
 
       '" The Eye.. "',
 
-      '" The Eye of The Sillent Sorrow. "',
+      '" The Eye of The Silent Sorrow. "',
     ],
   },
   // {

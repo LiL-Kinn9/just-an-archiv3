@@ -63,14 +63,14 @@ function App() {
 
       hideTimerRef.current = setTimeout(() => {
         setIsUiVisible(false);
-      }, 700);
+      }, 1500);
     }
 
     window.addEventListener("mousemove", handleMouseMove);
 
     hideTimerRef.current = setTimeout(() => {
       setIsUiVisible(false);
-    }, 700);
+    }, 1500);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);

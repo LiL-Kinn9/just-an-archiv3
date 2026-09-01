@@ -439,10 +439,10 @@ function Main({
 
             <div
               className={`
-                gallery-slide
-                current-slide
-                ${detailPhase !== "closed" ? `detail-${detailPhase}` : ""}
-              `}
+  gallery-slide
+  current-slide
+  ${detailPhase === "closed" ? "detail-closed" : `detail-${detailPhase}`}
+`}
               style={{
                 backgroundColor: getBackground(currentItem),
 

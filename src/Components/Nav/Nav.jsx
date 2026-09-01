@@ -99,11 +99,16 @@ function Nav({ layout, setLayout, uiTheme, isUiVisible }) {
 
       <div
         className={`
-          nav-menu
-          ${!hasStarted ? "not-started" : isOpen ? "is-opened" : "is-closed"}
-        `}
+    nav-menu
+    ${!hasStarted ? "not-started" : isOpen ? "is-opened" : "is-closed"}
+  `}
         style={{
           "--nav-color": navColor,
+        }}
+        onClick={() => {
+          if (isOpen) {
+            setIsOpen(false);
+          }
         }}
       >
         {/* =================================================== */}
@@ -112,9 +117,11 @@ function Nav({ layout, setLayout, uiTheme, isUiVisible }) {
 
         <div className="nav-item">
           <button
-            onClick={() =>
-              setLayout((prev) => (prev === "center" ? "grid" : "center"))
-            }
+            onClick={(event) => {
+              event.stopPropagation();
+
+              setLayout((prev) => (prev === "center" ? "grid" : "center"));
+            }}
           >
             {layout === "center" ? "GRID" : "CENTER"}
           </button>
@@ -125,7 +132,15 @@ function Nav({ layout, setLayout, uiTheme, isUiVisible }) {
         {/* =================================================== */}
 
         <div className="nav-item">
-          <button onClick={handleAboutOpen}>ABOUT THIS PROJECT</button>
+          <button
+            onClick={(event) => {
+              event.stopPropagation();
+
+              handleAboutOpen();
+            }}
+          >
+            ABOUT THIS PROJECT
+          </button>
         </div>
 
         {/* =================================================== */}
@@ -133,7 +148,13 @@ function Nav({ layout, setLayout, uiTheme, isUiVisible }) {
         {/* =================================================== */}
 
         <div className="nav-item">
-          <button>SECRET</button>
+          <button
+            onClick={(event) => {
+              event.stopPropagation();
+            }}
+          >
+            SECRET
+          </button>
         </div>
       </div>
 
