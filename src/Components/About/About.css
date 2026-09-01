@@ -272,3 +272,29 @@
 .about-container.is-opened .about-item-right .about-item-content:hover p {
   transform: translateX(-4px);
 }
+
+@media (max-width: 600px) {
+  .about-container {
+    left: 10%;
+    right: 10%;
+
+    bottom: 0;
+
+    height: 90%;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    padding-bottom: 80px;
+
+    box-sizing: border-box;
+
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+  }
+
+  .about-container::-webkit-scrollbar {
+    display: none;
+  }
+}

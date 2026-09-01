@@ -3,20 +3,39 @@ import "./Intro.css";
 
 function Intro({ onStart }) {
   const [isTransitioning, setIsTransitioning] = useState(false);
+
   const videoRef = useRef(null);
+  const hasFinishedRef = useRef(false);
+
+  function finishIntro() {
+    if (hasFinishedRef.current) return;
+
+    hasFinishedRef.current = true;
+
+    onStart();
+  }
 
   function handleStart() {
     if (isTransitioning) return;
 
     setIsTransitioning(true);
 
-    requestAnimationFrame(() => {
-      videoRef.current?.play();
-    });
-  }
+    const video = videoRef.current;
 
-  function handleVideoEnd() {
-    onStart();
+    setTimeout(() => {
+      finishIntro();
+    }, 1500);
+
+    if (!video) {
+      finishIntro();
+      return;
+    }
+
+    video.currentTime = 0;
+
+    video.play().catch(() => {
+      finishIntro();
+    });
   }
 
   return (
@@ -24,14 +43,12 @@ function Intro({ onStart }) {
       className={`intro ${isTransitioning ? "is-transitioning" : ""}`}
       onClick={handleStart}
     >
-      {/* DISCLAIMER SCREEN */}
       {!isTransitioning && (
         <>
           <div className="intro-disclaimer">
             <h1>DISCLAIMER</h1>
 
             <p>This website contains explicit content.</p>
-
             <p>Viewer discretion is advised.</p>
 
             <img
@@ -45,15 +62,15 @@ function Intro({ onStart }) {
         </>
       )}
 
-      {/* TRANSITION VIDEO */}
       <video
         ref={videoRef}
         className="intro-transition-video"
-        src="/Videos/HVL-Intro.mp4"
+        src="/Videos/transition.mp4"
         muted
         playsInline
         preload="auto"
-        onEnded={handleVideoEnd}
+        onEnded={finishIntro}
+        onError={finishIntro}
       />
     </div>
   );

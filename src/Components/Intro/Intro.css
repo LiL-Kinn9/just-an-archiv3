@@ -17,6 +17,9 @@
 
   cursor: pointer;
 }
+.intro.is-transitioning {
+  cursor: default;
+}
 
 /* ========================================================= */
 /* DISCLAIMER */

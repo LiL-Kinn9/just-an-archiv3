@@ -38,6 +38,7 @@ function Main({
 
   const [isDetailOpen, setIsDetailOpen] = useState(false);
   const [detailPhase, setDetailPhase] = useState("closed");
+  const [isCloseVisible, setIsCloseVisible] = useState(true);
 
   const [activeStoryIndex, setActiveStoryIndex] = useState(0);
   const storyWheelLockedRef = useRef(false);
@@ -132,6 +133,7 @@ function Main({
     setForceHideUi(true);
 
     setActiveStoryIndex(0);
+    setIsCloseVisible(true);
 
     setIsDetailOpen(true);
     setDetailPhase("hiding-ui");
@@ -196,7 +198,7 @@ function Main({
 
     const timer = setTimeout(() => {
       setDetailPhase("returning");
-    }, 550);
+    }, 800);
 
     return () => {
       clearTimeout(timer);
@@ -331,6 +333,16 @@ function Main({
     setLayout("center");
   }
 
+  function handleDetailScroll(event) {
+    const scrollTop = event.currentTarget.scrollTop;
+
+    if (scrollTop <= 10) {
+      setIsCloseVisible(true);
+    } else {
+      setIsCloseVisible(false);
+    }
+  }
+
   return (
     <main className={`main ${layout}`}>
       {/* ===================================================== */}
@@ -385,10 +397,14 @@ function Main({
                 "--detail-story-line-color":
                   uiTheme === "white" ? "#f5f5f56e" : "#000000",
               }}
+              onScroll={handleDetailScroll}
               onAnimationEnd={handleSlideEnd}
             >
               {/* =============================================== */}
               {/* ARTWORK */}
+              {/* =============================================== */}
+              {/* =============================================== */}
+              {/* CENTER / DESKTOP ARTWORK */}
               {/* =============================================== */}
 
               <div className="slide-artwork" onClick={handleOpenDetail}>
@@ -396,77 +412,121 @@ function Main({
               </div>
 
               {/* =============================================== */}
-              {/* DETAIL CONTENT */}
+              {/* DESKTOP DETAIL */}
               {/* =============================================== */}
 
               {isDetailOpen && (
-                <div className="detail-layout">
-                  {/* ===================================================== */}
-                  {/* LEFT COLUMN */}
-                  {/* ===================================================== */}
+                <div className="desktop-detail">
+                  <div className="detail-layout">
+                    <div className="detail-left">
+                      {/* INFO */}
 
-                  <div className="detail-left">
-                    {/* =================================================== */}
-                    {/* INFO */}
-                    {/* =================================================== */}
+                      <div className="detail-info">
+                        <p className="detail-index">
+                          {String(currentIndex + 1).padStart(2, "0")} /{" "}
+                          {String(13).padStart(2, "0")}
+                        </p>
 
-                    <div className="detail-info">
-                      <p className="detail-index">
-                        {String(currentIndex + 1).padStart(2, "0")} /{" "}
-                        {String(13).padStart(2, "0")}
-                      </p>
+                        <p className="detail-artwork-title">
+                          {currentItem.title}
+                        </p>
 
-                      <p className="detail-artwork-title">
-                        {currentItem.title}
-                      </p>
+                        <h1 className="detail-story-title">
+                          {currentItem.storyTitle}
+                        </h1>
 
-                      <h1 className="detail-story-title">
-                        {currentItem.storyTitle}
-                      </h1>
+                        <div className="detail-info-images">
+                          <img src="/Detail/detail-mark.png" alt="" />
+                          <img src="/Detail/detail-mark.png" alt="" />
+                          <img src="/Detail/detail-mark.png" alt="" />
+                        </div>
+                      </div>
 
-                      <div className="detail-info-images">
-                        <img src="/Detail/detail-mark.png" alt="" />
-                        <img src="/Detail/detail-mark.png" alt="" />
-                        <img src="/Detail/detail-mark.png" alt="" />
+                      {/* STORY */}
+
+                      <div className="detail-story" onWheel={handleStoryWheel}>
+                        <div className="detail-story-track">
+                          {currentItem.story?.map((paragraph, index) => {
+                            const offset = index - activeStoryIndex;
+                            const distance = Math.abs(offset);
+
+                            return (
+                              <p
+                                key={index}
+                                className={`detail-story-paragraph ${
+                                  offset === 0 ? "is-active" : ""
+                                }`}
+                                style={{
+                                  "--story-offset": offset,
+                                  "--story-opacity":
+                                    distance === 0
+                                      ? 1
+                                      : distance === 1
+                                        ? 0.3
+                                        : 0,
+
+                                  "--story-scale": distance === 0 ? 1 : 0.94,
+                                }}
+                              >
+                                {paragraph}
+                              </p>
+                            );
+                          })}
+                        </div>
                       </div>
                     </div>
 
-                    {/* =================================================== */}
-                    {/* STORY */}
-                    {/* =================================================== */}
+                    <div className="detail-right" />
+                  </div>
+                </div>
+              )}
 
-                    <div className="detail-story" onWheel={handleStoryWheel}>
-                      <div className="detail-story-track">
-                        {currentItem.story?.map((paragraph, index) => {
-                          const offset = index - activeStoryIndex;
-                          const distance = Math.abs(offset);
+              {/* =============================================== */}
+              {/* MOBILE DETAIL */}
+              {/* =============================================== */}
 
-                          return (
-                            <p
-                              key={index}
-                              className={`detail-story-paragraph ${
-                                offset === 0 ? "is-active" : ""
-                              }`}
-                              style={{
-                                "--story-offset": offset,
-                                "--story-opacity":
-                                  distance === 0 ? 1 : distance === 1 ? 0.3 : 0,
-                                "--story-scale": distance === 0 ? 1 : 0.94,
-                              }}
-                            >
-                              {paragraph}
-                            </p>
-                          );
-                        })}
-                      </div>
+              {isDetailOpen && (
+                <div className="mobile-detail">
+                  {/* MOBILE ARTWORK */}
+
+                  <div className="mobile-detail-artwork">
+                    <img src={currentItem.image} alt={currentItem.title} />
+                  </div>
+
+                  {/* chừa vị trí cho AudioPlayer */}
+
+                  <div className="mobile-detail-audio-space" />
+
+                  {/* MOBILE INFO */}
+
+                  <div className="mobile-detail-info">
+                    <p className="mobile-detail-index">
+                      {String(currentIndex + 1).padStart(2, "0")} /{" "}
+                      {String(13).padStart(2, "0")}
+                    </p>
+
+                    <p className="mobile-detail-artwork-title">
+                      {currentItem.title}
+                    </p>
+
+                    <h1 className="mobile-detail-story-title">
+                      {currentItem.storyTitle}
+                    </h1>
+
+                    <div className="mobile-detail-images">
+                      <img src="/Detail/detail-mark.png" alt="" />
+                      <img src="/Detail/detail-mark.png" alt="" />
+                      <img src="/Detail/detail-mark.png" alt="" />
                     </div>
                   </div>
 
-                  {/* ===================================================== */}
-                  {/* RIGHT COLUMN */}
-                  {/* ===================================================== */}
+                  {/* MOBILE STORY */}
 
-                  <div className="detail-right" />
+                  <div className="mobile-detail-story">
+                    {currentItem.story?.map((paragraph, index) => (
+                      <p key={index}>{paragraph}</p>
+                    ))}
+                  </div>
                 </div>
               )}
 
@@ -481,14 +541,15 @@ function Main({
                   isUiVisible={shouldShowAudio}
                 />
               )}
-
               {/* =============================================== */}
               {/* CLOSE BUTTON */}
               {/* =============================================== */}
 
               {isDetailOpen && (
                 <button
-                  className="detail-close-btn"
+                  className={`detail-close-btn ${
+                    isCloseVisible ? "is-scroll-visible" : "is-scroll-hidden"
+                  }`}
                   onClick={(event) => {
                     event.preventDefault();
                     event.stopPropagation();
