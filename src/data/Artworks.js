@@ -2,7 +2,7 @@ const artworks = [
   {
     id: 0,
     title: "ELEGIE",
-    storyTitle: "A DREAM THAT NEVER FADED.",
+    storyTitle: "RESSENTIMENT.",
     detailImage: "/Detail/detail-mark.png",
     image: "/Artworks/HVL-artwork1.png",
     audio: "/Music/HVL-Elegie.mp3",
@@ -27,34 +27,34 @@ const artworks = [
       "Nụ cười trên môi hắn kéo dài được vài giây, hắn cứ thế tiếp tục rời khỏi bầu trời. Và ngất liệm đi.",
     ],
   },
-  {
-    id: 1,
-    title: "IDK",
-    storyTitle: "THE FIMBULVETR.",
-    detailImage: "/Detail/detail-mark.png",
-    image: "/Artworks/HVL-artwork2.png",
-    audio: "/Music/HVL-IDK.mp3",
-    background: "#000",
-    uiTheme: "white",
-    detailImages: [
-      "/Detail/detail-1.png",
-      "/Detail/detail-2.png",
-      "/Detail/detail-3.png",
-    ],
-    story: [
-      "This is the first paragraph of the story.",
+  // {
+  //   id: 1,
+  //   title: "IDK",
+  //   storyTitle: "THE FIMBULVETR.",
+  //   detailImage: "/Detail/detail-mark.png",
+  //   image: "/Artworks/HVL-artwork2.png",
+  //   audio: "/Music/HVL-IDK.mp3",
+  //   background: "#000",
+  //   uiTheme: "white",
+  //   detailImages: [
+  //     "/Detail/detail-1.png",
+  //     "/Detail/detail-2.png",
+  //     "/Detail/detail-3.png",
+  //   ],
+  //   story: [
+  //     "This is the first paragraph of the story.",
 
-      "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
+  //     "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
 
-      "This is the third paragraph.",
+  //     "This is the third paragraph.",
 
-      "You can add as many paragraphs as you want.",
-    ],
-  },
+  //     "You can add as many paragraphs as you want.",
+  //   ],
+  // },
   {
     id: 2,
-    title: "WTF BBY I'M LIT",
-    storyTitle: "C'EST NOTRE PREMIER AUTOMNE",
+    title: "-WTF BBY I'M LIT-",
+    storyTitle: "C'EST NOTRE PREMIER AUTOMNE.",
     detailImage: "/Detail/detail-mark.png",
     image: "/Artworks/HVL-artwork3.png",
     audio: "/Music/HVL-Wtf-Bby-Im-Lit.mp3",
@@ -169,8 +169,8 @@ const artworks = [
   },
   {
     id: 3,
-    title: "ANH KHÔNG MUỐN NÓ DỄ DÀNG",
-    storyTitle: "UNE SOIRÉE DE GALA",
+    title: "-ANH KHÔNG MUỐN NÓ DỄ DÀNG-",
+    storyTitle: "UNE SOIRÉE DE GALA.",
     detailImage: "/Detail/detail-mark.png",
     image: "/Artworks/HVL-artwork4.png",
     audio: "/Music/HVL-Anh-Khong-Muon-No-De-Dang.mp3",
@@ -283,8 +283,8 @@ const artworks = [
   },
   {
     id: 4,
-    title: "ĐAO CỦA ANH VỪA",
-    storyTitle: "DA DÉMON",
+    title: "-ĐAO CỦA ANH VỪA-",
+    storyTitle: "DA DÉMON.",
     detailImage: "/Detail/detail-mark.png",
     image: "/Artworks/HVL-artwork5.png",
     audio: "/Music/HVL-Dao-Cua-Anh-Vua.mp3",
@@ -366,8 +366,8 @@ const artworks = [
 
   {
     id: 5,
-    title: "YÊU ANH GIẾT ANH",
-    storyTitle: "MÈRE DES MÈRES",
+    title: "-YÊU ANH GIẾT ANH-",
+    storyTitle: "MÈRE DES MÈRES.",
     detailImage: "/Detail/detail-mark.png",
     image: "/Artworks/HVL-artwork6.png",
     audio: "/Music/HVL-Yeu-Anh-Giet-Anh.mp3",
@@ -480,8 +480,8 @@ const artworks = [
   },
   {
     id: 7,
-    title: "MẮT MÔI TAY CHÂN",
-    storyTitle: "A MEMORY THAT NEVER LEFT",
+    title: "-MẮT MÔI TAY CHÂN-",
+    storyTitle: "DEMI-VÉRITÉ.",
     detailImage: "/Detail/detail-mark.png",
     image: "/Artworks/HVL-artwork7.png",
     audio: "/Music/HVL-Mat-Moi-Tay-Chan.mp3",
@@ -666,13 +666,158 @@ const artworks = [
       '" The Eye of The Sillent Sorrow. "',
     ],
   },
+  // {
+  //   id: 8,
+  //   title: "LIỆM",
+  //   storyTitle: "A MEMORY THAT NEVER LEFT",
+  //   detailImage: "/Detail/detail-mark.png",
+  //   image: "/Artworks/HVL-artwork8.png",
+  //   audio: "/Music/HVL-Liem.mp3",
+  //   background: "#000",
+  //   uiTheme: "white",
+  //   detailImages: [
+  //     "/Detail/detail-1.png",
+  //     "/Detail/detail-2.png",
+  //     "/Detail/detail-3.png",
+  //   ],
+  //   story: [
+  //     "This is the first paragraph of the story.",
+
+  //     "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
+
+  //     "This is the third paragraph.",
+
+  //     "You can add as many paragraphs as you want.",
+  //   ],
+  // },
+  // {
+  //   id: 9,
+  //   title: "MỘT CÁI ÔM",
+  //   storyTitle: "A MEMORY THAT NEVER LEFT",
+  //   detailImage: "/Detail/detail-mark.png",
+  //   image: "/Artworks/HVL-artwork9.png",
+  //   audio: "/Music/HVL-Mot-Cai-Om.mp3",
+  //   background: "#ff0100",
+  //   uiTheme: "black",
+  //   detailImages: [
+  //     "/Detail/detail-1.png",
+  //     "/Detail/detail-2.png",
+  //     "/Detail/detail-3.png",
+  //   ],
+  //   story: [
+  //     "This is the first paragraph of the story.",
+
+  //     "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
+
+  //     "This is the third paragraph.",
+
+  //     "You can add as many paragraphs as you want.",
+  //   ],
+  // },
+  // {
+  //   id: 9,
+  //   title: "KHÔNG CẦN LO CHO TAO",
+  //   storyTitle: "A MEMORY THAT NEVER LEFT",
+  //   detailImage: "/Detail/detail-mark.png",
+  //   image: "/Artworks/HVL-artwork10.png",
+  //   audio: "/Music/HVL-Khong-Can-Lo-Cho-Tao.mp3",
+  //   background: "#fff",
+  //   uiTheme: "black",
+  //   detailImages: [
+  //     "/Detail/detail-1.png",
+  //     "/Detail/detail-2.png",
+  //     "/Detail/detail-3.png",
+  //   ],
+  //   story: [
+  //     "This is the first paragraph of the story.",
+
+  //     "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
+
+  //     "This is the third paragraph.",
+
+  //     "You can add as many paragraphs as you want.",
+  //   ],
+  // },
+  // {
+  //   id: 10,
+  //   title: "NGUYỄN VĂN MƯỜI",
+  //   storyTitle: "A MEMORY THAT NEVER LEFT",
+  //   detailImage: "/Detail/detail-mark.png",
+  //   image: "/Artworks/HVL-artwork11.png",
+  //   audio: "/Music/HVL-Nguyen-Van-Muoi.mp3",
+  //   background: "#fff",
+  //   uiTheme: "black",
+  //   detailImages: [
+  //     "/Detail/detail-1.png",
+  //     "/Detail/detail-2.png",
+  //     "/Detail/detail-3.png",
+  //   ],
+  //   story: [
+  //     "This is the first paragraph of the story.",
+
+  //     "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
+
+  //     "This is the third paragraph.",
+
+  //     "You can add as many paragraphs as you want.",
+  //   ],
+  // },
+  // {
+  //   id: 11,
+  //   title: "THỊT LỢN",
+  //   storyTitle: "A MEMORY THAT NEVER LEFT",
+  //   detailImage: "/Detail/detail-mark.png",
+  //   image: "/Artworks/HVL-artwork12.png",
+  //   audio: "/Music/HVL-Thit-Lon.mp3",
+  //   background: "#fff",
+  //   uiTheme: "black",
+  //   detailImages: [
+  //     "/Detail/detail-1.png",
+  //     "/Detail/detail-2.png",
+  //     "/Detail/detail-3.png",
+  //   ],
+  //   story: [
+  //     "This is the first paragraph of the story.",
+
+  //     "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
+
+  //     "This is the third paragraph.",
+
+  //     "You can add as many paragraphs as you want.",
+  //   ],
+  // },
+  // {
+  //   id: 12,
+  //   title: "NIGHT IN PRAGUE",
+  //   storyTitle: "A MEMORY THAT NEVER LEFT",
+  //   detailImage: "/Detail/detail-mark.png",
+  //   image: "/Artworks/HVL-artwork13.png",
+  //   audio: "/Music/HVL-Night-In-Prague.mp3",
+  //   background: "#0c0f10",
+  //   uiTheme: "white",
+  //   detailImages: [
+  //     "/Detail/detail-1.png",
+  //     "/Detail/detail-2.png",
+  //     "/Detail/detail-3.png",
+  //   ],
+  //   story: [
+  //     "This is the first paragraph of the story.",
+
+  //     "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
+
+  //     "This is the third paragraph.",
+
+  //     "You can add as many paragraphs as you want.",
+  //   ],
+  // },
+
   {
-    id: 8,
-    title: "LIỆM",
-    storyTitle: "A MEMORY THAT NEVER LEFT",
+    id: 12,
+    title: "-UNKNOWN-",
+    storyTitle: "TO BE CONTINUE.",
     detailImage: "/Detail/detail-mark.png",
     image: "/Artworks/HVL-artwork8.png",
-    audio: "/Music/HVL-Liem.mp3",
+    audio: "",
     background: "#000",
     uiTheme: "white",
     detailImages: [
@@ -681,133 +826,10 @@ const artworks = [
       "/Detail/detail-3.png",
     ],
     story: [
-      "This is the first paragraph of the story.",
-
-      "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
-
-      "This is the third paragraph.",
-
-      "You can add as many paragraphs as you want.",
-    ],
-  },
-  {
-    id: 9,
-    title: "MỘT CÁI ÔM",
-    storyTitle: "A MEMORY THAT NEVER LEFT",
-    detailImage: "/Detail/detail-mark.png",
-    image: "/Artworks/HVL-artwork9.png",
-    audio: "/Music/HVL-Mot-Cai-Om.mp3",
-    background: "#ff0100",
-    uiTheme: "black",
-    detailImages: [
-      "/Detail/detail-1.png",
-      "/Detail/detail-2.png",
-      "/Detail/detail-3.png",
-    ],
-    story: [
-      "This is the first paragraph of the story.",
-
-      "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
-
-      "This is the third paragraph.",
-
-      "You can add as many paragraphs as you want.",
-    ],
-  },
-  {
-    id: 9,
-    title: "KHÔNG CẦN LO CHO TAO",
-    storyTitle: "A MEMORY THAT NEVER LEFT",
-    detailImage: "/Detail/detail-mark.png",
-    image: "/Artworks/HVL-artwork10.png",
-    audio: "/Music/HVL-Khong-Can-Lo-Cho-Tao.mp3",
-    background: "#fff",
-    uiTheme: "black",
-    detailImages: [
-      "/Detail/detail-1.png",
-      "/Detail/detail-2.png",
-      "/Detail/detail-3.png",
-    ],
-    story: [
-      "This is the first paragraph of the story.",
-
-      "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
-
-      "This is the third paragraph.",
-
-      "You can add as many paragraphs as you want.",
-    ],
-  },
-  {
-    id: 10,
-    title: "NGUYỄN VĂN MƯỜI",
-    storyTitle: "A MEMORY THAT NEVER LEFT",
-    detailImage: "/Detail/detail-mark.png",
-    image: "/Artworks/HVL-artwork11.png",
-    audio: "/Music/HVL-Nguyen-Van-Muoi.mp3",
-    background: "#fff",
-    uiTheme: "black",
-    detailImages: [
-      "/Detail/detail-1.png",
-      "/Detail/detail-2.png",
-      "/Detail/detail-3.png",
-    ],
-    story: [
-      "This is the first paragraph of the story.",
-
-      "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
-
-      "This is the third paragraph.",
-
-      "You can add as many paragraphs as you want.",
-    ],
-  },
-  {
-    id: 11,
-    title: "THỊT LỢN",
-    storyTitle: "A MEMORY THAT NEVER LEFT",
-    detailImage: "/Detail/detail-mark.png",
-    image: "/Artworks/HVL-artwork12.png",
-    audio: "/Music/HVL-Thit-Lon.mp3",
-    background: "#fff",
-    uiTheme: "black",
-    detailImages: [
-      "/Detail/detail-1.png",
-      "/Detail/detail-2.png",
-      "/Detail/detail-3.png",
-    ],
-    story: [
-      "This is the first paragraph of the story.",
-
-      "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
-
-      "This is the third paragraph.",
-
-      "You can add as many paragraphs as you want.",
-    ],
-  },
-  {
-    id: 12,
-    title: "NIGHT IN PRAGUE",
-    storyTitle: "A MEMORY THAT NEVER LEFT",
-    detailImage: "/Detail/detail-mark.png",
-    image: "/Artworks/HVL-artwork13.png",
-    audio: "/Music/HVL-Night-In-Prague.mp3",
-    background: "#0c0f10",
-    uiTheme: "white",
-    detailImages: [
-      "/Detail/detail-1.png",
-      "/Detail/detail-2.png",
-      "/Detail/detail-3.png",
-    ],
-    story: [
-      "This is the first paragraph of the story.",
-
-      "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
-
-      "This is the third paragraph.",
-
-      "You can add as many paragraphs as you want.",
+      "Nếu mọi người muốn đọc nữa thì đợi mình viết hết chương cuối nhen.",
+      "Hoặc nếu mọi người muốn đọc sớm thì mỗi 2 ngày mình sẽ ra 1 chap.",
+      "Tại cũng khó á, DM.",
+      "Văn mình chưa bao giờ cao cả, 5.3 là cùng. Nhưng không có AI AGENT nào viết mấy cái này đâu, mọi thứ là bằng cả trái tim mình.",
     ],
   },
 ];

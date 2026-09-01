@@ -7,9 +7,9 @@
 
   left: 20px;
   right: 20px;
-  bottom: 0;
+  bottom: 2%;
 
-  height: 90%;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -108,7 +108,7 @@
 .about-item p {
   margin: 0;
 
-  max-width: 500px;
+  max-width: 800px;
 
   font-size: 12px;
 

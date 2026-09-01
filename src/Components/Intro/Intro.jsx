@@ -1,63 +1,60 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "./Intro.css";
 
 function Intro({ onStart }) {
-  const [isLeaving, setIsLeaving] = useState(false);
-  const [showHint, setShowHint] = useState(false);
-
-  const hideHintTimerRef = useRef(null);
-
-  useEffect(() => {
-    function handleMouseMove() {
-      if (isLeaving) return;
-
-      setShowHint(true);
-
-      clearTimeout(hideHintTimerRef.current);
-
-      hideHintTimerRef.current = setTimeout(() => {
-        setShowHint(false);
-      }, 700);
-    }
-
-    window.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-      clearTimeout(hideHintTimerRef.current);
-    };
-  }, [isLeaving]);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const videoRef = useRef(null);
 
   function handleStart() {
-    if (isLeaving) return;
+    if (isTransitioning) return;
 
-    setIsLeaving(true);
-    setShowHint(false);
+    setIsTransitioning(true);
 
-    setTimeout(() => {
-      onStart();
-    }, 800);
+    requestAnimationFrame(() => {
+      videoRef.current?.play();
+    });
+  }
+
+  function handleVideoEnd() {
+    onStart();
   }
 
   return (
     <div
-      className={`intro ${isLeaving ? "is-leaving" : ""}`}
+      className={`intro ${isTransitioning ? "is-transitioning" : ""}`}
       onClick={handleStart}
     >
-      <video className="intro-video" autoPlay muted loop playsInline>
-        <source src="/Videos/IDK.mp4" type="video/mp4" />
-      </video>
+      {/* DISCLAIMER SCREEN */}
+      {!isTransitioning && (
+        <>
+          <div className="intro-disclaimer">
+            <h1>DISCLAIMER</h1>
 
-      <div className="intro-overlay" />
+            <p>This website contains explicit content.</p>
 
-      <p
-        className={`
-          intro-start-hint
-          ${showHint ? "is-visible" : ""}
-        `}
-      >
-        Touch To Start
-      </p>
+            <p>Viewer discretion is advised.</p>
+
+            <img
+              className="intro-advisory"
+              src="/Detail/parental-advisory.png"
+              alt="Parental advisory"
+            />
+          </div>
+
+          <p className="intro-touch">Touch To Start</p>
+        </>
+      )}
+
+      {/* TRANSITION VIDEO */}
+      <video
+        ref={videoRef}
+        className="intro-transition-video"
+        src="/Videos/HVL-Intro.mp4"
+        muted
+        playsInline
+        preload="auto"
+        onEnded={handleVideoEnd}
+      />
     </div>
   );
 }

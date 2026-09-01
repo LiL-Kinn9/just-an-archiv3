@@ -413,7 +413,7 @@ function Main({
                     <div className="detail-info">
                       <p className="detail-index">
                         {String(currentIndex + 1).padStart(2, "0")} /{" "}
-                        {String(artworks.length).padStart(2, "0")}
+                        {String(13).padStart(2, "0")}
                       </p>
 
                       <p className="detail-artwork-title">
@@ -566,55 +566,24 @@ function Main({
       {/* ===================================================== */}
 
       {layout === "grid" && (
-        <div className="grid-view" ref={gridViewRef} onWheel={handleGridWheel}>
-          <div className="grid-columns">
-            {/* LEFT COLUMN */}
-
-            <div
-              className="grid-column grid-column-left"
-              ref={gridLeftRef}
-              style={{
-                transform: `translateY(-${gridOffset}px)`,
-              }}
-            >
-              {leftGridItems.map(({ artwork, originalIndex }) => (
-                <button
-                  className="grid-item"
-                  key={artwork.id}
-                  onClick={() => handleGridItemClick(originalIndex)}
-                  style={{
-                    backgroundColor: artwork.background,
-                  }}
-                  aria-label={`Open ${artwork.title}`}
-                >
-                  <img src={artwork.image} alt={artwork.title} />
-                </button>
-              ))}
-            </div>
-
-            {/* RIGHT COLUMN */}
-
-            <div
-              className="grid-column grid-column-right"
-              ref={gridRightRef}
-              style={{
-                transform: `translateY(${gridOffset - gridMaxOffset}px)`,
-              }}
-            >
-              {rightGridItems.map(({ artwork, originalIndex }) => (
-                <button
-                  className="grid-item"
-                  key={artwork.id}
-                  onClick={() => handleGridItemClick(originalIndex)}
-                  style={{
-                    backgroundColor: artwork.background,
-                  }}
-                  aria-label={`Open ${artwork.title}`}
-                >
-                  <img src={artwork.image} alt={artwork.title} />
-                </button>
-              ))}
-            </div>
+        <div className="grid-view">
+          <div className="grid-container">
+            {artworks.map((artwork, index) => (
+              <button
+                className="grid-item"
+                key={artwork.id}
+                onClick={() => {
+                  setCurrentIndex(index);
+                  setLayout("center");
+                }}
+                style={{
+                  backgroundColor: artwork.background,
+                }}
+                aria-label={`Open ${artwork.title}`}
+              >
+                <img src={artwork.image} alt={artwork.title} />
+              </button>
+            ))}
           </div>
         </div>
       )}
