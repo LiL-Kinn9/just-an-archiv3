@@ -1495,3 +1495,15 @@
     pointer-events: none;
   }
 }
+
+@media (max-width: 600px) {
+  .gallery-zone {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .center-view {
+    touch-action: pan-y;
+  }
+}

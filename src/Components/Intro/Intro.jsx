@@ -65,7 +65,7 @@ function Intro({ onStart }) {
       <video
         ref={videoRef}
         className="intro-transition-video"
-        src="/Videos/transition.mp4"
+        src="/Videos/HVL-Intro.mp4"
         muted
         playsInline
         preload="auto"

@@ -18,6 +18,9 @@ function Main({
   setForceHideUi,
   setUiTransitionLocked,
 }) {
+  const touchStartXRef = useRef(0);
+  const touchStartYRef = useRef(0);
+
   const [direction, setDirection] = useState(null);
   const [phase, setPhase] = useState("idle");
 
@@ -343,6 +346,57 @@ function Main({
     }
   }
 
+  function handleTouchStart(event) {
+    if (detailPhase !== "closed") return;
+    if (phase !== "idle") return;
+
+    const touch = event.touches[0];
+
+    touchStartXRef.current = touch.clientX;
+    touchStartYRef.current = touch.clientY;
+  }
+
+  function handleTouchEnd(event) {
+    if (detailPhase !== "closed") return;
+    if (phase !== "idle") return;
+
+    const touch = event.changedTouches[0];
+
+    const deltaX = touch.clientX - touchStartXRef.current;
+
+    const deltaY = touch.clientY - touchStartYRef.current;
+
+    /*
+    Nếu user đang vuốt dọc,
+    đừng coi đó là swipe carousel.
+  */
+    if (Math.abs(deltaY) > Math.abs(deltaX)) {
+      return;
+    }
+
+    /*
+    Swipe quá ngắn thì bỏ qua.
+  */
+    if (Math.abs(deltaX) < 50) {
+      return;
+    }
+
+    /*
+    vuốt sang trái -> NEXT
+  */
+    if (deltaX < 0) {
+      handleNext();
+      return;
+    }
+
+    /*
+    vuốt sang phải -> PREV
+  */
+    if (deltaX > 0) {
+      handlePrev();
+    }
+  }
+
   return (
     <main className={`main ${layout}`}>
       {/* ===================================================== */}
@@ -350,7 +404,11 @@ function Main({
       {/* ===================================================== */}
 
       {layout === "center" && (
-        <div className="center-view">
+        <div
+          className="center-view"
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+        >
           <div
             className={`
               center-stage
