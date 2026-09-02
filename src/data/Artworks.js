@@ -700,150 +700,150 @@ const artworks = [
       '" The Eye of The Sillent Sorrow. "',
     ],
   },
-  {
-    id: 8,
-    title: "LIỆM",
-    storyTitle: "A MEMORY THAT NEVER LEFT",
-    detailImage: "/Detail/detail-mark.png",
-    image: "/Artworks/HVL-artwork8.png",
-    audio: "/Music/HVL-Liem.mp3",
-    background: "#000",
-    uiTheme: "white",
-    detailImages: [
-      "/Detail/detail-1.png",
-      "/Detail/detail-2.png",
-      "/Detail/detail-3.png",
-    ],
-    story: [
-      "This is the first paragraph of the story.",
+  // {
+  //   id: 8,
+  //   title: "LIỆM",
+  //   storyTitle: "A MEMORY THAT NEVER LEFT",
+  //   detailImage: "/Detail/detail-mark.png",
+  //   image: "/Artworks/HVL-artwork8.png",
+  //   audio: "/Music/HVL-Liem.mp3",
+  //   background: "#000",
+  //   uiTheme: "white",
+  //   detailImages: [
+  //     "/Detail/detail-1.png",
+  //     "/Detail/detail-2.png",
+  //     "/Detail/detail-3.png",
+  //   ],
+  //   story: [
+  //     "This is the first paragraph of the story.",
 
-      "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
+  //     "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
 
-      "This is the third paragraph.",
+  //     "This is the third paragraph.",
 
-      "You can add as many paragraphs as you want.",
-    ],
-  },
-  {
-    id: 9,
-    title: "MỘT CÁI ÔM",
-    storyTitle: "A MEMORY THAT NEVER LEFT",
-    detailImage: "/Detail/detail-mark.png",
-    image: "/Artworks/HVL-artwork9.png",
-    audio: "/Music/HVL-Mot-Cai-Om.mp3",
-    background: "#ff0100",
-    uiTheme: "black",
-    detailImages: [
-      "/Detail/detail-1.png",
-      "/Detail/detail-2.png",
-      "/Detail/detail-3.png",
-    ],
-    story: [
-      "This is the first paragraph of the story.",
+  //     "You can add as many paragraphs as you want.",
+  //   ],
+  // },
+  // {
+  //   id: 9,
+  //   title: "MỘT CÁI ÔM",
+  //   storyTitle: "A MEMORY THAT NEVER LEFT",
+  //   detailImage: "/Detail/detail-mark.png",
+  //   image: "/Artworks/HVL-artwork9.png",
+  //   audio: "/Music/HVL-Mot-Cai-Om.mp3",
+  //   background: "#ff0100",
+  //   uiTheme: "black",
+  //   detailImages: [
+  //     "/Detail/detail-1.png",
+  //     "/Detail/detail-2.png",
+  //     "/Detail/detail-3.png",
+  //   ],
+  //   story: [
+  //     "This is the first paragraph of the story.",
 
-      "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
+  //     "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
 
-      "This is the third paragraph.",
+  //     "This is the third paragraph.",
 
-      "You can add as many paragraphs as you want.",
-    ],
-  },
-  {
-    id: 9,
-    title: "KHÔNG CẦN LO CHO TAO",
-    storyTitle: "A MEMORY THAT NEVER LEFT",
-    detailImage: "/Detail/detail-mark.png",
-    image: "/Artworks/HVL-artwork10.png",
-    audio: "/Music/HVL-Khong-Can-Lo-Cho-Tao.mp3",
-    background: "#fff",
-    uiTheme: "black",
-    detailImages: [
-      "/Detail/detail-1.png",
-      "/Detail/detail-2.png",
-      "/Detail/detail-3.png",
-    ],
-    story: [
-      "This is the first paragraph of the story.",
+  //     "You can add as many paragraphs as you want.",
+  //   ],
+  // },
+  // {
+  //   id: 9,
+  //   title: "KHÔNG CẦN LO CHO TAO",
+  //   storyTitle: "A MEMORY THAT NEVER LEFT",
+  //   detailImage: "/Detail/detail-mark.png",
+  //   image: "/Artworks/HVL-artwork10.png",
+  //   audio: "/Music/HVL-Khong-Can-Lo-Cho-Tao.mp3",
+  //   background: "#fff",
+  //   uiTheme: "black",
+  //   detailImages: [
+  //     "/Detail/detail-1.png",
+  //     "/Detail/detail-2.png",
+  //     "/Detail/detail-3.png",
+  //   ],
+  //   story: [
+  //     "This is the first paragraph of the story.",
 
-      "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
+  //     "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
 
-      "This is the third paragraph.",
+  //     "This is the third paragraph.",
 
-      "You can add as many paragraphs as you want.",
-    ],
-  },
-  {
-    id: 10,
-    title: "NGUYỄN VĂN MƯỜI",
-    storyTitle: "A MEMORY THAT NEVER LEFT",
-    detailImage: "/Detail/detail-mark.png",
-    image: "/Artworks/HVL-artwork11.png",
-    audio: "/Music/HVL-Nguyen-Van-Muoi.mp3",
-    background: "#fff",
-    uiTheme: "black",
-    detailImages: [
-      "/Detail/detail-1.png",
-      "/Detail/detail-2.png",
-      "/Detail/detail-3.png",
-    ],
-    story: [
-      "This is the first paragraph of the story.",
+  //     "You can add as many paragraphs as you want.",
+  //   ],
+  // },
+  // {
+  //   id: 10,
+  //   title: "NGUYỄN VĂN MƯỜI",
+  //   storyTitle: "A MEMORY THAT NEVER LEFT",
+  //   detailImage: "/Detail/detail-mark.png",
+  //   image: "/Artworks/HVL-artwork11.png",
+  //   audio: "/Music/HVL-Nguyen-Van-Muoi.mp3",
+  //   background: "#fff",
+  //   uiTheme: "black",
+  //   detailImages: [
+  //     "/Detail/detail-1.png",
+  //     "/Detail/detail-2.png",
+  //     "/Detail/detail-3.png",
+  //   ],
+  //   story: [
+  //     "This is the first paragraph of the story.",
 
-      "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
+  //     "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
 
-      "This is the third paragraph.",
+  //     "This is the third paragraph.",
 
-      "You can add as many paragraphs as you want.",
-    ],
-  },
-  {
-    id: 11,
-    title: "THỊT LỢN",
-    storyTitle: "A MEMORY THAT NEVER LEFT",
-    detailImage: "/Detail/detail-mark.png",
-    image: "/Artworks/HVL-artwork12.png",
-    audio: "/Music/HVL-Thit-Lon.mp3",
-    background: "#fff",
-    uiTheme: "black",
-    detailImages: [
-      "/Detail/detail-1.png",
-      "/Detail/detail-2.png",
-      "/Detail/detail-3.png",
-    ],
-    story: [
-      "This is the first paragraph of the story.",
+  //     "You can add as many paragraphs as you want.",
+  //   ],
+  // },
+  // {
+  //   id: 11,
+  //   title: "THỊT LỢN",
+  //   storyTitle: "A MEMORY THAT NEVER LEFT",
+  //   detailImage: "/Detail/detail-mark.png",
+  //   image: "/Artworks/HVL-artwork12.png",
+  //   audio: "/Music/HVL-Thit-Lon.mp3",
+  //   background: "#fff",
+  //   uiTheme: "black",
+  //   detailImages: [
+  //     "/Detail/detail-1.png",
+  //     "/Detail/detail-2.png",
+  //     "/Detail/detail-3.png",
+  //   ],
+  //   story: [
+  //     "This is the first paragraph of the story.",
 
-      "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
+  //     "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
 
-      "This is the third paragraph.",
+  //     "This is the third paragraph.",
 
-      "You can add as many paragraphs as you want.",
-    ],
-  },
-  {
-    id: 12,
-    title: "NIGHT IN PRAGUE",
-    storyTitle: "A MEMORY THAT NEVER LEFT",
-    detailImage: "/Detail/detail-mark.png",
-    image: "/Artworks/HVL-artwork13.png",
-    audio: "/Music/HVL-Night-In-Prague.mp3",
-    background: "#0c0f10",
-    uiTheme: "white",
-    detailImages: [
-      "/Detail/detail-1.png",
-      "/Detail/detail-2.png",
-      "/Detail/detail-3.png",
-    ],
-    story: [
-      "This is the first paragraph of the story.",
+  //     "You can add as many paragraphs as you want.",
+  //   ],
+  // },
+  // {
+  //   id: 12,
+  //   title: "NIGHT IN PRAGUE",
+  //   storyTitle: "A MEMORY THAT NEVER LEFT",
+  //   detailImage: "/Detail/detail-mark.png",
+  //   image: "/Artworks/HVL-artwork13.png",
+  //   audio: "/Music/HVL-Night-In-Prague.mp3",
+  //   background: "#0c0f10",
+  //   uiTheme: "white",
+  //   detailImages: [
+  //     "/Detail/detail-1.png",
+  //     "/Detail/detail-2.png",
+  //     "/Detail/detail-3.png",
+  //   ],
+  //   story: [
+  //     "This is the first paragraph of the story.",
 
-      "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
+  //     "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
 
-      "This is the third paragraph.",
+  //     "This is the third paragraph.",
 
-      "You can add as many paragraphs as you want.",
-    ],
-  },
+  //     "You can add as many paragraphs as you want.",
+  //   ],
+  // },
 
   {
     id: 12,
