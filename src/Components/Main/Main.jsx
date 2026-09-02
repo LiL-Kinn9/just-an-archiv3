@@ -21,19 +21,15 @@ function Main({
   const touchStartXRef = useRef(0);
   const touchStartYRef = useRef(0);
 
+  const detailSlideRef = useRef(null);
+  const artworkImgRef = useRef(null);
+
+  const [centerAudioPosition, setCenterAudioPosition] = useState(null);
+  const [detailSwipePhase, setDetailSwipePhase] = useState("idle");
+  const [detailSwipeDirection, setDetailSwipeDirection] = useState(null);
+
   const [direction, setDirection] = useState(null);
   const [phase, setPhase] = useState("idle");
-
-  /* ========================================================= */
-  /* GRID */
-  /* ========================================================= */
-
-  const [gridOffset, setGridOffset] = useState(0);
-  const [gridMaxOffset, setGridMaxOffset] = useState(0);
-
-  const gridViewRef = useRef(null);
-  const gridLeftRef = useRef(null);
-  const gridRightRef = useRef(null);
 
   /* ========================================================= */
   /* DETAIL CENTER */
@@ -56,55 +52,6 @@ function Main({
 
   const nextItem =
     currentIndex < artworks.length - 1 ? artworks[currentIndex + 1] : null;
-
-  useEffect(() => {
-    if (layout !== "grid") return;
-
-    function calculateGridHeight() {
-      if (
-        !gridViewRef.current ||
-        !gridLeftRef.current ||
-        !gridRightRef.current
-      ) {
-        return;
-      }
-
-      const viewportHeight = gridViewRef.current.clientHeight;
-
-      const leftHeight = gridLeftRef.current.scrollHeight;
-      const rightHeight = gridRightRef.current.scrollHeight;
-
-      const columnHeight = Math.max(leftHeight, rightHeight);
-
-      const maxOffset = Math.max(0, columnHeight - viewportHeight);
-
-      setGridMaxOffset(maxOffset);
-
-      setGridOffset((prev) => Math.min(prev, maxOffset));
-    }
-
-    calculateGridHeight();
-
-    window.addEventListener("resize", calculateGridHeight);
-
-    return () => {
-      window.removeEventListener("resize", calculateGridHeight);
-    };
-  }, [layout, artworks]);
-
-  /* ========================================================= */
-  /* GRID ITEMS */
-  /* ========================================================= */
-
-  const leftGridItems = artworks.slice(0, 6).map((artwork, index) => ({
-    artwork,
-    originalIndex: index,
-  }));
-
-  const rightGridItems = artworks.slice(6).map((artwork, index) => ({
-    artwork,
-    originalIndex: index + 6,
-  }));
 
   /* ========================================================= */
   /* CONTROL ICONS */
@@ -318,24 +265,6 @@ function Main({
     }, 450);
   }
 
-  function handleGridWheel(event) {
-    if (layout !== "grid") return;
-
-    event.preventDefault();
-
-    setGridOffset((prev) => {
-      const next = prev + event.deltaY;
-
-      return Math.max(0, Math.min(next, gridMaxOffset));
-    });
-  }
-
-  function handleGridItemClick(index) {
-    setCurrentIndex(index);
-
-    setLayout("center");
-  }
-
   function handleDetailScroll(event) {
     const scrollTop = event.currentTarget.scrollTop;
 
@@ -346,9 +275,55 @@ function Main({
     }
   }
 
+  /* ========================================================= */
+  /* DETAIL SWIPE */
+  /* ========================================================= */
+
+  function handleDetailSwipe(direction) {
+    if (detailPhase !== "open") return;
+    if (detailSwipePhase !== "idle") return;
+
+    const isNext = direction === "next";
+
+    if (isNext && !nextItem) return;
+    if (!isNext && !prevItem) return;
+
+    setDetailSwipeDirection(direction);
+    setDetailSwipePhase("out");
+
+    setIsCloseVisible(false);
+
+    setTimeout(() => {
+      if (isNext) {
+        setCurrentIndex((prev) => prev + 1);
+      } else {
+        setCurrentIndex((prev) => prev - 1);
+      }
+
+      setActiveStoryIndex(0);
+
+      requestAnimationFrame(() => {
+        if (detailSlideRef.current) {
+          detailSlideRef.current.scrollTop = 0;
+        }
+
+        setDetailSwipePhase("in");
+
+        setTimeout(() => {
+          setDetailSwipePhase("idle");
+          setDetailSwipeDirection(null);
+          setIsCloseVisible(true);
+        }, 450);
+      });
+    }, 450);
+  }
+
   function handleTouchStart(event) {
-    if (detailPhase !== "closed") return;
     if (phase !== "idle") return;
+
+    if (detailPhase !== "closed" && detailPhase !== "open") {
+      return;
+    }
 
     const touch = event.touches[0];
 
@@ -357,8 +332,11 @@ function Main({
   }
 
   function handleTouchEnd(event) {
-    if (detailPhase !== "closed") return;
     if (phase !== "idle") return;
+
+    if (detailPhase !== "closed" && detailPhase !== "open") {
+      return;
+    }
 
     const touch = event.changedTouches[0];
 
@@ -367,35 +345,80 @@ function Main({
     const deltaY = touch.clientY - touchStartYRef.current;
 
     /*
-    Nếu user đang vuốt dọc,
-    đừng coi đó là swipe carousel.
+    Vuốt dọc -> để browser scroll bình thường.
   */
+
     if (Math.abs(deltaY) > Math.abs(deltaX)) {
       return;
     }
 
     /*
-    Swipe quá ngắn thì bỏ qua.
+    Swipe ngang quá ngắn -> bỏ qua.
   */
-    if (Math.abs(deltaX) < 50) {
+
+    if (Math.abs(deltaX) < 60) {
       return;
     }
 
     /*
-    vuốt sang trái -> NEXT
+    ==============================
+    DETAIL MODE
+    ==============================
   */
-    if (deltaX < 0) {
-      handleNext();
-      return;
+
+    if (detailPhase === "open") {
+      if (deltaX < 0) {
+        handleDetailSwipe("next");
+        return;
+      }
+
+      if (deltaX > 0) {
+        handleDetailSwipe("prev");
+        return;
+      }
     }
 
     /*
-    vuốt sang phải -> PREV
+    ==============================
+    CENTER MODE
+    ==============================
   */
-    if (deltaX > 0) {
-      handlePrev();
+
+    if (detailPhase === "closed") {
+      if (deltaX < 0) {
+        handleNext();
+        return;
+      }
+
+      if (deltaX > 0) {
+        handlePrev();
+      }
     }
   }
+
+  function updateCenterAudioPosition() {
+    if (!artworkImgRef.current) return;
+
+    const rect = artworkImgRef.current.getBoundingClientRect();
+
+    setCenterAudioPosition({
+      left: rect.left,
+      top: rect.bottom + 24,
+      width: rect.width,
+    });
+  }
+
+  useEffect(() => {
+    if (detailPhase !== "closed") return;
+
+    updateCenterAudioPosition();
+
+    window.addEventListener("resize", updateCenterAudioPosition);
+
+    return () => {
+      window.removeEventListener("resize", updateCenterAudioPosition);
+    };
+  }, [currentIndex, detailPhase]);
 
   return (
     <main className={`main ${layout}`}>
@@ -438,22 +461,43 @@ function Main({
             {/* ================================================= */}
 
             <div
+              ref={detailSlideRef}
               className={`
-  gallery-slide
-  current-slide
-  ${detailPhase === "closed" ? "detail-closed" : `detail-${detailPhase}`}
-`}
+    gallery-slide
+    current-slide
+
+    ui-${uiTheme}
+
+    ${detailPhase === "closed" ? "detail-closed" : `detail-${detailPhase}`}
+
+    ${
+      detailSwipePhase !== "idle"
+        ? `detail-swipe-${detailSwipePhase}-${detailSwipeDirection}`
+        : ""
+    }
+  `}
               style={{
                 backgroundColor: getBackground(currentItem),
 
                 "--detail-color":
                   uiTheme === "white" ? "#f5f5f5d6" : "#000000d6",
+
                 "--detail-story-color":
                   uiTheme === "white" ? "#f5f5f5b8" : "#000000b8",
+
                 "--detail-story-title-color":
                   uiTheme === "white" ? "#f5f5f5" : "#000000",
+
                 "--detail-story-line-color":
                   uiTheme === "white" ? "#f5f5f56e" : "#000000",
+
+                "--center-audio-top": centerAudioPosition
+                  ? `${centerAudioPosition.top}px`
+                  : "auto",
+
+                "--center-audio-width": centerAudioPosition
+                  ? `${centerAudioPosition.width}px`
+                  : "35vw",
               }}
               onScroll={handleDetailScroll}
               onAnimationEnd={handleSlideEnd}
@@ -466,7 +510,12 @@ function Main({
               {/* =============================================== */}
 
               <div className="slide-artwork" onClick={handleOpenDetail}>
-                <img src={currentItem.image} alt={currentItem.title} />
+                <img
+                  ref={artworkImgRef}
+                  src={currentItem.image}
+                  alt={currentItem.title}
+                  onLoad={updateCenterAudioPosition}
+                />
               </div>
 
               {/* =============================================== */}

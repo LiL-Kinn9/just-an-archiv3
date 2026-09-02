@@ -1527,3 +1527,216 @@
     object-fit: initial;
   }
 }
+
+/* ========================================================= */
+/* DETAIL TITLE SHADOW */
+/* ========================================================= */
+
+/* WHITE TEXT */
+
+.current-slide.ui-black .detail-artwork-title,
+.current-slide.ui-black .detail-story-title,
+.current-slide.ui-black .detail-story-paragraph,
+.current-slide.ui-black .mobile-detail-artwork-title,
+.current-slide.ui-black .mobile-detail-story-title,
+.current-slide.ui-black .mobile-detail-story p {
+  text-shadow:
+    0 1px 2px rgba(255, 255, 255, 0.35),
+    0 2px 8px rgba(255, 255, 255, 0.18);
+}
+
+/* BLACK TEXT */
+
+.current-slide.ui-black .detail-artwork-title,
+.current-slide.ui-black .detail-story-title,
+.current-slide.ui-black .detail-story-paragraph,
+.current-slide.ui-black .mobile-detail-artwork-title,
+.current-slide.ui-black .mobile-detail-story-title,
+.current-slide.ui-black .mobile-detail-story p {
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.35),
+    0 2px 8px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 600px) {
+  /* ======================================================= */
+  /* DETAIL SWIPE */
+  /* ======================================================= */
+
+  /* NEXT: CURRENT -> LEFT */
+
+  .current-slide.detail-swipe-out-next {
+    animation: detailSwipeOutLeft 0.45s cubic-bezier(0.76, 0, 0.24, 1) both;
+  }
+
+  @keyframes detailSwipeOutLeft {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    to {
+      transform: translateX(-100%);
+      opacity: 0.7;
+    }
+  }
+
+  /* NEXT: NEW DETAIL FROM RIGHT */
+
+  .current-slide.detail-swipe-in-next {
+    animation: detailSwipeInRight 0.45s cubic-bezier(0.76, 0, 0.24, 1) both;
+  }
+
+  @keyframes detailSwipeInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0.7;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* PREV: CURRENT -> RIGHT */
+
+  .current-slide.detail-swipe-out-prev {
+    animation: detailSwipeOutRight 0.45s cubic-bezier(0.76, 0, 0.24, 1) both;
+  }
+
+  @keyframes detailSwipeOutRight {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    to {
+      transform: translateX(100%);
+      opacity: 0.7;
+    }
+  }
+
+  /* PREV: NEW DETAIL FROM LEFT */
+
+  .current-slide.detail-swipe-in-prev {
+    animation: detailSwipeInLeft 0.45s cubic-bezier(0.76, 0, 0.24, 1) both;
+  }
+
+  @keyframes detailSwipeInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0.7;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+* {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.detail-artwork-title,
+.detail-story-title,
+.detail-story-paragraph,
+.mobile-detail-artwork-title,
+.mobile-detail-story-title,
+.mobile-detail-story p {
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+/* UI BLACK */
+
+.current-slide.ui-black ::selection {
+  background: #000;
+  color: #fff;
+}
+
+.current-slide.ui-black ::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+
+/* UI WHITE */
+
+.current-slide.ui-white ::selection {
+  background: #fff;
+  color: #000;
+}
+
+.current-slide.ui-white ::-moz-selection {
+  background: #fff;
+  color: #000;
+}
+
+/* ========================================================= */
+/* CENTER AUDIO - FOLLOW REAL ARTWORK */
+/* ========================================================= */
+
+.current-slide.detail-closed .audio-player,
+.current-slide.detail-hiding-ui .audio-player {
+  width: var(--center-audio-width);
+
+  left: 50%;
+  top: var(--center-audio-top);
+  bottom: auto;
+
+  transform: translateX(-50%);
+}
+/* DESKTOP DETAIL */
+.current-slide.detail-opening .audio-player,
+.current-slide.detail-open .audio-player,
+.current-slide.detail-closing .audio-player {
+  left: 72.5%;
+
+  top: auto;
+  bottom: 10%;
+
+  width: 30vw;
+
+  transform: translateX(-50%);
+}
+
+/* MOBILE DETAIL */
+@media (max-width: 600px) {
+  .current-slide.detail-hiding-ui .audio-player,
+  .current-slide.detail-opening .audio-player {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .current-slide.detail-open .audio-player {
+    position: absolute;
+
+    left: 10%;
+    top: calc(70px + 80vw + 24px);
+
+    bottom: auto;
+
+    width: 80%;
+
+    transform: none;
+
+    opacity: 1;
+
+    pointer-events: auto;
+
+    z-index: 50;
+
+    transition: opacity 0.4s ease;
+  }
+}
+
+/* PC */
+@media (min-width: 601px) {
+  .current-slide.detail-closed .audio-player,
+  .current-slide.detail-hiding-ui .audio-player {
+    width: min(var(--center-audio-width), 720px);
+  }
+}
