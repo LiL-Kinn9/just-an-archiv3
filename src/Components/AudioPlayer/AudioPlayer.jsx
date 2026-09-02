@@ -91,10 +91,10 @@ function AudioPlayer({ audioSrc, uiTheme, isUiVisible }) {
 
       <audio
         ref={audioRef}
+        src={audioSrc}
         preload="metadata"
         onLoadedMetadata={(event) => {
           const audio = event.currentTarget;
-
           setDuration(audio.duration);
         }}
         onTimeUpdate={(event) => {
@@ -110,16 +110,13 @@ function AudioPlayer({ audioSrc, uiTheme, isUiVisible }) {
           const audio = event.currentTarget;
 
           audio.currentTime = 0;
-
           setCurrentTime(0);
           setIsPlaying(false);
         }}
         onError={(event) => {
           console.error("AUDIO ERROR:", event.currentTarget.error);
         }}
-      >
-        <source src={audioSrc} type="video/mp4" />
-      </audio>
+      />
 
       {/* ===================================================== */}
       {/* PROGRESS */}
