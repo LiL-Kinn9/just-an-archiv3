@@ -573,23 +573,6 @@
 }
 
 /* ========================================================= */
-/* DETAIL AUDIO */
-/* ========================================================= */
-
-.current-slide.detail-opening .audio-player,
-.current-slide.detail-open .audio-player,
-.current-slide.detail-closing .audio-player {
-  left: 72.5%;
-
-  top: auto;
-  bottom: 10%;
-
-  width: 30vw;
-
-  transform: translateX(-50%);
-}
-
-/* ========================================================= */
 /* CLOSE BUTTON */
 /* ========================================================= */
 
@@ -1558,14 +1541,6 @@
     0 2px 8px rgba(0, 0, 0, 0.22);
 }
 
-.current-slide.ui-white .detail-artwork-title,
-.current-slide.ui-white .detail-story-title,
-.current-slide.ui-white .mobile-detail-artwork-title,
-.current-slide.ui-white .mobile-detail-story-title {
-  text-shadow:
-    0 2px 1px rgba(255, 255, 255, 0.22),
-    0 2px 8px rgba(255, 255, 255, 0.4);
-}
 .current-slide.ui-black .detail-artwork-title,
 .current-slide.ui-black .detail-story-title,
 .current-slide.ui-black .mobile-detail-artwork-title,
@@ -1573,13 +1548,6 @@
   text-shadow:
     0 3px 1px rgba(0, 0, 0, 0.25),
     0 2px 8px rgba(0, 0, 0, 0.22);
-}
-
-.current-slide.ui-white .detail-artwork-title,
-.current-slide.ui-white .mobile-detail-artwork-title {
-  text-shadow:
-    0 2px 1px rgba(255, 255, 255, 0.22),
-    0 2px 8px rgba(255, 255, 255, 0.4);
 }
 
 .current-slide.ui-black .detail-artwork-title,
@@ -1726,7 +1694,7 @@
   left: 72.5%;
 
   top: auto;
-  bottom: 10%;
+  bottom: 15%;
 
   width: 30vw;
 
@@ -1768,5 +1736,177 @@
   .current-slide.detail-closed .audio-player,
   .current-slide.detail-hiding-ui .audio-player {
     width: min(var(--center-audio-width), 720px);
+  }
+}
+
+.mobile-return-btn {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mobile-return-btn {
+    display: flex;
+
+    width: fit-content;
+
+    padding: 0;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: 0;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+  }
+
+  .mobile-return-btn img {
+    width: 50px;
+    height: auto;
+
+    display: block;
+
+    pointer-events: none;
+    user-select: none;
+  }
+}
+.detail-story {
+  position: relative;
+}
+
+.desktop-return-btn {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+  z-index: 10;
+}
+
+.desktop-return-btn img {
+  width: 40px;
+  height: auto;
+
+  display: block;
+
+  pointer-events: none;
+  user-select: none;
+}
+@media (max-width: 600px) {
+  .desktop-return-btn {
+    display: none;
+  }
+}
+
+.detail-transition-chapter {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .detail-transition-chapter {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: block;
+
+    z-index: 5;
+
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+
+    color: var(--detail-color);
+
+    pointer-events: none;
+    user-select: none;
+
+    animation: detailChapterFade 0.9s ease both;
+  }
+}
+
+@keyframes detailChapterFade {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -45%);
+  }
+
+  30% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -55%);
+  }
+}
+
+.desktop-detail-control {
+  position: fixed;
+
+  top: 50%;
+
+  width: 42px;
+  height: 42px;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  transform: translateY(-50%);
+
+  cursor: pointer;
+
+  z-index: 100;
+
+  opacity: 0.65;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.desktop-detail-control:hover {
+  opacity: 1;
+}
+
+.desktop-detail-control img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  pointer-events: none;
+}
+
+.desktop-detail-control-prev {
+  left: 20px;
+}
+
+.desktop-detail-control-next {
+  right: 20px;
+}
+
+@media (max-width: 600px) {
+  .desktop-detail-control {
+    display: none;
   }
 }

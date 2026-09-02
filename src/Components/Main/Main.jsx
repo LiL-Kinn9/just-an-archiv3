@@ -53,6 +53,16 @@ function Main({
   const nextItem =
     currentIndex < artworks.length - 1 ? artworks[currentIndex + 1] : null;
 
+  const targetDetailIndex =
+    detailSwipeDirection === "next"
+      ? currentIndex + 1
+      : detailSwipeDirection === "prev"
+        ? currentIndex - 1
+        : null;
+
+  const targetDetailItem =
+    targetDetailIndex !== null ? artworks[targetDetailIndex] : null;
+
   /* ========================================================= */
   /* CONTROL ICONS */
   /* ========================================================= */
@@ -173,6 +183,23 @@ function Main({
       clearTimeout(timer);
     };
   }, [detailPhase, setUiTransitionLocked]);
+
+  /* ========================================================= */
+  /* RETURNING HEADER */
+  /* ========================================================= */
+
+  function handleReturnDesktopStory() {
+    setActiveStoryIndex(0);
+  }
+
+  function handleReturnMobileDetail() {
+    if (!detailSlideRef.current) return;
+
+    detailSlideRef.current.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
 
   /* ========================================================= */
   /* NEXT */
@@ -477,7 +504,10 @@ function Main({
     }
   `}
               style={{
-                backgroundColor: getBackground(currentItem),
+                backgroundColor:
+                  detailSwipePhase !== "idle" && targetDetailItem
+                    ? getBackground(targetDetailItem)
+                    : getBackground(currentItem),
 
                 "--detail-color":
                   uiTheme === "white" ? "#f5f5f5d6" : "#000000d6",
@@ -502,9 +532,15 @@ function Main({
               onScroll={handleDetailScroll}
               onAnimationEnd={handleSlideEnd}
             >
-              {/* =============================================== */}
-              {/* ARTWORK */}
-              {/* =============================================== */}
+              {/* CHAPTER BACKGROUND TEXT */}
+              {isDetailOpen &&
+                detailSwipePhase !== "idle" &&
+                targetDetailItem && (
+                  <div className="detail-transition-chapter">
+                    CHAP {String(targetDetailIndex + 1).padStart(2, "0")}
+                  </div>
+                )}
+
               {/* =============================================== */}
               {/* CENTER / DESKTOP ARTWORK */}
               {/* =============================================== */}
@@ -571,7 +607,6 @@ function Main({
                                       : distance === 1
                                         ? 0.3
                                         : 0,
-
                                   "--story-scale": distance === 0 ? 1 : 0.94,
                                 }}
                               >
@@ -580,6 +615,14 @@ function Main({
                             );
                           })}
                         </div>
+
+                        <button
+                          className="desktop-return-btn"
+                          onClick={handleReturnDesktopStory}
+                          aria-label="Return to first paragraph"
+                        >
+                          <img src="/Detail/return-mark.png" alt="" />
+                        </button>
                       </div>
                     </div>
 
@@ -633,6 +676,14 @@ function Main({
                     {currentItem.story?.map((paragraph, index) => (
                       <p key={index}>{paragraph}</p>
                     ))}
+
+                    <button
+                      className="mobile-return-btn"
+                      onClick={handleReturnMobileDetail}
+                      aria-label="Return to top"
+                    >
+                      <img src="/Detail/return-mark.png" alt="" />
+                    </button>
                   </div>
                 </div>
               )}
