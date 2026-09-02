@@ -1534,15 +1534,15 @@
 
 /* WHITE TEXT */
 
-.current-slide.ui-black .detail-artwork-title,
-.current-slide.ui-black .detail-story-title,
-.current-slide.ui-black .detail-story-paragraph,
-.current-slide.ui-black .mobile-detail-artwork-title,
-.current-slide.ui-black .mobile-detail-story-title,
-.current-slide.ui-black .mobile-detail-story p {
+.current-slide.ui-white .detail-artwork-title,
+.current-slide.ui-white .detail-story-title,
+.current-slide.ui-white .detail-story-paragraph,
+.current-slide.ui-white .mobile-detail-artwork-title,
+.current-slide.ui-white .mobile-detail-story-title,
+.current-slide.ui-white .mobile-detail-story p {
   text-shadow:
-    0 1px 2px rgba(255, 255, 255, 0.35),
-    0 2px 8px rgba(255, 255, 255, 0.18);
+    0 1px 1px rgba(255, 255, 255, 0.22),
+    0 2px 8px rgba(255, 255, 255, 0.22);
 }
 
 /* BLACK TEXT */
@@ -1554,10 +1554,40 @@
 .current-slide.ui-black .mobile-detail-story-title,
 .current-slide.ui-black .mobile-detail-story p {
   text-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.35),
+    0 1px 1px rgba(0, 0, 0, 0.22),
     0 2px 8px rgba(0, 0, 0, 0.22);
 }
 
+.current-slide.ui-white .detail-artwork-title,
+.current-slide.ui-white .detail-story-title,
+.current-slide.ui-white .mobile-detail-artwork-title,
+.current-slide.ui-white .mobile-detail-story-title {
+  text-shadow:
+    0 2px 1px rgba(255, 255, 255, 0.22),
+    0 2px 8px rgba(255, 255, 255, 0.4);
+}
+.current-slide.ui-black .detail-artwork-title,
+.current-slide.ui-black .detail-story-title,
+.current-slide.ui-black .mobile-detail-artwork-title,
+.current-slide.ui-black .mobile-detail-story-title {
+  text-shadow:
+    0 3px 1px rgba(0, 0, 0, 0.25),
+    0 2px 8px rgba(0, 0, 0, 0.22);
+}
+
+.current-slide.ui-white .detail-artwork-title,
+.current-slide.ui-white .mobile-detail-artwork-title {
+  text-shadow:
+    0 2px 1px rgba(255, 255, 255, 0.22),
+    0 2px 8px rgba(255, 255, 255, 0.4);
+}
+
+.current-slide.ui-black .detail-artwork-title,
+.current-slide.ui-black .mobile-detail-artwork-title {
+  text-shadow:
+    0 2px 1px rgba(0, 0, 0, 0.25),
+    0 2px 8px rgba(0, 0, 0, 0.22);
+}
 @media (max-width: 600px) {
   /* ======================================================= */
   /* DETAIL SWIPE */
