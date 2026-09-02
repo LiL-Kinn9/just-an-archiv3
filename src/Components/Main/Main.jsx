@@ -53,16 +53,6 @@ function Main({
   const nextItem =
     currentIndex < artworks.length - 1 ? artworks[currentIndex + 1] : null;
 
-  const targetDetailIndex =
-    detailSwipeDirection === "next"
-      ? currentIndex + 1
-      : detailSwipeDirection === "prev"
-        ? currentIndex - 1
-        : null;
-
-  const targetDetailItem =
-    targetDetailIndex !== null ? artworks[targetDetailIndex] : null;
-
   /* ========================================================= */
   /* CONTROL ICONS */
   /* ========================================================= */
@@ -504,10 +494,7 @@ function Main({
     }
   `}
               style={{
-                backgroundColor:
-                  detailSwipePhase !== "idle" && targetDetailItem
-                    ? getBackground(targetDetailItem)
-                    : getBackground(currentItem),
+                backgroundColor: getBackground(currentItem),
 
                 "--detail-color":
                   uiTheme === "white" ? "#f5f5f5d6" : "#000000d6",
@@ -532,15 +519,6 @@ function Main({
               onScroll={handleDetailScroll}
               onAnimationEnd={handleSlideEnd}
             >
-              {/* CHAPTER BACKGROUND TEXT */}
-              {isDetailOpen &&
-                detailSwipePhase !== "idle" &&
-                targetDetailItem && (
-                  <div className="detail-transition-chapter">
-                    CHAP {String(targetDetailIndex + 1).padStart(2, "0")}
-                  </div>
-                )}
-
               {/* =============================================== */}
               {/* CENTER / DESKTOP ARTWORK */}
               {/* =============================================== */}
