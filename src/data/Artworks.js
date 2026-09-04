@@ -1015,7 +1015,7 @@ const artworks = [
   {
     id: 6,
     title: "-YÊU ANH GIẾT ANH-",
-    storyTitle: "",
+    storyTitle: "D'ANGE",
     detailImage: "/Detail/detail-mark.png",
     image: "/Artworks/HVL-artwork7.png",
     audio: "/Music/HVL-Yeu-Anh-Giet-Anh.mp3",
