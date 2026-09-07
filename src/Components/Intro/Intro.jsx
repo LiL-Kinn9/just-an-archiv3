@@ -4,13 +4,10 @@ import "./Intro.css";
 
 function Intro({ onStart, firstArtworkSrc }) {
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const [isArtworkLoaded, setIsArtworkLoaded] = useState(false);
 
   const videoRef = useRef(null);
   const hasFinishedRef = useRef(false);
-
-  const isReady = isVideoLoaded && isArtworkLoaded;
 
   /* ========================================== */
   /* PRELOAD FIRST ARTWORK */
@@ -48,7 +45,6 @@ function Intro({ onStart, firstArtworkSrc }) {
   }
 
   function handleStart() {
-    if (!isReady) return;
     if (isTransitioning) return;
 
     setIsTransitioning(true);
@@ -87,7 +83,7 @@ function Intro({ onStart, firstArtworkSrc }) {
             />
           </div>
 
-          <p className={`intro-touch ${isReady ? "is-ready" : ""}`}>
+          <p className={`intro-touch ${isArtworkLoaded ? "is-ready" : ""}`}>
             Touch To Start
           </p>
         </>
@@ -100,13 +96,8 @@ function Intro({ onStart, firstArtworkSrc }) {
         muted
         playsInline
         preload="auto"
-        onCanPlayThrough={() => {
-          setIsVideoLoaded(true);
-        }}
         onEnded={finishIntro}
-        onError={() => {
-          setIsVideoLoaded(true);
-        }}
+        onError={finishIntro}
       />
     </div>
   );

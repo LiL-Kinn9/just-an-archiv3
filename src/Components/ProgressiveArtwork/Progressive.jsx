@@ -4,7 +4,20 @@ import "./Progressive.css";
 
 function ProgressiveArtwork({ artwork, alt, imageRef, onImageLoad }) {
   const progressiveSources = useMemo(() => {
-    return [artwork.preview2, artwork.preview1, artwork.image].filter(Boolean);
+    return [
+      {
+        src: artwork.preview2,
+        type: "preview2",
+      },
+      {
+        src: artwork.preview1,
+        type: "preview1",
+      },
+      {
+        src: artwork.image,
+        type: "original",
+      },
+    ].filter((item) => item.src);
   }, [artwork.preview2, artwork.preview1, artwork.image]);
 
   const [loadedLayers, setLoadedLayers] = useState([]);
@@ -40,7 +53,7 @@ function ProgressiveArtwork({ artwork, alt, imageRef, onImageLoad }) {
           img.onload = resolve;
           img.onerror = reject;
 
-          img.src = progressiveSources[index];
+          img.src = progressiveSources[index].src;
         });
 
         try {
@@ -71,7 +84,8 @@ function ProgressiveArtwork({ artwork, alt, imageRef, onImageLoad }) {
       setLoadedLayers((prev) => [
         ...prev,
         {
-          src: progressiveSources[index],
+          src: progressiveSources[index].src,
+          type: progressiveSources[index].type,
           sourceIndex: index,
         },
       ]);
@@ -99,7 +113,7 @@ function ProgressiveArtwork({ artwork, alt, imageRef, onImageLoad }) {
 
       {/* PREVIEW 2 -> PREVIEW 1 -> ORIGINAL */}
       {loadedLayers.map((layer) => {
-        const isOriginal = layer.sourceIndex === progressiveSources.length - 1;
+        const isOriginal = layer.type === "original";
 
         return (
           <img
@@ -107,9 +121,11 @@ function ProgressiveArtwork({ artwork, alt, imageRef, onImageLoad }) {
             ref={isOriginal ? imageRef : null}
             src={layer.src}
             alt={isOriginal ? alt : ""}
-            className={`progressive-layer progressive-layer-${layer.sourceIndex} ${
-              layer.sourceIndex === activeIndex ? "is-active" : ""
-            }`}
+            className={`
+  progressive-layer
+  progressive-${layer.type}
+  ${layer.sourceIndex === activeIndex ? "is-active" : ""}
+`}
             onLoad={() => {
               if (isOriginal) {
                 onImageLoadRef.current?.();

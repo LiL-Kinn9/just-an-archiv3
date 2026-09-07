@@ -63,20 +63,16 @@
 
 /* PREVIEW 2 */
 
-.progressive-layer-0 {
+.progressive-preview2 {
   filter: blur(7px);
 }
 
-/* PREVIEW 1 */
-
-.progressive-layer-1 {
+.progressive-preview1 {
   filter: blur(3px);
 }
 
-/* ORIGINAL */
-
-.progressive-layer-2 {
-  filter: blur(0);
+.progressive-original {
+  filter: none;
 }
 
 .progressive-layer.is-active {

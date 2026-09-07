@@ -46,6 +46,8 @@ function Main({
   setForceHideUi,
   setUiTransitionLocked,
 }) {
+  const artworkContainerRef = useRef(null);
+
   const touchStartXRef = useRef(0);
   const touchStartYRef = useRef(0);
 
@@ -457,12 +459,11 @@ function Main({
   }
 
   function updateCenterAudioPosition() {
-    if (!artworkImgRef.current) return;
+    if (!artworkContainerRef.current) return;
 
-    const rect = artworkImgRef.current.getBoundingClientRect();
+    const rect = artworkContainerRef.current.getBoundingClientRect();
 
     setCenterAudioPosition({
-      left: rect.left,
       top: rect.bottom + 24,
       width: rect.width,
     });
@@ -566,7 +567,11 @@ function Main({
               {/* CENTER / DESKTOP ARTWORK */}
               {/* =============================================== */}
 
-              <div className="slide-artwork" onClick={handleOpenDetail}>
+              <div
+                ref={artworkContainerRef}
+                className="slide-artwork"
+                onClick={handleOpenDetail}
+              >
                 <ProgressiveArtwork
                   key={currentItem.image}
                   artwork={currentItem}
