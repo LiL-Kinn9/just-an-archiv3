@@ -1,7 +1,35 @@
 import { useEffect, useRef, useState } from "react";
 import "./Main.css";
 
+import ProgressiveArtwork from "../ProgressiveArtwork/Progressive";
 import AudioPlayer from "../AudioPlayer/AudioPlayer";
+
+function GridArtwork({ artwork }) {
+  const [isOriginalLoaded, setIsOriginalLoaded] = useState(false);
+
+  return (
+    <div className="grid-artwork">
+      <img
+        src={artwork.preview1}
+        alt=""
+        className={`grid-artwork-preview ${
+          isOriginalLoaded ? "is-hidden" : ""
+        }`}
+      />
+
+      <img
+        src={artwork.image}
+        alt={artwork.title}
+        className={`grid-artwork-original ${
+          isOriginalLoaded ? "is-loaded" : ""
+        }`}
+        onLoad={() => {
+          setIsOriginalLoaded(true);
+        }}
+      />
+    </div>
+  );
+}
 
 function Main({
   layout,
@@ -52,6 +80,21 @@ function Main({
 
   const nextItem =
     currentIndex < artworks.length - 1 ? artworks[currentIndex + 1] : null;
+
+  useEffect(() => {
+    const prevPreview =
+      currentIndex > 0 ? artworks[currentIndex - 1]?.preview3 : null;
+
+    const nextPreview =
+      currentIndex < artworks.length - 1
+        ? artworks[currentIndex + 1]?.preview3
+        : null;
+
+    [prevPreview, nextPreview].filter(Boolean).forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, [currentIndex, artworks]);
 
   /* ========================================================= */
   /* CONTROL ICONS */
@@ -524,11 +567,12 @@ function Main({
               {/* =============================================== */}
 
               <div className="slide-artwork" onClick={handleOpenDetail}>
-                <img
-                  ref={artworkImgRef}
-                  src={currentItem.image}
+                <ProgressiveArtwork
+                  key={currentItem.image}
+                  artwork={currentItem}
+                  imageRef={artworkImgRef}
                   alt={currentItem.title}
-                  onLoad={updateCenterAudioPosition}
+                  onImageLoad={updateCenterAudioPosition}
                 />
               </div>
 
@@ -618,7 +662,11 @@ function Main({
                   {/* MOBILE ARTWORK */}
 
                   <div className="mobile-detail-artwork">
-                    <img src={currentItem.image} alt={currentItem.title} />
+                    <ProgressiveArtwork
+                      key={`mobile-${currentItem.image}`}
+                      artwork={currentItem}
+                      alt={currentItem.title}
+                    />
                   </div>
 
                   {/* chừa vị trí cho AudioPlayer */}
@@ -733,7 +781,11 @@ function Main({
                 }}
               >
                 <div className="slide-artwork">
-                  <img src={nextItem.image} alt={nextItem.title} />
+                  <img
+                    className="incoming-preview"
+                    src={nextItem.preview3}
+                    alt={nextItem.title}
+                  />
                 </div>
               </div>
             )}
@@ -750,7 +802,11 @@ function Main({
                 }}
               >
                 <div className="slide-artwork">
-                  <img src={prevItem.image} alt={prevItem.title} />
+                  <img
+                    className="incoming-preview"
+                    src={prevItem.preview3}
+                    alt={prevItem.title}
+                  />
                 </div>
               </div>
             )}
@@ -778,7 +834,7 @@ function Main({
                 }}
                 aria-label={`Open ${artwork.title}`}
               >
-                <img src={artwork.image} alt={artwork.title} />
+                <GridArtwork artwork={artwork} />
               </button>
             ))}
           </div>

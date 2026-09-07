@@ -1,30 +1,59 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+
 import "./Intro.css";
 
-function Intro({ onStart }) {
+function Intro({ onStart, firstArtworkSrc }) {
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const [isArtworkLoaded, setIsArtworkLoaded] = useState(false);
 
   const videoRef = useRef(null);
   const hasFinishedRef = useRef(false);
+
+  const isReady = isVideoLoaded && isArtworkLoaded;
+
+  /* ========================================== */
+  /* PRELOAD FIRST ARTWORK */
+  /* ========================================== */
+
+  useEffect(() => {
+    if (!firstArtworkSrc) return;
+
+    const img = new Image();
+
+    function handleLoad() {
+      setIsArtworkLoaded(true);
+    }
+
+    function handleError() {
+      setIsArtworkLoaded(true);
+    }
+
+    img.addEventListener("load", handleLoad);
+    img.addEventListener("error", handleError);
+
+    img.src = firstArtworkSrc;
+
+    return () => {
+      img.removeEventListener("load", handleLoad);
+      img.removeEventListener("error", handleError);
+    };
+  }, [firstArtworkSrc]);
 
   function finishIntro() {
     if (hasFinishedRef.current) return;
 
     hasFinishedRef.current = true;
-
     onStart();
   }
 
   function handleStart() {
+    if (!isReady) return;
     if (isTransitioning) return;
 
     setIsTransitioning(true);
 
     const video = videoRef.current;
-
-    setTimeout(() => {
-      finishIntro();
-    }, 1500);
 
     if (!video) {
       finishIntro();
@@ -58,7 +87,9 @@ function Intro({ onStart }) {
             />
           </div>
 
-          <p className="intro-touch">Touch To Start</p>
+          <p className={`intro-touch ${isReady ? "is-ready" : ""}`}>
+            Touch To Start
+          </p>
         </>
       )}
 
@@ -69,8 +100,13 @@ function Intro({ onStart }) {
         muted
         playsInline
         preload="auto"
+        onCanPlayThrough={() => {
+          setIsVideoLoaded(true);
+        }}
         onEnded={finishIntro}
-        onError={finishIntro}
+        onError={() => {
+          setIsVideoLoaded(true);
+        }}
       />
     </div>
   );

@@ -142,3 +142,15 @@
 .intro.is-transitioning .intro-transition-video {
   opacity: 1;
 }
+
+.intro-touch {
+  opacity: 0;
+
+  pointer-events: none;
+
+  transition: opacity 0.6s ease;
+}
+
+.intro-touch.is-ready {
+  opacity: 1;
+}

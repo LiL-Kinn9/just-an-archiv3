@@ -128,7 +128,9 @@ function App() {
       {/* INTRO */}
       {/* ===================================================== */}
 
-      {!hasStarted && <Intro onStart={handleStart} />}
+      {!hasStarted && (
+        <Intro onStart={handleStart} firstArtworkSrc={artworks[0]?.image} />
+      )}
     </>
   );
 }
