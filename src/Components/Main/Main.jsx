@@ -594,7 +594,7 @@ function Main({
                       <div className="detail-info">
                         <p className="detail-index">
                           {String(currentIndex + 1).padStart(2, "0")} /{" "}
-                          {String(13).padStart(2, "0")}
+                          {String(artworks.length).padStart(2, "0")}
                         </p>
 
                         <p className="detail-artwork-title">
