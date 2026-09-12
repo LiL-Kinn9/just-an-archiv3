@@ -1575,14 +1575,14 @@
 .current-slide.ui-black .mobile-detail-artwork-title,
 .current-slide.ui-black .mobile-detail-story-title {
   text-shadow:
-    0 3px 1px rgba(0, 0, 0, 0.25),
+    0 3px 1px rgba(0, 0, 0, 0.22),
     0 2px 8px rgba(0, 0, 0, 0.22);
 }
 
 .current-slide.ui-black .detail-artwork-title,
 .current-slide.ui-black .mobile-detail-artwork-title {
   text-shadow:
-    0 2px 1px rgba(0, 0, 0, 0.25),
+    0 2px 1px rgba(0, 0, 0, 0.22),
     0 2px 8px rgba(0, 0, 0, 0.22);
 }
 @media (max-width: 600px) {
