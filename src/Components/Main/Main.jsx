@@ -61,6 +61,9 @@ function Main({
   const [direction, setDirection] = useState(null);
   const [phase, setPhase] = useState("idle");
 
+  const isPinchingRef = useRef(false);
+  const touchDistanceRef = useRef(null);
+
   /* ========================================================= */
   /* DETAIL CENTER */
   /* ========================================================= */
@@ -336,6 +339,12 @@ function Main({
   function handleStoryTouchStart(event) {
     if (detailPhase !== "open") return;
 
+    if (event.touches.length >= 2) {
+      isPinchingRef.current = true;
+
+      return;
+    }
+
     const touch = event.touches[0];
 
     storyTouchStartXRef.current = touch.clientX;
@@ -346,23 +355,33 @@ function Main({
     if (detailPhase !== "open") return;
     if (!currentItem.story?.length) return;
 
+    if (isPinchingRef.current) {
+      if (event.touches.length === 0) {
+        isPinchingRef.current = false;
+      }
+
+      return;
+    }
+
     const touch = event.changedTouches[0];
+
+    if (!touch) return;
 
     const deltaX = touch.clientX - storyTouchStartXRef.current;
 
     const deltaY = touch.clientY - storyTouchStartYRef.current;
 
-    // Nếu vuốt ngang thì không xử lý story
+    // Swipe ngang -> story không xử lý
     if (Math.abs(deltaX) > Math.abs(deltaY)) {
       return;
     }
 
-    // Vuốt quá ngắn
-    if (Math.abs(deltaY) < 40) {
+    // Swipe dọc quá ngắn
+    if (Math.abs(deltaY) < 120) {
       return;
     }
 
-    // Vuốt LÊN -> paragraph tiếp theo
+    // Swipe lên
     if (deltaY < 0) {
       setActiveStoryIndex((prev) =>
         Math.min(prev + 1, currentItem.story.length - 1),
@@ -371,7 +390,7 @@ function Main({
       return;
     }
 
-    // Vuốt XUỐNG -> paragraph trước
+    // Swipe xuống
     if (deltaY > 0) {
       setActiveStoryIndex((prev) => Math.max(prev - 1, 0));
     }
@@ -448,6 +467,14 @@ function Main({
     }
   }
 
+  function getTouchDistance(touches) {
+    if (touches.length < 2) return null;
+
+    const dx = touches[0].clientX - touches[1].clientX;
+    const dy = touches[0].clientY - touches[1].clientY;
+
+    return Math.sqrt(dx * dx + dy * dy);
+  }
   function handleTouchStart(event) {
     if (phase !== "idle") return;
 
@@ -455,12 +482,24 @@ function Main({
       return;
     }
 
+    if (event.touches.length >= 2) {
+      isPinchingRef.current = true;
+
+      touchDistanceRef.current = getTouchDistance(event.touches);
+
+      return;
+    }
+
+    isPinchingRef.current = false;
+    touchDistanceRef.current = null;
+
     const touch = event.touches[0];
+
+    if (!touch) return;
 
     touchStartXRef.current = touch.clientX;
     touchStartYRef.current = touch.clientY;
   }
-
   function handleTouchEnd(event) {
     if (phase !== "idle") return;
 
@@ -468,25 +507,40 @@ function Main({
       return;
     }
 
+    // Nếu user vừa pinch zoom thì tuyệt đối không đổi artwork
+    if (isPinchingRef.current) {
+      // Nếu vẫn còn ngón tay trên màn hình thì vẫn đang pinch
+      if (event.touches.length > 0) {
+        return;
+      }
+
+      isPinchingRef.current = false;
+      touchDistanceRef.current = null;
+
+      return;
+    }
+
     const touch = event.changedTouches[0];
+
+    if (!touch) return;
 
     const deltaX = touch.clientX - touchStartXRef.current;
 
     const deltaY = touch.clientY - touchStartYRef.current;
 
     /*
-    Vuốt dọc -> để browser scroll bình thường.
+    Swipe phải thiên về chiều ngang.
   */
-
-    if (Math.abs(deltaY) > Math.abs(deltaX)) {
+    if (Math.abs(deltaY) >= Math.abs(deltaX)) {
       return;
     }
 
     /*
-    Swipe ngang quá ngắn -> bỏ qua.
+    Phải swipe đủ xa mới đổi artwork.
   */
+    const swipeThreshold = 140;
 
-    if (Math.abs(deltaX) < 60) {
+    if (Math.abs(deltaX) < swipeThreshold) {
       return;
     }
 
@@ -526,6 +580,16 @@ function Main({
     }
   }
 
+  function handleTouchMove(event) {
+    if (event.touches.length >= 2) {
+      isPinchingRef.current = true;
+
+      touchDistanceRef.current = getTouchDistance(event.touches);
+
+      return;
+    }
+  }
+
   function updateCenterAudioPosition() {
     if (!artworkContainerRef.current) return;
 
@@ -560,6 +624,7 @@ function Main({
           className="center-view"
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
+          onTouchMove={handleTouchMove}
         >
           <div
             className={`
@@ -757,7 +822,7 @@ function Main({
                   <div className="mobile-detail-info">
                     <p className="mobile-detail-index">
                       {String(currentIndex + 1).padStart(2, "0")} /{" "}
-                      {String(13).padStart(2, "0")}
+                      {String(artworks.length).padStart(2, "0")}
                     </p>
 
                     <p className="mobile-detail-artwork-title">
