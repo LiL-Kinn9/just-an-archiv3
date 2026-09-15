@@ -309,6 +309,9 @@ function Main({
   function handleStoryWheel(event) {
     if (detailPhase !== "open") return;
     if (!currentItem.story?.length) return;
+    if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) {
+      return;
+    }
 
     event.preventDefault();
     event.stopPropagation();
@@ -425,6 +428,24 @@ function Main({
         }, 450);
       });
     }, 450);
+  }
+
+  function handleDetailNavigationWheel(event) {
+    if (detailPhase !== "open") return;
+
+    const isHorizontal = Math.abs(event.deltaX) > Math.abs(event.deltaY);
+
+    if (!isHorizontal) return;
+
+    if (Math.abs(event.deltaX) < 30) return;
+
+    event.preventDefault();
+
+    if (event.deltaX > 0) {
+      handleDetailSwipe("next");
+    } else {
+      handleDetailSwipe("prev");
+    }
   }
 
   function handleTouchStart(event) {
@@ -609,6 +630,7 @@ function Main({
               }}
               onScroll={handleDetailScroll}
               onAnimationEnd={handleSlideEnd}
+              onWheel={handleDetailNavigationWheel}
             >
               {/* =============================================== */}
               {/* CENTER / DESKTOP ARTWORK */}

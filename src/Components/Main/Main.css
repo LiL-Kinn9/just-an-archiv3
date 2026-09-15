@@ -1585,81 +1585,79 @@
     0 2px 1px rgba(0, 0, 0, 0.22),
     0 2px 8px rgba(0, 0, 0, 0.22);
 }
-@media (max-width: 600px) {
-  /* ======================================================= */
-  /* DETAIL SWIPE */
-  /* ======================================================= */
+/* ======================================================= */
+/* DETAIL SWIPE */
+/* ======================================================= */
 
-  /* NEXT: CURRENT -> LEFT */
+/* NEXT: CURRENT -> LEFT */
 
-  .current-slide.detail-swipe-out-next {
-    animation: detailSwipeOutLeft 0.45s cubic-bezier(0.76, 0, 0.24, 1) both;
+.current-slide.detail-swipe-out-next {
+  animation: detailSwipeOutLeft 0.45s cubic-bezier(0.76, 0, 0.24, 1) both;
+}
+
+@keyframes detailSwipeOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
   }
 
-  @keyframes detailSwipeOutLeft {
-    from {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  to {
+    transform: translateX(-100%);
+    opacity: 0.7;
+  }
+}
 
-    to {
-      transform: translateX(-100%);
-      opacity: 0.7;
-    }
+/* NEXT: NEW DETAIL FROM RIGHT */
+
+.current-slide.detail-swipe-in-next {
+  animation: detailSwipeInRight 0.45s cubic-bezier(0.76, 0, 0.24, 1) both;
+}
+
+@keyframes detailSwipeInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0.7;
   }
 
-  /* NEXT: NEW DETAIL FROM RIGHT */
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
-  .current-slide.detail-swipe-in-next {
-    animation: detailSwipeInRight 0.45s cubic-bezier(0.76, 0, 0.24, 1) both;
+/* PREV: CURRENT -> RIGHT */
+
+.current-slide.detail-swipe-out-prev {
+  animation: detailSwipeOutRight 0.45s cubic-bezier(0.76, 0, 0.24, 1) both;
+}
+
+@keyframes detailSwipeOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
   }
 
-  @keyframes detailSwipeInRight {
-    from {
-      transform: translateX(100%);
-      opacity: 0.7;
-    }
+  to {
+    transform: translateX(100%);
+    opacity: 0.7;
+  }
+}
 
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+/* PREV: NEW DETAIL FROM LEFT */
+
+.current-slide.detail-swipe-in-prev {
+  animation: detailSwipeInLeft 0.45s cubic-bezier(0.76, 0, 0.24, 1) both;
+}
+
+@keyframes detailSwipeInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0.7;
   }
 
-  /* PREV: CURRENT -> RIGHT */
-
-  .current-slide.detail-swipe-out-prev {
-    animation: detailSwipeOutRight 0.45s cubic-bezier(0.76, 0, 0.24, 1) both;
-  }
-
-  @keyframes detailSwipeOutRight {
-    from {
-      transform: translateX(0);
-      opacity: 1;
-    }
-
-    to {
-      transform: translateX(100%);
-      opacity: 0.7;
-    }
-  }
-
-  /* PREV: NEW DETAIL FROM LEFT */
-
-  .current-slide.detail-swipe-in-prev {
-    animation: detailSwipeInLeft 0.45s cubic-bezier(0.76, 0, 0.24, 1) both;
-  }
-
-  @keyframes detailSwipeInLeft {
-    from {
-      transform: translateX(-100%);
-      opacity: 0.7;
-    }
-
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
