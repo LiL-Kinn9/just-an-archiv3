@@ -72,6 +72,9 @@ function Main({
   const [activeStoryIndex, setActiveStoryIndex] = useState(0);
   const storyWheelLockedRef = useRef(false);
 
+  const storyTouchStartYRef = useRef(0);
+  const storyTouchStartXRef = useRef(0);
+
   /* ========================================================= */
   /* CURRENT / PREV / NEXT */
   /* ========================================================= */
@@ -325,6 +328,50 @@ function Main({
     setTimeout(() => {
       storyWheelLockedRef.current = false;
     }, 450);
+  }
+
+  function handleStoryTouchStart(event) {
+    if (detailPhase !== "open") return;
+
+    const touch = event.touches[0];
+
+    storyTouchStartXRef.current = touch.clientX;
+    storyTouchStartYRef.current = touch.clientY;
+  }
+
+  function handleStoryTouchEnd(event) {
+    if (detailPhase !== "open") return;
+    if (!currentItem.story?.length) return;
+
+    const touch = event.changedTouches[0];
+
+    const deltaX = touch.clientX - storyTouchStartXRef.current;
+
+    const deltaY = touch.clientY - storyTouchStartYRef.current;
+
+    // Nếu vuốt ngang thì không xử lý story
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+      return;
+    }
+
+    // Vuốt quá ngắn
+    if (Math.abs(deltaY) < 40) {
+      return;
+    }
+
+    // Vuốt LÊN -> paragraph tiếp theo
+    if (deltaY < 0) {
+      setActiveStoryIndex((prev) =>
+        Math.min(prev + 1, currentItem.story.length - 1),
+      );
+
+      return;
+    }
+
+    // Vuốt XUỐNG -> paragraph trước
+    if (deltaY > 0) {
+      setActiveStoryIndex((prev) => Math.max(prev - 1, 0));
+    }
   }
 
   function handleDetailScroll(event) {
@@ -614,7 +661,12 @@ function Main({
 
                       {/* STORY */}
 
-                      <div className="detail-story" onWheel={handleStoryWheel}>
+                      <div
+                        className="detail-story"
+                        onWheel={handleStoryWheel}
+                        onTouchStart={handleStoryTouchStart}
+                        onTouchEnd={handleStoryTouchEnd}
+                      >
                         <div className="detail-story-track">
                           {currentItem.story?.map((paragraph, index) => {
                             const offset = index - activeStoryIndex;

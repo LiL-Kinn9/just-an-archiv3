@@ -1929,3 +1929,8 @@
     pointer-events: none;
   }
 }
+@media (pointer: coarse) {
+  .detail-story {
+    touch-action: none;
+  }
+}
