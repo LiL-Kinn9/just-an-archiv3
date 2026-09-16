@@ -55,8 +55,11 @@ function Main({
   const artworkImgRef = useRef(null);
 
   const [centerAudioPosition, setCenterAudioPosition] = useState(null);
+
   const [detailSwipePhase, setDetailSwipePhase] = useState("idle");
   const [detailSwipeDirection, setDetailSwipeDirection] = useState(null);
+
+  const [detailSwipeTargetIndex, setDetailSwipeTargetIndex] = useState(null);
 
   const [direction, setDirection] = useState(null);
   const [phase, setPhase] = useState("idle");
@@ -419,17 +422,18 @@ function Main({
     if (isNext && !nextItem) return;
     if (!isNext && !prevItem) return;
 
+    const targetIndex = isNext ? currentIndex + 1 : currentIndex - 1;
+
+    // CHỐT item đích ngay từ đầu
+    setDetailSwipeTargetIndex(targetIndex);
+
     setDetailSwipeDirection(direction);
     setDetailSwipePhase("out");
 
     setIsCloseVisible(false);
 
     setTimeout(() => {
-      if (isNext) {
-        setCurrentIndex((prev) => prev + 1);
-      } else {
-        setCurrentIndex((prev) => prev - 1);
-      }
+      setCurrentIndex(targetIndex);
 
       setActiveStoryIndex(0);
 
@@ -443,6 +447,10 @@ function Main({
         setTimeout(() => {
           setDetailSwipePhase("idle");
           setDetailSwipeDirection(null);
+
+          // animation xong mới bỏ snapshot
+          setDetailSwipeTargetIndex(null);
+
           setIsCloseVisible(true);
         }, 450);
       });
@@ -538,7 +546,7 @@ function Main({
     /*
     Phải swipe đủ xa mới đổi artwork.
   */
-    const swipeThreshold = 140;
+    const swipeThreshold = 120;
 
     if (Math.abs(deltaX) < swipeThreshold) {
       return;
@@ -613,6 +621,9 @@ function Main({
     };
   }, [currentIndex, detailPhase]);
 
+  const detailSwipeTargetItem =
+    detailSwipeTargetIndex !== null ? artworks[detailSwipeTargetIndex] : null;
+
   return (
     <main className={`main ${layout}`}>
       {/* ===================================================== */}
@@ -628,12 +639,35 @@ function Main({
         >
           <div
             className={`
-              center-stage
-              ${direction ? `is-${direction}` : ""}
-              phase-${phase}
-              ${detailPhase !== "closed" ? `detail-${detailPhase}` : ""}
-            `}
+    center-stage
+    ${direction ? `is-${direction}` : ""}
+    phase-${phase}
+    ${detailPhase !== "closed" ? `detail-${detailPhase}` : ""}
+  `}
           >
+            {detailSwipePhase !== "idle" && detailSwipeTargetItem && (
+              <div
+                className="detail-swipe-background"
+                style={{
+                  backgroundColor: detailSwipeTargetItem.background,
+
+                  "--swipe-text-color":
+                    detailSwipeTargetItem.uiTheme === "white"
+                      ? "#f5f5f5"
+                      : "#000000",
+
+                  "--swipe-subtext-color":
+                    detailSwipeTargetItem.uiTheme === "white"
+                      ? "#f5f5f58a"
+                      : "#0000008a",
+                }}
+              >
+                <h1 className="detail-swipe-background-title">
+                  {detailSwipeTargetItem.storyTitle}
+                </h1>
+              </div>
+            )}
+
             {/* ================================================= */}
             {/* LEFT 20% INTERACTION ZONE */}
             {/* ================================================= */}
