@@ -649,23 +649,10 @@ function Main({
               <div
                 className="detail-swipe-background"
                 style={{
-                  backgroundColor: detailSwipeTargetItem.background,
-
-                  "--swipe-text-color":
-                    detailSwipeTargetItem.uiTheme === "white"
-                      ? "#f5f5f5"
-                      : "#000000",
-
-                  "--swipe-subtext-color":
-                    detailSwipeTargetItem.uiTheme === "white"
-                      ? "#f5f5f58a"
-                      : "#0000008a",
+                  backgroundColor:
+                    detailSwipeTargetItem.uiTheme === "white" ? "#000" : "#000",
                 }}
-              >
-                <h1 className="detail-swipe-background-title">
-                  {detailSwipeTargetItem.storyTitle}
-                </h1>
-              </div>
+              ></div>
             )}
 
             {/* ================================================= */}
