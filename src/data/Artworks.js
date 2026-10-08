@@ -2326,340 +2326,475 @@ const artworks = [
     background: "#000",
     uiTheme: "white",
     story: [
-      "Dọc theo những hành lang cũ của Mother of Mothers.",
-      "Ánh sáng xuyên qua cửa kính màu rồi vỡ thành từng mảng trên nền đá.",
-      "Đỏ.",
-      "Vàng.",
-      "Xanh thẫm.",
-      "Drag cõng Kristin đi giữa chúng.",
-      "Từ thư viện phủ bụi.",
-      "Qua những pho tượng không còn nguyên vẹn.",
-      "Cho tới những bệ quỳ xưng tội nằm sâu phía sau đại sảnh.",
-      "Cuốn The Miracle of Pains vẫn được nàng giữ trước ngực.",
-      "Drag không thích nó.",
-      "Không thích cái tên.",
-      "Không thích cảm giác bất an mỗi lần những chữ ấy lọt vào tầm mắt.",
-      "Nhưng hắn cũng chẳng hỏi nàng đã đọc được gì.",
-      "Có lẽ vì hắn không quan tâm.",
-      "Hoặc có lẽ.",
-      "Hắn đang học cách không ép một người phải nói những điều họ chưa muốn nói.",
-      "Một điều kỳ lạ đối với kẻ từng chẳng biết kiên nhẫn là gì.",
-      '" Khoan, dừng lại một chút. "',
-      "Drag dừng chân.",
-      "Hơi ngoảnh mặt.",
-      '" Tại sao? "',
-      '" Anh không thấy mệt ư? "',
-      "Hắn quay lại nhìn phía trước.",
-      '" Không. "',
-      '" Kể cả khi phải cõng tôi lâu như vậy? "',
-      '" Ngươi nhẹ. "',
-      "Kristin im lặng.",
-      "Có những câu hắn nói hoàn toàn không có ý nghĩa gì khác.",
-      "Nhưng không hiểu sao.",
-      "Chúng thường khiến nàng phải im lặng vài nhịp.",
-      '" Thôi. Cho tôi xuống. "',
-      "Drag cúi người.",
-      "Đôi chân nàng chạm nền đá.",
-      "Hắn vừa đứng thẳng trở lại.",
-      "Kristin đã ở ngay trước mặt.",
-      "Gần.",
-      "Gần hơn mức một cuộc trò chuyện cần có.",
-      "Drag không lùi.",
-      "Nàng tiến thêm nửa bước.",
-      "Hắn nhìn xuống.",
-      '" Ngươi đang làm gì? "',
-      '" Tôi chưa biết. "',
-      "Một tay Kristin đặt lên vai hắn.",
-      '" Nhưng tôi muốn thử một thứ. "',
-      "Drag còn chưa kịp hỏi thứ gì.",
-      "Nàng đã ghì hắn xuống chiếc ghế dài phía sau.",
-      "Lưng hắn va vào gỗ.",
-      "Hai cổ tay bị giữ xuống hai bên.",
-      "Drag bất động.",
-      "Một cảnh tượng có phần buồn cười.",
-      "Kristin thừa biết.",
-      "Và hắn cũng thừa biết.",
-      "Nếu muốn.",
-      "Hắn chỉ cần nhấc một cổ tay.",
-      "Có lẽ nàng sẽ chẳng giữ nổi hắn quá một nhịp thở.",
-      "Nhưng hắn không làm.",
-      "Sâu trong lồng ngực.",
-      "Một âm thanh vang lên.",
-      "Kình kịch.",
-      "Rồi thêm một lần.",
-      "Kình kịch.",
-      "Hắn chẳng thích âm thanh ấy.",
-      "Không phải vì nó đau.",
-      "Mà vì hắn không thể ra lệnh cho nó dừng.",
-      "Kristin cúi thấp người.",
-      "Ánh mắt nàng đi từ cằm.",
-      "Tới môi.",
-      "Rồi dừng lại nơi đôi mắt hắn.",
-      "Drag vẫn im lặng.",
-      "Hắn đã trải qua những thứ đáng sợ hơn rất nhiều.",
-      "Ấy vậy mà một người phụ nữ đang giữ hai cổ tay hắn lại khiến hắn chẳng biết phải làm gì.",
-      "Tóc Kristin rơi xuống hai bên mặt hắn.",
-      "Hơi thở nàng chạm rất gần.",
-      '" Sao anh không thoát ra? "',
-      "Drag nhìn nàng.",
-      '" Ngươi đang giữ ta. "',
-      "Kristin bật cười.",
-      '" Anh thừa sức mà. "',
-      "Hắn im lặng.",
-      "Nàng biết.",
-      "Điều phiền phức hơn.",
-      "Là hắn biết nàng biết.",
-      "Kristin buông một cổ tay.",
-      "Bàn tay nàng chạm lên má hắn.",
-      "Ngón cái lướt qua môi dưới.",
-      "Drag hơi nghiêng mặt vào lòng bàn tay ấy.",
-      "Chỉ một chút.",
-      "Một chuyển động quá nhỏ để gọi là chủ động.",
-      "Nhưng cũng quá rõ để có thể giả vờ rằng nó không xảy ra.",
-      "Nụ cười nơi Kristin chậm rãi biến mất.",
-      "Nàng cúi xuống.",
-      "Môi chạm môi.",
-      "Rất nhẹ.",
-      "Rồi rời đi.",
-      "Drag mở mắt.",
-      "Nàng vẫn ở đó.",
-      "Hắn nhìn nàng.",
-      '" Chỉ vậy thôi? "',
-      "Kristin nhướng mày.",
-      '" Thất vọng à? "',
-      '" Ta không nói thế. "',
-      '" Mặt anh nói thế. "',
-      "Drag cau mày.",
-      "Kristin định lùi lại.",
-      "Bàn tay vừa được trả tự do của hắn đặt lên eo nàng.",
-      "Nàng dừng.",
-      "Có lẽ chính hắn cũng bất ngờ trước hành động đó.",
-      "Nhưng lần này.",
-      "Hắn không rút tay về.",
-      "Drag kéo nàng trở lại.",
-      "Và hôn nàng trước.",
-      "Không còn dè dặt như lần đầu.",
-      "Kristin khựng lại.",
-      "Chỉ trong một thoáng.",
-      "Rồi bàn tay nàng siết lấy cổ áo hắn.",
-      "Drag ngồi thẳng dậy.",
-      "Một tay giữ eo nàng.",
-      "Tay còn lại đặt nơi gáy.",
+      '" Có những thứ sẽ không mãi ở lại với chúng ta. "',
+
+      '" Nhưng cũng có những thứ sẽ mãi ở lại trong ta. "',
+
+      '" Chỉ tiếc là con người không bao giờ sẽ biết. "',
+
+      '" Hoặc từng biết tới sự tồn tại của chúng. "',
+
+      '" Bốn kỵ sĩ. Bốn con ngựa. Bốn tai ương. "',
+
+      '" Trước khi cơn giông tới. "',
+
+      '" Họ vẫn luôn ở lại tới những giờ phút cuối cùng. "',
+
+      '" Nhưng họ là ai? "',
+
+      '" Chẳng là ai cả. "',
+
+      "Từng bước chân hắn giẫm lên những mảnh kính vỡ vụn dưới nền gạch.",
+
+      "Những câu chuyện cũ kĩ từ môi nàng len lỏi khắp hành lang nhà thờ.",
+
+      "Chẳng hiểu sao hắn lại muốn nghe những thứ này tới vậy.",
+
+      "Có lẽ chính hắn cũng không hiểu.",
+
+      "Chỉ là một chút ấm áp cuối cùng của mùa thu.",
+
+      "Một thứ gì đó hắn muốn ấp ủ thêm một chút.",
+
+      "Dù chính hắn còn chẳng biết vì sao.",
+
+      "Kristin khẽ tựa mặt lên bờ vai hắn.",
+
+      "Hơi thở nàng chạm nhẹ vào phần cổ.",
+
+      "Nhịp bước Drag chậm lại.",
+
+      '" Hay anh dẫn tôi về lại nhà nguyện? "',
+
+      '" Không. Ta không muốn. "',
+
+      '" Kệ anh. Nhưng tôi muốn. "',
+
+      "Hắn nhăn mặt.",
+
+      "Hắn biết nếu tiếp tục cãi.",
+
+      "Có lẽ hắn sẽ chẳng bao giờ thắng nổi người phụ nữ ngang bướng này.",
+
+      "Nhưng việc nghe lời nàng.",
+
+      "Lại chẳng khó chịu như hắn nghĩ.",
+
+      "Hai người trở về căn phòng sặc mùi linh thiêng.",
+
+      "Ánh ban mai cuối cùng cũng xuyên qua những khe nứt trên tường.",
+
+      "Từng dải sáng nhợt nhạt cắt ngang không gian.",
+
+      "Drag bước tới chiếc ghế dài gần bục thờ.",
+
+      "Khom người.",
+
+      "Kristin chậm rãi rời khỏi lưng.",
+
+      "Nhưng hai tay nàng vẫn kẹt lại ở cổ hắn.",
+
+      "Một lúc.",
+
+      "Rồi thêm một lúc nữa.",
+
+      "Khoảng cách giữa hai người bỗng trở nên gần hơn mức cần thiết.",
+
+      '" Sao ngươi chưa buông? "',
+
+      "Kristin không trả lời.",
+
+      "Chỉ nhìn chăm chăm vào đôi mắt hắn.",
+
+      "Môi nàng khẽ hé.",
+
+      "Hơi thở ấm áp chạm vào môi hắn.",
+
+      "Lại là ánh mắt ấy.",
+
+      "Lại là gương mặt hắn bị giữ lại trong võng mạc của nàng.",
+
+      "Chỉ mỗi hắn.",
+
+      "Không biết từ lúc nào.",
+
+      "Hai tay Drag đã đặt lên hông nàng.",
+
+      '" Dragalon. "',
+
+      '" Ừ? "',
+
+      '" Anh làm gì thế? "',
+
+      "Một câu hỏi tưởng chừng rất dễ.",
+
+      "Nhưng trong khoảnh khắc ấy.",
+
+      "Nó lại trở thành câu khó nhất nàng từng hỏi hắn.",
+
+      "Một bàn tay Kristin vòng ra sau gáy.",
+
+      "Kéo hắn lại gần hơn.",
+
+      "Gương mặt hắn hiện rõ trong mắt nàng.",
+
+      "Giọng nàng hạ xuống.",
+
+      '" Em hỏi. "',
+
+      '" Anh làm gì thế? "',
+
+      "Có lẽ lần này nàng thật sự muốn một câu trả lời thành thật.",
+
+      "Drag lảng mặt sang bên.",
+
+      "Những câu hỏi trong mắt nàng còn khó chịu hơn cả lời nói.",
+
+      "Hắn muốn tránh.",
+
+      "Muốn che lấp những thứ bản thân còn chưa hiểu.",
+
+      "Nhưng Kristin chạm tay lên má hắn.",
+
+      "Kéo ánh mắt ấy trở lại.",
+
+      '" Ta không biết. "',
+
+      "Hai khóe môi nàng cong lên.",
+
+      "Một tiếng cười rất nhẹ.",
+
+      '" Cuối cùng anh cũng chịu nói thật. "',
+
+      "Hắn kéo eo nàng sát vào người mình.",
+
+      '" Anh sẽ làm gì tiếp theo? "',
+
+      '" Khoá miệng ngươi lại. "',
+
       "Khoảng cách giữa hai người biến mất.",
-      "Nhịp thở dần hỗn loạn.",
-      "Hắn không hiểu vì sao.",
-      "Không hiểu tại sao cơ thể một kẻ chưa từng sợ cái chết lại trở nên vụng về trước một đôi môi.",
-      "Có lẽ có những thứ chẳng cần hiểu.",
-      "Ít nhất.",
-      "Kristin dường như nghĩ vậy.",
-      "Nàng khẽ cắn môi dưới hắn.",
-      "Drag lập tức siết eo nàng.",
-      "Kristin bật ra một tiếng cười ngay giữa khoảng cách gần như không còn.",
-      '" Đau. "',
-      '" Ngươi vừa cắn ta. "',
-      '" Có vẻ anh không thích. "',
-      "Drag nhìn môi nàng.",
-      "Một sự khiêu khích nhỏ.",
-      "Và như thường lệ.",
-      "Hắn chẳng phải kẻ giỏi nhường nhịn.",
-      "Hắn cắn trả.",
-      "Kristin khẽ rít lên.",
-      "Một vị tanh thoảng giữa hai người.",
-      "Máu.",
-      "Drag dừng.",
-      "Một giọt đỏ nằm nơi khóe môi nàng.",
-      "Chỉ một giọt.",
-      "Nhưng hắn nhìn lâu hơn cần thiết.",
-      "Máu của nàng luôn khiến hắn khó chịu theo cách máu của bất kỳ kẻ nào khác chưa từng làm được.",
-      "Kristin lướt qua vết thương.",
-      '" Sao vậy? "',
-      "Drag đưa ngón cái lau giọt máu.",
-      "Màu đỏ bám lại trên đầu ngón tay.",
-      "Hắn nhìn.",
-      "Rồi lại kéo nàng về gần.",
-      "Chiếc ghế dài phát ra một tiếng kẽo kẹt.",
-      "Kristin vòng tay quanh cổ hắn.",
-      "Drag đứng lên.",
-      "Nàng được nhấc khỏi mặt đất.",
-      "Một hơi thở ngắn thoát khỏi môi nàng.",
-      "Hắn xoay người.",
-      "Lưng Kristin chạm vào bức tường đá.",
-      "Ngay phía trên.",
-      "Bức tượng người đàn ông vẫn dang rộng hai tay.",
-      "Drag vô thức ngẩng lên.",
-      "Nụ cười bằng đá vẫn còn đó.",
-      "Theo dõi.",
-      "Phán xét.",
-      "Hoặc có lẽ chỉ là một bức tượng.",
-      "Nhưng hắn ghét nó.",
-      "Kristin nhận ra ánh mắt ấy.",
-      '" Anh lại nhìn ông ấy. "',
-      '" Đừng nhắc tới. "',
-      "Nàng đặt tay lên mặt hắn.",
-      "Kéo ánh nhìn trở lại.",
-      '" Vậy thì nhìn tôi. "',
-      "Hắn nhìn nàng.",
-      "Chỉ nàng.",
-      "Kristin hôn hắn.",
-      "Ngay dưới ánh mắt của thứ mà hắn căm ghét.",
-      "Không hiểu vì sao.",
-      "Điều đó khiến hắn dễ chịu.",
-      "Có lẽ vì lần đầu tiên.",
-      "Trong một nơi được xây nên để khiến con người ngước nhìn thần linh.",
-      "Hắn lại chỉ muốn nhìn một con người.",
-      "Hai người ở gần nhau rất lâu.",
-      "Đủ lâu để những lời chế giễu biến mất.",
-      "Đủ lâu để sự cảnh giác trong Drag bắt đầu lỏng ra.",
-      "Một chiếc cúc áo rơi xuống nền đá.",
-      "Keng.",
-      "Hắn nhìn xuống.",
-      '" Ngươi đừng quậy nữa. "',
-      '" Anh có thể ngăn tôi. "',
-      "Drag giữ lấy cổ tay nàng.",
-      "Kristin nhìn hắn.",
-      "Hắn có thể ngăn.",
-      "Nhưng thay vì đẩy nàng ra.",
-      "Drag đặt bàn tay ấy lên ngực mình.",
-      "Nơi trái tim vẫn đang phản bội vẻ bình thản trên khuôn mặt.",
-      "Kình kịch.",
-      "Kristin cảm nhận được.",
-      '" Ở đây à? "',
-      "Drag nhìn nàng.",
-      '" Gì? "',
-      '" Tim anh. "',
-      '" Ngươi hỏi chuyện đó để làm gì? "',
-      "Kristin khẽ cười.",
-      '" Vì nó đập nhanh quá. "',
-      '" Không có. "',
-      '" Có. "',
-      "Nàng áp lòng bàn tay sát hơn.",
-      "Kình kịch.",
-      "Hắn cau mày.",
-      "Kình kịch.",
-      "Một âm thanh thật đáng ghét.",
-      "Bởi lần này.",
-      "Hắn không còn có thể giả vờ rằng mình chẳng cảm thấy gì.",
-      "Kristin ghé sát tai hắn.",
-      '" Tôi nghe thấy mà. "',
-      "Drag kéo nàng ra một chút.",
-      "Chỉ đủ để nhìn mặt.",
-      '" Ngươi nói nhiều quá. "',
-      "Kristin giữ lấy gáy hắn.",
-      "Hắn nhắm mắt.",
-      "Và rồi.",
-      "Một điều hiếm hoi xảy ra.",
-      "Hắn ngừng quan sát căn phòng.",
-      "Ngừng nhìn cửa ra vào.",
-      "Ngừng nghe những âm thanh phía sau.",
-      "Ngừng quan tâm tới bức tượng.",
-      "Ngừng tìm kiếm một mối nguy hiểm có thể xuất hiện.",
-      "Trong một khoảnh khắc ngắn ngủi.",
-      "Kẻ đã rơi khỏi bầu trời cho phép bản thân không đề phòng.",
-      "Không phải vì nơi này an toàn.",
-      "Mà bởi hắn tin người đang đứng trước mặt.",
-      "Một sự tin tưởng hắn chưa từng gọi tên.",
-      "Và cũng là thứ khiến nhát dao sau đó đau hơn bất cứ vết thương nào trên da thịt.",
-      "Kristin mở mắt.",
-      "Bàn tay nàng vẫn đặt trên ngực trái hắn.",
-      "Ánh mắt hạ xuống.",
-      "Một nhịp.",
-      "Rồi hai.",
-      "Drag không nhận ra.",
-      "Nàng lại hôn hắn.",
-      "Sâu hơn.",
-      "Hắn giữ nàng sát vào mình.",
-      "Rồi một cơn đau bỏng rát xé ngang khoang miệng.",
-      "Đôi mắt Drag mở bừng.",
-      "Hắn giật đầu ra.",
-      "Máu trào khỏi khóe môi.",
-      "Hơi thở nghẹn lại.",
-      "Bàn tay lập tức chạm lên miệng.",
-      "Không đúng.",
-      "Có thứ gì đó đã biến mất.",
-      "Không.",
-      "Hai thứ.",
-      "Máu chạy qua những kẽ ngón tay Kristin.",
-      "Một mẩu thịt rơi xuống nền đá.",
-      "Drag nhìn nàng.",
-      "Kristin chậm rãi lấy khỏi miệng phần lưỡi vừa bị xé khỏi hắn.",
-      "Hắn bất động.",
-      "Không phải vì đau.",
-      "Đau đớn chưa bao giờ đủ sức khiến hắn bất động.",
-      "Mà bởi trong đầu hắn.",
-      "Mọi thứ vừa diễn ra trước đó vẫn còn tồn tại.",
-      "Bàn tay trên má.",
-      "Nụ hôn.",
-      "Nhịp tim.",
-      "Câu nói.",
-      '" Vậy thì nhìn em. "',
-      "Và giờ đây.",
-      "Cũng chính người ấy đang cầm một phần cơ thể hắn trong tay.",
-      "Vết thương trong miệng bắt đầu co giật.",
-      "Các thớ thịt mới nhanh chóng nối lại.",
-      "Kristin nhìn.",
-      "Không chớp mắt.",
-      "Drag lùi nửa bước.",
-      "Máu bắt đầu kết lại nơi bàn tay.",
-      "Một lưỡi kiếm dần thành hình.",
-      "Không phải vì hắn đã quyết định giết nàng.",
-      "Mà bởi cơ thể hắn đã quen tự bảo vệ trước mọi thứ gây đau.",
-      "Nhưng chính hắn lại chậm hơn bản năng.",
-      "Một ánh vàng lóe lên.",
-      "Phập.",
+
+      "Bờ môi nàng mềm hơn hắn tưởng.",
+
+      "Ấm.",
+
+      "Mọng.",
+
+      "Một thứ cảm giác hắn chưa từng có tên để gọi.",
+
+      "Nàng ngả người xuống chiếc ghế phía sau.",
+
+      "Hắn cũng bị kéo theo.",
+
+      "Một tay vẫn giữ lấy eo.",
+
+      "Tay kia trượt dọc sống lưng.",
+
+      "Từng lớp vải bị ép sát vào cơ thể.",
+
+      "Hơi ấm từ nàng xuyên qua tất cả.",
+
+      "Drag chẳng còn quan tâm căn phòng này khiến mình khó chịu tới đâu.",
+
+      "Kristin cắn nhẹ lên môi hắn.",
+
+      "Không đủ đau.",
+
+      "Chỉ vừa đủ để khiến hắn khựng lại.",
+
+      "Một lời cảnh cáo.",
+
+      "Hoặc có lẽ chỉ là chút sĩ diện cuối cùng nàng cố giữ.",
+
+      "Drag chẳng buông.",
+
+      "Hắn kéo nàng sát hơn.",
+
+      "Một bàn tay từ hông trượt xuống thấp hơn.",
+
+      "Rồi lại vòng lên.",
+
+      "Những ngón tay chạm qua lớp vải mỏng.",
+
+      "Cơ thể nàng nóng hơn hắn tưởng.",
+
+      "Nóng tới mức hắn có cảm giác lòng bàn tay mình cũng đang bị thiêu.",
+
+      "Kristin khẽ siết lấy vai hắn.",
+
+      "Hơi thở nàng trở nên gấp hơn.",
+
+      "Drag nhận ra.",
+
+      "Và điều đó chỉ khiến hắn muốn tiến gần thêm.",
+
+      "Hắn nâng nàng dậy.",
+
+      "Lưng nàng chạm vào phần tường lạnh phía sau.",
+
+      "Một sự đối lập khiến nàng khẽ rùng mình.",
+
+      "Drag nhìn thấy.",
+
+      "Nhưng chẳng hỏi.",
+
+      "Môi hắn lại tìm tới nàng.",
+
+      "Một tay giữ lấy đùi.",
+
+      "Tay kia chậm rãi lần lên phần eo.",
+
+      "Rồi cao hơn.",
+
+      "Những ngón tay khẽ siết.",
+
+      "Kristin lập tức cắn mạnh hơn lên môi hắn.",
+
+      "Drag khẽ cau mày.",
+
+      "Nhưng lần này.",
+
+      "Hắn lại thấy thích cái cách nàng phản ứng.",
+
+      "Một chuyện rất phiền phức.",
+
+      "Và hắn chẳng còn muốn suy nghĩ thêm.",
+
+      "Bàn tay nàng rời khỏi vai.",
+
+      "Chậm rãi đặt lên lồng ngực hắn.",
+
+      "Ngay nơi trái tim.",
+
+      '" Tim của anh. "',
+
       "Drag khựng lại.",
-      "Hắn từ từ nhìn xuống.",
-      "Một thanh kiếm vàng xuyên qua ngực trái.",
-      "Ngay vị trí bàn tay Kristin vừa đặt lên.",
-      "Ngay nơi trái tim nàng vừa nghe thấy.",
-      "Máu chảy dọc lưỡi kiếm.",
-      "Kristin vẫn đứng rất gần.",
-      "Gần như vài giây trước.",
-      "Gần đến mức hắn vẫn cảm nhận được hơi ấm của nàng.",
-      "Drag nhìn nàng.",
+
+      '" Sao? "',
+
+      '" Nhanh quá. "',
+
+      "Kình kịch.",
+
+      "Kình kịch.",
+
+      "Âm thanh ấy vọng qua từng mạch máu.",
+
+      "Lớn tới mức hắn có cảm giác nàng có thể nghe rõ từng nhịp.",
+
+      "Hắn không thích điều đó.",
+
+      "Không thích việc cơ thể mình đang nói thay cho những thứ hắn chưa từng thừa nhận.",
+
+      "Nhưng hắn cũng không đẩy bàn tay ấy ra.",
+
+      "Kristin vẫn giữ ở đó.",
+
+      "Đầu ngón tay khẽ ấn xuống.",
+
+      "Như thể muốn cảm nhận rõ hơn.",
+
+      "Kình kịch.",
+
+      "Kình kịch.",
+
+      "Drag cúi xuống.",
+
+      "Môi lại chạm vào cổ nàng.",
+
+      "Hơi thở nóng hổi lướt qua da.",
+
+      "Kristin khẽ nghiêng đầu.",
+
+      "Một cử động rất nhỏ.",
+
+      "Nhưng đủ để hắn hiểu.",
+
+      "Hắn không còn để tâm tới bất cứ thứ gì khác.",
+
+      "Không hành lang.",
+
+      "Không những tiếng động xa xôi.",
+
+      "Không cả những ký ức khiến hắn khó chịu lúc bước vào nơi này.",
+
+      "Chỉ còn nàng.",
+
+      "Chỉ còn hơi thở.",
+
+      "Da thịt.",
+
+      "Và nhịp tim không chịu nghe lời.",
+
+      "Có lẽ đó là lúc hắn thất thủ.",
+
+      "Không phải vì yếu hơn.",
+
+      "Chỉ là hắn đã thôi đề phòng.",
+
+      "Bàn tay Kristin vẫn ở trên ngực.",
+
+      "Tay còn lại chậm rãi trượt xuống.",
+
+      "Drag cảm nhận từng chuyển động.",
+
+      "Nhưng không ngăn.",
+
+      "Hắn chỉ kéo nàng trở lại gần hơn.",
+
+      "Nụ hôn sâu thêm.",
+
+      "Khoảng cách giữa hai cơ thể gần như bị xé bỏ.",
+
+      "Người phàm.",
+
+      "Người trời.",
+
+      "Chẳng còn quan trọng.",
+
+      "Ít nhất với hắn.",
+
+      "Rồi một cơn nhói chạy dọc cổ họng.",
+
+      "Drag khựng lại.",
+
+      "Máu tràn xuống khoé miệng.",
+
+      "Hắn mở mắt.",
+
+      "Kristin vẫn ở rất gần.",
+
+      "Quá gần.",
+
+      "Gần tới mức hắn còn cảm nhận được hơi thở của nàng trên mặt.",
+
+      "Hắn thử gọi tên nàng.",
+
+      "Không có âm thanh.",
+
+      "Một khoảng trống nóng rát nằm trong miệng.",
+
+      "Cơn lạnh lập tức chạy dọc sống lưng.",
+
+      "Drag lùi lại.",
+
+      "Một bước.",
+
+      "Chưa đủ.",
+
+      "Một cơn đau khác lập tức xuất hiện thấp hơn.",
+
+      "Ngay nơi bàn tay nàng vừa đi qua.",
+
+      "Hai đầu gối hắn chao đảo.",
+
+      "Drag khuỵu xuống.",
+
+      "Máu nhỏ xuống nền đá.",
+
+      "Tách.",
+
+      "Tách.",
+
+      "Kristin vẫn đứng trước mặt.",
+
+      "Nhưng ánh mắt đã thay đổi.",
+
+      "Lạnh hơn.",
+
+      "Nặng hơn.",
+
+      "Như thể sự ấm áp vừa rồi chưa từng tồn tại.",
+
+      "Nàng đưa hai ngón tay lên miệng.",
+
+      "Chậm rãi kéo ra một mẩu thịt đỏ tươi.",
+
+      "Drag nhìn.",
+
       "Không hiểu.",
-      "Không giận dữ.",
-      "Chưa thể.",
-      "Cơn giận cần một câu chuyện rõ ràng.",
-      "Còn trong đầu hắn lúc này.",
-      "Không thứ gì còn rõ ràng nữa.",
-      "Kristin đưa tay lau vệt máu nơi khóe môi hắn.",
-      "Vẫn nhẹ nhàng.",
-      "Chính sự dịu dàng ấy mới khiến mọi thứ trở nên tàn nhẫn.",
-      "Nàng nhìn phần lưỡi trong tay.",
-      "Rồi nhìn vết thương đang tự sinh lại.",
-      "Thanh kiếm vàng được đẩy sâu hơn.",
-      "Một âm thanh vang lên trong lồng ngực hắn.",
+
+      "Rồi nhận ra.",
+
+      "Phần lưỡi của chính mình.",
+
+      "Không thể nào.",
+
+      "Hắn nhìn nàng.",
+
+      "Muốn hỏi.",
+
+      "Muốn biết tại sao.",
+
+      "Nhưng tất cả chỉ mắc kẹt lại trong cổ họng.",
+
+      "Kristin không giải thích.",
+
+      "Không xin lỗi.",
+
+      "Chỉ nhìn hắn bằng sự bình thản khiến mọi câu hỏi càng trở nên nặng nề.",
+
+      "Rồi một cơn nhói khác xuất hiện.",
+
+      "Ngay giữa lồng ngực.",
+
+      "Drag khựng người.",
+
+      "Một thứ kim loại lạnh toát vừa xuyên qua trái tim.",
+
+      "Bàn tay hắn vô thức đưa lên.",
+
+      "Chuôi kiếm.",
+
+      "Một thanh kiếm bằng vàng.",
+
+      "Máu bắt đầu bò qua những khe ngón tay.",
+
+      "Kristin bước tới.",
+
+      "Từng bước.",
+
+      "Nhất động nhất cử đều bình tĩnh tới đáng sợ.",
+
+      '" Sao anh lại nói dối? "',
+
+      "Drag nhìn nàng.",
+
+      "Vẫn không hiểu.",
+
+      "Có lẽ hắn mới là người nên hỏi câu đó.",
+
+      "Kristin đặt tay lên chuôi kiếm.",
+
+      "Ngay nơi bàn tay ấy vừa áp lên để nghe nhịp tim.",
+
+      "Rồi nhấn.",
+
+      "Lưỡi kiếm tiến sâu hơn.",
+
+      "Xé qua phần thịt.",
+
+      "Chạm vào một thứ nằm sâu bên trong.",
+
       "Keng.",
-      "Không phải xương.",
+
+      "Một âm thanh kim loại khô lạnh vang lên trong lồng ngực.",
+
       "Kristin khựng lại.",
-      "Drag cũng vậy.",
-      "Có thứ gì đó bằng kim loại nằm rất sâu bên trong hắn.",
-      "Lưỡi kiếm vừa chạm phải nó.",
-      "Ánh mắt Kristin thay đổi.",
-      "Những nghi ngờ cuối cùng biến mất.",
-      "Drag nhìn thấy điều đó.",
-      "Và lần đầu tiên kể từ khi gặp nàng.",
-      "Hắn ước mình không hiểu được ánh mắt Kristin.",
-      "Nàng ghé sát vào tai.",
-      "Hơi thở vẫn còn nóng.",
-      "Vẫn là hơi thở của người vừa hôn hắn.",
-      '" Giờ thì em biết chắc đó là anh rồi. "',
-      "Một khoảng lặng.",
-      "Rất ngắn.",
-      "Nhưng đối với hắn.",
-      "Dài hơn cả quãng đường từ thiên đàng xuống mặt đất.",
+
+      "Chỉ một nhịp.",
+
+      "Rồi ánh mắt nàng trở nên chắc chắn.",
+
+      "Nàng cúi xuống.",
+
+      "Ghép môi sát bên tai hắn.",
+
+      "Giọng rất nhỏ.",
+
+      "Nhưng rõ tới mức không thể nhầm.",
+
       '" Lucifer. "',
-      "Cái tên ấy quay trở lại.",
-      "Không phải Dragalon.",
-      "Không phải cái tên vụng về hắn đã tự nhặt lấy giữa một con phố xa lạ.",
-      "Mà là cái tên thuộc về một nơi hắn đã rời bỏ.",
-      "Một cái tên gắn với bầu trời.",
-      "Với những ký ức hắn không muốn nhớ.",
-      "Và trong khoảnh khắc đó.",
-      "Thứ khiến hắn đau nhất.",
-      "Không phải lưỡi kiếm xuyên qua trái tim.",
-      "Mà là việc Kristin đã biết cái tên ấy.",
-      "Trong khi hắn chưa từng trao nó cho nàng.",
     ],
   },
   {
