@@ -55,6 +55,7 @@ function Main({
   const artworkImgRef = useRef(null);
 
   const [centerAudioPosition, setCenterAudioPosition] = useState(null);
+  const [isAudioReady, setIsAudioReady] = useState(false);
 
   const [detailSwipePhase, setDetailSwipePhase] = useState("idle");
   const [detailSwipeDirection, setDetailSwipeDirection] = useState(null);
@@ -624,6 +625,23 @@ function Main({
   const detailSwipeTargetItem =
     detailSwipeTargetIndex !== null ? artworks[detailSwipeTargetIndex] : null;
 
+  useEffect(() => {
+    if (layout !== "center") {
+      setIsAudioReady(false);
+      return;
+    }
+
+    setIsAudioReady(false);
+
+    const timer = setTimeout(() => {
+      setIsAudioReady(true);
+    }, 1000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [layout, currentIndex]);
+
   return (
     <main className={`main ${layout}`}>
       {/* ===================================================== */}
@@ -721,7 +739,6 @@ function Main({
               {/* =============================================== */}
               {/* CENTER / DESKTOP ARTWORK */}
               {/* =============================================== */}
-
               <div
                 ref={artworkContainerRef}
                 className="slide-artwork"
@@ -735,11 +752,9 @@ function Main({
                   onImageLoad={updateCenterAudioPosition}
                 />
               </div>
-
               {/* =============================================== */}
               {/* DESKTOP DETAIL */}
               {/* =============================================== */}
-
               {isDetailOpen && (
                 <div className="desktop-detail">
                   <div className="detail-layout">
@@ -817,11 +832,9 @@ function Main({
                   </div>
                 </div>
               )}
-
               {/* =============================================== */}
               {/* MOBILE DETAIL */}
               {/* =============================================== */}
-
               {isDetailOpen && (
                 <div className="mobile-detail">
                   {/* MOBILE ARTWORK */}
@@ -834,9 +847,18 @@ function Main({
                     />
                   </div>
 
-                  {/* chừa vị trí cho AudioPlayer */}
+                  {/* MOBILE STICKY AUDIO */}
 
-                  <div className="mobile-detail-audio-space" />
+                  {currentItem.audio && (
+                    <div className="mobile-audio-sticky">
+                      <AudioPlayer
+                        audioSrc={currentItem.audio}
+                        uiTheme={uiTheme}
+                        isUiVisible={shouldShowAudio}
+                        isReady={isAudioReady}
+                      />
+                    </div>
+                  )}
 
                   {/* MOBILE INFO */}
 
@@ -878,22 +900,23 @@ function Main({
                   </div>
                 </div>
               )}
-
               {/* =============================================== */}
               {/* AUDIO */}
               {/* =============================================== */}
-
               {currentItem.audio && (
-                <AudioPlayer
-                  audioSrc={currentItem.audio}
-                  uiTheme={uiTheme}
-                  isUiVisible={shouldShowAudio}
-                />
+                <div className="desktop-main-audio">
+                  <AudioPlayer
+                    audioSrc={currentItem.audio}
+                    uiTheme={uiTheme}
+                    isUiVisible={shouldShowAudio}
+                    isReady={isAudioReady}
+                  />
+                </div>
               )}
+
               {/* =============================================== */}
               {/* CLOSE BUTTON */}
               {/* =============================================== */}
-
               {isDetailOpen && (
                 <button
                   className={`detail-close-btn ${

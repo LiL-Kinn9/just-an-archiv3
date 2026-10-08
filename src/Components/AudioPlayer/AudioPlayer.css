@@ -174,3 +174,12 @@
 .audio-play-btn:hover img {
   transform: translateX(-2px);
 }
+
+.audio-player.audio-locked {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.audio-player.audio-ready {
+  pointer-events: auto;
+}

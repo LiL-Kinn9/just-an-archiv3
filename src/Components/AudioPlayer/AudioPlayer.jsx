@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 import "./AudioPlayer.css";
 
-function AudioPlayer({ audioSrc, uiTheme, isUiVisible }) {
+function AudioPlayer({ audioSrc, uiTheme, isUiVisible, isReady }) {
   const audioRef = useRef(null);
 
   const returnTimerRef = useRef(null);
@@ -132,8 +132,7 @@ function AudioPlayer({ audioSrc, uiTheme, isUiVisible }) {
 
   return (
     <div
-      className={`
-        audio-player
+      className={`audio-player ${isReady ? "audio-ready" : "audio-locked"}
         ${isUiVisible ? "ui-visible" : "ui-hidden"}
         ${isReturning ? "is-returning" : ""}
       `}
