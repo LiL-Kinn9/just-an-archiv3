@@ -40,743 +40,243 @@ const artworks = [
     background: "#ff0100",
     uiTheme: "black",
     story: [
-      "Cơn gió mùa thu kéo tới một thành trì nằm ở phía bắc Cvstodia.",
-
-      "Cùng với nó, một gã xơ xác dẫm từng bước chân nặng trĩu hướng về bức tường thành không xa.",
-
-      "Bàn chân hắn khô ráp.",
-
-      "Những hạt cát vẫn còn bám lại trên cẳng chân.",
-
-      "Đứng trước cổng thành, hắn dòm ngó xung quanh.",
-
-      "Những công trình kì công.",
-
-      "Những mảng gạch hàng trăm năm tuổi chồng chất lên nhau thành một bức tường đồ sộ.",
-
-      "Phía trên là vài chục tên lính gác cùng những mũi tên đã đặt sẵn trên dây cung.",
-
-      "Như thể nơi này luôn chuẩn bị tiếp đón những kẻ không được chào đón.",
-
-      "Nhưng những thứ ấy chẳng làm hắn chùn bước.",
-
-      "Với vẻ ung dung vốn có, hắn cứ thế tiến thẳng về phía cổng.",
-
-      "Bỗng một ngọn thương chìa ngang trước người.",
-
-      '" Giấy thông thành của anh? "',
-
-      "Những từ ngữ hắn chưa từng nghe qua.",
-
-      "Và dường như cũng chẳng đủ quan trọng để hắn phải hiểu.",
-
-      "Hắn liếc nhìn kẻ vừa phát ra câu nói ấy.",
-
-      "Tên lính canh lập tức khựng lại.",
-
-      "Một nỗi khiếp đảm hiện rõ trên khuôn mặt.",
-
-      "Hoặc nói đúng hơn.",
-
-      "Thứ khiến gã sợ hãi là đôi mắt rực đỏ đang nhìn thẳng vào mình.",
-
-      "Ngọn thương nhanh chóng được thu về.",
-
-      '" Chào mừng ngài tới thành phố. "',
-
-      "Hắn chẳng buồn đáp.",
-
-      "Chỉ tiếp tục bước qua cổng.",
-
-      "Phía sau bức tường thành là một khu chợ trải dài qua nhiều con phố.",
-
-      "Những tay thương gia từ khắp lục địa chen chúc giữa những gian hàng.",
-
-      "Trái cây.",
-
-      "Nhu yếu phẩm.",
-
-      "Gia súc.",
-
-      "Có kẻ còn đem cả kim loại ra đổi chác.",
-
-      "Với hắn.",
-
-      "Tất cả đều chẳng có mấy giá trị.",
-
-      "Hắn càng đi sâu.",
-
-      "Lũ người thường càng xuất hiện nhiều.",
-
-      "Một cảm giác buồn nôn dần len vào mũi.",
-
-      "Mùi mồ hôi.",
-
-      "Mùi bùn đất.",
-
-      "Mùi của những con cừu nằm trên bàn mổ.",
-
-      "Có lẽ nơi này chẳng phù hợp với hắn.",
-
-      "Những ánh mắt cũng bắt đầu hướng về phía hắn.",
-
-      "Kẻ nhìn một thoáng rồi vội quay đi.",
-
-      "Kẻ ghé sát tai người bên cạnh thì thầm điều gì đó.",
-
-      "Bấy nhiêu cũng đủ củng cố suy nghĩ trong đầu hắn.",
-
-      "Nhưng hắn chẳng mấy bận tâm.",
-
-      "Ít nhất.",
-
-      "Hắn tin mình đang làm vậy.",
-
-      "Bước chân vô thức nhanh hơn.",
-
-      "Ánh mắt cũng cố tránh khỏi những tầm nhìn đang đổ dồn về phía mình.",
-
-      "Rồi sự chú ý của hắn dừng lại trước một thứ khổng lồ.",
-
-      "Một tòa tháp sừng sững giữa trung tâm thành phố.",
-
-      "Có lẽ nó vẫn đứng đó từ lúc hắn vừa bước qua cổng.",
-
-      "Chẳng qua hắn chưa đủ để tâm để nhận ra sự hiện diện của nó.",
-
-      "Trên nền gạch cũ kĩ.",
-
-      "Một hàng chữ lớn được khắc quanh chân tháp.",
-
+      "Cơn gió chớm thu mang theo hơi lạnh tạt qua một thành trì cằn cỗi ở phía bắc Cvstodia.",
+      "Cùng với nó, một kẻ lạ mặt giẫm từng bước nặng nề hướng về bức tường đá đồ sộ.",
+      "Dưới cẳng chân trần, những lớp cát bụi của cõi phàm trần vẫn còn vương vấn.",
+      "Hắn dừng lại trước vòm cổng.",
+      "Những tảng đá rêu phong bám phủ chồng chất lên nhau, hứng chịu hàng trăm năm mục nát.",
+      "Phía trên cao, hàng chục lính gác nín thở đè căng dây cung, hoang nghênh đón tiếp những kẻ không mời.",
+      "Nhưng bấy nhiêu vũ khí của phàm nhân chẳng thể làm bước chân hắn ngập ngừng.",
+      "Hắn cứ thế tiến thẳng vào trong, mang theo sự ung dung của một kẻ từng giẫm đạp lên cả bầu trời.",
+      "Bỗng một ngọn thương sắt bất thần chìa ngang ngực.",
+      '" Giấy thông hành của ngươi đâu? "',
+      "Một khái niệm xa lạ.",
+      "Và dường như cũng chẳng đủ tư cách để bắt một kẻ như hắn phải bận tâm hiểu thấu.",
+      "Hắn chậm rãi hạ ánh nhìn xuống kẻ vừa cất lời.",
+      "Tên lính canh lập tức cứng đờ.",
+      "Một nỗi khiếp đảm nguyên thủy bò dọc sống lưng gã.",
+      "Hoặc đúng hơn, thứ bóp nghẹt buồng phổi gã chính là đôi mắt rực đỏ ai oán đang dội thẳng vào tâm can.",
+      "Ngọn thương run rẩy thu về.",
+      '" Chào... Chào mừng ngài tới thành phố. "',
+      "Hắn chẳng buồn hé môi.",
+      "Lẳng lặng sải bước qua khoảng tối dưới vòm cổng.",
+      "Phía sau bức tường thành là một khu chợ nhớp nhúa kéo dài qua những con phố chật hẹp.",
+      "Những tay thương nhân từ khắp lục địa chen chúc, tranh giành từng tấc đất.",
+      "Nhu yếu phẩm, trái cây, gia súc, và cả những kim loại vô tri được mang ra đổi chác.",
+      "Trong mắt hắn, tất cả chỉ là mớ cặn bã vô giá trị.",
+      "Hắn đi sâu hơn, bầy người phàm tục càng lúc càng đặc quánh.",
+      "Một cơn buồn nôn chậm rãi xộc thẳng vào khứu giác.",
+      "Mùi mồ hôi chua loét.",
+      "Mùi bùn đất hôi hám.",
+      "Và cả thứ mùi tanh tưởi của lũ cừu non đang nằm chờ chết trên bàn mổ thịt.",
+      "Có lẽ cõi này chưa bao giờ là nơi dành cho hắn.",
+      "Những ánh mắt dòm ngó bắt đầu chĩa về phía kẻ lạ mặt.",
+      "Kẻ trộm nhìn rồi vội vã quay đi, kẻ kề tai thì thầm những lời to nhỏ ngu muội.",
+      "Sự hèn mọn ấy chỉ càng khoét sâu thêm nỗi chán ghét trong đầu hắn.",
+      "Nhưng hắn vờ như không bận tâm.",
+      "Ít nhất, hắn tự lừa mình rằng bản thân đang làm vậy.",
+      "Bước chân vô thức lướt đi nhanh hơn.",
+      "Cho tới khi sự chú ý của hắn va phải một công trình khổng lồ.",
+      "Một ngọn tháp bằng đá sừng sững ghim thẳng vào trung tâm khu chợ.",
+      "Có lẽ nó đã đứng đó từ lúc hắn vừa bước qua cổng, chỉ là hắn chưa từng để mắt tới.",
+      "Trên nền gạch tàn tạ dưới chân tháp, một dòng chữ lớn được đục đẽo thô kệch.",
       '" Manlanier, The City of Lambs. "',
-
-      "The City of Lambs.",
-
-      "Hắn nhìn hàng chữ.",
-
       "Một thành phố của những con cừu.",
-
-      "Trong lúc còn đang tự hỏi tại sao con người lại đặt một cái tên ngu ngốc như vậy cho nơi họ sinh sống.",
-
-      "Một thân người mảnh mai bỗng va thẳng vào hắn.",
-
-      "Người ấy ngã xuống.",
-
-      "Chiếc giỏ trong tay nghiêng sang một bên.",
-
-      "Những quả ớt đỏ lăn lóc trên nền đá.",
-
-      "Lại một chuyện không may tìm tới hắn.",
-
-      "Ít nhất hắn thầm nghĩ vậy.",
-
+      "Hắn vừa nhếch mép, tự hỏi cớ sao nhân loại lại gán một cái danh xưng thảm hại đến vậy cho nơi chúng sống.",
+      "Thì một thân ảnh thất thần bỗng va sầm vào hắn.",
+      "Người nọ ngã quỵ xuống mặt đường.",
+      "Chiếc giỏ văng khỏi tay, trút những quả ớt đỏ au lăn lóc trên nền đá xám.",
+      "Lại một điều phiền nhiễu tìm đến hắn.",
       "Hắn cúi nhìn.",
-
-      "Một dáng người nhỏ nhắn gần như bị che kín dưới chiếc áo lông sẫm màu.",
-
-      "Chiếc mũ trùm kéo thấp xuống.",
-
-      "Hai chân người ấy khẽ khụy.",
-
-      "Hai tay vội mò mẫm nhặt những thứ vừa đánh rơi.",
-
-      "Dường như chẳng hề quan tâm tới sự hiện diện của hắn.",
-
-      "Với sự kiêu ngạo vốn có.",
-
-      "Hắn chỉ khoanh tay.",
-
-      "Đứng nhìn từng quả ớt được nhặt trở lại vào giỏ.",
-
-      "Có lẽ hắn đang chờ.",
-
-      "Chờ xem người kia sẽ làm gì sau khi đứng dậy.",
-
+      "Một vóc dáng nhỏ nhắn gần như bị nuốt chửng dưới lớp áo lông sẫm màu, vạt mũ trùm kéo sụp.",
+      "Người đó vội vã khụy gối, mò mẫm thu nhặt những thứ vừa rơi vãi.",
+      "Hoàn toàn phớt lờ cái bóng đen ngòm đang đứng ngay trên đầu.",
+      "Mang trong mình sự kiêu ngạo tột cùng, hắn chỉ khoanh tay đứng nhìn.",
+      "Hắn muốn xem sinh vật mỏng manh kia sẽ phản ứng ra sao khi ngẩng mặt lên.",
       '" Hình như ngươi không nhìn thấy thì phải? "',
-
-      "Không có lời đáp.",
-
-      "Ngay cả một cái ngẩng đầu cũng không.",
-
-      "Một sự xúc phạm hiển nhiên chạm thẳng vào lòng tự tôn của hắn.",
-
-      "Người ấy đứng lên.",
-
-      "Liếc nhìn hắn một thoáng.",
-
-      "Rồi cứ thế bước tiếp.",
-
-      "Đi ngang qua như thể hắn chưa từng tồn tại.",
-
+      "Không một lời hồi đáp.",
+      "Thậm chí một cái liếc mắt dè chừng cũng không.",
+      "Sự câm lặng ấy như một nhát dao xé toạc lòng tự tôn của hắn.",
+      "Người nọ thu dọn xong liền đứng thẳng dậy.",
+      "Kẻ ấy hờ hững lướt qua hắn một thoáng, rồi cất bước đi ngang như thể hắn chỉ là một pho tượng đá vô hồn.",
       "Hắn sững người.",
-
-      "Chưa từng có kẻ nào đủ can đảm để phớt lờ hắn như vậy.",
-
-      "Hai hàng lông mày lập tức chau lại.",
-
-      '" Ngươi... "',
-
-      "Bước chân phía trước vẫn tiếp tục.",
-
+      "Chưa từng có sinh vật nào trên cõi đời này dám phớt lờ hắn đến thế.",
+      "Hai hàng lông mày lập tức chau chặt.",
       '" Ngươi dám phớt lờ lời của ta như thế sao? "',
-
-      "Bóng người ấy khựng lại.",
-
-      "Cuối cùng.",
-
-      "Hắn đã chờ khoảnh khắc này kể từ lúc hai người va phải nhau.",
-
-      "Có lẽ hắn đang tưởng tượng vẻ mặt hoảng sợ sẽ xuất hiện.",
-
-      "Một lời xin lỗi.",
-
-      "Hoặc ít nhất là sự dè chừng mà hắn vốn đã quá quen thuộc.",
-
-      "Nhưng hắn chưa từng nghĩ tới danh tính của người trước mặt.",
-
-      "Cho tới khi một giọng nói nhẹ nhàng vang lên sau lớp áo choàng.",
-
-      '" Anh thừa biết là anh đang không mặc gì đúng không? "',
-
+      "Bóng áo choàng sẫm màu khựng lại.",
+      "Cuối cùng thì khoảnh khắc hắn chờ đợi cũng đến.",
+      "Hắn đã mường tượng ra một khuôn mặt nhợt nhạt, một sự run rẩy mà bọn người phàm vốn phải có.",
+      "Nhưng hắn chưa từng đoán được thân phận của kẻ đang đứng trước mặt.",
+      "Cho tới khi một giọng nói nhẹ tênh vang lên từ dưới lớp mũ trùm.",
+      '" Anh thừa biết là mình đang không mặc gì, đúng không? "',
       "Hắn ngẩn người.",
-
-      '" Huh?? "',
-
-      "Ánh mắt theo bản năng hạ xuống.",
-
-      "Hắn nhìn phần cơ thể trống trải của mình.",
-
-      "Rồi lại nhìn nàng.",
-
-      "Vẫn chẳng hiểu câu hỏi ấy có nghĩa lý gì.",
-
-      "Một tiếng thở dài thoát ra từ phía dưới chiếc mũ trùm.",
-
-      "Rõ tới mức hắn gần như có thể nhìn thấy nó.",
-
-      "Người phụ nữ giơ hai ngón tay.",
-
-      "Ngoắc nhẹ về phía mình.",
-
-      "Ra hiệu hắn đi theo.",
-
-      "Hắn đứng yên một lúc.",
-
-      "Không hiểu vì sao bản thân phải nghe lời một người phàm xa lạ.",
-
-      "Có lẽ bởi hắn không cảm thấy mùi của nỗi sợ trên người nàng.",
-
-      "Một chuyện gần như chưa từng xảy ra suốt quãng đường hắn đặt chân tới đây.",
-
-      "Nàng xoay người bước đi.",
-
-      "Thậm chí chẳng ngoảnh lại xem hắn có theo hay không.",
-
-      "Một sự tự tin có phần khó chịu.",
-
-      "Nhưng rồi.",
-
-      "Những bước chân khác vẫn lặng lẽ nối theo phía sau nàng.",
-
-      "Hắn cố giữ một khoảng cách vừa đủ.",
-
-      "Chẳng biết người này có toan tính gì.",
-
-      "Ánh mắt vì thế cứ chăm chú vào từng bước chân nàng.",
-
-      "Hoặc ít nhất.",
-
-      "Hắn cho rằng đó là lí do mình cứ nhìn.",
-
-      "Dáng vẻ kiêu kì ấy dần làm lu mờ cảnh vật xung quanh.",
-
-      "Những gian hàng.",
-
-      "Những tiếng rao.",
-
-      "Cả đám người mà hắn vừa thấy phiền phức.",
-
-      "Rồi hắn nhận ra một điều khác.",
-
-      "Người phụ nữ trước mặt mang một mùi hương rất dễ chịu.",
-
-      "Hắn lập tức cố tìm một lí do để phủ nhận suy nghĩ ấy.",
-
-      "Nhưng chẳng có lí do nào đủ sức thuyết phục.",
-
-      "Chỉ còn những câu hỏi nối tiếp nhau.",
-
+      '" Huh? "',
+      "Ánh mắt theo bản năng hạ xuống, quét qua phần thân dưới hoàn toàn trần trụi.",
+      "Rồi hắn lại ngước lên nhìn nàng.",
+      "Tâm trí ngạo mạn nhất thời chưa thể hiểu thấu thứ hàm ý trong câu hỏi đó.",
+      "Một tiếng thở dài rõ mồn một thoát ra từ người phụ nữ.",
+      "Nàng giơ hai ngón tay, ngoắc nhẹ về phía mình như thể ra lệnh cho hắn bước theo.",
+      "Hắn chôn chân tại chỗ.",
+      "Chẳng hiểu cớ gì một kẻ từ trời cao lại phải phục tùng một phàm nhân xa lạ.",
+      "Có lẽ bởi hắn không ngửi thấy mùi của nỗi sợ hãi toát ra từ người nàng.",
+      "Một sự dị biệt chưa từng có kể từ lúc hắn rơi xuống trần gian.",
+      "Nàng xoay lưng cất bước, chẳng thèm ngoái lại xem hắn có bám theo hay không.",
+      "Một sự tự tin đến mức ngạo mạn.",
+      "Nhưng rồi, đôi chân trần của hắn cũng lặng lẽ nối gót phía sau.",
+      "Hắn duy trì một khoảng cách vừa đủ, mang theo sự ngờ vực về một mưu đồ ẩn khuất.",
+      "Ánh mắt hắn ghim chặt vào từng bước đi của nàng.",
+      "Hoặc chí ít, hắn cho rằng đó là lý do khiến hắn không thể rời mắt.",
+      "Dáng vẻ kiêu kỳ ấy dần làm lu mờ đi mớ âm thanh ồn ã và mùi vị tanh tưởi của khu chợ.",
+      "Rồi hắn nhận ra, người phụ nữ này mang một mùi hương rất dễ chịu.",
+      "Hắn lập tức lục lọi mọi lý do để chối bỏ ý nghĩ ủy mị ấy.",
+      "Nhưng vô ích.",
+      "Tâm trí hắn giờ chỉ còn lại những câu hỏi bủa vây.",
       "Tại sao nàng không sợ hắn?",
-
       "Tại sao lại giúp hắn?",
-
-      "Tại sao hắn vẫn đang bước theo?",
-
-      "Hắn muốn hỏi tất cả.",
-
-      "Nhưng có lẽ chẳng câu nào trong số đó là thứ hắn thật sự muốn biết.",
-
-      "Vẫn còn một điều gì đó mắc lại trong đầu.",
-
-      "Một câu hỏi hắn chưa thể gọi thành lời.",
-
-      "Sau một lúc vòng qua những con phố.",
-
-      "Nàng đưa hắn tới một tiệm may nhỏ nằm cuối góc đường.",
-
-      "Hắn để người phụ nữ ấy bước vào trước.",
-
-      "Một hành động có vẻ lịch thiệp.",
-
-      "Hoặc có lẽ như vậy khiến hắn cảm thấy an toàn hơn.",
-
-      "Sau cánh cửa.",
-
-      "Mùi vải mới lập tức xộc vào mũi.",
-
-      "Hai viền mắt hắn khẽ nhăn lại.",
-
-      "Ánh nhìn chạy quanh gian phòng.",
-
-      "Những chiếc kệ gỗ cũ kĩ phủ bụi.",
-
-      "Những chiếc móc treo chạy dọc hai bên tường.",
-
-      "Một vài mảnh vải còn vương những đường kim chỉ thô kệch.",
-
-      "Trong lúc hắn vẫn mải mê quan sát.",
-
-      "Người phụ nữ đã tiến lại gần.",
-
-      "Trên tay nàng là một chiếc áo lông tối màu.",
-
-      "Nàng giơ nó lên sát người hắn.",
-
-      "Hai chân hắn lập tức lùi lại.",
-
+      "Và cớ gì hắn vẫn vô thức bước theo bóng lưng này?",
+      "Qua vài khúc ngoặt, nàng dẫn hắn vào một tiệm may nhỏ hắt hiu cuối góc đường.",
+      "Hắn nán lại nhường nàng bước qua ngưỡng cửa trước.",
+      "Một hành động có vẻ lịch thiệp, hoặc chỉ để bản năng cảm thấy an toàn hơn trước những thứ lạ lẫm.",
+      "Mùi vải vóc và bụi bặm xộc thẳng vào mũi ngay sau cánh cửa.",
+      "Hai viền mắt hắn nheo lại, quét qua những chiếc kệ gỗ mục nát cùng vài dải vải vương những đường kim thô kệch.",
+      "Giữa lúc hắn đang đánh giá gian phòng, nàng đã tiến lại gần.",
+      "Nàng ướm thử một chiếc áo lông tối màu lên người hắn.",
+      "Hai chân hắn theo bản năng lùi lại một nhịp.",
       '" Cái này có vẻ không hợp với người như anh nhỉ? "',
-
-      "Ánh mắt nàng chậm rãi hạ xuống.",
-
-      "Dừng ở phần thân dưới.",
-
-      '" Tôi nghĩ anh nên mang quần vào trước thì hay hơn. "',
-
-      "Hắn nhìn theo nơi ánh mắt nàng vừa dừng.",
-
-      '" Có gì không hợp lí à? "',
-
-      "Nàng im lặng.",
-
-      "Rồi bật cười.",
-
+      "Ánh mắt nàng chậm rãi trượt xuống, dừng lại ở phần nửa dưới.",
+      '" Tôi nghĩ anh nên mặc quần vào trước thì hay hơn. "',
+      "Hắn nhìn theo nơi ánh mắt nàng đang đặt vào.",
+      '" Có gì không hợp lý à? "',
+      "Nàng im lặng một khắc.",
+      "Rồi khẽ bật cười.",
       '" Trông không dài lắm nhỉ? "',
-
       "Hắn nhíu mày.",
-
+      "Lòng tự tôn cựa quậy khó chịu.",
       '" Cái gì dài? "',
-
+      "Nàng đáp nhẹ bẫng.",
       '" Cây kiếm. "',
-
-      "Hắn lập tức nhìn quanh.",
-
-      "Bên trái.",
-
-      "Bên phải.",
-
-      "Chẳng có một thanh kiếm nào trong gian phòng.",
-
-      "Đúng lúc ấy.",
-
-      "Một chiếc quần da bay thẳng vào mặt hắn.",
-
-      '" Thôi không có gì đâu. Anh mặc cái này vào đi. "',
-
-      "Hắn kéo chiếc quần khỏi mặt.",
-
-      "Vẫn chưa hiểu chuyện gì vừa xảy ra.",
-
-      "Một tay nhét vào ống quần.",
-
-      "Tay còn lại kéo nó lên như thể đang cố mặc một chiếc áo.",
-
-      "Hắn dừng lại.",
-
-      "Nhìn thứ đang nằm trong tay.",
-
-      '" Quái nào? Ta phải làm gì? "',
-
+      "Hắn dáo dác nhìn quanh.",
+      "Bên trái, rồi bên phải.",
+      "Tịnh không lấy nổi một thanh gươm nào trong căn phòng chật chội này.",
+      "Đúng lúc đó, một chiếc quần da bay thẳng vào mặt hắn.",
+      '" Thôi, không có gì đâu. Anh mặc cái này vào đi. "',
+      "Hắn giật phăng lớp vải khỏi mặt.",
+      "Vờn tay vào các ống quần như thể đang loay hoay mặc một chiếc áo.",
+      "Hắn đứng khựng lại, nhìn thứ lùng bùng trong tay.",
+      '" Cái quái? Ta phải làm gì? "',
       "Không có lời đáp.",
-
-      "Hắn ngẩng lên.",
-
-      "Lúc này mới nhận ra người phụ nữ kia đã rời khỏi gian phòng.",
-
-      "Chỉ còn hắn.",
-
-      "Và chiếc quần ngu ngốc.",
-
-      "Một cuộc đối đầu có phần mất mặt.",
-
-      "Sau một hồi xoay sở.",
-
-      "Cuối cùng hắn cũng khiến nó nằm đúng vị trí trên người.",
-
-      "Ngay lúc đó.",
-
-      "Tiếng bước chân từ phía trước gian phòng vọng tới.",
-
+      "Hắn ngẩng lên mới hay người phụ nữ kia đã rời khỏi gian phòng từ lúc nào.",
+      "Chỉ còn lại hắn, và chiếc quần da ngu ngốc.",
+      "Một cuộc đối đầu có phần nhục nhã.",
+      "Sau một hồi vật lộn, cuối cùng hắn cũng ép được thứ vải thô ấy bám đúng vị trí trên người.",
+      "Ngay lúc đó, tiếng bước chân lẹp xẹp vang lên từ gian ngoài.",
       '" Áo và quần là bốn Chromee, thưa cô. "',
-
-      "Không phải giọng của người phụ nữ lúc nãy.",
-
-      "Hắn lập tức bước ra.",
-
-      "Chỉ vừa đủ để nhìn thấy cánh cửa ngoài cùng khép lại.",
-
-      "Nàng đã rời đi.",
-
-      "Nhanh hơn hắn kịp nhận ra.",
-
-      "Phía sau quầy chỉ còn một lão già.",
-
-      "Bốn đồng bạc thô nằm bên tay trái.",
-
-      "Tay phải run rẩy làm dấu thánh giá.",
-
-      "Ánh mắt lão không ngừng nhìn về phía hắn.",
-
-      "Lại là ánh mắt ấy.",
-
-      "Hắn chẳng muốn bỏ thêm thời gian để tâm.",
-
-      "Hai chân nhanh chóng bước khỏi tiệm may.",
-
-      "Ở bên ngoài.",
-
-      "Một cơn gió lướt qua những tán cây xanh ngát.",
-
-      "Như thể đang thúc chúng nhường chỗ cho mùa thu.",
-
-      "Vài tầng lá khô đã nằm sát hai mép đường.",
-
+      "Đó không phải là giọng của nàng.",
+      "Hắn vội bước ra, chỉ vừa kịp thấy cánh cửa gỗ ngoài cùng khép lại.",
+      "Nàng đã đi mất, nhanh hơn hắn kịp nhận ra.",
+      "Phía sau quầy lúc này chỉ còn một lão thợ may già nua.",
+      "Bốn đồng bạc thô nằm trên mặt gỗ.",
+      "Bàn tay lão run lẩy bẩy làm dấu thánh giá, ánh mắt kinh hãi không ngừng chĩa về phía hắn.",
+      "Lại là thứ ánh mắt rác rưởi ấy.",
+      "Hắn chẳng buồn bận tâm thêm, sải bước rời khỏi tiệm may.",
+      "Trở lại con phố, một cơn gió lạnh lẽo lướt qua những tán cây vươn cao.",
+      "Như thể đang thúc ép chúng nhường chỗ cho mùa thu lụi tàn.",
+      "Vài tầng lá úa đã nằm rạp sát hai mép đường.",
       "Hắn dừng lại một khắc.",
-
-      "Cơn gió ấy dường như cũng kéo một thứ gì đó rất xa trở lại.",
-
-      "Hắn chẳng nhớ nó đã cách đây bao lâu.",
-
-      "Có lẽ còn xa hơn những gì hắn có thể nhớ.",
-
-      "Nơi hắn từng ở chưa bao giờ có cảnh sắc như thế này.",
-
-      "Chỉ có những khoảng không sâu thẳm.",
-
-      "Những tầng mây trắng xóa.",
-
-      "Không mùa.",
-
-      "Không lá rụng.",
-
-      "Không có thứ gì chậm rãi đổi màu rồi rời khỏi cành.",
-
-      "Hắn nhìn những chiếc lá dưới chân.",
-
-      "Có vẻ nơi này dễ chịu hơn hắn tưởng.",
-
-      "Hoặc có lẽ.",
-
-      "Người phụ nữ lúc nãy khiến nó trở nên dễ chịu hơn.",
-
-      "Hắn không thích suy nghĩ ấy.",
-
-      "Từ lúc rời khỏi bầu trời.",
-
-      "Hắn đã gặp không biết bao nhiêu con người.",
-
-      "Tất cả đều dè chừng.",
-
-      "Hoảng sợ.",
-
-      "Hoặc tìm cách tránh khỏi ánh mắt hắn.",
-
-      "Chỉ riêng nàng.",
-
-      "Không có gì.",
-
+      "Cơn gió ấy dường như mang theo một thứ gì đó từ rất xa dội về trong tâm trí.",
+      "Một cảm giác hắn chẳng nhớ nổi đã trôi qua bao nhiêu kỷ nguyên.",
+      "Nơi hắn từng ngự trị chưa bao giờ có cảnh sắc mục ruỗng thế này.",
+      "Chỉ có những khoảng không sâu thẳm, những tầng mây trắng xóa vĩnh hằng.",
+      "Không mùa màng, không lá rụng, không có thứ gì chậm rãi úa màu rồi lìa cành.",
+      "Hắn nhìn những chiếc lá khô dưới chân.",
+      "Có vẻ cõi hạ giới này dễ chịu hơn hắn từng nghĩ.",
+      "Hoặc có lẽ, chính người phụ nữ lúc nãy đã khiến nó trở nên bớt tồi tệ.",
+      "Hắn chán ghét cái suy nghĩ yếu mềm ấy.",
+      "Từ lúc rơi khỏi thiên đàng, bất cứ kẻ nào diện kiến hắn cũng đều kinh hoảng hoặc tìm cách lẩn tránh.",
+      "Chỉ riêng nàng là không.",
       "Không sợ hãi.",
-
-      "Không dè chừng.",
-
-      "Thậm chí còn đủ bình thản để bỏ hắn lại một mình với một chiếc quần.",
-
-      "Hắn không muốn chìm sâu hơn vào những câu hỏi trong đầu.",
-
-      "Giá mà hắn biết tên nàng.",
-
-      "Ít nhất hắn tự nghĩ rằng thứ mình muốn chỉ có vậy.",
-
-      "Một cái tên.",
-
-      "Đúng.",
-
-      "Có lẽ đó chính là câu hỏi vẫn mắc lại từ lúc hắn bước theo nàng.",
-
-      "Hắn liếc quanh.",
-
-      "Dòng người vẫn chen chúc giữa khu chợ.",
-
-      "Và giữa những bóng người ấy.",
-
-      "Một chiếc áo lông sẫm màu xuất hiện ở phía xa.",
-
-      "Hắn nhận ra gần như ngay lập tức.",
-
-      "Hai chân bắt đầu tiến về phía ấy.",
-
-      "Chỉ vài bước sau.",
-
-      "Một câu hỏi khác xuất hiện.",
-
+      "Không dè dặt.",
+      "Thậm chí nàng còn đủ thản nhiên để vứt lại hắn cùng một chiếc quần da.",
+      "Giá mà hắn biết được tên nàng.",
+      "Ít nhất hắn tự huyễn hoặc mình rằng thứ hắn muốn lúc này chỉ là một danh xưng.",
+      "Hắn đưa mắt liếc quanh khu chợ nhốn nháo.",
+      "Giữa những cái bóng chen chúc, vạt áo lông sẫm màu lại thấp thoáng hiện ra ở phía xa.",
+      "Hắn nhận ra nàng ngay lập tức.",
+      "Hai chân vô thức ngã về phía trước.",
+      "Chỉ vài sải, sự nghi hoặc đã trồi lên cản đường.",
       "Tại sao cơ chứ?",
-
-      "Hắn có thật sự cần phải làm vậy không?",
-
-      "Nàng chỉ là một phàm nhân bình thường.",
-
-      "Một người hắn vừa gặp chưa được bao lâu.",
-
-      "Nhưng bước chân vẫn không dừng.",
-
-      "Cái tên ư?",
-
-      "Thật ngu ngốc.",
-
-      "Một lí do chẳng mấy thuyết phục.",
-
-      "Nhưng ngoài cái tên ấy ra.",
-
-      "Hắn cũng chẳng tìm được thứ gì khác để phản biện lại bản năng đang kéo mình về phía nàng.",
-
-      "Bước chân nhanh dần.",
-
-      "Rồi hắn nhớ tới bộ quần áo trên người.",
-
+      "Nàng chỉ là một phàm nhân vừa gặp chưa được bao lâu.",
+      "Một cái tên thôi sao?",
+      "Thật ngu xuẩn.",
+      "Rồi hắn sực nhớ tới lớp vải đang vận trên người.",
       "Bốn Chromee.",
-
-      "Có lẽ vì bốn Chromee.",
-
-      "Hắn cần trả lại.",
-
-      "Ý nghĩ ấy vừa xuất hiện.",
-
-      "Hắn đã tự phủ nhận.",
-
-      "Không.",
-
-      "Hắn chẳng phải loại người bận tâm tới việc trả lại thứ gì.",
-
-      "Nhưng ít nhất.",
-
-      "Đó sẽ là một câu chuyện hợp lí để hắn mở lời.",
-
-      "Dòng người chen chúc che mất bóng hình nàng.",
-
-      "Lúc nãy hắn còn khó chịu với mùi của đám người này.",
-
-      "Giờ lại chẳng còn tâm trí để chú ý.",
-
-      "Hắn bước nhanh hơn.",
-
-      "Lách qua từng người.",
-
-      "Cho tới khi chiếc áo lông ấy xuất hiện trở lại.",
-
-      "Nàng đang khụy gối cạnh một gian hàng nhỏ.",
-
-      "Trước mặt là một chậu hoa.",
-
-      "Drag dừng lại.",
-
-      "Không quá gần.",
-
-      "Cũng chẳng quá xa.",
-
-      "Nàng chưa nhận ra hắn.",
-
-      "Và vì một lí do nào đó.",
-
-      "Hắn cũng chưa muốn nàng nhận ra ngay.",
-
-      "Có lẽ hắn muốn dành thêm một chút thời gian cho khung cảnh trước mắt.",
-
-      "Hoặc hắn chỉ đang tự suy diễn như vậy.",
-
-      "Bởi hắn thật sự chẳng có một câu chuyện rõ ràng nào để bắt chuyện.",
-
-      "Hai tay nàng nâng một nhành hoa trắng.",
-
-      "Đầu ngón tay khẽ chạm vào từng cánh.",
-
-      "Nhẹ tới mức như thể chỉ cần mạnh hơn một chút.",
-
-      "Thứ nhỏ bé kia sẽ bị tổn thương.",
-
-      "Hắn đứng nhìn.",
-
-      "Không hiểu vì sao một người lại có thể để tâm tới một thứ vô tri như vậy.",
-
-      "Một bông hoa.",
-
-      "Nó chẳng thể nói.",
-
-      "Chẳng cảm thể nhận.",
-
-      "Vậy tại sao nàng lại nâng niu nó như thể thứ ấy có giá trị?",
-
-      "Một câu hỏi khác.",
-
-      "Có lẽ lần này hắn thật sự nên hỏi.",
-
-      "Hắn bắt đầu tiến lại gần.",
-
-      "Không nhanh.",
-
-      "Bản thân hắn cũng chẳng hiểu vì sao phải bước nhẹ như vậy.",
-
-      "Chỉ là hắn không muốn phá hỏng cảnh tượng trước mắt.",
-
-      "Khoảng cách dần thu ngắn.",
-
-      "Hắn vươn tay.",
-
-      "Chạm nhẹ lên vai nàng.",
-
-      "Người phụ nữ ngoảnh lại.",
-
-      "Động tác vô tình kéo chiếc mũ choàng khỏi đầu.",
-
-      "Mái tóc bên dưới rơi xuống.",
-
-      "Từ lúc gặp nàng tới giờ.",
-
-      "Cuối cùng hắn mới có thể nhìn rõ từng đường nét trên khuôn mặt ấy.",
-
-      "Bờ môi khẽ cong.",
-
-      "Hai gò má vẫn còn một chút ửng hồng.",
-
-      "Có lẽ bởi cơn gió lạnh.",
-
-      "Những sợi tóc bị gió cuốn qua gò má.",
-
-      "Nhưng có một thứ khiến ánh mắt hắn dừng lại lâu hơn mức cần thiết.",
-
-      "Mắt trái của nàng.",
-
-      "Một ánh vàng rất nhạt.",
-
-      "Như chút nắng cuối cùng còn mắc lại khi chiều vừa tắt.",
-
-      "Nằm sâu bên trong võng mạc.",
-
-      "Hắn nhìn nó.",
-
-      "Màu vàng nhợt nhạt của những chiếc lá vừa bắt đầu chuyển mùa.",
-
-      "Một cảm giác rất lạ chạy dọc sống lưng.",
-
-      "Không phải sợ hãi.",
-
-      "Hắn biết sợ hãi của người khác có mùi thế nào.",
-
-      "Nhưng thứ này không giống vậy.",
-
-      "Một cảm giác quen thuộc.",
-
-      "Quen tới mức khiến hắn khó chịu.",
-
-      "Như thể cơ thể đã từng nhìn thấy ánh vàng ấy ở một nơi nào đó.",
-
-      "Chỉ có tâm trí là không nhớ.",
-
-      "Hắn cố tìm kiếm.",
-
-      "Không có gì.",
-
-      "Chỉ là một khoảng trống.",
-
-      "Và một cảm giác bất an rất nhỏ.",
-
-      "Bỗng giọng nói của nàng kéo hắn trở lại.",
-
+      "Phải rồi.",
+      "Hắn cần trả lại bốn đồng bạc nàng đã tiêu cho một kẻ xa lạ.",
+      "Một cái cớ tầm thường.",
+      "Nhưng vừa đủ để bản ngã hắn thôi chất vấn thêm vài bước.",
+      "Dòng người lại che khuất bóng nàng.",
+      "Vài khắc trước hắn còn ghê tởm việc phải chen vai với đám người nơi đây.",
+      "Giờ chính hắn lại gạt từng thân người sang hai bên.",
+      "Cho tới khi vạt áo ấy hiện ra trọn vẹn.",
+      "Kristin đang khụy gối bên một gian hàng hắt hiu.",
+      "Trước mặt nàng là một chậu hoa trắng.",
+      "Không phải thứ gì quý giá.",
+      "Vài nhành cây gầy guộc, một ít đất đen, những cánh hoa mỏng tới mức cơn gió chớm thu cũng đủ làm chúng lung lay.",
+      "Vậy mà nàng nâng một nhành lên bằng cả hai tay.",
+      "Chậm rãi.",
+      "Đầu ngón tay khẽ miết qua cánh hoa.",
+      "Drag đứng lại.",
+      "Bốn Chromee bỗng chẳng còn cấp thiết đến thế.",
+      "Hắn không hiểu.",
+      "Một thứ chẳng biết đau, chẳng biết sợ, cũng chẳng thể cầu xin nàng đừng buông tay.",
+      "Có gì đáng để nâng niu?",
+      "Gió cuốn vài chiếc lá úa chạy dọc mặt đường.",
+      "Một chiếc nghẽn lại trên vai hắn.",
+      "Drag vẫn không động đậy.",
+      "Hắn đã đứng nhìn quá lâu.",
+      "Và kỳ lạ thay, hắn muốn đứng thêm một chút nữa.",
+      "Nàng khẽ xoay người.",
+      "Hắn lập tức bước tới, như thể chuyển động ấy có thể che giấu việc mình vừa đứng đó quan sát.",
+      "Bàn tay hắn chạm nhẹ lên vai nàng.",
+      "Kristin quay lại.",
+      "Chiếc mũ trùm bị gió hất khỏi đầu, thả mái tóc đen tuyền rơi xuống hai bên gò má ửng đỏ vì lạnh.",
+      "Drag chưa kịp để tâm tới những đường nét còn lại.",
+      "Một sắc vàng nhợt nhạt đã giữ lấy võng mạc hắn trước.",
+      "Mắt trái.",
+      "Màu của chạng vạng trước khi mặt trời chịu khuất khỏi đường chân trời.",
+      "Màu của những chiếc lá đang nhạt dần quanh Manlanier.",
+      "Cơ thể hắn cứng lại.",
+      "Không phải sợ.",
+      "Hắn biết sợ là gì.",
+      "Ít nhất hắn nghĩ mình biết.",
+      "Thứ này cũ hơn thế.",
+      "Như một vết thương đã liền da từ rất lâu bỗng đau trở lại trước cả khi hắn nhớ nổi mình từng bị thương.",
+      "Hắn cố moi móc trong tiềm thức.",
+      "Trống rỗng.",
       '" Anh còn cần gì nữa sao? "',
-
-      "Hắn im lặng.",
-
-      "Có lẽ lâu hơn mức cần thiết.",
-
-      "Ánh mắt vẫn chưa chịu rời khỏi nàng.",
-
-      "Cuối cùng.",
-
-      "Câu hỏi hắn đã kiếm cớ suốt cả đoạn đường mới rơi khỏi miệng.",
-
+      "Giọng nàng kéo hắn khỏi khoảng úa tàn ấy.",
+      "Drag im lặng một nhịp.",
       '" Tên của ngươi là gì? "',
-
       "Nàng không trả lời ngay.",
-
-      "Chỉ nhìn hắn.",
-
-      "Rồi đưa tay lên.",
-
-      "Một chiếc lá vàng chẳng biết đã mắc trên vai hắn từ lúc nào.",
-
-      "Nàng nhẹ nhàng phủi nó xuống.",
-
-      "Hắn nhìn bàn tay vừa chạm vào mình.",
-
-      "Một cảm giác dễ chịu đến lạ.",
-
-      "Quá nhẹ để gọi tên.",
-
-      "Nhưng cũng đủ để hắn chú ý.",
-
-      "Hắn ngẩng mặt.",
-
-      "Ánh mắt một lần nữa chạm vào sắc vàng nơi khuôn mặt kiêu kỳ.",
-
-      "Cơn gió chạy ngang con phố.",
-
-      "Một vài chiếc lá rời khỏi cành.",
-
-      "Lượn giữa hai người.",
-
-      "Hắn đã từng nhìn thấy những tầng mây trắng trải dài tới tận nơi không còn gì để nhìn.",
-
-      "Từng ở một nơi mà những con người dưới này dành cả đời cầu nguyện để được đặt chân tới.",
-
-      "Nhưng chẳng thứ gì ở đó khiến hắn muốn dừng lại.",
-
-      "Chỉ để nhìn thêm một chút.",
-
-      "Còn lúc này.",
-
-      "Hắn vẫn đứng đây.",
-
-      "Trước một người phàm mà hắn thậm chí còn chưa biết tên.",
-
-      "Trong một thành phố mà chỉ vài khắc trước hắn còn cho là ngu ngốc.",
-
-      "Giữa một mùa mà hắn còn chẳng biết mình sẽ nhớ đến bao lâu.",
-
-      "Hắn chưa hiểu vì sao.",
-
-      "Và có lẽ lúc này cũng chẳng cần phải hiểu.",
-
-      "Ánh mắt hắn vẫn nằm lại nơi nàng.",
-
-      "Ánh vàng của mùa thu đẹp nhất mà hắn từng thấy.",
+      "Chỉ lẳng lặng vươn tay về phía hắn.",
+      "Cơ thể Drag hơi ngả ra sau theo phản xạ.",
+      "Nhưng những ngón tay ấy lại nhanh hơn mà chạm vào vai hắn.",
+      "Chiếc lá úa mắc ở đó được nàng phủi xuống.",
+      "Nó xoay vài vòng trong gió rồi biến mất giữa dòng người.",
+      "Drag nhìn theo bàn tay nàng rút về.",
+      "Một cái chạm nhẹ tới mức đáng lẽ chẳng đáng để nhớ.",
+      "Tiếc là hắn lại nhớ.",
+      "Cơn gió thốc ngang con phố, cuốn lá khô lượn quanh hai người.",
+      "Hắn từng ngự trị ở nơi cao nhất, nơi thế nhân dập đầu cả đời cũng chẳng thể chạm tới.",
+      "Nhưng chưa thứ gì trên thiên đàng khiến hắn muốn nán lại thêm một chút.",
+      "Còn lúc này, hắn lại chôn chân trước một người phàm chưa kịp biết tên.",
+      "Giữa một thành phố vài khắc trước hắn còn nguyền rủa.",
+      "Giữa một mùa thu mà hắn chưa biết rồi sẽ ghi nhớ đến nhường nào.",
+      "Hắn không hiểu vì sao.",
+      "Có lẽ lúc này cũng chẳng cần hiểu.",
+      "Sắc vàng nhợt nhạt vẫn ở đó.",
+      "Và lần này hắn thật sự có thêm thời gian để chiêm ngưỡng.",
+      "Mùa thu đẹp nhất của hắn.",
     ],
   },
   {
@@ -794,223 +294,303 @@ const artworks = [
     story: [
       '" Tiffany Kristen. "',
       '" Nếu muốn, hãy gọi tôi là Kristin. "',
-      "Hắn lẩm nhẩm từng chữ một.",
+      "Hắn lẩm nhẩm từng từ vụn vỡ trong khoang miệng.",
       '" K..Ris.. "',
-      "Vẫn chưa biết rằng mình vừa vô tình nói ra những chữ cái ấy.",
-      "Nàng khẽ nhắc lại cho hắn.",
+      "Dường như kẻ từng trị vì cõi trời vẫn chưa ý thức được mình vừa vô tình thốt ra những âm tiết lạ lẫm ấy.",
+      "Nàng khẽ cất lời, phá vỡ sự ngập ngừng của hắn.",
       '" Là Kris..Tin. "',
-      "Hắn chẳng muốn nàng cư xử với hắn như một thằng ngốc.",
-      "Ừ, ta biết rồi. Ngươi không cần phải nói lại như vậy.",
-      "Hai mày nàng chau lại khiến hắn càng khó xử.",
+      "Lòng tự tôn cựa quậy, hắn chẳng muốn một phàm nhân cư xử với mình như một kẻ ngốc.",
+      '" Ừ, ta biết rồi. Ngươi không cần phải lặp lại như vậy. "',
+      "Đôi mày liễu của nàng hơi chau lại, vô tình đẩy sự lúng túng trong hắn chìm sâu hơn.",
       '" Thế còn anh? Tôi nên gọi anh là gì? "',
       "Tên ư?",
-      "Từ lâu rồi chẳng còn ai nói về cái tên của hắn.",
-      "Thậm chí là chính hắn còn chả nhớ nó được gọi như thế nào.",
-      "Nhưng người phụ nữ trước mặt cần câu trả lời. Tình huống gấp rút buộc hắn phải kiếm một cái tên cho nàng.",
-      "Từng mái nhà, từng biển hiệu. Những dòng chữ ngu ngốc không phù hợp với cái tên mà hắn muốn.",
-      "Bỗng phía sau lưng Kristin có một tấm bảng mục nát nằm chễm chệ phía xa.",
-      "Hai bức chân dung, Hai hàng chữ khác nhau kèm những con số phía dưới.",
-      "Hắn nheo mắt lại.",
-      "DRAGON. bức chân dung là một sinh vật dài có làn bạch da.",
-      "Cạnh bên sinh vật ấy là một bức hình bị xé toạt hơn một nửa.",
-      "Nó phác họa một bóng đen. Một màu hư vô.",
+      "Đã từ rất lâu rồi chẳng còn ai trên cõi đời này dám nhắc đến danh xưng của hắn.",
+      "Thậm chí, ngay cả bản thân hắn dường như cũng đã bỏ mặc nó chìm vào quên lãng.",
+      "Nhưng người phụ nữ trước mặt đang chờ đợi một câu trả lời.",
+      "Ánh mắt hắn lướt qua từng mái ngói, từng biển hiệu xộc xệch của khu chợ.",
+      "Cố tìm bừa một từ ngữ giữa những dòng chữ phàm tục thô lậu nhưng bất thành.",
+      "Bỗng nhiên, lấp ló phía sau bóng lưng Kristin là một tấm cáo thị mục nát nằm chễm chệ nơi khuất góc.",
+      "Trên lớp gỗ tàn tạ in hằn hai bức chân dung.",
+      "Kèm theo hai dòng chữ khác biệt và những con số rách nát.",
+      "Hắn nheo cặp mắt lại.",
+      "Khung hình thứ nhất phác họa một sinh vật thon dài mang lớp vảy trắng bệch.",
+      "Bên dưới khắc một danh xưng.",
+      "DRAGON.",
+      "Ngay cạnh đó là một bức họa đã bị xé toạc hơn phân nửa.",
+      "Chỉ chừa lại một màu đen đặc quánh của cõi hư vô.",
       "DÉMON.",
-      "Chỉ chừa lại một con mắt rực cháy.",
-      "Nhìn chằm chằm vào chính hắn.",
-      "Bỗng nhiên Kristin nhón người lên che mất tầm nhìn hắn.",
-      "Hai hàng mi nàng nhướng lên một khoảng.",
+      "Giữa mảng màu tăm tối ấy, một con mắt rực cháy duy nhất còn sót lại.",
+      "Như đang trừng trừng nhìn thẳng vào bản ngã của chính hắn.",
+      "Sự tập trung của hắn bị cắt đứt khi Kristin nhón gót.",
+      "Dùng thân ảnh nhỏ bé che khuất tầm nhìn.",
+      "Hai hàng mi nàng khẽ nhướng lên đầy dò xét.",
       '" Anh nhìn gì vậy? "',
       '" Không..Ta chỉ... "',
-      "Từng chữ lấp liếm trong miệng hắn chỉ làm tình huống này khó xử hơn.",
+      "Những từ ngữ lấp liếm vụng về vỡ nát trong vòm họng.",
+      "Chỉ càng làm cái bẫy giao tiếp này trở nên ngột ngạt hơn.",
       '" Dragalon Démonic. "',
-      "Kristin nhìn vào con mắt láo liên của hắn.",
+      "Kristin xoáy sâu ánh nhìn vào đôi mắt đang cố lảng tránh của kẻ lạ mặt.",
       '" Cái gì cơ? Tên của anh là Dragalon? "',
-      "Hắn vẫn chưa dám nhìn lại ánh mắt ấy.",
+      "Hắn đành cắn răng gật đầu.",
+      "Vẫn chưa đủ can đảm để đối diện trực tiếp với ánh nhìn soi mói kia.",
       '" Ừ. "',
       '" Và Démonic? "',
       '" Ừ.. "',
-      "Kristin xoay người lại. Nàng muốn coi thử thứ mà nãy giờ khiến hắn mất tập trung.",
-      "Hắn vội bước một khoảng lớn vòng ra phía sau cô ấy. Như thể hắn chả muốn bị nàng phát hiện cái tên bịa đặt của mình.",
+      "Kristin toan xoay người lại.",
+      "Tò mò muốn xem rốt cuộc thứ gì phía sau đã thu hút sự chú ý của hắn nãy giờ.",
+      "Hắn lập tức cuống cuồng sải bước.",
+      "Cố tình vươn người che chắn như một kẻ vụng trộm sợ bị vạch trần danh xưng giả mạo.",
       '" Anh làm gì vậy? "',
-      "Nàng nhích vai sang một bên. Hắn cũng nhích theo hướng của nàng.",
+      "Nàng nghiêng vai sang trái.",
+      "Hắn liền dịch bước cản đường.",
       '" Tránh ra một chút xem. "',
-      "Hắn vờ như chẳng nghe thấy nàng nói gì. Cứ thế, nàng buộc bỏ cuộc trước kẻ kỳ quặc.",
+      "Hắn làm ngơ như thể những lời phàn nàn kia chỉ là gió thoảng qua tai.",
+      "Sự lì lợm ấy cuối cùng cũng buộc nàng phải bỏ cuộc trước một kẻ quá đỗi kỳ quặc.",
       '" Vậy anh tới từ phương nào? "',
-      "Hắn thấy những câu hỏi của nàng thật phiền phức. Hoặc có lẽ hắn chẳng muốn nghĩ tới nơi mà hắn từng sống.",
-      "Thứ mà hắn thấy phiền hơn là phải trả lời nàng sao cho phù hợp.",
-      '" Ta tời từ phía nam của châu lục. "',
+      "Hắn bắt đầu thấy sự tò mò của nhân loại thật phiền nhiễu.",
+      "Hoặc sâu thẳm bên trong, hắn vốn dĩ chẳng muốn khơi gợi lại nơi chốn thiêng liêng mà bản thân từng bị ruồng bỏ.",
+      "Thứ khiến hắn bức bối hơn là phải uốn nắn một câu trả lời sao cho vừa vặn.",
+      '" Ta tới từ phía nam của châu lục. "',
       '" Vậy anh là Dragalon Démonic từ phía nam? "',
-      "Hắn chẳng thể nào hiểu nổi loài người lại tò mò nhiều tới vậy. Ánh mắt hắn lãng sang nơi khác.",
-      "Hắn nghe thấy nàng lầm bẩm cái tên ngớ ngẩn ấy",
+      "Hắn thở dài.",
+      "Vĩnh viễn không thể lý giải nổi thói tọc mạch không biên giới của lũ người trần.",
+      "Ánh mắt rực đỏ đành lảng vội sang một góc phố vô hồn.",
+      "Tiếng lầm bầm của nàng dội thẳng vào thính giác nhạy bén của hắn.",
       '" Dragalon.. Démonic.. "',
       '" Ai đặt tên cho anh vậy? trông thật kì cục. "',
-      "Hai mày hắn chau lại. Người phụ nữ cả gan trước mặt hắn dám chê cái tên mà hắn cất công nghĩ ra.",
-      "Bỗng nhiên nàng nói.",
+      "Hai hàng chân mày lập tức chau chặt.",
+      "Người phụ nữ phàm trần này lại cả gan dám chê bai cái danh xưng mà hắn vừa nhọc công cóp nhặt.",
+      "Bầu không khí gượng gạo bị xé toạc bởi một lời đề nghị.",
       '" Tôi nghĩ mình cần phải ăn gì đó. "',
       '" Còn anh? Anh có muốn ăn cùng không? "',
-      "Chưa kịp trả lời. Một bàn tay siết chặt cổ tay hắn rồi kéo đi.",
+      "Hắn còn chưa kịp mở miệng phản bác.",
+      "Một vòng tay mảnh khảnh đã siết chặt lấy cổ tay hắn mà lôi đi.",
       '" Tôi nghĩ hỏi anh là việc tốn thời gian nhất mà tôi từng làm trên đời này. "',
-      "Hắn nhìn xuống bàn tay nhỏ nhắn ấy. Hắn chưa từng thấy thứ nào mềm mại như vậy.",
-      "Có lẽ nó còn thoải mái hơn chiếc áo mà nàng mua cho hắn.",
-      "Cứ như thế hắn bước bên cạnh nàng. Chẳng có ý định sẽ hỏi nàng dẫn hắn đi đâu. Cũng chẳng nhìn xem xung quanh có gì như lúc hắn đặt chân tới.",
-      "Hắn chỉ ngắm nhìn bàn tay ấy. Một lúc rồi lại một lúc.",
+      "Hắn rũ mắt nhìn xuống những ngón tay nhỏ bé đang bấu chặt lấy mình.",
+      "Một xúc cảm mềm mại đến lạ kỳ.",
+      "Lướt qua da thịt còn dễ chịu hơn cả lớp áo lông mà nàng mua cho hắn.",
+      "Mặc cho bản ngã kiêu hãnh gào thét.",
+      "Hắn cứ thế ngoan ngoãn sải bước bên cạnh nàng.",
+      "Chẳng buồn thắc mắc điểm đến, cũng không màng liếc nhìn khung cảnh nhơ nhớp xung quanh.",
+      "Đôi mắt rực đỏ chỉ tập trung vào duy nhất một điểm.",
+      "Bàn tay nhỏ bé ấy.",
+      "Ngắm nhìn thêm một lúc, rồi lại một lúc nữa.",
       '" Tới rồi, bình thường tôi hay ăn ở đây. "',
       '" Tôi nghĩ anh cũng nên thử vài món ở nơi này. "',
-      "Nàng kéo hắn vào bên trong.",
-      "Vừa bước vào, mùi cừu nướng xộc vào vòm mũi hắn.",
-      "Những chiếc bàn kín chật lũ bợm nhậu. Trên tay bọn họ, kẻ nào kẻ nấy đều cầm một cốc bia.",
-      "Hắn không thích những nơi đông đúc như thế này. Cái mùi tanh tưởi từ lũ con người chưa một lần nào làm hắn thấy thoải mái.",
-      "Kristin dẫn hắn vào chiếc bàn còn trống.",
+      "Nàng lôi tuột hắn qua cánh cửa gỗ sứt sẹo của một tửu điếm.",
+      "Ngay lập tức, mùi thịt cừu nướng khen khét xộc thẳng vào khoang mũi hắn.",
+      "Căn phòng chật ních lũ bợm nhậu phàm phu tục tử.",
+      "Trên tay bọn chúng, kẻ nào kẻ nấy ôm khư khư những vại bia nổi bọt tràn trề.",
+      "Hắn chán ghét sự chen chúc.",
+      "Và thứ mùi tanh tưởi toát ra từ da thịt con người chưa bao giờ thôi làm hắn buồn nôn.",
+      "Kristin dọn đường, dẫn hắn tới một góc bàn hiếm hoi còn trống trải.",
       '" Anh ngồi chờ tôi một xíu, tôi sẽ gọi đồ ăn cho tụi mình. "',
-      "Hắn ngồi xuống, ánh mắt dõi nhìn xung quanh.",
-      "Hắn nhận ra trước khi hắn kịp quan sát. Những cặp mắt đã nhìn hắn từ lúc nào. Những tiếng xì xầm ngày một lớn.",
-      "Như thể bọn họ đều biết hắn không phải người thuộc về nơi này.",
-      "Bỗng Kristin bước tới, nàng phá đi cái bầu không khí căng thẳng ở quán ăn.",
-      "Nàng nhẹ nhàng ngồi xuống. Trên tay nàng là hai chiếc đĩa thức ăn.",
-      "Nàng đẩy một chiếc tới gần phía hắn.",
+      "Hắn bệ vệ ngồi xuống.",
+      "Lướt mắt quét một vòng quanh tửu quán.",
+      "Hắn nhận ra sự bất thường ngay cả trước khi kịp quan sát.",
+      "Những ánh nhìn dò xét từ đám đông đã chĩa thẳng vào hắn từ lúc nào.",
+      "Kéo theo đó là từng đợt xì xầm ngày một lớn.",
+      "Lũ người trần mắt thịt dường như đánh hơi được luồng khí tức dị biệt tỏa ra từ kẻ không thuộc về thế giới của chúng.",
+      "Đúng lúc bầu không khí dần trở nên đặc quánh.",
+      "Sự xuất hiện của Kristin đã phá tan mọi căng thẳng bủa vây.",
+      "Nàng thản nhiên ngồi xuống đối diện, trên tay mang theo hai đĩa thức ăn nóng hổi.",
+      "Nàng đẩy chiếc đĩa sực nức mùi khói về phía hắn.",
       '" Cừu nướng, đặc sản ở nơi này á. "',
       '" Kiểu người như anh chắc chỉ có ăn thịt. "',
-      "Hắn nhìn con cừu xấu số trước mặt. Hắn mới nhớ tới cái tên ngu ngốc mà con người nói về thành phố này.",
+      "Hắn chằm chằm nhìn cái xác cháy xém của con thú xấu số.",
+      "Trong đầu bất chợt vang lại cái danh xưng ngu ngốc mà thế nhân dùng để gọi thành phố ô trọc này.",
       "The City of Lambs.",
-      "Hắn khẽ nhòm qua phần ăn của Kristin.",
+      "Hắn khẽ liếc mắt sang phần ăn thanh đạm của Kristin.",
       '" Cái kia là gì? "',
       '" Bông cải nướng. Sao? anh có muốn ăn thử không? "',
-      "Hắn lắc đầu.",
-      "Nhìn lại miếng thịt cừu mọng nước.",
+      "Hắn cau mày lắc đầu.",
+      "Miễn cưỡng dời sự chú ý về lại mảng thịt cừu đang rỉ mỡ.",
       '" Ta phải ăn cái này đúng không? "',
-      "Mí mắt Kristin khẽ giật.",
+      "Mí mắt Kristin khẽ giật lên đầy bất lực.",
       '" Ừa không. Anh không cần ăn đâu. Mang cho mấy gã xung quanh đi. "',
-      "Hắn bèn đứng dậy, hai tay nhấc chiếc đĩa.",
-      "Kristin nhìn hắn.",
-      "...",
+      "Sự ngạo mạn chẳng cho phép hắn nhận ra lời mỉa mai.",
+      "Hắn lẳng lặng đứng dậy.",
+      "Hai tay bê chiếc đĩa toan quay bước.",
+      "Kristin trừng mắt nhìn hắn.",
       '" Anh có thể ngồi xuống và nuốt nó được không? Tôi không có nhiều tiền đâu đấy! "',
-      "Hắn nhìn nàng.",
-      "Rồi đặt đĩa xuống.",
+      "Hắn đờ đẫn nhìn vẻ mặt càu nhàu của nàng.",
+      "Cuối cùng đành hậm hực thả chiếc đĩa trở lại mặt bàn.",
       '" Loài người các ngươi thật khó hiểu. "',
       '" Anh mới là người khó hiểu đấy! "',
-      "Kristin đẩy đĩa về phía hắn.",
+      "Kristin kiên quyết đẩy đĩa thịt về sát mép bàn của hắn.",
       '" Ăn đi. Anh lắm chuyện thiệt. "',
-      "Hắn miễn cưỡng xé một miếng bỏ vào miệng.",
+      "Hắn dùng tay trần xé một mảng thịt.",
+      "Ném vào miệng nhai một cách gượng ép.",
       "Rồi thêm một miếng nữa.",
-      "Không tệ như những gì hắn mường tượng tới.",
-      "Trong lúc hắn chăm chú thưởng thức phần thịt cừu.",
-      "Hắn để ý người phụ nữ trước mặt mình đang chóng cằm từ lúc nào.",
-      "Ánh mắt nàng đổ dồn về phía hắn.",
+      "Hương vị phàm tục này hóa ra lại không tồi tệ như những gì hắn từng khinh mạn.",
+      "Giữa lúc hắn còn đang bận rộn với bữa ăn.",
+      "Kristin đã chống cằm tĩnh lặng từ bao giờ.",
+      "Ánh mắt nàng xoáy sâu vào từng đường nét trên khuôn mặt kẻ đối diện.",
       '" Thế tại sao lúc gặp tôi anh lại không mặc gì? "',
-      "Hắn dừng nhai, miếng cừu trở về vị trí vốn có của nó.",
+      "Hàm răng đang nhai của hắn lập tức khựng lại.",
+      "Mảng thịt cừu vừa xé vội vàng yên vị trở lại trên đĩa.",
       '" Thật ra thì... ở phía nam bọn ta trông như vậy. "',
       '" Như thế nào? "',
-      "Nàng tiến sát hơn, tròng tử nàng mở to dần.",
-      "Nàng thật biết cách làm khó hắn.",
+      "Nàng chồm người tới trước.",
+      "Đồng tử mở to như muốn nuốt chửng mọi sự lấp liếm.",
+      "Nàng phàm nhân này thực sự biết cách dồn một cựu thần vào góc tường.",
       '" Bọn ta.. Hoang dã. "',
-      "Kristin chờ.",
+      "Kristin giữ nguyên tư thế chờ đợi.",
       '" Và... ngang tàn. "',
-      "Nàng bật cười.",
+      "Nàng không nhịn được mà bật cười thành tiếng.",
       '" Là sao nữaa? "',
-      "Hắn chẳng hiểu có chỗ nào buồn cười trong câu nói ấy.",
-      "Nhưng ít nhất một phần nào ở bên trong hắn cảm thấy nhẹ nhỏm trước những nụ cười như thế này. Hoặc chỉ khi nó xuất hiện với người phụ nữ đối diện mình.",
+      "Hắn cau mày.",
+      "Hoàn toàn không hiểu nổi đâu là điểm nực cười trong sự dối trá vụng về của mình.",
+      "Nhưng sâu thẳm trong cõi lòng nguội lạnh.",
+      "Hắn lại thấy nhẹ nhõm khi chiêm ngưỡng nụ cười ấy.",
+      "Một đặc quyền có lẽ chỉ dành riêng cho người phụ nữ đang ngồi trước mặt hắn lúc này.",
       '" Vậy một người hoang dã và ngang tàn như anh tới phía bắc làm gì? "',
-      "Bỗng hắn im bặc trước câu hỏi như vậy. Nó không khó như những thứ mà Kristin hỏi trước đấy.",
+      "Cổ họng hắn như bị nghẹn lại bởi một khối chì vô hình.",
+      "Lời tra vấn này vốn dĩ chẳng oái oăm bằng những thứ nàng từng hỏi trước đấy.",
       '" Anh đang tìm thứ gì sao? "',
       "Tìm gì ư?",
-      "Câu hỏi ấy dẫn ánh mắt hắn hướng về cửa sổ.",
-      "Ánh ngày lại một lần nữa bị màn đêm nuốt chửng.",
-      "Hắn chẳng nhớ rõ bao nhiêu lần chuyện này xảy ra từ cái ngày hắn rơi xuống khỏi bầu trời.",
-      "Hắn chỉ bước, những bước chân nặng trĩu lang bạt.",
+      "Câu hỏi ấy dẫn vành mắt hắn hướng ra phía khung cửa sổ tàn tạ.",
+      "Nơi chút ánh sáng thoi thóp của ngày tàn đang bị bóng đêm nuốt chửng.",
+      "Hắn không đếm nổi đã có bao nhiêu vòng tuần hoàn như thế trôi qua.",
+      "Kể từ khi thân xác này rơi rụng khỏi bầu trời.",
+      "Hắn chỉ trôi dạt trong những bước chân nặng trĩu vô định.",
       "Không một phương hướng.",
       "Không một mục tiêu.",
-      "Chỉ là những vết chân vẫn cử động. Có lẽ câu hỏi của nàng khiến thứ mơ hồ bên trong hắn dần hiện hữu.",
-      "Hắn không muốn nghĩ tới nó nhiều như vậy. Muốn cất nó lại dưới vực.",
-      "Nàng kéo hắn về sau lớp suy tư ấy.",
+      "Sự tồn tại của hắn chỉ gói gọn trong những tàn tích để lại trên mặt đất.",
+      "Có lẽ câu hỏi của nàng dường như đã lôi tuột thứ hỗn mang cô độc ấy ra ánh sáng.",
+      "Hắn không muốn đào bới nó thêm.",
+      "Hắn chỉ muốn chôn vùi sự thảm hại ấy vĩnh viễn dưới vực sâu thẳm.",
+      "Nàng gõ nhịp ngón tay, kéo hắn thoát khỏi những ảo vọng xa xăm.",
       '" Này. "',
-      "Hắn chậm rãi quay lại nhìn nàng. Khó như cách hắn đối diện với chính mình. Có lẽ nàng lại muốn câu trả lời.",
-      "Nhưng Kristin chỉ dùng tay đẩy phần bông cải về phía hắn.",
+      "Hắn chậm chạp dời mắt về phía nàng.",
+      "Nặng nề như cách hắn đang phải đối diện với chính bản ngã đổ nát của mình.",
+      "Có lẽ nàng đang chờ đợi một câu trả lời.",
+      "Nhưng Kristin không đòi hỏi.",
+      "Nàng chỉ lặng lẽ đẩy phần rau củ nướng về phía hắn.",
       '" Hay anh ăn hộ tôi đi. Tôi hơi no rồi. "',
       '" Đừng nghĩ nhiều quá. Cứ ăn đi đã. "',
-      "Hắn nhìn nàng một thoáng.",
-      "Rồi nhìn từng miếng bông cải trắng vô thức. Hắn cứ ngỡ lại một câu hỏi ngớ ngẩn từ nàng.",
-      "Lúc nãy hắn từ chối vì nghĩ nó dở hơn thứ nàng gọi cho hắn. Càng nhìn, nó càng lôi cuốn lạ kì.",
-      "Hắn bóc một miếng rồi bỏ vào miệng. Lưỡi hắn chẳng thấy nó ngon. Nhưng nó vẫn ngon bằng một cách nào đấy hắn chẳng rõ.",
-      "Hắn cứ bóc, Kristin thì nhìn hắn ăn.",
-      "Cho tới khi một thanh âm lớn phát ra từ phía lối cửa ra vào.",
-      "Cả căn phòng dường như bị bao trùm trong sự tĩnh lặng.",
-      "Một gã bụng bự bước vào. Từng bước chân dẫm mạnh như thể hắn chả sợ ai trong căn phòng này.",
-      "Hắn khoác một chiếc áo choàng da gấu. Trên ngực là chiếc huy hiệu có hình con mắt bọc bởi ánh vàng kim.",
-      "Drag nhìn biểu tượng ấy lâu hơn. Có lẽ hắn biết tới thứ trên ngực hắn.",
-      "Theo sau gã quý tộc kia là vài tên vô lại cùng những bao kiếm được đặt bên hông.",
-      "Không một ai trong quán dám nhìn họ quá lâu chỉ trừ mỗi Drag.",
+      "Hắn bần thần nhìn nàng một khắc.",
+      "Rồi lại dán mắt vào những nhành bông cải vô tri.",
+      "Ngỡ rằng bản thân chuẩn bị hứng chịu thêm một câu tra khảo ngớ ngẩn nào đó.",
+      "Vài khắc trước hắn còn chê bai thứ thức ăn thanh đạm tẻ nhạt này.",
+      "Nhưng càng nhìn, nó lại càng lôi cuốn đến dị thường.",
+      "Hắn bóc một nhành nhỏ bỏ vào miệng.",
+      "Lưỡi hắn chẳng nếm được vị ngon ngọt nào.",
+      "Nhưng một thứ tư vị lạ lùng bỗng xoa dịu cuống họng bằng một cách an ủi mà hắn không thể gọi tên.",
+      "Hắn cứ lặng lẽ tận hưởng.",
+      "Dưới ánh nhìn không rời của nàng.",
+      "Cho tới khi một tiếng động thô bạo đạp tung cánh cửa tửu điếm.",
+      "Cả căn phòng tức khắc bị dìm vào một sự tĩnh lặng chết chóc.",
+      "Một gã béo ịch trịch thượng bước vào.",
+      "Từng bước chân xông xênh nện xuống sàn gỗ như thể cả cõi này đều nằm dưới gót giày của gã.",
+      "Gã khoác một tấm áo choàng da gấu sần sùi.",
+      "Trên ngực tạc một chiếc huy hiệu khắc hình con mắt bọc vàng kim chói lọi.",
+      "Ánh mắt Drag dán chặt vào thứ kim loại xảo trá ấy.",
+      "Dường như tiềm thức vặn vẹo của hắn đã từng ghi dấu biểu tượng này.",
+      "Đi theo sau gã quý tộc hợm hĩnh là những tay sai mặt mày bặm trợn.",
+      "Tay lăm lăm những thanh gươm chưa rút khỏi vỏ.",
+      "Đám phàm nhân xung quanh lập tức cúi gầm mặt.",
+      "Chẳng kẻ nào đủ gan dạ để chạm mắt bọn chúng.",
+      "Ngoại trừ hắn với sự kiêu ngạo.",
       "Lão quý tộc khằn giọng.",
       '" Các ngươi nghe rõ những lời này! "',
-      "Vừa dứt câu hắn quăng một túi vải chật ních lên mặt bàn.",
-      "Tiếng kim loại inh ỏi va vào nhau.",
+      "Gã ném phịch một túi vải nặng trĩu xuống mặt bàn.",
+      "Tiếng những đồng tiền kim loại va đập vào nhau vang lên chói tai.",
       '" Bọn tao cần tìm một con quái vật xuất hiện ở biên giới vài ngày trước. "',
-      "Drag nhún vai rồi tiếp tục nhai phần bông cải còn trên đĩa.",
+      "Drag nhún vai thờ ơ.",
+      "Tiếp tục nhai nghiến phần bông cải tẻ nhạt còn sót lại.",
       '" Nó có hình dáng của con người. "',
-      "Kristin xoay người lại, tay nàng chậm rãi đặt chiếc nĩa xuống.",
+      "Kristin bất giác xoay người.",
+      "Bàn tay mỏng manh chậm rãi buông thõng chiếc nĩa xuống mặt gỗ.",
       '" Nó có con mắt rực đỏ. "',
-      "Hắn thấy vậy liền nhìn thứ vật lạ lùng mà nàng vừa hạ xuống.",
-      "Drag vươn tay tới muốn cẩm lên thử.",
-      "Nàng nhanh chóng hất chiếc nĩa ra xa.",
-      "Rồi chồm lấy tay hắn.",
+      "Ánh mắt Drag bị thu hút bởi món vật dụng ăn uống lạ lùng mà nàng vừa buông.",
+      "Hắn tò mò vươn tay toan cầm lên xem xét.",
+      "Nàng vội vã gạt phăng chiếc nĩa ra xa.",
+      "Ngay lập tức, đôi bàn tay lạnh toát chồm tới siết lấy tay hắn.",
       '" Kèm cặp cánh.. "',
-      "Nàng kéo mạnh về như thể muốn hắn đứng lên cùng với nàng.",
+      "Nàng dùng lực kéo mạnh.",
+      "Như muốn ép hắn phải lập tức rời khỏi chiếc ghế đẫm mùi nguy hiểm này.",
       '" Đen như tro tàn. "',
-      "Gã quý tộc hất túi tiền về phía trước.",
+      "Gã quý tộc đắc thắng hất túi tiền ra giữa gian phòng.",
       '" Bất cứ kẻ nào có bất kì manh mối nào... "',
-      "Drag ngước nhìn nàng khó hiểu.",
+      "Drag ngước nhìn vẻ hoảng loạn của nàng.",
+      "Tròng mắt hoàn toàn mờ mịt.",
       '" Hả? "',
       "Nàng khẽ thì thầm.",
       '" Mình rời khỏi đây thôi. "',
       '" Nhưng ta còn chưa... "',
       '" Nhanh! "',
-      "Kristin siết mạnh tay hơn.",
-      "Hắn chả hiểu chuyện gì vừa xảy ra. Mắt vẫn hướng về dĩa thức ăn còn sót lại.",
-      "Bỗng một lưỡi kiếm giơ lên trước mặt khi bọn họ vừa đứng dậy.",
+      "Vòng tay nàng siết chặt như hằn lên da thịt.",
+      "Hắn ngoan ngoãn đứng dậy dẫu tâm trí vẫn chưa mường tượng được nguồn cơn.",
+      "Ánh mắt tiếc nuối ngoái nhìn đĩa thức ăn còn dang dở.",
+      "Một tia hàn quang lạnh lẽo vụt xẹt qua.",
+      "Lưỡi gươm sắc lẻm đã kề sát yết hầu ngay khoảnh khắc bọn họ vừa đứng thẳng.",
       '" Khoan nào. "',
-      "Kristin dừng lại trước thứ sắc lẹm ấy.",
-      "Một tên trong số chúng nhìn về phía Drag.",
+      "Kristin sững người trước hơi lạnh của thứ vũ khí phàm tục.",
+      "Một gã tay sai nheo mắt nhìn trừng trừng vào kẻ lạ mặt cao lớn.",
       '" Tao chưa từng gặp mày ở khu này. "',
-      "Drag nhìn thanh kiếm mỏng manh trước mặt mình. Rồi nhìn về kẻ lưu manh phía trước.",
-      '" Sao tay ngươi run vậy? "',
+      "Drag lướt mắt qua thanh gươm mỏng manh như một nhánh củi khô.",
+      "Rồi nhàn nhạt chĩa tầm nhìn vào kẻ ngu muội đang cầm nó.",
+      '" Ta cũng chưa gặp ngươi. "',
+      '" Nhưng mà sao tay ngươi run vậy? "',
       '" Tao không.. Tại sao tao phải run trước một kẻ vô hại như mày. "',
-      "Drag giơ tay về phía thanh kiếm. Từng ngón tay siết vào lưỡi kim loại.",
-      "Một tiếng vỡ nứt khiến cả căn phòng kinh ngạc.",
+      "Drag từ tốn vươn tay trần nắm lấy phần sắc nhọn nhất.",
+      "Từng ngón tay xiết chặt vào lưỡi kim loại.",
+      "Một tiếng vỡ nát vang lên khiến toàn bộ sinh linh trong tửu điếm phải nín thở.",
       '" Là mày! Con quái vật. "',
-      "Hắn chẳng mấy ngạc nhiên khi có người gọi hắn như thế.",
-      "Gã quý tộc sờ sững trước sinh vật mà hắn săn lùng.",
+      "Hắn đã quá quen thuộc với những danh xưng kinh tởm mà nhân loại dành tặng.",
+      "Gã quý tộc béo ịch lùi lại.",
+      "Sững sờ khi con mồi mà gã rao giá đang sừng sững đứng ngay trước mặt.",
       '" Tụi mày hãy xẻ cánh của nó! "',
-      "Vừa dứt câu, hai tên đàn em của gã lập tức lao tới.",
-      "Tụi lưu manh rút kiếm ra khỏi vỏ.",
-      "Bỗng nhiên bàn tay của nàng lạnh hơn so với lúc nãy. Hắn cảm nhận thấy rõ.",
-      "Kristin siết chặt rồi kéo mạnh xuống như thể nàng muốn hắn cúi người.",
-      "Nhưng những cây kiếm kia còn chưa hoàn toàn rời khỏi vỏ. Bản năng hắn vẫn chưa nói bất cứ thứ gì.",
-      "Có lẽ nàng nhanh trí hơn hắn.",
-      "Ít nhất hắn nghĩ vậy cho tới khi hai lưỡi kiếm chém ngang qua người hắn.",
-      "Ở giữa tình huống căng thẳng, hắn buộc hất nàng vào một góc nhỏ.",
-      "Hai thanh kiếm chuyển hướng, bổ dọc xuống người hắn.",
-      "Drag chụp lấy hai lưỡi kiếm. Chúng cứa sâu vào lòng bàn tay.",
-      "Những khe máu chảy từ cổ tay.",
-      "Từng hạt, từng hạt.",
-      "Rồi ngưng lại.",
+      "Mệnh lệnh chết chóc vừa buông.",
+      "Hai gã đồ tể lập tức lao vút tới.",
+      "Những thanh gươm chói lọi rút phăng khỏi vỏ.",
+      "Xúc cảm lạnh toát truyền từ bàn tay nàng chạy thẳng vào mạch máu hắn.",
+      "Nàng dùng chút sức lực tàn mọn giật mạnh bờ vai hắn xuống.",
+      "Một bản năng bảo vệ ngớ ngẩn nhưng vô cùng quyết liệt.",
+      "Vũ khí của bọn hạ đẳng còn chưa kịp vung lên không trung.",
+      "Bản năng của một kẻ ngoại lai vẫn ngủ quên.",
+      "Chưa hề lên tiếng cảnh báo bất cứ điều gì.",
+      "Có chăng chỉ là phàm nhân này phản xạ nhạy bén hơn hắn một nhịp.",
+      "Ít nhất hắn nghĩ vậy.",
+      "Cho đến khi hai lưỡi gươm xé toạc không khí chém ngang qua người.",
+      "Bằng một lực đạo kiểm soát hoàn hảo.",
+      "Hắn hất mạnh nàng văng vào một góc khuất an toàn.",
+      "Hai đường kiếm phàm tục lập tức đổi hướng, giáng thẳng xuống đỉnh đầu.",
+      "Không thèm tránh né.",
+      "Hai bàn tay trần của hắn giơ lên chụp lấy những lưỡi thép đang bổ xuống.",
+      "Vũ khí sắc lạnh cứa xâu vào da thịt.",
+      "Thứ chất lỏng đỏ sẫm trào ra từ những vết nứt nơi cổ tay.",
+      "Từng hạt, từng hạt rỉ rắc.",
+      "Rồi đột ngột, dòng chảy chết chóc ấy đóng băng hoàn toàn.",
       '" Vẫn còn yếu lắm. "',
-      "Hắn lập tức bẻ lưỡi kiếm. Nắm lấy mãnh vỡ như một con dao găm.",
-      "Trong một khắc, không ai trong căn phòng có thể bắt kịp bước di chuyển của hắn.",
-      "Chỉ còn hai thi thể từ từ gục xuống.",
-      "Chẳng có một tiếng la. Chẳng một âm thanh nào phát ra từ hai kẻ xấu số.",
-      "Có lẽ cổ họng của bọn họ không còn nguyên vẹn.",
-      "Không cho kẻ thù một cơ hội. Drag bước tới gã quý tộc.",
-      "Mặt gã tái nhợt như không còn một giọt máu.",
+      "Bằng một cái vặn nhẹ bẫng, hắn bẻ gãy lưỡi gươm kiêu hãnh.",
+      "Bàn tay nhuốm máu vớ lấy một mảnh vỡ vụn vặt như một lưỡi dao găm.",
+      "Chỉ trong một cú chớp mắt của tử thần.",
+      "Không một sinh vật nào trong gian phòng có thể bắt kịp bước di chuyển của hắn.",
+      "Không gian bị xé toạc bởi sự đổ gục của hai khối thịt nặng nề.",
+      "Không một tiếng gào thét.",
+      "Chẳng có lấy một lời trăng trối vang lên từ hai kẻ xấu số.",
+      "Bởi những chiếc cổ họng nhơ nhớp ấy đã bị băm nát từ lúc nào.",
+      "Không bố thí cho kẻ thù một ân huệ trốn chạy.",
+      "Drag lãnh đạm bước thẳng tới trước mặt gã quý tộc.",
+      "Khuôn mặt sồ sề của gã lúc này đã tái nhợt.",
+      "Cạn kiệt không còn lấy một giọt máu.",
       '" Lúc nãy, ngươi có vẻ là người mạnh miệng nhất. "',
-      "Gã sợ hãi lùi lại. Thứ màu kinh hoàng nằm trong võng mạc của tên quái thú trước mặt.",
-      "Chỉ nói cho hắn một chữ.",
+      "Gã lùi bước va vào bờ tường.",
+      "Cơ thể gục quỵ xuống như thể bức tường cũng chẳng thể nào cứu lấy gã.",
+      "Nhưng dễ dàng gì gã được quỳ trước mặt hắn.",
+      "Tròng mắt co giật liên hồi khi diện kiến thứ sắc đỏ ngục tù đang bùng cháy nơi võng mạc của dã thú trước mặt.",
+      "Nó chỉ mang duy nhất một thông điệp tàn khốc.",
       "-Tử-",
-      "Cơ thể hắn bị nhấc lên như thể trọng lực chưa từng tồn tại ở căn phòng này.",
-      "Hơi thở trở nên khó nhọc.",
+      "Thân hình béo ịch của gã bị nhấc bổng lên không trung.",
+      "Như thể mọi định luật của đất mẹ đều trở nên vô nghĩa.",
+      "Cuống họng bị siết chặt khiến từng luồng sinh khí đứt đoạn.",
       '" Nghe bảo ngươi cần tìm ta? "',
       '" Vậy giờ ngươi cần gì? "',
-      "Lúc nãy gã còn nghĩ mình là người làm chủ trong cuộc săn.",
-      "Nhưng trước bàn tay nhấc người hắn lên như một con thỏ vô hại.",
-      "Hắn mới nhận ra mình còn thua xa một con mồi.",
+      "Vài khắc trước, gã còn hoang tưởng bản thân là tay thợ săn làm chủ tình thế.",
+      "Giờ đây, lơ lửng trên bàn tay của quỷ dữ như một con thỏ ốm yếu.",
+      "Gã mới thấm thía rằng mình thậm chí chẳng đáng làm một con mồi.",
       '" Làm ơn, tôi sẽ cho anh tất.. Anh cần tiền, tôi sẽ cho anh tiền. "',
       '" Hãy để tôi sống. "',
       "Drag siết mạnh tay hơn.",
@@ -1018,32 +598,43 @@ const artworks = [
       '" Ngươi không có tư cách lắm. "',
       '" Những kẻ ngạo mạn hơn ta chưa từng sống sót. "',
       '" À, nhân tiện cái túi ngươi mang tới? có bao nhiêu? "',
-      "Giọng nói của gã khô lại. Từng chữ mắc nghẹn lại ở cổ.",
+      "Cổ họng gã khô khốc.",
+      "Từng âm tiết thảm hại rên rỉ mắc nghẹn lại nơi cuống họng.",
       '" Bố..n "',
       '" Tr..ăm Chromee. "',
-      "Drag nhìn xuống chiếc áo của mình.",
+      "Drag rũ mắt nhìn xuống lớp áo vấy bẩn của mình.",
       '" Vậy cũng chẳng là bao nhiêu? "',
       '" Làm ơn.. Hã.. "',
-      "Gã quý tộc được thả xuống.",
-      "Nhưng sự vui mừng lại sớm hơn cơn đau mà đáng lẽ hắn nên nhận trước.",
-      "Những vệt máu chảy xuống. Từng bước chân không còn vững. Gã chồm lấy chiếc bàn mà lúc nãy gã quăng túi tiền lên.",
-      "Sự kiêu ngạo biến mất kèm cổ họng của gã.",
-      "Từng dòng tanh tươi chảy vào ly rượu trên bàn.",
-      "Sau vụ thảm sát man rợ. Ditovias chìm trong sự tĩnh lặng.",
-      "Chẳng lấy nổi một âm thanh. Chẳng còn một bóng người",
+      "Thân xác nặng nề được buông thả xuống mặt đất.",
+      "Nhưng niềm vui sống sót mù quáng đã lấp liếm cơn đau chí mạng.",
+      "Một cơn đau mà đáng lẽ gã phải nhận thức được từ giây phút đầu tiên.",
+      "Từng vệt máu ồ ạt trào khỏi yết hầu.",
+      "Rút cạn sức lực nơi đôi chân hoảng loạn.",
+      "Gã vật vã chồm lên chiếc bàn gỗ nhớp nháp mà lúc nãy đã mạnh tay quăng túi tiền lên.",
+      "Mọi thứ vinh hoa và kiêu ngạo của trần thế đổ gục cùng với chiếc cổ họng đã bị đứt lìa.",
+      "Dòng đỏ tươi tanh tưởi chậm rãi hòa vào vại bia chua loét trên mặt bàn.",
+      "Cơn tàn sát chớp nhoáng khép lại.",
+      "Tửu điếm Ditovias chìm trong một nấm mồ câm lặng.",
+      "Chẳng có tiếng rên rỉ nào còn sống sót.",
+      "Tịnh không còn một bóng người thở dốc.",
       "Chỉ còn mỗi hắn.",
-      "Chậm chạp bước tới chiếc bàn hai người từng ngồi lúc nãy.",
-      "Chỉ là chẳng còn nàng xung quanh.",
-      "Hắn cầm lấy miếng bông cải còn cắn dở ban nãy.",
-      "Bỏ vào miệng. Nó không còn ngon như trước.",
-      "Không phải vì nó dở. Chỉ là cảm giác không tròn vị.",
-      "Hắn nhìn sang chiếc nĩa mà nàng từng hất đi. Cuối cùng cũng có thể xem thứ này.",
-      "Nhưng hắn cũng chẳng muốn xem nó tới vậy. Không giống lúc nàng vẫn còn cạnh bên.",
+      "Một mình đơn độc đứng đó.",
+      "Chậm rãi bước về góc bàn nơi vài khắc trước vẫn còn vương chút hơi ấm.",
+      "Chỉ là bóng dáng người phụ nữ kiêu kỳ ấy đã hòa vào hư vô.",
+      "Hắn vô thức nhặt lấy phần bông cải còn cắn dở.",
+      "Bỏ vào khuôn miệng nhuốm máu.",
+      "Nó trở nên nhạt nhẽo và vô vị.",
+      "Không phải vì thức ăn đã nguội lạnh.",
+      "Chỉ là thứ gia vị lúc ăn cùng nàng đã biến mất.",
+      "Khiến mọi cảm giác trở nên trống rỗng.",
+      "Ánh mắt hắn va vào chiếc nĩa sắt mà nàng hốt hoảng gạt phăng.",
+      "Cuối cùng, hắn đã có thể rảnh rỗi nhấc nó lên.",
+      "Nhưng khao khát ấy bỗng trở nên nguội lạnh khi người cấm cản hắn không còn ở đó.",
       "-Anh đang tìm thứ gì ư?-",
-      "Câu hỏi lúc nãy chợt ùa về.",
-      "Thật nặng nề.",
+      "Tiếng vọng từ dĩ vãng gần gũi đột ngột dội về.",
+      "Mang theo một sức nặng bóp nghẹt buồng phổi.",
       '" Kristin? "',
-      "Lần này hắn nói tên nàng chính xác.",
+      "Lần đầu tiên, âm tiết phàm trần ấy trượt ra khỏi vành môi hắn một cách trọn vẹn và hoàn mỹ.",
       '" ..Kristin. "',
     ],
   },
@@ -1060,760 +651,393 @@ const artworks = [
     background: "#e8f1f3",
     uiTheme: "black",
     story: [
-      "Từng bước chân dẫm sâu xuống lớp bùn ẩm ướt.",
-
+      "Từng bước chân giẫm sâu xuống lớp bùn nhão nhoét.",
       "Một bước.",
-
       "Rồi lại một bước nữa.",
-
-      "Chẳng còn gì cho hắn nhìn lại phía sau.",
-
-      "Những ngọn đèn của con phố giờ chỉ còn là vài chấm vàng nhợt nhạt.",
-
-      "Chúng nằm lại sau lưng hắn.",
-
-      "Chỉ còn màn sương là ở lại.",
-
+      "Chẳng còn gì vương vấn để hắn phải ngoái nhìn lại phía sau.",
+      "Những ngọn đèn của khu phố giờ chỉ còn là vài chấm vàng lợt lạt.",
+      "Chúng chìm lỉm sau lưng hắn, bị nuốt chửng bởi màn trắng bất tận.",
       "Manlanier.",
-
-      "Chỉ còn lại là một thành trì chết mục trong màn trắng bất tận.",
-
-      "Những mái nhà ẩn hiện.",
-
-      "Những con hẻm dường như dẫn vào một khoảng hư vô khác.",
-
-      "Bước chân hắn có phần vội vàng hơn.",
-
+      "Chỉ còn là một thành trì chết mục trong lớp sương mù đặc quánh.",
+      "Những mái nhà ẩn hiện xám xịt.",
+      "Những con hẻm sâu hút như dẫn thẳng vào một khoảng hư vô.",
+      "Bước chân hắn vô thức trở nên vội vã.",
       '" Kristin? "',
-
-      "Cái tên của nàng bị giam lại ở khoảng không.",
-
-      "Chẳng một lời hồi âm.",
-
-      "Chỉ có âm thanh của bùn đất được xới lên ở phía dưới.",
-
+      "Cái tên của nàng bị giam lại giữa không trung lạnh ngắt.",
+      "Chẳng có lấy một lời hồi âm.",
+      "Chỉ còn tiếng bùn đất nhóp nhép bị xới tung dưới gót chân trần.",
       "Có lẽ nàng sợ hắn.",
-
-      "Một suy nghĩ chạy ngang qua tâm trí.",
-
-      "Nhưng chẳng ở lại mãi. Không hợp lí, lúc nãy nàng còn nắm chặt lấy tay hắn. Hơi ấm ấy không nói dối.",
-
-      "Tại sao cơ chứ?",
-
-      "Từ bao giờ hắn lại phải bận tâm tới người phụ nữ ấy như thế nào?",
-
+      "Một suy nghĩ chợt xẹt qua tâm trí.",
+      "Nhưng nó không đọng lại quá lâu.",
+      "Không hợp lý, vài khắc trước nàng còn nắm chặt lấy tay hắn cơ mà.",
+      "Thứ hơi ấm mỏng manh ấy không hề biết nói dối.",
+      "Vậy tại sao cơ chứ?",
+      "Từ bao giờ hắn lại phải bận tâm tới một phàm nhân nhiều đến vậy?",
       "Có lẽ nàng chẳng muốn dính dáng tới hắn nữa.",
-
-      "Một ý nghĩ khác chồng lên.",
-
-      "Lại một lần nữa.",
-
-      "Hắn không thể dứt khỏi những bứt rứt vô nghĩa ấy.",
-
-      "Hai cẳng chân vẫn không ngơi nghỉ.",
-
-      "Chính hắn cũng không có lí do cho bản năng của mình.",
-
-      "Chỉ là một sự thôi thúc ép buộc cơ thể. Chỉ như vậy.",
-
-      "Có lẽ hắn muốn chắc rằng nàng an toàn.",
-
+      "Một ý nghĩ khác lại trồi lên, áp bức sự bào chữa vừa rồi.",
+      "Hắn không thể dứt mình khỏi mớ bứt rứt vô nghĩa đang cào xé tâm can.",
+      "Hai cẳng chân vẫn mải miết lao đi không ngơi nghỉ.",
+      "Chính hắn cũng chẳng tìm nổi một lý do cho cái bản năng lạ lùng này.",
+      "Chỉ là một sự thôi thúc tột độ đang ép buộc cơ thể.",
+      "Chỉ có vậy.",
+      "Có lẽ hắn muốn chắc rằng nàng vẫn an toàn.",
       "Không.",
-
-      "Nghe thật ngu ngốc.",
-
+      "Nghe thật ngu xuẩn.",
       "Có lẽ hắn chỉ muốn hỏi tại sao nàng lại bỏ đi.",
-
-      "Tại sao không ở lại.",
-
-      "Lại càng lố bịch.",
-
-      "Ai lại muốn ở cạnh một kẻ như hắn chứ?",
-
-      "Drag cúi nhìn chiếc áo mà nàng mua cho hắn.",
-
-      "Vạt áo còn dính màu tàn dư của bọn chết dở.",
-
-      "Hắn nhớ tới nàng từng chạm vào chỗ ấy. Từng phủi chiếc lá vàng từ vai hắn",
-
+      "Lố bịch.",
+      "Ai lại muốn nán lại bên một sinh vật như hắn chứ?",
+      "Drag rũ mắt nhìn chiếc áo mà nàng cất công mua cho hắn.",
+      "Vạt áo sẫm màu vẫn còn vấy chút máu tanh của bọn chết dở trong quán nhậu.",
+      "Hắn nhớ lại khoảnh khắc nàng chạm vào đó.",
+      "Bàn tay nhỏ bé ấy từng cẩn trọng phủi một chiếc lá úa vàng khỏi vai hắn.",
       "Phải rồi.",
-
       "Bốn Chromee.",
-
-      "Hắn cần trả lại số tiền nàng đã bỏ ra cho bộ quần áo này.",
-
-      "Ít nhất là lí do có sức thuyết phục với chính hắn.",
-
-      "Drag khẽ siết phần cổ áo.",
-
+      "Hắn cần trả lại số bạc vụn mà nàng đã tiêu tốn cho bộ y phục này.",
+      "Ít nhất, đó là một cái cớ đủ sức thuyết phục chính bản ngã của hắn lúc này.",
+      "Drag khẽ siết chặt phần cổ áo.",
       '" Bốn Chromee. "',
-
       "Hắn lẩm nhẩm.",
-
-      "Một cơn gió lạnh thổi ngang con ngõ.",
-
-      "Màn sương trước mặt cuộn thành từng dải mỏng.",
-
-      "Bỗng hai hàng lông mày hắn nhướng lên.",
-
-      "Có thứ gì đó lẫn trong gió.",
-
-      "Một sự quen thuộc.",
-
-      "Một mùi hương rất nhẹ.",
-
+      "Một luồng gió buốt lạnh thổi thốc qua con ngõ tối.",
+      "Màn sương đặc quánh trước mặt bị xé ra thành từng dải mỏng.",
+      "Bỗng nhiên, hai hàng lông mày hắn nhướng lên.",
+      "Có thứ gì đó lởn vởn lẫn trong luồng gió.",
+      "Một sự quen thuộc tột độ.",
+      "Một mùi hương rất đỗi dịu dàng.",
       "Hắn từng ngửi thấy nó lúc bước phía sau nàng.",
-
-      "Lúc nàng dẫn hắn tới Ditovias.",
-
+      "Lúc nàng lôi tuột hắn tới Ditovias.",
       "Mùi tóc.",
-
-      "Mùi của chiếc áo choàng.",
-
-      "Mùi mà hắn chẳng biết nên gọi là gì ngoài hai chữ dễ chịu.",
-
-      "Drag ngẩng đầu.",
-
-      "Hít vào thêm một lần.",
-
-      "Vẫn còn.",
-
-      "Hắn lập tức đổi hướng.",
-
-      "Bước chân nhanh dần.",
-
-      "Hắn cần nhanh hơn nữa.",
-
-      "Trước khi mùi hương ấy bị màn sương làm nhạt mất.",
-
-      "Hắn bám theo chút hương còn sót lại.",
-
-      "Phía nam Manlanier chỉ còn lại những khoảng rộng mênh mông.",
-
-      "Trước mặt là những ruộng bắp mờ ảo..",
-
-      "Từng luống ngô nhô ra khỏi màn sương còn tụ lại bên dưới gốc.",
-
-      "Như thể chúng mọc ra từ lớp màng trắng xóa.",
-
-      "Hắn lách qua từng hàng ngô, những chiếc lá khô cạ vào người.",
-
-      "Luồng hương dẫn hắn tới một trang trại nhỏ.",
-
-      "Căn nhà gỗ cũ kĩ.",
-
-      "Cạnh bên không xa là một chuồng gia cầm.",
-
-      "Tất cả bị bao bọc bởi vài hàng rào mốc ẩm.",
-
-      "Hắn bước tới.",
-
-      "Chẳng buồn tìm lối vào.",
-
-      "Một tay chống lên hàng rào.",
-
-      "Cả người nhẹ nhàng vượt qua.",
-
-      "Ngay khi hai chân chạm xuống đất.",
-
-      "Hắn nhận ra mùi hương đã thay đổi.",
-
-      "Vẫn là thứ mùi quen thuộc.",
-
-      "Nhưng có một thứ khác đang chen vào.",
-
-      "Nặng hơn. Tanh hơn.",
-
-      "Drag nhìn xuống.",
-
-      "Có lẽ thứ mùi đó phát ra từ vật nằm cách hắn không xa.",
-
-      "Một con cừu.",
-
-      "Nó nằm nghiêng giữa cỏ.",
-
-      "Bốn chân co quắp.",
-
-      "Hai mắt vẫn mở.",
-
-      "Một vết thương lớn kéo dài từ mạn sườn xuống tận bụng.",
-
-      "Như thể bị một lưỡi liềm sắc cứa toạt.",
-
-      "Từng dây ruột bị bọn ruồi bâu kín.",
-
-      "Có vẻ vài phút trước nó vẫn còn sống.",
-
-      "Hắn nhìn một thoáng rồi bước qua nó.",
-
-      "Chẳng phải là thứ hắn cần tìm ngay lúc này.",
-
+      "Mùi của lớp vải nàng khoác lên người.",
+      "Mùi hương mà hắn chẳng biết dùng từ gì để định nghĩa, ngoài hai chữ dễ chịu.",
+      "Drag ngẩng cao đầu.",
+      "Hít sâu thêm một hơi nữa.",
+      "Vẫn còn đó.",
+      "Hắn lập tức xoay gót đổi hướng.",
+      "Bước chân ngày một nhanh hơn.",
+      "Hắn cần phải khẩn trương.",
+      "Trước khi mùi hương ấy bị lớp sương mù tàn nhẫn nuốt trọn.",
+      "Hắn lao đi, bám riết lấy chút vệt hương mỏng manh còn sót lại.",
+      "Khu vực phía nam Manlanier chỉ còn lại những bãi hoang mênh mông.",
+      "Phía trước mặt là vài thân bắp khô héo hiện lên mờ ảo.",
+      "Từng luống ngô nhô thẳng khỏi màn sương đặc sệt đọng lại dưới gốc rễ.",
+      "Trông chúng như thể được ươm mầm từ chính lớp màng trắng toát ấy.",
+      "Hắn lách mạnh qua từng hàng, để mặc những phiến lá khô cào xước lên da thịt.",
+      "Luồng hương mỏng manh dẫn hắn tới một khu trang trại xơ xác.",
+      "Nơi đó có một căn nhà gỗ ọp ẹp cũ kỹ.",
+      "Cách đó không xa là một chuồng gia cầm bốc mùi ẩm mốc.",
+      "Tất cả bị giam lỏng bởi vài hàng rào mục nát phủ đầy rêu phong.",
+      "Hắn tiến thẳng tới.",
+      "Chẳng thèm bận tâm tìm kiếm một lối vào.",
+      "Một tay chống nhẹ lên cọc gỗ.",
+      "Cả thân hình cao lớn dễ dàng nhấc bổng qua rào chắn.",
+      "Nhưng ngay khoảnh khắc hai chân vừa chạm đất, hắn nhận ra mùi hương đã biến đổi.",
+      "Vẫn là thứ mùi dịu dàng quen thuộc.",
+      "Nhưng có một thứ gì đó khác biệt đang tàn nhẫn lấn át.",
+      "Nặng nề hơn.",
+      "Tanh tưởi hơn.",
+      "Drag đưa mắt nhìn xuống.",
+      "Thứ mùi lợm giọng ấy phát ra từ một vật thể nằm cách hắn không quá ba sải chân.",
+      "Xác cừu.",
+      "Nó ngã nghiêng giữa bụi cỏ nát.",
+      "Bốn chân co quắp đờ đẫn.",
+      "Hai hốc mắt trợn trừng vô hồn.",
+      "Một vết thương sâu hoắm kéo dài từ mạn sườn rạch toạc xuống tận bụng.",
+      "Như thể bị một lưỡi liềm sắc lạnh phanh thây.",
+      "Từng chùm ruột già ruột non tràn ra ngoài, bị lũ ruồi nhặng bâu như vại mật.",
+      "Có vẻ sinh vật thảm hại này chỉ mới tắt thở vài khắc trước.",
+      "Ngay dưới lớp cỏ cạnh cái xác, một đường nứt mảnh chạy ngoằn ngoèo trong đất.",
+      "Không có hơi nóng bốc lên.",
+      "Chỉ một luồng lạnh khô khốc thoát ra, mang theo thứ mùi lạ mà hắn chưa từng bắt gặp ở Manlanier.",
+      "Drag liếc nhìn một thoáng rồi lướt qua.",
+      "Chẳng phải thứ hắn cần để tâm lúc này.",
+      "Chẳng phải là thứ hắn cần phải để tâm ngay lúc này.",
       '" Kristin? "',
-
-      "Hắn gọi lần nữa.",
-
-      "Lần này thứ phản hồi hắn lại phát ra từ trong căn nhà nhỏ phía trước.",
-
-      "Một âm thanh khô khốc như thể có ai vừa dẫm lên nền gỗ ẩm ướt.",
-
+      "Hắn cất tiếng gọi lần nữa.",
+      "Lần này, thứ đáp trả hắn lại vang ra từ trong căn nhà gỗ ọp ẹp phía trước.",
+      "Một thứ âm thanh khô khốc.",
+      "Giống hệt tiếng bước chân ai đó vừa giẫm lên ván sàn mục nát.",
       "Hắn khựng người lại.",
-
-      "Ánh mắt chỉa thẳng về phía âm thanh ấy.",
-
-      "Phần cửa của căn nhà gần như bị phá dở khỏi bản lề.",
-
-      "Hắn tiến lại gần hơn.",
-
-      "Bước qua khung cửa.",
-
-      "Ở bên trong là một khoảng tối lạnh lẽo.",
-
-      "Chẳng lấy nổi một ánh trăng lọt vào.",
-
-      "Những gì còn lại là lớp bụi mỏng hằn lên những vật dụng.",
-
+      "Ánh mắt rực đỏ lập tức chĩa thẳng về phía khởi nguồn âm thanh.",
+      "Cánh cửa gỗ của căn nhà gần như đã bị xé toạc, vỡ nát khỏi bản lề.",
+      "Hắn chậm rãi tiến lại gần.",
+      "Lách mình bước qua khung cửa vỡ vụn.",
+      "Bên trong là một mảng tối lạnh lẽo cô đặc.",
+      "Chẳng có lấy một ánh trăng lọt qua khe hở.",
+      "Khắp nơi chỉ vương lại một lớp bụi mỏng phủ lên đống đồ đạc đổ nát.",
       "Có lẽ Kristin không ở trong này.",
-
-      "Hắn vừa xoay người.",
-
-      "Một âm thanh nhỏ phá vỡ sự tĩnh lặng trong căn phòng.",
-
+      "Hắn vừa định xoay người bước ra.",
+      "Một âm thanh cực khẽ phá vỡ sự tĩnh mịch của căn phòng.",
       "Tách.",
-
-      "Một giọt nước nhỏ lên vai hắn.",
-
-      "Hắn đưa tay lên vai chạm lấy.",
-
-      "Không. Không lỏng như vậy.",
-
-      "Một giọt khác rơi xuống.",
-
-      "Drag ngẩng cổ lên nơi hạt nước chảy xuống.",
-
-      "Ở phía trên xà gỗ.",
-
-      "Một bóng hình treo ngược xuống.",
-
-      "Drag nheo mắt.",
-
-      '" Mày là thứ quái gì? "',
-
-      "Hàm răng trắng nhợt từ từ lộ ra giữa bóng tối.",
-
-      "Sinh vật nghiêng đầu.",
-
-      "Phần mang tai lớn mở ra hai bên.",
-
-      "Dày.",
-
-      "Nhăn nhúm.",
-
-      "Gần giống tai của loài dơi.",
-
-      "Trên gương mặt.",
-
-      "Không có mắt.",
-
-      "Chỉ còn một lớp da trơn kéo ngang nơi đáng lẽ chúng phải tồn tại.",
-
-      "Có lẽ đôi tai kia đã thay thế hoàn toàn thứ thị giác mà nó không có.",
-
-      "Drag còn chưa kịp nhìn thêm.",
-
-      "Sinh vật đã buông mình khỏi trần.",
-
-      "Rầm.",
-
-      "Nó chồm thẳng xuống người hắn.",
-
-      "Drag giơ hai tay đỡ.",
-
-      "Hai cơ thể va mạnh xuống sàn.",
-
-      "Mấy tấm gỗ dưới lưng nứt toác.",
-
-      "Hắn cố hất nó sang một bên.",
-
-      "Nhưng sinh vật nặng hơn hắn nghĩ.",
-
-      "Có lẽ nặng gấp đôi tên quý tộc ở Ditovias.",
-
-      "Một so sánh khá ngu ngốc.",
-
-      "Nhưng lại là thứ đầu tiên hắn nghĩ tới.",
-
-      "Con quái há miệng.",
-
-      "Hàm răng táp thẳng xuống.",
-
-      "Drag nghiêng đầu.",
-
-      "Rầm.",
-
-      "Những chiếc răng cắm sâu xuống tấm ván ngay cạnh tai hắn.",
-
-      "Lần đầu.",
-
-      "Hắn tránh được.",
-
-      "Nhưng may mắn chẳng xuất hiện mãi.",
-
-      "Sinh vật giật đầu lên.",
-
-      "Rồi cắn lần nữa.",
-
-      "Phập.",
-
-      "Răng nanh xuyên thẳng vào bả vai.",
-
-      "Một cơn buốt chạy dọc sống lưng.",
-
-      "Máu lập tức thấm qua áo.",
-
-      "Drag nghiến răng.",
-
-      "Một tay chụp lấy phần tai lớn của sinh vật.",
-
-      "Hắn kéo.",
-
-      "Nó không chịu nhả.",
-
-      "Drag kéo mạnh hơn.",
-
-      "Lớp da ở gốc tai bắt đầu căng ra.",
-
-      "Từng thớ cơ lộ ra.",
-
-      "Rồi đứt.",
-
-      "Từng sợi.",
-
-      "Từng sợi.",
-
-      "Rẹt.",
-
-      "Âm thanh thịt bị xé vang lên rõ tới mức chính con quái cũng khựng lại.",
-
-      "Nó rít lên.",
-
-      "Một âm thanh cao và nhói.",
-
-      "Cả căn nhà rung nhẹ.",
-
-      "Drag không buông.",
-
-      "Bàn tay kia siết lại thành nắm đấm.",
-
-      "Một cú móc trái nện thẳng vào thái dương sinh vật.",
-
-      "Bốp.",
-
-      "Đầu nó lệch sang một bên.",
-
-      "Hàm răng cuối cùng cũng buông khỏi vai.",
-
-      "Drag lập tức co hai chân.",
-
-      "Hai bàn chân đặt thẳng vào bụng sinh vật.",
-
-      "Hắn đạp.",
-
-      "BÙM.",
-
-      "Con quái bị hất xuyên qua phần tường gỗ phía sau.",
-
-      "Những mảnh ván văng tung tóe.",
-
-      "Bụi và mùn gỗ phủ kín căn phòng.",
-
-      "Drag chống hai tay xuống nền.",
-
-      "Chậm rãi đứng lên.",
-
-      "Máu từ bả vai chảy dọc cánh tay.",
-
-      "Không nhiều.",
-
-      "Nhưng cũng chẳng ít.",
-
-      "Hắn nhìn khoảng tường vừa bị phá thủng.",
-
-      "Sinh vật kia vẫn còn sống.",
-
-      "Hắn biết.",
-
-      "Nhưng tiếp tục đánh trong căn phòng tối này chẳng phải lựa chọn thông minh.",
-
-      "Hắn bước nhanh ra ngoài.",
-
-      "Ánh trăng yếu ớt cố xuyên qua màn sương.",
-
-      "Đủ để hắn nhìn được khoảng đất trước mặt.",
-
-      "Drag ngoảnh lại.",
-
-      "Hắn cần biết con quái đang ở đâu.",
-
-      "Trước khi nó có thể phủ đầu hắn lần nữa.",
-
-      "Nhưng ánh mắt bỗng dừng lại.",
-
-      "Một thứ nằm giữa lớp cỏ.",
-
-      "Một chiếc áo lông sẫm màu.",
-
-      "Drag bất động.",
-
-      "Hắn nhận ra nó.",
-
-      "Chiếc áo của người phụ nữ hắn đang tìm.",
-
-      '" Kristin? "',
-
-      "Vút.",
-
-      "Một bóng đen xẹt ngang trước mặt.",
-
-      "Nhanh tới mức chẳng để lại thứ gì ngoài một luồng gió lạnh.",
-
-      "Âm thanh rít chói tai lại vang lên.",
-
-      "Lần này từ trên mái nhà.",
-
-      "Drag ngước lên.",
-
-      "Trong màn tối.",
-
-      "Một nụ cười trắng nhợt hiện ra.",
-
-      "Hàm răng của nó.",
-
-      "Như thể đang cười.",
-
-      "Một nụ cười khinh miệt dành cho con mồi.",
-
-      "Drag nhìn nó.",
-
-      "Rồi bỗng cảm thấy một cơn nhói ở cánh tay phải.",
-
-      '" Không... "',
-
-      "Hắn cúi xuống.",
-
-      "Phần cánh tay từ gần vai trở xuống đã biến mất.",
-
+      "Một giọt chất lỏng rơi tõm xuống vai áo hắn.",
+      "Hắn đưa tay chạm thử.",
       "Không.",
-
-      "Nó đang nằm cách hắn vài bước.",
-
-      "Giữa lớp bùn.",
-
-      "Những ngón tay vẫn còn co giật.",
-
-      "Máu phun khỏi phần thịt bị cắt.",
-
-      "Drag cắn chặt môi.",
-
-      "Bây giờ hắn mới hiểu nụ cười kia.",
-
-      "Đối với sinh vật ấy.",
-
-      "Đây chỉ là một cuộc săn.",
-
-      "Và hắn là thứ đang khiến nó thấy thú vị.",
-
-      "Con quái dang hai tay.",
-
-      "Một lớp màng mỏng căng từ phần cánh tay xuống thân.",
-
-      "Hai chiếc vuốt cong dài lộ ra.",
-
-      "Rồi nó lao xuống.",
-
-      "Drag vừa định tránh.",
-
-      "Phập.",
-
-      "Hai chiếc vuốt đã găm sâu vào vai.",
-
-      "Sinh vật đập mạnh đôi cánh.",
-
-      "Cơ thể hắn lập tức rời khỏi mặt đất.",
-
-      "Drag vùng người.",
-
-      "Không đủ.",
-
-      "Hai chiếc vuốt vẫn siết sâu vào thịt.",
-
-      "Máu tiếp tục chảy.",
-
-      "Rồi đột nhiên.",
-
-      "Nó dừng lại.",
-
-      "Những dòng đỏ đang tràn khỏi vết thương chậm rãi bò ngược về.",
-
-      "Không rơi xuống.",
-
-      "Chúng bám quanh phần bắp tay bị mất.",
-
-      "Từng giọt máu tụ lại.",
-
-      "Một đoạn xương trắng bắt đầu mọc ra.",
-
-      "Kéo dài.",
-
-      "Rồi một bàn tay xương hình thành ở đầu cuối.",
-
-      "Năm ngón khép lại.",
-
-      "Chụp thẳng lấy cổ chân sinh vật.",
-
-      "Con quái giật mạnh.",
-
-      "Drag ngẩng đầu nhìn nó.",
-
-      '" Chắc mày vẫn chưa biết gì về tao. "',
-
-      "Những sợi cơ đỏ thẫm bắt đầu quấn quanh phần xương mới.",
-
-      "Từng lớp.",
-
-      "Từng lớp.",
-
-      "Nhưng máu không chỉ tập trung ở cánh tay.",
-
-      "Một phần khác bắt đầu rời khỏi vết thương.",
-
-      "Nó chảy ngược lên không trung.",
-
-      "Không rơi.",
-
-      "Một cột máu lơ lửng ngay cạnh hắn.",
-
-      "Drag mở bàn tay.",
-
-      "Dòng máu lập tức đổ vào lòng bàn tay.",
-
-      "Co lại.",
-
-      "Đông cứng.",
-
-      "Từng cạnh sắc bắt đầu hiện ra.",
-
-      "Một chuôi kiếm.",
-
-      "Rồi một lưỡi dài.",
-
-      "Được tạo thành từ chính những tế bào của hắn.",
-
-      "Drag xoay cổ tay.",
-
-      "Lưỡi kiếm chém thẳng qua chiếc chân đang giữ mình.",
-
-      "Phập.",
-
-      "Một phần chi của sinh vật lìa khỏi cơ thể.",
-
-      "Drag bắt đầu rơi.",
-
-      "Gió rít quanh tai.",
-
-      "Nhưng hắn dường như chẳng mấy bận tâm tới khoảng đất đang lao tới phía dưới.",
-
-      "Hai bên bả vai.",
-
-      "Những vết rách từ từ mở ra.",
-
-      "Một đoạn xương nhọn trồi khỏi da.",
-
-      "Kéo dài.",
-
-      "Tách thành nhiều nhánh.",
-
-      "Rồi những chiếc lông đen bắt đầu mọc phủ lên.",
-
-      "Từng chiếc.",
-
-      "Từng chiếc.",
-
-      "Chẳng mấy chốc.",
-
-      "Hai đôi cánh đen đã mở rộng sau lưng.",
-
-      "Cặp cánh tro tàn mà đám quý tộc ở Ditovias muốn xẻ khỏi người hắn.",
-
-      "Con quái gào lên.",
-
-      "Nó lao xuống theo.",
-
-      "Hai móng vuốt còn lại chĩa thẳng về Drag.",
-
-      "Như một con chim ưng đang kết thúc cuộc săn.",
-
-      "Nhưng lần này.",
-
-      "Nó chẳng còn là kẻ săn.",
-
-      "Drag xoay người giữa không trung.",
-
-      "Hai cánh mở rộng.",
-
-      "Một nụ cười rất nhỏ xuất hiện.",
-
-      '" Tao chờ mày nãy giờ. "',
-
-      "Sinh vật lao thẳng tới.",
-
-      "Drag đâm kiếm.",
-
-      "Phập.",
-
-      "Lưỡi kiếm xuyên qua khoang miệng.",
-
-      "Đâm thẳng vào hộp sọ.",
-
-      "Cả hai cùng rơi xuống.",
-
+      "Độ nhớt này không phải là nước dột.",
+      "Thêm một giọt nữa rơi xuống.",
+      "Drag từ từ ngẩng cổ.",
+      "Nhìn ngược lên nơi thứ chất lỏng tanh nồng kia đang nhỏ giọt.",
+      "Trú ngụ ngay trên xà nhà gỗ mục.",
+      "Một bóng hình gớm ghiếc đang buông thõng treo ngược.",
+      "Drag nheo mắt nhìn xuyên màn đêm.",
+      '" Mày là thứ quái gì? "',
+      "Hàm răng nhọn hoắt, trắng bệch từ từ hé mở giữa bóng tối sền sệt.",
+      "Sinh vật kỳ dị khẽ nghiêng cái đầu gồ ghề.",
+      "Phần mang tai khổng lồ loe rộng ra hai bên.",
+      "Da thịt nhăn nhúm, dày cộp.",
+      "Trông không khác gì đôi cánh của loài dơi khát máu.",
+      "Trên khuôn mặt nó không hề tồn tại đôi mắt.",
+      "Chỉ có một lớp da trơn tuột, nhầy nhụa kéo ngang nơi võng mạc đáng lẽ phải ngự trị.",
+      "Có lẽ đôi tai khổng lồ kia đã đoạt quyền thay thế hoàn toàn thứ thị giác khuyết thiếu.",
+      "Drag chưa kịp đánh giá thêm.",
+      "Sinh vật tởm lợm đã thả mình khỏi xà nhà.",
       "Rầm.",
-
-      "Mặt đất rung lên.",
-
-      "Bùn đất văng tung tóe.",
-
-      "Thanh kiếm vẫn còn mắc sâu trong đầu sinh vật.",
-
-      "Nhưng nó chưa chết.",
-
-      "Bốn chi vẫn giật mạnh.",
-
-      "Hai chiếc móng cào xuống đất.",
-
-      "Drag chống chân lên ngực nó.",
-
-      '" Người phụ nữ ấy ở đâu? "',
-
-      "Sinh vật rít lên.",
-
-      "Âm thanh cao tới mức màng nhĩ hắn nhói buốt.",
-
-      "Drag hơi nghiêng đầu.",
-
-      '" Ừ. "',
-
-      '" Tao nghe thấy rồi. "',
-
-      "Hai tay siết chuôi kiếm.",
-
-      "Hắn giật mạnh xuống.",
-
+      "Nó lao ập xuống, phủ toàn bộ trọng lượng lên người hắn.",
+      "Drag giơ tay phản xạ đỡ đòn.",
+      "Hai cơ thể nặng nề đổ ầm xuống mặt sàn.",
+      "Vài tấm ván gỗ mục nát dưới lưng hắn nứt toác, gãy vụn.",
+      "Hắn gồng tay, toan hất văng sinh vật gớm ghiếc sang một bên.",
+      "Nhưng nó nặng hơn hắn tưởng tượng.",
+      "Có lẽ khối lượng phải gấp đôi gã quý tộc sồ sề ở Ditovias.",
+      "Con quái vật há to cái mõm lởm chởm răng nhọn.",
+      "Trực tiếp táp thẳng xuống cổ họng con mồi.",
+      "Drag nhanh nhạy vẹo đầu né tránh.",
+      "Rầm.",
+      "Hàm răng tàn bạo cắm ngập vào tấm ván sàn, ngay sát mang tai hắn.",
+      "Nhịp đầu tiên, hắn may mắn né được.",
+      "Nhưng may mắn vốn dĩ chưa bao giờ là thứ đồng hành cùng hắn.",
+      "Sinh vật giật phăng cái mõm lên.",
+      "Và đớp xuống lần thứ hai.",
+      "Phập.",
+      "Những chiếc nanh nhọn hoắc xuyên thủng phần bả vai hắn.",
+      "Một cơn đau buốt óc xé dọc theo sống lưng.",
+      "Máu đỏ sẫm lập tức ồ ạt thấm ướt lớp áo lông.",
+      "Drag cắn chặt khớp hàm.",
+      "Bàn tay trái vung lên, tóm gọn lấy phần mang tai ngoại cỡ của sinh vật.",
+      "Hắn nghiến răng kéo ngược lại.",
+      "Nó lỳ lợm không chịu nhả khớp cắn.",
+      "Drag dồn lực, giật mạnh hơn nữa.",
+      "Lớp da nhầy nhụa ở gốc tai bắt đầu căng phồng, nứt nẻ.",
+      "Từng thớ thịt gân guốc trồi ra khỏi màng da.",
+      "Rồi đứt phựt.",
+      "Từng sợi.",
+      "Từng sợi một.",
       "Rẹt.",
-
-      "Lưỡi kiếm xé dọc phần đầu.",
-
-      "Từ miệng.",
-
-      "Xuống cổ.",
-
-      "Phần sọ bị chẻ thành hai.",
-
-      "Tiếng rít lập tức tắt.",
-
-      "Cơ thể sinh vật giật thêm vài lần.",
-
-      "Rồi bất động.",
-
-      "Drag đứng lên.",
-
-      "Không nhìn nó thêm.",
-
-      "Chiếc áo lông của Kristin vẫn nằm trên cỏ.",
-
-      "Hắn bước tới.",
-
-      "Nhặt nó lên.",
-
-      "Mùi nàng vẫn còn bám trên lớp vải.",
-
-      "Nhưng giờ đã trộn lẫn với máu.",
-
-      "Drag nhìn xuống.",
-
-      "Một vệt đỏ kéo dài khỏi nơi chiếc áo nằm.",
-
-      "Chạy qua đám cỏ.",
-
-      "Vòng ra phía sau chuồng cừu.",
-
-      "Hắn đi theo.",
-
+      "Âm thanh da thịt xé toạc vang vọng man rợ đến mức chính con quái vật cũng phải sững lại.",
+      "Nó rống lên the thé.",
+      "Một thứ âm tầng chói lói, nhức nhối xuyên thủng màng nhĩ.",
+      "Khung sườn của cả căn nhà khẽ rung lên bần bật.",
+      "Nhưng Drag tuyệt đối không buông tay.",
+      "Bàn tay còn lại siết chặt thành một nắm đấm tàn khốc.",
+      "Hắn tung một cú móc nện thẳng vào thái dương con quái thú.",
+      "Bốp.",
+      "Phần sọ của nó bị đánh văng sang một bên.",
+      "Hàm răng sắc lẻm cuối cùng cũng phải nhả khỏi bả vai nát bươm.",
+      "Drag lập tức co rút hai cẳng chân.",
+      "Lấy đà, đạp thẳng đôi bàn chân vào giữa ngực sinh vật.",
+      "Hắn dồn toàn lực đạp tới.",
+      "BÙM.",
+      "Khối thân xác khổng lồ bị hất tung, cày nát vách tường gỗ phía sau.",
+      "Hàng loạt mảnh ván vỡ vụn, văng tứ tung trong đêm mù.",
+      "Bụi mù và mùn cưa cuộn lên, che lấp toàn bộ căn phòng.",
+      "Drag chậm rãi chống hai tay xuống nền ván, lảo đảo đứng thẳng dậy.",
+      "Dòng máu đặc quánh từ bả vai tuôn xối xả dọc theo cánh tay.",
+      "Không tính là nhiều.",
+      "Nhưng tuyệt đối không hề ít đối với một thân xác phàm tục.",
+      "Hắn chằm chằm nhìn vào mảng tường vừa bị đục thủng.",
+      "Sinh vật kia vẫn chưa mất mạng.",
+      "Hắn hoàn toàn ý thức được điều đó.",
+      "Nhưng nấn ná chiến đấu trong không gian tối tăm chật hẹp này không phải là một nước cờ khôn ngoan.",
+      "Hắn sải bước thật nhanh ra bên ngoài.",
+      "Ánh trăng nhợt nhạt đang thoi thóp cố xuyên thủng lớp sương mù.",
+      "Vừa đủ để võng mạc hắn bắt được hình dáng của khoảng đất phía trước.",
+      "Drag xoay gót, cảnh giác ngoái nhìn xung quanh.",
+      "Hắn cần xác định vị trí của con quái vật.",
+      "Trước khi nó có cơ hội cắn trộm hắn thêm lần nữa.",
+      "Nhưng ánh mắt hắn đột ngột khựng lại.",
+      "Một dị vật vứt lăn lóc giữa thảm cỏ úa.",
+      "Một chiếc áo choàng lông màu sẫm.",
+      "Drag đứng bất động như hóa đá.",
+      "Hắn nhận ra lớp vải ấy.",
+      "Chính là chiếc áo của người phụ nữ mà hắn đang cuống cuồng tìm kiếm.",
+      '" Kristin? "',
+      "Vút.",
+      "Một cái bóng đen kịt xẹt qua mặt hắn.",
+      "Tốc độ kinh hoàng tới mức chẳng đọng lại dấu vết gì ngoài một cơn gió buốt gáy.",
+      "Tiếng rít chói lói quen thuộc lại xé toạc không gian.",
+      "Lần này, nó phát ra từ mỏm mái nhà.",
+      "Drag ngẩng phắt đầu.",
+      "Nấp trong khoảng tối, một khuôn miệng trắng dã từ từ hé mở.",
+      "Hàm răng lởm chởm đang nhếch lên.",
+      "Như thể nó đang cười.",
+      "Một nụ cười khinh bỉ tột cùng dành riêng cho con mồi ngu ngốc.",
+      "Drag chằm chằm nhìn thẳng vào nó.",
+      "Bỗng nhiên, một cơn đau nhói thấu tủy ập đến ở cánh tay phải.",
+      '" Không... "',
+      "Hắn bàng hoàng nhìn xuống.",
+      "Toàn bộ phần tay từ bắp tay trở xuống đã bốc hơi khỏi thân thể.",
+      "Không phải.",
+      "Nó đang nằm vạ vật cách hắn vài sải chân.",
+      "Lăn lóc giữa bãi bùn lầy.",
+      "Những ngón tay đứt lìa vẫn còn co giật từng nhịp run rẩy.",
+      "Máu tươi phụt thành tia từ mặt cắt nham nhở.",
+      "Drag cắn bật máu môi.",
+      "Bây giờ thì hắn đã thấu hiểu nụ cười nhạo báng kia.",
+      "Đối với sinh vật cặn bã này, đây chỉ là một trò chơi săn mồi tiêu khiển.",
+      "Và chính hắn là thứ đồ chơi đang giúp nó mua vui.",
+      "Con quái vật dương oai dang rộng đôi cánh.",
+      "Một lớp màng nhớp nháp căng phồng nối từ cánh tay xuống dọc thân sườn.",
+      "Lộ ra hai chiếc vuốt sắc nhọn cong vút.",
+      "Rồi nó điên cuồng lao xuống.",
+      "Drag chỉ vừa định né tránh.",
+      "Phập.",
+      "Hai mũi vuốt đã găm ngập vào hai bả vai.",
+      "Sinh vật vỗ cánh mạnh mẽ.",
+      "Thân xác hắn lập tức bị nhấc bổng khỏi mặt đất.",
+      "Drag giãy giụa vùng vẫy.",
+      "Nhưng vô vọng.",
+      "Hai chiếc vuốt tàn độc vẫn cắm phập sâu vào tận xương tủy.",
+      "Máu vẫn tuôn ra không ngừng nghỉ.",
+      "Rồi đột nhiên, dòng chảy chết chóc ấy khựng lại.",
+      "Những vệt máu đang tứa ra từ mặt cắt bắt đầu vặn vẹo bò ngược trở lên.",
+      "Chúng từ chối rơi xuống mặt đất.",
+      "Tất cả uốn lượn, bám chặt quanh phần bắp tay đã đứt lìa.",
+      "Từng giọt huyết sắc quyện chặt vào nhau.",
+      "Một đoạn xương trắng toát từ từ trồi ra từ khối máu.",
+      "Nó vươn dài.",
+      "Rồi đan chéo thành một cấu trúc bàn tay xương xẩu ở điểm tận cùng.",
+      "Năm ngón tay xương nhanh chóng khép chặt.",
+      "Tóm gọn lấy cổ chân của sinh vật đang bay.",
+      "Con quái vật giật thót mình.",
+      "Drag từ dưới ngẩng cao đầu nhìn thẳng vào nó.",
+      '" Chắc mày vẫn chưa biết gì về tao. "',
+      "Bấy giờ, những búi cơ đỏ au bắt đầu nảy nở, quấn chặt lấy phần xương vừa tái tạo.",
+      "Từng thớ thịt, từng lớp màng đan xen hoàn chỉnh.",
+      "Nhưng máu không chỉ dồn về nơi cánh tay đứt lìa.",
+      "Một phần huyết quản khác tự động tách khỏi vết thương.",
+      "Nó trôi dạt ngược lên không trung.",
+      "Hoàn toàn kháng lại trọng lực.",
+      "Một cột máu đỏ thẫm lơ lửng trôi dạt ngay sát sườn hắn.",
+      "Drag xòe rộng bàn tay trái.",
+      "Cột máu ngoan ngoãn chảy tuột vào lòng bàn tay.",
+      "Nó lập tức co rút lại.",
+      "Đông cứng thành hình hài.",
+      "Từng góc cạnh sắc lẹm chậm rãi vươn ra.",
+      "Một lưỡi huyết kiếm sắc lẹm thành hình.",
+      "Toàn bộ thứ vũ khí ấy được luyện ra từ chính huyết nhục của hắn.",
+      "Drag lạnh lùng vặn cổ tay.",
+      "Lưỡi kiếm đỏ au quét ngang qua chiếc chân đang quắp chặt lấy mình.",
+      "Phập.",
+      "Một phần chi tàn phế của con quái thú đứt lìa rơi lả tả.",
+      "Drag buông tự do, bắt đầu rơi xuống vực sâu.",
+      "Gió rít gào bên tai.",
+      "Nhưng hắn tuyệt nhiên chẳng màng liếc nhìn khoảng đất cứng đang lao vun vút tới phía dưới.",
+      "Ngay tại hai bên bả vai.",
+      "Những vết rách đẫm máu bắt đầu há miệng.",
+      "Một đoạn xương nhọn hoắt chọc thủng lớp da thịt trồi ra.",
+      "Nó kéo dài.",
+      "Tách đôi thành nhiều nhánh xương sắc bén.",
+      "Rồi những chùm lông vũ đen kịt bắt đầu nảy mầm, phủ kín bộ xương.",
+      "Từng chiếc.",
+      "Từng chiếc bung nở.",
+      "Chỉ trong chớp mắt.",
+      "Hai đôi cánh đen tuyền khổng lồ đã sải rộng hiên ngang sau lưng.",
+      "Cặp cánh tro tàn vĩ đại mà lũ quý tộc hèn hạ ở Ditovias từng khao khát được xẻ thịt.",
+      "Con quái vật rú lên đau đớn.",
+      "Nó hằn học lao xuống truy sát.",
+      "Hai mũi vuốt còn lại chĩa thẳng vào sinh mạng Drag.",
+      "Trông như một con chim ưng đang phô diễn đòn kết liễu hoàn hảo.",
+      "Nhưng ván cờ này đã lật ngửa.",
+      "Nó không còn là kẻ làm chủ cuộc săn.",
+      "Drag ung dung xoay người giữa không trung.",
+      "Đôi cánh đen lướt đi ngạo nghễ.",
+      "Một nụ cười tàn nhẫn khẽ nhếch lên.",
+      '" Tao chờ mày nãy giờ. "',
+      "Sinh vật khát máu lao sầm tới.",
+      "Drag vung kiếm đâm thẳng.",
+      "Phập.",
+      "Lưỡi gươm huyết sắc xuyên thủng khoang miệng nhớp nháp.",
+      "Tràn ngập vào trung tâm hộp sọ.",
+      "Cả hai khối thân xác cùng lúc nện thẳng xuống mặt đất khô cằn.",
+      "Rầm.",
+      "Mặt đất rung chuyển dữ dội.",
+      "Bùn đất và cỏ dại nổ tung.",
+      "Thanh gươm vẫn ghim chặt giữa đỉnh đầu con quái vật.",
+      "Nhưng sinh lực bẩn thỉu của nó vẫn chưa cạn kiệt.",
+      "Bốn chi vẫn co giật điên cuồng.",
+      "Hai chiếc móng vuốt cào nát nền đất tuyệt vọng.",
+      "Drag lạnh lùng giẫm một chân lên lồng ngực nó.",
+      '" Người phụ nữ ấy ở đâu? "',
+      "Sinh vật rít lên man dại.",
+      "Tần số âm thanh cao đến mức làm màng nhĩ hắn ong lên buốt nhức.",
+      "Drag hờ hững nghiêng đầu.",
+      '" Ừ. "',
+      '" Tao nghe thấy rồi. "',
+      "Hai bàn tay hắn siết chặt chuôi kiếm đỏ.",
+      "Bạo lực giật mạnh xuống.",
+      "Rẹt.",
+      "Lưỡi gươm xé toạc phần sọ từ trên xuống.",
+      "Từ vòm họng nhầy nhụa, xẻ dọc xuống tận cuống họng.",
+      "Hộp sọ dị dạng bị phanh thành hai nửa.",
+      "Tiếng rít chói tai lập tức câm bặt.",
+      "Thân xác nó co giật thêm vài nhịp yếu ớt.",
+      "Rồi hoàn toàn chìm vào cái chết vĩnh hằng.",
+      "Drag rút gươm đứng thẳng dậy.",
+      "Không buồn rủ lòng liếc nhìn cái xác thối thêm lần nào nữa.",
+      "Chiếc áo lông sẫm màu của Kristin vẫn nằm chỏng chơ trên cỏ úa.",
+      "Hắn sải bước tới.",
+      "Cúi nhặt nó lên.",
+      "Mùi hương quen thuộc của nàng vẫn còn vấn vương trên lớp vải sờn.",
+      "Nhưng giờ đây, thứ hương ấy đã bị vấy bẩn bởi mùi máu tanh.",
+      "Drag đưa mắt nhìn xuống.",
+      "Một vệt máu đỏ sẫm kéo lê lết từ nơi chiếc áo rơi xuống.",
+      "Vệt máu trườn qua đám cỏ nát.",
+      "Vòng vèo hướng ra phía sau khu chuồng cừu.",
+      "Hắn lập tức nương theo dấu vết.",
       "Một bước.",
-
-      "Rồi nhanh hơn.",
-
-      "Mùi máu ngày càng rõ.",
-
-      "Ở phía sau chuồng cừu.",
-
-      "Một cơ thể rệu rã nằm trên máng cỏ.",
-
-      "Chẳng suy nghĩ quá nhiều, hắn vội vàng tiến lại.",
-
+      "Rồi rảo bước nhanh hơn.",
+      "Mùi máu tươi ngày một bốc lên nồng nặc.",
+      "Phía sau bức tường chuồng cừu ọp ẹp.",
+      "Một thân xác mỏng manh rệu rã nằm bất động trên máng cỏ.",
+      "Chẳng kịp để tâm trí gào thét bất cứ điều gì.",
+      "Hai chân hắn tự động lao vụt tới.",
       '" Kristin. "',
-
-      "Nàng vẫn chưa phản hồi.",
-
-      "Có lẽ nàng chỉ muốn ngủ một chút.",
-
-      "Hắn bước sát cạnh người nàng rồi nhẹ nhàng khụy hai chân xuống.",
-
-      "Những vệt máu còn vương lại lớp rạ. Hắn lật người nàng lại.",
-
-      "Một vết rách kèo dài từ vai tới giữa lồng ngực. Không quá sâu, hắn chắc chắn.",
-
-      "Một tay hắn luồng xuống dưới gối nàng. Tay còn lại giữ phần lưng.",
-
-      "Hắn kéo nàng vào lòng rồi nhấc nàng lên.",
-
-      "Hơi thở của nàng chạy dưới bàn tay hắn. Từng nhịp, từng nhịp nhỏ.",
-
-      "Khóe mắt nàng khẽ giật nhẹ.",
-
-      "Có lẽ nàng sẽ ổn. Hắn chả rõ.",
-
-      "Hai hàng mi chậm rãi mở dần.",
-
-      "Vẫn là ánh vàng nhạt. Vẫn là con mắt ấy.",
-
-      "Lần này, giọng nói của nàng mềm mại hơn hắn từng nhớ.",
-
+      "Nàng vùi mình trong câm lặng.",
+      "Vẫn không một tiếng đáp lời.",
+      "Có lẽ nàng chỉ quá mệt mỏi và muốn chìm vào giấc ngủ.",
+      "Hắn quỳ sụp xuống, áp sát ngay cạnh hơi thở thoi thóp.",
+      "Những vệt máu đỏ tươi vẫn còn loang lổ trên mớ rơm rạ khô.",
+      "Hắn cẩn trọng lật nhẹ người nàng lại.",
+      "Một vết rách rớm máu kéo dài từ bả vai xẻ dọc xuống giữa lồng ngực.",
+      "Không quá sâu để cướp đi sinh mệnh.",
+      "Hắn dám chắc chắn.",
+      "Chỉ có điều mép thương tích quá thẳng.",
+      "Không giống những vệt rách nham nhở mà móng vuốt sinh vật kia vừa để lại trên chính cơ thể hắn.",
+      "Ý nghĩ ấy vừa thoáng qua đã bị hơi thở yếu ớt của nàng kéo mất.",
+      "Drag chẳng còn tâm trí để giữ lấy nó.",
+      "Hắn luồn một cánh tay vững chãi xuống đỡ lấy gáy nàng.",
+      "Bàn tay còn lại vòng qua giữ trọn tấm lưng nhỏ bé.",
+      "Hắn nâng niu kéo cơ thể nàng tựa gọn vào vòm ngực mình.",
+      "Nhịp thở yếu ớt của nàng khẽ mơn trớn trên da thịt hắn.",
+      "Từng nhịp.",
+      "Từng nhịp đập thoi thóp nhưng vẫn còn cố bám víu.",
+      "Đuôi mắt nhợt nhạt của nàng khẽ rung lên.",
+      "Có lẽ nàng vẫn sẽ chống cự được.",
+      "Hắn tự an ủi chính mình.",
+      "Hai hàng mi nặng trĩu chậm chạp tách ra.",
+      "Vẫn là ánh vàng nhạt nhòa ấy.",
+      "Vẫn là võng mạc kiêu kỳ thuở nào.",
+      "Lần này, thanh âm cất lên từ vòm họng nàng lại mềm mỏng và mong manh hơn bất cứ lúc nào hắn từng nghe.",
       '" Démon.. "',
-
       '" Tôi muốn.. ra khỏi nơi này. "',
-
-      "Cái tên ngớ ngẩn ấy. Chỉ một thoáng, giá mà nàng biết tên thật của hắn.",
-
-      "Hoặc có lẽ là không nên. Hắn nghĩ vậy.",
-
-      "Hắn nhìn vào võng mạc của nàng.",
-
-      "Hình ảnh của hắn phản chiếu qua lớp màng nhợt nhạt.",
-
-      "Cặp mắt rực đỏ.",
-
-      "Những chiếc lông vũ sẫm màu.",
-
-      "Hắn thấy chính mình ở trong con mắt của nàng.",
-
-      "Chỉ mình hắn.",
-
-      "Cảm giác khó chịu khi nhìn thấy chính mình.",
-
-      "Chẳng muốn nghĩ nhiều.",
-
-      "Hắn cần mang nàng rời khỏi chốn sương mù này.",
-
+      "Lại là cái danh xưng thảm hại vớ vẩn ấy.",
+      "Trong một sát na, hắn giá như nàng có thể gọi tên thật của hắn.",
+      "Nhưng rồi, một góc khuất trong hắn lại tự gạt bỏ.",
+      "Không nên thì hơn.",
+      "Hắn chìm đắm vào võng mạc vàng úa của nàng.",
+      "Phản chiếu trên lớp màng mắt mờ đục ấy là toàn bộ nhân dạng của hắn.",
+      "Cặp đồng tử rực đỏ tàn bạo.",
+      "Những chiếc lông vũ đen kịt vương vãi trên vai.",
+      "Hắn thấy rõ hình dạng của mình sau viền mắt ấy.",
+      "Chỉ một mình hắn.",
+      "Nhưng hắn lập tức gạt phăng mọi vướng bận.",
       '" Ừ. Ta nghe rồi. "',
     ],
   },
@@ -1830,486 +1054,347 @@ const artworks = [
     background: "#000",
     uiTheme: "white",
     story: [
-      "Tiếng chuông ngân rộng khắp làn sương của thành phố.",
-
-      "Một bóng hình khẽ hạ xuống từ màn trời tĩnh mịch.",
-
-      "Bàn chân trần chạm vào mái ngói.",
-
-      "Cặp cánh dần khép lại. Từng bụi sương tụ lại thành vài giọt óng ánh rồi rớt xuống nền gạch.",
-
-      "Hai tay vẫn còn giữ lấy người phụ nữ.",
-
-      "Có lẽ nàng ngủ say hơn hắn nghĩ.",
-
-      "Hắn nhìn xuống bên dưới.",
-
-      "Nơi này có vẻ sẽ an toàn hơn màn sương lam ngoài kia. Ít nhất là vậy.",
-
-      "Hắn nhảy xuống phía dưới.",
-
-      "Từng bậc, từng bậc.",
-
-      "Cho tới khi bàn chân chạm vào mặt sỏi khô cằn.",
-
-      "Trước mặt hắn là một phiến gạch lớn.",
-
-      "Rong rêu mọc len lõi khắp vệt nứt.",
-
+      "Tiếng chuông ngân dài, vang dội khắp tầng sương mù đặc quánh của thành phố.",
+      "Một bóng hình khẽ khàng hạ xuống từ cõi trời tĩnh mịch.",
+      "Bàn chân trần nhẹ nhàng chạm xuống lớp ngói lạnh.",
+      "Cặp cánh tro tàn chậm rãi khép lại, rũ bỏ từng hạt sương đêm đọng thành giọt rơi tí tách xuống nền gạch.",
+      "Vòng tay hắn vẫn ôm trọn lấy người phụ nữ.",
+      "Có lẽ nàng đã chìm vào giấc ngủ sâu hơn hắn tưởng.",
+      "Hắn đưa mắt nhìn xuống màn đêm bên dưới.",
+      "Nơi này có vẻ an toàn hơn thứ sương lam buốt giá đang gào thét ngoài kia.",
+      "Ít nhất hắn tin là vậy.",
+      "Hắn gieo mình nhảy xuống phía dưới.",
+      "Từng bậc, từng bậc đá tàn tạ lùi lại phía sau.",
+      "Cho tới khi bàn chân trần giẫm lên lớp sỏi khô cằn.",
+      "Phía trước mặt hắn là dòng ngôn ngữ được khắc sâu vào phiến đá cổ.",
+      "Rong rêu mọc len lỏi, bám rễ vào từng vết nứt vỡ của thời gian.",
       '" Mother of Mothers. "',
-
-      "Hắn lẩm nhẩm từng chữ trên bề mặt cũ kĩ.",
-
-      "Chẳng hiểu có ý nghĩa gì. Hắn chỉ biết nơi này khiến hắn khó chịu.",
-
-      "Có lẽ vì biểu tưởng ngay trước cánh cổng khồng lồ.",
-
+      "Hắn lẩm nhẩm từng chữ khắc sâu trên bề mặt cũ kỹ.",
+      "Chẳng hiểu thứ danh xưng này mang hàm ý gì.",
+      "Hắn chỉ biết không gian này bốc lên một thứ mùi khiến bản thân vô cùng bức bối.",
+      "Có lẽ nguyên do bắt nguồn từ biểu tượng được dựng ngay trước cánh cổng khổng lồ.",
       "Thập giá.",
-
-      "Hắn không thoải mái khi nhìn thấy nó. Có lẽ những ký ức chỉ vừa khơi gợi lại một vết thương không bao giờ lành.",
-
-      "Nhưng ít nhất nơi này là lựa chọn tốt nhất cho tình huống này.",
-
-      "Cho Kristin. Hắn chắc chắn.",
-
-      "Bước vào bên trong, ánh trăng chiếu từ những khe tường mục nát. Hằn lên không gian từng hạt bụi long lanh.",
-
-      "Có lẽ loài người chẳng còn sử dụng chỗ này.",
-
-      "Những hàng ghế ẩm mốc xếp thành từng dãy ngăn nắp. Những ngọn nến chỉ còn lại mảng sáp bám lại ở bục thờ.",
-
-      "Hắn dùng tay dạt mọi thứ xuống.",
-
-      "Những chiếc chén thánh rơi xuống tạo âm thanh vang khắp giảng phòng.",
-
-      "Drag ẩm nàng lên chiếc bàn lớn.",
-
-      "Hắn xé một mảnh vải dài trên bàn.",
-
-      "Hai tay quấn lấy vết thương ở phần vai của nàng. Từng lớp, Từng lớp.",
-
-      "Vệt máu ám phủ lên lớp băng khiến hắn bức rứt.",
-
-      "Nó có màu giống như máu hắn, vị cũng giống. Nhưng vẫn khác. Hắn là người từ trời. Là tạo vật thất bại của Ngài.",
-
-      "Còn nàng là người phàm, một tài sản quý giá từ bề trên.",
-
-      "Nàng có thứ mà hắn dành cả hàng thiên niên kỉ cũng không tài nào sở hữu.",
-
-      "Những suy nghĩ tản mạn lung lay sự tập trung. Hắn siết chặt lớp băng hơn lúc nãy.",
-
+      "Hắn chưa từng thấy thoải mái khi phải chiêm ngưỡng nó.",
+      "Thứ hình khối ấy dường như đang cào xé lại một vết thương vĩnh viễn không thể khép miệng.",
+      "Nhưng chí ít, phế tích này là lựa chọn tốt nhất cho tình cảnh hiện tại.",
+      "Cho Kristin.",
+      "Hắn dám chắc chắn điều đó.",
+      "Hắn bế nàng bước vào bên trong.",
+      "Ánh trăng bợt bạt xuyên qua những khe tường mục nát, rọi tỏ từng hạt bụi lơ lửng giữa không trung.",
+      "Có lẽ nhân loại đã ruồng bỏ chốn này từ rất lâu rồi.",
+      "Những hàng ghế ẩm mốc xếp thành từng dãy tăm tối.",
+      "Trên bục thờ, vài ngọn nến tàn chỉ còn trơ lại mảng sáp chảy dài.",
+      "Hắn thô bạo vung tay gạt phăng mọi thứ chướng mắt.",
+      "Những chiếc chén thánh rơi loảng xoảng, âm thanh khô khốc dội vang khắp gian sảnh rộng lớn.",
+      "Thứ vật thiêng liêng buộc phải nhường chỗ cho thân xác phàm trần.",
+      "Drag nhẹ nhàng đặt nàng nằm xuống chiếc bàn cồng kềnh.",
+      "Bàn tay tuyệt nhiên không do dự xé toạc một mảnh vải dài vắt ngang bục.",
+      "Hắn vụng về quấn chặt lấy vết thương tươm máu trên vai nàng.",
+      "Từng lớp.",
+      "Rồi lại từng lớp.",
+      "Sắc đỏ ảm đạm loang lổ trên lớp vải khiến tâm trí hắn bứt rứt không yên.",
+      "Thứ chất lỏng ấy có màu giống máu hắn, vị tanh tưởi tương tự.",
+      "Nhưng bản chất lại hoàn toàn khác biệt.",
+      "Hắn không thuộc về cõi hạ giới này.",
+      "Là một tạo vật bị ruồng bỏ.",
+      "Còn nàng chỉ là một phàm nhân mỏng manh, một sinh linh nằm trong lòng bàn tay của tạo hóa.",
+      "Nàng mang trong mình một thứ mà dẫu hắn có đánh đổi hàng thiên niên kỷ cũng chẳng tài nào chạm tới.",
+      "Những dòng suy nghĩ tản mạn làm chệch đi sự tập trung vốn có.",
+      "Hắn vô thức siết chặt dải băng hơn mức cần thiết.",
       '" Ahh.. "',
-
-      "Nàng khẽ rên nhẹ.",
-
-      "Âm thanh vừa đủ để khiến hắn ngưng lại.",
-
-      '" Ngươi sẽ chết mất nếu cư như vậy. "',
-
-      "Cuối cùng, máu cũng ngưng chảy.",
-
-      "Hắn ngồi cạnh bên nàng.",
-
-      "Có lẽ hắn nên rời khỏi chỗ này. Có lẽ hắn nên rời khỏi nàng.",
-
-      "Quá nhiều thứ phiền phức xảy ra lúc nãy.",
-
-      "Hắn không muốn dính líu tới những thứ như vậy. Hoặc có lẽ một phần nào bên trong hắn không muốn nàng dính dáng tới những chuyện như này.",
-
-      "Hắn chả biết. Chẳng thể gọi tên suy nghĩ.",
-
-      "Lẽ ra hắn chỉ nên nghĩ cho mình hắn.",
-
-      "Kẻ ích kỉ như hắn nên như vậy.",
-
-      "Bức tượng phía trên càng củng cố suy nghĩ của hắn.",
-
-      "Một pho tượng về một người mà hắn hằng căm ghét xuất hiện cuối căn phòng.",
-
-      "Một người mà tất thảy nhân loại tôn sùng mặc dù dáng vẻ không giống như những gì hắn từng thấy.",
-
-      "Nụ cười hiền từ.",
-
-      "Ánh nhìn từ bi.",
-
-      "Tại sao lũ phàm nhân lại tin người này có dáng vẻ như vậy.",
-
-      "Lũ cặn bã ngu dốt.",
-
-      "Tiếng thở dài kéo giãn cả không gian bên trong nhà thờ.",
-
-      "Hắn quyết sẽ rời. Chỉ là có chút ẩm ương trong quyết định ấy.",
-
-      "Vừa ngồi dậy. Một lực nhẹ nắm lấy tà áo của hắn.",
-
-      "Hắn xoay người lại xem thứ gì vừa kéo mình lại.",
-
-      "Lại là bàn tay nhỏ nhắn ấy.",
-
-      "Chẳng có một câu nào từ nàng, chỉ một ánh nhìn dịu dàng. Ở bên trong tròng tử, hắn thấy mong muốn của nàng. Muốn hắn ở lại, muốn hắn ở cạnh nàng một chút nữa.",
-
-      "Hoặc chỉ là chính mong muốn của chính hắn.",
-
-      "Hắn lại ngồi xuống, kéo lấy cái bàn tay ấy vào lòng bàn tay mình. Hắn muốn xem tại sao thứ này lại ấm hơn chiếc áo.",
-
-      "Từng ngón tay hắn mân mê từng ngón tay nàng.",
-
-      "Lại là cảm giác ấy. Dễ chịu. Hắn chỉ biết mỗi hai từ có thể diễn tả cảm xúc lúc này.",
-
-      "Một lúc, rồi lại một lúc nữa. Hắn vẫn chưa muốn buông tay.",
-
-      "Sau bao nhiêu ngày trăng, bao nhiêu thập kỷ. Hắn nhớ những ngày tháng lang bạt vô nghĩa.",
-
-      "Tìm gì ư?",
-
-      "Hắn chẳng biết, hắn muốn nói với nàng là hắn không biết. Nhưng có những thứ nên giam lại ở vòm họng.",
-
-      "Hắn nhìn người phụ nữ nằm trước mặt hắn. Lâu hơn, rồi lại lâu hơn nữa.",
-
-      "Cho tới khi nửa phần mặt trời xuất hiện ở khung cửa.",
-
-      "Giọng nàng khẽ kéo hắn về lại khỏi những suy tư.",
-
+      "Nàng khẽ rên một vẻ nhọc nhằn.",
+      "Một thanh âm mỏng manh nhưng đủ sức đè bẹp hành động của hắn.",
+      '" Ngươi sẽ chết nếu cứ như vậy. "',
+      "Sau những khắc nỗ lực, miệng vết thương cũng chịu ngưng rỉ máu.",
+      "Hắn lẳng lặng ngồi xuống sát bên cạnh nàng.",
+      "Cúi nhìn bàn tay còn nhơ nhuốc những vệt máu khô cặn.",
+      "Những dòng suy tư bất chợt tuôn vào tâm trí như những gam màu vô hình.",
+      "Có lẽ hắn nên cất bước rời khỏi chốn ô trọc này.",
+      "Và có lẽ, hắn cũng nên cất bước rời khỏi nàng.",
+      "Quá nhiều thứ phiền nhiễu đã cản bước hắn trong đêm nay.",
+      "Hắn không hề muốn bản thân bị cuốn vào những rắc rối của cõi trần.",
+      "Hoặc ẩn sâu bên trong, hắn tuyệt nhiên không muốn sinh mạng nàng bị kéo vào thứ vũng lầy tăm tối này.",
+      "Hắn thật sự không biết.",
+      "Chẳng thể gọi tên mớ cảm xúc dị hợm đang cào xé trong tâm can.",
+      "Lẽ ra hắn chỉ nên toan tính cho mỗi sự tồn tại của chính mình.",
+      "Một kẻ ích kỉ như hắn vốn dĩ phải làm thế.",
+      "Pho tượng đá ngự trị phía trên cao càng củng cố thêm dòng suy tưởng tàn nhẫn ấy.",
+      "Một bức điêu khắc tạc hình bóng kẻ mà hắn hằng căm phẫn đang đứng trơ trọi cuối gian phòng.",
+      "Một hiện thân mà tất thảy nhân loại đều cúi mình dâng hiến đức tin.",
+      "Dẫu cho hình hài ấy hoàn toàn méo mó so với những gì hắn từng diện kiến.",
+      "Nụ cười hiền từ sao?",
+      "Ánh nhìn từ bi ư?",
+      "Chỉ có sự trơ trẽn là hắn nghĩ tới trong lúc này.",
+      "Cớ sao lũ phàm phu tục tử lại có thể mù quáng bám víu vào thứ hình hài cạn cợt ấy.",
+      "Lũ cặn bã ngu muội.",
+      "Tiếng thở dài não nề kéo giãn không gian chật hẹp bên trong nhà thờ.",
+      "Hắn hạ quyết tâm sẽ rời đi.",
+      "Chỉ là đôi chân vẫn cứng đờ, chôn chặt vào một cảm giác không thể gọi tên.",
+      "Mệt mỏi ư? Hắn chưa từng biết mệt với dòng máu bất tử cuồn cuộn chảy trong xác thịt này.",
+      "Vô định? Có lẽ là vậy. Có lẽ sau khi rời khỏi nơi này hắn cũng chẳng biết những bãi cát vàng sẽ dẫn hắn tới phương nào.",
+      "Dù là gì, hắn cần phải kiên quyết.",
+      "Ngay khoảnh khắc hắn vừa nhấc người đứng dậy.",
+      "Một lực níu vô cùng yếu ớt bám lấy tà áo sẫm màu.",
+      "Hắn xoay người, hạ tầm mắt tìm kiếm thứ vừa níu chân mình.",
+      "Lại là những ngón tay nhỏ nhắn cạn kiệt sức lực ấy.",
+      "Chẳng có lấy một âm tiết nào lọt khỏi môi nàng.",
+      "Chỉ có một ánh nhìn dịu vợi vắt ngang màn đêm.",
+      "Sâu thẳm trong võng mạc nhợt nhạt, hắn đọc được khao khát trần trụi của nàng.",
+      "Nàng muốn hắn ở lại, muốn hắn nán lại cạnh bên thêm một chút nữa.",
+      "Hoặc có chăng, đó chính là thứ khát vọng hèn mọn đang bủa vây lấy bản ngã của hắn.",
+      "Drag lẳng lặng ngồi xuống.",
+      "Kéo bàn tay nàng ủ gọn vào lòng bàn tay lạnh lẽo của mình.",
+      "Hắn thực sự muốn tìm hiểu vì cớ gì thứ da thịt mỏng manh này lại mang đến hơi ấm lớn lao hơn bất kỳ mảnh y phục nào.",
+      "Những ngón tay thô ráp của hắn cẩn trọng mân mê từng khớp xương gầy guộc của nàng.",
+      "Lại là thứ cảm giác quái gở ấy.",
+      "Dễ chịu.",
+      "Đó là hai từ duy nhất mà hắn có thể bòn mót để định nghĩa lúc này.",
+      "Hắn lặng im một lúc.",
+      "Rồi lại nán thêm một lúc nữa.",
+      "Tuyệt nhiên không hề sinh ra ý niệm muốn buông tay.",
+      "Sau bao nhiêu mùa trăng mờ mịt, bao nhiêu thập kỷ mục rữa dưới cõi trần.",
+      "Hắn bỗng nhớ lại những ngày tháng lang bạt kéo dài vô định.",
+      "Tìm kiếm thứ gì ư?",
+      "Hắn chẳng có câu trả lời.",
+      "Hắn thực sự muốn thành thật với nàng rằng bản thân cũng không biết.",
+      "Nhưng có những lời yếu đuối tốt nhất nên vĩnh viễn bị chôn sống dưới vòm họng.",
+      "Hắn trân trân ngắm nhìn sinh linh mỏng manh đang thiếp đi trước mặt.",
+      "Lâu hơn một chút.",
+      "Rồi lại chìm đắm lâu hơn nữa.",
+      "Cho tới khi ánh bình minh xé tan màn sương muộn màng.",
+      "Và rồi tia nắng đầu tiên lọt qua khe cửa vỡ.",
+      "Giọng nói thều thào của nàng khẽ khàng lôi hắn trồi lên khỏi vực sâu suy tưởng.",
       '" Anh không cần ngủ ư? "',
-
       '" Ta không. "',
-
-      "Kristin gượng dậy, mặt nàng nhăn lại. Có vẻ vết thương vẫn còn khiến nàng khó chịu.",
-
+      "Kristin nhọc nhằn gượng người ngồi dậy.",
+      "Khuôn mặt thanh tú nhăn nhó vì đau đớn.",
+      "Vết thương xé thịt dường như vẫn không ngừng giày vò thân xác nàng.",
       '" Tại sao? "',
-
       '" Không cần thiết. "',
-
-      "Nàng nhìn lớp băng trên vai mình một lúc rồi quay sang hắn.",
-
+      "Nàng rũ mắt nhìn lớp vải thô kệch quấn quanh vai mình một thoáng.",
+      "Rồi chậm rãi dời ánh nhìn sang kẻ đối diện.",
       '" Anh là người làm cái này hả? "',
-
       '" Trông xấu vô cùng. "',
-
-      "Hắn ngớ mặt trước câu nói của nàng. Hai mày chau lại vào nhau.",
-
+      "Hắn cứng họng trước lời chê bai thẳng thừng của một phàm nhân.",
+      "Hai hàng chân mày lập tức xô chặt vào nhau.",
       '" Sao lúc nãy ngươi không ngồi dậy mà làm? "',
-
-      "Tiếng cười của nàng dập tắt sự thinh lặng của căn phòng.",
-
+      "Tiếng cười trong vắt của nàng bất chợt vỡ òa.",
+      "Triệt để dập tắt sự thinh lặng ngột ngạt đang bủa vây căn phòng.",
       '" Vậy thì đẹp. "',
-
-      "Hắn lảng mắt sang bên như thể chẳng muốn tin vào lời nàng nói.",
-
-      "Kristin dựa lưng vào góc tường. Ánh mắt nàng dạo khắp giảng phòng.",
-
-      "Ánh mắt nàng dừng lại bức chân dung treo ở phía góc tường.",
-
-      "Một cạnh bị nghiêng xuống.",
-
-      "Bức chân dung phác hoạ người phụ nữ ôm một con chiên có bộ lông đen tuyền.",
-
-      "Gương mặt dường như bị dấu vết của thời gian tàn phá.",
-
-      "Một câu hỏi bâng quơ từ Kristin.",
-
+      "Hắn lảng ánh nhìn đi nơi khác.",
+      "Bộ dạng ngạo nghễ dường như cự tuyệt việc tin vào lời trêu chọc của nàng.",
+      "Kristin mệt mỏi tựa lưng vào góc tường ẩm lạnh.",
+      "Đôi mắt nàng bắt đầu rảo quanh gian sảnh rộng lớn.",
+      "Điểm nhìn đọng lại nơi bức bích họa cũ kỹ treo lay lắt góc tường.",
+      "Một cạnh khung gỗ đã bung đinh, trĩu nặng nghiêng xệch xuống mặt đất.",
+      "Bức tranh phác họa chân dung một người đàn bà đang ôm ấp con chiên mang bộ lông đen huyền.",
+      "Khuôn mặt trong tranh đã bị sự tàn phá của thời gian cào xé đến nhạt nhòa.",
+      "Một câu hỏi bâng quơ buông lơi khỏi môi Kristin.",
       '" Tại sao anh lại tới nơi này? "',
-
       '" Ta chẳng rõ. Chắc là không có lũ vô lại lảng vảng. "',
-
-      "Kristin ngước lên mái vòm lớn phía trên.",
-
-      "Những nét hoa văn kì công hiện rõ trên trần.",
-
+      "Kristin ngước mắt chiêm ngưỡng mái vòm khổng lồ đổ bóng phía trên đỉnh đầu.",
+      "Những đường nét điêu khắc hoa văn kỳ công, cổ quái dần hiện rõ trong ánh ban mai.",
       '" Hình như tôi từng tới nơi này. Nhà thờ Mother of Mothers. "',
-
       '" Mẹ tôi thường dắt tôi tới vào cuối tuần. "',
-
-      "Hắn chống cằm nhìn nàng.",
-
+      "Hắn điềm nhiên chống cằm.",
+      "Lặng lẽ dán mắt vào từng đường nét của nàng.",
       '" Vậy bao lâu rồi ngươi chưa ghé lại? "',
-
       '" Khá lâu, vài năm hoặc hơn như vậy. "',
-
-      "Nàng chạm vào lớp bụi mỏng trên mặt bàn.",
-
+      "Đầu ngón tay nàng miết nhẹ lên lớp bụi thời gian đọng dày trên mặt bàn đá.",
       '" Có lẽ nó bị bỏ lại sau cuộc thanh trừng linh mục. "',
-
-      "Drag nhếch miệng.",
-
+      "Một nụ cười nửa miệng đầy mỉa mai kéo xệch khóe môi Drag.",
       '" Chắc chắn rồi. "',
-
-      "Kristin xoay mặt về phía hắn.",
-
-      '" Sao vậy anh không thích nơi này à? "',
-
-      "Hắn chẳng muốn trả lời câu hỏi ấy. Những thứ trong căn phòng này chỉ gợi lại vài mảnh ký ức bị chôn vùi.",
-
-      "Kristin chỉ tay về pho tượng ở cuối sảnh.",
-
+      "Kristin xoay hẳn khuôn mặt kiêu kỳ về phía kẻ đối diện.",
+      '" Sao vậy? anh không thích nơi này à? "',
+      "Hắn tuyệt nhiên không muốn đào bới để trả lời câu hỏi oái oăm đó.",
+      "Những di tích mục nát trong căn phòng này chỉ làm sống dậy vài mảnh ký ức thảm hại mà hắn đã dốc công chôn vùi.",
+      "Kristin thản nhiên chỉ tay thẳng về phía pho tượng đá uy nghi cuối gian sảnh.",
       '" Hay anh không thích người này? "',
-
-      "Lại là kẻ mà hắn chẳng muốn nhắc tới dù chỉ là một tiếng vọng nhỏ trong suy nghĩ.",
-
+      "Lại là hình bóng kẻ mà hắn tởm lợm.",
+      "Không muốn nhắc tới dẫu chỉ là một tàn dư âm vang trong tâm tưởng.",
       '" Ngươi hỏi nhiều nhỉ? "',
-
-      "Nàng hỏi ngược lại hắn.",
-
+      "Nàng nhướng mày, không kiêng dè mà vặn ngược lại.",
       '" Câu trả lời khó chạy khỏi miệng anh nhỉ? "',
-
       '" Ừ. "',
-
       '" Ừ là sao? "',
-
       '" Ta không thích hắn. "',
-
-      "Nàng dừng lại trước câu trả lời ấy một vài nhịp.",
-
+      "Nàng bất chợt khựng lại. Ánh mắt hướng về những hàng ghế ẩm mốc.",
+      "Dường như chẳng còn muốn nghe những câu trả lời cộc lốc từ hắn.",
       '" Hồi tôi còn nhỏ, mẹ cũng hay dẫn tôi tới xin khấn. "',
-
-      "Drag nhìn lớp vải quấn trên người nàng.",
-
+      "Ánh mắt Drag rũ xuống.",
+      "Tĩnh lặng lướt qua dải băng thô kệch quấn ngang bờ vai mỏng.",
       '" Nhưng tôi chỉ muốn ngồi ở bệ hoa sau nhà thờ. Tôi thích chỗ ấy. "',
-
-      '" Chẳng biết là hiện tại còn không nữa? "',
-
-      "Drag ngồi dậy.",
-
+      "Drag dứt khoát đứng bật dậy khỏi mặt bàn đá.",
       '" Ta sẽ xem thử. "',
-
-      "Hắn chẳng muốn xem hoa tới thế. Chỉ là hắn nhớ khung cảnh nàng khuỵ trước nhành hoa nhỏ trước khu chợ.",
-
-      "Hắn thích ngắm những thứ như vậy.",
-
-      "Kristin nhăn mặt.",
-
+      "Hắn vốn dĩ chẳng màng đoái hoài đến cỏ cây hoa lá.",
+      "Chỉ là vô thức hoài niệm lại dáng vẻ nàng khụy gối nâng niu nhành hoa trắng nơi khu chợ tồi tàn.",
+      "Hắn khao khát được ngắm nhìn cảnh tượng êm đềm ấy thêm một lần.",
+      "Kristin nhăn mặt, vẻ bất bình hiện rõ trên nét mặt.",
       '" Thế tôi thì sao? "',
-
       '" Ngươi ở yên. "',
-
       '" Không, chả có lý gì khi tôi phải nghe lời anh. "',
-
-      "Nàng rướng người dậy, vết thương vẫn chưa lành như nàng nghĩ.",
-
-      "Chẳng hiểu sao người phụ nữ trước mặt hắn lại cố chấp tới vậy.",
-
+      "Nàng ương ngạnh rướn người định đứng lên.",
+      "Nhưng vết xé thịt chưa hề khép miệng đã lập tức trừng phạt cỗ thân xác yếu ớt.",
+      "Chẳng hiểu cớ gì sinh vật nhỏ bé này lại mang bản tính cố chấp đến mức lố bịch như vậy.",
       '" Ngươi ngớ ngẩn thật. Sao không ở yên một chút? "',
-
       '" Thế thì sao anh không cõng tôi? "',
-
-      "Hắn thở dài.",
-
-      "Lại một câu hỏi khó khăn với hắn. Loài người là thứ khó hiểu. Nếu là người khác thì cái chân ấy chẳng giữ mãi trên người lâu tới vậy.",
-
-      "Nhưng cũng chẳng có lý gì khi hắn cũng muốn cõng nàng một chút. Có vẻ như vậy sẽ ấm hơn chiếc áo hăn mang trên người.",
-
-      "Một cái cớ hợp lệ với hắn.",
-
-      "Drag xoay lưng lại rồi hạ gầm người xuống.",
-
+      "Hắn buông một tiếng thở dài thườn thượt.",
+      "Lại thêm một đòi hỏi oái oăm ép buộc hắn.",
+      "Nhân loại đúng là giống loài phiền toái không thể lý giải.",
+      "Nếu là một kẻ khác, hai cẳng chân ấy chẳng thể giữ lại trên người nguyên vẹn tới vậy.",
+      "Chẳng hiểu ở nàng lại tồn tại một xúc cảm hắn không thể lột tả.",
+      "Càng trớ trêu hơn nếu hắn nghĩ mình thật sự muốn cõng thử người phụ nữ ương bướng này.",
+      "Có lẽ hắn chỉ là một gã hoang tưởng.",
+      "Nhưng nếu cái cơ thể của nàng ấm hơn chiếc áo hắn mang trên mình thì chẳng việc gì phải từ chối.",
+      "Ít nhất nó là lý do duy nhất thuyết phục bản ngã của hắn.",
+      "Drag lẳng lặng xoay lưng, hạ thấp bờ vai rộng vững chãi xuống.",
       '" Vậy thì lên mau. "',
-
-      "Kristin choàng tay qua cổ hắn. Hắn cảm nhận từng làn da mịn màng của nàng.",
-
-      "Rồi nàng chồm lên lưng hắn.",
-
-      "Nàng nhẹ hơn những gì hắn nghĩ.",
-
-      "Hoặc có lẽ hắn muốn bản thân hắn nghĩ vậy.",
-
-      "Hai người bước ra khỏi giang sảnh lớn. Rẽ vào một hành lang nhỏ.",
-
-      "Những thấu kính sặc sỡ sắc màu ánh lại những nét trăng lên nền tường.",
-
-      "Kristin nhìn theo những gam màu.",
-
+      "Đôi tay gầy guộc của Kristin chậm rãi vòng qua yết hầu hắn.",
+      "Hắn tê dại cảm nhận từng tấc da thịt phàm trần lướt qua gáy mình.",
+      "Rồi nàng dồn trọng lượng chồm hẳn lên tấm lưng vững chãi.",
+      "Cơ thể nàng nhẹ hẫng hơn những gì hắn từng hình dung.",
+      "Hoặc chỉ là lời ngụy biện cho cái khao khát hèn hạ của chính mình.",
+      "Cả hai rời bỏ bóng tối của gian sảnh trung tâm.",
+      "Rẽ bước tiến vào một đoạn hành lang hun hút.",
+      "Những phiến kính vạn hoa ố màu vỡ nát đọng lại chút tàn dư của mảnh trăng khuyết.",
+      "Hắt bóng nham nhở lên nền tường.",
+      "Giữa lớp kính còn sót lại là ba hình cừu nằm quằn quại lên nhau dưới một quầng sáng đã phai màu.",
+      "Khuôn mặt thứ nhất chỉ còn một mảnh màu cũ khuất cặp mắt.",
+      "Hình thứ hai bị những sắc tối che kín hai bên tai.",
+      "Phần miệng của hình cuối cùng đã vỡ mất khỏi ô kính từ lâu.",
+      "Drag chỉ liếc qua.",
+      "Một thứ trang trí tôn giáo khác.",
+      "Hắn chẳng buồn dừng bước.",
+      "Kristin ngẩn ngơ dõi mắt theo những vệt màu loang lổ.",
       '" Ngày trước mẹ tôi cũng thường cõng tôi như thế này. Mẹ hay kể về những câu chuyện xưa cũ. "',
-
       '" Chẳng hạn? "',
-
-      "Nhịp bước hắn chậm lại. Có vẻ hắn cũng muốn nàng kể cho hắn nghe.",
-
-      '" Chẳng hạn là những truyền thuyết của phương bắc. Giấc Mơ Của Noah. "',
-
-      '" Họ kể rằng vào những ngày xa xôi về trước, khi con người xuất hiện ngày một nhiều. Tội lỗi của họ ngày một lớn. Những lời tuyên thệ không thể ngăn tận thế. "',
-
-      '" Thế là một cơn mưa giáng xuống khắp châu lục 40 ngày trăng. Cuốn trôi hết thảy những gì còn sống trên mặt đất. "',
-
-      "Hai tay nàng siết nhẹ hơn ở cổ hắn, ròi nàng hướng sát mặt về phía tai.",
-
+      "Nhịp chân trần của hắn vô thức chậm dần lại.",
+      "Có vẻ hắn cũng muốn dành chút thời gian nghe những câu chuyện xa xăm ấy.",
+      '" Chẳng hạn là những truyền thuyết của phương bắc. Tôi nhớ nhất là Giấc Mơ Của Noah. "',
+      '" Họ kể rằng vào những ngày xa xôi về trước, khi con người xuất hiện ngày một nhiều. Tội lỗi của họ ngày một lớn. "',
+      '" Những lời tuyên thệ không thể ngăn tận thế. "',
+      '" Thế là một cơn mưa giáng xuống khắp châu lục bốn mươi ngày trăng. "',
+      '" Cuốn trôi hết thảy những gì còn sống trên cõi đất. "',
+      "Vòng tay nàng khẽ siết lấy cổ hắn.",
+      "Rồi nhẹ nhàng tì sát gò má vào sát vành tai kẻ đang cõng mình.",
       '" Trừ một kẻ và những gì trên khoang tàu. "',
-
       '" Ai? "',
-
-      "Hắn hỏi với sự hiếu kỳ.",
-
-      "Kristin vừa cười vừa nói có lẽ nàng thích hắn lúc tò mò như vậy.",
-
+      "Hắn buột miệng gặng hỏi, không giấu nổi sự tò mò.",
+      "Kristin khẽ bật cười khúc khích.",
+      "Có lẽ nàng rất tận hưởng cái dáng vẻ ngây ngốc hiếm hoi này.",
       '" Noah, The Chosen One. "',
-
-      '" Hắn dùng cả khu rừng chỉ dựng lên một con thuyền khổng lồ. Mời chào tất cả muôn thú. "',
-
+      '" Ông ấy dùng cả khu rừng chỉ dựng lên một con thuyền khổng lồ. "',
+      '" Mời chào tất cả muôn thú. "',
       '" Mỗi loài mỗi cặp, nam và nữ. "',
-
-      "Bỗng nhiên nàng hạ giọng xuống.",
-
+      "Âm điệu của nàng bỗng đột ngột hạ thấp.",
+      "Mang theo một vẻ huyền bí xa xăm.",
       '" Chỉ tiếc là một cặp sinh vật không thể xuất hiện ở trên boong tàu. "',
-
       '" Huh? loài gì? "',
-
       '" Rắn. "',
-
-      "Hắn nheo mắt lại.",
-
+      "Tròng mắt đỏ rực của hắn nheo lại đầy nghi hoặc.",
       '" Tại sao chứ? "',
-
-      '" Chúng phải bò bằng bụng vì cám dỗ loài người. "',
-
+      '" Chúng phải bò bằng bụng vì tội cám dỗ loài người. "',
       '" Tuy là vậy, chúng kịp sinh một quả trứng ở trên mạn tàu vào những giờ phút cuối cùng. "',
-
-      "Hắn xoay mặt lại.",
-
+      "Hắn tò mò quay ngoắt nửa khuôn mặt lại phía sau.",
       '" Thế thì con rắn kia còn sống? "',
-
-      '" Tôi chẳng rõ, chỉ là một câu truyện cũ kĩ. Chưa một ai thấy loài rắn bao giờ. "',
-
-      "Nàng kể tiếp.",
-
-      '" Sau những ngày giông tố, thuỷ triều hạ xuống. Tất cả muôn vật sinh sôi cho tới tận nay. Và dòng dõi con người lại một lần nữa tái sinh. "',
-
-      "Vừa hết câu chuyện cũng là vừa lúc họ dừng chân tại bồn hoa mà nàng nhắc tới.",
-
-      "Nhưng mà cũng chẳng còn lại gì ở bên trong.",
-
-      "Chỉ còn vài cánh hoa úa tàn nằm rải rác dưới bể.",
-
-      "Kristin ngắm chỗ này lâu hơn những thứ khác thuộc về nơi này.",
-
-      "Có lẽ là một chút muộn phiền trong ánh vàng khiến hắn nghĩ vậy.",
-
-      "Nàng khẽ chạm vào những tàn dư còn lại của quá khứ.",
-
-      "Có lẽ nàng nhớ lúc nàng còn bé. Hoặc cũng có lẽ nàng nhớ bà ấy. Một nỗi niềm nhung nhớ mà chính hắn cũng không muốn hỏi thêm bất cứ thứ gì.",
-
-      "Hắn chỉ muốn nhìn, muốn chiêm ngưỡng những thứ thuộc về nàng và từng thuộc về nàng.",
-
-      "Kristin thả những cánh hoa về chỗ cũ.",
-
-      "Nhìn hắn như thể muốn hắn cõng nàng lần nữa.",
-
-      "Lần này hắn chả than thở. Chỉ xoay lưng rồi hạ người xuống như lúc nãy.",
-
-      "Nhưng có vẻ nàng nặng hơn khi nãy.",
-
-      "Hắn không biết do thứ gì. Hắn cũng chẳng muốn biết nhiều tới thế.",
-
-      "Hai người lại dạo khắp hành lang.",
-
-      "Ngắm những pho tượng bị thời gian tàn phá.",
-
+      '" Tôi chẳng rõ, chỉ là một câu truyện cũ kỹ. Chưa một ai thấy loài rắn bao giờ. "',
+      "Mạch kể của nàng lại tiếp tục trôi lững lờ giữa hành lang quạnh quẽ.",
+      '" Sau những ngày giông tố, thuỷ triều hạ xuống. "',
+      '" Tất cả muôn vật sinh sôi cho tới tận nay. "',
+      '" Và dòng dõi con người lại một lần nữa tái sinh. "',
+      "Câu chuyện thần thoại vừa dứt cũng là khoảnh khắc bước chân họ chạm đến bồn hoa cằn cỗi.",
+      "Hắn khẽ hạ nàng ngồi xuống cạnh bể hoa.",
+      "Chỉ tiếc là có lẽ lần này hắn không thể chứng kiến cảnh tượng ở khu chợ một lần nào nữa.",
+      "Chẳng còn lấy nổi một mầm sống nào bám trụ lại bên trong phiến đá lạnh lẽo.",
+      "Chỉ vương vãi dăm ba cánh hoa héo úa, tàn tạ rơi rụng dưới đáy bệ.",
+      "Kristin trầm ngâm ngắm nhìn phế tích này lâu hơn bất cứ góc ngách nào khác trong thánh đường.",
+      "Thoáng buồn phiền đọng lại nơi đáy mắt màu nắng úa khiến trái tim hắn khẽ chùng xuống.",
+      "Nàng vươn tay, cẩn trọng chạm vào những tàn dư mục nát của quá khứ xa xăm.",
+      "Có lẽ nàng đang cố chắp vá lại ảo ảnh của thời thơ ấu vô tư.",
+      "Hoặc có lẽ, sâu thẳm bên trong nàng muốn gợi nhớ về người mẹ năm ấy.",
+      "Một nỗi bi ai sâu thẳm đến mức kẻ kiêu ngạo như hắn cũng chẳng dám buông lời tọc mạch.",
+      "Hắn chỉ lặng lẽ đứng đó.",
+      "Cũng là những cánh hoa, cũng là người phụ nữ này.",
+      "Nhưng khung cảnh trước mặt lại mang một dáng vẻ ảm đạm hơn với những gì hắn muốn thấy.",
+      "Có lẽ hắn nên cất giữ vĩnh viễn hình bóng nàng và những tàn tích từng thuộc về nàng.",
+      "Kristin nhẹ nhàng thả những cánh hoa vỡ nát trở về lòng đá.",
+      "Nàng ngước đôi mắt lên, im lặng như thể đòi hỏi một đặc quyền được cõng thêm một lần nữa.",
+      "Lần này, hắn dẹp bỏ mọi tiếng thở dài phiền nhiễu.",
+      "Ngoan ngoãn xoay lưng và hạ thấp thân mình đón lấy trọng lượng mỏng manh ấy.",
+      "Nhưng dường như sinh linh này bỗng chốc trở nên nặng nề hơn vài khắc trước.",
+      "Hắn từ chối việc đào sâu để hiểu.",
+      "Chỉ muốn gánh vác mà thôi.",
+      "Hai cái bóng nương tựa vào nhau, tiếp tục trôi dạt dọc theo đoạn hành lang.",
+      "Lướt qua những pho tượng thánh thần đã bị nanh vuốt thời gian gặm nhấm.",
       '" Dragalon, anh rẽ sang phải thử xem. "',
-
       '" Tôi nhớ nơi này từng có thư viện. "',
-
-      "Hắn bước chậm lại.",
-
+      "Bước chân vững chãi của hắn khẽ ngập ngừng.",
       '" Ta không thích những nơi như vậy. "',
-
       '" Nhìn mặt anh là biết. "',
-
-      "Hắn khựng lại trước câu nói của nàng.",
-
+      "Hắn sượng trân trước lời bóc mẽ không kiêng dè của nàng.",
       '" Ai bảo ngươi như vậy? "',
-
       '" Tôi nhìn người giỏi hơn anh nhiều. "',
-
-      "Hắn chẳng thèm nhằn nhọc với người phụ nữ này. Nhưng hắn vẫn mang nàng tới nơi nàng muốn.",
-
-      "Họ dừng lại ở trước thư viện.",
-
-      "Từng lớp mạng nhện bám sâu vào những khe tủ.",
-
-      "Vài cuốn sách như chưa từng có người chạm vào. Một vài quyền thì bị xé nát.",
-
-      "Kristin bỗng nhảy xuống khỏi lưng hắn.",
-
-      "Nàng chậm rãi ngắm nhìn những gian sách. Bàn tay miết những lớp bụi còn vương lại sau bấy nhiêu năm.",
-
-      "Có lẽ nàng từng thường xuyên ở nơi này.",
-
-      "Sự quen thuộc ấy biểu hiện qua từng cử chỉ, ánh mắt của nàng.",
-
-      "Hắn dựa lưng vào một góc tường.",
-
-      "Chẳng có gì thú vị tới vậy. Hắn thầm nghĩ.",
-
-      "Nếu là hắn những ngày trước, có lẽ vài giây cũng không thể giữ chân hắn lại.",
-
-      "Chẳng biết tại sao hắn vẫn kiên nhẫn tới lúc này.",
-
-      "Bước chân nàng chậm rãi hơn. Tay nàng lục lọi từng ngóc ngách.",
-
+      "Hắn lười biếng phớt lờ.",
+      "Chẳng buồn cãi vã ăn thua với giống loài nhỏ bé này.",
+      "Nhưng bước chân vẫn cam chịu chuyển hướng, cõng nàng đi tới đích đến.",
+      "Cuối cùng, hai người dừng chân trước thư viện.",
+      "Lớp mạng nhện xám xịt giăng bít bùng, đan chéo qua từng khe tủ ẩm mốc.",
+      "Hàng ngàn cuốn sách nhuốm màu tàn úa như đã bị lãng quên từ thuở nào.",
+      "Một vài tập thư tịch quý giá đã bị xé toạc, vương vãi thảm hại trên sàn.",
+      "Kristin đột ngột tuột khỏi vòm lưng ấm áp của hắn.",
+      "Nàng rảo bước chầm chậm, mải mê chìm đắm giữa những kệ sách khổng lồ đang oằn mình rên rỉ.",
+      "Đầu ngón tay thon thả lướt đi, miết sạch những mảng bụi thời gian đã ngủ quên bấy nhiêu năm.",
+      "Bóng dáng nàng lướt đi giữa đống tro tàn tự nhiên đến lạ thường.",
+      "Sự gắn kết thuộc về chốn này hằn rõ qua từng cử chỉ lật mở, từng tia sáng nhấp nháy trong đáy mắt.",
+      "Hắn chọn cách lui lại, tựa lưng vào một góc tường đổ nát tĩnh lặng quan sát.",
+      "Đống giấy vụn mốc meo ấy chẳng chứa đựng thứ ma lực gì hấp dẫn.",
+      "Hắn bĩu môi thầm chế giễu.",
+      "Nếu là hắn của những chuỗi ngày xưa cũ, vài giây ngắn ngủi cũng không thể níu nổi gót chân.",
+      "Chẳng thể lý giải nổi vì cớ gì cơ thể này lại cam tâm nhẫn nại đến nhường này.",
+      "Nhịp bước của nàng càng lúc càng chậm lại.",
+      "Đôi bàn tay lật tung mọi ngóc ngách tăm tối nhất của dãy kệ gỗ.",
       '" Thấy rồi! "',
-
-      "Kristin kéo quyển sách dày ra khỏi tủ. Những sợi tơ vẫn cố giữ nó lại khỏi tay nàng nhưng không thể.",
-
+      "Kristin hoan hỉ dùng sức lôi tuột một quyển sách cổ cộm rộp ra khỏi khe hẹp.",
+      "Những tơ nhện nhầy nhụa cố bám víu cản trở nhưng đành bất lực đứt đoạn trước lực kéo của phàm nhân.",
       '" The Miracle of Pains. "',
-
-      "Hắn trông thấy từng hàng chữ nặng nề hằn lên bìa sách.",
-
-      "Nàng dở một trang, rồi lại trang nữa.",
-
+      "Hắn nheo mắt, đọc thấu từng nét chữ nặng nề như một lời nguyền tạc sâu trên bìa sách.",
+      "Nàng say sưa lật mở một trang giấy.",
+      "Rồi lại vội vã lật thêm một trang nữa.",
       '" Ngươi sẽ không xem nó vào lúc này chứ? "',
-
-      "Nàng nhìn hắn một thoáng rồi lại cúi xuống.",
-
+      "Nàng ngước mắt liếc hắn một cái chớp nhoáng.",
+      "Rồi lại dán chặt tầm nhìn vào mặt giấy.",
       '" Tại sao không? "',
-
-      "Lại một câu hỏi vặn ngược lại chính hắn.",
-
+      "Lại là thói quen vặn ngược câu hỏi.",
+      "Chĩa thẳng mũi giáo về phía kẻ vừa cất lời.",
       '" Vậy thì ta đi trước. "',
-
-      "Nàng chẳng thèm nhìn hắn.",
-
+      "Nàng phớt lờ hoàn toàn lời hăm dọa ấu trĩ.",
+      "Chẳng thèm rời mắt khỏi trang sách dang dở.",
       '" Anh sẽ không làm vậy. "',
-
       '" Thứ gì khiến ngươi tin là ta sẽ không làm? "',
-
-      "Nàng lật trang kế tiếp.",
-
+      "Tiếng giấy da cọ xát khô khốc vang lên khi nàng điềm nhiên lật sang trang kế tiếp.",
       '" Vì tối qua anh cũng không bỏ đi. "',
-
-      "Lần này, hắn chẳng còn một câu nào có thể chống lại nàng.",
-
-      "Ánh mắt hắn vẫn hướng về người phụ nữ trước mặt.",
-
-      "Có vẻ nàng vừa thấy một thứ gì trên trang sách.",
-
-      "Hắn cảm thấy sự khác biệt trên khuôn mặt nàng. Những hàng chữ lặp lại ánh lên trong con ngươi ấy.",
-
+      "Giây phút ấy, thanh quản hắn hoàn toàn tê liệt.",
+      "Chẳng bòn mót nổi một từ ngữ nào để phản bác.",
+      "Hắn chỉ đành câm lặng phóng ánh nhìn bất lực về phía người phụ nữ bướng bỉnh trước mặt.",
+      "Đột nhiên, dường như võng mạc nàng vừa va phải một thứ bí mật cổ xưa bị phong ấn.",
+      "Hắn tinh ý nắm bắt được sự biến đổi cứng đờ trên nét mặt nàng.",
+      "Những hàng chữ lặp đi lặp lại dường như đang phản chiếu trong đôi đồng tử nhợt nhạt ấy.",
       '" Có chuyện gì hay ho à? "',
-
-      "Kristin trả lời muộn hơn lúc trước.",
-
+      "Khẩu hình của Kristin mất một khoảng trễ nhịp khác thường mới có thể nặn ra âm thanh.",
       '" Không, không có gì cả. "',
-
-      "Quyển sách bỗng trượt khỏi bàn tay mỏng manh.",
-
-      "Chẳng rõ là do chuyện gì.",
-
-      "Nàng nhặt lên rồi ôm nó vào lòng.",
-
-      "Hắn thấy vết thương của nàng lại rỉ máu.",
-
+      "Cuốn thư tịch ma quái bất thình lình trượt tuột khỏi những ngón tay mỏng manh.",
+      "Chẳng ai đoái hoài căn vặn lý do thực sự đằng sau hành động đó.",
+      "Nàng vội vã khom người nhặt nó lên, siết chặt vào giữa lồng ngực.",
+      "Ánh mắt sắc bén của hắn tức khắc nhận ra vết thương trên vai nàng lại bắt đầu rịn máu.",
       '" Lên. "',
-
       '" Sao nhìn mặt anh có vẻ không muốn nhỉ? "',
-
-      "Lần này hắn chả buồn trả lời những câu hỏi kì quặc của Kristin.",
-
-      "Hai tay nàng lại quàng vào cổ hắn. Quyển sách The Miracle of Pains được đặt trước lồng ngực.",
-
-      "Hắn chả muốn dính dáng với những thứ thuộc về nơi linh thiêng này.",
-
-      "Nhưng hắn cũng không muốn nàng phải tự bước.",
-
-      "Một trong hai. Hắn sẽ chọn thứ ít khó chịu hơn.",
-
+      "Lần này, hắn mặc kệ những câu cắc cớ ương bướng của Kristin.",
+      "Buông xuôi mọi lời cãi vã.",
+      "Đôi tay gầy guộc lại vòng qua siết lấy cổ hắn.",
+      "Mang theo cuốn sách *The Miracle of Pains* cộm lên ngay sát lưng trần.",
+      "Bản ngã thét gào cự tuyệt mọi thứ thuộc về chốn linh thiêng ngu xuẩn này.",
+      "Nhưng trái tim lại kiên quyết bác bỏ việc để thân xác yếu ớt kia phải tự lê bước.",
+      "Đứng giữa ranh giới của sự phiền nhiễu, hắn đành nghiến răng chọn lấy bề nào ít khó chịu hơn.",
       "Hắn chọn cõng nàng một lần nữa.",
     ],
   },
@@ -2327,473 +1412,245 @@ const artworks = [
     uiTheme: "white",
     story: [
       '" Có những thứ sẽ không mãi ở lại với chúng ta. "',
-
       '" Nhưng cũng có những thứ sẽ mãi ở lại trong ta. "',
-
       '" Chỉ tiếc là con người không bao giờ sẽ biết. "',
-
       '" Hoặc từng biết tới sự tồn tại của chúng. "',
-
       '" Bốn kỵ sĩ. Bốn con ngựa. Bốn tai ương. "',
-
       '" Trước khi cơn giông tới. "',
-
       '" Họ vẫn luôn ở lại tới những giờ phút cuối cùng. "',
-
+      "Hắn hỏi.",
       '" Nhưng họ là ai? "',
-
+      "Và nàng trả lời.",
       '" Chẳng là ai cả. "',
-
-      "Từng bước chân hắn giẫm lên những mảnh kính vỡ vụn dưới nền gạch.",
-
-      "Những câu chuyện cũ kĩ từ môi nàng len lỏi khắp hành lang nhà thờ.",
-
-      "Chẳng hiểu sao hắn lại muốn nghe những thứ này tới vậy.",
-
-      "Có lẽ chính hắn cũng không hiểu.",
-
-      "Chỉ là một chút ấm áp cuối cùng của mùa thu.",
-
-      "Một thứ gì đó hắn muốn ấp ủ thêm một chút.",
-
-      "Dù chính hắn còn chẳng biết vì sao.",
-
-      "Kristin khẽ tựa mặt lên bờ vai hắn.",
-
-      "Hơi thở nàng chạm nhẹ vào phần cổ.",
-
-      "Nhịp bước Drag chậm lại.",
-
+      "Từng bước chân nặng trĩu giẫm nát những mảnh kính vỡ vụn dưới nền gạch lạnh lẽo.",
+      "Những giai thoại cũ kỹ từ môi nàng len lỏi khắp dãy hành lang u uất của thánh đường.",
+      "Chẳng hiểu sao hắn lại khao khát được lắng nghe những thanh âm phàm tục này đến vậy.",
+      "Có lẽ chính bản ngã kiêu ngạo của hắn cũng không thể lý giải.",
+      "Chắc chỉ là một chút hơi ấm thoi thóp cuối cùng của vạt nắng mùa thu.",
+      "Một thứ ảo ảnh mỏng manh mà hắn vô thức muốn ấp ủ thêm một chút.",
+      "Dẫu cho chính cõi lòng tăm tối ấy còn chẳng rõ nguyên do.",
+      "Kristin khẽ nghiêng đầu, tựa gò má gầy guộc lên bờ vai rộng lớn của hắn.",
+      "Hơi thở nóng hổi của nàng mơn trớn nhịp nhàng nơi hõm cổ.",
+      "Nhịp bước chân của Drag bất giác chậm dần lại.",
       '" Hay anh dẫn tôi về lại nhà nguyện? "',
-
       '" Không. Ta không muốn. "',
-
       '" Kệ anh. Nhưng tôi muốn. "',
-
-      "Hắn nhăn mặt.",
-
-      "Hắn biết nếu tiếp tục cãi.",
-
-      "Có lẽ hắn sẽ chẳng bao giờ thắng nổi người phụ nữ ngang bướng này.",
-
-      "Nhưng việc nghe lời nàng.",
-
-      "Lại chẳng khó chịu như hắn nghĩ.",
-
-      "Hai người trở về căn phòng sặc mùi linh thiêng.",
-
-      "Ánh ban mai cuối cùng cũng xuyên qua những khe nứt trên tường.",
-
-      "Từng dải sáng nhợt nhạt cắt ngang không gian.",
-
-      "Drag bước tới chiếc ghế dài gần bục thờ.",
-
-      "Khom người.",
-
-      "Kristin chậm rãi rời khỏi lưng.",
-
-      "Nhưng hai tay nàng vẫn kẹt lại ở cổ hắn.",
-
+      "Hắn khẽ nhăn mặt, một biểu cảm cam chịu hiếm hoi.",
+      "Hắn thừa biết nếu tiếp tục tranh cãi, bản thân sẽ chẳng bao giờ thắng nổi sự ngang bướng của người phụ nữ này.",
+      "Nhưng việc cúi đầu ngoan ngoãn nghe lời nàng.",
+      "Nó lại chẳng hề mang đến sự phẫn nộ như hắn vẫn tưởng.",
+      "Hai khối thân xác nương tựa vào nhau, trở về căn phòng sặc sụa thứ mùi hương linh thiêng.",
+      "Ánh ban mai yếu ớt cố nhoài mình vươn qua những khe nứt chằng chịt trên vách đá.",
+      "Từng dải sáng nhợt nhạt, sắc lẹm cắt ngang không gian mờ mịt.",
+      "Drag cất bước tiến tới chiếc ghế dài bằng gỗ cồng kềnh đặt sát bục thờ.",
+      "Hắn khom tấm lưng vạm vỡ.",
+      "Kristin chậm rãi trượt xuống, rời khỏi bờ vai hắn.",
+      "Nhưng hai cánh tay mỏng manh của nàng vẫn dùng dằng kẹt lại, vòng hờ quanh cổ hắn.",
       "Một lúc.",
-
-      "Rồi thêm một lúc nữa.",
-
-      "Khoảng cách giữa hai người bỗng trở nên gần hơn mức cần thiết.",
-
+      "Rồi lại thêm một lúc nữa.",
+      "Khoảng cách giữa hai cơ thể bỗng chốc bị thu hẹp đến mức vượt quá giới hạn an toàn.",
       '" Sao ngươi chưa buông? "',
-
-      "Kristin không trả lời.",
-
-      "Chỉ nhìn chăm chăm vào đôi mắt hắn.",
-
-      "Môi nàng khẽ hé.",
-
-      "Hơi thở ấm áp chạm vào môi hắn.",
-
-      "Lại là ánh mắt ấy.",
-
-      "Lại là gương mặt hắn bị giữ lại trong võng mạc của nàng.",
-
-      "Chỉ mỗi hắn.",
-
-      "Không biết từ lúc nào.",
-
-      "Hai tay Drag đã đặt lên hông nàng.",
-
+      "Kristin không buồn đáp lời.",
+      "Nàng chỉ ngước lên, chằm chằm xoáy sâu vào đôi đồng tử rực đỏ của hắn.",
+      "Đôi môi căng mọng khẽ hé mở.",
+      "Hơi thở phập phồng phả thẳng vào nhân trung hắn.",
+      "Lại là thứ ánh mắt ma mị ấy.",
+      "Lại là khuôn mặt của chính hắn bị giam cầm vĩnh viễn trong võng mạc vàng úa của nàng.",
+      "Chỉ phản chiếu duy nhất bóng hình hắn.",
+      "Chẳng biết từ khoảnh khắc quỷ quái nào, hai bàn tay thô ráp của Drag đã đặt trọn lên vòng eo thon thả của nàng.",
       '" Dragalon. "',
-
       '" Ừ? "',
-
       '" Anh làm gì thế? "',
-
-      "Một câu hỏi tưởng chừng rất dễ.",
-
-      "Nhưng trong khoảnh khắc ấy.",
-
-      "Nó lại trở thành câu khó nhất nàng từng hỏi hắn.",
-
-      "Một bàn tay Kristin vòng ra sau gáy.",
-
-      "Kéo hắn lại gần hơn.",
-
-      "Gương mặt hắn hiện rõ trong mắt nàng.",
-
-      "Giọng nàng hạ xuống.",
-
+      "Một câu hỏi trần trụi, tưởng chừng như vô cùng đơn giản.",
+      "Nhưng trong cái sát na ngột ngạt ấy, nó lại trở thành vướng mắc trí mạng nhất nàng từng chất vấn hắn.",
+      "Bàn tay mượt màng của Kristin khẽ áp lên gáy.",
+      "Nàng dùng lực kéo khuôn mặt hắn xích lại gần hơn nữa.",
+      "Đường nét góc cạnh của hắn in hằn rõ rệt trong đáy mắt nàng.",
+      "Chỉ một mình hắn.",
+      "Giọng nói mỏng manh cất lên, ma mị và trầm mặc.",
       '" Em hỏi. "',
-
       '" Anh làm gì thế? "',
-
-      "Có lẽ lần này nàng thật sự muốn một câu trả lời thành thật.",
-
-      "Drag lảng mặt sang bên.",
-
-      "Những câu hỏi trong mắt nàng còn khó chịu hơn cả lời nói.",
-
-      "Hắn muốn tránh.",
-
-      "Muốn che lấp những thứ bản thân còn chưa hiểu.",
-
-      "Nhưng Kristin chạm tay lên má hắn.",
-
-      "Kéo ánh mắt ấy trở lại.",
-
+      "Có lẽ lần này, sinh vật nhỏ bé ấy thực sự khao khát một lời thú tội thành thật.",
+      "Drag lảng ánh nhìn sang bức bích họa người phụ nữ.",
+      "Như vậy mọi ý niệm sẽ dễ dàng hơn với hắn.",
+      "Chính vì sự tra khảo ẩn sâu trong ánh mắt nàng còn mang sức sát thương khủng khiếp hơn cả ngàn vạn lời nguyền rủa.",
+      "Nên hắn cần lẩn tránh.",
+      "Hắn cần phải che lấp đi những xúc cảm nguyên thủy mà chính thân xác này còn chưa kịp thấu hiểu.",
+      "Nhưng Kristin kiên quyết vươn tay chạm lên gò má hắn.",
+      "Ép buộc ánh nhìn trầm tư ấy phải quay trở lại.",
       '" Ta không biết. "',
-
-      "Hai khóe môi nàng cong lên.",
-
-      "Một tiếng cười rất nhẹ.",
-
+      "Hai khóe môi mềm mại của nàng cong lên.",
+      "Một tiếng cười bật ra, rất đỗi nhẹ nhàng.",
       '" Cuối cùng anh cũng chịu nói thật. "',
-
-      "Hắn kéo eo nàng sát vào người mình.",
-
+      "Hắn siết mạnh vòng tay, thô bạo kéo vòng eo nàng dán sát vào lồng ngực mình.",
       '" Anh sẽ làm gì tiếp theo? "',
-
       '" Khoá miệng ngươi lại. "',
-
-      "Khoảng cách giữa hai người biến mất.",
-
-      "Bờ môi nàng mềm hơn hắn tưởng.",
-
-      "Ấm.",
-
-      "Mọng.",
-
-      "Một thứ cảm giác hắn chưa từng có tên để gọi.",
-
-      "Nàng ngả người xuống chiếc ghế phía sau.",
-
-      "Hắn cũng bị kéo theo.",
-
-      "Một tay vẫn giữ lấy eo.",
-
-      "Tay kia trượt dọc sống lưng.",
-
-      "Từng lớp vải bị ép sát vào cơ thể.",
-
-      "Hơi ấm từ nàng xuyên qua tất cả.",
-
-      "Drag chẳng còn quan tâm căn phòng này khiến mình khó chịu tới đâu.",
-
-      "Kristin cắn nhẹ lên môi hắn.",
-
-      "Không đủ đau.",
-
-      "Chỉ vừa đủ để khiến hắn khựng lại.",
-
-      "Một lời cảnh cáo.",
-
-      "Hoặc có lẽ chỉ là chút sĩ diện cuối cùng nàng cố giữ.",
-
-      "Drag chẳng buông.",
-
-      "Hắn kéo nàng sát hơn.",
-
-      "Một bàn tay từ hông trượt xuống thấp hơn.",
-
-      "Rồi lại vòng lên.",
-
-      "Những ngón tay chạm qua lớp vải mỏng.",
-
-      "Cơ thể nàng nóng hơn hắn tưởng.",
-
-      "Nóng tới mức hắn có cảm giác lòng bàn tay mình cũng đang bị thiêu.",
-
-      "Kristin khẽ siết lấy vai hắn.",
-
-      "Hơi thở nàng trở nên gấp hơn.",
-
-      "Drag nhận ra.",
-
-      "Và điều đó chỉ khiến hắn muốn tiến gần thêm.",
-
-      "Hắn nâng nàng dậy.",
-
-      "Lưng nàng chạm vào phần tường lạnh phía sau.",
-
-      "Một sự đối lập khiến nàng khẽ rùng mình.",
-
-      "Drag nhìn thấy.",
-
-      "Nhưng chẳng hỏi.",
-
-      "Môi hắn lại tìm tới nàng.",
-
-      "Một tay giữ lấy đùi.",
-
-      "Tay kia chậm rãi lần lên phần eo.",
-
-      "Rồi cao hơn.",
-
-      "Những ngón tay khẽ siết.",
-
-      "Kristin lập tức cắn mạnh hơn lên môi hắn.",
-
-      "Drag khẽ cau mày.",
-
-      "Nhưng lần này.",
-
-      "Hắn lại thấy thích cái cách nàng phản ứng.",
-
-      "Một chuyện rất phiền phức.",
-
-      "Và hắn chẳng còn muốn suy nghĩ thêm.",
-
-      "Bàn tay nàng rời khỏi vai.",
-
-      "Chậm rãi đặt lên lồng ngực hắn.",
-
-      "Ngay nơi trái tim.",
-
+      "Khoảng cách phòng ngự cuối cùng giữa hai khối thân xác hoàn toàn bị nghiền nát.",
+      "Bờ môi nàng mềm mại và ướt át hơn những gì hắn từng mường tượng.",
+      "Ấm nóng.",
+      "Căng mọng.",
+      "Một thứ nhục dục nguyên thủy mà hắn chưa từng có khái niệm để định danh.",
+      "Nàng lơi người, ngớn ngã xuống bề mặt chiếc ghế gỗ phía sau.",
+      "Hắn lập tức bị cuốn theo sự câu dẫn chết người ấy.",
+      "Một bàn tay vẫn ghim chặt lấy eo thon.",
+      "Tay còn lại miết dọc theo từng đốt sống lưng uốn lượn.",
+      "Từng lớp y phục vướng víu bị ép chặt vào đường cong cơ thể.",
+      "Hơi ấm rừng rực từ da thịt nàng xuyên thấu qua mọi rào cản.",
+      "Drag chẳng còn màng đoái hoài đến việc căn phòng sặc mùi thánh thần này từng khiến hắn buồn nôn tới mức nào.",
+      "Kristin há miệng, cắn nhẹ lên bờ môi thô ráp của hắn.",
+      "Không đủ để rỉ máu.",
+      "Chỉ vừa vặn tạo ra một nhịp khựng lại tê dại.",
+      "Một lời cảnh cáo lả lơi.",
+      "Hoặc có lẽ chỉ là chút sĩ diện phàm tục cuối cùng nàng đang cố giữ lấy.",
+      "Nhưng Drag tuyệt đối không buông tha.",
+      "Hắn gầm gừ, kéo thân hình nàng dán chặt hơn nữa vào thân thể vạm vỡ của mình.",
+      "Một bàn tay từ vòng hông lả lướt trượt xuống những vùng tăm tối thấp hơn.",
+      "Rồi lại táo bạo vuốt ve ngược lên trên.",
+      "Những ngón tay thô ráp mơn trớn, siết lấy từng thớ thịt khỏi lớp vải mỏng tang.",
+      "Da thịt nàng rực lửa, nóng bỏng hơn hắn tưởng.",
+      "Nóng tới mức hắn có ảo giác lòng bàn tay mình đang bị thiêu rụi trong hỏa ngục.",
+      "Kristin thở dốc, khẽ siết chặt lấy bờ vai vững chãi của hắn.",
+      "Nhịp thở của nàng trở nên gấp gáp, dồn dập khát khao.",
+      "Drag nhạy bén cảm nhận được sự kích thích ấy.",
+      "Và nhược điểm đó chỉ càng kích phát dục vọng, khiến hắn muốn xâm chiếm sâu hơn.",
+      "Hắn dùng lực nâng bổng thân hình nàng dậy.",
+      "Tấm lưng trần của nàng đập mạnh vào phần vách tường đá lạnh buốt phía sau.",
+      "Một sự đối lập tàn nhẫn giữa băng giá và dục hỏa khiến nàng khẽ rùng mình bần bật.",
+      "Drag thu trọn phản ứng ấy vào tầm mắt.",
+      "Nhưng hắn cự tuyệt việc dừng lại để hỏi han.",
+      "Môi hắn lại điên cuồng tìm tới môi nàng mà cắn mút.",
+      "Một bàn tay thô bạo luồn vào bóp chặt lấy bắp đùi thon.",
+      "Tay còn lại lươn lẹo mơn trớn, lần mò lên phần eo nhỏ nhắn.",
+      "Rồi mạnh bạo trượt lên bầu ngực của nàng.",
+      "Những ngón tay hắn nhào nặn, khẽ siết lấy những vùng da thịt đang phập phồng.",
+      "Kristin lập tức đáp trả, cắn mạnh hơn vào môi hắn đến tươm máu.",
+      "Drag khẽ cau mày đau đớn.",
+      "Nhưng ngay trong khoảnh khắc đó.",
+      "Hắn lại cảm thấy điên cuồng say mê cái cách nàng phản kháng bằng nhục dục.",
+      "Một chuỗi xúc cảm thật phiền phức và hỗn loạn.",
+      "Nhưng hắn chẳng còn muốn lãng phí tâm trí để suy nghĩ thêm nữa.",
+      "Bàn tay mỏng manh của nàng lơi dần khỏi vai hắn.",
+      "Nàng chậm rãi hạ tay xuống, áp sát lên vòm ngực săn chắc.",
+      "Đặt trọn vẹn ngay vị trí của trái tim.",
+      "Những đầu ngón tay nán lại lâu hơn một nhịp.",
+      "Drag chỉ nghĩ nàng đang lắng nghe.",
       '" Tim của anh. "',
-
-      "Drag khựng lại.",
-
+      "Drag khựng lại, dục hỏa ngưng trệ một nhịp.",
       '" Sao? "',
-
       '" Nhanh quá. "',
-
       "Kình kịch.",
-
       "Kình kịch.",
-
-      "Âm thanh ấy vọng qua từng mạch máu.",
-
-      "Lớn tới mức hắn có cảm giác nàng có thể nghe rõ từng nhịp.",
-
-      "Hắn không thích điều đó.",
-
-      "Không thích việc cơ thể mình đang nói thay cho những thứ hắn chưa từng thừa nhận.",
-
-      "Nhưng hắn cũng không đẩy bàn tay ấy ra.",
-
-      "Kristin vẫn giữ ở đó.",
-
-      "Đầu ngón tay khẽ ấn xuống.",
-
-      "Như thể muốn cảm nhận rõ hơn.",
-
+      "Thứ âm thanh thổn thức ấy dội vang qua từng hệ mạch máu.",
+      "Lớn tới mức hắn có cảm giác nàng có thể nghe rõ mồn một từng nhịp đập thảm hại của mình.",
+      "Hắn chán ghét sự thật đó.",
+      "Hắn căm phẫn việc cơ thể này đang lên tiếng thú nhận thay cho những dục vọng mà hắn chưa từng cho phép phơi bày.",
+      "Nhưng cơ bắp hắn lại phản bội, không chịu hất văng bàn tay nhỏ bé ấy ra.",
+      "Kristin vẫn ngoan cố giữ chặt tay ở đó.",
+      "Đầu ngón tay nàng khẽ ấn sâu xuống lớp cơ ngực cứng cáp.",
+      "Như thể muốn cảm nhận rõ ràng hơn sự khuất phục của một thực thể vĩ đại.",
       "Kình kịch.",
-
       "Kình kịch.",
-
-      "Drag cúi xuống.",
-
-      "Môi lại chạm vào cổ nàng.",
-
-      "Hơi thở nóng hổi lướt qua da.",
-
-      "Kristin khẽ nghiêng đầu.",
-
-      "Một cử động rất nhỏ.",
-
-      "Nhưng đủ để hắn hiểu.",
-
-      "Hắn không còn để tâm tới bất cứ thứ gì khác.",
-
-      "Không hành lang.",
-
-      "Không những tiếng động xa xôi.",
-
-      "Không cả những ký ức khiến hắn khó chịu lúc bước vào nơi này.",
-
-      "Chỉ còn nàng.",
-
-      "Chỉ còn hơi thở.",
-
-      "Da thịt.",
-
-      "Và nhịp tim không chịu nghe lời.",
-
-      "Có lẽ đó là lúc hắn thất thủ.",
-
-      "Không phải vì yếu hơn.",
-
-      "Chỉ là hắn đã thôi đề phòng.",
-
-      "Bàn tay Kristin vẫn ở trên ngực.",
-
-      "Tay còn lại chậm rãi trượt xuống.",
-
-      "Drag cảm nhận từng chuyển động.",
-
-      "Nhưng không ngăn.",
-
-      "Hắn chỉ kéo nàng trở lại gần hơn.",
-
-      "Nụ hôn sâu thêm.",
-
-      "Khoảng cách giữa hai cơ thể gần như bị xé bỏ.",
-
-      "Người phàm.",
-
-      "Người trời.",
-
-      "Chẳng còn quan trọng.",
-
-      "Ít nhất với hắn.",
-
-      "Rồi một cơn nhói chạy dọc cổ họng.",
-
-      "Drag khựng lại.",
-
-      "Máu tràn xuống khoé miệng.",
-
-      "Hắn mở mắt.",
-
-      "Kristin vẫn ở rất gần.",
-
-      "Quá gần.",
-
-      "Gần tới mức hắn còn cảm nhận được hơi thở của nàng trên mặt.",
-
-      "Hắn thử gọi tên nàng.",
-
-      "Không có âm thanh.",
-
-      "Một khoảng trống nóng rát nằm trong miệng.",
-
-      "Cơn lạnh lập tức chạy dọc sống lưng.",
-
-      "Drag lùi lại.",
-
-      "Một bước.",
-
-      "Chưa đủ.",
-
-      "Một cơn đau khác lập tức xuất hiện thấp hơn.",
-
-      "Ngay nơi bàn tay nàng vừa đi qua.",
-
-      "Hai đầu gối hắn chao đảo.",
-
-      "Drag khuỵu xuống.",
-
-      "Máu nhỏ xuống nền đá.",
-
-      "Tách.",
-
-      "Tách.",
-
-      "Kristin vẫn đứng trước mặt.",
-
-      "Nhưng ánh mắt đã thay đổi.",
-
-      "Lạnh hơn.",
-
-      "Nặng hơn.",
-
-      "Như thể sự ấm áp vừa rồi chưa từng tồn tại.",
-
-      "Nàng đưa hai ngón tay lên miệng.",
-
-      "Chậm rãi kéo ra một mẩu thịt đỏ tươi.",
-
-      "Drag nhìn.",
-
-      "Không hiểu.",
-
-      "Rồi nhận ra.",
-
-      "Phần lưỡi của chính mình.",
-
-      "Không thể nào.",
-
-      "Hắn nhìn nàng.",
-
-      "Muốn hỏi.",
-
-      "Muốn biết tại sao.",
-
-      "Nhưng tất cả chỉ mắc kẹt lại trong cổ họng.",
-
-      "Kristin không giải thích.",
-
-      "Không xin lỗi.",
-
-      "Chỉ nhìn hắn bằng sự bình thản khiến mọi câu hỏi càng trở nên nặng nề.",
-
-      "Rồi một cơn nhói khác xuất hiện.",
-
-      "Ngay giữa lồng ngực.",
-
-      "Drag khựng người.",
-
-      "Một thứ kim loại lạnh toát vừa xuyên qua trái tim.",
-
-      "Bàn tay hắn vô thức đưa lên.",
-
-      "Chuôi kiếm.",
-
-      "Một thanh kiếm bằng vàng.",
-
-      "Máu bắt đầu bò qua những khe ngón tay.",
-
+      "Drag cúi gằm mặt xuống.",
+      "Môi hắn ướt át trượt dọc, cắn mút lên cần cổ trắng ngần của nàng.",
+      "Hơi thở phả ra nóng hổi, lướt qua lớp da thịt đang run rẩy.",
+      "Kristin khẽ ngoảnh mặt, nghiêng đầu đón nhận.",
+      "Một cử động mời gọi rất nhỏ.",
+      "Nhưng đủ để bản năng hoang dã của hắn thấu hiểu.",
+      "Hắn thả rông mọi kiềm chế, không còn để tâm tới bất cứ rào cản nào khác.",
+      "Chẳng màng đến dãy hành lang lạnh lẽo.",
+      "Chẳng thèm bận tâm những tiếng động xa xôi vẳng lại.",
+      "Cũng quét sạch mớ ký ức ngột ngạt từng khiến hắn chán ghét lúc bước vào thánh đường này.",
+      "Thế giới giờ đây chỉ còn lại mình nàng.",
+      "Chỉ còn lại những hơi thở hổn hển quấn quýt.",
+      "Da thịt cọ xát rực lửa.",
+      "Và nhịp tim điên loạn không chịu nghe lời lý trí.",
+      "Có lẽ đó là khoảnh khắc sự kiêu hãnh của hắn hoàn toàn thất thủ.",
+      "Không phải vì sức mạnh hắn yếu ớt hơn phàm nhân.",
+      "Chỉ là hắn đã cự tuyệt, cởi bỏ mọi lớp áo giáp đề phòng.",
+      "Bàn tay Kristin vẫn ấn chặt trên lồng ngực hắn.",
+      "Bàn tay còn lại chậm rãi lả lướt, trượt dần xuống những vùng cấm kỵ.",
+      "Drag tê dại cảm nhận từng cử động mơn trớn chết người ấy.",
+      "Nhưng hắn không hề phản kháng.",
+      "Hắn chỉ gầm gừ, kéo sát cơ thể nàng quyện chặt vào mình hơn nữa.",
+      "Nụ hôn chỉ càng lúc càng kéo hắn rời khỏi thực tại.",
+      "Khoảng cách vật lý giữa hai khối thân xác gần như bị xé bỏ hoàn toàn.",
+      "Người phàm tục.",
+      "Kẻ ngự trị cõi trời.",
+      "Tất thảy mọi ranh giới cách trở bị xóa nhòa khỏi tâm trí.",
+      "Ít nhất là đối với sự mê muội của hắn lúc này.",
+      "Rồi đột ngột, một cơn nhói buốt lạnh toát xé toạc cuống họng.",
+      "Drag cứng đờ toàn thân.",
+      "Máu tươi tanh tưởi ộc ra, tràn trề xuống khóe miệng.",
+      "Hắn trợn trừng mở mắt.",
+      "Kristin vẫn ở đó, áp sát vào hắn.",
+      "Quá mức gần gũi.",
+      "Gần tới mức hắn có thể đếm rõ từng nhịp thở dốc của nàng phả lên khuôn mặt mình.",
+      "Hắn hoảng loạn thử mấp máy gọi tên nàng.",
+      "Không có bất kỳ âm thanh nào thoát ra.",
+      "Chỉ có một khoảng trống hoác nóng rát, tứa máu đang ngự trị trong vòm miệng.",
+      "Một cơn ớn lạnh nguyên thủy lập tức bò dọc theo sống lưng.",
+      "Drag lảo đảo lùi lại.",
+      "Một bước chân chới với. Tầm nhìn mờ đục.",
+      "Nhưng như vậy chưa đủ để thoát khỏi tử địa.",
+      "Một cơn đau khác bạo liệt hơn lập tức giáng xuống ở vị trí thấp hơn.",
+      "Ngay tại nơi bàn tay nàng vừa êm ái trượt qua.",
+      "Hai đầu gối từng chống đỡ cả bầu trời giờ đây chao đảo, mất trụ.",
+      "Drag khụy ngã xuống.",
+      "Máu tươi trút xuống nền đá tàn tạ.",
+      "Tách. Tách.",
+      "Kristin vẫn lạnh lùng đứng sừng sững trước mặt hắn.",
+      "Nhưng ánh mắt kiêu kỳ ấy đã hoàn toàn biến đổi.",
+      "Lạnh lẽo hơn.",
+      "Tàn độc và trĩu nặng hơn.",
+      "Như thể hơi ấm nhục dục vừa sưởi ấm hắn chưa từng tồn tại trên cõi đời này.",
+      "Nàng điềm nhiên đưa hai ngón tay nhớp nháp máu lên miệng.",
+      "Chậm rãi lôi ra một mẩu thịt đỏ tươi còn đang nhỏ giọt.",
+      "Drag đờ đẫn nhìn theo.",
+      "Sự kiêu hãnh chưa cho phép hắn hiểu ra cơ sự.",
+      "Rồi hắn kinh hoàng nhận ra.",
+      "Đó là phần lưỡi đứt lìa của chính bản thân mình.",
+      "Không thể nào có chuyện hoang đường như thế.",
+      "Hắn tuyệt vọng nhìn nàng.",
+      "Muốn gào thét hỏi tội.",
+      "Muốn biết lý do tại sao sự bạo tàn này lại giáng xuống.",
+      "Nhưng tất cả mọi âm tiết đều chết nghẹn trong cái hố sâu tứa máu nơi cổ họng.",
+      "Kristin không buồn ban phát một lời giải thích.",
+      "Cũng chẳng có dáng vẻ lo toan gì.",
+      "Nàng chỉ đứng đó, chằm chằm nhìn hắn bằng sự bình thản đến rợn người.",
+      "Khiến vạn câu hỏi chưa kịp thốt ra càng trở nên nặng nề như chì.",
+      "Rồi một cơn nhói thấu tâm can khác bất thần xuyên thủng.",
+      "Ngay chính giữa lồng ngực vạm vỡ.",
+      "Drag khựng bặt mọi cử động.",
+      "Một khối kim loại lạnh toát bạo tàn xé nát lớp cơ.",
+      "Đâm xuyên qua trái tim đang đập loạn.",
+      "Bàn tay tàn phế của hắn vô thức quờ quạng đưa lên.",
+      "Chạm vào một chuôi kiếm.",
+      "Một thanh gươm bằng vàng kim.",
+      "-Không thể nào-",
+      "Máu đỏ sẫm thi nhau ứa ra, bò trườn qua từng khe ngón tay run rẩy.",
       "Kristin bước tới.",
-
-      "Từng bước.",
-
-      "Nhất động nhất cử đều bình tĩnh tới đáng sợ.",
-
+      "Từng nhịp bước êm ái.",
+      "Nhất cử nhất động đều toát lên vẻ bình tĩnh tới mức đáng sợ.",
       '" Sao anh lại nói dối? "',
-
-      "Drag nhìn nàng.",
-
-      "Vẫn không hiểu.",
-
-      "Có lẽ hắn mới là người nên hỏi câu đó.",
-
-      "Kristin đặt tay lên chuôi kiếm.",
-
-      "Ngay nơi bàn tay ấy vừa áp lên để nghe nhịp tim.",
-
-      "Rồi nhấn.",
-
-      "Lưỡi kiếm tiến sâu hơn.",
-
-      "Xé qua phần thịt.",
-
-      "Chạm vào một thứ nằm sâu bên trong.",
-
+      "Drag ngước con mắt mịt mờ nhìn nàng.",
+      "Cả thân xác vẫn chìm trong sự hoang mang tột độ.",
+      "Có lẽ bản thân hắn mới là kẻ nên gào lên câu hỏi cắc cớ đó.",
+      "Kristin thản nhiên đặt bàn tay đẫm máu lên chuôi gươm.",
+      "Ngay chính tại cái nơi mà bàn tay giả tạo ấy vừa áp lên để lắng nghe nhịp tim hắn.",
+      "Rồi nhẫn tâm ấn mạnh.",
+      "Lưỡi gươm vàng tàn nhẫn đâm sâu hơn nữa.",
+      "Xé toạc từng thớ thịt.",
+      "Chạm mạnh vào một khối vật chất bí ẩn bị phong ấn sâu tận bên trong lồng ngực.",
       "Keng.",
-
-      "Một âm thanh kim loại khô lạnh vang lên trong lồng ngực.",
-
-      "Kristin khựng lại.",
-
-      "Chỉ một nhịp.",
-
-      "Rồi ánh mắt nàng trở nên chắc chắn.",
-
-      "Nàng cúi xuống.",
-
-      "Ghép môi sát bên tai hắn.",
-
-      "Giọng rất nhỏ.",
-
-      "Nhưng rõ tới mức không thể nhầm.",
-
+      "Một âm thanh kim loại va đập khô khốc, lạnh lẽo dội vang từ trong lồng ngực hắn.",
+      "Kristin hơi khựng lại.",
+      "Chỉ duy nhất một nhịp thở.",
+      "Rồi ánh mắt tàn độc của nàng ánh lên sự đắc thắng chắc chắn.",
+      "Nàng khom người cúi xuống.",
+      "Ghép đôi môi còn vương máu kề sát bên tai hắn.",
+      "Giọng nói cất lên rất nhỏ.",
+      '" Tại sao?.. "',
+      "Nhưng rành rọt và sắc lẹm tới mức không thể nhầm lẫn.",
       '" Lucifer. "',
     ],
   },
@@ -2810,405 +1667,398 @@ const artworks = [
     background: "#000",
     uiTheme: "white",
     story: [
-      "Mưa bắt đầu rơi.",
-      "Từng giọt xuyên qua những ô kính đã vỡ.",
-      "Rơi xuống nền đá.",
-      "Hòa cùng máu.",
-      "Lucifer.",
-      "Cái tên ấy vẫn còn treo giữa đại sảnh Mother of Mothers.",
-      "Một cái tên tưởng chừng đã chết cùng với bầu trời.",
-      "Vậy mà chỉ bằng một lời thì thầm.",
-      "Kristin đã đào nó trở lại.",
-      "Hắn nhìn nàng.",
-      "Thanh kiếm vàng vẫn xuyên qua ngực trái.",
-      "Ngay nơi trái tim vừa đập nhanh dưới bàn tay nàng.",
-      "Kristin không rút kiếm.",
-      "Drag cũng chẳng động đậy.",
-      "Một lúc lâu.",
-      "Nỗi đau trong lồng ngực chẳng đáng kể.",
-      "Thứ khiến hắn khó chịu.",
-      "Là cái tên.",
-      '" Ngươi vừa gọi ta là gì? "',
-      "Kristin nhìn hắn.",
+      "Mưa bắt đầu rơi xuống cùng với nắng.",
+      "Từng hạt buốt giá xé toạc không trung, xuyên qua những ô kính đã vỡ tươm.",
+      "Nước trút xuống nền đá tàn tạ.",
+      "Chậm rãi hòa quyện, nuốt chửng những vũng máu đỏ au đang loang lổ.",
       '" Lucifer. "',
-      "Lần này rõ ràng hơn.",
-      "Không phải một sự nhầm lẫn.",
-      "Không phải thứ hắn có thể giả vờ rằng mình nghe sai.",
+      "Cái tên cấm kỵ ấy vẫn còn lơ lửng giữa đại sảnh Mother of Mothers.",
+      "Một danh xưng tưởng chừng đã chết mục cùng với sự sụp đổ của bầu trời.",
+      "Vậy mà chỉ bằng một lời thì thầm sắc lẹm.",
+      "Kristin đã tàn nhẫn đào bới nó trở về cõi sống.",
+      "Hắn trân trân nhìn nàng.",
+      "Thanh kiếm vàng rực vẫn cắm xuyên qua lồng ngực trái.",
+      "Ngay tại cái nơi mà trái tim hắn vừa loạn nhịp dưới bàn tay mỏng manh của nàng.",
+      "Kristin tuyệt nhiên không rút kiếm.",
+      "Hắn cũng chẳng buồn di chuyển cơ thể.",
+      "Thứ dằn xé hắn lúc này không còn là lưỡi kiếm nhuốm máu.",
+      "Mà là vô số hoài nghi, câu hỏi tuồng vào tâm trí hắn tới nghẹt thở.",
+      "Cái tên ấy.",
+      '" Người vừa gọi ta là gì? "',
+      "Kristin bình thản nhìn xoáy vào hắn.",
+      '" Lucifer. "',
+      "Lần này từng câu từng chữ không thể phủ nhận.",
+      "Tuyệt nhiên không còn là sự chối cãi của chính hắn.",
+      "Cũng chẳng còn là thứ ảo thanh hắn cố tình muốn nghe sai.",
       "Lucifer.",
-      "Drag cau mày.",
-      "Một âm thanh rất xa vọng lại trong đầu.",
-      "Không phải giọng Kristin.",
-      "Một giọng khác.",
-      "Trầm.",
-      "Ấm.",
-      "Dịu dàng.",
-      "Và bởi vậy.",
-      "Càng khiến hắn ghê tởm.",
+      "Hắn cau mày.",
+      "Một dải âm thanh từ cõi xa xăm vô định bất thần dội lại trong tâm trí.",
+      "Không phải là chất giọng của Kristin.",
+      "Mà là một giọng nói hoàn toàn dị biệt.",
+      "Trầm mặc.",
+      "Ấm áp.",
+      "Dịu dàng đến mức rợn người.",
+      "Và cũng chính bởi sự từ bi giả tạo ấy.",
+      "Nó càng khiến cuống họng hắn cuộn lên một nỗi ám ảnh ghê tởm.",
       '" The First Child of The Miracle. "',
-      "Một khoảng trắng vụt qua trí nhớ.",
+      "Một khoảng trắng lóa chớp nhoáng vụt qua mảng trí nhớ vụn vỡ.",
       "Một bàn tay bằng vàng.",
-      "Những ngón tay đặt lên trán hắn.",
-      "Ánh sáng.",
-      "Một giọng nói.",
-      "Rồi bóng tối.",
-      "Drag chớp mắt.",
-      "Ký ức biến mất.",
-      "Nhanh đến mức hắn không thể biết mình vừa nhớ lại.",
-      "Hay vừa bị ép phải nhìn thấy một thứ gì đó.",
-      "Trước mặt hắn chỉ còn Kristin.",
+      "Những ngón tay vô cơ, lạnh lẽo áp chặt lên vầng trán hắn. Vầng sáng chói lòa bóc từng võng mắt hắn rời khỏi thực tại.",
+      "Giọng nói uy quyền giáng thẳng vào tâm can hắn.",
+      "Bỗng vạn vật lại chìm nghỉm vào khung cảnh tàn khốc hiện tại.",
+      "Hắn chớp mắt.",
+      "Vùng ký ức lập tức tan như bọt nước.",
+      "Trước mặt hắn lúc này, thế giới chỉ còn lại duy nhất người phụ nữ phàm trần.",
       '" Sao ngươi biết cái tên đó? "',
-      "Nàng không trả lời.",
-      "Thay vào đó.",
-      "Kristin chậm rãi đẩy thanh kiếm sâu hơn.",
-      "Thịt trong ngực hắn bị tách ra.",
-      "Máu trào xuống.",
-      "Drag không rời mắt khỏi nàng.",
-      "Những bó cơ quanh lưỡi kiếm co giật.",
-      "Cố đẩy thứ kim loại xa lạ khỏi cơ thể.",
-      "Kristin quan sát tất cả.",
-      "Bình tĩnh đến lạnh lẽo.",
+      "Nàng cự tuyệt trả lời.",
+      "Thay vào đó, bàn tay nhẫn tâm chậm rãi dồn lực vào chuôi kiếm.",
+      "Từng thớ thịt bị lưỡi kim loại thô nhẹ nhàng tách rời.",
+      "Máu tươi ồ ạt trào xuống nền gạch.",
+      "Drag không hề rời mắt khỏi khuôn mặt nàng.",
+      "Những bó cơ đứt gãy quanh lưỡi gươm bắt đầu co giật kịch liệt.",
+      "Bản năng sinh tồn của khối thân xác đang điên cuồng cố đẩy thứ dị vật xa lạ kia ra khỏi thân xác.",
+      "Kristin tĩnh lặng quan sát tất cả sự giằng xé nhơ nhuốc ấy.",
+      "Một sự bình tĩnh máu lạnh.",
       '" Vậy thật sự là anh rồi. "',
-      "Hắn vẫn ở trước mặt nàng.",
-      "Không phản kháng.",
-      "Không phải vì không thể.",
-      "Hắn chỉ muốn một câu trả lời.",
+      "Hắn vẫn sừng sững đứng trước mặt nàng.",
+      "Không một chút phản kháng đánh trả.",
+      "Không phải vì sức mạnh hắn đã cạn kiệt.",
+      "Hắn chỉ khao khát một câu trả lời duy nhất.",
       '" Ai nói cho ngươi biết? "',
-      "Kristin lùi nửa bước.",
+      "Kristin chậm rãi lùi lại nửa bước chân.",
       '" Không ai cả. "',
-      "Hắn nhìn nàng.",
+      "Hắn trừng trừng nhìn nàng.",
       '" Ta ghét những lời nói dối. "',
       '" Tôi cũng vậy, Dragalon. "',
-      "Nàng ngừng lại.",
+      "Nàng ngập ngừng ngắt nhịp.",
       '" À... Lucifer. "',
-      "Một sự bứt rứt trườn dọc trong hắn.",
-      "Hai cái tên.",
-      "Từ cùng một đôi môi.",
-      "Nhưng chưa bao giờ khiến hắn cảm thấy khác nhau đến thế.",
+      "Một luồng bứt rứt, nghẹn ứ trườn dọc theo sống lưng.",
+      "Hai danh xưng hoàn toàn bị mỉa mai như số phận của chính hắn.",
+      "Tệ hơn là nó xuất phát từ bờ môi mềm mại ấy.",
+      "Nhưng chưa bao giờ sự chênh lệch lại bẽ bàng với hắn tới vậy.",
       "Dragalon.",
-      "Cái tên nàng từng gọi khi kéo hắn qua những con phố.",
-      "Khi bắt hắn ăn.",
-      "Khi bật cười.",
-      "Khi nằm trong vòng tay hắn.",
+      "Cái tên nàng từng bám chặt lấy tay rồi luồng lách khắp con phố của hạ giới.",
+      "Khi nàng ngang ngược bắt ép hắn nuốt chửng thứ thức ăn nhạt nhẽo.",
+      "Khi nàng nở những nụ cười vô lo vô nghĩ.",
+      "Khi thân xác nàng cuộn tròn, ngủ thiếp trong vòng tay hắn.",
       "Lucifer.",
-      "Cái tên dường như chẳng thuộc về bất kỳ điều nào trong số đó.",
-      "Kristin hạ thanh kiếm.",
-      "Máu hắn vẫn còn trên chuôi.",
-      "Mưa rơi qua mái vòm.",
-      "Tách.",
-      "Tách.",
-      "Một giọt rơi lên lưỡi kiếm.",
-      "Máu loãng dần.",
+      "Cái danh xưng dường như chưa một lần tồn tại trong những giấc mộng êm đềm đó.",
+      "Kristin buông thõng bàn tay, hạ thấp thanh kiếm xuống.",
+      "Máu đỏ tươi của hắn vẫn còn bám chặt, ướt đẫm trên mặt chuôi vàng.",
+      "Cơn mưa buốt giá trút xuống qua khoảng mái vòm vỡ nát.",
+      "Từng giọt nước rơi thẳng lên bề mặt lưỡi kiếm.",
+      "Huyết sắc đặc quánh dần bị pha loãng trôi xuống.",
       '" Tôi muốn chắc chắn. "',
-      "Nàng đưa ngón tay còn dính máu lên môi.",
-      "Drag nhìn.",
+      "Nàng đưa ngón tay thon dài, vẫn còn vương vết máu đỏ au lên chạm nhẹ vào môi.",
+      "Drag đờ đẫn nhìn theo.",
       '" Chắc chắn cái gì? "',
-      "Kristin nhìn hắn.",
+      "Kristin xoáy sâu ánh nhìn vào mắt hắn.",
       '" Rằng anh thật sự không thể chết. "',
-      "Đại sảnh chìm vào im lặng.",
-      "Drag cúi xuống vết thương.",
-      "Nó đã bắt đầu tự khép lại quanh thanh kiếm.",
+      "Đại sảnh khổng lồ tức khắc chìm nghỉm vào một sự im lặng chết chóc.",
+      "Drag cúi gằm mặt, liếc nhìn vết thương hở hoác trên lồng ngực.",
+      "Những thớ thịt vỡ nát đã bắt đầu bò trườn, khép lại quanh lưỡi kiếm.",
       '" Ngươi làm tất cả chuyện này chỉ để biết điều đó? "',
       '" Không. "',
-      "Nàng nhìn hắn lâu hơn.",
-      '" Tôi làm vậy để hiểu về anh nhiều hơn. "',
-      "Drag khạc phần máu còn mắc trong miệng.",
-      '" Ta không hiểu. "',
-      "Và hắn thật sự không hiểu.",
-      "Hắn đã để nàng chạm vào những thứ chẳng ai được phép chạm.",
-      "Để nàng nghe nhịp tim.",
-      "Để nàng nhìn thấy sự yếu đuối mà chính hắn còn chưa thừa nhận.",
-      "Trong suy nghĩ đơn giản của hắn.",
-      "Như vậy đáng lẽ đã là hiểu.",
-      "Nhưng đối với Kristin.",
-      "Dường như vẫn chưa đủ.",
-      "Nàng quay về phía bức tượng.",
+      "Nàng im lặng một nhịp.",
+      '" Tôi thấy cặp cánh ấy. "',
+      '" Dòng máu của anh.. "',
+      "Drag khựng lại.",
+      '" Ngươi nhắc ta mới nhớ. "',
+      '" Vết thương trên vai ngươi không phải do con quái ngu xuẩn. "',
+      "Hắn nhìn xuống lưỡi gươm trước ngực mình.",
+      "Chắc chắn là cùng một thứ.",
+      "Giờ hắn mới ngã ngũ mọi cơ sự.",
+      "Quá muộn màng.",
+      "Mặc những lời hắn nói, Kristin rũ mắt nhìn cuốn The Miracle of Pains.",
+      '" Tôi từng thấy thứ này khi còn bé. "',
+      '" Giờ tôi lại thấy nó khi lớn. "',
+      "Nàng nán ánh nhìn trên khuôn mặt hắn lâu hơn một nhịp thở.",
+      '" Có lẽ là nó nói về anh nhiều hơn tôi từng nhớ. "',
+      "Hắn nghiêng mặt khạc cục máu còn nghẽn trong vòm họng.",
+      "Vùng ký ức tươi sáng không thể dẫn dắt tâm trí hắn tới những chuyện vừa diễn ra.",
+      "Vài nhịp trước, hắn tự mình gạt bỏ mọi cách trở.",
+      "Chỉ nhường lại sự tự do cho bàn tay ấy chạm vào trái tim mục nát.",
+      "Nhường cho đôi tai phàm trần của nàng áp sát, lắng nghe nhịp tim thổn thức.",
+      "Cho nàng tận mắt chứng kiến sự yếu đuối hèn mọn mà ngay cả bản thân hắn còn chưa từng dám thừa nhận.",
+      "Trong mớ suy tư của hắn.",
+      "Sự dâng hiến trần trụi ấy đáng lẽ đã là tận cùng của sự thấu hiểu.",
+      "Nhưng đối diện với ánh mắt kiên định của Kristin.",
+      "Bấy nhiêu dường như vẫn là chưa đủ.",
+      "Nàng dứt khoát quay gót, hướng mắt về phía bức tượng đá vĩ đại.",
+      "Kristin sải bước, thản nhiên giẫm đạp lên những mảnh kính vỡ vụn vương vãi.",
       '" Anh có biết tại sao người ta xây Mother of Mothers không? "',
-      "Kristin dẫm lên những mảnh kính.",
       '" Người ta kể rằng từ rất lâu trước đây. "',
       '" Khi Cvstodia vẫn còn là những vùng đất chia cắt. "',
       '" Có một thực thể tối cao đã xuất hiện. "',
-      "Drag không nhìn nàng.",
+      "Drag từ chối nhìn theo bóng lưng nàng.",
       '" Họ gọi Người là The High Wills. "',
-      "Ngón tay hắn khẽ co lại.",
-      "Chỉ một chuyển động.",
-      "Nhưng Kristin thấy.",
-      "Nàng luôn nhìn thấy quá nhiều.",
+      "Ngón tay hắn vô thức khẽ co giật lại.",
+      "Chỉ là một chuyển động phản xạ vô cùng nhỏ nhặt dưới màng da.",
+      "Nhưng Kristin đã kịp thu trọn vào tầm mắt.",
+      "Nàng dường như luôn nhìn thấu quá nhiều thứ.",
       '" Người ban cho nhân loại mùa màng. "',
       '" Ban cho họ ánh sáng. "',
       '" Ban cho họ luật lệ. "',
       '" Và đổi lại... "',
-      "Kristin nhìn những hàng ghế xưng tội.",
+      "Kristin liếc nhìn những hàng ghế xưng tội mục nát xếp dọc hai bên sảnh.",
       '" Loài người phải quỳ xuống. "',
       "Drag bật cười.",
-      "Một tiếng cười nhỏ.",
-      "Không có chút vui vẻ nào.",
+      "Một âm thanh chói tai, đứt đoạn vỡ ra từ vòm họng.",
+      "Chẳng chứa đựng lấy nửa phần vui vẻ.",
       '" Đó là câu chuyện chúng kể cho ngươi? "',
-      "Kristin quay lại.",
+      "Kristin xoay người lại.",
       '" Vậy anh biết gì? "',
-      "Drag ngẩng lên bức tượng.",
-      "Nụ cười kia vẫn còn.",
-      "Hiền từ.",
-      "Nhân hậu.",
-      "Giống hệt những gì loài người muốn tin.",
-      "Hắn ghét nó.",
-      "Không còn là sự khó chịu mơ hồ nữa.",
-      "Lần này.",
-      "Hắn biết chắc mình ghét thứ đang được tạc thành đá trước mặt.",
-      '" Ta biết kẻ đó. "',
-      "Kristin bất động.",
+      "Drag ngẩng cao đầu, quắc mắt nhìn trừng trừng lên bức tượng đá khổng lồ.",
+      "Hắn chán ghét nó tột cùng.",
+      "Không còn là một thứ cảm giác bức bối, khó chịu mơ hồ như lúc mới bước vào nữa.",
+      "Ngay khoảnh khắc này.",
+      "Hắn biết chắc chắn mình căm thù thứ vật chất vô tri đang được tạc thành hình hài thiêng liêng ngay trước mặt.",
+      '" Ta biết hắn. "',
+      "Kristin sững sờ, toàn thân bất động.",
       '" Ngài ấy? "',
-      "Drag nhìn nàng.",
+      "Drag dời ánh mắt, lạnh lẽo nhìn thẳng vào nàng.",
       '" Thứ mà các ngươi tôn sùng. "',
-      "Một khoảng lặng.",
-      "Mưa ngoài kia nặng hạt hơn.",
-      "Nước bắt đầu len qua những khe đá.",
-      "Chảy thành từng dòng nhỏ trên nền đại sảnh.",
-      "Kéo theo máu của cả hai.",
-      "Đỏ nhạt dần.",
-      "Kristin nhìn những dòng nước.",
+      "Một khoảng lặng nghẹt thở ập xuống.",
+      "Cơn mưa ngoài cõi phàm trần ngày một nặng hạt, gầm gào xé nát không gian.",
+      "Nước mưa lạnh buốt bắt đầu len lỏi, ồ ạt tràn qua những khe đá nứt nẻ.",
+      "Chúng hợp lưu, chảy thành từng dòng suối nhỏ ngoằn ngoèo trên nền đại sảnh.",
+      "Cuốn phăng theo vũng máu nhơ nhớp của cả hai.",
+      "Sắc đỏ gắt gao dần bị pha loãng, nhạt nhòa.",
+      "Kristin rũ mắt nhìn theo những dòng nước vẩn đục.",
       '" Cuốn sách hồi nãy có vài câu khá thú vị. "',
-      "Drag nhìn cuốn The Miracle of Pains.",
-      "Thứ hắn đã không muốn nàng chạm vào.",
-      "Giờ đây vẫn nằm trong tay nàng.",
-      "Kristin khép mắt.",
-      "Và bắt đầu đọc.",
-      "Không nhìn trang sách.",
-      "Như thể những lời ấy đã nằm sẵn trong nàng từ rất lâu.",
+      "Drag liếc nhìn cuốn thư tịch cổ The Miracle of Pains.",
+      "Thứ tà thư mà hắn từng ước nàng chưa từng chạm tay vào.",
+      "Giờ nó lại nằm chễm chệ trên vòng tay của nàng.",
+      "Kristin khẽ khép hờ đôi mi.",
+      "Và giọng nói mỏng manh bắt đầu cất lên, đọc vang từng câu chữ.",
+      "Nàng tuyệt nhiên không nhìn vào trang sách.",
+      "Trôi chảy như thể những lời phán truyền oan nghiệt ấy đã ăn sâu, bám rễ trong tâm khảm nàng từ hàng vạn kiếp trước.",
       '" Ngày mà sự phản bội bao trùm khắp hạ giới. "',
       '" Một mầu nhiệm được sinh ra. "',
       '" Sự trừng phạt ban xuống toàn cõi Cvstodia. "',
       '" Mọi linh hồn tội lỗi không thể rời khỏi xác thịt. "',
-      "Drag im lặng.",
-      "Một cảm giác rất cũ bắt đầu trườn trở lại.",
-      "Giống như đứng trước vực sâu.",
-      "Biết phía dưới có thứ gì đó.",
-      "Nhưng không muốn cúi nhìn.",
+      "Drag chìm trong câm lặng.",
+      "Một cỗ cảm giác cũ kỹ, mục rữa bắt đầu trườn bò trở lại trong tâm trí.",
+      "Giống hệt như cảm giác chênh vênh khi phải đứng trước bờ vực thẳm.",
+      "Bản năng thừa biết phía dưới lớp sương mù kia đang che giấu một thứ gì đó vô cùng tồi tệ.",
+      "Nhưng thâm tâm lại hèn nhát, cự tuyệt việc cúi đầu nhìn xuống.",
       '" Nhân loại không có quyền chết. "',
       '" Càng không có quyền sống. "',
       '" Một hiệp sĩ đen với đôi cánh tro tàn. "',
-      "Kristin mở mắt.",
-      "Ánh nhìn rơi thẳng lên hắn.",
-      '" Với trái tim bị chia làm hai nửa. "',
+      "Kristin đột ngột mở trừng mắt.",
+      "Ánh nhìn sắc như dao cạo ghim chặt lên người hắn.",
+      '" Với trái tim bị xé làm hai nửa. "',
       '" Một nửa ở lại. "',
       '" Một nửa rời đi. "',
       '" Trên tay thanh gươm rực cháy oán hận. "',
       '" Sẽ chấm dứt sự hỗn mang. "',
-      "Nàng hạ giọng.",
+      "Nàng hạ giọng, mang theo âm hưởng của một phán quyết định mệnh.",
       '" Người đời gọi hắn là Chiến Binh Tận Thế. "',
-      "Mưa vẫn rơi.",
-      "Drag đứng im.",
-      "Không phải vì hắn tin lời tiên tri.",
-      "Hắn khinh miệt những thứ được viết ra để bảo con người phải sợ điều gì.",
+      "Cơn mưa vẫn gào thét trút xuống.",
+      "Drag chôn chân đứng im như một pho tượng.",
+      "Sự bất động ấy không xuất phát từ việc hắn sùng bái hay nể sợ lời tiên tri rác rưởi.",
+      "Trong mắt hắn, những trang giấy mục nát ấy chẳng khác gì một chiếc khuôn được dựng sẵn để ép sinh linh bước vào.",
       "Nhưng từng câu.",
-      "Từng chữ.",
-      "Lại giống một bàn tay đang cố đặt hắn vào một chiếc khuôn đã được tạo sẵn.",
-      "Trước cả khi hắn được quyền lựa chọn mình là ai.",
-      "Kristin nghiêng đầu.",
+      "Từng chữ được thốt ra.",
+      "Nó lại giống hệt như một bàn tay vô hình khổng lồ.",
+      "Đang tàn nhẫn bóp nghẹt và nhét hắn vào một chiếc khuôn đúc đã được tạo sẵn.",
+      "Từ trước cả khi hắn kịp nhận thức, hay được quyền lựa chọn bản ngã của chính mình.",
+      "Kristin khẽ nghiêng đầu.",
       '" Vậy tôi nên gọi anh là gì? "',
       "Drag bật cười.",
-      "Lần này rõ hơn.",
+      "Một nụ cười chua chát thoáng hiện trên môi hắn.",
       '" Một câu chuyện ngu ngốc. "',
       '" Anh sợ sao? "',
-      "Nụ cười biến mất.",
+      "Nụ cười cợt nhả lập tức tắt ngấm trên môi.",
       '" Đừng thử ta. "',
-      "Kristin nhìn xuống thanh kiếm.",
+      "Kristin rũ mắt nhìn xuống thanh gươm vàng vẫn đang ghim chặt.",
       '" Tôi không nghĩ anh sợ lời tiên tri. "',
-      "Nàng ngẩng lên.",
+      "Nàng ngẩng cao đầu đối diện với hắn.",
       '" Tôi nghĩ anh sợ mình nhớ ra nó. "',
-      "Câu nói đi thẳng vào nơi hắn không muốn nhìn.",
+      "Câu nói như một mũi tên tẩm độc.",
+      "Cắm phập thẳng vào cái góc khuất tăm tối mà hắn luôn chối bỏ.",
       "Và có lẽ.",
-      "Đó là lý do hắn nổi giận.",
-      "Không phải vì nàng gọi hắn là Lucifer.",
-      "Không phải vì thanh kiếm vẫn đang xuyên qua ngực.",
-      "Mà bởi nàng đã đứng quá gần một sự thật mà chính hắn vẫn đang chạy khỏi.",
-      "Máu rơi dọc lưỡi kiếm.",
-      "Tách.",
-      "Tách.",
-      "Drag đưa tay nắm chuôi.",
-      "Kristin không ngăn.",
-      "Chỉ lùi nửa bước.",
-      "Hắn giật mạnh.",
-      "Lưỡi kiếm vàng bật khỏi lồng ngực.",
-      "Máu bắn lên cằm.",
-      "Lên cổ.",
-      "Lên bàn tay.",
-      "Vết thương co giật dữ dội.",
-      "Thịt bắt đầu nối trở lại.",
-      "Drag nhìn thanh kiếm đang nằm trong tay mình.",
-      "Một thứ vũ khí xa lạ.",
-      "Nhưng vừa vặn đến đáng ghét.",
-      "Phía trước.",
-      "Kristin đứng im.",
-      "Chỉ nhìn hắn.",
-      "Không cười.",
-      "Không trêu chọc.",
-      "Không còn là người phụ nữ vừa bảo hắn cõng mình đi giữa những hành lang.",
+      "Đó chính là mồi lửa châm ngòi cho cơn thịnh nộ bạo liệt đang sục sôi.",
+      "Không phải vì nàng nhẫn tâm gọi hắn là Lucifer.",
+      "Cũng chẳng phải vì thanh kiếm phàm tục vẫn đang cắm ngập, xuyên thấu qua lồng ngực.",
+      "Mà bởi người phụ nữ bé nhỏ này đã bước đến quá gần một sự thật đẫm máu.",
+      "Một sự thật mà chính hắn vẫn đang hèn mọn vắt chân chạy trốn.",
+      "Máu tươi vẫn rỉ rả, trượt dài dọc theo mép lưỡi kiếm.",
+      "Tách. Tách.",
+      "Drag vươn bàn tay nhuốm máu, bạo lực nắm chặt lấy chuôi gươm.",
+      "Kristin không hề có ý định ngăn cản.",
+      "Nàng chỉ điềm nhiên lùi lại nửa bước chân.",
+      "Hắn nghiến răng giật mạnh.",
+      "Lưỡi kiếm vàng rực bật tung khỏi màng nhục thể.",
+      "Máu văng tung tóe, bắn đầy lên cằm. Vấy bẩn lên cổ.",
+      "Bám chặt lên từng ngón tay thô ráp.",
+      "Vết thương hở hoác bắt đầu co giật điên cuồng.",
+      "Các thớ thịt nhầy nhụa đan chéo, cuống cuồng kết nối vỡ vụn trở lại.",
+      "Drag trân trân nhìn thanh gươm tàn bạo đang nằm gọn trong tay mình.",
+      "Thứ kim loại nhẹ bẫng ấy lại vừa vặn trong tay hắn đến khó chịu.",
+      "Ở phía trước.",
+      "Nàng vẫn không lay chuyển.",
+      "Ánh mắt lạnh băng xoáy sâu vào hắn.",
+      "Khuôn mặt ấy không vương nét cười.",
+      "Không có lấy một câu trêu chọc bâng quơ.",
+      "Nàng dường như đã không còn là người phụ nữ vừa nũng nịu đòi hắn cõng đi dọc những dãy hành lang đổ nát.",
       "Ít nhất.",
-      "Đó là điều hắn muốn tin.",
-      "Bởi nếu nàng vẫn là cùng một người.",
-      "Mọi thứ sẽ phức tạp hơn quá nhiều.",
-      "Mưa rơi qua khoảng mái vỡ.",
-      "Nước chảy dọc vai Kristin.",
-      "Drag nhìn nàng.",
-      "Máu trên người hắn đột nhiên ngừng rơi.",
-      "Từng giọt đỏ đứng yên giữa không trung.",
+      "Đó là lời dối trá mỏng manh mà hắn đang cố ép bản thân phải tin tưởng.",
+      "Bởi nếu linh hồn ngự trị trong thân xác kia là người phụ nữ mà hắn sẵn sàng vứt bỏ sự ngạo mạn.",
+      "Thì tâm trí hắn sẽ rã rời tới mức nghẹn ngào.",
+      "Từng hạt mưa ngấm chặt lên lớp vải mà hắn quấn lên vai nàng.",
+      "Dòng nước như cuốn trôi sự ô nhục mà hắn trao cho nàng.",
+      "Drag lạnh lùng nhìn nàng.",
+      "Dòng máu tươi tuôn trào trên cơ thể hắn đột ngột ngừng rơi xuống mặt đất.",
+      "Từng giọt huyết sắc lơ lửng, đứng yên bất động giữa khoảng không.",
       "Một.",
       "Hai.",
-      "Rồi bay ngược lên.",
-      "Tụ lại quanh hai đầu ngón tay.",
-      "Một chấm đỏ đặc quánh thành hình.",
-      "Hắn nâng tay.",
+      "Rồi đồng loạt bay ngược lên không trung.",
+      "Chúng điên cuồng tụ tập, cuộn xoắn lại quanh hai đầu ngón tay hắn.",
+      "Một chấm đỏ đặc quánh, mang theo sức mạnh hủy diệt tức khắc thành hình.",
+      "Hắn vung tay nâng lên.",
       "Bắn.",
-      "Kristin nghiêng người.",
-      "Vệt máu lướt qua vai.",
-      "Đâm thẳng vào bức tượng phía sau.",
+      "Kristin nhạy bén nghiêng người né tránh.",
+      "Vệt máu sắc như hàng nghìn mảnh dao sượt rát qua bờ vai gầy.",
+      "Va thẳng vào bức tượng khổng lồ ngự trị phía sau lưng nàng.",
       "BÙM.",
-      "Một mảng lớn trên thân tượng vỡ tung.",
-      "Mái vòm rung chuyển.",
-      "Gạch đá đổ xuống.",
-      "Kristin biến mất giữa làn mưa bụi.",
-      "Drag hạ tay.",
-      "Một phần trong hắn chờ đợi.",
-      "Không phải để xem nàng đã chết hay chưa.",
-      "Hắn biết mình không muốn câu trả lời đó.",
-      "Chỉ là hắn vẫn chưa biết mình muốn điều gì thay thế.",
-      "Giữa màn bụi.",
-      "Một khối lớn dần hiện ra.",
-      "Im lặng.",
-      "Khổng lồ.",
-      "Một cái kén.",
-      "Drag siết chuôi kiếm.",
-      "Đá vụn vẫn lăn quanh chân.",
-      "Một vết nứt xuất hiện trên lớp kén.",
-      "Rồi thêm một vết.",
-      "Hàng chục đường rạn bò dọc bề mặt.",
-      "Một tiếng rách dài vang lên.",
-      "Lớp vỏ bật tung.",
-      "Một luồng gió mạnh quét sạch bụi đá.",
-      "Sáu đôi cánh trắng xòe ra.",
-      "Tinh khiết.",
-      "Rực sáng.",
-      "Quá đẹp đối với một thứ khiến cơ thể hắn lập tức muốn chiến đấu.",
-      "Những chiếc lông trắng bay giữa màn mưa bụi.",
-      "Kristin đứng giữa chúng.",
-      "Nàng chậm rãi bước xuống.",
-      "Đôi chân trần chạm nền đá.",
-      "Một bụi cẩm chướng trắng nở ra.",
-      "Rồi thêm một bụi.",
-      "Hoa len qua những vết nứt.",
-      "Phủ lên gạch vụn.",
-      "Lan dần khắp đại sảnh.",
-      "Máu từ vai nàng nhỏ xuống.",
-      "Màu đỏ chạm vào cánh hoa.",
+      "Một mảng đá lớn trên thân tượng bị sức ép nghiền nát, vỡ tung mù mịt.",
+      "Mái vòm nhà thờ rung chuyển bần bật như muốn sập xuống.",
+      "Gạch ngói, đá vụn ầm ầm đổ sụp xuống mặt sàn.",
+      "Thân ảnh Kristin hoàn toàn biến mất giữa bức màn mưa hòa quyện cùng khói bụi.",
+      "Hắn chậm rãi hạ tay xuống.",
+      "Một khoảng trống đột ngột mở ra trong lồng ngực hắn.",
+      "Hắn đợi không phải để xem nàng đã bị nghiền nát thành cám hay chưa.",
+      "Hắn thừa biết bản thân vĩnh viễn không muốn đối mặt với câu trả lời tàn khốc đó.",
+      "Chỉ là sự hoang mang đang nuốt chửng tâm trí.",
+      "Hắn vẫn chưa biết mình thực sự khao khát điều gì để thay thế cho cái chết của nàng.",
+      "Giữa bức màn bụi xám xịt.",
+      "Một khối vật chất khổng lồ chậm rãi hiện hình.",
+      "Nó nằm đó trong sự im lặng tuyệt đối.",
+      "Khổng lồ và quái dị.",
+      "Một cái kén dị dạng bọc kín.",
+      "Drag cảnh giác siết chặt chuôi gươm vàng.",
+      "Đá vụn lạo xạo lăn lóc quanh đôi bàn chân trần.",
+      "Một vết nứt mảnh khảnh bắt đầu xuất hiện, cào rách bề mặt lớp kén.",
+      "Rồi thêm một vết nứt nữa.",
+      "Hàng chục đường rạn nứt như mạng nhện điên cuồng bò dọc, xé toạc lớp vỏ bọc.",
+      "Một tiếng rách xé tai vang dội khắp đại sảnh.",
+      "Lớp vỏ kén bạo lực bật tung ra muôn mảnh.",
+      "Một luồng cuồng phong mạnh mẽ quét sạch sành sanh mọi lớp bụi đá mù mịt.",
+      "Sáu đôi cánh trắng muốt vĩ đại đồng loạt xòe rộng.",
+      "Tinh khiết đến rợn ngợp.",
+      "Rực sáng và chói lòa.",
+      "Một vẻ đẹp thánh thiện đến mức bức bối, khiến bản năng tăm tối trong cơ thể hắn lập tức sục sôi ý niệm chiến đấu.",
+      "Những chiếc lông vũ trắng muốt nhẹ nhàng bay lượn, xé toạc màn mưa bụi tàn tạ.",
+      "Kristin uy nghi đứng ở vị trí trung tâm của sự kỳ vĩ ấy.",
+      "Nàng chậm rãi, uyển chuyển bước xuống từ cõi sáng.",
+      "Đôi bàn chân trần thanh khiết vừa chạm xuống nền đá dơ bẩn.",
+      "Một mầm hoa cẩm chướng trắng muốt tức khắc bung nở rực rỡ.",
+      "Rồi mọc thêm một bụi nữa.",
+      "Những rễ hoa ma quái len lỏi qua từng vết nứt của thời gian.",
+      "Phủ kín lên lớp gạch vụn hoang tàn.",
+      "Sinh sôi nảy nở, lan tràn vội vã khắp bề mặt đại sảnh.",
+      "Máu tươi rỉ ra từ vết thương trên vai nàng chầm chậm nhỏ xuống.",
+      "Sắc đỏ tàn khốc hòa vào, chạm khẽ lên từng cánh hoa trắng muốt.",
       "Kristin.",
-      "Vẫn là khuôn mặt ấy.",
-      "Vẫn đôi môi đỏ mọng hắn vừa hôn.",
-      "Vẫn người phụ nữ từng ngủ trong vòng tay hắn.",
-      "Nhưng có một thứ đã đóng lại phía sau đôi mắt.",
-      "Một cánh cửa.",
-      "Và hắn không còn biết mình đứng ở phía nào của nó.",
-      "Bàn tay trái Kristin hạ xuống.",
-      "Ngón giữa khẽ co.",
-      "Một đường mảnh chạy từ đầu ngón xuống cẳng tay.",
-      "Da thịt tách ra.",
-      "Máu chảy.",
-      "Từ bên trong.",
-      "Một đoạn xương trắng chậm rãi mọc dài.",
-      "Xuyên khỏi vết rách.",
-      "Kim loại vàng bắt đầu bò dọc phần xương.",
-      "Bao lấy.",
-      "Mài nhẵn.",
-      "Kéo thành một lưỡi kiếm.",
-      "Kristin nắm chuôi.",
-      "Máu vẫn chảy từ cổ tay.",
-      "Nàng thậm chí chẳng nhìn.",
-      "Drag không chần chừ.",
-      "Hắn lao tới.",
-      "Một đường kiếm bổ dọc.",
-      "Kristin xoay người.",
-      "Lưỡi kiếm chỉ kịp lướt qua mép áo.",
-      "Drag xoay cổ tay.",
-      "Chém ngang.",
-      "Nàng thả người lên không.",
-      "Nhẹ như thể trọng lực không còn được quyền giữ nàng.",
-      "Con mắt vàng sáng lên.",
-      "Kristin nhìn xuống.",
-      "Ngay khi đường kiếm của hắn đi qua.",
-      "Nàng đạp vào vai.",
-      "Drag chao người.",
-      "Một cơn nhói buốt xuất hiện nơi vừa bị chạm.",
-      "Hắn nhìn sang.",
-      "Có thứ đang đội da thịt trồi lên.",
-      "Một mầm trắng.",
-      "Rồi mầm thứ hai.",
-      "Những bông cẩm chướng mọc thẳng khỏi cơ thể.",
-      "Rễ của chúng quấn vào thịt.",
-      "Uống máu hắn như nước.",
-      "Drag nghiến răng.",
-      "Hắn chẳng cho chúng thời gian nở.",
-      "Thanh kiếm chém xuống.",
-      "Cả phần vai bị cắt lìa.",
-      "Thịt cùng cánh tay rơi xuống nền.",
-      "Những bông hoa vẫn rung nhẹ trên phần xác bị chém bỏ.",
-      "Máu phun ra.",
-      "Rồi dừng.",
-      "Sợi cơ mới mọc khỏi vết cắt.",
-      "Quấn vào nhau.",
-      "Xương kéo dài.",
-      "Da phủ lên.",
-      "Một cánh tay hoàn chỉnh tái sinh.",
-      "Kristin nhìn.",
-      "Một nụ cười rất nhỏ xuất hiện.",
-      "Mỏng.",
-      "Lạnh.",
-      "Nhưng Drag thấy.",
+      "Vẫn là khuôn mặt thanh tú, kiêu kỳ ấy.",
+      "Vẫn là đôi môi đỏ mọng, ướt át mà hắn vừa đắm chìm cắn mút.",
+      "Vẫn là hình hài người phụ nữ từng cuộn tròn, say giấc trong vòng tay bảo bọc của hắn.",
+      "Nhưng có một thứ gì đó đã vĩnh viễn bị đóng sập lại phía sau đáy mắt kia.",
+      "Một cánh cửa vô hình.",
+      "Và hắn hoang mang tột độ, không còn nhận thức nổi bản thân đang đứng ở phía nào của sự chia cắt đó.",
+      "Bàn tay trái của Kristin chậm rãi hạ xuống.",
+      "Những cánh hoa mềm mại cuốn lại thành mảng vật chất lớn từ thinh không.",
+      "Trắng như mười hai chiếc cánh nàng sở hữu.",
+      "Nó bao bọc, mài nhẵn thành màu vàng ánh tựa như thứ vũ khi hắn nắm chặt trong tay.",
+      "Bạo lực kéo dãn thành một thanh gươm sắc bén từ những mầm hoa vô hại.",
+      "Kristin điềm nhiên nắm chặt lấy phần chuôi kiếm kiêu sa.",
+      "Nàng lạnh lùng hướng mũi kiếm sắc lẹm về phía hắn.",
+      "Drag gạt phăng mọi chần chừ, do dự.",
+      "Hắn lao tới như muốn phá bỏ mọi ý niệm vật chất.",
+      "Một đường gươm chẻ dọc không khí mang theo sức mạnh hủy diệt.",
+      "Kristin nhẹ nhàng xoay chuyển thân thể.",
+      "Lưỡi gươm tử thần chỉ kịp sượt hờ qua mép áo mỏng manh.",
+      "Drag lập tức bẻ ngoặt cổ tay.",
+      "Vung một nhát chém ngang tàn bạo.",
+      "Nàng uốn mình, thả bổng cơ thể bay lên không trung.",
+      "Khinh khí và nhẹ bẫng như thể trọng lực đã bị tước đoạt quyền níu giữ nàng.",
+      "Con mắt trái màu vàng nhạt bỗng chốc phát sáng rực rỡ.",
+      "Kristin rũ mắt nhìn thẳng xuống.",
+      "Ngay sát khoảnh khắc quỹ đạo đường kiếm của hắn vừa quét qua khoảng không vô vọng.",
+      "Nàng dùng cẳng chân giáng một cú đạp mạnh bạo thẳng vào bả vai hắn.",
+      "Cơ thể chao lộn bật lùi lại.",
+      "Một cơn nhói buốt dị thường bất thần xuất hiện ngay tại vùng da thịt vừa bị nàng chạm.",
+      "Hắn hoảng hốt đưa mắt nhìn sang.",
+      "Có một thứ sinh vật ngoại lai đang nhô lên, đội lớp da thịt của hắn mà trồi ra.",
+      "Một mầm hoa trắng buốt.",
+      "Rồi một mầm thứ hai thi nhau chi chít nở rộ.",
+      "Những nụ cẩm chướng tinh khiết cắm rễ, mọc thẳng ra khỏi huyết nhục của hắn.",
+      "Rễ của chúng điên cuồng quấn chặt, đâm xuyên vào từng thớ thịt.",
+      "Rút cạn, uống máu hắn tham lam như những kẻ chết khát ngàn năm.",
+      "Drag nghiến chặt khớp hàm.",
+      "Hắn tàn nhẫn, chẳng ban phát cho chúng thêm một giây nào để kịp bung nở rực rỡ.",
+      "Thanh kiếm vàng trong tay bạo lực chém phăng xuống.",
+      "Toàn bộ nửa bả vai bị cắt lìa, đứt đoạn ngọt lịm.",
+      "Cục thịt đỏ hỏn cùng phần cánh tay tàn phế rơi phịch xuống nền đá vỡ.",
+      "Những nụ hoa trắng vẫn rung rinh, kiêu ngạo khoe sắc trên phần xác thối vừa bị chém bỏ.",
+      "Máu tươi từ miệng vết cắt phun trào như thác.",
+      "Rồi đột ngột ngưng bặt.",
+      "Những sợi cơ bắp mới mẻ đỏ au cuồn cuộn mọc ra từ vết thương hở.",
+      "Chúng đan chéo, quấn chặt vào nhau.",
+      "Khung xương trắng hếu vươn dài bồi đắp.",
+      "Lớp da mới kéo màng phủ kín bề mặt.",
+      "Chỉ trong chớp mắt, một cánh tay hoàn chỉnh, nguyên vẹn đã được tái sinh hoàn hảo.",
+      "Kristin tĩnh lặng đứng nhìn quá trình phục hồi ma quỷ đó.",
+      "Một nụ cười nhạt nhòa, cong cớn khẽ xuất hiện trên môi nàng.",
+      "Mỏng manh.",
+      "Và lạnh lẽo thấu xương.",
+      "Nhưng Drag đã kịp thu trọn nó vào võng mạc.",
       "Một lần nữa.",
-      "Hắn lại nhìn thấy một biểu cảm quen thuộc trên một người đang cố trở thành xa lạ.",
-      "Điều đó chỉ khiến hắn khó chịu hơn.",
-      "Drag lao tới.",
-      "Một nhát đâm.",
-      "Thẳng về con mắt vàng.",
-      "Kristin không né.",
-      "Không lùi.",
-      "Chỉ đứng đó.",
-      "Nhìn hắn.",
-      "Ánh vàng trong mắt sáng lên.",
-      "Một vòng sáng mảnh bắt đầu xoay quanh đồng tử.",
-      "Drag khựng lại.",
-      "Không phải vì hắn muốn.",
-      "Thanh kiếm rung lên.",
-      "Kim loại vàng trong tay bắt đầu tan.",
-      "Từng giọt.",
-      "Từng chút.",
-      "Lòng bàn tay bỏng rát.",
-      "Nhưng hắn chẳng còn để ý tới thanh kiếm.",
-      "Drag nhìn con mắt.",
-      "Màu vàng nhợt nhạt.",
-      "Màu hắn đã thấy ngay ngày đầu ở Manlanier.",
-      "Thứ đã khiến cơ thể hắn bất an trước cả khi hắn biết tên nàng.",
-      "Một cảm giác quen thuộc.",
+      "Hắn lại phải chịu đựng cảm giác nhìn thấy một biểu cảm quá đỗi quen thuộc.",
+      "Hiện hữu trên khuôn mặt của một kẻ đang cố sức trở thành người xa lạ.",
+      "Sự trớ trêu chết tiệt đó chỉ càng khoét sâu thêm sự bức bối, phẫn nộ trong lồng ngực.",
+      "Drag gầm lên, điên cuồng lao vút tới.",
+      "Một nhát kiếm đâm thẳng tắp.",
+      "Nhắm chí mạng vào con mắt vàng rực của đối thủ.",
+      "Kristin tuyệt nhiên không hề né tránh.",
+      "Không lùi lấy nửa bước chân.",
+      "Chỉ đứng sừng sững ở đó.",
+      "Băng lãnh nhìn thấu hắn.",
+      "Ánh vàng rực rỡ trong con ngươi chói lòa, bùng nổ thứ ảo lực huyền bí.",
+      "Một vòng sáng mỏng mảnh, sắc lẹm bắt đầu xoay vòng điên cuồng quanh đồng tử.",
+      "Drag bỗng khựng bặt lại.",
+      "Không phải do lý trí hắn ra lệnh dừng tay.",
+      "Lưỡi kiếm vàng trong tay run lên bần bật.",
+      "Khối kim loại cứng cáp bắt đầu tan chảy lỏng lẻo.",
+      "Từng giọt vàng ròng nung chảy.",
+      "Từng chút một rơi rớt.",
+      "Lòng bàn tay cầm kiếm bị thiêu cháy bỏng rát.",
+      "Nhưng tâm trí hắn giờ đây chẳng còn dư thừa lấy một khoảng trống để bận tâm tới thanh kiếm tàn phế.",
+      "Drag chôn chân, trân trân nhìn vào con mắt ấy.",
+      "Sắc vàng nhợt nhạt ám ảnh.",
+      "Cái màu vàng hoàng hôn mà hắn đã chạm trán ngay trong ngày đầu tiên giẫm chân đến khu chợ Manlanier.",
+      "Thứ ảo ảnh đã gieo rắc sự bất an, cuộn trào trong huyết quản từ trước cả khi hắn kịp biết danh xưng của nàng.",
+      "Một sự dung hợp cảm giác vô cùng quen thuộc.",
       "Không.",
-      "Không còn là cảm giác nữa.",
-      "Một ký ức.",
-      "Một khoảng trời trắng.",
-      "Những bóng người quỳ phía dưới.",
-      "Một giọng nói ở nơi rất cao.",
+      "Nó đã vượt xa ranh giới của một cảm giác đơn thuần.",
+      "Đó là một đoạn ký ức bị phong ấn.",
+      "Một khoảng trời trắng lóa vĩnh hằng.",
+      "Những chiếc bóng nhỏ bé, hèn mọn rạp mình quỳ gối phía bên dưới.",
+      "Một giọng nói uy quyền dội vang từ nơi chóp đỉnh vô tận.",
       '" Hãy nhìn. "',
-      "Drag mở lớn mắt.",
-      "Một danh xưng trồi lên từ nơi sâu nhất của ký ức.",
+      "Drag kinh hoàng mở to tròng mắt.",
+      "Một danh xưng cấm kỵ trồi lên, phá vỡ lớp băng phong ấn từ nơi sâu thẳm nhất của ký ức.",
       '" The Eye... "',
-      "Giọng hắn thấp xuống.",
-      "Kristin vẫn nhìn.",
-      "Hắn cuối cùng cũng hiểu vì sao từ lần đầu tiên.",
-      "Mắt trái của nàng đã khiến hắn muốn tránh xa.",
-      "Không phải hắn nhận ra Kristin.",
-      "Mà thứ bên trong hắn đã nhận ra thứ đang trú ngụ trong nàng.",
+      "Giọng hắn trầm đục, vỡ vụn đi.",
+      "Kristin vẫn đứng đó, dùng thứ ánh sáng thần thánh ấy phán xét hắn.",
+      "Hắn cuối cùng cũng thấu hiểu căn nguyên của vạn sự.",
+      "Rằng vì sao ngay từ lần chạm mặt đầu tiên.",
+      "Mắt trái khải huyền của nàng đã ép buộc bản năng tăm tối của hắn muốn lảng tránh xa xăm.",
+      "Không phải vì hắn có khả năng nhận diện ra nhân dạng phàm trần của Kristin.",
+      "Mà bởi thứ sức mạnh bóng tối ngủ quên bên trong hắn.",
+      "Đã đánh hơi và nhận ra được thực thể thần thánh đang trú ngụ trong thân xác nàng.",
       '" The Eye of The Ignored Sorrows. "',
-      "Và lần đầu tiên kể từ khi trận chiến bắt đầu.",
-      "Drag không nhìn nàng như một kẻ thù.",
-      "Hắn nhìn nàng như một câu hỏi.",
-      "Một câu hỏi mà câu trả lời.",
-      "Có lẽ đã tồn tại từ trước khi cả hai gặp nhau.",
     ],
   },
   {
@@ -3230,213 +2080,245 @@ const artworks = [
     ],
     story: [
       '" Krisanta. "',
-      "Một giọng nói trầm ấm vang lên từ bầu trời cao ngút ngàn.",
-      "Ở phía tầng mây mịt mờ.",
-      "Sự hiện diện của một quả tim khổng lồ che lấp cả làn mây.",
+      "Một giọng nói trầm ấm dội vang từ cõi trời cao ngút ngàn.",
+      "Giữa những tầng mây mịt mờ, đặc quánh.",
+      "Sự hiện diện vĩ đại của một quả tim khổng lồ từ từ hiển lộ.",
+      "Che lấp toàn bộ bầu trời.",
       '" Ngươi hãy nhận lấy con mắt này. "',
       '" Bel\'vi. "',
       '" Hãy giữ lấy cái tai này. "',
-      "Dòng đỏ tươi rói chảy xuống từ những van tim vàng óng ánh.",
+      "Dòng máu đỏ tươi rói, đặc sệt từ từ rỉ ra.",
+      "Tuôn chảy xuống từ những van tim đúc bằng vàng óng ánh.",
       '" Dấu chỉ cuối cùng. "',
       '" Michael. "',
       '" Hãy nắm lấy nó. "',
-      "Từng vệt máu nhỏ xuống.",
-      "Đổ lên đầu của ba kẻ được chọn.",
+      "Từng vệt máu thánh thót nhỏ xuống.",
+      "Lần lượt đổ gội lên đỉnh đầu của ba kẻ được chọn.",
       '" Ba dấu chỉ. "',
       '" Ba kẻ được chọn. "',
       '" Khi Chiến Binh Tận Thế xuất hiện. "',
       '" Các ngươi có sứ mệnh ngăn chặn hắn. "',
-      "Kristin mở mắt.",
-      "Những giọt nước mưa lăn dài trên con ngươi bị nguyền rủa.",
-      "Trong khoảnh khắc.",
-      "Thanh kiếm trong tay Drag tan chảy.",
-      "Hắn hụt nhịp đòn đâm tới.",
-      "Một đường kiếm như sợi tơ vàng mỏng xượt qua cổ.",
-      "Cơ thể hắn dừng hẳn lại.",
-      "Cái đầu lìa khỏi thân.",
-      "Mọi thứ trước mắt hắn dần nhòe đi.",
-      "Những hạt mưa dường như bất động giữa không trung.",
-      "Tầm nhìn bắt đầu đảo lộn.",
-      "Hắn trông thấy chính cơ thể mình vẫn đứng trước mặt nàng.",
-      "Một cái xác không đầu.",
-      "Kristin nhìn theo chiếc đầu đang rơi.",
-      "Đôi mắt đỏ ấy vẫn hướng về phía nàng.",
-      "Không nhìn cơ thể của chính mình.",
-      "Không nhìn thanh kiếm.",
-      "Chỉ nhìn nàng.",
-      "Một màu đỏ rực dần loang kín đôi mắt ấy.",
-      "Bỗng một linh cảm xấu hiện diện trong The Eye.",
-      "Nó ép nàng ngước nhìn lên.",
-      "Hai ngón tay của cái xác đang chĩa thẳng vào giữa trán nàng.",
-      "Từng hạt máu kết lại.",
-      "Co rút thành một quả cầu nhỏ.",
+      "Kristin đột ngột mở trừng mắt.",
+      "Những giọt nước mưa lạnh lẽo trượt dài trên con ngươi màu vàng úa đang chịu lời nguyền.",
+      "The Eye of The Ignored Sorrows đã hoàn toàn thức giấc.",
+      "Trong cái chớp mắt tĩnh tại ấy.",
+      "Thanh kiếm tàn tạ trong tay Drag bất thần tan chảy thành vũng vàng lỏng lẻo.",
+      "Hắn lỡ trớn, hụt mất nhịp đòn đâm chí mạng về phía nàng.",
+      "Nắm bắt kẽ hở tử huyệt, Kristin vung tay.",
+      "Một đường kiếm sắc lẹm, mỏng manh như sợi tơ vàng xẹt ngang qua yết hầu hắn.",
+      "Cơ thể đồ sộ của hắn lập tức đóng băng.",
+      "Dừng bặt mọi cử động.",
+      "Cái đầu kiêu ngạo từ từ trượt khỏi thân cổ, đứt lìa.",
+      "Mọi thứ trước mắt nàng dường như bị kéo giãn.",
+      "Những hạt mưa sắc lạnh như đọng lại, bất động lơ lửng giữa không trung.",
+      "Tầm nhìn của The Eye xoáy sâu vào sự tĩnh lặng vỡ nát ấy.",
+      "Nàng trân trân nhìn cái xác không đầu vẫn sừng sững đứng ngay trước mặt mình.",
+      "Rồi ánh mắt vô thức nương theo hình bóng chiếc đầu đang rơi tự do.",
+      "Đôi đồng tử rực đỏ ấy tuyệt nhiên không thèm đoái hoài đến thân xác tàn phế của chính mình.",
+      "Không thèm liếc nhìn thanh kiếm đẫm máu.",
+      "Chỉ đau đáu ghim chặt ánh nhìn vào duy nhất mình nàng.",
+      "Một màu huyết sắc đặc quánh, điên loạn bắt đầu ồ ạt loang kín bề mặt võng mạc ấy.",
+      "Bỗng nhiên, một luồng linh cảm tồi tệ, nghẹt thở xộc thẳng vào tâm trí The Eye.",
+      "Bản năng thần thánh ép buộc nàng phải ngước mắt nhìn lên.",
+      "Không biết từ khoảnh khắc nào.",
+      "Hai ngón tay từ cánh tay đứt lìa của cái xác không đầu đang chĩa thẳng tắp vào giữa trán nàng.",
+      "Từng hạt máu lơ lửng giữa không trung điên cuồng kết tụ lại.",
+      "Co rút bạo liệt thành một quả cầu nhỏ xíu mang sức mạnh hủy diệt.",
       "BÙM.",
-      "Kristin ngả người ra sau cùng lúc phát bắn lao tới.",
-      "Nàng dùng chân đạp mạnh về phía cái xác.",
-      "Cơ thể hắn bật văng ra xa.",
-      "Những mầm cẩm chướng bắt đầu đội da thịt trồi lên.",
-      "Từng nhánh hoa xé xuyên qua cơ thể hắn.",
-      "Những mảnh thịt rơi xuống.",
-      "Kèm theo những bông trắng còn cắm sâu bên trong.",
-      "Nhưng các vết thương chi chít bắt đầu tự khép.",
-      "Cái xác lại kết ấn. Ngắm thẳng về phía cô",
-      "Mí mắt Kristin khẽ giật.",
-      "Sáu đôi cánh xòe rộng.",
-      "Quét tung màn mưa.",
-      "Nàng lao vút qua khe nứt trên mái vòm.",
+      "Kristin ngả rạp người ra sau vừa vặn lúc phát đạn máu xé gió lao vút tới.",
+      "Bằng một phản xạ hoàn hảo, chân nàng đạp tàn nhẫn vào vòm ngực cái xác.",
+      "Cơ thể tàn phế của hắn bị lực đạo thần thánh hất văng tít ra xa.",
+      "Cùng lúc đó, những mầm cẩm chướng trắng muốt bắt đầu điên cuồng đội lớp da thịt hắn mà trồi lên.",
+      "Từng nhánh rễ ma quỷ xé toạc, xuyên thủng từ trong ra ngoài cơ thể hắn.",
+      "Những tảng thịt đỏ au rơi rụng lả tả xuống nền gạch gãy nát.",
+      "Kéo theo vô số những bông hoa tuyết còn cắm ngập sâu bên trong huyết quản.",
+      "Nhưng sự kháng cự của thực thể này nằm ngoài mọi giới hạn.",
+      "Các vết thương chi chít, nát bươm lại bắt đầu điên cuồng bò trườn tự khép miệng.",
+      "Cái xác không đầu loạng choạng đứng vững.",
+      "Bàn tay tàn bạo lại kết ấn, lạnh lùng ngắm bắn thẳng về phía nàng.",
+      "Mí mắt Kristin khẽ giật lên đầy căng thẳng.",
+      "Sáu đôi cánh trắng muốt sau lưng nàng đồng loạt xòe rộng rực rỡ.",
+      "Quét tung vỡ nát màn mưa dày đặc.",
+      "Nàng vỗ cánh, vút bay thẳng lên không trung qua khe nứt trên mái vòm khổng lồ.",
       "BÙM.",
-      "Lần này nhanh hơn.",
-      "Kristin xoay người lại.",
-      "Quả cầu máu may mắn xượt qua má nàng một vệt mỏng.",
-      "Rồi tiếp tục lao thẳng vào chiếc chuông nhà thờ treo phía trên.",
-      "Cả tòa tháp rung chuyển.",
-      "Đá vỡ.",
-      "Mái chuông sụp xuống.",
-      "Tiếng chuông méo mó vang khắp bầu trời.",
-      "Kristin nhìn cái xác từ phía xa.",
-      "Nó cúi xuống.",
-      "Cầm lấy chiếc đầu đang lăn lóc trên nền gạch.",
-      "Rồi ném thẳng nó về phía nàng.",
-      "Chiếc đầu lao xuyên qua màn mưa.",
-      "Ngay khi còn đang bay.",
-      "Từng đốt xương bắt đầu kéo dài khỏi phần cổ.",
-      "Từng thớ thịt.",
-      "Từng sợi cơ.",
-      "Một cơ thể mới bọc quanh bộ xương trắng.",
-      "Hắn đã trở lại.",
-      "Cặp cánh tro tàn bung ra.",
-      "Hắn lao thẳng lên bầu trời.",
-      "Sáu đôi cánh của Kristin đồng loạt chuyển hướng.",
-      "Thanh kiếm vàng chĩa thẳng về phía hắn.",
-      "Nàng lao tới.",
-      "Nhắm thẳng vào giữa lồng ngực.",
-      "Gương mặt hắn lạnh toát.",
-      "Đôi mắt dường như chẳng còn linh hồn.",
-      "Hắn không né.",
-      "Không phòng thủ.",
-      "Không thay đổi quỹ đạo.",
-      "Một đường thẳng tuyệt đối.",
-      "Mũi kiếm đâm xuyên vào ngực trái.",
+      "Phát bắn lần này có tốc độ kinh hoàng hơn gấp bội.",
+      "Kristin sắc sảo xoay ngoắt người lại giữa không trung.",
+      "Quả cầu máu chỉ sượt qua một vệt xước mỏng manh trên gò má trắng ngần.",
+      "Rồi nó lạnh lùng lao thẳng tắp vào chiếc chuông đồng khổng lồ treo tít trên chóp tháp.",
+      "Cả tòa tháp vĩ đại rung chuyển bần bật, rên rỉ như sắp sụp đổ.",
+      "Đá hộc nứt toác, văng tung tóe.",
+      "Mái chuông nặng nề sập xuống ầm ĩ.",
+      "Tiếng chuông méo mó, rách nát thảm thiết dội vang khắp khoảng không xám xịt.",
+      "Kristin lơ lửng, hướng con mắt vàng xuống mặt đất từ khoảng cách an toàn.",
+      "Cái xác không đầu đang từ từ cúi thấp tấm lưng.",
+      "Bàn tay thô ráp thản nhiên túm lấy mớ tóc trắng xóa.",
+      "Nó nhấc bổng chiếc đầu của chính mình đang lăn lóc dưới nền gạch.",
+      "Rồi dồn toàn lực, ném mạnh thứ ấy bay vút về phía nàng.",
+      "Chiếc đầu lâu rực đỏ xuyên thủng màn mưa xối xả.",
+      "Ngay khi vật thể kỳ dị ấy vẫn còn đang gào thét trên quỹ đạo bay.",
+      "Từng đốt sống cổ trắng ởn bắt đầu điên cuồng kéo dài.",
+      "Trồi ra từ phần mặt cắt.",
+      "Từng thớ thịt nhầy nhụa đan chéo.",
+      "Từng sợi cơ đỏ hỏn cuồn cuộn thành hình.",
+      "Một khối thân xác mới tinh, vạm vỡ bắt đầu bao bọc lấy bộ xương tà ác.",
+      "Hắn đã hoàn tất màn tái sinh tàn bạo.",
+      "Cặp cánh tro tàn vĩ đại bung nở, xé rách không khí.",
+      "Ác thần điên cuồng lao vút thẳng lên bầu trời xám xịt.",
+      "Sáu đôi cánh tinh khiết của Kristin đồng loạt vỗ mạnh, đảo hướng uyển chuyển.",
+      "Thanh kiếm vàng sắc lẹm chĩa thẳng đứng về phía mũi nhọn của kẻ địch.",
+      "Nàng gồng mình, kiên quyết lao bổ xuống.",
+      "Mũi kiếm vàng nhắm thẳng vào chính giữa lồng ngực đang phập phồng của hắn.",
+      "Gương mặt Drag lúc này tái nhợt, lạnh toát như băng tảng.",
+      "Đôi mắt đỏ au dường như đã bị rút cạn chút linh hồn, nhân tính cuối cùng.",
+      "Hắn không thèm né tránh.",
+      "Không một động tác phòng thủ, che chắn.",
+      "Không màng suy suyển quỹ đạo lao tới thiêu thân.",
+      "Chỉ giữ vững một đường thẳng tuyệt đối của sự hủy diệt.",
+      "Mũi gươm vàng tàn nhẫn đâm phập, xuyên thủng vào ngực trái.",
       '" Keng. "',
-      "Tiếng kim loại rít lên chói tai.",
-      "Không giống tiếng xương vỡ.",
-      "Cũng chẳng phải tiếng thịt bị xé.",
-      "Mà giống như có thứ gì đó gần như bất diệt đang nghiền lên lưỡi kiếm vàng.",
-      "Ở khoảng cách gần như vậy.",
-      "Kristin nhìn rõ đôi mắt hắn.",
+      "Một tiếng kim loại chát chúa, rít lên đinh tai nhức óc.",
+      "Âm thanh ấy hoàn toàn xa lạ, không giống tiếng xương vỡ giòn tan.",
+      "Cũng chẳng mang âm hưởng lạo xạo của da thịt bị xé toạc.",
+      "Mà nó giống hệt như có một vật chất hắc ám, bất diệt nào đó đang tàn bạo nghiền nát lưỡi gươm thần thánh của nàng.",
+      "Ở khoảng cách cận kề cái chết như vậy.",
+      "Kristin lần đầu tiên nhìn thấu tận cùng đôi mắt của kẻ địch.",
       "Rỗng tuếch.",
-      "Vô hồn.",
-      "Nàng chưa từng gặp kẻ này.",
-      "Một luồng lạnh buốt chạy dọc sống lưng.",
-      "The Eye lại ánh lên.",
-      "Kristin khom người xuống.",
-      "Ngay trong tích tắc.",
-      "Từ lòng bàn tay hắn.",
-      "Một thanh kiếm lao ra.",
-      "Lần này khác.",
-      "Một ngọn lửa đen bao bọc lấy toàn bộ lưỡi kiếm.",
-      "Thứ lửa mang màu của oán hận.",
-      "Nàng vung cánh.",
-      "Lùi mạnh về phía sau.",
-      "Nàng cần khoảng cách.",
-      "Ngay lúc bật lùi.",
-      "Hai đường kiếm vàng cắt phăng hai đôi cánh của hắn.",
-      "Những chiếc lông vũ đen tung khắp trời.",
-      "Drag rơi xuống.",
-      "Không một lời.",
-      "Chỉ còn ánh đỏ dần biến mất sau làn mây đặc quánh.",
-      "Kristin không đuổi theo.",
-      "Nàng tiếp tục lao lên cao.",
-      "Mây đen khép lại quanh cơ thể.",
-      "Không còn mái vòm nhà thờ.",
-      "Không còn mặt đất.",
-      "Chỉ còn tiếng gió rít mạnh.",
-      "Và tiếng tim khẽ đập.",
-      "Nàng cố giữ lấy sự bình tĩnh.",
-      "Tầng mây này sẽ che khuất tầm nhìn của hắn.",
-      "Một tiếng gió mạnh bất ngờ xé ngang không trung.",
-      "Kristin quay phắt lại.",
-      "Một vệt lửa đen khổng lồ xẻ đôi tầng mây.",
-      "Nó chém dọc từ trên xuống.",
-      "Như muốn chẻ cả bầu trời thành hai nửa.",
-      "Kristin chỉ kịp nghiêng mình.",
-      "Một bên cánh trắng bị chém lìa.",
-      "Máu văng vào màn mưa.",
-      "Nàng chao đảo.",
-      "Nhịp bay chậm lại.",
-      "Mỗi bên 6 chiếc.",
-      "Giờ chỉ còn tổng 11 chiếc.",
-      "The Eye vẫn sáng.",
-      "Nhưng nó không nhìn thấy đường kiếm ấy.",
-      "Không có sát ý.",
-      "Không có một quyết định ác tính nào xuất hiện trước khi nhát chém xảy ra.",
-      "Nó chỉ xảy ra.",
-      "Sự bất an kéo giãn trong cơ thể nàng.",
-      "Con mắt vàng đảo liên tục.",
-      "Tìm kiếm.",
-      "Quét qua từng lớp mây.",
-      "Rồi nàng nhìn thấy hắn.",
-      "Một bóng đen ở phía xa.",
-      "Treo ngược giữa bầu trời.",
-      "Đầu chúc xuống mặt đất.",
-      "Hai ngón tay hắn giơ lên.",
-      "Kristin lập tức nghiêng người.",
-      "Không có gì xảy ra.",
-      "Hai ngón tay ấy khẽ ngoắc lại.",
-      "Nàng khựng lại.",
-      "Không phải nhắm vào nàng.",
-      "Hắn đang kết ấn.",
+      "Như một ác linh chỉ tồn tại bản chất chết chóc.",
+      "Dragalon mà nàng từng biết, dường như chưa từng tồn tại bên trong cái xác này.",
+      "Một luồng khí lạnh buốt như băng xuyên thẳng dọc sống lưng nàng.",
+      "The Eye đột ngột ửng sáng cảnh tỉnh.",
+      "Kristin lập tức uốn mình, khom gập người xuống theo phản xạ.",
+      "Ngay trong tích tắc chớp nhoáng ấy.",
+      "Từ sâu thẳm lòng bàn tay đẫm máu của Drag.",
+      "Một thanh kiếm đen kịt, tỏa ra khí tức tử vong lao vút ra.",
+      "Lần này mọi thứ đã khác biệt hoàn toàn.",
+      "Một ngọn hắc hỏa rừng rực bao trùm, liếm láp lấy toàn bộ phần lưỡi gươm dài thượt.",
+      "Thứ lửa ma quái mang trọn sắc màu của oán hận và đau thương tột cùng.",
+      "Nàng vội vã vung mạnh sáu cặp cánh.",
+      "Tung đòn đạp, lùi bật xa về phía sau.",
+      "Nàng khao khát một khoảng cách an toàn trước thực thể ác tính này.",
+      "Ngay tại khoảnh khắc thân hình bật lùi.",
+      "Kristin vung tay chém liên hoàn.",
+      "Hai đường gươm vàng sắc lẹm cắt phăng cặp cánh tro tàn vĩ đại của hắn.",
+      "Hàng vạn chiếc lông vũ đen kịt nhuốm máu tung tóe.",
+      "Rợp bóng cả một mảng trời.",
+      "Drag mất phương hướng, rơi tự do xuống vực thẳm.",
+      "Không có lấy một lời rên rỉ, oán thán.",
+      "Chỉ còn đọng lại hai đốm sáng đỏ rực.",
+      "Dần chìm lỉm và biến mất sau lớp mây mù đặc quánh.",
+      "Nhưng Kristin tuyệt đối không hạ mình đuổi theo.",
+      "Nàng kiên định vỗ cánh, tiếp tục rẽ mây lao lên cao hơn nữa.",
+      "Những đám mây đen kịt, xám ngoét cuồn cuộn vây kín.",
+      "Nuốt chửng lấy cơ thể nhỏ bé.",
+      "Dưới chân không còn thấy bóng dáng mái vòm nhà thờ đổ nát.",
+      "Mặt đất phàm trần đã hoàn toàn bị xóa sổ khỏi tầm mắt.",
+      "Thế giới giờ đây chỉ còn lại tiếng gió rít điên cuồng bên tai.",
+      "Và nhịp tim đập thình thịch, thổn thức trong lồng ngực.",
+      "Nàng hít thở sâu.",
+      "Cố gắng ép bản thân giữ vững sự tỉnh táo, lạnh lùng.",
+      "Tầng mây mù đặc kịt này sẽ là tấm khiên hoàn hảo che khuất đi tầm nhìn săn mồi của hắn.",
+      "Một tiếng xé gió cực mạnh bất thình lình vang lên.",
+      "Cắt ngang bầu không khí đặc quánh.",
+      "Kristin quay phắt người lại đối diện với hiểm nguy.",
+      "Một vệt hắc hỏa khổng lồ, bạo tàn xẻ dọc tầng mây.",
+      "Nó điên cuồng chém thẳng đứng từ trên cao giáng xuống.",
+      "Như một đòn phán quyết muốn chẻ đôi cả bầu trời thành hai nửa tang thương.",
+      "Kristin chỉ kịp chớp nhoáng nghiêng mình lẩn tránh.",
+      "Mũi gươm hắc ám lướt qua, chém đứt lìa một bên cánh trắng muốt.",
+      "Máu tươi từ gốc cánh văng xối xả.",
+      "Hòa quyện vào bức màn mưa lạnh lẽo.",
+      "Cơ thể nàng chao đảo dữ dội trên không trung.",
+      "Nhịp đập của đôi cánh dần trở nên chuệch choạc, chậm chạp.",
+      "Mỗi bên 6 chiếc cánh uy nghi.",
+      "Giờ đây thảm hại chỉ còn lại 11.",
+      "Con mắt The Eye vẫn phát sáng rực rỡ.",
+      "Nhưng nó hoàn toàn mù lòa trước đường kiếm vừa rồi.",
+      "Không hề bắt được tia sát ý nào.",
+      "Không có bất kỳ một sự toan tính ác độc nào hiện hữu trước khi nhát chém chí mạng ấy giáng xuống.",
+      "Nó chỉ đơn thuần là xảy ra.",
+      "Vô tri, vô giác và tàn bạo.",
+      "Sự bất an bắt đầu nảy nở.",
+      "Kéo giãn căng như dây đàn trong từng tế bào cơ thể nàng.",
+      "Con mắt vàng điên loạn đảo liên hồi.",
+      "Tìm kiếm sự sống.",
+      "Quét tia nhìn xuyên qua từng lớp mây mù dày đặc.",
+      "Rồi nàng sững sờ khi nhìn thấy hắn.",
+      "Một cái bóng đen tĩnh mịch, ngự trị phía xa xăm.",
+      "Hắn đang treo ngược lơ lửng giữa lưng chừng bầu trời.",
+      "Cái đầu kiêu ngạo chúc thẳng xuống mặt đất phàm trần.",
+      "Hai ngón tay xương xẩu từ từ giơ lên.",
+      "Con mắt vàng phát sáng, nàng lập tức nghiêng vẹo cơ thể.",
+      "Nhưng khoảng không vẫn câm lặng.",
+      "Chẳng có mũi đạn máu nào xé gió lao tới.",
+      "Hai ngón tay hắn chỉ khẽ ngoắc nhẹ vào nhau.",
+      "Nàng khựng lại, đầu óc căng như dây cung.",
+      "Hành động đó hoàn toàn không nhắm vào vị trí của nàng.",
+      "Hắn đang bình thản kết ấn.",
       "Không đúng.",
-      "Kristin quay phắt lại.",
-      "Một vệt lửa sắc lẹm lúc nãy lao ngược về phía nàng.",
-      "Khoảng cách chỉ còn bằng một đốt tay.",
-      "Nàng nghiêng người.",
-      "Nhịp tim như ngừng lại.",
-      "Vệt đen lướt sát qua mắt.",
-      "Rồi biến mất vào tầng mây.",
-      "Kristin lập tức quay trở lại.",
-      "Bóng đen đã không còn ở vị trí cũ.",
-      "Con mắt vẫn sáng.",
-      "Nàng lập tức ngước lên.",
-      "Một hình dạng quái gở hiện ngay trước mặt.",
-      "Không phải Drag của vài nhịp trước.",
-      "Khuôn mặt bị che khuất bởi một chiếc mũ giáp kỳ dị.",
-      "Hai chiếc sừng uốn cong ôm dọc xuống cằm.",
-      "Bộ giáp tối hơn bản ngã của nhân loại.",
-      "Sự u ám chảy dọc khắp từng khe giáp.",
-      "Đôi mắt hắn rực cháy.",
-      "Nhìn chằm chằm vào nàng.",
-      "Kristin không nghe thấy tiếng thở.",
-      "Không nghe thấy tiếng giáp va vào nhau.",
-      "Không nghe thấy bất kỳ âm thanh nào từ hắn.",
-      "Sự tĩnh lặng khiến gáy nàng lạnh buốt.",
-      "Không một lời nói.",
-      "Không một tiếng gầm.",
-      "Chỉ có thanh gươm tận thế đã được giơ lên từ lúc nào.",
-      "Kristin siết chặt chuôi kiếm.",
-      "Giọng của The High Wills lại vang lên trong đầu.",
+      "Một linh cảm chết chóc ập tới.",
+      "Kristin hoảng loạn quay ngoắt người lại phía sau.",
+      "Vệt hắc hỏa khổng lồ, sắc lẹm vừa sượt qua lúc nãy đang quay đầu.",
+      "Lao ngược trở lại nhắm thẳng vào lưng nàng.",
+      "Khoảng cách tử thần chỉ còn rút ngắn bằng một đốt ngón tay.",
+      "Nàng cắn môi.",
+      "Bẻ gập cơ thể nghiêng vẹo hết mức có thể.",
+      "Nhịp tim như ngừng đập, đóng băng trong lồng ngực.",
+      "Vệt đen tử thần lướt sượt qua, rát buốt ngay trước võng mạc.",
+      "Rồi lại câm lặng biến mất dạng vào tầng mây sâu thẳm.",
+      "Kristin thở dốc.",
+      "Lập tức quay ngoắt tầm nhìn trở lại hướng cũ.",
+      "Cái bóng đen treo ngược đã không còn tăm hơi ở vị trí ban đầu.",
+      "Con mắt vàng dường như cảm nhận được sự áp bức.",
+      "Nàng hoảng hốt ngước mặt nhìn thẳng lên đỉnh đầu.",
+      "Một hình dạng quái gở, khổng lồ hiện lù lù ngay trước mặt.",
+      "Che khuất cả bầu trời.",
+      "Không còn là Drag ngạo nghễ của vài nhịp thở trước.",
+      "Khuôn mặt đã bị giam cầm, che khuất hoàn toàn bởi một chiếc mũ giáp sắt kỳ dị.",
+      "Hai chiếc sừng ác quỷ uốn cong, nhọn hoắt ôm sát chạy dọc xuống tận xương hàm.",
+      "Bộ giáp đen kịt, tăm tối hơn cả mảng tối sâu thẳm nhất trong bản ngã của nhân loại.",
+      "Sự u ám, chết chóc rỉ rả chảy dọc theo từng khe hở kim loại.",
+      "Đôi mắt hắn rực cháy như ngọn lửa ngục tù.",
+      "Trừng trừng nhìn thấu tâm can nàng.",
+      "Kristin không hề nghe thấy lấy một hơi thở dốc của kẻ đối diện.",
+      "Không có tiếng kim loại va đập vào nhau.",
+      "Không bắt được bất kỳ một dải âm thanh sống động nào phát ra từ khối thân xác ấy.",
+      "Sự tĩnh lặng tuyệt đối đến mức làm cho gáy nàng lạnh buốt, nổi gai ốc.",
+      "Không một lời đe dọa.",
+      "Không một tiếng gầm rú phẫn nộ.",
+      "Chỉ có thanh gươm tận thế đen ngòm đã được giơ cao lơ lửng từ lúc nào.",
+      "Chực chờ bổ xuống.",
+      "Kristin nghiến răng.",
+      "Hai tay siết chặt lấy chuôi kiếm vàng.",
+      "Âm vang uy quyền của The High Wills lại vọng về.",
+      "Gõ nhịp trong tâm trí.",
       '" Các ngươi có sứ mệnh ngăn chặn hắn. "',
-      "Trước mặt nàng.",
-      "Hình dạng trong lời tiên tri đang thật sự tồn tại.",
-      "Nhưng trước khi lưỡi kiếm kịp bổ xuống.",
-      "Bộ giáp bắt đầu tan rã.",
-      "Từng mảnh.",
-      "Từng lớp.",
-      "Như tro tàn bị cuốn khỏi cơ thể bởi cơn gió.",
-      "Thanh gươm biến mất.",
-      "Những chiếc cánh đen cũng dần vỡ thành lông vũ.",
-      "Ánh đỏ trong mắt hắn nhẹ đi.",
-      "Rồi tắt dần.",
-      "Drag rơi tự do xuống dưới.",
-      "Không giữ lấy mình.",
-      "Không mở cánh.",
-      "Kristin đứng yên giữa tầng mây.",
-      "Nàng nhìn theo.",
-      "Ngay trước khi hắn khuất khỏi tầm mắt.",
-      "Đôi môi hắn khẽ động.",
-      "Không một âm thanh nào được phát ra.",
-      "Nhưng nàng biết hắn cố nói gì trước khi nhắm mắt.",
-      '" Kristin. "',
+      "Ngay lúc này, ngay trước mắt nàng.",
+      "Hình dạng kinh hoàng trong lời tiên tri tận thế đang thực sự tồn tại bằng xương bằng thịt.",
+      "Nhưng trớ trêu thay.",
+      "Trước khi lưỡi gươm hắc ám ấy kịp vung lên phán quyết.",
+      "Bộ giáp đen kịt đột ngột bắt đầu rạn nứt, tan rã.",
+      "Từng mảnh kim loại vỡ vụn.",
+      "Từng lớp áo giáp bong tróc.",
+      "Chúng hóa thành tro tàn.",
+      "Bị cơn gió hoang dại cuốn phăng khỏi cơ thể vạm vỡ.",
+      "Thanh gươm tận thế rực lửa đen câm lặng tan biến vào hư vô.",
+      "Những chiếc cánh tro oai vệ cũng dần rụng rời.",
+      "Vỡ vụn thành hàng vạn chiếc lông vũ.",
+      "Ánh đỏ điên loạn, khát máu trong đôi mắt hắn dần nhạt nhòa, dịu lại.",
+      "Rồi lụi tàn.",
+      "Tắt lịm đi.",
+      "Cơ thể Drag buông xuôi.",
+      "Rơi tự do như một hòn đá xuống vực thẳm cõi trần.",
+      "Hắn không màng gắng gượng giữ lấy bản thân.",
+      "Không vươn cánh bay lên.",
+      "Kristin chôn chân đứng lặng yên giữa tầng mây xám xịt.",
+      "Nàng rũ con mắt vàng nhìn theo bóng hình đang rơi xuống.",
+      "Ngay trong cái sát na ngắn ngủi trước khi thân thể hắn bị sương mù che khuất hoàn toàn khỏi tầm mắt.",
+      "Nàng tinh ý nhận ra đôi môi thô ráp ấy khẽ mấp máy.",
+      "Không có một rung động âm thanh nào được phát ra.",
+      "Nhưng bằng một sự thấu hiểu kỳ lạ.",
+      "Nàng đọc được mảng ký ức cuối cùng hắn cố nói ra trước khi nhắm mắt buông xuôi.",
+      '" Kristin? "',
     ],
   },
   {
@@ -3453,671 +2335,678 @@ const artworks = [
     uiTheme: "white",
     story: [
       '" Lucifer. "',
-      "Một giọng nói ấm áp vang lên giữa khoảng không.",
+      "Một giọng nói thân thuộc văng vẳng vang lên giữa khoảng không vô định.",
       '" Con có biết tình yêu là gì không? "',
-      "Hắn mở mắt.",
-      "Không còn bầu trời.",
-      "Không còn mặt đất.",
-      "Chỉ có một màu trắng kéo dài tới nơi ánh nhìn cũng chẳng thể chạm tới.",
-      "Giọng nói ấy hiện diện ở khắp mọi nơi.",
-      "Như thể chưa từng có bàn tay nào của nó xuyên qua cơ thể hắn.",
-      "Như thể chính sự dịu dàng ấy đủ sức xóa sạch mọi thứ nó từng làm.",
+      "Hắn mở trừng mắt.",
+      "Không còn bầu trời xám xịt oằn mình oán thán.",
+      "Không còn mặt đất phàm trần mục rữa dưới những gót chân tội lỗi.",
+      "Chỉ có một màu trắng toát, rỗng tuếch kéo dài bất tận tới nơi ánh nhìn cũng chẳng thể vươn tay chạm tới.",
+      "Giọng nói ấy hiện diện, len lỏi ở khắp mọi nơi.",
+      "Như thể chưa từng có bàn tay tàn bạo nào của nó xuyên qua cơ thể hắn.",
+      "Như thể chính sự dịu dàng êm ái ấy đủ sức tẩy rửa, xóa sạch mọi thống khổ nó từng gieo rắc lên sinh mệnh này.",
       '" Ta e rằng. "',
-      "Một khoảng lặng.",
+      "Một khoảng lặng nghẹt thở đứt đoạn.",
       '" Con sẽ không bao giờ biết. "',
-      "Drag bước tới.",
-      "Giọng nói lùi xa.",
-      "Hắn bước nhanh hơn.",
-      "Nó lại xa hơn nữa.",
-      "Drag chạy.",
-      "Mỗi bước chân kéo màu trắng quanh hắn thành sương.",
-      "Những mái nhà nâu sẫm dần hiện ra.",
-      "Những con đường lát đá.",
-      "Những ngọn đèn vàng nhợt.",
+      "Drag lầm lì bước tới phía trước.",
+      "Giọng nói lập tức trôi tuột, lùi xa vào cõi vô hình.",
+      "Hắn điên cuồng sải bước nhanh hơn.",
+      "Nó lại càng mờ ảo, xa xăm hơn nữa.",
+      "Drag cắm đầu chạy.",
+      "Mỗi bước chân thịnh nộ giẫm xuống kéo lê màu trắng toát quanh hắn hóa thành một màn sương mù đặc quánh.",
+      "Những mái nhà đá nâu sẫm, cũ kỹ dần hiện hình.",
+      "Những con đường lát đá gồ ghề, lạnh lẽo.",
+      "Những ngọn đèn vàng vọt, nhợt nhạt đang thoi thóp thở.",
       "Manlanier.",
-      "Nhưng không còn ai.",
-      "Không tiếng người.",
-      "Không cửa hàng.",
-      "Không mùi thức ăn mà hắn từng chê bai.",
-      "Một Manlanier không có con người.",
+      "Nhưng thành phố này đã chết, không còn một bóng người.",
+      "Không có tiếng người rao bán ồn ã.",
+      "Không có những cửa hàng chen chúc bám lấy nhau.",
+      "Không còn thứ mùi thức ăn phàm tục, hôi hám mà hắn từng kiêu ngạo chê bai.",
+      "Một Manlanier hoang tàn, vắng bóng hình hài của nhân loại.",
       "Trước đây.",
-      "Có lẽ hắn sẽ thích nơi này hơn.",
-      "Giờ đây.",
-      "Sự im lặng khiến nó giống một ngôi mộ.",
-      "Màn sương dày nuốt trọn những con phố.",
-      "Từng cánh hoa cẩm chướng khô héo nằm rải rác dưới từng bước chân hắn.",
-      "Hắn chậm lại.",
+      "Có lẽ bản ngã kiêu ngạo của hắn sẽ khao khát được chìm đắm ở nơi vắng lặng này hơn.",
+      "Nhưng giờ đây.",
+      "Sự im lặng chết chóc này lại khiến thành phố trông giống hệt một nấm mồ tập thể khổng lồ.",
+      "Màn sương sền sệt tàn nhẫn nuốt trọn những con phố dài hun hút.",
+      "Từng cánh hoa cẩm chướng khô héo, nát bươm nằm rải rác đứt đoạn dưới từng bước chân trần của hắn.",
+      "Hắn vô thức chững lại.",
       '" Kristin? "',
-      "Không lời đáp.",
-      "Hắn bước nhanh hơn.",
+      "Không có lấy một lời đáp trả cõi lòng.",
+      "Hắn nôn nóng cất bước nhanh hơn.",
       '" Kristin. "',
-      "Tên nàng vọng qua những con hẻm.",
-      "Rồi vọng trở về với chính hắn.",
+      "Cái tên của nàng vô vọng dội vào những bức vách của các con hẻm sâu.",
+      "Rồi tàn nhẫn dội ngược trở về, cứa nát cõi lòng chính hắn.",
       '" Kristin... "',
-      "Một bóng người xuất hiện sau làn sương.",
-      "Chiếc áo lông sẫm màu.",
-      "Drag bất động.",
-      "Nàng quay lại.",
-      "Một con mắt vàng nhạt.",
-      "Đôi môi khẽ cong.",
-      "Hắn chạy.",
-      "Không nghĩ.",
-      "Không đề phòng.",
-      "Cũng chẳng quan tâm thứ trước mắt có thật hay không.",
-      "Một nhịp sau.",
-      "Hắn đã ở trước mặt nàng.",
-      "Bàn tay lập tức giữ lấy tay Kristin.",
-      "Ấm.",
-      "Drag siết chặt.",
-      "Ấm đến mức nhói lòng.",
-      "Bởi giờ đây hắn đã biết.",
-      "Những thứ ấm áp cũng có thể vụt mất trong gang tất.",
+      "Một cái bóng nhỏ bé đột ngột xuất hiện, lấp ló sau làn sương trắng đục.",
+      "Chiếc áo lông sẫm màu quen thuộc.",
+      "Drag sững người, bất động như một pho tượng.",
+      "Nàng chậm rãi quay người lại.",
+      "Một con mắt vàng nhạt nhòa, ảm đạm ám ảnh.",
+      "Đôi môi đỏ mọng khẽ cong lên một nụ cười mỏng manh.",
+      "Hắn lao đi như một kẻ điên.",
+      "Không màng suy nghĩ tới đúng sai.",
+      "Không một chút phòng bị rào cản.",
+      "Cũng chẳng thèm quan tâm ảo ảnh dối trá trước mắt có phải là sự thật hay không.",
+      "Chỉ một nhịp thở gấp gáp trôi qua.",
+      "Hắn đã sừng sững đứng ngay trước mặt nàng.",
+      "Bàn tay thô ráp lập tức vươn ra, ghim chặt lấy cổ tay nhỏ bé của Kristin.",
+      "Ấm áp.",
+      "Drag điên cuồng siết chặt hơn nữa.",
+      "Hơi ấm lan tỏa đến mức làm lồng ngực hắn nhói lên từng hồi đau đớn.",
+      "Bởi sâu thẳm lúc này hắn đã thấm thía một sự thật tàn khốc.",
+      "Những thứ ấm áp nhất trên cõi đời này, cũng có thể bốc hơi vụt mất chỉ trong một cái chớp mắt.",
       '" Em nghĩ mình cần được ăn gì đó. "',
-      "Hắn nhìn nàng.",
-      "Câu nói bình thường đến tàn nhẫn.",
-      "Cứ như thể Ditovias chưa từng tồn tại.",
-      "Cứ như thể thanh kiếm vàng chưa từng xuyên qua tim hắn.",
+      "Hắn trân trân nhìn khuôn mặt kiêu kỳ của nàng.",
+      "Câu nói thốt ra bình thường đến mức tàn nhẫn, lạnh lùng.",
+      "Cứ như thể cái tửu điếm Ditovias máu me kia chưa từng tồn tại trên cõi phàm.",
+      "Cứ như thể lưỡi gươm vàng rực chưa từng đâm xuyên trái tim hắn.",
       '" Còn anh thì sao? "',
-      "Môi Drag khẽ động.",
+      "Bờ môi khô khốc của Drag khẽ run rẩy động đậy.",
       '" Kristin. "',
-      "Nàng nghiêng đầu.",
+      "Nàng thơ ngây nghiêng nhẹ mái đầu.",
       '" Ta không cần ăn nữa. "',
-      "Hắn vẫn giữ bàn tay ấy.",
-      "Không chịu buông.",
-      "Như thể chỉ cần lỏng đi một chút.",
-      "Nàng sẽ lại rơi khỏi tay hắn.",
+      "Hắn vẫn ngoan cố giữ rịt lấy bàn tay mỏng manh ấy.",
+      "Cự tuyệt mọi ý niệm buông bỏ.",
+      "Như thể chỉ cần nới lỏng đi một đốt ngón tay nhỏ nhoi.",
+      "Nàng sẽ lại tuột dốc, rơi vĩnh viễn khỏi vòng tay hắn một lần nữa.",
       '" Ta thấy lạnh. "',
-      "Kristin không trả lời.",
-      "Nụ cười vẫn còn.",
-      "Nhưng hơi ấm trong tay bắt đầu biến mất.",
-      "Drag nhìn xuống.",
-      "Da nàng trắng dần.",
-      "Lạnh dần.",
+      "Kristin câm lặng, không đáp lại lời cầu xin yếu ớt.",
+      "Nụ cười ấy vẫn còn thường trực trên môi.",
+      "Nhưng hơi ấm luân chuyển trong lòng bàn tay bắt đầu rút cạn, dần biến mất vào thinh không.",
+      "Drag hoảng loạn rũ mắt nhìn xuống.",
+      "Lớp da thịt kiêu kỳ của nàng dần chuyển sang trắng bệch, vô hồn.",
+      "Lạnh ngắt như một cái xác.",
       '" Kristin? "',
-      "Không đáp.",
-      '" Em muốn ra khỏi đây. "',
-      "Drag ngẩng lên.",
-      "Giọng nói đã khác.",
-      '" Nhưng em không nên. "',
-      "Khuôn mặt nàng nhòe đi.",
-      "Drag siết tay.",
-      "Mạnh hơn.",
-      "Nụ cười kia vẫn còn.",
+      "Tuyệt nhiên không một lời đáp lại sự tuyệt vọng.",
+      '" Em muốn rời khỏi nơi này. "',
+      "Drag sững sờ ngẩng phắt mặt lên.",
+      "Chất giọng của nàng đã hoàn toàn biến đổi, xa lạ và trống rỗng.",
+      '" Nhưng có lẽ em không nên. "',
+      "Khuôn mặt thanh tú của nàng bắt đầu nhòe đi, hòa tan vào lớp sương mù.",
+      "Drag nghiến răng, điên cuồng siết tay.",
+      "Dùng lực mạnh hơn nữa.",
+      "Nụ cười chớm tắt ngay trước mặt hắn.",
       '" Em nghĩ em không nên gặp anh nữa. "',
-      "Bàn tay trong tay hắn hóa thành vệt sương mỏng.",
-      "Drag chụp lấy.",
-      "Không có gì.",
-      "Hắn chụp lần nữa.",
-      "Vẫn không có gì.",
-      "Lần thứ ba.",
-      "Chỉ còn không khí lạnh.",
-      "Hắn nhìn xuống lòng bàn tay.",
-      "Máu đang chảy.",
-      "Móng tay đã cắm sâu vào da từ lúc nào.",
-      "Manlanier bắt đầu biến mất.",
-      "Mái nhà.",
-      "Đèn đường.",
-      "Cẩm chướng.",
-      "Tất cả bị sương nuốt lấy.",
-      "Cuối cùng.",
-      "Chỉ còn lại hắn.",
-      "Một mình.",
-      "Thứ hắn từng cho rằng chẳng có gì đáng sợ.",
-      "Giờ lại khiến khoảng không rộng đến vô tận.",
-      "Drag đứng im.",
-      "Rất lâu.",
-      "Lần này hắn không gọi nàng nữa.",
-      "Có lẽ vì đã hiểu.",
-      "Tên nàng không đủ sức giữ một người ở lại.",
-      "Tiếng chuông nhà thờ bất ngờ ngân lên.",
-      "Một lưỡi kiếm lao thẳng về phía ngực.",
-      "Drag mở bừng mắt. Những bóng quạ bay vụt từ tán tây trước mặt.",
-      "Ánh mặt trời chói chang dội thẳng xuống.",
-      "Và một khuôn mặt đang dí sát lấy hắn.",
+      "Bàn tay ngọc ngà nằm trong tay hắn vụt hóa thành một vệt sương mỏng manh, lạnh lẽo.",
+      "Drag hốt hoảng vồ chụp lấy.",
+      "Không có gì nắm được.",
+      "Hắn điên dại chụp thêm lần nữa.",
+      "Vẫn chỉ là hư vô trượt qua kẽ tay.",
+      "Lần thứ ba vùng vẫy.",
+      "Chỉ còn tóm được thứ không khí lạnh ngắt buốt thấu xương.",
+      "Hắn đờ đẫn rũ mắt nhìn xuống lòng bàn tay trống trải.",
+      "Máu tươi đang rỉ rả tuôn chảy.",
+      "Móng tay của hắn đã tự cắm ngập sâu vào da thịt mình từ lúc nào không hay.",
+      "Thành phố Manlanier bắt đầu bốc hơi, tan biến vào hư không.",
+      "Mái nhà đá sẫm màu.",
+      "Đèn đường leo lét.",
+      "Những bụi cẩm chướng úa tàn.",
+      "Tất thảy đều bị sương mù tàn nhẫn nuốt chửng.",
+      "Cuối cùng, cõi không gian này cũng kết thúc.",
+      "Chỉ còn trơ trọi lại mỗi một mình hắn.",
+      "Đơn độc giữa vực sâu.",
+      "Sự cô độc chết tiệt mà hắn từng ngạo mạn cho rằng chẳng có gì đáng sợ.",
+      "Giờ đây lại đang kéo giãn khoảng không trước mắt trở nên rộng lớn đến mức vô tận.",
+      "Sự lặng thinh trong từng giọt máu như ngừng chảy.",
+      "Rất lâu, dường như đã qua hàng thế kỷ.",
+      "Lần này hắn tự cắn nát môi, không buồn gọi tên nàng nữa.",
+      "Có lẽ vì bản ngã của hắn cuối cùng cũng cay đắng thừa nhận.",
+      "Tên của nàng không hề chứa đủ ma lực để giữ chân một người ở lại.",
+      "Tiếng chuông nhà thờ mục nát bất ngờ đổ vang lên những thanh âm đinh tai nhức óc.",
+      "Một lưỡi gươm vô hình tàn bạo xé gió lao thẳng về phía lồng ngực.",
+      "Drag hoảng hốt mở bừng mắt.",
+      "Những cái bóng quạ đen đúa hoảng loạn cất cánh bay vụt lên từ tán cây rậm rạp trước mặt.",
+      "Ánh mặt trời chói chang, chói lòa dội thẳng xuống thiêu đốt võng mạc hắn.",
+      "Và một khuôn mặt xa lạ đang tò mò dí sát vào.",
       '" Xin chào. "',
-      "Drag giật người.",
-      "Cô gái trước mặt cũng hoảng hốt lùi lại.",
+      "Drag giật nảy người, phản xạ né tránh.",
+      "Cô gái trước mặt cũng hoảng hốt lùi gót lại vài bước.",
       '" Ôi. "',
       '" Anh còn sống thật này. "',
-      "Nàng nhìn hắn chăm chú.",
+      "Nàng nghiêng đầu nhìn hắn chằm chằm bằng một sự soi mói ngây ngô.",
       '" Tên anh là gì vậy? "',
-      "Drag nhìn khuôn mặt trước mắt.",
-      "Một thoáng.",
-      "Hắn vẫn chưa hoàn toàn trở về khỏi giấc mơ.",
+      "Drag đờ đẫn nhìn khuôn mặt đang án ngữ trước mắt.",
+      "Một thoáng ngỡ ngàng.",
+      "Tâm trí vặn vẹo của hắn vẫn chưa thể hoàn toàn rứt khỏi cái vực sâu ác mộng kia.",
       '" Kristin??! "',
-      "Cô gái chớp mắt.",
+      "Cô gái chớp chớp đôi mắt nai.",
       '" Anh có cái tên giống phụ nữ nhỉ? "',
-      "Drag im lặng.",
+      "Drag nín bặt, chìm vào câm lặng.",
       '" Hay anh đang gọi em? "',
       '" Không. "',
       '" Tốt. Vì tên em không phải Kristin. "',
-      "Nàng chỉ lên má mình.",
+      "Nàng vô tư đưa ngón tay chỉ lên đôi gò má lấm lem của mình.",
       '" Bellia. "',
       '" Rất vui được gặp anh. "',
-      "Nàng nhìn xuống.",
+      "Nàng lướt mắt nhìn xuống phía dưới cơ thể hắn.",
       '" Nhưng em nghĩ anh nên... "',
-      "Bellia nhướng mày.",
+      "Bellia nhướng mày, tỏ vẻ bối rối.",
       '" Không biết nữa. "',
       '" Thoát khỏi cái cây trước đi đã. "',
-      "Drag nhìn theo ánh mắt nàng.",
-      "Một nhánh cây đen xuyên thẳng qua lồng ngực.",
-      "Đầu nhánh nhô khỏi phía trước.",
-      "Máu đã khô gần một nửa.",
+      "Drag nương theo ánh mắt ngập ngừng của nàng mà nhìn xuống.",
+      "Một nhánh cây đen ngòm, sần sùi đang đâm xuyên thủng qua lồng ngực hắn.",
+      "Đầu nhánh cây nhọn hoắt nhô hẳn ra phía trước ngực.",
+      "Máu tuôn ra đã đóng cục, khô lại gần một nửa.",
       '" Nó đang đâm xuyên người anh kìa. "',
-      "Drag nhìn nhánh cây.",
-      "Rồi nhìn Bellia.",
-      "Giọng nàng nói về chuyện đó nhẹ nhàng như đang nhắc hắn có một chiếc lá mắc trên áo.",
-      "Hắn bẻ gãy nó.",
+      "Drag hờ hững nhìn nhánh cây ác mộng.",
+      "Rồi chậm rãi ngước lên nhìn Bellia.",
+      "Giọng nàng nói về cái vết thương chí mạng đó nhẹ nhàng đến lạ kỳ.",
+      "Như thể nàng chỉ đang nhắc nhở hắn có một chiếc lá rụng vô tình mắc trên áo.",
+      "Hắn thản nhiên nắm lấy nhánh gỗ, bẻ gãy nó.",
       "Rắc.",
-      "Một tay giữ thân cây.",
-      "Rồi tự kéo cơ thể khỏi đó.",
-      "Máu đổ xuống cỏ.",
-      "Bellia đứng nhìn những sợi cơ cố bám lấy nhau.",
+      "Một tay hắn điềm tĩnh giữ chặt phần thân cây vỡ nát.",
+      "Rồi tự tàn bạo kéo tuột cơ thể mình rút ra khỏi lưỡi giáo gỗ đó.",
+      "Máu tươi ồ ạt đổ ào xuống thảm cỏ xanh.",
+      "Bellia đứng trân trân nhìn những thớ cơ bắp nát bươm đang điên cuồng tự bám lấy nhau, nối lại liền mạch.",
       '" Ồ. "',
       '" Anh hồi phục được. "',
-      "Drag chẳng đáp.",
+      "Drag câm nín, chẳng thèm ban phát một lời đáp trả.",
       '" Khá tuyệt. "',
-      "Hắn nhìn nàng.",
-      "Một cô gái trẻ.",
-      "Tóc màu đất.",
-      "Đôi mắt nâu nhạt.",
-      "Hai cánh tay phủ kín cổ tự và những hoa văn như dây leo.",
-      "Trên hai tai là vô số vòng kim loại.",
-      "Một số xuyên qua vành tai.",
-      "Số khác nối với nhau bằng những sợi bạc mảnh.",
-      "Bellia cũng đang nhìn hắn.",
-      "Từ mặt.",
-      "Xuống ngực.",
-      "Rồi thấp hơn.",
-      "Khuôn mặt nàng đỏ lên.",
-      "Hai má ửng phồng nhẹ.",
-      "Drag vẫn nhìn.",
-      "Nàng quay mặt đi.",
+      "Hắn nheo mắt nhìn đánh giá nàng.",
+      "Một cô gái còn trẻ tuổi, toát lên vẻ hoang dại.",
+      "Mái tóc rối bời mang màu của đất bùn.",
+      "Đôi mắt nâu nhạt, trong vắt.",
+      "Hai cánh tay thon thả của nàng phủ kín những hình xăm cổ tự và những hoa văn kỳ bí uốn lượn như dây leo.",
+      "Trên hai vành tai đeo vô số những chiếc vòng kim loại lấp lánh.",
+      "Một số lỗ xỏ xuyên thẳng qua vành tai mỏng manh.",
+      "Số khác lại được kết nối chằng chịt với nhau bằng những sợi bạc mảnh mai.",
+      "Bellia cũng không chút ngần ngại, tò mò săm soi nhìn hắn.",
+      "Từ nét mặt góc cạnh.",
+      "Xuống vòm ngực vạm vỡ dính máu.",
+      "Rồi lướt ánh nhìn xuống thấp hơn nữa.",
+      "Khuôn mặt nàng bất chợt đỏ lựng lên.",
+      "Hai má ửng phồng nhẹ, ngại ngùng.",
+      "Drag vẫn lạnh lùng, vô cảm nhìn nàng.",
+      "Nàng vội vã quay ngoắt mặt đi nơi khác.",
       '" Quần áo anh đâu? "',
-      "Hắn cúi xuống.",
-      "Bellia cắn môi.",
-      "Vai run lên.",
+      "Hắn rũ mắt cúi xuống nhìn thân hình trần trụi của mình.",
+      "Bellia cắn chặt môi kìm nén.",
+      "Bờ vai mỏng manh khẽ run lên bần bật.",
       '" Ngươi đang cười? "',
       '" Không. "',
-      "Nàng xoay hẳn người.",
+      "Nàng xoay hẳn cả thân người trốn tránh.",
       '" Hoàn toàn không. "',
-      "Một tiếng khúc khích thoát ra.",
+      "Một tiếng cười khúc khích lỡ nhịp thoát ra khỏi kẽ răng nàng.",
       '" Ta nghe thấy. "',
       '" Em xin lỗi. "',
-      "Bellia chạy về căn lều nhỏ.",
+      "Bellia ba chân bốn cẳng chạy thẳng về phía căn lều nhỏ lụp xụp.",
       '" Em có cái quần cũ. "',
       '" Không biết anh mặc vừa không. "',
-      "Nàng mở cửa.",
+      "Nàng đẩy nhẹ cánh cửa gỗ tồi tàn.",
       '" Nhưng vừa hay không vừa vẫn đỡ hơn thế này. "',
-      "Cửa đóng lại.",
-      "Drag đứng giữa khu vườn.",
-      "Những hàng dưa hấu nằm trên đất.",
-      "Hoa mọc thành từng luống cạnh căn nhà.",
-      "Gió thổi qua.",
-      "Một cánh hoa trắng mắc vào chân hắn.",
-      "Drag cúi xuống.",
+      "Cánh cửa cọt kẹt đóng lại.",
+      "Drag chôn chân đứng giữa khu vườn ngập tràn sức sống phàm trần.",
+      "Những hàng dưa hấu căng tròn nằm la liệt trên mặt đất.",
+      "Hoa dại mọc thành từng luống rực rỡ nép mình cạnh căn nhà vách gỗ.",
+      "Gió hoang thổi qua mơn trớn thảm thực vật.",
+      "Một cánh hoa trắng muốt vô tình bị cuốn đi, mắc lại ngay dưới chân hắn.",
+      "Drag khẽ cúi đầu nhìn xuống.",
       "Cẩm chướng.",
-      "Hắn đứng nhìn.",
-      "Lâu hơn một cánh hoa đáng được nhìn.",
-      "Trong đầu.",
-      "Một cánh trắng khác đang nhuộm máu.",
-      "Hắn dùng chân gạt nó sang một bên.",
-      "Nhẹ.",
-      "Không đủ để làm nát.",
-      "Cửa căn lều bật mở.",
-      "Một vật bay thẳng vào mặt.",
-      "Drag chẳng né.",
-      "Chiếc quần phủ kín đầu.",
+      "Hắn thẫn thờ đứng nhìn nó.",
+      "Cứ chìm đắm lâu hơn thời gian mà một cánh hoa vô tri đáng được người ta lưu tâm.",
+      "Trong đầu óc rối bời của hắn.",
+      "Một cánh hoa trắng tinh khiết khác đang dần dần bị nhuộm đẫm trong vũng máu tanh.",
+      "Hắn lạnh lùng dùng mũi chân gạt nó sang một bên lề.",
+      "Nhẹ nhàng.",
+      "Lực đạo vừa đủ, không tàn nhẫn đến mức làm nát bấy cánh hoa mong manh.",
+      "Cánh cửa căn lều lại bất ngờ bật mở.",
+      "Một vật thể lạ bay vèo vèo lao thẳng vào mặt hắn.",
+      "Drag vẫn trơ lì ra đó, chẳng thèm né tránh.",
+      "Chiếc quần vải thô kệch trùm kín mít, phủ rịt lên đầu hắn.",
       '" Anh không định né thật à? "',
-      "Hắn kéo xuống.",
-      "Bellia đứng nơi cửa.",
-      "Một tay cầm miếng dưa hấu.",
-      "Miệng vẫn đang nhai.",
+      "Hắn vùng vằng, bực dọc kéo lớp vải thô xuống.",
+      "Bellia thảnh thơi đứng tựa nơi khung cửa.",
+      "Một tay cầm miếng dưa hấu đỏ au.",
+      "Miệng vẫn đang chóp chép nhai ngấu nghiến.",
       '" Anh đói không? "',
       '" Không. "',
       '" Em chỉ có dưa thôi. "',
-      "Nàng cắn thêm một miếng.",
+      "Nàng thản nhiên cắn thêm một miếng lớn.",
       '" Nhưng ngon lắm. "',
       '" Em tự trồng đấy. "',
-      "Drag mặc quần.",
-      "Rồi tìm một gốc cây gần đó. Lưng tựa vào thân gỗ, ngước nhìn bầu trời.",
-      "Bầu trời xanh đến khó chịu.",
-      "Một vệt rách khổng lồ chia mây thành hai nửa.",
-      "Hắn nhìn.",
-      "Và nhớ đến khoảng trời vừa nuốt mất mình.",
-      "Drag nhắm mắt.",
-      "Không lâu sau.",
-      "Hắn lại mở ra.",
-      "Bellia đang đứng trước mặt.",
-      "Nàng chìa một miếng dưa.",
+      "Drag cắn răng xỏ chân, mặc vội chiếc quần rách rưới.",
+      "Rồi thất thần tìm một gốc cây cổ thụ gần đó thả mình xuống.",
+      "Hắn tựa tấm lưng mỏi mệt vào lớp thân cây xù xì.",
+      "Vô thức ngước nhìn lên bầu trời.",
+      "Bầu trời xanh ngắt một cách giả tạo đến khó chịu.",
+      "Một vệt rách khổng lồ, đen ngòm đang bạo lực chia cắt những đám mây thành hai nửa tang thương.",
+      "Hắn đăm đăm nhìn nó.",
+      "Và những ký ức kinh hoàng về khoảng trời vừa tàn nhẫn nuốt chửng mất mình lại dội về cắn xé tâm can.",
+      "Drag mệt mỏi nhắm nghiền hai mắt lại.",
+      "Không lâu sau, cảm giác bị quấy rầy ập tới.",
+      "Hắn lại khó nhọc mở mắt ra.",
+      "Bellia đang lom khom đứng ngay trước mặt.",
+      "Nàng hồn nhiên chìa một miếng dưa đỏ mọng về phía hắn.",
       '" Nè. "',
-      "Drag không nhận.",
+      "Drag trơ như đá, không thèm đưa tay nhận.",
       '" Anh ăn đi. "',
-      "Hắn vẫn không nhúc nhích.",
+      "Hắn vẫn bất động, không hề nhúc nhích lấy một cơ bắp.",
       '" Em cầm mỏi tay lắm. "',
-      "Hắn cuối cùng cũng mềm lòng rồi nhận lấy.",
-      "Bellia ngồi xuống cạnh hắn.",
-      "Chẳng hỏi hắn từ đâu tới.",
-      "Chẳng hỏi tại sao ngực hắn vừa bị cây xuyên qua.",
-      "Và cũng chẳng hỏi tại sao hắn rơi xuống khu vườn của nàng trong bộ dạng ấy.",
-      "Nàng chỉ cứ ngồi đó.",
-      "Một sự yên lặng kỳ lạ.",
-      "Không giống sự im lặng trong cơn ác mộng vừa nãy.",
-      "Nó không khiến hắn thấy mình bị bỏ lại.",
-      "Drag cắn một miếng.",
+      "Bản ngã tàn bạo của hắn cuối cùng cũng bị sự ngây ngô này làm cho mềm lòng.",
+      "Đành bực dọc vươn tay nhận lấy.",
+      "Bellia tự nhiên buông mình ngồi bệt xuống lớp cỏ cạnh hắn.",
+      "Chẳng thèm tọc mạch hỏi hắn từ phương nào tới.",
+      "Chẳng tò mò tra hỏi tại sao ngực hắn vừa bị một nhánh cây đâm xuyên qua.",
+      "Và cũng tuyệt nhiên chẳng thắc mắc tại sao hắn lại lọt thỏm, rơi thẳng xuống khu vườn của nàng trong bộ dạng dị hợm, trần trụi ấy.",
+      "Nàng chỉ bình thản cứ ngồi đó như một pho tượng nhỏ.",
+      "Một sự yên lặng bao trùm kỳ lạ đến khó tả.",
+      "Hoàn toàn không mang theo cảm giác bức bối, ngột ngạt giống sự im lặng trong cơn ác mộng vừa nãy.",
+      "Sự hiện diện tĩnh mịch này không hề khiến tâm trí hắn gào thét rằng mình đang bị vứt bỏ.",
+      "Drag cắn bạo lực một miếng dưa.",
       "Ngọt.",
-      "Vị ngọt biến mất nhanh chóng.",
+      "Vị ngọt lịm phàm tục ấy xẹt qua đầu lưỡi rồi biến mất nhanh chóng vào cõi hư vô.",
       '" Ngon không? "',
       '" Không hẳn. "',
-      "Bellia quay sang.",
+      "Bellia hờn dỗi quay mặt sang lườm hắn.",
       '" Nói dối. "',
-      "Drag tiếp tục ăn.",
+      "Drag mặc kệ, tiếp tục nhai phần dưa nhạt nhẽo.",
       '" Nếu không ngon sao anh ăn tiếp? "',
       '" Ta không muốn nói chuyện. "',
       '" Được thôi. "',
-      "Bellia chống hai tay ra sau.",
-      "Ngước nhìn bầu trời cùng với hắn.",
-      "Rồi thật sự im lặng.",
-      "Một phút.",
-      "Hai phút.",
-      "Drag liếc sang.",
-      "Nàng chẳng có vẻ khó chịu.",
-      "Cũng chẳng cố nghĩ ra một câu hỏi mới.",
-      "Một người có thể im lặng chỉ vì hắn bảo họ im lặng.",
-      "Thật kỳ lạ.",
-      "Hắn nhìn xuống miếng dưa.",
+      "Bellia ngoan ngoãn vâng lời.",
+      "Chống hai tay ra phía sau ngả người.",
+      "Trầm ngâm ngước nhìn bầu trời cùng với hắn.",
+      "Rồi nàng thật sự chìm vào sự im lặng.",
+      "Một phút trôi qua.",
+      "Hai phút lặng lẽ trôi.",
+      "Drag nghi ngờ liếc mắt sang.",
+      "Nàng chẳng hề có vẻ gì là bồn chồn hay khó chịu.",
+      "Cũng chẳng động não cố nghĩ ra một câu hỏi moi móc mới nào để quấy rầy hắn.",
+      "Thật là một sự lạ lùng mà từ trước tới nay hắn mới thấy ở một phàm nhân.",
+      "Hắn rũ mắt nhìn xuống miếng dưa ăn dở trên tay.",
       '" Ngươi ở đây một mình? "',
-      "Bellia quay sang.",
+      "Bellia bật cười, quay ngoắt sang nhìn kẻ mâu thuẫn.",
       '" Anh vừa bảo không muốn nói chuyện cơ mà. "',
       '" Ta đổi ý. "',
       '" Ừm. Em ở một mình. "',
-      "Drag nhìn quanh khu vườn.",
+      "Drag lướt ánh nhìn quét một vòng quanh khu vườn tĩnh mịch.",
       '" Cảm giác như thế nào? "',
       '" Cái gì? "',
       '" Một mình. "',
-      "Bellia suy nghĩ.",
+      "Bellia nhăn trán suy nghĩ một lúc.",
       '" Khá tuyệt. "',
-      "Drag nhìn nàng.",
+      "Drag nheo mắt nhìn dò xét nàng.",
       '" Ngươi nói dối. "',
       '" Không. "',
-      "Nàng chỉ vào vườn.",
+      "Nàng vô tư đưa ngón tay chỉ trỏ vào từng ngóc ngách khu vườn.",
       '" Em có mấy bé dưa hấu. "',
-      "Rồi chỉ sang hoa.",
+      "Rồi tay nàng vòng sang luống hoa rực rỡ.",
       '" Mấy bé hoa. "',
       '" Và vài con chim chuyên ăn trộm hạt giống của em. "',
       '" Em đâu có một mình. "',
-      "Bellia nghiêng đầu.",
+      "Bellia khẽ nghiêng đầu, nhìn sâu vào đôi mắt trống rỗng của hắn.",
       '" Còn anh trông có vẻ cô đơn nhỉ? "',
-      "Drag cúi xuống.",
+      "Drag cúi gằm mặt lảng tránh.",
       '" Cô đơn là gì? "',
-      "Một câu hỏi thật sự.",
-      "Hắn biết đau.",
-      "Biết căm hận.",
-      "Biết cảm giác muốn giết một thứ.",
-      "Nhưng có rất nhiều cảm xúc của con người hắn chưa từng gọi tên chúng.",
-      "Bellia không cười lần này.",
-      "Nàng chỉ chờ sự phản hồi.",
-      "Một cánh hoa bị gió cuốn qua.",
+      "Một câu hỏi mang sự ngu ngốc vô cùng chân thật.",
+      "Hắn thừa biết mùi vị của đau đớn.",
+      "Hắn dư sức cảm nhận sự căm hận tột cùng.",
+      "Hắn nằm lòng cái cảm giác khao khát muốn xé xác, giết chết một thứ sinh vật.",
+      "Nhưng tồn tại quá nhiều loại cảm xúc của loài người mà hắn chưa bao giờ có cơ hội chạm tay tới để gọi tên chúng.",
+      "Bellia không cười cợt nhả trước sự dốt nát của hắn lần này.",
+      "Nàng chỉ im lặng, kiên nhẫn chờ đợi sự phản hồi từ tận đáy lòng hắn.",
+      "Một cánh hoa trắng muốt bị cơn gió hoang vu cuốn bay qua, lướt trên gò má.",
       '" Một chút. "',
       "Rất nhỏ.",
-      "Gần như một lời thú nhận vô tình rơi khỏi miệng hắn.",
-      "Bellia không an ủi.",
-      "Không bảo hắn rằng mọi chuyện rồi sẽ ổn.",
-      "Không cố sửa chữa thứ nàng còn chẳng biết đã vỡ ở đâu.",
-      "Nàng chỉ tiếp tục ngồi bên cạnh.",
-      "Drag cắn thêm một miếng dưa.",
+      "Âm lượng thì thào, yếu ớt gần như một lời thú tội yếu hèn vô tình rớt khỏi cửa miệng hắn.",
+      "Bellia không thốt ra lời an ủi sáo rỗng.",
+      "Không nhồi nhét vào đầu hắn những câu dối trá rằng mọi chuyện rồi sẽ ổn thỏa.",
+      "Không ngu ngốc cố gắng vá víu, sửa chữa một thứ mà nàng còn chẳng thèm biết nó đã vỡ vụn ở ngóc ngách nào.",
+      "Nàng chỉ an phận tiếp tục ngồi tĩnh lặng bên cạnh cái bóng khổng lồ của hắn.",
+      "Drag cắn thêm một miếng dưa hấu đỏ.",
       '" Nhưng cảm ơn ngươi vì đã hỏi tới. "',
-      "Bellia mỉm cười.",
+      "Bellia mỉm cười, một nụ cười trong trẻo tựa ánh ban mai.",
       '" Không có gì. "',
-      "Bầu trời xa dần nhuộm cam.",
-      "Hai người vẫn ở dưới gốc cây.",
-      "Drag bất chợt lên tiếng.",
+      "Bầu trời xa tít tắp dần bị màn đêm nhuốm một màu cam rực cháy.",
+      "Hai con người, một thần một phàm vẫn chôn chân dưới gốc cây già cỗi.",
+      "Drag bất chợt phá vỡ sự tĩnh mịch, lên tiếng.",
       '" Ngươi có biết tình yêu là gì không? "',
-      "Bellia mở to mắt.",
+      "Bellia mở to đôi mắt nâu nhạt, ngỡ ngàng.",
       '" Tình yêu hả? "',
-      "Nàng nhìn miếng dưa trong tay hắn.",
+      "Nàng tò mò nhìn chằm chằm vào miếng dưa đang vơi dần trong tay hắn.",
       '" Nó có ăn được không? "',
-      "Drag quay sang. Hai mày cau lại.",
-      "Bellia bật cười.",
+      "Drag quay ngoắt sang, hai hàng chân mày cau chặt lại lộ vẻ khó chịu.",
+      "Bellia vội vã bật cười khúc khích xoa dịu.",
       '" Em đùa. "',
-      "Hắn lại nhìn trời.",
-      "Một câu hỏi từng được The High Wills dùng để nguyền rủa hắn.",
-      "Giờ hắn lại đem hỏi một cô gái trồng dưa ở giữa đồng.",
-      "Bellia kéo hai đầu gối lại.",
+      "Hắn chán nản lại đưa mắt nhìn vầng trời hoàng hôn.",
+      "Một câu hỏi chết tiệt từng được The High Wills tàn nhẫn dùng để nguyền rủa, giam cầm hắn.",
+      "Giờ đây, thật nực cười, hắn lại mang nó đi hỏi một cô gái xa lạ chuyên trồng dưa ở giữa chốn đồng không mông quạnh.",
+      "Bellia thu mình, kéo hai đầu gối ôm gọn vào lòng.",
       '" Theo em thì... "',
-      "Nàng nghĩ một lúc.",
+      "Nàng trầm ngâm suy nghĩ một lúc lâu.",
       '" Em yêu mọi thứ ở đây. "',
       '" Em yêu dưa hấu. "',
       '" Em yêu hoa. "',
       '" Em yêu căn nhà bé xíu kia. "',
-      "Nàng nhìn hai bàn tay.",
+      "Nàng xòe tay, nhìn ngắm hai bàn tay lấm lem bùn đất của mình.",
       '" Và em cũng yêu chính mình nữa. "',
-      "Drag hơi quay đầu.",
+      "Drag hơi quay đầu, ánh mắt ánh lên sự nghi hoặc khó hiểu.",
       '" Yêu chính mình? "',
       '" Ừm. "',
       '" Là anh không ghét cái thân xác này chỉ vì vài vết sẹo xấu xí. "',
       '" Không ghét suy nghĩ của mình chỉ vì đôi khi chúng ngu ngốc. "',
       '" Không vứt bỏ những thứ thuộc về mình chỉ vì người khác không thích chúng. "',
-      "Drag im lặng.",
-      "Đôi cánh đen hiện lên trong đầu.",
-      "Máu.",
-      "Thanh kiếm.",
-      "Cái tên Lucifer.",
-      "Những thứ hắn từng xem như phần đáng ghê tởm còn sót lại từ bầu trời.",
-      "Rồi suy nghĩ kéo hắn tới một thứ khác.",
-      "Chiếc áo Kristin từng mua.",
-      "Một thứ nhỏ bé.",
-      "Tầm thường.",
-      "Nhưng thuộc về hắn.",
+      "Bellia thôi nói.",
+      "Không có lời răn nào đi kèm.",
+      "Nàng chỉ cúi xuống phủi một ít đất khỏi đầu gối rồi tiếp tục ngồi cạnh hắn.",
+      "Drag rơi vào cõi câm lặng.",
+      "Đôi cánh đen kịt của sự ô nhục lập tức hiện lên trêu ngươi trong đầu óc hắn.",
+      "Những vũng máu.",
+      "Thanh gươm phản trắc.",
+      "Cái tên chết tiệt Lucifer.",
+      "Những thứ dơ bẩn mà hắn từng căm ghét, xem như phần đáng ghê tởm nhất còn sót lại từ cái bầu trời thối nát kia.",
+      "Rồi dòng suy nghĩ vặn vẹo lại tàn nhẫn kéo hắn vướng vào một thứ khác biệt.",
+      "Chiếc áo tồi tàn mà Kristin từng cất công mua cho.",
+      "Một vật phẩm nhỏ bé, hèn mọn.",
+      "Tầm thường đến mức vứt đi.",
+      "Nhưng nó thuộc về hắn, là của hắn.",
       '" Trân trọng những gì thuộc về mình. "',
-      "Bellia nói.",
-      "Drag nhìn bàn tay.",
-      "Hắn chưa từng biết yêu bản thân là như thế nào.",
-      "Nhưng lần đầu tiên.",
-      "Hắn bắt đầu nghĩ có lẽ việc tồn tại không nhất thiết phải là một hình phạt.",
-      "Nụ cười Bellia đột nhiên biến mất.",
-      "Nàng nghiêng đầu.",
-      "Như đang nghe một âm thanh ở nơi rất xa.",
-      "Drag nhìn.",
+      "Bellia nói chậm rãi, nhấn nhá từng chữ một.",
+      "Drag cúi đầu nhìn xoáy vào đôi bàn tay đẫm máu của mình.",
+      "Từ thuở khai thiên, hắn chưa từng có một khái niệm nào về việc yêu thương bản thân là như thế nào.",
+      "Nhưng đây là lần đầu tiên trong cõi đời bất tử vô vị.",
+      "Hắn bắt đầu nhen nhóm một suy nghĩ rằng, có lẽ việc bị ép buộc tồn tại trên cõi phàm không nhất thiết phải luôn là một hình phạt đẫm máu.",
+      "Nụ cười vô tư của Bellia đột nhiên tắt ngấm, bay biến khỏi khuôn mặt.",
+      "Nàng khẽ nghiêng đầu.",
+      "Căng tai ra như đang cố lắng nghe một âm thanh quỷ dị vọng về từ nơi rất xa xăm.",
+      "Drag nhíu mày nhìn thái độ kỳ lạ ấy.",
       '" Ngươi nghe gì vậy? "',
-      "Bellia không đáp.",
-      "Một chiếc vòng trên tai khẽ rung.",
+      "Bellia cứng họng, không đáp một lời.",
+      "Một chiếc vòng kim loại treo trên tai khẽ rung lên bần bật.",
       "Leng keng.",
-      "Bàn tay nàng chạm vào nó.",
-      '" Có vẻ anh rất nhớ cô ấy. "',
-      "Drag khựng lại.",
+      "Bàn tay run rẩy của nàng vô thức chạm vào nó.",
+      '" Kristin. "',
+      "Drag khựng lại, mọi cơ bắp lập tức căng cứng.",
       '" Cái gì? "',
-      "Bellia nhìn hắn.",
-      '" Người phụ nữ có ánh mắt mùa thu. "',
-      "Cả sự bình yên vừa hình thành trong hắn lập tức biến mất.",
-      "Drag quay hẳn sang.",
+      "Bellia xoáy thẳng ánh mắt nâu nhạt vào hắn.",
+      '" Người phụ nữ có ánh mắt của hoàng hôn. "',
+      "Tất thảy mọi ảo giác về sự bình yên vừa chớm hình thành trong hắn lập tức bị bóp nghẹt, chết yểu.",
+      "Drag quay hẳn cả thân hình đồ sộ sang phía nàng.",
       '" Sao ngươi biết cô ấy? "',
-      "Bellia vẫn bình thản.",
-      '" Em nghe thấy. "',
+      "Bellia vẫn giữ vẻ bình thản đến rợn người.",
+      '" Em nghe thấy anh gọi cô ấy. "',
       '" Ta chưa từng nhắc tới. "',
       '" Em biết. "',
-      "Drag đứng bật dậy.",
-      "Miếng dưa rơi xuống cỏ.",
-      "Bản năng cũ trở lại.",
-      "Phòng bị.",
-      "Nghi hoặc.",
-      "Thứ hắn vừa cho phép mình bỏ xuống bên cạnh Kristin đã khiến hắn phải trả giá.",
-      "Hắn không định phạm cùng một sai lầm lần nữa.",
+      "Drag đứng bật dậy như một con thú bị dồn vào chân tường.",
+      "Miếng dưa hấu rơi tuột xuống thảm cỏ.",
+      "Bản năng thú vật cũ kỹ lập tức ùa về chiếm đoạt tâm trí.",
+      "Phòng bị tột độ.",
+      "Nghi hoặc tột cùng.",
+      "Thứ giáp trụ tâm lý mà hắn vừa lỡ ngu ngốc cho phép mình cởi bỏ, vứt xuống khi ở bên cạnh Kristin.",
+      "Đã khiến hắn phải trả một cái giá đẫm máu.",
+      "Hắn thề độc sẽ không bao giờ định phạm cùng một sai lầm ngu xuẩn đó lần thứ hai.",
       '" Ngươi là ai? "',
-      "Bellia thở dài.",
-      '" Em đã nói rồi. "',
+      "Bellia khẽ buông một tiếng thở dài thườn thượt.",
+      '" Em nói rồi mà. "',
       '" Bellia. "',
       '" Tên thật. "',
-      "Nàng im lặng.",
-      "Những chiếc vòng trên tai rung mạnh hơn.",
-      "Leng keng.",
-      "Leng keng.",
-      "Bellia nhắm mắt.",
-      "Gương mặt co lại.",
-      "Một giọt máu chảy khỏi tai.",
-      "Nàng nhanh chóng lau đi.",
-      '" Lại nữa rồi... "',
+      "Nàng bỗng chốc im bặt, cắn chặt môi.",
+      "Những chiếc vòng kim loại xâu trên tai rung lên từng hồi mạnh bạo hơn.",
+      "Leng keng. Leng keng.",
+      "Bellia nhắm nghiền hai mắt lại, chịu đựng.",
+      "Gương mặt thanh tú co dúm lại vì đau đớn.",
+      "Một giọt máu đặc quánh rỉ ra, chảy dọc từ trong hốc tai.",
+      "Nàng nhanh tay quệt đi vệt máu tàn nhẫn ấy.",
+      '" Nó lại tới nữa rồi... "',
       '" Cái gì? "',
-      "Bellia cúi đầu.",
+      "Bellia gục gập đầu xuống hai đầu gối.",
       '" Những lời thì thầm. "',
-      "Gió thổi ngang cánh đồng.",
-      "Một chiếc khuyên rơi xuống.",
-      "Ngay lập tức.",
-      "Bellia co người.",
-      "Hai tay bịt chặt tai.",
-      "Hơi thở trở nên gấp.",
-      "Hắn bước tới.",
-      "Sự đề phòng chưa biến mất.",
-      "Nhưng có một thứ khác mạnh hơn nó.",
+      "Một cơn gió lạnh lẽo thổi thốc ngang qua cánh đồng hoang.",
+      "Một chiếc khuyên tai bằng kim loại đứt gãy, rơi bộp xuống đất.",
+      "Ngay lập tức, như một cây kim xuyên qua màng nhĩ.",
+      "Bellia hoảng loạn co rúm cả người lại.",
+      "Hai bàn tay tái nhợt vội vã bịt chặt lấy phần tai bên phải.",
+      "Hơi thở của nàng đứt quãng, trở nên dồn dập, gấp gáp.",
+      "Hắn dè dặt bước tới gần.",
+      "Sự đề phòng sắc lạnh vẫn chưa hề bay biến khỏi đôi mắt rực đỏ.",
+      "Nhưng có một thứ cảm giác vô hình khác dường như đang mạnh mẽ lấn lướt sự đa nghi ấy.",
       '" Ngươi làm sao? "',
-      "Bellia cố với chiếc vòng dưới cỏ.",
-      "Những ngón tay run đến mức không thể giữ nổi.",
-      "Drag cúi xuống.",
-      "Nhặt nó.",
-      "Đặt vào lòng bàn tay nàng.",
-      "Bellia ngồi thụp xuống.",
-      "Vẫn cố móc chiếc khuyên trở lại.",
-      "Drag nhìn.",
-      "Nỗi đau của người khác từng chẳng đáng để hắn chú ý.",
-      "Vậy mà lúc này.",
-      "Hắn thấy khó chịu chỉ vì bàn tay một người đang run rẩy.",
+      "Bellia hoảng loạn, cố với tay vồ lấy chiếc vòng lăn lóc dưới cỏ.",
+      "Những ngón tay gầy guộc run rẩy đến mức không thể giữ nổi thứ kim loại bé nhỏ.",
+      "Drag thở hắt ra, cúi rạp người xuống.",
+      "Nhặt lấy vật thể nhỏ bé đó.",
+      "Thận trọng đặt vào giữa lòng bàn tay đang co giật của nàng.",
+      "Bellia ngồi thụp hẳn xuống nền đất bẩn.",
+      "Đôi tay lóng ngóng vẫn cố móc chiếc khuyên trở lại chỗ cũ trên vành tai rướm máu.",
+      "Drag lạnh lùng đứng nhìn.",
+      "Nỗi thống khổ của kẻ yếu khác từng là thứ vô giá trị, chẳng hề đáng để mắt tới trong từ điển của hắn.",
+      "Vậy mà ngay lúc này đây.",
+      "Hắn lại thấy tâm trí mình vặn vẹo khó chịu.",
+      "Chỉ vì đôi bàn tay của một kẻ phàm trần xa lạ đang run rẩy gục ngã trước mặt.",
       '" Thứ đó là gì? "',
-      "Bellia chạm vào những vòng kim loại.",
+      "Bellia chạm những ngón tay dính máu vào những vòng kim loại lạnh ngắt.",
       '" Chúng làm mọi thứ nhỏ lại. "',
       '" Thứ gì nhỏ lại? "',
-      "Nàng nhìn về phía Manlanier.",
+      "Nàng hướng ánh mắt xa xăm về phía thành phố Manlanier tồi tàn.",
       '" Họ. "',
       '" Những người trong thành. "',
       '" Hoặc ở xa hơn nữa. "',
       '" Họ chưa bao giờ ngừng nói cho em nghe. "',
-      "Nàng cười.",
-      "Nhưng nụ cười mệt mỏi hơn lúc nãy.",
+      "Nàng cố nặn ra một nụ cười méo mó.",
+      "Nhưng nụ cười này thảm hại và mệt mỏi hơn nụ cười lúc nãy vạn lần.",
       '" Chả có gì vui vẻ cả. "',
       '" Chỉ là những lời nguyền rủa. "',
       '" Những lời mạt sát. "',
       '" Kỳ lạ nhỉ? "',
-      "Bellia nhìn xuống tay.",
+      "Bellia rũ mắt nhìn xuống đôi bàn tay lấm lem máu và bùn.",
       '" Em sống xa mọi người vì không chịu nổi họ. "',
       '" Nhưng khi không nghe thấy gì... "',
-      "Nụ cười nhạt dần.",
+      "Nụ cười gượng gạo nhạt dần, rồi tan biến hoàn toàn.",
       '" Em lại tưởng rằng họ đã biến mất. "',
-      "Drag ngồi xuống trước mặt nàng.",
-      "Hắn bắt đầu hiểu.",
-      "Bellia không sợ tiếng nói.",
-      "Nàng sợ cả sự tồn tại lẫn sự biến mất của chúng.",
-      "Và đáng ngạc nhiên thay, hắn đang cố hiểu những lời Bellia nói.",
+      "Drag từ từ hạ thấp cơ thể, ngồi xuống ngay trước mặt nàng.",
+      "Hắn bắt đầu loáng thoáng hiểu ra cơ sự.",
+      "Sinh vật nhỏ bé mang tên Bellia không hề run sợ trước những tiếng nói ma quỷ ấy.",
+      "Nàng sợ cả sự tồn tại dai dẳng lẫn sự biến mất trống rỗng của chúng.",
+      "Và đáng ngạc nhiên thay, chính bản thân hắn đang cố gắng hạ mình để hiểu những lời kỳ quái Bellia nói.",
       '" Ngươi đã nghe thấy chúng bao lâu? "',
       '" Em không nhớ. "',
       '" Từ bé. "',
       '" Có lẽ từ trước cả lúc em biết nói. "',
-      "Một khoảng im lặng.",
+      "Một khoảng im lặng nặng nề, u uất trùm xuống.",
       '" Chúng chưa từng dừng? "',
-      "Bellia lắc đầu.",
+      "Bellia lắc đầu rũ rượi, bất lực.",
       '" Chưa từng. "',
-      "Drag nhìn những vòng kim loại.",
-      "Hắn đưa tay lên.",
-      "Nhưng dừng lại ngay trước vành tai nàng.",
-      "Không chạm.",
-      "Có lẽ hắn đã bắt đầu hiểu rằng không phải mọi thứ hắn tò mò đều cho phép mình chạm tới.",
+      "Drag chuyển hướng ánh nhìn về phía những vòng kim loại vô hồn.",
+      "Hắn vô thức đưa một tay lên.",
+      "Nhưng lý trí lập tức gào thét bắt cánh tay phải dừng lại ngay trước vành tai rỉ máu của nàng.",
+      "Tuyệt đối không được chạm vào.",
+      "Có lẽ tâm trí kiêu ngạo của hắn đã bắt đầu thấm thía một bài học.",
+      "Rằng không phải bất cứ thứ gì hắn tò mò nảy sinh cũng đều tự cho phép mình thô bạo chạm tay tới.",
       '" Đau không? "',
-      "Bellia bật cười.",
+      "Bellia bật cười một tiếng chua chát.",
       '" Anh hỏi em à? "',
       '" Trả lời. "',
-      "Nàng nhìn hắn.",
+      "Nàng ngước đôi mắt ầng ậng nước nhìn hắn.",
       '" Có. "',
-      "Drag hạ tay.",
-      "Không nói gì.",
-      "Nhưng một ý nghĩ đã xuất hiện.",
-      "Hắn không thích việc nàng đau.",
-      "Một ý nghĩ thật phiền phức.",
-      "Và vì vậy hắn lập tức chuyển sang một câu hỏi khác.",
+      "Drag chậm rãi buông thõng cánh tay xuống.",
+      "Câm lặng, không nói thêm gì.",
+      "Nhưng một ý nghĩ phù phiếm, yếu hèn đã bắt rễ, xuất hiện trong tâm khảm.",
+      "Hắn căm ghét việc phải chứng kiến nàng gặm nhấm nỗi đau đớn đó.",
+      "Một ý nghĩ thật thừa thãi và phiền phức chết đi được.",
+      "Và vì vậy, bản ngã của hắn lập tức trốn tránh, bẻ lái chuyển sang một câu hỏi vặn vẹo khác.",
       '" Ngươi có nghe những gì ta nghĩ không? "',
-      "Bellia nghiêng đầu.",
+      "Bellia khẽ nghiêng mái đầu rối bời.",
       '" Em có. "',
-      '" Nhưng không hoàn toàn. "',
+      '" Nhưng cũng không hoàn toàn. "',
       '" Chỉ khi em chạm vào người anh. "',
       '" Những suy nghĩ sẽ có hình hài hơn. "',
-      "Drag nhíu mày.",
+      "Drag nhíu chặt đôi mày, đầy vẻ hoài nghi.",
       '" Thật? "',
-      "Bellia chìa tay.",
+      "Bellia chìa bàn tay gầy guộc ra.",
       '" Em chạm thử nha? "',
       '" Không! "',
-      "Nàng bật cười.",
+      "Nàng bật cười trong trẻo, xua tan bầu không khí u uất.",
       '" Vậy em cởi khuyên tai ra. "',
-      "Drag lập tức cau mày.",
+      "Drag lập tức cau mày, tức giận.",
       '" Không. "',
       '" Đừng làm thế. "',
-      "Bellia nhìn hắn.",
+      "Bellia nghiêng đầu nhìn hắn với vẻ thích thú.",
       '" Anh lo cho em à? "',
-      "Drag quay sang khu vườn.",
+      "Drag quay ngoắt mặt sang nhìn chằm chằm vào khu vườn vô tri.",
       '" Ta... không. "',
-      "Một lời nói dối còn tệ hơn câu hắn vừa nói về dưa hấu.",
+      "Một lời nói dối vụng về.",
+      "Còn thảm hại tệ hại hơn cả cái câu dối trá hắn vừa buông về mùi vị của dưa hấu.",
       '" Đừng làm những thứ ngớ ngẩn. "',
-      "Bellia mỉm cười.",
-      '" Em giỡn. "',
-      "Nàng chạm nhẹ lên những chiếc khuyên.",
+      "Bellia mỉm cười dịu dàng.",
+      '" Em trêu anh thôi. "',
+      "Nàng cẩn trọng chạm nhẹ những đầu ngón tay lên những chiếc khuyên vấy máu.",
       '" Nhiều khi em muốn nó dừng lại. "',
-      '" Nhiều khi em muốn họ dừng lại. "',
+      '" Và nhiều khi em muốn họ dừng lại. "',
       '" Nếu họ chẳng còn đau đớn nữa thì tốt biết mấy. "',
-      "Drag nhìn nàng.",
+      "Drag quay lại nhìn xoáy vào nàng.",
       '" Sao ngươi phải bận tâm tới những kẻ đó? "',
       '" Vì họ cũng không thật sự muốn như vậy. "',
-      "Hắn ngước lên bầu trời.",
-      "Vết rách giữa tầng mây vẫn ở đó.",
-      "Một đường nứt trên thứ từng giam giữ hắn.",
-      "Drag nhìn xuống bàn tay mình.",
-      "Bàn tay từng giơ kiếm về phía Kristin.",
-      "Không phải vì muốn giết nàng.",
-      "Nhưng nó vẫn đã làm.",
-      "Hắn nhớ đôi mắt mình trong khoảnh khắc ấy.",
-      "Hoặc chính xác hơn.",
-      "Hắn không nhớ.",
-      "Và điều đó mới khiến hắn sợ.",
+      "Hắn bất lực ngước đôi mắt rực đỏ lên bầu trời cao.",
+      "Vết rách đen ngòm, tàn ác giữa tầng mây xám xịt vẫn trơ trơ ở đó.",
+      "Một đường nứt vĩnh viễn không thể vá víu trên thứ bầu trời từng là lồng giam giam giữ hắn.",
+      "Drag rũ mắt, nhìn xuống bàn tay nhuốm đầy máu tươi của chính mình.",
+      "Bàn tay tàn nhẫn từng chĩa gươm sắc về phía Kristin mỏng manh.",
+      "Không phải vì chủ đích thực sự của hắn là khao khát muốn đoạt mạng nàng.",
+      "Nhưng nó đã lạnh lùng làm ra cái hành động phản trắc đó.",
+      "Hắn vẫn nhớ như in sự hoang dại trong đôi mắt mình ở cái khoảnh khắc oan nghiệt ấy.",
+      "Hoặc nếu nói chính xác hơn.",
+      "Hắn hoàn toàn không có một mảnh ký ức rõ ràng nào.",
+      "Và chính cái sự thật rỗng tuếch, mất kiểm soát đó mới là thứ ác mộng khiến một kẻ như hắn cũng phải do dự.",
       '" Ta cũng không muốn như vậy. "',
-      "Bellia nhìn.",
+      "Bellia dán chặt mắt vào hắn.",
       '" Ta chỉ muốn kẻ đó biến mất. "',
       '" Kẻ nào? "',
-      "Drag ngước lên.",
+      "Drag ngước mặt, ném thẳng thù hận lên trời cao.",
       '" Thứ mà họ gọi là thần linh. "',
       '" Thứ niềm tin mục nát mà họ dành cho kẻ đó. "',
-      "Bellia đan hai bàn tay.",
-      "Mân mê từng đốt ngón.",
+      "Bellia đan chéo hai bàn tay vào nhau, bóp chặt.",
+      "Mân mê đầy âu lo từng đốt ngón tay gầy guộc.",
       '" Nếu kẻ mà anh nói biến mất... "',
-      "Nàng nhìn xuống.",
+      "Nàng cúi gập mặt nhìn xuống đất bụi.",
       '" Liệu những nỗi đau của mọi người có tan biến? "',
-      "Drag không trả lời ngay.",
-      "Một thời gian trước.",
-      "Hắn sẽ chẳng quan tâm câu trả lời.",
-      "Nhưng giờ đây.",
-      "Hắn đã nhìn thấy Kristin chảy máu.",
-      "Đã thấy Bellia bị những tiếng nói hành hạ.",
-      "Đã bắt đầu hiểu rằng đau đớn không chỉ là thịt bị xé khỏi xương.",
+      "Drag câm nín, không thể đưa ra câu trả lời ngay lập tức.",
+      "Nếu quay lại một khoảng thời gian trước đây.",
+      "Hắn sẽ chẳng thèm bận tâm tìm kiếm câu trả lời cho sự đau đớn của đám sâu bọ hạ giới.",
+      "Nhưng giờ đây, ngay tại khoảnh khắc này.",
+      "Hắn đã phải tận mắt chứng kiến Kristin tươm máu.",
+      "Đã thấy Bellia bị những giọng nói hành hạ.",
+      "Đã lờ mờ bắt đầu hiểu ra một chân lý rằng.",
+      "Đau đớn trên cõi đời này không chỉ đơn thuần là việc da thịt trần trụi bị xé toạc rời khỏi xương tủy.",
       '" Ta cũng không rõ, Bellia. "',
-      "Cô cúi gằm mặt.",
-      "Những ngón tay vuốt nhẹ những chiếc lá vàng.",
+      "Cô gái gục hẳn mặt xuống.",
+      "Những ngón tay run rẩy vô thức vuốt nhẹ những chiếc lá vàng rụng úa.",
       '" Ta sẽ thử. "',
-      "Bellia ngẩng lên.",
+      "Bellia vội vàng ngẩng đầu lên, ánh mắt kiên định.",
       '" Nếu vậy em sẽ giúp anh. "',
-      "Drag nhìn những chiếc lá nàng nâng niu.",
+      "Drag đưa mắt nhìn những chiếc lá khô mà nàng đang nâng niu trong vô vọng.",
       '" Ta không cần ngươi giúp. "',
       '" Tại sao? "',
       '" Ta không biết. "',
-      "Một câu trả lời thành thật.",
-      "Hiếm hoi đến mức chính hắn cũng thấy khó chịu.",
+      "Một câu trả lời thành thật trần trụi đến mức đau lòng.",
+      "Hiếm hoi và xa lạ đến mức chính bản thân hắn cũng thấy ngột ngạt khó chịu.",
       '" Chỉ là ta không muốn. "',
-      "Bellia đưa tay chạm vào vai hắn.",
-      "Những chiếc khuyên lại một lần nữa rung lên.",
+      "Bellia mạnh dạn vươn tay, chạm khẽ vào bờ vai của hắn.",
+      "Những chiếc khuyên bạc khẽ lung lay.",
       "Leng keng.",
       '" Vì anh sợ sẽ đánh mất chính mình một lần nữa? "',
-      "Drag nhìn nàng.",
-      "Một câu hỏi hắn không muốn nghe.",
-      "Bởi nó quá gần sự thật.",
+      "Drag trừng mắt nhìn nàng. Cũng chẳng bận tâm tới bàn tay ấy chạm vào vai mình từ lúc nào.",
+      "Một câu hỏi xoáy sâu tận tâm can mà hắn muôn đời không muốn nghe.",
+      "Bởi vì nọc độc của nó châm quá gần với sự thật tàn khốc mà hắn đang cố che giấu.",
       '" Ừ. "',
-      "Một tiếng cười ngắn thoát khỏi miệng.",
-      "Ngắn đến mức hắn chẳng nhận ra.",
-      "Bellia nghe.",
-      "Nhưng không nói gì.",
-      "Lần đầu tiên kể từ lúc tỉnh lại.",
-      "Drag cảm thấy cơ thể mình thôi căng cứng.",
-      "Chỉ một chút.",
-      "Hai người tiếp tục ngồi dưới gốc cây.",
-      "Ánh chạng vạng phủ xuống những luống hoa.",
-      "Bellia đứng dậy.",
+      "Một tiếng cười tự trào, ngắn ngủi và khô khốc bất giác thoát khỏi vòm miệng hắn.",
+      "Ngắn ngủi đến mức bản thân hắn chẳng kịp nhận ra mình vừa phát ra âm thanh ấy.",
+      "Bellia nghe thấy âm vang cay đắng đó.",
+      "Nhưng nàng tinh tế chọn cách câm lặng, không nói gì thêm.",
+      "Lần đầu tiên, kể từ cái lúc ngỡ ngàng tỉnh lại dưới gốc cây.",
+      "Drag cảm thấy cơ bắp trên cơ thể mình thôi không còn gồng lên căng cứng nữa.",
+      "Dù chỉ là một sự buông lỏng rất đỗi mỏng manh.",
+      "Hai thân xác bất đồng, một thần một phàm tiếp tục nương tựa ngồi bên nhau dưới gốc xơ xác.",
+      "Ánh chạng vạng cam vàng dần dần ôm lấy những luống hoa dại.",
+      "Bellia mệt mỏi chống tay đứng dậy.",
       '" Em sẽ lấy thêm dưa. "',
       '" Ta không thích dưa. "',
-      "Nàng nhìn chiếc vỏ nằm dưới đất.",
-      "Rồi chỉ vào nó.",
+      "Nàng nheo mắt nhìn chiếc vỏ xanh chỏng chơ nằm dưới đất lăn lóc.",
+      "Rồi lấy chân chỉ thẳng vào bằng chứng tội lỗi đó.",
       '" Anh nói dối tệ hơn em nghĩ. "',
-      "Bellia cười.",
-      "Rồi bước về căn nhà.",
+      "Bellia bật cười giòn tan.",
+      "Rồi lon ton quay bước về phía căn nhà gỗ lụp xụp.",
       '" Anh ăn miếng to hay nh...? "',
-      "Giọng nàng nhỏ dần.",
-      "Không phải vì Bellia ngừng nói.",
-      "Có thứ gì đó khác đang chen vào.",
-      "Một giọng nói.",
+      "Giọng nói lanh lảnh của nàng bỗng nhỏ dần rồi tắt nghẹn.",
+      "Không phải vì Bellia tự ý thức ngừng nói.",
+      "Mà do có thứ âm thanh quỷ dị gì đó khác đang mạnh mẽ bóp nghẹt, chen ngang vào thực tại.",
+      "Một giọng nói trầm tĩnh.",
       "Quen thuộc.",
-      "Trầm.",
-      "Ấm.",
-      "Cũng chính thứ âm thanh đã gọi hắn trong những ký ức không thuộc về hạ giới.",
-      "Bellia quay lại.",
+      "Cũng chính là thứ âm thanh văng vẳng đã réo gọi tên hắn trong những dòng ký ức chết chóc.",
+      "Không hề thuộc về cõi hạ giới này.",
+      "Bellia sững người quay ngoắt lại nhìn hắn.",
       '" Anh muốn miếng dưa to hay nhỏ? "',
-      "Hai giọng nói chồng lên nhau.",
-      '" Lucifer... "',
-      "Drag khựng lại.",
-      "Mọi sự thư giãn vừa xuất hiện lập tức chết đi.",
-      "Từ khi tỉnh dậy.",
-      "Hắn chưa từng trao cái tên ấy cho Bellia.",
-      "Chưa từng nhắc.",
-      "Chưa từng muốn nhắc.",
-      "Ánh mắt đổi khác.",
-      "Lạnh.",
-      "Sắc.",
-      "Sẵn sàng biến bất kỳ câu trả lời sai nào thành máu.",
-      "Bellia đứng trước căn nhà.",
-      "Nụ cười đã biến mất.",
+      "Hai âm sắc, hai giọng nói ma mị bất chợt đan xen.",
+      "Chồng chéo lên nhau đinh tai nhức óc.",
+      '" Lucifer? "',
+      "Drag khựng lại, toàn thân cứng đờ như hóa đá.",
+      "Mọi sự thư giãn mỏng manh vừa mới xuất hiện đã lập tức bị bóp cổ chết yểu.",
+      "Từ cái lúc choàng tỉnh dậy từ vũng máu.",
+      "Hắn chưa từng hé môi trao cái tên ô nhục ấy cho Bellia.",
+      "Chưa từng buông miệng nhắc tới.",
+      "Chẳng bao giờ có ý niệm muốn nhắc tới nó.",
+      "Ánh mắt đỏ rực của hắn lập tức đổi khác.",
+      "Lạnh lẽo.",
+      "Sắc lẹm tựa lưỡi dao.",
+      "Sẵn sàng bạo lực biến bất kỳ câu trả lời sai trái nào thành vũng máu tanh.",
+      "Bellia chôn chân đứng chết trân trước cửa căn nhà.",
+      "Nụ cười trong trẻo đã bốc hơi, biến mất hoàn toàn.",
       "Leng keng.",
-      "Một chiếc khuyên rơi xuống.",
-      "Máu bắt đầu chảy khỏi tai.",
-      "Nàng vẫn đưa miếng dưa lên cắn.",
-      "Tay còn lại lau dòng đỏ chạy xuống cổ.",
-      "Như thể chuyện ấy quá quen thuộc để đáng sợ.",
-      "Bellia nhìn ánh mắt hắn.",
+      "Máu tươi lại bắt đầu ồ ạt chảy ra từ trong hốc tai nhỏ bé ấy.",
+      "Nàng vẫn vô hồn đưa miếng dưa trên tay lên cắn.",
+      "Bàn tay còn lại nhẹ nhàng quệt ngang dòng máu đỏ đang trườn chạy xuống cổ.",
+      "Một hành động bình thản đến rợn gáy.",
+      "Như thể sự thống khổ này đã quá đỗi quen thuộc để có thể khiến nàng run sợ.",
+      "Bellia lo lắng nhìn sâu vào ánh mắt bạo tàn của hắn.",
       '" Hình như anh định giết em hả? "',
-      "Drag không trả lời.",
-      "Một cái tên bắt đầu trồi lên.",
-      "Không phải từ suy nghĩ.",
-      "Từ nơi sâu hơn.",
-      "Nơi những ký ức về The High Wills bị chôn dưới những lớp căm hận.",
+      "Drag câm nín, hàm răng nghiến chặt không trả lời.",
+      "Một cái tên cấm kỵ khác bắt đầu cựa quậy, trồi lên gặm nhấm tâm trí.",
+      "Không xuất phát từ suy nghĩ nhất thời.",
+      "Từ một hố sâu tăm tối hơn.",
+      "Nơi mà những mảnh ký ức về The High Wills đã bị hắn hèn mọn chôn sống dưới tầng tầng lớp lớp sự căm hận tột độ.",
       '" Bel... "',
-      "Bellia khựng lại.",
-      '" Sao? "',
+      "Bellia sững lại, đồng tử co giật liên hồi.",
+      '" Sao thế? "',
       '" ...vi. "',
-      "Nàng sững sờ trước cái tên thoát ra khỏi miệng hắn.",
-      "Giọng nói kia trở lại.",
-      "Không phải Bellia.",
-      "Không phải hắn.",
-      "Một khoảng trời trắng lóe qua đầu.",
-      "Ba bóng người đang quỳ.",
+      "Nàng sững sờ, hóa đá trước cái danh xưng vừa vô tình thoát ra khỏi miệng hắn.",
+      "Giọng nói trầm mặc kia lại một lần nữa dội về.",
+      "Hoàn toàn không phải là giọng của Bellia.",
+      "Cũng chẳng phải là thanh âm của hắn.",
+      "Một khoảng trời trắng toát, chói lóa lóe qua đập thẳng vào đầu óc.",
+      "Ba bóng người nhỏ bé đang dập đầu quỳ mọp xuống thần phục.",
       '" Bel\'vi. "',
-      "Drag siết bàn tay.",
-      "Ký ức ép sâu hơn vào đầu.",
+      "Drag điên cuồng siết chặt bàn tay thành nắm đấm.",
+      "Ký ức kinh hoàng ấy đang tàn nhẫn ép sâu, đóng đinh hơn nữa vào trong màng não.",
       '" Hãy giữ lấy... "',
-      "Những chiếc khuyên trên tai Bellia rung mạnh.",
+      "Những chiếc khuyên đeo trên tai Bellia bắt đầu rung lên từng hồi mạnh bạo, dữ dội hơn.",
       "Leng keng.",
       "Leng keng.",
       '" ...cái tai này. "',
-      "Hắn nhìn nàng.",
-      "Những cổ tự trên cánh tay.",
-      "Những chiếc vòng bạc.",
-      "Dòng máu bên tai.",
-      "Khả năng nghe được thứ không ai khác có thể nghe.",
-      "Những mảnh rời rạc bắt đầu ghép vào nhau.",
-      "Một danh xưng xuất hiện.",
-      "Cũ kỹ.",
-      "Và quen thuộc đến mức khiến hắn cắn chặt môi.",
+      "Hắn căm hờn trừng mắt nhìn nàng.",
+      "Từ những hàng cổ tự ngoằn ngoèo xăm trổ trên cánh tay.",
+      "Những chiếc vòng bạc lấp lánh trói buộc mang tai.",
+      "Dòng máu tàn nhẫn chảy ròng ròng bên má.",
+      "Khả năng nghe thấu được thứ âm thanh mà không một kẻ phàm trần nào khác có thể nghe lọt.",
+      "Những mảnh vỡ rời rạc, lộn xộn bắt đầu ăn khớp.",
+      "Bạo lực ghép chặt vào nhau.",
+      "Một danh xưng thần thánh, cấm kỵ oai vệ xuất hiện.",
+      "Cũ kỹ, mục nát.",
+      "Và quen thuộc đến mức khiến hắn cắn nát bầm tím đôi môi.",
       "The Ear of The Silent Sorrows.",
-      "Drag không nói nó ra.",
-      "Chưa.",
-      "Bởi ký ức của hắn đã từng phản bội hắn quá nhiều lần.",
-      "Hắn không biết mình vừa nhớ.",
-      "Hay Ngài đang muốn hắn nhớ tới.",
-      "Bellia nhìn hắn.",
+      "Drag nín thở, cự tuyệt việc nói toạc nó ra.",
+      "Hắn chưa sẵn sàng.",
+      "Bởi vì mớ ký ức hỗn mang của hắn đã từng tàn nhẫn phản bội hắn quá nhiều lần.",
+      "Hắn hoàn toàn không biết đây là sự thật mình vừa tự khơi gợi nhớ lại.",
+      "Hay do chính Ngài đang ở trên cao thao túng, muốn mớm cho hắn phải nhớ tới nó.",
+      "Bellia hoang mang nhìn hắn, sợ hãi.",
       '" Anh sao vậy? "',
-      "Drag không trả lời.",
-      "Chỉ nhìn những chiếc khuyên trên tai nàng.",
-      "Một lúc trước.",
-      "Nàng chỉ là một cô gái trồng dưa.",
-      "Một người có thể ngồi cạnh hắn mà không bắt hắn phải nói.",
-      "Một người hỏi hắn có cô đơn hay không.",
-      "Giờ đây.",
-      "Một cái tên khác đã nằm phía sau Bellia.",
+      "Drag không thốt lấy một lời đáp lại.",
+      "Đôi mắt đỏ ngầu chỉ găm chặt vào những chiếc khuyên tai rỉ máu của nàng.",
+      "Chỉ một lúc trước đây thôi.",
+      "Nàng trong mắt hắn chỉ là một cô gái thôn quê trồng dưa ngây ngô.",
+      "Một sinh vật duy nhất có thể thản nhiên ngồi tĩnh lặng cạnh hắn mà không gào thét ép buộc hắn phải mở miệng.",
+      "Một người duy nhất đủ can đảm dám hỏi hắn có cô đơn hay không.",
+      "Nhưng trớ trêu thay, giờ đây.",
+      "Một danh xưng cũ kỹ khác đã hiện hình phía sau cái bóng của Bellia.",
       "Bel'vi.",
-      "Giống như Krisanta từng nằm phía sau Kristin.",
-      "Drag ghét điều đó.",
-      "Không phải vì hắn sợ The Ear.",
-      "Mà bởi hắn bắt đầu hiểu.",
-      "Dường như bất kỳ người nào hắn muốn nhìn như một con người.",
-      "Số phận đều đã đặt tay lên họ từ trước.",
     ],
   },
   {
@@ -4134,593 +3023,412 @@ const artworks = [
     uiTheme: "white",
     story: [
       "Phía trên dãy Hoàng Hôn Vô Tận.",
-      "Bầu trời nổ tung.",
-      "Một cột sáng khổng lồ xuyên qua tầng mây.",
-      "Cắm thẳng xuống đỉnh núi.",
-      "Đá vỡ.",
-      "Những mảng lớn lăn khỏi triền vực.",
-      "Drag và Bellia cùng ngước nhìn.",
-      "Ánh sáng rực đến mức sắc chạng vạng quanh Hoàng Hôn Vô Tận bị đẩy dạt sang hai bên.",
-      "Một khoảng xanh vô tận mở ra giữa bầu trời.",
-      "Cả hai đứng bất động.",
-      "Không phải vì sự kỳ vĩ hãi hùng ngay trước mặt.",
-      "Mà bởi có những vẻ đẹp đến nhân loại không tài nào hiểu được.",
-      "Cho tới khi chúng tiến đủ gần để người ta nhận ra mình nên sợ.",
-      "Từ sau những tầng mây đó.",
-      "Một hình dạng khổng lồ dần xuất hiện.",
-      "Những bức tường trắng ngà.",
-      "Những phiến đá trôi lơ lửng giữa mây.",
-      "Những ngọn tháp cao đến mức phần đỉnh vẫn còn chìm trong ánh sáng.",
-      "Và ở chính giữa trung tâm công trình ấy.",
-      "Một chiếc chuông bằng vàng.",
-      "Khổng lồ đến mức những hoa văn trên bề mặt vẫn có thể nhìn thấy từ hàng chục dặm.",
-      "Một thành phố.",
-      "Không được xây trên mặt đất.",
-      "Mà đang từ từ hạ xuống từ bầu trời.",
-      "Bellia ngẩng lên.",
-      "Nụ cười thường trực trên khuôn mặt đã biến mất.",
-      "Nàng thì thầm.",
+      "bầu trời bạo liệt nổ tung khi một cột sáng khổng lồ xé toạc tầng mây đặc quánh rồi tàn nhẫn cắm thẳng xuống đỉnh núi kiêu ngạo.",
+      "Đá tảng vỡ vụn, từng mảng núi non đồ sộ ầm ầm lăn khỏi triền vực sâu thẳm.",
+      "Drag và Bellia gần như cùng lúc ngước nhìn lên cõi trời đang bị luồng sáng ấy xé nát.",
+      "Ánh sáng rực rỡ đến mức sắc chạng vạng quanh Hoàng Hôn Vô Tận cũng bị xua dạt sang hai bên, để lộ một khoảng không xanh thẳm đột ngột mở ra giữa bầu trời.",
+      "Cả hai chôn chân bất động. Không hẳn vì sự kỳ vĩ hãi hùng đang giáng xuống ngay trước mắt.",
+      "mà bởi trên đời dường như luôn tồn tại những vẻ đẹp vượt ngoài tầm hiểu biết của nhân loại.",
+      "Cho tới khi chúng tiến đủ gần, người ta mới bàng hoàng nhận ra mình nên bắt đầu run sợ.",
+      "Từ sau những tầng mây vỡ nát, một hình dạng khổng lồ dần hiển lộ.",
+      "Những bức tường trắng ngà sừng sững nối liền với hàng loạt phiến đá linh thiêng đang trôi lơ lửng giữa biển mây.",
+      "Những ngọn tháp vươn cao đến mức phần đỉnh vẫn còn chìm khuất trong cõi sáng, còn ở chính giữa công trình ấy là một chiếc chuông bằng vàng khổng lồ.",
+      "Nó lớn đến mức những hoa văn tinh xảo trên bề mặt vẫn có thể hằn rõ vào võng mạc từ khoảng cách hàng chục dặm.",
+      "Một thành phố thần thánh không được xây đắp trên nền đất phàm trần, mà đang uy nghi, chậm rãi hạ xuống từ bầu trời.",
+      "Bellia ngẩng mặt lên. Nụ cười ngây ngô thường trực trên khuôn mặt nàng đã hoàn toàn biến mất.",
       '" The City of Mercy Dreams. "',
-      "Drag nhìn nàng.",
-      "Hắn chưa từng nghe cái tên ấy.",
-      "Nhưng hắn biết thứ trước mắt.",
-      "Không phải thành phố.",
-      "Không phải những tòa tháp.",
-      "Không phải chiếc chuông.",
-      "Mà là cảm giác đang đè lên lồng ngực.",
-      "Một thứ hắn từng cảm nhận ở nhà thờ Mother of Mothers.",
-      "Một sự hiện diện cũ kỹ.",
-      "Thứ khiến cơ thể nhớ trước cả tâm trí.",
-      "Luồng sáng bắt đầu phai dần.",
-      "Vừa đủ để một hình dạng khác lộ ra.",
-      "Một bàn tay bằng vàng khổng lồ.",
-      "Nó thò xuống từ đáy thành phố.",
-      "Năm ngón tay chậm rãi bám lấy đỉnh Hoàng Hôn Vô Tận.",
-      "Như thể thiên đàng vừa đưa tay xuống.",
-      "Không phải để cứu lấy hạ giới.",
-      "Mà để giữ nó nằm yên.",
-      "Drag nhìn bàn tay.",
-      "Một ký ức vụt qua.",
-      "Màu trắng.",
-      "Những ngón tay vàng đặt lên trán hắn.",
+      "Drag quay sang nhìn nàng. Hắn chưa từng nghe tới cái danh xưng ấy, nhưng lại nhận ra một thứ khác đang lơ lửng trước mắt.",
+      "Không phải thành phố, những tòa tháp chọc trời hay chiếc chuông vàng kiêu ngạo.",
+      "Mà là một cảm giác áp bức đang chậm rãi đè nặng lên lồng ngực.",
+      "Một thứ u uất hắn từng nếm trải ở Mother of Mothers. Một sự hiện diện vô cùng cũ kỹ khiến cơ thể phải ghi nhớ trước cả khi tâm trí kịp gọi tên.",
+      "Luồng sáng thần thánh bắt đầu phai nhạt dần, vừa đủ để một hình dạng khác nằm bên dưới thành phố phơi bày.",
+      "Một bàn tay bằng vàng khổng lồ thò xuống từ đáy thành phố, năm ngón tay vô cơ chậm rãi bấu lấy đỉnh Hoàng Hôn Vô Tận.",
+      "Như thể thiên đàng vừa vươn tay xuống hạ giới. Không phải để cứu lấy nó, mà để giữ nó nằm yên vị.",
+      "Drag trân trân nhìn bàn tay ấy. Một khoảng trắng vụt qua, xé rách tâm trí hắn.",
+      "Những ngón tay vàng lạnh lẽo đặt lên trán.",
       '" The First Child of The Miracle. "',
-      "Hơi thở Drag nặng đi.",
-      "Bellia nhìn sang.",
+      "Hơi thở Drag trở nên nặng nề hơn. Bellia hoang mang nhìn sang.",
       '" Anh biết thứ đó à? "',
-      "Hắn không trả lời.",
-      "Bàn tay vàng siết lấy núi.",
+      "Hắn không trả lời. Bàn tay vàng trên đỉnh núi bỗng siết mạnh.",
       "KENG.",
-      "Hồi chuông đầu tiên vang lên.",
-      "Âm thanh ấy không chỉ truyền qua không khí.",
-      "Nó đi qua đất.",
-      "Qua đá.",
-      "Qua xương thịt.",
-      "Phủ khắp Cvstodia.",
-      "Bellia lập tức siết hai bàn tay.",
+      "Hồi chuông đầu tiên vang lên, nhưng âm thanh ấy không đơn thuần truyền qua không khí.",
+      "Nó xuyên qua lòng đất, len qua từng thớ đá rồi chạy thẳng vào xương thịt của mọi sinh linh còn đang thoi thóp tồn tại.",
+      "Toàn cõi Cvstodia dường như cùng lúc rung lên.",
+      "Bellia lập tức siết chặt hai bàn tay.",
       '" Không thể nào... "',
-      "Drag quay sang.",
-      "Nàng nhìn thành phố trên trời.",
+      "Drag quay phắt sang. Nàng đang nhìn thành phố trên trời bằng một ánh mắt mà hắn chưa từng thấy.",
       '" Sự Mầu Nhiệm Khổ Đau... "',
-      "Mặt đất rung chuyển.",
-      "Một đường nứt mở ra ngay trước chân họ.",
-      "Rồi đường thứ hai.",
-      "Thứ ba.",
-      "Chỉ trong vài nhịp.",
-      "Những vết nứt đen đã bò xuyên qua mặt đất như mạch máu của một sinh vật khổng lồ.",
-      "Từ sâu bên dưới.",
-      "Tiếng gầm vọng lên.",
-      "Không thuộc về người.",
-      "Cũng chẳng thuộc về thú.",
-      "Nó giống hàng trăm nghìn linh hồn ác tính cùng lúc cấu xé nhau khi cổng địa ngục được mở.",
-      "Những bàn tay đen thò khỏi khe nứt.",
-      "Móng vuốt bấu vào đất.",
-      "Cánh dơi bung ra.",
-      "Drag khựng lại.",
-      "Hắn đã thấy thứ này.",
-      "Ngoại ô Manlanier.",
-      "Con quái vật từng giữ mảnh áo của Kristin giữa hàm.",
-      "Nhưng lần này.",
-      "Không phải một.",
-      "Hàng trăm.",
-      "Hàng nghìn.",
-      "Darksiders tràn khỏi lòng đất.",
-      "Chúng phủ kín bầu trời.",
-      "Lao về những ngôi làng.",
-      "Những thành trì.",
-      "Những mái nhà còn chưa biết tận thế đã bắt đầu.",
-      "Không già.",
-      "Không trẻ.",
-      "Không binh lính.",
-      "Không dân thường.",
-      "Với chúng.",
-      "Tất cả đều chỉ là con mồi trong một cuộc săn vô tận.",
-      "Những chiếc khuyên trên tai Bellia bắt đầu rung.",
+      "Mặt đất dưới chân bạo liệt rung chuyển. Một đường nứt sâu hoắm há miệng ngay trước họ, rồi đường thứ hai và thứ ba nối tiếp nhau xé toạc lớp đất khô cằn.",
+      "Chỉ trong vài nhịp thở, những vết nứt đen ngòm đã bò xuyên qua mặt đất tựa như hệ mạch máu của một con quái vật khổng lồ.",
+      "Từ sâu bên dưới, một tiếng gầm vọng lên. Không thuộc về thanh quản loài người, cũng chẳng mang âm hưởng của dã thú.",
+      "Nó giống như hàng nghìn thanh quản bị nhốt chung trong một cái họng đang cùng lúc cấu xé lẫn nhau.",
+      "Những bàn tay đen kịt thò khỏi khe nứt, móng vuốt bấu chặt vào mặt đất trong khi từng đôi cánh dơi lần lượt bung mở.",
+      "Drag khựng lại. Hắn đã từng chạm trán thứ này ở ngoại ô Manlanier, nơi con quái vật từng để lại máu và những mảnh áo của Kristin trên cánh đồng.",
+      "Nhưng lần này không chỉ có một.",
+      "Hàng trăm rồi hàng nghìn Darksiders trào khỏi lòng đất.",
+      "Chúng dăng kín bầu trời và lao về những ngôi làng, thành trì cùng những mái nhà còn chưa kịp nhận ra tận thế đã bắt đầu.",
+      "Chúng chẳng phân biệt già trẻ, binh lính hay dân thường. Dưới những móng vuốt ấy, mọi sinh linh đều chỉ còn là những khối thịt đang chạy trốn.",
       "Leng keng.",
-      "Nàng chao đảo một lúc rồi khụy một bên gối.",
+      "Drag quay sang. Những chiếc khuyên bạc trên tai phải Bellia đang rung lên dữ dội.",
+      "Nàng chao đảo một nhịp rồi khuỵu hẳn một bên gối.",
       '" Bel? "',
-      "Một vết nứt mở ra ngay dưới chân nàng.",
-      "Bellia rơi xuống.",
-      "Một bàn tay đen từ sâu bên dưới chụp lấy cổ chân.",
-      "Drag lao tới trước khi kịp suy nghĩ.",
-      "Máu bung khỏi lòng bàn tay.",
-      "Kết thành lưỡi kiếm.",
-      "Một đường chém.",
-      "Cánh tay quái dị văng lên không trung.",
-      "Drag ôm lấy Bellia.",
-      "Đôi cánh đen tuyền được bung ra.",
-      "Cả hai rời khỏi mặt đất ngay trước khi vết nứt nuốt mất nơi họ vừa đứng.",
+      "Ngay dưới chân nàng, mặt đất bất thần vỡ toạc.",
+      "Bỗng một bàn tay quái dị bám lấy cổ chân nàng từ khe nứt.",
+      "Drag lao tới trước khi đầu óc kịp suy nghĩ.",
+      "Máu bật khỏi lòng bàn tay, đông đặc thành một lưỡi kiếm đỏ au rồi chém phăng xuống.",
+      "Phập.",
+      "Cánh tay quái vật đứt lìa. Drag ôm choàng lấy Bellia.",
+      "Cặp cánh màu tro ngay lập tức bung ra rồi kéo cả hai rời khỏi mặt đất ngay trước khi khe nứt nuốt trọn nơi họ vừa đứng.",
       "KENG.",
-      "Hồi chuông thứ hai.",
-      "Cơ thể Bellia giật mạnh.",
-      "Những chiếc khuyên đỏ rực.",
-      "Một chiếc bắt đầu biến dạng.",
-      "Kim loại chảy xuống vành tai.",
-      "Trộn cùng máu.",
+      "Hồi chuông thứ hai giáng xuống. Cơ thể Bellia giật mạnh trong tay hắn, những chiếc khuyên bạc trên tai phải đỏ rực rồi một chiếc bắt đầu cong vẹo.",
+      "Khối kim loại nóng chảy xuống vành tai cùng với máu.",
       '" Làm ơn... "',
-      "Nàng ôm đầu.",
+      "Nàng ôm chặt lấy đầu.",
       '" Xin hãy dừng lại. "',
-      "Drag giữ nàng chặt hơn.",
-      "Hắn không biết phải làm gì.",
-      "Một kẻ có thể tự mọc lại xương thịt.",
-      "Có thể dùng máu làm vũ khí.",
-      "Có thể sống sót sau khi đầu lìa khỏi cổ.",
-      "Vậy mà trước nỗi đau của người đang nằm trong tay.",
-      "Hắn chẳng biết phải sửa chữa thứ gì.",
-      "Ánh mắt Drag liên tục tìm kiếm phía dưới.",
-      "Hắn cần nơi an toàn hơn cho.",
-      "Một mái nhà.",
-      "Một ngọn núi.",
-      "Bất cứ thứ gì.",
-      "Nhưng Cvstodia lúc ấy không còn nơi nào thật sự an toàn.",
-      "Ở chân trời.",
-      "Mặt trăng bắt đầu nuốt những tia sáng cuối cùng của mặt trời.",
-      "Sắc đỏ tối phủ lên lục địa.",
-      "Sấm sét đỏ ngầu xâu xé tầng mây.",
-      "Bàn tay vàng siết đỉnh núi chặt hơn.",
-      "Đất đai vỡ ra.",
-      "Nham thạch trào lên từ những khe nứt.",
-      "Một thành phố phía xa biến mất trong biển lửa.",
-      "Bellia run trong tay hắn.",
+      "Drag nghiến răng siết nàng sát hơn vào người.",
+      '" Bel. "',
+      "Không có lời đáp. Chỉ có hàm răng nàng nghiến chặt và những dòng máu đỏ đang bò xuống cổ.",
+      "Hắn hoàn toàn không biết phải làm gì.",
+      "Một kẻ có thể mọc lại xương thịt, dùng huyết quản làm vũ khí và sống sót ngay cả khi đầu lìa khỏi cổ lại bất lực trước một thứ chẳng có hình dạng để chém.",
+      "Không có vết thương nào để khâu. Không có đoạn xương nào để nắn lại.",
+      "Drag đảo mắt xuống cõi đất hỗn loạn bên dưới, cố tìm một mái nhà, một ngọn núi hay bất kỳ thứ gì có thể giữ nàng an toàn.",
+      "Nhưng Cvstodia lúc ấy chẳng còn nơi nào mang dáng vẻ của một chốn an toàn.",
+      "Ở cuối chân trời, mặt trăng bắt đầu nuốt lấy những tia sáng cuối cùng của mặt trời.",
+      "Một sắc đỏ tối tăm dần phủ ụp xuống toàn lục địa.",
+      "Sấm sét đỏ ngầu xé ngang tầng mây, bàn tay vàng trên Hoàng Hôn Vô Tận siết mạnh hơn khiến đất đai nứt toác và nham thạch sôi sục trào khỏi những khe sâu.",
+      "Một thành trì phía xa chỉ trong vài nhịp đã biến mất dưới biển lửa.",
+      "Bellia run rẩy trong vòng tay hắn.",
       '" Họ... "',
-      "Nàng cố thở.",
+      "Nàng cố gắng gom góp từng hơi thở.",
       '" Họ đang bị thiêu cháy... "',
-      "Drag cúi nhìn.",
+      "Drag rũ mắt nhìn xuống.",
       '" Ai? "',
+      "Bellia không nhìn hắn.",
       '" Tất cả. "',
-      "Một chiếc khuyên khác nứt ra.",
-      "Bellia ôm tai.",
+      "Một chiếc khuyên khác vỡ vụn. Nàng vội vàng bịt chặt lấy tai phải trong khi những chiếc vòng còn lại rung mạnh đến mức xé rách cả vành tai.",
       '" Họ van xin... "',
-      "Những chiếc vòng còn lại rung dữ dội.",
+      "Leng keng. Leng keng.",
       "KENG.",
-      "Hồi chuông cuối cùng.",
-      "Bellia hét.",
-      '" Em không chịu nổi nữa! "',
-      "Máu trào khỏi cả hai tai.",
-      '" Càng nhiều... "',
-      '" Càng nhiều người... "',
-      '" Họ khóc... "',
-      '" Họ gào... "',
-      '" Họ... "',
-      "Nàng bỗng ngừng lại.",
-      "Đôi mắt mở lớn.",
-      "Như thể giữa vô số tiếng nói.",
-      "Nàng vừa nghe được một điều còn kinh khủng hơn mọi tiếng hét.",
+      "Hồi chuông cuối cùng giáng xuống và Bellia lập tức gào thét.",
+      '" EM KHÔNG CHỊU NỔI NỮA! "',
+      "Máu tươi trào khỏi tai phải nàng.",
+      '" Càng nhiều... Càng nhiều người... "',
+      '" Họ khóc... Họ gào... Họ... "',
+      "Nàng bỗng im bặt.",
+      "Hai mắt nâu mở lớn như thể giữa vô số thanh âm đang chen chúc bên trong The Ear, nàng vừa nghe được một sự thật còn đáng sợ hơn tất cả những tiếng hét.",
       '" HỌ KHÔNG THỂ CHẾT! "',
-      "Drag bất động.",
-      "Một Darksider lao qua trước mặt.",
-      "Dưới móng vuốt là một người đàn ông.",
-      "Phần thân dưới đã bị xé gần hết.",
-      "Nội tạng kéo dài giữa không trung.",
-      "Nhưng gã vẫn cử động.",
-      "Vẫn giãy.",
-      "Vẫn sống.",
-      "Ở phía dưới.",
-      "Một người khác mất nửa khuôn mặt.",
-      "Vẫn chạy.",
-      "Vẫn cầu cứu.",
-      "Một thân thể bị đá đè nát đầu.",
-      "Máu và những mảnh thịt tràn khỏi khe đá.",
-      "Những ngón tay vẫn bấu vào mặt đất.",
-      "Vẫn cố kéo thân thể ra.",
-      "Drag nhìn.",
-      "Hắn từng cho rằng bất tử là một điều chẳng đáng để nghĩ tới.",
-      "Bởi với hắn.",
-      "Cái chết chỉ là một khoảng ngắt ngắn trước khi cơ thể trở về.",
-      "Nhưng những kẻ phía dưới không giống hắn.",
-      "Họ không hồi phục.",
-      "Không được chữa lành.",
-      "Họ chỉ không được phép chết.",
-      "Và lần đầu tiên.",
-      "Drag nhìn thấy sự bất tử dưới hình hài mà nó thật sự có thể mang.",
-      "Một bản án tàn khốc.",
-      "Bellia khóc.",
-      "Hai hàng nước mắt hòa cùng máu bên tai.",
+      "Drag bất động giữa không trung.",
+      "Một Darksider lao ngang trước mặt hắn. Dưới móng vuốt của nó là một người đàn ông có nửa thân dưới gần như đã biến mất.",
+      "Nội tạng kéo dài giữa gió nhưng hai cánh tay gã vẫn đang quờ quạng tuyệt vọng.",
+      "Gã vẫn sống.",
+      "Phía dưới mặt đất, một kẻ khác đã mất gần nửa khuôn mặt vẫn cố lê người chạy trốn.",
+      "Một cơ thể bị đá đè nát đầu vẫn dùng những ngón tay bê bết máu cào lên lớp đất.",
+      "Không ai trong số họ được phép chết.",
+      "Drag kinh hoảng nhìn xuống. Suốt một quãng đời dài đến mức chính hắn cũng chẳng còn nhớ nổi, sự bất tử chưa từng là thứ đáng để bận tâm.",
+      "Với hắn, cái chết chỉ là một khoảng gián đoạn ngắn ngủi.",
+      "Một cánh tay mất đi sẽ mọc lại, một trái tim vỡ sẽ đập lại và ngay cả chiếc đầu lìa khỏi cổ rồi cũng sẽ trở về.",
+      "Nhưng những con người bên dưới không giống hắn.",
+      "Họ không lành lại, không tái sinh và cũng chẳng được giải thoát. Thân xác chỉ tiếp tục tồn tại cùng tất cả những gì đã bị nghiền nát.",
+      "Một thứ gì đó trong lồng ngực Drag khẽ co lại.",
+      "Có lẽ đây là lần đầu tiên hắn nhìn thấy hình hài của lời nguyền mà chính mình đã phải mang suốt cả đời.",
+      "Chỉ khác rằng thân xác của những phàm nhân kia không đủ nhân từ để tự vá lại.",
+      "Bellia bật khóc. Nước mắt hòa với máu đang chảy dọc bên gò má phải.",
       '" Họ cầu nguyện... "',
       "Giọng nàng vỡ vụn.",
-      '" Họ xin Người cho phép họ được từ trần. "',
-      '" Họ muốn được... "',
-      "Nàng siết chặt vai hắn.",
+      '" Họ muốn siêu thoát. "',
+      '" Họ cần... "',
+      "Bellia bấu chặt lấy vai hắn.",
       '" CHẾT! "',
-      "Một khoảng thời gian trước.",
-      "Có lẽ chính những con người ấy từng cầu xin được sống thêm một ngày.",
-      "Xin cho con mình khỏi bệnh.",
-      "Xin cho người mình yêu đừng chết.",
-      "Xin cho ngày mai còn được mở mắt.",
-      "Giờ đây.",
-      "Cũng những lời cầu nguyện ấy.",
-      "Nhưng chỉ quy về một mong muốn duy nhất.",
-      "Được chết.",
-      "Bellia không còn phát ra âm thanh.",
-      "Nàng cúi gằm.",
-      "Chiếc khuyên cuối cùng rơi khỏi tai.",
-      "Nó chưa kịp chạm xuống.",
-      "Đã tan thành một giọt bạc đỏ rực.",
-      "Drag nhìn nàng.",
-      "Một chuyển động nhỏ xuất hiện bên trong tai.",
-      "Một chiếc lưỡi mảnh thò ra.",
+      "Drag rũ mắt nhìn xuống cõi phàm hỗn loạn.",
+      "Có lẽ chỉ vài ngày trước thôi, chính những con người ấy vẫn còn quỳ mọp cầu xin được sống thêm một ngày, cầu cho đứa trẻ trong nhà khỏi bệnh, cầu cho người mình yêu đừng ngừng thở.",
+      "Nhưng giờ đây, cũng những lời cầu nguyện ấy lại đồng loạt quy về một khát vọng duy nhất.",
+      "-CÁI CHẾT-",
+      "Bellia cúi gằm đầu, dường như đã chẳng còn đủ sức phát ra âm thanh.",
+      "Chiếc khuyên cuối cùng bật khỏi tai phải rồi tan chảy thành một giọt bạc đỏ rực trước khi kịp rơi xuống.",
+      "Drag khựng lại.",
+      "Một chuyển động rất nhỏ xuất hiện sâu bên trong hốc tai phải đang rỉ máu của nàng.",
+      "Một chiếc lưỡi trắng mảnh khảnh chậm rãi thò ra.",
       '" Bellia? "',
-      "Da nàng trắng bệch.",
-      "Mỏng đi.",
-      "Nhăn lại.",
-      "Một con rắn trắng nhỏ bò khỏi tai.",
-      "Nó trườn xuống cổ.",
-      "Quấn quanh vai.",
-      "Rồi quanh lồng ngực.",
-      "Mỗi vòng.",
-      "Cơ thể nó lại lớn thêm.",
-      "Những cổ tự màu đen dần hiện trên lớp vảy.",
-      "Drag nhìn chúng.",
-      "Một danh xưng tự hiện lên trong đầu.",
-      '" The Whispers of Negated Pains. "',
-      "Bạch xà há rộng hàm.",
-      "Drag vừa đưa tay tới.",
-      "Nó đã nuốt trọn Bellia.",
-      '" BEL! "',
-      "Thân rắn phình lớn.",
-      "Trọng lượng kéo Drag xuống thấp.",
-      "Đôi cánh hắn đập mạnh.",
-      "Nhưng càng lúc càng khó giữ.",
-      "Phía dưới.",
-      "Một mặt hồ đỏ thẫm trải dài.",
+      "Chiếc lưỡi chẻ đôi khẽ quét qua vành tai đẫm máu. Ngay sau đó, một cái đầu rắn trắng nhỏ xíu bắt đầu len ra khỏi hốc tai nàng.",
+      "Cơ thể Bellia lập tức co giật.",
+      "Làn da vốn trắng nhợt bỗng trở nên khô khốc, những nếp nhăn chi chít xuất hiện rồi nhanh chóng lan xuống cổ.",
+      "Chỉ trong vài nhịp thở, da thịt nàng trông như đã già đi hàng chục năm.",
+      "Lớp da nhăn nheo ấy dần lỏng ra, bám hờ trên cơ thể như một chiếc vỏ xác đã không còn vừa với thứ đang tồn tại bên trong.",
+      "Con rắn trắng tiếp tục trườn khỏi tai phải.",
+      "Ban đầu nó chỉ nhỏ bằng một ngón tay, nhưng mỗi đoạn thân thoát ra lại khiến cơ thể nó dài hơn và lớp vảy trắng càng trở nên rõ rệt.",
+      "Nó bò xuống gò má Bellia, trườn quanh cổ rồi chậm rãi quấn một vòng qua bờ vai gầy guộc.",
+      "Drag bất động nhìn sinh vật ấy.",
+      "Bạch xà tiếp tục lớn lên.",
+      "Vòng thân thứ hai quấn quanh lồng ngực Bellia. Rồi vòng thứ ba ôm lấy phần eo.",
+      "Cơ thể nàng lúc này đã gần như bất động bên trong những vòng vảy trắng.",
+      "Lớp da khô nhăn vẫn tiếp tục co rúm, giống hệt một lớp xác cũ đang bị thứ bên trong chậm rãi vứt bỏ.",
+      '" Bel? "',
+      "Không một lời đáp lại.",
+      "Con rắn quấn chặt hơn.",
+      "Chiếc hàm của nó bắt đầu mở rộng đến một kích thước bất thường.",
+      "Drag vừa vươn tay tới thì cái đầu trắng đã lao xuống.",
+      "Nó nuốt lấy Bellia từ phía trên.",
+      "Không có máu.",
+      "Không có tiếng xương vỡ.",
+      "Thân xác nhỏ bé chỉ chậm rãi biến mất vào chiếc hàm đang mở rộng một cách phi lý.",
+      "Mái tóc nàng biến mất trước.",
+      "Rồi gương mặt.",
+      "Bờ vai.",
+      "Hai cánh tay.",
+      "Cho tới khi đôi chân cuối cùng cũng bị kéo khỏi tầm mắt.",
+      "Bạch xà đã nuốt trọn nàng.",
+      "Drag trân trân nhìn cái cổ rắn phình lên.",
+      "Một hình dạng giống cơ thể người chậm rãi trượt dọc bên trong lớp vảy trắng.",
+      "Càng trôi sâu xuống, bạch xà càng phình lớn.",
+      "Thân nó kéo dài hàng chục thước, những hàng cổ tự đen đặc bắt đầu hiện ra dọc từng lớp vảy.",
+      "Trọng lượng khổng lồ lập tức kéo cơ thể Drag chúi xuống.",
+      "Hắn bung đôi cánh đen, gồng sức giữ lấy cả hai.",
+      "Nhưng bạch xà bất thần quẫy mạnh.",
+      "Phía dưới là mặt hồ đỏ sẫm trải dài bất tận.",
       "Discrated Lake.",
-      "Drag không còn lựa chọn.",
+      "Drag nghiến răng, hai bàn tay bắt đầu trượt khỏi lớp vảy.",
       "Hắn buộc phải buông.",
       "Con rắn rơi xuống.",
-      "Nhưng ngay trước khi khoảng cách mở ra.",
-      "Nó quay phắt đầu.",
-      "Một chiếc nanh cắm xuyên qua cổ chân hắn.",
-      "Drag bị giật xuống.",
-      "Cả hai lao thẳng vào mặt hồ.",
+      "Nhưng ngay khi khoảng cách giữa hai cơ thể vừa mở ra, cái đầu trắng đột ngột quay phắt lại.",
+      "Một chiếc nanh dài cắm phập xuyên qua cổ chân hắn.",
+      "Drag chưa kịp vùng ra thì toàn bộ cơ thể đã bị lực kéo tàn bạo giật xuống.",
+      "Cả hai lao thẳng về phía mặt hồ.",
       "ẦM.",
-      "Màn đỏ khép lại phía trên.",
-      "Ánh sáng biến mất.",
-      "Cơn đau từ chiếc nanh lan khắp chân.",
-      "Nhưng Drag chẳng còn để tâm vào nỗi đau ấy.",
-      "Một thứ khác vừa đi vào đầu hắn.",
-      "Tiếng nói.",
-      "Hàng nghìn.",
-      "Hàng chục nghìn.",
-      "Không.",
-      "Nhiều đến mức con số không còn ý nghĩa.",
-      "Những tiếng Bellia đã nghe.",
-      "Những lời cầu nguyện.",
-      "Lời nguyền.",
-      "Tiếng khóc.",
-      "Những người đang cháy cầu xin ngọn lửa dừng lại.",
-      "Những người bị nghiền nát cầu xin cơ thể mình cuối cùng chịu chết.",
-      "Những người từng cầu được sống.",
-      "Giờ cầu xin được kết thúc.",
-      "Không một giọng nào bị bỏ lại.",
-      "Không một nỗi đau nào chịu im.",
-      "Tất cả cùng lúc tràn vào hắn.",
-      "Drag cuối cùng hiểu Bellia đã sống như thế nào.",
-      "Không phải nghe một người đau.",
-      "Mà nghe cả một thế giới.",
-      "Và không thể quay mặt đi.",
-      "Bạch xà quấn đuôi quanh người hắn.",
-      "Kéo xuống.",
-      "Sâu hơn.",
-      "Tối hơn.",
-      "Thanh kiếm bắt đầu hình thành trong lòng bàn tay.",
-      "Chỉ cần một nhát.",
-      "Chiếc đuôi sẽ đứt.",
-      "Hắn biết.",
-      "Cánh tay hắn cũng biết.",
-      "Nhưng nó không nhúc nhích. Không một thứ gì nhúc nhích.",
-      "Drag tiếp tục chìm xuống.",
-      "Dòng nước lạnh ôm lấy cơ thể.",
-      "Và kỳ lạ thay.",
-      "Hắn cảm thấy nhẹ.",
-      "Không cần chiến đấu.",
-      "Không cần đuổi theo bất kỳ ai.",
-      "Không cần nhớ Krisanta.",
-      "Không cần tìm Kristin.",
-      "Không cần giữ Bellia.",
-      "Không cần giữ chính mình.",
-      "Chỉ cần chìm sâu xuống.",
-      "Thế giới sẽ tự tiếp tục mà không có hắn.",
-      "Có lẽ.",
-      "Đó là điều hắn đã muốn từ rất lâu.",
-      "Chỉ là trước giờ chưa từng cho phép mình nghĩ tới.",
-      "Đôi mắt dần nhắm.",
-      "Thanh kiếm trong tay hắn bắt đầu mờ đi.",
+      "Màu đỏ đặc quánh khép lại phía trên đỉnh đầu. Ánh sáng lập tức bị nuốt sạch.",
+      "Ngay lúc chiếc nanh vẫn còn ghim trong cổ chân, một thứ hoàn toàn khác bắt đầu tràn vào đầu hắn.",
+      "Không phải nọc độc, cũng chẳng phải cơn tê liệt chạy trong huyết quản.",
+      "Chỉ có tiếng người.",
+      "Một giọng. Rồi mười, một trăm, hàng nghìn, cho tới khi những con số phàm tục hoàn toàn mất đi ý nghĩa.",
+      "Tất cả những gì The Ear phải nghe khi chẳng còn lớp bạc nào bảo vệ đồng loạt tràn vào tâm trí hắn qua chiếc nanh.",
+      "Lời nguyền rủa, lời cầu nguyện, tiếng trẻ nhỏ gọi mẹ, tiếng một người đàn ông cầu xin kẻ bên cạnh chặt đầu mình.",
+      "Tiếng ai đó đang bị thiêu sống. Tiếng một người mẹ ôm lấy đứa con chẳng còn nguyên vẹn nhưng vẫn không được phép ngừng thở.",
+      "Những sinh linh khao khát sống. Những sinh linh cầu tử.",
+      "Có kẻ chỉ trong cùng một hơi thở lại cầu xin cả hai.",
+      "Drag nghẹn lại. Đôi cánh mất nhịp, mặc cho bạch xà kéo cơ thể hắn chìm sâu hơn xuống đáy hồ.",
+      "Thanh kiếm bắt đầu kết tụ trong lòng bàn tay.",
+      "Chỉ cần một đường chém, chiếc đuôi đang quấn quanh người sẽ đứt lìa.",
+      "Hắn biết điều đó. Cánh tay hắn cũng biết.",
+      "Nhưng không một cơ bắp nào chịu chuyển động.",
+      "Drag mặc cho cơ thể tiếp tục chìm. Dòng nước lạnh lẽo ôm lấy làn da, trong khi vô số giọng nói vẫn không ngừng cào xé tâm trí.",
+      "Và kỳ lạ thay, giữa tất thảy sự hỗn loạn ấy, một cảm giác nhẹ nhõm bất chợt ôm lấy hắn.",
+      "Không cần phải tiếp tục chiến đấu. Không cần đuổi theo bất kỳ ai, không cần đi tìm Kristin hay cố giữ Bellia lại.",
+      "Không cần nhớ tới Krisanta. Không cần căm ghét cái tên Lucifer.",
+      "Thậm chí không cần phải giữ lấy Dragalon.",
+      "Chỉ cần buông xuống và để thân xác này chìm sâu hơn nữa.",
+      "Thế giới phía trên rồi sẽ tự tiếp tục xoay mà chẳng cần có hắn.",
+      "Có lẽ đó mới là thứ hắn đã khao khát từ rất lâu.",
+      "Không phải tự do.",
+      "Mà là một nơi không còn thứ gì ép hắn phải tồn tại.",
+      "Mí mắt Drag nặng dần. Thanh kiếm trong tay bắt đầu tan vào dòng nước.",
       "Hắn mệt.",
-      "Không phải cơn mệt của cơ bắp.",
-      "Xác thịt hắn chưa bao giờ thật sự được phép mệt.",
-      "Nó luôn mọc lại.",
-      "Luôn là như vậy.",
-      "Hắn mệt vì chính điều đó.",
-      "Mệt vì phải đứng dậy sau mỗi lần bị xé nát.",
-      "Mệt vì số phận luôn tìm được một cách mới để bắt hắn tồn tại.",
-      "Mệt vì vừa học cách giữ lấy một người.",
-      "Thì lại phải nhìn người ấy đưa kiếm về phía mình.",
-      "Mệt vì mọi cái tên hắn bắt đầu trân trọng dường như đều đã được viết sẵn từ trước.",
-      "Kristin.",
-      "Krisanta.",
-      "Bellia.",
-      "Bel'vi.",
-      "Lucifer.",
-      "Có lẽ hắn chưa từng sở hữu bất kỳ cái tên nào.",
-      "Có lẽ.",
-      "Hắn cũng chưa từng sở hữu chính mình.",
-      "Màu nước tối dần.",
-      "Những tiếng kêu vẫn gào trong đầu.",
-      "Rồi giữa tất cả.",
-      "Một giọng nói hiện ra.",
-      "Nhẹ.",
-      "Quen thuộc.",
+      "Không phải cơn mỏi mệt của cơ bắp, bởi thân xác bất tử này chưa từng được ban cho đặc quyền ấy.",
+      "Nó luôn tự mọc lại, luôn kéo hắn đứng dậy và luôn cưỡng ép hắn trở về sau mỗi lần bị xé nát.",
+      "Hắn mệt vì điều đó. Mệt vì số phận luôn tìm ra một cái tên khác để gọi hắn, một vai trò khác để nhét hắn vào.",
+      "Lucifer. Dragalon. The First Child. Apocalypse Warrior.",
+      "Mệt vì bản thân vừa mới học được cách giữ lấy một người thì ngay lập tức phải nhìn người ấy cầm gươm đứng ở phía đối diện.",
+      "Mệt vì những cái tên hắn bắt đầu trân trọng dường như đều đã được viết sẵn trước cả khi hắn kịp gặp họ.",
+      "Kristin. Krisanta. Bellia. Bel'vi.",
+      "Những danh xưng ấy trôi lẫn giữa dòng nước đỏ.",
+      "Có lẽ hắn chưa từng thật sự sở hữu một cái tên.",
+      "Có lẽ chính hắn cũng chưa từng được quyền sở hữu bản thân.",
+      "Drag nhắm mắt, mặc cho cơ thể tiếp tục chìm xuống.",
+      "Rồi giữa hàng vạn tiếng gào thét, một giọng nói ngây ngô chen chúc vào.",
+      "Không phải vì nó lớn hơn những giọng còn lại, mà bởi hắn nhận ra nó.",
       '" Nếu kẻ đó biến mất... "',
-      "Drag mở mắt.",
-      '" Liệu những nỗi đau của họ có tan biến? "',
+      "Đôi mắt đỏ mở bừng.",
+      '" Liệu những nỗi đau của mọi người có tan biến? "',
+      "Bellia.",
+      "Một buổi chiều khác dưới gốc cây cằn cỗi, khi nàng vẫn còn cầm miếng dưa hấu trên tay và những chiếc khuyên bạc vẫn đủ sức khiến thế giới trở nên nhỏ bé lại.",
+      "Rồi lời của chính hắn vọng về.",
+      '" Ta sẽ thử. "',
+      "Drag nhìn đăm đăm vào bóng tối đặc quánh.",
+      "Phải.",
+      "Hắn đã nói như vậy.",
+      "Một lời nói nhẹ tới mức dường như chỉ cần một cơn gió cũng đủ cuốn mất. Nhưng hắn đã nói.",
+      "Bàn tay lập tức siết lại. Thanh kiếm hiện ra lần nữa, ngọn hắc hỏa đen kịt bò dọc theo phần lưỡi.",
+      "Drag xoay người, đâm phập thanh kiếm xuống lớp vảy trắng.",
+      "Bạch xà quẫy mạnh, nhưng đó không phải một đòn kết liễu.",
+      "Hắn chỉ ghim lưỡi kiếm vào thân nó để giữ lấy chính mình.",
+      "Con vật lao vun vút dưới lòng hồ, dòng nước kéo thốc người hắn về sau.",
+      "Drag triệu hồi thêm một thanh kiếm rồi đâm xuống phía trước. Hắn rút thanh còn lại, vươn tay cắm tiếp lên cao hơn.",
+      "Hai lưỡi kiếm trở thành những chiếc móc, giúp hắn từng chút một bò dọc theo thân bạch xà.",
+      "Những tiếng khóc trong đầu ngày càng lớn, nhưng hắn không còn chống lại chúng nữa.",
+      "Bellia đã phải nghe những âm thanh này bao lâu? Từ khi còn bé, có lẽ còn trước cả lúc biết nói.",
+      "Nếu nàng có thể tồn tại với chúng suốt một quãng đời, hắn hoàn toàn có thể nghiến răng chịu đựng thêm một chút.",
+      "Một thanh kiếm rút lên rồi cắm xuống, thanh còn lại lập tức nối tiếp cho tới khi hắn bò được tới gần phần đầu.",
+      "Bạch xà quẫy dữ dội khiến Drag suýt bị cuốn khỏi lớp vảy.",
+      "Hắn giữ chặt một chuôi kiếm rồi áp bàn tay còn lại xuống thân rắn.",
+      "Một câu nói của Bellia bỗng hiện lên trong đầu.",
+      "Khi nàng chạm vào một sinh linh có linh hồn, mọi cảm xúc bên trong họ sẽ hiện lên rõ ràng hơn.",
+      "Drag chẳng biết chiều ngược lại có tồn tại hay không. Nhưng hắn đã chẳng còn cách nào khác.",
+      "Lòng bàn tay áp chặt xuống lớp vảy lạnh.",
+      "-Bellia-",
+      "Cái tên không thể thoát khỏi miệng giữa dòng nước.",
+      "Hắn chỉ có thể gào nó lên trong chính tâm trí mình.",
+      "-Ngươi nghe ta chứ?-",
+      "Những hàng cổ tự phía dưới lòng bàn tay bất thần chớp sáng.",
+      "Bạch xà tiếp tục quẫy nhưng Drag vẫn nghiến răng giữ chặt.",
+      "-Ta nghe thấy rồi-",
+      "Những thứ ngươi vẫn phải nghe.",
+      "-Ta nghe thấy tất-",
+      "Thân rắn bỗng chậm lại đôi chút.",
+      "Drag cúi sát người xuống, áp trán lên lớp vảy lạnh.",
+      "-Ta hiểu rồi-",
+      "Một khoảng lặng rất nhỏ xuất hiện.",
+      "Không phải những tiếng nói đã ngừng lại, mà bởi trong một nhịp ngắn ngủi, bạch xà thôi không còn quẫy đạp.",
+      "-Anh xin lỗi, Bel-",
+      "Con vật chậm lại.",
+      "-Anh không muốn em phải nghe những thứ này một mình-",
+      "-Anh biết em mệt-",
+      "Hắn nhắm mắt.",
+      "-Anh cũng mệt-",
+      "-Rất mệt-",
+      "Một lời thú nhận mà nếu vẫn còn ngồi dưới gốc cây kia, có lẽ hắn sẽ thà cắn đứt lưỡi còn hơn để nó thoát khỏi miệng.",
+      "Nhưng dưới đáy hồ, giữa tiếng khóc của cả một lục địa đang chen chúc trong đầu, sự kiêu ngạo bỗng trở thành một vật quá nhỏ bé để tiếp tục khư khư mang theo.",
+      "-Nhưng anh cần em-",
+      "-Anh cần em giúp anh-",
+      "Những hàng cổ tự trên lớp vảy bắt đầu sáng mạnh hơn.",
+      "-Và anh hứa-",
+      "Hắn khựng lại một nhịp.",
+      "Một lời hứa không phải để nguyền rủa thiên đàng, cũng chẳng nhằm đe dọa một kẻ thù.",
+      "Chỉ là một câu nói dành cho sinh linh đang ở ngay trước mặt.",
+      "-Anh sẽ thử-",
+      "-Những tiếng nói này, nỗi đau này... Anh không biết phải làm thế nào-",
+      "-Nhưng chắc chắn anh sẽ thử-",
+      "Bạch xà hoàn toàn ngừng quẫy.",
+      "Drag nhìn lớp vảy trắng trước mắt. Một cái tên cũ kỹ lướt qua tâm trí.",
+      "-Bel'vi-",
+      "Không còn là một danh xưng đơn thuần mà hắn vô tình moi ra từ những mảnh ký ức hỗn loạn.",
+      "Nó là thứ đã khiến Bellia chết lặng khi nghe hắn gọi lần đầu tiên.",
+      "Một cái tên mà nàng dường như đã chôn rất sâu bên dưới hình hài hắn quen thuộc.",
+      "Drag áp chặt bàn tay hơn như muốn chắc rằng nàng thật sự nghe thấy.",
+      "-Bel'vi-",
+      "Toàn bộ thân bạch xà bất thần khựng lại.",
+      "Những hàng cổ tự đồng loạt sáng rực dưới làn nước đỏ.",
+      "Rồi lớp vảy bên dưới bàn tay hắn bắt đầu chuyển động.",
+      "Không phải co rút.",
+      "Mà là tách khỏi phần thịt phía dưới.",
+      "Một đường nứt mảnh chạy dọc thân rắn.",
+      "Rồi thêm một đường khác.",
+      "Lớp da trắng khổng lồ bắt đầu nhăn lại, khô đi rồi bong khỏi cơ thể bên trong như một tấm vải mục.",
+      "Bạch xà đang lột xác.",
+      "Drag bám chặt lấy lớp vảy trong khi từng mảng da cũ cuộn lại, trôi lơ lửng giữa dòng nước.",
+      "Cái đầu rắn nứt dọc từ phần mõm.",
+      "Hai bên lớp vảy chậm rãi mở ra.",
+      "Một bàn tay người từ bên trong xuyên qua khe hở.",
+      "Những ngón tay mảnh khảnh bấu lấy lớp xác trắng rồi kéo mạnh sang một bên.",
+      "Bờ vai nhỏ bé chậm rãi hiện ra sau lớp da rắn đang bong tróc.",
+      "Rồi một khuôn mặt quen thuộc xuất hiện phía sau những mảng vảy trắng.",
       "Bellia.",
       "Không.",
       "Bel'vi.",
-      "Một câu hỏi nàng đã hỏi dưới gốc cây sồi.",
-      "Khi thế giới còn chưa sụp đổ.",
-      "Khi thứ đau đớn nhất giữa họ chỉ là vài chiếc khuyên trên tai.",
-      '" Anh sẽ thử mà đúng không? "',
-      "Drag nhìn bóng tối.",
-      "Lời của chính hắn trở lại.",
-      '" Ta sẽ thử. "',
-      "Bàn tay siết lại.",
-      "Thanh kiếm bùng lên.",
-      "Nhưng lần này.",
-      "Không còn màu đỏ.",
-      "Ngọn lửa đen phủ lấy lưỡi.",
-      "Hàng trăm bọt khí nổi lên.",
-      "Drag xoay người.",
-      "Đâm kiếm xuyên qua đuôi bạch xà.",
-      "Con vật gầm lên.",
-      "Lực siết quanh người hắn lỏng ra.",
-      "Những cổ tự trên thân đồng loạt sáng.",
-      "Drag không rút kiếm.",
-      "Hắn nắm chuôi.",
-      "Dùng chính lưỡi kiếm làm điểm tựa.",
-      "Con rắn lao nhanh dưới mặt hồ.",
-      "Dòng nước kéo cơ thể hắn về sau.",
-      "Drag triệu hồi thêm một thanh kiếm.",
-      "Đâm xuống lớp vảy.",
-      "Một tay.",
-      "Rồi tay còn lại.",
-      "Hai lưỡi kiếm như hai chiếc móc.",
-      "Hắn rút một thanh.",
-      "Đâm lên phía trước.",
-      "Rồi thanh còn lại.",
-      "Từng bước.",
-      "Từng chút.",
-      "Hắn bò dọc thân con vật.",
-      "Những tiếng khóc trong đầu ngày càng lớn.",
-      "Nhưng hắn không còn chống lại chúng.",
-      "Nếu Bellia đã phải nghe chúng suốt cả cuộc đời này.",
-      "Hắn có thể cầm cự thêm vài phút.",
-      "Một thanh kiếm rút lên.",
-      "Đâm xuống.",
-      "Rồi thanh kia.",
-      "Cho tới khi hắn tiến gần phần đầu.",
-      "Bạch xà quẫy dữ dội.",
-      "Những cổ tự chuyển đỏ.",
-      "Drag suýt bị cuốn trôi khỏi thân con vật.",
-      "Hắn giữ chặt một chuôi kiếm.",
-      "Bàn tay còn lại đặt lên những ký tự.",
-      "Một ý nghĩ chợt trở lại.",
-      "Bellia từng nói.",
-      "Khi nàng chạm vào một người.",
-      "Suy nghĩ của họ sẽ có hình hài hơn.",
-      "Drag không biết liệu ngược lại có đúng hay không.",
-      "Nhưng hắn chẳng còn cách nào khác.",
-      "Hắn buông một bên kiếm, bàn tay áp chặt lớp vảy lạnh.",
-      '" Bellia. "',
-      '" Ngươi nghe ta chứ? "',
-      "Những cổ tự nhấp nháy.",
-      "Drag siết tay.",
-      '" Ta nghe thấy rồi. "',
-      '" Những thứ ngươi đã nghe. "',
-      '" Những giọng nói ồn ào đó. "',
-      '" Ta nghe thấy tất. "',
-      "Bạch xà quẫy mạnh.",
-      "Hắn cúi sát người.",
-      '" Ta hiểu rồi. "',
-      "Một khoảng lặng rất nhỏ xuất hiện.",
-      "Chỉ một nhịp.",
-      "Giữa hàng nghìn tiếng hét.",
-      "Nhưng Drag cảm nhận được.",
-      "Nàng vẫn ở đó.",
-      "Hắn áp trán lên lớp vảy.",
-      "Không hiểu từ lúc nào.",
-      "Cách xưng hô trong đầu hắn đã thay đổi.",
-      '" Anh xin lỗi, Bel. "',
-      "Bạch xà chậm lại.",
-      '" Anh không muốn em phải nghe những thứ này. "',
-      '" Anh biết em mệt. "',
-      "Drag nhắm mắt.",
-      '" Anh cũng mệt. "',
-      '" Rất mệt. "',
-      "Một lời thú nhận mà hắn sẽ chẳng bao giờ nói nếu nàng đang đứng trước mặt.",
-      "Nhưng dưới đáy hồ.",
-      "Giữa muôn vàn thống khổ của cả Cvstodia.",
-      "Sự kiêu ngạo dường như chẳng còn đáng giữ.",
-      '" Nhưng anh cần em. "',
-      "Những ký tự sáng mạnh hơn.",
-      '" Anh cần em giúp sức. "',
-      "Drag giữ chặt thân rắn.",
-      '" Và anh hứa. "',
-      "Một lời hứa.",
-      "Lần đầu tiên hắn trao cho nàng.",
-      "Có lẽ cũng là lần đầu hắn thật sự trao một lời hứa cho chính hắn.",
-      '" Anh sẽ tìm cách làm chúng biến mất. "',
-      '" Những tiếng nói. "',
-      '" Nỗi đau. "',
-      '" Lời nguyền này. "',
-      '" Anh sẽ tìm cách giải thoát em khỏi nó. "',
-      "Toàn bộ cổ tự trên thân bạch xà sáng rực.",
-      "Drag gọi thêm một lần.",
-      "Không phải Bellia.",
-      "Cái tên mà chính The High Wills từng gọi nàng.",
-      "Nhưng lần này.",
-      "Nó không còn thuộc về chúng.",
-      '" Bel\'vi. "',
-      "Con bạch xà há miệng.",
-      "Sức lực Drag gần cạn.",
-      "Những ngón tay bắt đầu trượt khỏi chuôi.",
-      "Một.",
-      "Rồi hai.",
-      "Hắn sắp buông.",
-      "Bỗng một bàn tay chụp lấy cổ tay hắn.",
-      "Từ sâu bên trong hàm rắn.",
-      "Các cổ tự phát sáng dưới nước.",
-      "Da bạch xà nhăn lại.",
-      "Mỏng đi.",
-      "Từng lớp vảy bong ra.",
-      "Cuốn trôi qua người hắn như da chết.",
-      "Một bóng người chậm rãi xuất hiện từ bên trong.",
-      "Bel'vi.",
-      "Không còn những chiếc khuyên bạc.",
-      "Thay vào đó là hai bàn tay bằng bạc đang bọc lấy hai bên tai.",
-      "Ôm chặt lấy đầu nàng.",
-      "Như thể chính The Ear cuối cùng cũng học được cách bảo vệ người đã phải mang nó.",
-      "Bel'vi giữ cổ tay hắn.",
-      "Nàng kéo.",
-      "Drag không còn sức chống lại dòng nước.",
-      "Vậy nên lần này.",
-      "Hắn để người khác kéo mình lên.",
-      "Hai người xuyên khỏi mặt hồ.",
-      "Không khí tràn vào lồng ngực căng phồng.",
-      "Bờ Manlanier hiện ra phía xa.",
-      "Rồi mọi thứ trong mắt hắn tối sầm lại.",
-      "Khi ý thức trở về.",
-      "Hắn đang nằm trên bờ.",
-      "Bel'vi ngồi cạnh.",
-      "Nàng vẫn giữ bàn tay hắn.",
-      "Hắn giữ mí mắt nhắm lại.",
-      "Nhưng vẫn nghe giọng nàng.",
+      "Nàng chậm rãi thoát khỏi chính chiếc xác bạch xà khổng lồ.",
+      "Những mảng da trắng tiếp tục cuốn trôi về phía đáy hồ như một lớp vỏ của sinh vật đã hoàn thành nhiệm vụ cuối cùng.",
+      "Cơ thể bên dưới vẫn hoàn toàn mang hình hài con người.",
+      "Nhưng ở tai phải, những giọt bạc còn sót lại từ những chiếc khuyên cũ bắt đầu rung lên.",
+      "Chúng chậm rãi bò dọc theo vành tai như những giọt thủy ngân sống.",
+      "Từng mẩu bạc tụ lại, kéo dài rồi bẻ cong thành những đốt ngón tay nhỏ.",
+      "Một bàn tay bạc dần thành hình ngay bên ngoài tai phải.",
+      "Nó không mọc ra từ da thịt nàng.",
+      "Không hề thay thế bất kỳ bộ phận nào trên cơ thể.",
+      "Chỉ lơ lửng ôm sát quanh vành tai như muốn thay thế những chiếc khuyên mềm mỏng.",
+      "Năm ngón tay bạc khép nhẹ lại.",
+      "Che lấy The Ear.",
+      "Drag vẫn bám vào phần xác rắn đang tan rã.",
+      "Sức lực trong những ngón tay hắn đã gần cạn.",
+      "Một ngón bắt đầu trượt.",
+      "Rồi ngón thứ hai.",
+      "Ngay trước khi hắn hoàn toàn rơi khỏi lớp da rắn, bàn tay thật của Bel'vi bất thần chụp lấy cổ tay hắn.",
+      "Nàng kéo hắn lại.",
+      "Drag mở mắt nhìn nàng.",
+      "Không một âm thanh nào có thể tồn tại giữa hai người.",
+      "Nhưng ngay khi bàn tay nàng chạm vào da hắn, một giọng nói mềm mại bỗng hiện hữu trực tiếp trong tâm trí.",
+      "-Nếu anh không ghét cái tên ấy...-",
+      "Drag cạn kiệt sức lực.",
+      "Ánh mắt Bel'vi không hề rời khỏi hắn.",
+      "-Hãy gọi em như vậy-",
+      "Không phải lời nói.",
+      "Không một bọt khí nào thoát khỏi môi nàng.",
+      "Chỉ có ý niệm ấy được The Ear truyền thẳng qua nơi hai cơ thể đang chạm vào nhau.",
+      "Drag nhìn nàng thật lâu.",
+      "Hắn không nghĩ cái tên ấy đẹp hay xấu.",
+      "Cũng chẳng hiểu vì sao nàng lại sợ người khác gọi nó.",
+      "Nhưng có một điều hắn biết.",
+      "Đó là cái tên nàng vừa tự mình lựa chọn.",
+      "-Ừ anh nghe rồi-",
+      "Một ý nghĩ đáp lại trước khi hai mắt hắn dần lịm.",
+      "-Bel'vi-",
+      "Đôi mắt nàng khẽ mở lớn.",
+      "Rồi một nụ cười rất nhỏ hiện lên.",
+      "Bel'vi siết chặt cổ tay hắn rồi bắt đầu kéo lên.",
+      "Cơ thể hắn buông lỏng như chẳng còn sức chống lại dòng nước.",
+      "Và lần này, hắn cũng không cần phải chống lại.",
+      "Một niềm tin le lói dành cho Bel'vi. Hoặc cũng có thể là dành cho chính mình.",
+      "Hai thân ảnh xuyên thủng mặt hồ.",
+      "Không khí lạnh tràn vào lồng ngực căng phồng trong khi Manlanier tàn tạ hiện ra lờ mờ ở phía xa.",
+      "Khi ý thức lờ mờ trở lại, Drag nhận ra mình đang nằm trên bờ và Bel'vi vẫn ngồi ngay bên cạnh.",
+      "Tay nàng có lẽ vẫn giữ chặt lấy ngón tay hắn kể từ lúc ở dưới mặt hồ.",
+      "Bàn tay bạc của Dấu Chỉ vẫn lặng lẽ ôm lấy tai phải nàng như một món phụ kiện lạnh lẽo.",
+      "Hắn không mở mắt nhưng vẫn nghe rõ giọng nàng.",
       '" Em cảm ơn anh. "',
-      '" Vì đã cùng em lắng nghe sự hỗn loạn ấy. "',
-      "Một khoảng im lặng.",
-      "Bel'vi nhìn mặt hồ xa xăm.",
-      '" Nhưng em xin lỗi. "',
-      "Drag không cử động.",
-      '" Những người ngoài kia thật ồn ào. "',
-      '" Họ cứ khóc. "',
-      '" Họ cứ gào. "',
-      '" Rồi lại cầu nguyện. "',
-      '" Họ muốn được giải thoát. "',
-      "Bàn tay nàng siết nhẹ.",
-      '" Nhưng... "',
-      '" Khi anh chạm vào em. "',
-      '" Nỗi đau của anh khác lắm. "',
-      "Nàng nhìn hắn.",
-      '" Nó rất yên. "',
-      "Gió lướt qua Discrated Lake.",
-      '" Giống nơi này. "',
-      '" Sâu thẳm. "',
-      '" Tĩnh lặng. "',
-      "Bel'vi dừng một lúc.",
-      '" Em không biết ở bên dưới có gì. "',
-      "Nàng cúi xuống bàn tay đang giữ.",
-      '" Có lẽ em cũng không nên biết. "',
-      "Drag khẽ mở mắt.",
-      "Phía trên mặt hồ.",
-      "Vệt rách trên tầng mây vẫn còn.",
-      "Một đường đen giữa bầu trời đỏ.",
-      "Bel'vi cũng nhìn.",
-      "Nó giống thứ nàng vừa nghe thấy trong hắn.",
-      "Không phải tiếng hét.",
-      "Không phải lời nguyền.",
-      "Không phải sự cầu xin.",
-      "Một khoảng trống vô phương.",
-      "Một nơi rõ ràng từng chứa thứ gì đó.",
-      "Nhưng giờ chẳng còn gì ở lại.",
-      "Nàng vẫn giữ tay hắn.",
-      "Những tiếng nói của Cvstodia chưa biến mất.",
-      "The Ear vẫn nghe.",
-      "Nhưng lần đầu tiên sau rất lâu.",
-      "Bel'vi không còn cảm giác mình là người duy nhất phải lắng nghe.",
-      "Drag nhắm mắt trở lại.",
-      "Hắn không biết mình nằm như vậy bao lâu.",
-      "Có lẽ vài phút.",
-      "Có lẽ lâu hơn.",
-      "Khi mở mắt lần nữa.",
-      "Bel'vi vẫn còn ở đó.",
-      "Nàng chưa buông tay.",
-      "Những tia sáng cuối cùng của mặt trời đã biến mất.",
-      "Tro trắng rơi từ trời.",
-      "Từng hạt nhỏ.",
-      "Nhẹ như tuyết.",
-      "Một thứ khác lẫn vào chúng.",
-      "Trắng.",
-      "Mỏng.",
-      "Nó đung đưa trong cơn gió.",
-      "Rồi rơi vào lòng bàn tay hắn.",
-      "Hắn cầm lên rồi nhìn thật lâu.",
-      "Không phải tro.",
-      "Một cánh hoa cẩm chướng kèm vệt máu.",
-      "Một cảm giác bồi hồi bên ngực trái.",
-      "Một hình ảnh xuất hiện.",
-      "Kristin.",
-      "Những ngón tay Drag khép quanh cánh hoa.",
-      '" Cô ấy đang ở đây. "',
-      "Bel'vi nhìn hắn.",
+      "Một khoảng lặng yên ả trôi qua.",
+      '" Vì cùng em lắng nghe mọi thứ. "',
+      "Drag không cử động. Bel'vi chỉ im lặng nhìn ra mặt hồ đỏ thẫm.",
+      '" Những người ngoài kia thật ồn ào. Họ vẫn khóc, vẫn gào rồi lại cầu nguyện. "',
+      "Bàn tay nhỏ bé khẽ siết lại.",
+      '" Nhưng lúc anh chạm vào em... Anh khác họ. "',
+      "Drag khẽ nhíu mày.",
+      '" Khác thế nào? "',
+      "Bel'vi nghiêng đầu nhìn hắn.",
+      '" Yên lắm. Sâu... nhưng yên tĩnh. "',
+      "Cơn gió lạnh lướt qua Discrated Lake, làm mặt nước đỏ quạch gợn lên từng vòng nhỏ.",
+      "Nàng cúi xuống hai bàn tay vẫn đang nắm lấy nhau.",
+      '" Em không biết ở bên dưới đó có gì. Có lẽ em cũng không cần phải biết. "',
+      "Drag chậm rãi mở mắt.",
+      "Phía trên mặt hồ, vệt rách đen ngòm trên tầng mây vẫn còn kéo dài như một vết thương không thể khâu lại.",
+      "Hắn nhìn nó thật lâu.",
+      "Một khoảng trống rõ ràng từng chứa đựng thứ gì đó, nhưng giờ đây chẳng còn biết phải gọi phần đã biến mất ấy bằng cái tên nào.",
+      "Bel'vi vẫn ngồi bên cạnh. The Ear chưa hề ngừng nghe những tiếng nói của Cvstodia.",
+      "Những sinh linh ở gần vang rõ như gào ngay cạnh tai, còn những kẻ ở xa chỉ còn là những tiếng thì thầm bất tận.",
+      "Nhưng bàn tay nàng chưa từng buông hắn.",
+      "Drag lại nhắm mắt. Hắn chẳng biết bản thân đã nằm như vậy thêm bao lâu, có lẽ vài phút hoặc cũng có thể lâu hơn.",
+      "Khi đôi mắt mở ra lần nữa, Bel'vi vẫn còn ở đó.",
+      "Những tia sáng cuối cùng của mặt trời đã gần như biến mất.",
+      "Tro trắng từ trên trời bắt đầu rơi xuống, nhẹ nhàng tựa những hạt tuyết đầu mùa.",
+      "Giữa vô số hạt tro, một vật nhỏ màu trắng bất chợt chao liệng xuống.",
+      "Drag đưa tay ra đón lấy.",
+      "Một cánh hoa cẩm chướng trắng muốt nằm giữa lòng bàn tay, bên mép còn vương một vệt máu đã khô.",
+      "Các ngón tay hắn khẽ khép lại.",
+      "Bel'vi quay sang. Ánh mắt hắn vẫn xa xăm nhìn bầu trời.",
       '" Kristin. "',
-      "Nàng khẽ gật.",
+      "Nàng khẽ gật đầu.",
       '" Em biết. "',
-      "Hắn cau mày.",
+      "Hắn cau mày nhìn nàng.",
       '" Ngươi lại nghe ta? "',
-      "Bel'vi mỉm cười.",
-      '" Anh đã nói điều đó trước cả khi nó kịp rời khỏi miệng anh. "',
+      "Bel'vi bật cười.",
+      '" Nhiều khi anh cũng chẳng cần nói bằng miệng. "',
       "Drag nhìn nàng.",
-      "Lẽ ra hắn phải khó chịu.",
-      "Lần trước khi Bellia nghe thấy Kristin trong đầu.",
-      "Hắn đã sẵn sàng biến sự nghi ngờ thành bạo lực.",
-      "Lần này.",
-      "Hắn chỉ thở ra.",
-      "Có lẽ bởi hắn đã không còn đủ sức để giấu.",
-      "Hoặc có lẽ.",
-      "Sau khi cùng một người nghe tiếng đau của cả thế giới.",
-      "Một vài suy nghĩ riêng tư bỗng chẳng còn đáng sợ đến thế.",
-      "Gió lướt qua mặt hồ.",
-      "Bel'vi đứng dậy.",
-      "Nàng đưa tay xuống.",
+      "Lần trước khi Bellia vô tình để lộ rằng mình nghe được cái tên Kristin trong tâm trí hắn, bản năng đầu tiên của hắn là nghi ngờ rồi chuẩn bị biến sự nghi ngờ ấy thành bạo lực.",
+      "Lần này hắn chỉ thở ra.",
+      "Có lẽ hắn đã quá mệt để tiếp tục dựng thêm một bức tường khác.",
+      "Hoặc có lẽ, sau khi đã cùng một người nghe tiếng đau của cả thế giới, một vài suy nghĩ riêng tư bỗng chẳng còn đáng để che giấu tới vậy.",
+      "Bel'vi chống tay đứng dậy rồi chìa năm ngón tay mỏng manh trước mặt hắn.",
       '" Em sẽ đi cùng anh. "',
       "Drag ngước nhìn.",
       '" Vì sao? "',
-      "Bel'vi mỉm cười.",
-      '" Vì em muốn nghe cô ấy nói. "',
-      "Drag nhìn bàn tay ấy.",
-      "Một bàn tay từng run rẩy vì những giọng nói.",
-      "Một bàn tay vừa kéo hắn khỏi đáy hồ.",
-      "Và bất chợt.",
-      "Hắn nhớ tới một bàn tay khác.",
-      "Nhỏ hơn.",
-      "Từng nắm lấy tay hắn tới quán ăn Ditovias.",
-      "Khi ấy.",
-      "Hắn đã ở lại.",
-      "Bây giờ.",
-      "Lại có một bàn tay chìa ra trước mặt.",
-      "Nhưng lần này.",
-      "Không ai giữ hắn lại.",
-      "Không ai ép hắn phải đi.",
-      "Sự lựa chọn thuộc về hắn.",
-      "Drag đưa tay lên.",
+      "Nàng mỉm cười.",
+      '" Vì em cũng muốn nghe cô ấy nói. "',
+      "Drag nhìn bàn tay nhỏ bé ấy thật lâu.",
+      "Một bàn tay từng run rẩy tới mức chẳng thể tự cài nổi chiếc khuyên lên tai, nhưng cũng chính bàn tay đó vừa kéo hắn khỏi đáy hồ.",
+      "Rồi hắn bất chợt nhớ tới một bàn tay khác, nhỏ hơn, từng nắm lấy hắn giữa Manlanier rồi ngang ngược kéo hắn tới Ditovias.",
+      "Ngày ấy hắn chẳng hiểu vì sao mình lại đi theo nàng.",
+      "Có lẽ chỉ vì muốn trả lại bốn Chromee.",
+      "Một cái cớ ngu ngốc.",
+      "Bây giờ lại có thêm một bàn tay chìa ra trước mặt.",
+      "Nhưng lần này chẳng có ai kéo hắn đi, chẳng ai giữ hắn lại và cũng chẳng tồn tại lời tiên tri hay Dấu Chỉ nào ép hắn phải lựa chọn.",
+      "Không có một bàn tay từ trên trời hạ xuống chỉ cho hắn con đường cần bước.",
+      "Chỉ có hắn.",
+      "Drag chậm rãi đưa tay lên.",
       "Nắm lấy.",
       '" Ừ. "',
     ],
@@ -4738,1511 +3446,789 @@ const artworks = [
     background: "#000",
     uiTheme: "white",
     story: [
-      "Một cô gái chạy thật nhanh về phía dãy núi Endless Dusk.",
-      "Cô băng qua một khu rừng, nơi chẳng còn dáng vẻ ban đầu của nó.",
-      "Những thân cây cháy đen chen chúc dưới bầu trời đỏ.",
-      "Trên những cành khô khạnh ấy.",
-      "Chất chứa những con người.",
-      "Hoặc ít nhất là những gì còn sót lại của bọn họ.",
-      "Một người đàn ông bị treo ngang trên thân cây.",
-      "Phần bụng hầu như chẳng còn nguyên vẹn.",
-      "Những đoạn ruột dài cuốn trong gió như những tấm vải.",
-      "Ở một ngọn cây khác.",
-      "Một người phụ nữ bị đâm xuyên giữa ngực.",
-      "Những ngón tay tẻ máu vẫn cào lấy lớp vỏ.",
-      "Những nỗ lực vô nghĩa trước ân huệ trời ban.",
-      "Mầu Nhiệm đã giữ đúng lời hứa ấy.",
-      "Nó chỉ chưa bao giờ hứa rằng được sống sẽ là một đặc ân thần thánh.",
-      "Hai tiếng gầm vọng tới cô.",
-      "Bellia ngoái mặt lại.",
-      "Hai con Darksiders đang lao vụt qua những bụi gai.",
-      "Vừa chạy chúng vừa cào xé nhau.",
-      "Như thể ngay cả giữa ngày tận thế.",
-      "Chúng vẫn phải tranh xem kẻ nào được quyền giết một cô gái trước.",
+      "Một bóng người nhỏ bé trối chết tháo chạy về phía rặng núi Endless Dusk.",
+      "Cô điên cuồng băng qua một khu rừng già, nơi giờ đây chẳng còn vương lại chút dáng vẻ xanh tươi ban đầu của nó.",
+      "Những thân cây cháy đen chen chúc nhau dưới một vòm trời rực cháy.",
+      "Trên những cành khô khốc, sần sùi ấy lủng lẳng những con người.",
+      "Hoặc ít nhất là những gì còn sót lại để chứng minh bọn họ từng là con người.",
+      "Một người đàn ông bị xiên thấu, treo vắt ngang trên thân cây mục. Phần bụng gã bị xé toạc, hầu như chẳng còn nguyên vẹn.",
+      "Những đoạn ruột dài cuốn lơ lửng trong gió phàm trần như những tấm vải liệm rách nát.",
+      "Ở một ngọn cây khác, một người phụ nữ bị nhánh gai đâm xuyên giữa ngực. Những ngón tay tứa máu vẫn cố cào lấy lớp vỏ cây thô ráp.",
+      "Những nỗ lực giãy giụa vô nghĩa trước thứ ân huệ trời ban.",
+      "Mầu Nhiệm đã giữ đúng lời hứa về sự sống.",
+      "Nó chỉ chưa bao giờ hứa rằng việc không được chết sẽ là một đặc ân.",
+      "Hai tiếng gầm vọng tới mang tai cô.",
+      "Bellia hoảng hốt ngoái mặt lại. Hai con Darksiders đang lao vụt qua những bụi gai chằng chịt.",
+      "Vừa chạy, chúng vừa nhe nanh vuốt cào xé lẫn nhau.",
+      "Như thể ngay cả khi ngày tận thế đang giáng xuống, chúng vẫn phải tranh xem kẻ nào được chạm tới con mồi trước.",
       '" Phiền thật. "',
-      "Bellia nhảy lên một sợi rễ khổng lồ bám vào một vách đá.",
-      "Hai tay bấu vào lớp vỏ thô ráp.",
-      "Nàng trèo lên.",
-      "Một móng vuốt cắm kế bên bàn chân cô.",
+      "Bellia dậm chân, nhảy vọt lên một sợi rễ cây khổng lồ đang bám vào vách đá cheo leo. Hai tay trầy xước bấu chặt lấy lớp vỏ thô ráp.",
+      "Nàng nghiến răng trèo lên.",
+      "Một móng vuốt cắm phập xuống ngay kế bên bàn chân.",
       "Trượt.",
-      "Lần thứ hai.",
-      "Một bàn tay đen sì chụp lấy cổ chân nàng.",
+      "Lần thứ hai lao tới, một bàn tay đen sì đã chụp lấy cổ chân nàng.",
       '" Chết tiệt. "',
-      "Bellia mất thăng bằng.",
-      "Cả người treo lơ lửng bên mép rễ. Nàng lấy tay bám lấy sợi dây leo cạnh bên",
-      "Con quái vật ngẩng đầu.",
-      "Miệng nó há rộng.",
-      "Những chiếc răng dài chen chúc như một cái bẫy thú.",
-      "Bellia nhìn xuống.",
-      "Nàng dùng tay còn lại đặt lên tai.",
-      "Lớp bạc đang che lấy nó được tháo ra.",
-      "Kim loại lập tức mềm đi.",
-      "Chảy qua những ngón tay.",
-      "Kéo dài.",
-      "Cong lại.",
-      "Một con dao có lưỡi rắn.",
-      "Những cổ tự hiện lên trên lưỡi dao.",
+      "Bellia mất thăng bằng, chới với. Cả cơ thể treo lơ lửng bên mép rễ khổng lồ.",
+      "Nàng hoảng loạn dùng tay còn lại bám chặt lấy sợi dây leo cạnh bên.",
+      "Con Darksider ngẩng phắt đầu lên. Miệng nó há rộng.",
+      "Những chiếc răng nanh dài chen chúc nhau như một cái bẫy thú đang chực chờ khép lại.",
+      "Bellia rũ mắt nhìn xuống.",
+      "Nàng dứt khoát đặt bàn tay tự do lên vành tai phải đang rỉ máu.",
+      "Bàn tay bạc đang ôm lấy The Ear lập tức mềm đi.",
+      "Khối kim loại trượt khỏi vành tai phải, chảy qua những ngón tay gầy guộc rồi kéo dài ra.",
+      "Uốn cong.",
+      "Sắc lại.",
+      "Một con dao găm mang hình hài lưỡi rắn xuất hiện.",
+      "Những cổ tự màu đen hằn lên trên bề mặt lưỡi dao.",
       "The Whispers of Negated Pains.",
-      "Bellia siết lấy chuôi.",
+      "Bellia siết chặt lấy chuôi.",
       '" Bỏ tay mi ra. "',
-      "Nàng ném thẳng xuống.",
-      "Con dao cắm vào giữa trán sinh vật.",
-      "Bàn tay con quái thú lập tức buông.",
+      "Nàng vung tay ném thẳng xuống.",
+      "Con dao cắm phập vào giữa trán Darksider.",
+      "Bàn tay đang giữ cổ chân nàng lập tức co giật rồi buông lơi.",
       "Nhưng đó chỉ mới là bắt đầu.",
-      "Những dòng chữ màu đen bò khỏi lưỡi dao.",
-      "Trườn xuống khuôn mặt nó. Rồi bò khắp cơ thể.",
-      "Những khối thịt bên dưới da bắt đầu chuyển động.",
-      "Một tiếng hét thoát ra.",
-      "Rồi thêm một tiếng.",
+      "Những dòng cổ tự đen đặc bắt đầu bò khỏi lưỡi dao, trườn xuống khuôn mặt rồi lan dần khắp cơ thể sinh vật.",
+      "Những khối thịt bên dưới lớp da bắt đầu vặn vẹo.",
+      "Một tiếng gào thoát ra khỏi vòm họng nó.",
+      "Rồi thêm một tiếng nữa.",
       "Rồi hàng trăm.",
       "Hàng nghìn.",
-      "Những giọng nói không thuộc về con quái vật.",
-      "Chúng tràn khỏi từng vết nứt trên cơ thể nó.",
-      "Những thanh âm mà cô nghe thấy trước đây.",
-      "Con Darksider co giật.",
+      "Những giọng nói ấy không thuộc về con Darksider.",
+      "Chúng tràn khỏi từng vết nứt trên cơ thể nó, mang theo những thanh âm mà Bellia đã phải nghe suốt bấy lâu.",
+      "Con Darksider co giật liên hồi.",
       "BÙM.",
-      "Thân xác nó nổ tung.",
-      "Máu và thịt dính khắp bề mặt những sợi rễ.",
-      "The Whispers bật khỏi phần đầu đã vỡ.",
-      "Rơi xuống rồi tan chảy dưới mặt đất.",
-      "Nàng vừa ngẩng đầu.",
-      "Con thứ hai đã tới.",
-      "Bốn chi nó bấu vào thân cây.",
-      "Cơ thể kéo căng về sau. Nó bật mạnh lên",
+      "Thân xác nó nổ tung thành vô số mảnh. Máu đen và thịt văng khắp bề mặt những sợi rễ.",
+      "The Whispers bật khỏi phần đầu đã vỡ, rơi tự do xuống rồi tan thành bạc trên mặt đất.",
+      "Bellia vừa thở dốc ngẩng đầu lên thì con thứ hai đã ập tới.",
+      "Bốn chi nó bấu chặt vào thân cây, cơ thể kéo căng về sau như một chiếc cung.",
+      "Nó bật mạnh lên không trung.",
       "Bellia chỉ kịp mở lớn mắt.",
-      "Một đường đỏ mỏng lướt ngang.",
-      "Nhẹ tới mức gần như không tồn tại.",
-      "Con Darksider vẫn lao thêm vài bước.",
-      "Có lẽ chính nó cũng chưa hiểu chuyện gì vừa xảy ra.",
+      "Một đường kiếm đỏ au mỏng như sợi chỉ lướt ngang khoảng không.",
+      "Nhẹ đến mức gần như không tồn tại.",
+      "Con Darksider vẫn giữ nguyên quán tính, lao thêm một quãng. Có lẽ chính nó cũng chưa kịp hiểu chuyện gì vừa xảy ra.",
       "Rồi cơ thể tách làm hai.",
-
-      "Hai nửa rơi xuống.",
-
-      "Vẫn còn cử động.",
-
+      "Hai nửa rơi xuống vách đá.",
+      "Vẫn còn co giật.",
       '" Lần thứ hai rồi, Bel. "',
-
-      "Bellia quay lại.",
-
-      "Drag đang lơ lửng phía sau.",
-
-      "Thanh kiếm đỏ trong tay hắn tan dần thành máu.",
-
+      "Bellia quay ngoắt lại.",
+      "Drag đang trầm mặc lơ lửng phía sau nàng.",
+      "Thanh kiếm đỏ được đúc từ huyết mạch trong tay hắn từ từ tan ra thành những giọt máu.",
       "Bellia hằn hực nhìn hắn.",
-
       '" Kệ anh chứ, có mượn anh cứu em đâu? "',
-
       "Drag không đáp.",
-
-      "Hắn bay tới.",
-
-      "Một tay vòng qua người nàng.",
-
-      "Nhấc Bellia khỏi sợi rễ.",
-
-      "Hai má nàng phồng nhẹ.",
-
-      "Hai tay khoanh trước ngực.",
-
+      "Hắn sải cánh bay tới, vòng một tay qua người nàng rồi nhấc Bellia khỏi sợi rễ.",
+      "Hai má nàng phồng lên. Hai tay khoanh chéo trước ngực.",
       "Drag liếc nàng.",
-
       '" Ngươi rất vớ vẩn. "',
-
       "Bellia quay sang.",
-
       '" Hả? "',
-
       '" Ta chẳng thể tin nổi lại gặp một kẻ mè nheo như ngươi. "',
-
       '" Anh— "',
-
-      "Bellia chưa kịp nói hết.",
-
-      "Cả hai cùng im lặng.",
-
-      "Một thứ khổng lồ đang đứng sờ trước mặt họ.",
-
-      "Nó nối mặt đất với The City of Mercy Dreams.",
-
-      "Bàn tay vàng xuất hiện khi Mầu Nhiệm bắt đầu, đã không còn mang hình dạng của một bàn tay.",
-
-      "Năm ngón kéo dài xuống đất.",
-
-      "Trở thành những sợi rễ mà Bellia vừa bám lấy.",
-
-      "Lòng bàn tay phình ra thành một thân cây khổng lồ.",
-
-      "Xuyên thẳng lên đáy thành phố.",
-
+      "Bellia chưa kịp nói hết. Cả hai đã cùng lúc chìm vào im lặng.",
+      "Một thứ khổng lồ đang sừng sững ngay trước mặt họ.",
+      "Nó xuyên qua trời đất, nối mặt đất phàm trần với The City of Mercy Dreams.",
+      "Bàn tay vàng xuất hiện khi Mầu Nhiệm bắt đầu giờ đây đã không còn mang hình dạng của một bàn tay.",
+      "Năm ngón kéo dài xuống lòng đất, biến thành những sợi rễ mà Bellia vừa bám lấy.",
+      "Lòng bàn tay phình rộng thành một thân cây khổng lồ, xuyên thẳng lên phần đáy của thành phố lơ lửng.",
       "Drag ngước nhìn.",
-
-      "Nếu đem 20 tòa tháp ở Manlanier đặt cạnh nhau.",
-
-      "Có lẽ chúng vẫn chưa đủ che khuất thân cây ấy.",
-
-      "Bellia cũng nhìn lên.",
-
+      "Nếu đem 20 tòa tháp ở Manlanier xếp chồng cạnh nhau, có lẽ chúng vẫn chưa đủ để che khuất thân cây ấy.",
+      "Bellia cũng ngước lên.",
       '" Anh có nhớ cái cây mà tổ tiên loài người từng phạm sai lầm lớn nhất không? "',
-
       '" Cây nào? "',
-
-      "Bellia quay sang hắn.",
-
+      "Bellia quay sang nhìn hắn.",
       '" Anh không biết Adam và Eve từng mang trọng tội vì ăn trái cấm từ cái cây đó hả? "',
-
       '" Không. "',
-
       '" Anh nghiêm túc đấy à? "',
-
       "Drag cau mày.",
-
       '" Trông ta có vẻ đang đùa sao? "',
-
       "Bellia thở dài.",
-
       '" Người ta gọi nó là The Root of Sin. "',
-
       '" Tổ tiên của loài người đã ăn trái cấm từ nó. "',
-
       '" Hình phạt là cơ thể họ bị quấn vào những sợi rễ. "',
-
       '" Như một biểu tượng của đức tin. "',
-
       '" Một lời răn để con cháu mãi nhớ rằng loài người sinh ra đã mang trọng tội. "',
-
-      "Drag nhìn những chiếc rễ cắm xuyên qua núi.",
-
-      "Một cảm giác cũ kỹ hiện về trong tâm trí.",
-
+      "Drag rũ mắt nhìn những chiếc rễ cắm xuyên qua dãy núi đá.",
+      "Một cảm giác vô cùng cũ kỹ bất thần trở lại trong tâm trí hắn.",
       "Khó chịu.",
-
-      "Chúng không hẳn là ký ức.",
-
-      "Hắn thậm chí chẳng nhớ được gì.",
-
-      "Nhưng cơ thể hắn dường như biết thứ đó.",
-
-      "Một phản ứng quen thuộc.",
-
-      "Giống như khi hắn nhìn thấy bức tượng khổng lồ trong Mother of Mothers.",
-
-      "Giống như đứng trước một thứ hắn từng quỳ dưới chân.",
-
-      "Hoặc từng muốn phá hủy.",
-
-      "Bellia nói tiếp.",
-
+      "Bức bối.",
+      "Chúng không hẳn là ký ức. Hắn thậm chí chẳng nhớ nổi cụ thể mình từng nhìn thấy thứ gì.",
+      "Nhưng từng thớ cơ trên cơ thể lại dường như nhận ra nó.",
+      "Một phản ứng bài xích quen thuộc.",
+      "Giống hệt lúc hắn đứng trước bức tượng khổng lồ trong Mother of Mothers.",
+      "Giống như phải nhìn một thứ mà hắn từng quỳ dưới chân.",
+      "Hoặc từng muốn tự tay phá hủy.",
+      "Bellia chậm rãi nói tiếp.",
       '" Nhưng con người đã chặt nó xuống từ rất lâu rồi. "',
-
       '" Ngay tại chính dãy núi này. "',
-
       '" Họ chẳng cần thần linh nữa. "',
-
       '" Hay ít nhất họ từng nghĩ như vậy. "',
-
-      "Drag ngước nhìn thành phố trên trời.",
-
-      "Một cái cây đã chết.",
-
-      "Một biểu tượng đã bị phá bỏ.",
-
-      "Và giờ The High Wills dựng nó trở lại giữa ngày tận thế.",
-
+      "Drag ngước cặp mắt đỏ nhìn thành phố đang ngự trị trên trời cao.",
+      "Một cái cây đã chết từ lâu.",
+      "Một biểu tượng từng bị nhân loại phá bỏ.",
+      "Và giờ đây The High Wills lại dựng nó đứng dậy giữa ngày tận thế.",
       "Không cần Bellia giải thích thêm.",
-
-      "Hắn hiểu.",
-
-      "The Root of Sin không trở lại vì lòng thương xót.",
-
-      "Nó là một bí tích hữu hình.",
-
-      "Một lời răn.",
-
-      "Một sự lãng quên được khơi lại.",
-
+      "Ít nhất trong mắt Drag, ý nghĩa của nó đã quá rõ.",
+      "The Root of Sin không được dựng lại vì lòng thương xót.",
+      "Đối với hắn, nó giống một lời nhắc nhở được đóng thẳng xuống mặt đất.",
+      "Một lời răn đã từng bị nhân loại chặt bỏ.",
       "Drag khẽ nhếch môi.",
-
-      "Hai người chưa có thời gian để chiêm ngưỡng vẻ đẹp của thánh thần.",
-
+      "Hai người chưa kịp nhìn lâu hơn.",
       "Vút.",
-
-      "Tiếng gió xé tai lọt vào The Ear.",
-
+      "Một tiếng gió mỏng lọt thẳng vào The Ear.",
       "Bellia quay phắt lại.",
-
-      "Một thanh kiếm vàng lao thẳng từ trên cao.",
-
-      "Nàng lập tức đạp vào ngực Drag.",
-
+      "Một thanh kiếm vàng lao thẳng từ trên cao xuống.",
+      "Nàng lập tức đạp mạnh một cước vào ngực Drag.",
       "ẦM.",
-
-      "Hai người tách ra.",
-
-      "Thanh kiếm cắm xuyên thân rễ ngay vị trí Drag vừa đứng.",
-
+      "Hai cơ thể tách văng ra.",
+      "Thanh kiếm cắm xuyên vào thân rễ ngay tại nơi Drag vừa đứng.",
       "Những vết nứt chạy dài quanh lưỡi kiếm.",
-
       "Drag nhìn xuống.",
-
-      "Những bông hoa cẩm chướng trắng chớm nở.",
-
-      "Không cần nhìn người cầm nó.",
-
+      "Những bông cẩm chướng trắng bắt đầu chớm nở quanh phần kim loại cắm trong gỗ.",
+      "Không cần ngước nhìn người cầm nó.",
       "Hắn đã biết.",
-
       '" Kristin. "',
-
       "Bellia nghiêng đầu.",
-
       '" Thiệt hả? "',
-
-      "Một bóng trắng xuất hiện cạnh thanh kiếm.",
-
-      "Nhanh đến mức gần như chỉ vừa được đặt vào đó.",
-
+      "Một bóng trắng xuất hiện bên cạnh thanh kiếm.",
+      "Nhanh tới mức gần như chỉ vừa được đặt vào đó.",
       "Kristin.",
-
-      "Mười một chiếc cánh trắng khép sau lưng nàng.",
-
-      "Drag nhìn nàng.",
-
-      "Lâu hơn mức cần thiết.",
-
-      "Có lẽ hắn đang tìm một thứ.",
-
+      "Mười một chiếc cánh trắng khép hờ sau lưng nàng.",
+      "Drag nhìn nàng lâu hơn mức cần thiết cho một cuộc đối đầu.",
+      "Có lẽ hắn vẫn đang tìm kiếm một thứ.",
       "Một cái nhìn.",
-
       "Một chút do dự.",
-
-      "Bất cứ dấu hiệu nào chứng minh người đứng trước mặt vẫn là cô gái hắn từng quen biết.",
-
-      "Kristin không cho hắn thứ gì cả.",
-
-      "Nàng nắm chuôi kiếm.",
-
-      "Rút mạnh.",
-
-      "Một đường vàng quét ngang.",
-
-      "Drag lập tức kéo Bellia vào người trước khi thứ sắc lẹm đó chạm vào người cô bé.",
-
+      "Bất cứ dấu hiệu nào chứng minh người đang đứng trước mặt vẫn là cô gái phàm trần hắn từng quen.",
+      "Nhưng trên gương mặt Kristin chẳng có thứ gì hắn có thể nắm lấy.",
+      "Nàng siết chuôi kiếm vàng rồi rút mạnh khỏi thân gỗ.",
+      "Một đường gươm quét ngang.",
+      "Drag lập tức kéo Bellia vào lòng trước khi lưỡi kiếm kịp lướt qua người cô.",
       "Cả hai rơi khỏi sợi rễ.",
-
-      "Một tay hắn giữ nàng.",
-
-      "Tay kia kết ấn.",
-
+      "Một tay hắn giữ Bellia.",
+      "Tay kia kết ấn bằng máu.",
       "BÙM.",
-
-      "Một quả cầu máu lao qua vai Kristin.",
-
-      "Đập vào thân cây phía sau.",
-
-      "Gỗ và bụi bay khắp bề mặt.",
-
-      "Drag vừa bung cánh.",
-
-      "Một ánh vàng xuyên qua lớp bụi.",
-
+      "Một quả cầu huyết sắc lao sượt qua vai Kristin rồi đập vào thân cây phía sau.",
+      "Gỗ vụn và bụi nổ tung.",
+      "Drag vừa bung cánh thì một tia sáng vàng nhanh chóng xuyên khỏi màn bụi.",
       "Phập.",
-
       "Thanh kiếm cắm xuyên ngực hắn.",
-
       "Máu bắn lên gương mặt Kristin.",
-
       "Nàng xuất hiện ngay cạnh chuôi kiếm.",
-
       '" Hình như vẫn chưa trúng tim anh nhỉ? "',
-
       "Drag nhìn nàng.",
-
-      "Câu nói nhẹ tới mức gần như quen thuộc.",
-
-      "Chỉ tiếc rằng giữa hai người là hai chiến tuyến.",
-
-      "Hắn nhìn mắt trái của nàng.",
-
-      "Một bàn tay bạc.",
-
-      "Gần giống thứ Bellia mang trên tai.",
-
-      "The Eye bị che lại.",
-
-      "Kristin siết chuôi.",
-
-      "Hai chân đặt lên bụng hắn. Những chớm hoa dần lộ ra.",
-
-      "Mười một chiếc cánh bung mạnh.",
-
+      "Câu nói ấy nhẹ đến mức gần như quen thuộc.",
+      "Chỉ khác rằng giữa hai người giờ đây là hai lưỡi kiếm.",
+      "Ánh mắt hắn dừng lại ở mắt trái của nàng.",
+      "Một bàn tay bằng bạc ôm kín lấy con mắt ấy, năm ngón khép quanh hốc mắt như một món phụ kiện sống động.",
+      "Gần giống với bàn tay bạc đang ôm lấy tai phải của Bellia.",
+      "Không phải phong ấn.",
+      "Đó là hình dạng hoàn chỉnh mà Dấu Chỉ đã khoác lên The Eye.",
+      "Kristin siết chuôi kiếm.",
+      "Hai gót chân đặt lên bụng hắn.",
+      "Mười một chiếc cánh phía sau bung mạnh.",
       "ẦM.",
-
       "Drag bị hất văng về phía khu rừng.",
-
       "Một nhánh cây nhọn xuyên thẳng qua bụng.",
-
-      "Hắn nhìn sang bên. Có một kẻ cũng giống như hắn.",
-
+      "Hắn rũ mắt nhìn sang bên cạnh.",
+      "Có một người đàn ông cũng đang bị treo trên thân cây giống hệt hắn.",
       '" Ít ra ngươi là lần đầu. "',
-
-      "Drag bẻ gãy nhánh cây.",
-
-      "Kéo cơ thể khỏi nó.",
-
-      "Các thớ thịt lập tức bắt đầu khép lại.",
-
-      "Hắn chẳng buồn nhìn mà bay ra khỏi nơi đó.",
-
+      "Drag bẻ gãy nhánh cây rồi kéo cơ thể khỏi nó.",
+      "Các thớ thịt lập tức bắt đầu trườn vào nhau, khép lại vết thương.",
+      "Hắn chẳng buồn nhìn thêm mà vỗ cánh bay ra khỏi nơi đó.",
       "Ánh mắt đảo quanh.",
-
       "Kristin.",
-
       "Bellia.",
-
-      "Một điều hơi phiền phức.",
-
+      "Một tình thế hơi phiền phức.",
       "Hắn không chắc mình nên tìm ai trước.",
-
-      "Cuối cùng. Ở phía xa.",
-
-      "Drag thấy Bellia đang treo ngược trên một nhánh cây.",
-
-      "Hắn lao xuống.",
-
-      "Bắt lấy nàng.",
-
+      "Cuối cùng, ở phía xa.",
+      "Drag nhìn thấy Bellia đang treo ngược trên một nhánh cây khô.",
+      "Hắn lao xuống rồi bắt gọn lấy nàng.",
       "Bellia nhăn nhó.",
-
       '" Anh lâu thật đấy, em muốn tiền đình tới nơi rồi. "',
-
       "Drag thở dài.",
-
-      "Một chút bình thường ngu ngốc.",
-
-      "Giữa một ngày chẳng còn thứ gì bình thường.",
-
-      "Hắn đưa nàng trở lên.",
-
+      "Một chút cằn nhằn bình thường đến mức kỳ lạ giữa một ngày chẳng còn gì bình thường.",
+      "Hắn đưa nàng trở lại mặt đất.",
       '" Ngươi cần giữ khoảng cách với ta. "',
-
       '" Cô ấy chỉ tấn công ta thôi. "',
-
-      "Bellia nhìn về phía hắn.",
-
+      "Bellia nhìn hắn.",
       '" Thù hằn cá nhân hả? "',
-
-      "Drag không đáp.",
-
-      "Nếu là trước đây.",
-
-      "Có lẽ hắn đã bảo nàng ngậm miệng.",
-
-      "Lần này hắn chỉ nói.",
-
+      "Drag mím môi.",
+      "Nếu là trước đây, có lẽ hắn đã bảo nàng ngừng nói ngay lập tức.",
+      "Lần này giọng hắn chỉ trầm xuống.",
       '" Đừng làm hại cô ấy. "',
-
-      "Bellia quay sang.",
-
-      "Drag cố kiếm hình bóng ấy.",
-
+      "Bellia quay sang nhìn hắn.",
+      "Drag vẫn ráo riết tìm hình bóng quen thuộc giữa tầng mây.",
       '" Sẽ có cách thôi. "',
-
-      "Bellia im lặng.",
-
-      "Rồi lùi lại.",
-
+      "Bellia im lặng rồi khẽ lùi lại.",
       "Một âm thanh rất nhỏ lọt vào The Ear.",
-
       '" NÉ! "',
-
       "Thanh kiếm vàng lao tới như một ngọn giáo.",
-
-      "Drag triệu hồi thanh kiếm từ máu.",
-
+      "Drag triệu hồi thanh kiếm từ máu trong lòng bàn tay.",
       "Lưỡi đỏ hiện ra.",
-
-      "Hắn nâng lên trước ngực mình.",
-
-      "Ngay trước khi hai lưỡi kiếm chạm nhau.",
-
-      "Kristin xuất hiện.",
-
+      "Hắn nâng lên trước ngực thủ thế.",
+      "Ngay trước khi hai lưỡi kiếm chạm nhau, Kristin xuất hiện.",
       "Nàng xoay cổ tay.",
-
-      "Đường kiếm thay đổi.",
-
+      "Quỹ đạo lưỡi kiếm đổi hướng.",
       "Drag cũng xoay theo.",
-
       "KENG.",
-
       "Hai lưỡi kiếm nghiến vào nhau.",
-
       "Những tia đỏ vàng bắn khỏi điểm va chạm.",
-
-      "Khoảng cách giữa hai người gần đến mức Drag thấy rõ từng vệt máu khô trên mặt nàng.",
-
-      "Một khoảng cách từng có ý nghĩa hoàn toàn khác.",
-
+      "Khoảng cách giữa hai người gần tới mức Drag nhìn thấy rõ từng vệt máu khô trên mặt nàng.",
+      "Một khoảng cách đã từng mang một ý nghĩa hoàn toàn khác.",
       "Hắn ghì chặt thanh kiếm.",
-
       '" Ngươi thừa biết ta không thể chết. "',
-
       '" Nhưng sao ngươi vẫn cố giết ta? "',
-
-      "Nàng siết chuôi.",
-
+      "Kristin siết chuôi kiếm.",
       '" Nếu anh là lí do cho ngày tận thế. "',
-
       '" Thì chính tôi sẽ là người cần phải ngăn anh lại. "',
-
-      "Hắn nhìn nàng. Ánh mắt hắn dịu xuống như có luồng suy nghĩ vừa chạm vào tim hắn.",
-
-      "Có lẽ đến lúc này hắn mới hiểu. Nàng chưa từng đứng trước hắn vì muốn trở thành kẻ thù. nàng chỉ không thể quay lưng với những con người ở phía dưới.",
-
-      "Cũng như hắn chưa từng thật sự muốn chống lại nàng. Hắn chỉ đang cố kéo nàng ra khỏi thứ số phận đã trói buộc.",
-
-      "Hai bàn tay hắn thả lỏng.",
-
-      "Thanh kiếm vàng lập tức trượt qua thế đỡ.",
-
-      "Cứa vào cổ.",
-
-      "Máu chảy xuống.",
-
-      "Kristin khựng lại.",
-
-      "Mắt nàng mở lớn.",
-
-      '" Sao anh lại làm vậy? "',
-
-      '" Anh không thấy đau à? "',
-
       "Drag nhìn nàng.",
-
-      "Một câu hỏi có phần làm suy nghĩ vừa rồi trở nên vững vàng hơn.",
-
+      "Ánh mắt hắn chậm rãi dịu xuống.",
+      "Có lẽ mãi tới lúc này hắn mới hiểu được một điều rất đơn giản.",
+      "Kristin chưa từng đứng trước hắn vì muốn trở thành kẻ thù.",
+      "Nàng chỉ không thể quay lưng với những con người đang hấp hối phía dưới.",
+      "Cũng như hắn chưa từng thật sự muốn chống lại nàng.",
+      "Hắn chỉ muốn kéo nàng khỏi thứ ván cờ số phận mà hắn tin chính hắn và nàng cũng chỉ là quân tốt.",
+      "Hai bàn tay Drag chậm rãi thả lỏng.",
+      "Thanh kiếm vàng mất đi chướng ngại, trượt qua thế đỡ rồi cứa một đường sâu vào cổ hắn.",
+      "Máu tuôn xuống yết hầu.",
+      "Kristin khựng lại.",
+      "Đôi mắt nàng mở lớn.",
+      '" Sao anh lại làm vậy? "',
+      '" Anh không thấy đau à? "',
+      "Drag rũ mắt nhìn nàng.",
+      "Kỳ lạ thay, câu hỏi ấy lại khiến suy nghĩ vừa rồi trong hắn trở nên rõ ràng hơn.",
       '" Ngươi đâm xuyên người ta bao nhiêu lần rồi mà lại hỏi câu ấy? "',
-
       "Kristin im lặng.",
-
-      "Ánh mắt nàng lệch khỏi hắn.",
-
+      "Ánh mắt nàng ngập ngừng lệch khỏi khuôn mặt hắn.",
       "Chỉ trong một thoáng.",
-
       "Rồi nàng nói.",
-
       "Rất nhỏ.",
-
       '" Tôi chưa từng muốn Dragalon là Lucifer. "',
-
       "Thanh kiếm vẫn nằm trên cổ hắn.",
-
-      "Nhưng Drag quên nó.",
-
+      "Nhưng Drag gần như quên mất nó.",
       "Có những vết thương thật phiền phức.",
-
-      "Chúng chẳng cần xuyên qua da, qua thịt.",
-
+      "Chúng chẳng cần xuyên qua da hay thịt.",
       '" Cái gì? "',
-
-      "Kristin không nói gì thêm chỉ lặng lẽ né ánh mắt của hắn.",
-
-      "Lưỡi kiếm ấn sâu thêm.",
-
-      "Rồi rút ra.",
-
-      "Máu chảy xuống vai.",
-
-      "Drag vẫn đứng yên.",
-
-      "Vết thương không khép.",
-
+      "Kristin không nói thêm.",
+      "Nàng chỉ quay mặt tránh ánh mắt hắn rồi rút kiếm khỏi cổ.",
+      "Máu bắn thành tia xuống bờ vai Drag.",
+      "Hắn vẫn đứng yên.",
+      "Vết thương không khép lại ngay.",
       "Một giây.",
-
       "Rồi hai.",
-
-      "Như thể chính cơ thể hắn đang chống lại sự nguyền rủa chảy trong huyết mạch.",
-
-      "Cuối cùng.",
-
-      "Lời nguyền vẫn tiếp tục.",
-
-      "Thịt bò vào nhau.",
-
-      "Da khép lại.",
-
+      "Như thể chính cơ thể hắn cũng đang ngập ngừng trước lời nguyền chảy trong huyết mạch.",
+      "Cuối cùng những thớ thịt vẫn bắt đầu nối lại.",
+      "Da khép kín.",
       "Kristin ném thanh kiếm lên cao.",
-
-      "Nó cắm vào một nhánh lớn của The Root of Sin.",
-
-      "Nàng lập tức di chuyển lên đó.",
-
+      "Nó cắm vào một nhánh lớn của The Root of Sin. Nàng vỗ cánh, nhảy lên đó.",
       "Drag vẫn đứng phía dưới.",
-
-      "Một giọt nước rơi vào mặt hắn từ lúc nào.",
-
-      "Hắn biết đó là gì. Không phải mưa, cũng chẳng phải máu.",
-
-      "Những vệt máu dưới chân hắn bỗng rơi ngược vào không trung.",
-
-      "Chúng dừng lại.",
-
-      "Tụ vào nhau.",
-
-      "Một khối đỏ hình thành.",
-
-      "Rồi lớn dần.",
-
+      "Một giọt chất lỏng rơi xuống mặt hắn từ lúc nào.",
+      "Không phải mưa.",
+      "Cũng chẳng mang mùi máu.",
+      "Những vũng máu dưới chân hắn bắt đầu rơi ngược vào không trung.",
+      "Chúng lơ lửng.",
+      "Tụ lại.",
+      "Một khối huyết sắc dần thành hình rồi tiếp tục lớn lên.",
       "Bellia lùi lại.",
-
       '" Anh ổn không vậy? "',
-
-      "Hắn không trả lời.",
-
-      "Quả cầu tiếp tục phình lớn.",
-
+      "Drag không trả lời.",
+      "Quả cầu máu vẫn tiếp tục phình lớn.",
       "Lớn hơn bất kỳ thứ gì hắn từng tạo ra ở phàm giới.",
-
       '" Nãy anh nói sẽ không làm hại cô ấy mà. "',
-
       "Hắn vẫn im lặng.",
-
-      "Một khối máu đủ lớn để khiến bất cứ ai tin rằng hắn chuẩn bị phá hủy thứ gì đó.",
-
-      "Bellia bỗng im lặng.",
-
-      "Giữa hàng vạn thanh âm inh ỏi ngoài kia. Có hai chữ dường như câm lặng, hiện hữu trong The Ear.",
-
-      "Cô bé là người nghe rõ chúng nhất.",
-
+      "Nếu nhìn từ bên ngoài, chẳng ai có thể biết khối máu ấy rốt cuộc được tạo ra để làm gì.",
+      "Bellia bỗng im bặt.",
+      "Giữa hàng vạn thanh âm hỗn loạn ngoài kia, The Ear bắt được hai chữ gần như không hề phát ra thành tiếng.",
       "Tại sao?",
-
-      "Hai chữ ấy trông như giọt nước rơi xuống mặt hồ tĩnh lặng. Có lẽ như vậy cô cũng chẳng diễn tả được hình hài của nó.",
-
-      "Đôi cánh đen bung rộng.",
-
+      "Chúng đến từ Drag.",
+      "Đôi cánh đen sau lưng hắn bung rộng.",
       "Drag bay lên.",
-
-      "Giọng nói của Bellia vẫn còn ở phía sau hắn.",
-
-      "Hắn vẫn không dừng lại.",
-
-      "Có một thứ trong hắn vẫn không chịu biến mất.",
-
+      "Giọng Bellia vẫn còn vọng lại phía sau.",
+      "Hắn không dừng.",
+      "Có một thứ bên trong hắn vẫn không chịu biến mất.",
       "Không phải niềm tin rằng Kristin sai.",
-
-      "Hắn thậm chí chẳng biết ai là người đúng nữa.",
-
-      "Chỉ là một niềm tin rất ngu ngốc rằng.",
-
-      "Ở đâu đó phía sau The Eye.",
-
-      "Phía sau Krisanta.",
-
-      "Phía sau tất cả những thứ nàng đang cố trở thành.",
-
+      "Hắn thậm chí đã mệt tới mức chẳng còn muốn phân định ai đúng hay ai sai.",
+      "Chỉ là một niềm tin rất đỗi cố chấp rằng ở đâu đó phía sau The Eye, phía sau cái tên Krisanta và tất cả những điều nàng đang gồng mình mang lấy...",
       "Kristin vẫn còn ở đó.",
-
       "Drag siết chuôi kiếm.",
-
-      "Ngọn lửa đen bùng lên.",
-
+      "Ngọn hắc hỏa bùng lên.",
       "Hắn ném.",
-
       "Thanh kiếm lao thẳng về phía Kristin.",
-
       "Nàng không tránh.",
-
-      "The Eye cũng không sáng.",
-
-      "Lưỡi kiếm lướt qua vai nàng.",
-
-      "Cắm sâu vào The Root of Sin.",
-
+      "Bàn tay bạc vẫn ôm kín mắt trái.",
+      "The Eye không phát ra cảnh báo.",
+      "Bởi lưỡi kiếm không hướng tới nàng.",
+      "Nó lướt sát qua bờ vai rồi cắm sâu vào The Root of Sin.",
       "Kristin quay lại.",
-
-      "Có thứ gì đó vẫn nằm trên chuôi.",
-
+      "Có một thứ vẫn nắm chặt chuôi kiếm.",
       "Một bàn tay.",
-
-      "Vẫn siết chặt.",
-
-      "Các ngón tay gần như nứt ra.",
-
-      "Một đoạn xương bắt đầu mọc khỏi cổ tay.",
-
-      "Kristin lập tức rút kiếm.",
-
-      "Đâm vào phần xương đang hình thành.",
-
-      "Lưỡi vàng mắc giữa những đốt sống.",
-
-      "Các sợi cơ quấn lấy nó.",
-
-      "Một lồng ngực xuất hiện.",
-
+      "Các ngón tay gần như nứt ra vì dùng sức.",
+      "Một đoạn xương bắt đầu mọc khỏi cổ tay đứt lìa.",
+      "Kristin lập tức rút thanh kiếm vàng rồi đâm vào phần xương đang hình thành.",
+      "Lưỡi vàng mắc giữa những đốt xương.",
+      "Các sợi cơ đỏ hỏn mọc ra, quấn lấy nó.",
+      "Một lồng ngực dần thành hình.",
       "Không có hơi thở.",
-
-      "Chỉ có xương và phần thịt như bị thối rữa.",
-
-      "Và giữa tất cả những thứ ấy.",
-
-      "Một trái tim bằng vàng không ngừng lay động.",
-
+      "Chỉ có khung xương, cơ thịt và những mạch máu đang tiếp tục tự bồi đắp.",
+      "Giữa tất cả những thứ ấy, một trái tim bằng vàng không ngừng lay động.",
       "Kình kịch.",
-
-      "Kristin ngắm nhìn trái tim ấy. Có vẻ như có thứ gì khiến nàng khựng lại một khoảng.",
-
-      "Những mạch máu bám vào những mảnh xương rồi bò tới thanh kiếm bị mắc kẹt.",
-
-      "Từng thớ thịt của hắn bóp nghẽn lưỡi kiếm của nàng. Lưỡi kiếm bắt đầu nứt vỡ. ",
-
+      "Kristin nhìn nhịp đập ấy.",
+      "Động tác của nàng khựng lại trong một khoảng rất ngắn.",
+      "Những mạch máu của Drag tiếp tục bò qua các mảnh xương rồi quấn lấy thanh kiếm mắc kẹt.",
+      "Từng thớ thịt siết quanh lưỡi kim loại.",
+      "Răng rắc.",
+      "Thanh kiếm bắt đầu nứt.",
       "Kristin tiến tới.",
-
-      "Bàn tay nàng nhẹ nhàng đặt lên trái tim.",
-
-      "Ngay vị trí ấy.",
-
-      "Hắn nhớ một bàn tay khác. Ấm áp hơn.",
-
-      "Bàn tay mà từng mân mê nơi lồng ngực hắn tại nhà thờ Mother of Mothers.",
-
-      "Những bông cẩm chướng trắng mọc khỏi nơi mà nàng đang chạm.",
-
-      "Rễ hoa đâm xuyên qua các mạch vàng, len lõi vào khẽ tay nàng.",
-
-      "Những sợi máu quấn lấy từng cánh hoa.",
-
+      "Bàn tay nàng chậm rãi đặt lên trái tim vàng.",
+      "Ngay tại vị trí ấy.",
+      "Drag bất chợt nhớ tới hơi ấm của một bàn tay khác.",
+      "Bàn tay phàm trần từng ngập ngừng mân mê lồng ngực hắn trong Mother of Mothers.",
+      "Những bông cẩm chướng trắng lập tức mọc lên từ nơi nàng đang chạm.",
+      "Rễ hoa len qua những mạch máu vàng rồi vòng quanh từng kẽ tay.",
       "Trái tim co mạnh.",
-
-      "Dường như các cơ quan khác trên người hắn phục hồi chậm lại.",
-
-      "Mặt nàng sát gần mặt hắn.",
-
-      "Hắn vẫn nhìn nàng.",
-
-      "Chỉ một bên mặt hắn đã hoàn chỉnh.",
-
-      "Chỉ một con mắt.",
-
-      "Nhưng như vậy là đủ.",
-
-      "Đủ để nhìn thấy thứ gì đó trong mắt nàng.",
-
-      "Một sự hối tiếc hiện lên trong ánh nhìn ấy.",
-
-      "Rất nhỏ, rất nhẹ.",
-
-      "Nó lung lay, như chính nàng cũng chẳng muốn làm việc này.",
-
-      "Sự phục hồi ngưng hẳn.",
-
-      "Một cảm xúc khó chịu.",
-
-      "Có lẽ giữa hai người, có những khúc mắc chưa từng rơi khỏi vành môi.",
-
-      "Nhưng thời gian chưa từng cho phép bọn họ có thêm cơ hội để thực hiện điều ấy.",
-
-      "Một linh cảm trong nàng trỗi dậy.",
-
-      "Nàng nhớ một bên tay của hắn vẫn chưa tái tạo khi nàng chạm vào tim hắn.",
-
-      "Nàng nhìn xuống.",
-
-      "Cánh tay còn lại, những thớ cơ đang quấn lấy hai ngón tay đang chỉ xuống.",
-
+      "Dường như những phần còn lại trên cơ thể hắn đều phục hồi chậm đi để dồn tất cả vào lồng ngực.",
+      "Gương mặt Kristin ở rất gần.",
+      "Drag vẫn nhìn nàng.",
+      "Chỉ một nửa khuôn mặt hắn đã kịp hoàn chỉnh.",
+      "Chỉ một con mắt đỏ.",
+      "Nhưng như vậy đã đủ để hắn nhìn thấy một thoáng dao động rất nhỏ trong ánh mắt nàng.",
+      "Hắn không biết đó là gì.",
+      "Hối tiếc ư?",
+      "Do dự?",
+      "Hay chỉ là một điều hắn quá muốn nhìn thấy nên tự ép mình tin rằng nó tồn tại?",
+      "Quá trình tái tạo cơ thể của hắn đột ngột ngừng lại.",
+      "Có quá nhiều điều giữa hai người chưa từng được nói ra.",
+      "Và Drag bỗng nhận ra có lẽ bọn họ chưa bao giờ thật sự được trao đủ thời gian để nói hết chúng.",
+      "Ánh mắt Kristin chợt hạ xuống.",
+      "Một bên cánh tay của hắn vẫn chưa tái tạo.",
+      "Ở phía dưới, những thớ cơ đỏ đang quấn quanh hai ngón tay còn lại đang chỉ xuống mặt đất.",
       "BÙM.",
-
-      "Nhánh cây dưới chân bọn họ nổ tung.",
-
-      "Kristin bị mất thăng bằng.",
-
-      "Mười một chiếc cánh mở ra theo phản xạ vốn có của nó.",
-
-      "Drag hoàn chỉnh những phần còn thiếu trên cơ thể.",
-
-      "Hắn lao thẳng xuống về phía nàng.",
-
-      "Kristin xoay người lại chuẩn bị cho tình huống xấu nhất sẽ xảy ra.",
-
-      "Nhưng Dấu Chỉ nàng sở hữu không nói bất cứ thứ gì.",
-
-      "Thứ mà đáng lẽ sẽ nói cho cô biết tương lai của một hành vi bạo lực.",
-
-      "Nhưng hắn chỉ ôm lấy nàng.",
-
-      "Kristin cứng người.",
-
-      "Bàn tay bạc trên mắt trái tan chảy.",
-
-      "The Eye hiện ra trước mắt hắn.",
-
-      "Ánh vàng nhợt nhạt ấy.",
-
-      "Nàng vẫn chờ.",
-
-      "Nhưng không có gì phản ứng.",
-
-      "Chẳng có thanh kiếm nào xuất hiện.",
-
-      "Chẳng có ngón tay nào giơ lên.",
-
-      "Chỉ có một vòng tay ôm trọn lấy.",
-
-      "Và có lẽ ngay cả Dấu Chỉ cũng chẳng tìm thấy được dấu vết gì ở hành động ấy.",
-
-      "Không sát ý.",
-
-      "Không ý định làm tổn thương.",
-
-      "Chỉ là một cái ôm.",
-
-      "Giữa khoảnh khắc cả hai vẫn rơi xuống.",
-
-      "Hơi ấm từ cơ thể nàng mang dòng ký ức xuôi về tâm trí.",
-
-      "Vài nụ cười trên lưng hắn, vài dòng tâm sự mà hắn mang khắp hành lang nhà thờ.",
-
-      "Hắn nhớ tới hai bàn tay từng choàng qua cổ mình.",
-
-      "Nàng nhẹ tới mức hắn chỉ muốn bước chậm hơn vài nhịp.",
-
-      "Chỉ cho đoạn đường dài hơn.",
-
-      "Và dĩ nhiên.",
-
-      "Hắn chưa từng thừa nhận.",
-
-      "Giờ nghĩ lại.",
-
-      "Hắn có khá nhiều thứ chưa từng thừa nhận trước mặt nàng.",
-
-      "Một câu chuyện phiền phức.",
-
-      "Có lẽ hắn cũng chưa từng thừa nhận với chính bản thân mình.",
-
-      "Hắn mở mắt nhìn xuống.",
-
-      "Bellia há miệng nhìn hai người.",
-
-      "Một luồng suy nghĩ thoáng qua tâm trí hắn.",
-
-      "Không một lời nào được phát ra.",
-
-      "Hãy ném nó tới, Bel.",
-
-      "Bellia mở tròn mắt. Nàng nghe thấy suy nghĩ của hắn.",
-
+      "Nhánh rễ dưới chân họ nổ tung.",
+      "Kristin chao đảo.",
+      "Mười một chiếc cánh sau lưng lập tức bung mở.",
+      "Drag hoàn chỉnh những phần còn thiếu trên cơ thể rồi lao thẳng về phía nàng.",
+      "Kristin xoay người giữa không trung.",
+      "Bàn tay bạc vẫn ôm lấy mắt trái.",
+      "The Eye im lặng.",
+      "Không phải vì nó mất đi quyền năng.",
+      "Chỉ đơn giản là trong hành động đang lao tới kia không có bất kỳ sát ý nào hướng về nàng.",
+      "Drag không vung kiếm.",
+      "Hắn dang tay ôm chặt lấy Kristin.",
+      "Cơ thể nàng lập tức cứng lại.",
+      "Những ngón bạc vẫn khép quanh mắt trái.",
+      "Sau lớp bạc ấy, The Eye không phát sáng.",
+      "Không thanh kiếm.",
+      "Không đòn tấn công.",
+      "Chỉ có một vòng tay ôm lấy nàng.",
+      "Giữa khoảnh khắc cả hai cùng rơi xuống, hơi ấm thân thuộc từ cơ thể nàng kéo một dòng ký ức trở về tâm trí hắn.",
+      "Vài nụ cười từng tựa trên lưng hắn.",
+      "Vài cuộc trò chuyện hắn đã mang theo khắp những hành lang của Mother of Mothers.",
+      "Hai bàn tay từng choàng quanh cổ.",
+      "Khi ấy nàng nhẹ đến mức hắn đã từng muốn bước chậm lại thêm vài nhịp.",
+      "Chỉ để đoạn đường dài hơn một chút.",
+      "Dĩ nhiên hắn chưa từng thừa nhận điều ấy.",
+      "Có quá nhiều thứ hắn chưa từng thừa nhận.",
+      "Ngay cả với chính mình.",
+      "Drag mở mắt nhìn xuống.",
+      "Bellia đang đứng phía dưới.",
+      "Một ý nghĩ thoáng qua tâm trí hắn.",
+      "*Hãy ném nó tới, Bel.*",
+      "Bellia mở lớn mắt.",
+      "Nàng đã nghe thấy hắn.",
       '" Anh điên thật rồi, Lucifer! "',
-
-      "Bàn tay bằng bạc chảy từ tai nàng xuống.",
-
-      "The Whispers of Negated Pains hiện ra trong tay nàng.",
-
-      "Nàng ném nó thẳng vào Kristin.",
-
+      "Bàn tay bạc đang ôm tai phải nàng lập tức mềm ra.",
+      "Kim loại chảy xuống lòng bàn tay rồi biến thành The Whispers of Negated Pains.",
+      "Bellia vung tay ném nó về phía Kristin.",
       '" Em xin lỗi chị. Tại anh ấy.. "',
-
-      "Con dao găm lao vút về phía Kristin.",
-
-      "Các cổ tự trên lưỡi dao sáng rực.",
-
-      "Kristin quay mặt lại.",
-
-      "The Eye lập tức ánh lên.",
-
-      "Kristin giữ lấy vai Drag.",
-
-      "Xoay mạnh.",
-
-      "Đặt hắn vào giữa nàng và The Whispers.",
-
-      "Một lựa chọn hợp lý.",
-
-      "Nếu quỹ đạo không thay đổi.",
-
-      "Chính lưỡi dao sẽ cắm thẳng vào lưng hắn.",
-
+      "Con dao xé gió lao tới.",
+      "Những cổ tự trên lưỡi dao sáng lên.",
+      "Kristin quay lại.",
+      "Ánh vàng lập tức lóe lên qua những khe ngón bạc đang ôm mắt trái.",
+      "The Eye đã nhìn thấy nguy hiểm.",
+      "Kristin giữ chặt vai Drag rồi xoay mạnh.",
+      "Nàng đổi vị trí hai người, đặt cơ thể hắn vào giữa mình và The Whispers.",
+      "Nếu quỹ đạo không thay đổi, con dao sẽ cắm vào lưng Drag.",
       "Không phải nàng.",
-
-      "The Eye chưa từng sai.",
-
-      "Và hăn thừa biết sức mạnh của nó.",
-
-      "Và chính vì biết.",
-
-      "Hắn đã chờ nàng làm vậy.",
-
-      "Hai ngón tay hắn hướng xuống dưới.",
-
-      "Quả cầu máu khổng lồ vẫn còn đó.",
-
-      "Cơ thể đang ôm Kristin bắt đầu tan rã.",
-
+      "The Eye chưa hề sai.",
+      "Và chính vì biết điều đó, Drag đã chờ nàng làm vậy.",
+      "Hai ngón tay hắn từ từ hướng xuống dưới.",
+      "Quả cầu máu khổng lồ vẫn còn ở đó.",
+      "Cơ thể đang ôm Kristin bắt đầu rạn nứt.",
       "Hai cánh tay mềm dần.",
-
-      "Làn da trở thành những vệt máu.",
-
-      "Cả cơ thể hóa thành những vệt đỏ ôm chặt lấy Kristin.",
-
-      "Chúng giữ chặt mười một chiếc cánh.",
-
-      "Không cho nàng một cơ hội sử dụng.",
-
-      "Ở phía dưới.",
-
-      "Quả cầu máu co lại thành một quả tim.",
-
-      "Xương, máu và cơ lần lượt bao bọc lấy.",
-
-      "Cơ thể hắn lại hình thành ở nơi khác.",
-
-      "Chỉ là một điều mà mãi đến lúc này.",
-
-      "Nàng mới bắt đầu hiểu rõ.",
-
-      "Hắn không cần một bàn tay.",
-
-      "Không cần một cái đầu.",
-
-      "Chỉ cần một phần thuộc về cơ thể hắn thì sẽ vẫn là hắn.",
-
-      "Dù chỉ còn lại một hạt máu.",
-
-      "Một tiếng xuyên nhẹ tựa những chiếc lông vũ.",
-
-      "Con dao găm của Bellia cắm vào vai nàng.",
-
-      "Quá muộn để nàng có thể nhận ra.",
-
-      "Những dòng chữ cũ kĩ len lõi qua da nàng.",
-
-      "Như một luồng độc tố.",
-
-      "Ở phía dưới, Drag không suy nghĩ.",
-
-      "Hắn vội vàng bung cánh.",
-
-      "Chỉ cần bắt lấy nàng trước khi cơ thể ấy chạm đất.",
-
-      "Hai bàn tay hắn chưa kịp chạm bỗng nhiên dừng lại.",
-
-      "Một giọng nói ồn ã ở trên cao dội vào đầu hắn.",
-
+      "Làn da hóa thành những vệt máu.",
+      "Toàn bộ cơ thể Drag tan thành những dải đỏ rồi quấn chặt lấy Kristin.",
+      "Chúng giữ cứng mười một chiếc cánh trắng, không cho nàng đủ khoảng trống để sử dụng.",
+      "Ở phía dưới, quả cầu máu bắt đầu co lại thành một trái tim.",
+      "Xương, huyết quản và cơ thịt lần lượt bồi đắp quanh nó.",
+      "Một cơ thể khác của Drag hình thành ngay tại đó.",
+      "Hắn chưa từng cần phải mọc lại một bàn tay.",
+      "Cũng chẳng cần phải tái tạo từ một cái đầu.",
+      "Chỉ cần một phần cơ thể hắn còn tồn tại, hắn vẫn có thể trở về từ chính phần đó.",
+      "Dẫu chỉ còn một giọt máu.",
+      "Một tiếng xé thịt rất nhẹ vang lên.",
+      "The Whispers đã cắm vào bờ vai Kristin.",
+      "Những cổ tự bắt đầu bò khỏi lưỡi dao rồi lan qua da nàng.",
+      "Drag lập tức bung cánh lao lên.",
+      "Hắn chỉ muốn bắt lấy nàng trước khi cơ thể ấy chạm đất.",
+      "Hai bàn tay vừa vươn ra bỗng khựng cứng.",
+      "Một giọng nói vọng xuống từ trên cao.",
       '" Lucifer. "',
-
       '" Hãy xé đôi cánh đó! "',
-
-      "Hai cánh tay không làm chủ nhấc ra sau người hắn.",
-
-      "Hắn nhìn xung quanh, chẳng có thứ gì đang nâng hai cánh tay ấy.",
-
-      "Những ngón tay tự chụp lấy bã vai của mình.",
-
-      "Hắn cố buông nhưng không thể.",
-
-      "Một cảm giác ghê tởm chạy dọc cơ thể.",
-
-      "Lần đầu tiên.",
-
-      "Ngay cả thân xác hắn cũng thuộc về một kẻ khác.",
-
+      "Hai cánh tay Drag lập tức mất quyền kiểm soát.",
+      "Chúng tự quặt ra sau lưng.",
+      "Những ngón tay chụp lấy phần gốc của đôi cánh.",
+      "Hắn cố buông ra.",
+      "Không thể.",
+      "Lần đầu tiên, ngay cả thân xác này cũng không còn hoàn toàn thuộc về hắn.",
+      "Ở trên đỉnh tháp chuông, bóng người đang ngồi đó cũng khẽ giật mạnh hai cánh tay ra sau theo cùng một chuyển động.",
+      "Nhưng Drag chẳng còn đủ tâm trí để nhìn rõ hơn.",
       '" Không— "',
-
       "RẮC.",
-
-      "Hai tay giật mạnh.",
-
-      "Đôi cánh đen bị xé toạt khỏi lưng và chính hắn tự làm điều đó.",
-
-      "Máu bắn tung tóe.",
-
-      "Lông vũ đen rơi rớt khắp bầu trời.",
-
-      "Cơn đau chạy khắp người hắn.",
-
-      "Nhưng chẳng ở lại quá lâu.",
-
+      "Hai tay hắn giật mạnh.",
+      "Đôi cánh đen bị xé toạc khỏi lưng.",
+      "Máu từ gốc cánh phun ra.",
+      "Lông vũ đen rơi rợp khắp bầu trời.",
+      "Cơn đau chạy dọc người hắn.",
+      "Nhưng nó nhanh chóng trở thành thứ yếu.",
       "Kristin vẫn đang rơi.",
-
-      "Và chính hắn cũng vậy.",
-
-      "Drag ngẩng cao lên trời.",
-
+      "Và cơ thể không còn cánh của hắn cũng vậy.",
+      "Drag ngẩng lên.",
       "Ba Dấu Chỉ.",
-
       "Một kẻ nhìn.",
-
       "Một kẻ nghe.",
-
-      "chỉ còn lại một kẻ cuối cùng.",
-
+      "Và kẻ cuối cùng.",
       "The Mouth of The Speechless Sorrows.",
-
       "Michael.",
-
-      "Hắn đang ở đây.",
-
-      "Nhưng Drag không còn quan tâm hắn ở đâu.",
-
-      "Ánh mắt chỉ còn theo một người.",
-
+      "Kẻ mang The Mouth đang ở đây.",
+      "Nhưng Drag chẳng còn quan tâm gã đang đứng ở đâu.",
+      "Ánh mắt hắn chỉ còn bám theo một người.",
       "Kristin.",
-
-      "Cơ thể nàng đang rơi.",
-
-      "Và lần này.",
-
-      "Hắn không còn gì để đỡ lấy nàng.",
-
-      "Bellia nhảy tới.",
-
-      "Ôm lấy Kristin giữa không trung.",
-
-      "Hai người đáp xuống một nhánh rễ thấp hơn.",
-
+      "Nàng đang rơi.",
+      "Và lần này hắn không còn cánh để lao tới.",
+      "Từ một vách rễ bên dưới, Bellia nhảy vọt lên.",
+      "Nàng bắt lấy Kristin giữa không trung.",
+      "Hai người đập xuống một nhánh rễ thấp hơn.",
       "Hai chân Bellia trượt dài trên lớp vỏ.",
-
-      "Drag nhìn họ.",
-
-      "Chỉ khi nàng an toàn.",
-
-      "Hắn mới nhận ra cổ họng mình vừa ngưng lại.",
-
-      "Bellia rút con dao ra khỏi vai Kristin rồi dùng tay chạm vào vết thương.",
-
-      "Những dòng chữ mờ dần.",
-
-      "Hai mày nàng cau lại.",
-
-      "Bellia nói.",
-
+      "Drag rơi xuống một gờ đá.",
+      "Chỉ khi nhìn thấy Kristin tạm thời được giữ lại, hắn mới nhận ra mình đã nín thở từ lúc nào.",
+      "Bellia rút The Whispers khỏi vai Kristin rồi đặt tay lên vết thương.",
+      "Những cổ tự trên da lập tức mờ dần.",
+      "Bellia cau mày.",
       '" Chị có sao không? Em xin lỗi, ảnh bắt em làm thế... "',
-
-      "Kristin khẽ mở mắt nhìn Bellia.",
-
-      "Những dòng chữ vẫn chạy quanh người nàng.",
-
-      "Như thể hàng nghìn thứ gì đó đang gào thét ngay bên trong tâm trí.",
-
-      "Nàng siết chặt tay của cô bé.",
-
+      "Kristin mở mắt nhìn nàng.",
+      "Những cổ tự vẫn còn chạy mờ dưới da.",
+      "Nàng siết lấy bàn tay Bellia.",
       '" Tại sao...? "',
-
       "Bellia không đáp.",
-
       '" Tại sao tất cả bọn họ lại nguyện được chết? "',
-
-      "Bellia xoa lấy vai nàng.",
-
-      "Có lẽ sau khi Mầu Nhiệm xuất hiện, cô cũng chưa từng tự mình trả lời câu hỏi ấy.",
-
-      "Nhưng có một thứ mà Bellia cố giữ trong miệng.",
-
-      "Không phải những nỗi đau của hàng nghìn sinh linh bên dưới.",
-
-      "Mà là nỗi đau âm ỉ của người phụ nữ trước mặt mình.",
-
-      "Cứ như thể một vật bị mắc kẹt sâu bên dưới mặt hồ tĩnh lặng ấy.",
-
-      "Nó cố vùng vẫy nhưng chẳng thể nào chạm tới mặt nước.",
-
-      "Kristin chuyển hướng nhìn về phía Drag.",
-
-      "Bỗng nhiên Bellia chụp lấy tay nàng trước khi nàng kịp đứng dậy.",
-
-      "Có vẻ như The Ear đã nghe thấy gì đó.",
-
-      "Ở khoảng cách không quá xa.",
-
-      "Hai bả vai hắn nứt toạt.",
-
-      "Từ vị trí ấy, khúc xương kéo dài hơn nửa người hắn.",
-
-      "Những bó cơ bọc lấy.",
-
-      "Lông đen phủ xuống.",
-
-      "Đôi cánh đã trở về.",
-
-      "Hắn ngước nhìn The City of Mercy Dreams.",
-
-      "Một bóng người đang ngồi trên điểm cao nhất.",
-
+      "Bellia rũ mắt.",
+      "Bàn tay nàng vẫn chạm vào Kristin.",
+      "Trong khoảnh khắc ấy, nét mặt Bellia chợt thay đổi.",
+      "The Ear đã nghe thấy một thứ gì đó.",
+      "Không chỉ những tiếng khóc của hàng nghìn sinh linh ngoài kia.",
+      "Một thứ gần hơn.",
+      "Sâu hơn.",
+      "Thuộc về riêng người phụ nữ đang nắm lấy tay nàng.",
+      "Bellia không nói.",
+      "Kristin chuyển ánh mắt về phía Drag.",
+      "Nàng vừa định gượng dậy thì Bellia bất chợt siết lấy cổ tay.",
+      "Hai người nhìn nhau trong một nhịp rất ngắn.",
+      "Bellia vẫn không nói gì.",
+      "Ở cách đó không xa, hai bả vai Drag bắt đầu nứt ra.",
+      "Những khúc xương kéo dài.",
+      "Cơ thịt trườn ra bao lấy chúng.",
+      "Lông vũ đen mọc trở lại.",
+      "Đôi cánh của hắn hoàn toàn tái sinh.",
+      "Drag ngước nhìn The City of Mercy Dreams.",
+      "Một bóng người đang ngồi trên điểm cao nhất của tháp chuông.",
       "Bất động.",
-
-      "Như thể sự hỗn loạn phía dưới chẳng làm hắn bận tâm.",
-
-      "Drag tiến thẳng về phía thành phố.",
-
-      "Thanh kiếm kéo dài trong lòng bàn tay hắn.",
-
+      "Như thể mọi hỗn loạn phía dưới chẳng hề khiến gã thay đổi tư thế.",
+      "Drag quạt mạnh đôi cánh rồi bay thẳng về phía thành phố.",
+      "Thanh kiếm máu kéo dài trong lòng bàn tay.",
       "Một ý nghĩ rất nhỏ len vào đầu hắn.",
-
-      "Nhỏ đến mức hắn đã cố xem như nó chưa từng xuất hiện.",
-
-      "Hắn chưa từng nghĩ mọi chuyện sẽ thành ra thế này.",
-
-      "Những con người phía dưới.",
-
+      "Nhỏ đến mức hắn cố xem như nó chưa từng xuất hiện.",
+      "Hắn chưa từng nghĩ mọi chuyện sẽ trở thành thế này.",
+      "Những con người bên dưới.",
       "The Root of Sin.",
-
-      "Và cả nàng.",
-
-      "Có lẽ thật sự là vì hắn.",
-
-      "Có lẽ chỉ vì hắn vẫn còn tồn tại.",
-
-      "Nên mọi thứ hắn muốn giữ lại cuối cùng cũng lần lượt vụn vỡ.",
-
-      "Hắn nhắm hai mắt một lúc.",
-
-      "Lồng ngực căng phồng.",
-
-      "Thanh gươm tận thế cháy rực trong lòng bàn tay.",
-
-      "Hắn vung kiếm dọc không khí.",
-
-      "Lưỡi kiếm xé gió, hình thành một vệt đen lao thẳng tới vị trí của The Mouth.",
-
-      "Vệt chém xẻ đôi những tầng mây. Có lẽ chẳng có thứ gì có thể ngăn cản.",
-
-      "Hoặc có lẽ, nó nên dừng lại.",
-
-      "Một nhịp hẫn nhói lên trong tim hắn.",
-
-      "Phía sau lưỡi kiếm ấy.",
-
-      "Một bóng hình nhẹ tựa làn sương. Quen thuộc.",
-
+      "Kristin.",
+      "Có lẽ tất cả thật sự bắt đầu vì hắn.",
+      "Có lẽ chỉ vì hắn vẫn còn tồn tại nên những thứ hắn muốn giữ lại mới lần lượt rơi khỏi tay.",
+      "Một suy nghĩ rất giống những gì hắn từng nói với chính mình từ rất lâu.",
+      "Drag nhắm mắt.",
+      "Lồng ngực căng lên.",
+      "Thanh kiếm trong tay bùng cháy bởi hắc hỏa.",
+      "Hắn vung kiếm.",
+      "Một vệt chém đen xé dọc những tầng mây, lao thẳng tới vị trí của Michael.",
+      "Không có gì trên đường đi dường như đủ sức giữ nó lại.",
+      "Cho tới khi một nhịp nhói bất thần xuất hiện trong lồng ngực hắn.",
+      "Phía trước quỹ đạo của lưỡi kiếm.",
+      "Một bóng người trắng muốt đang lơ lửng.",
+      "Quen thuộc đến mức khiến hắn ngừng thở.",
       '" Kristin? "',
-
-      "Hắn vẫn cố phủ định cái tên vừa rơi khỏi miệng mình.",
-
-      "Nhưng ánh vàng sáng sau lớp mây chỉ càng củng cố bản thân mình sai.",
-
-      "Vết chém lao tới gần hơn nữa. Các lớp mây bị cắt mỏng dần, lộ ra mười một chiếc cánh trắng đang khép lại.",
-
+      "Hắn vẫn cố phủ định cái tên vừa thoát khỏi miệng.",
+      "Nhưng những tầng mây đang bị xé ra dần để lộ mười một chiếc cánh trắng.",
       '" Không. "',
-
-      "The Eye sẽ nói cho nàng biết. Hắn thật sự tin là vậy.",
-
-      "Chắc chắn là vậy.",
-
-      "Nhưng bóng dàng người phụ nữ ấy vẫn không lay chuyển. Dù chỉ một chút.",
-
+      "The Eye sẽ cảnh báo nàng.",
+      "Hắn tin như vậy.",
+      "Chắc chắn phải là như vậy.",
+      "Nhưng Kristin không cử động.",
       '" Tại sao? "',
-
-      "Hai chữ ấy lướt qua đầu hắn nhanh tới mức khiến vòm họng hắn khô rát.",
-
-      "Nàng vẫn lơ lửng trước mặt hắn, nhìn hắn như cái lần bọn họ ngồi ăn ở Ditovias.",
-
-      "Lúc ấy hắn từng khó chịu vì Kristin hỏi những câu hỏi ngu ngốc. Hắn chỉ muốn lãng tránh những thứ như vậy.",
-
-      "Nhưng giờ hắn không thể rời mắt khỏi nàng. Có lẽ nó nên dừng lại.",
-
-      "Một giọt nước khẽ lăn dài xuống gò má nàng. Nhưng chỉ từ con mắt phải. Có lẽ cũng chính là thứ chạm vào má hắn lúc nãy.",
-
-      "Khóe môi nàng khẽ cong lên. Một nụ cười ngắn nhẹ nhàng xuất hiện.",
-
-      "Hắn vẫn chưa hiểu cảm xúc đó là gì.",
-
-      "The Eye sáng hơn lúc nãy. Có lẽ là lần cuối nó cảnh báo nguy hiểm cho Kristin.",
-
-      "Nhưng vẫn chẳng có thứ gì thay đổi ngoài ánh sáng ấy.",
-
-      "Vệt chém xuyên thẳng qua người nàng. Chẳng lấy nổi một âm thanh nào nói cho hắn biết.",
-
-      "Kể cả trái tim hắn, nó đã ngừng lại từ lúc nào chẳng hay.",
-
-      "Bầu trời không còn giữ lấy cơ thể nàng. Nàng rơi xuống.",
-
-      "Hắn lập tức lao tới. Dường như chính hắn cũng quên mất khả năng bay.",
-
-      "Chỉ còn một chút nữa hắn sẽ chạm lấy cơ thể ấy.",
-
-      "Hắn với tay nằm lấy eo nàng rồi siết chặt vào trong lòng.",
-
-      "Michael hay The Mouth giờ chẳng phải là thứ hắn bận tâm tới.",
-
-      "Hai chiếc cánh hắn quấn lại, bao bọc lấy nàng.",
-
-      "Hắn va vào thẳng những nhánh cây nhỏ của The Root of Sin.",
-
-      "Dằm gỗ cứa sâu vào người hắn rồi ghim chặt trên lưng.",
-
-      "Cơn đau ấy cũng chẳng quan trọng bằng người phụ nữ hắn cố che chở.",
-
-      "Bọn họ lao thẳng xuống dưới gốc cây khởi nguồn.",
-
-      "Đôi cánh khẽ mở ra.",
-
-      "Nàng vẫn nằm gọn trong vòng tay hắn.",
-
-      "Nhẹ hơn hắn nhớ.",
-
-      "Hay có lẽ những suy nghĩ nặng nề khiến hắn tin vậy.",
-
-      "Hắn vội vàng đặt người nàng dựa vào thân cây.",
-
-      "Một vệt đỏ dần loang rộng trên chiếc đầm trắng nàng đang mặc.",
-
-      "Hắn nhanh tay xé một phần vải nhỏ trên người nàng.",
-
-      "Mọi chuyện dần tệ hơn hắn nghĩ.",
-
-      "Hắn nhanh chóng áp mảnh vải vào lỗ hổng trước ngực nàng.",
-
-      "Ước gì hắn chưa từng tung nhát chém thù hận ấy.",
-
-      "Máu dần len lõi qua từng khẽ tay.",
-
+      "Hai chữ ấy xẹt qua đầu hắn nhanh tới mức vòm họng trở nên khô rát.",
+      "Nàng vẫn lơ lửng trước mặt hắn, rũ mắt nhìn xuống.",
+      "Một hình ảnh cũ bất chợt tràn về.",
+      "Ditovias.",
+      "Một bữa ăn.",
+      "Bông cải.",
+      "Những câu hỏi mà khi ấy hắn chỉ muốn lảng tránh cho xong.",
+      "Còn bây giờ hắn không thể rời mắt khỏi nàng.",
+      "Một giọt chất lỏng khẽ lăn khỏi con mắt phải phàm tục của Kristin.",
+      "Nó trượt xuống gò má.",
+      "Con mắt phải ấy chẳng mang bất kỳ Dấu Chỉ nào.",
+      "Khóe môi nàng khẽ cong lên.",
+      "Một nụ cười rất nhỏ.",
+      "Drag không hiểu nó có ý nghĩa gì.",
+      "Ánh vàng bất thần bùng sáng dữ dội qua từng kẽ ngón tay bạc đang ôm lấy mắt trái.",
+      "The Eye đã nhìn thấy.",
+      "Nó đang cảnh báo nàng.",
+      "Kristin vẫn không tránh.",
+      "Không một chiếc cánh nào mở ra.",
+      "Không một bước chân nào rời khỏi quỹ đạo.",
+      "Vệt chém xuyên qua cơ thể nàng.",
+      "Không có tiếng hét.",
+      "Trong một khoảnh khắc, Drag thậm chí không nghe thấy cả nhịp tim của chính mình.",
+      "Bầu trời buông cơ thể Kristin xuống.",
+      "Nàng rơi.",
+      "Drag bừng tỉnh rồi lao tới.",
+      "Chỉ còn một khoảng rất nhỏ.",
+      "Những ngón tay hắn cuối cùng cũng chụp lấy eo nàng rồi kéo mạnh vào lòng.",
+      "Ngay lúc ấy, bàn tay bạc đang ôm mắt trái Kristin bắt đầu rạn nứt.",
+      "Một ngón bạc tan thành chất lỏng.",
+      "Rồi ngón thứ hai.",
+      "Từng giọt bạc trượt khỏi gò má nàng, rơi vào khoảng không giữa hai người.",
+      "Drag quấn đôi cánh quanh cơ thể Kristin.",
+      "Michael trên tháp chuông lập tức biến mất khỏi toàn bộ suy nghĩ của hắn.",
+      "Hai người lao xuyên qua những nhánh rễ của The Root of Sin.",
+      "Dằm gỗ cứa vào lưng Drag.",
+      "Một nhánh xuyên sâu qua vai.",
+      "Hắn chỉ siết Kristin chặt hơn.",
+      "Bọn họ rơi xuống tận phần gốc cây.",
+      "Drag mở cánh.",
+      "Kristin vẫn nằm gọn trong tay.",
+      "Nhẹ hơn những gì hắn nhớ.",
+      "Hay có lẽ những thứ đang đè trong lồng ngực lúc này quá nặng nên khiến nàng trở nên nhẹ đến vậy.",
+      "Hắn vội vàng đặt nàng dựa vào gốc cây.",
+      "Một vệt máu đỏ nhanh chóng lan rộng trên chiếc đầm trắng.",
+      "Drag xé một phần vải rồi áp chặt vào vết thương.",
+      "Máu lập tức thấm qua.",
+      "Hắn lấy thêm một mảnh khác.",
+      "Rồi thêm một mảnh nữa.",
       '" Kristin? "',
-
-      "Vẫn chẳng có gì phản hồi.",
-
-      "Hắn lại xé một miếng vải khác rồi tiếp tục ấn vào người Kristin.",
-
+      "Không có tiếng đáp.",
+      "Hắn tiếp tục ấn chặt.",
       '" Kristin!? "',
-
-      "Một tiếng ho khẽ bật ra trước mặt. Chỉ nhiêu đó cũng đủ kéo nhịp tim hắn trở về.",
-
-      "Hắn cúi người gần hơn về phía nàng.",
-
+      "Một tiếng ho khẽ bật ra.",
+      "Chỉ nhiêu đó cũng đủ khiến hắn cúi rạp xuống sát hơn.",
       '" Ngươi nghe ta nói chứ? "',
-
-      "Mắt nàng khẽ mở. Nhẹ nhàng nâng lên nhìn hắn.",
-
-      "Hơi thở yếu ớt nằm trong miệng nàng. Hắn cảm nhận rõ điều ấy ở lòng bàn tay đang cố che vết thương.",
-
-      "Một lỗ hỏng lớn nằm giữa ngực.",
-
-      "Những chiếc dằm gỗ trên lưng hắn lần lượt rơi xuống.",
-
-      "Da và thịt nối lại. Chỉ là chuyện này chỉ xảy ra với mỗi mình hắn.",
-
-      "Tiếc là nó chỉ xảy ra với kẻ như hắn.",
-
-      "Những lời hắn phát ra như nghẽn lại phần nào ở lưỡi.",
-
+      "Đôi mắt Kristin khẽ mở.",
+      "Hơi thở rất mỏng còn vương nơi khóe miệng.",
+      "Drag cảm nhận nó qua bàn tay đang che vết thương.",
+      "Một lỗ hổng lớn nằm giữa lồng ngực nàng.",
+      "Những dằm gỗ cắm trên lưng hắn bắt đầu lần lượt rơi xuống.",
+      "Da và thịt vẫn lành lại như bao lần trước.",
+      "Hắn nhìn sự phục hồi ấy rồi lại nhìn vết thương không hề khép trên người Kristin.",
+      "Một thứ hắn đã quá quen thuộc bỗng trở nên khó chịu đến mức khiến cổ họng nghẹn lại.",
       '" Không sao hết, ta sẽ ở đây với ngươi. "',
-
       '" Ta sẽ kiếm cách.. "',
-
-      "Lại một lời nói dối ngu xuẩn.",
-
-      "Nhưng ít nhất, lần này nó chẳng còn dành cho bản tính kiêu ngạo của hắn.",
-
-      "Hắn xé thêm những mảnh vải.",
-
-      "Hai tay hắn thay phiên nhau che lấp khoảng trống giữa ngực.",
-
-      "Chỉ mong sao những thứ này có thể giữ máu nàng chậm lại.",
-
-      "Bỗng một hơi ấm nhẹ chạm vào gò má hắn.",
-
-      "Có lẽ lúc này hắn dường như chẳng còn bận tâm tới những chuyện xảy ra xung quanh mình.",
-
-      "Giọng nói yếu ớt cất lên.",
-
+      "Một lời nói dối.",
+      "Nhưng lần này nó chẳng còn dùng để che giấu sự kiêu ngạo.",
+      "Hắn chỉ muốn chính mình tin vào nó.",
+      "Drag lại xé thêm vải.",
+      "Hai tay thay phiên nhau che kín khoảng trống giữa ngực nàng.",
+      "Có lẽ chỉ cần máu chảy chậm lại một chút.",
+      "Chỉ một chút thôi.",
+      "Bỗng hơi lạnh khẽ chạm vào làn da trên khuôn mặt hắn.",
       '" Không sao cả. "',
-
-      "Những ngón tay mân mê khuôn mặt hắn.",
-
+      "Những ngón tay nàng rã rời mân mê phần má còn vướng máu.",
       '" Không sao cả mà. "',
-
-      "Hai bờ môi hắn siết lại. Hắn ghét cái giọng kiểu vậy.",
-
-      "Hắn ghét máu nàng bám vào tay hắn.",
-
-      "Vì hắn biết những chuyện này xảy ra là do hắn.",
-
-      "Và vì hắn nhận ra xung quanh nàng cũng dần thấm đẫm vết máu ấy.",
-
-      "Cơ thể hắn run rẫy một cách bất thường. Hắn chưa bao giờ biết cơ thể hắn có khả năng như vậy.",
-
-      "Thậm chí hắn còn chả có khả năng làm chủ thân xác mình.",
-
+      "Hắn cắn môi.",
+      "Hắn ghét giọng nói ấy.",
+      "Ghét cách nàng nói như thể chuyện này chẳng có gì đáng sợ.",
+      "Ghét cả việc máu nàng vẫn cứ chảy qua những kẽ tay bất kể hắn giữ chặt đến đâu.",
+      "Một ý nghĩ không ngừng cào xé sự bứt rứt.",
+      "Chính hắn đã tung nhát chém ấy.",
+      "Từng cơn run rẫy chạy khắp cơ thể như chính lời nguyền hắn phải gánh vác.",
+      "Hắn nhìn hai bàn tay mình như thể đây là lần đầu tiên phát hiện chúng cũng có quyền mất kiểm soát.",
       '" BELL!! "',
-
       '" BELLIAA!! "',
-
-      "Hắn gào lớn.",
-
+      "Giọng hắn vỡ ra giữa khoảng không.",
       '" Ai đó, bất cứ ai cũng được. "',
-
       '" Làm ơn.. hãy giúp cô ấy. "',
-
-      "Trước đây, hắn chưa từng thấy sợ điều gì. Kể cả khi cơ thể bị xé toạt, bị tàn phá.",
-
-      "Hắn chưa từng sợ, kể cả cái chết. Hắn cũng chưa từng gặp.",
-
-      "Nhưng giờ đây khi nỗi sợ xuất hiện, nó lớn tới mức từng ngón tay hắn chẳng còn vững, lớn tới mức một kẻ kiêu ngạo như hắn phải van xin một ân huệ.",
-
-      "Những ngón tay của nàng lơi xuống dưới môi hắn.",
-
+      "Trước đây hắn chưa từng thật sự biết phải sợ điều gì.",
+      "Cơ thể bị xé nát rồi sẽ mọc lại.",
+      "Cái chết lại là một thứ hắn chưa bao giờ được phép chạm tới.",
+      "Nhưng giờ đây nỗi sợ lại nằm ngay trong lòng bàn tay.",
+      "Nó khiến những ngón tay hắn chẳng còn vững.",
+      "Khiến một kẻ kiêu ngạo như hắn phải cúi mình van xin một ân huệ cho nàng.",
+      "Kristin chạm một ngón tay lên dưới môi hắn.",
       '" Shhhh. "',
-
       '" Anh ồn quá rồi.. Không sao cả mà. "',
-
-      "Hắn vẫn nỗ lực lau những dòng máu còn chảy hai bên mạn sườn của nàng. Bàn tay không ngừng run rẫy.",
-
+      "Drag vẫn cố lau những dòng máu chảy xuống mạn sườn nàng.",
+      "Cơn run không hề ngừng lại.",
       '" Nghe em nói này. "',
-
-      "Nàng ho, máu trên khóe môi nàng chảy xuống.",
-
-      "Hắn nắm lấy tay nàng, siết chặt lấy.",
-
-      "Như thể hắn không muốn cơn ác mộng xảy ra một lần nữa.",
-
-      "Kristin khẽ nói.",
-
+      "Kristin ho.",
+      "Máu tràn khỏi khóe môi.",
+      "Drag lập tức nắm lấy tay nàng.",
+      "Siết thật chặt. Chặt tới mức cơn ác mộng này quen thuộc hơn bao giờ hết.",
       '" Em nghĩ.. "',
-
       '" Em cần phải làm vậy. "',
-
-      "Hắn lập tức hỏi nàng.",
-
+      "Hắn lập tức ngẩng lên.",
       '" Tại sao chứ? "',
-
       '" Tại sao ngươi lại làm vậy?! "',
-
-      '" Con mắt đó, chẳng phải nó nói cho ngươi tất sao?! "',
-
-      "Hắn vẫn giữ lấy tay nàng. Hắn nghĩ nếu buông ra, người phụ nữ trước mặt sẽ rời đi một lần nữa.",
-
-      '" Ngươi thấy nó, nó lao tới. Ta biết ngươi thấy nó mà! "',
-
-      '" Vậy tại sao cơ chứ? "',
-
-      "Ngón cái của nàng lân lay từng đốt ngón tay của hắn.",
-
-      "Cơn run bên trong hắn dừng lại.",
-
-      '" Em thấy.. "',
-
-      '" Nhiều hơn về anh. "',
-
-      "Hắn không hiểu những lời nói ấy, hắn cũng chẳng muốn mình hiểu được.",
-
+      '" Con mắt đó chẳng phải đã nói cho ngươi biết sao?! "',
+      "Drag vẫn giữ chặt tay nàng.",
+      "Chỉ cần buông ra một khắc, hắn tin rằng nàng chắc chắn sẽ rời bỏ hắn.",
+      '" Ngươi thấy nó lao tới. Ta biết ngươi thấy nó mà! "',
+      '" Vậy tại sao?! "',
+      "Ngón cái lạnh buốt của nàng khẽ nâng niu từng đốt ngón tay đang căng cứng của hắn.",
+      '" Em nghe thấy rồi.. "',
+      "Drag khựng lại.",
+      '" Những người ở bên dưới. "',
+      "Hơi thở nàng ngắt quãng.",
+      '" Tất cả bọn họ. "',
+      "Drag không nói.",
+      '" Em hiểu vì sao họ lại thành ra như vậy. "',
+      "Bàn tay nàng vẫn nằm trong tay hắn.",
+      '" Chỉ là em không thể.. "',
+      "Giọng nàng trở nên khó khăn hơn.",
+      '" Bỏ mặc họ. "',
       '" Không.. Không Kristin. Ta sẽ giữ cho ngươi sống. "',
-
-      "Hắn một lần nữa tự lừa dối chính mình. Cả người phụ nữ trước mặt cũng thừa biết điều ấy.",
-
-      "Ánh mắt hiền từ của nàng am hiểu từng chữ trong miệng hắn.",
-
-      "Giữa ngày tận thế.",
-
-      "Không một ai có khả năng sẽ cứu lấy họ.",
-
-      "Không một phép màu nào sẽ hiện hữu.",
-
-      '" Em cứ ngỡ.. "',
-
-      '" Bản năng em chưa bao giờ sai. "',
-
-      '" Và đúng là.. Nó chưa từng sai. "',
-
-      "Mắt nàng trĩu xuống.",
-
+      "Lại là một lời nói dối.",
+      "Chỉ là những lời nói dối này chẳng còn khiến hắn dễ chịu như trước.",
+      "Kristin khẽ nhắm mắt.",
+      '" Em cứ nghĩ.. "',
+      '" Con mắt này chưa bao giờ sai. "',
+      "Ánh vàng nơi mắt trái đã yếu hơn lúc trước rất nhiều.",
+      '" Và đúng là.. nó chưa từng sai. "',
+      "Nàng ngừng một chút để lấy hơi.",
+      '" Nhưng nó chưa từng nói cho em biết.. em phải lựa chọn thứ gì. "',
+      "Drag nhìn nàng.",
       '" Họ nói trái tim anh.. Một nửa ở lại.. "',
-
       '" Một nửa rời đi. "',
-
-      "Một nụ cười nhẹ xảy ra trên khuôn mặt của nàng.",
-
-      '" Em đã cố khiến một nửa của nó rời đi, em đã cố hủy hoại nó thật nhiều lần.. "',
-
-      "Hắn đưa tay lên lau dòng đỏ trên mép môi của nàng.",
-
+      "Một nụ cười rất nhẹ xuất hiện trên khuôn mặt trắng bệch.",
+      '" Em đã cố khiến một nửa của nó rời đi. "',
+      '" Em đã cố hủy hoại nó thật nhiều lần.. "',
+      "Drag đưa tay lau dòng máu trên mép môi nàng.",
       '" Nhưng anh biết không?.. "',
-
-      "Nàng hạ tay xuống nơi lồng ngực hắn.",
-
-      '" Em nhận ra rằng.. sẽ chẳng có thứ gì có thể khiến nó ngưng lại được. "',
-
-      "Hắn cắn chặt môi.",
-
-      "Giọng nàng nặng dần. nặng tới mức lồng ngực hắn như bị hàng nghìn sợi xích kéo căng xuống.",
-
+      "Kristin hạ bàn tay xuống lồng ngực hắn.",
+      "Từng hồi vang lên.",
+      '" Em nhận ra rằng.. chẳng có thứ gì có thể khiến nó ngưng lại được. "',
+      "Drag cắn chặt môi.",
+      "Giọng nàng ngày càng nhỏ.",
       '" Dấu Chỉ này chọn em.. "',
-
+      "Nàng nhìn hắn.",
       '" Nhưng lần này.. sẽ là em chọn. "',
-
-      "Bàn tay nàng lạnh dần. Lạnh như làn sương mờ trong cơn mơ.",
-
+      "Bàn tay nàng lạnh dần.",
       '" BELL!! "',
-
       '" GIÚP TA VỚI! "',
-
+      "Giọng hắn nhỏ xuống.",
       '" ..làm ơn.. "',
-
-      "Những vệt màu lan rộng hơn. Những bông cẩm chướng nở rộ xung quanh nơi họ.",
-
+      "Máu tiếp tục lan rộng.",
+      "Những bông cẩm chướng trắng mọc kín quanh nơi họ ngồi.",
       '" Anh vẫn luôn như vậy nhỉ?.. "',
-
       '" Thật cố chấp.. "',
-
       "Hắn biết nàng chả trách hắn lúc này. Nhưng hắn muốn nàng trách hắn nữa, muốn nàng cau có khi hắn làm chuyện không vừa ý.",
-
       "Muốn một bữa ăn khác.",
-
       "Một mùa thu khác.",
-
       "Nơi mà họ có nhiều thời gian hơn.",
-
       "Tiếc là hắn biết mình sẽ không bao giờ thoát khỏi cơn ác mộng vĩnh hằng này.",
-
-      "Hơi thở của Kristin nhỏ dần.",
-
+      "Hơi thở Kristin nhỏ dần.",
       '" Em muốn.. anh làm cho em một thứ. "',
-
       '" Bất cứ thứ gì.. miễn là ngươi ở lại. "',
-
       "Những bông hoa ôm lấy hai người. Như cũng muốn lắng nghe nguyện cầu cuối cùng của nàng.",
-
       "Hắn khẽ tiến gần hơn về phía nàng.",
-
       '" Em muốn.. "',
-
       '" Anh hãy yêu chính mình.. như cách anh yêu em vậy. "',
-
       "Hắn khựng lại. Hắn nhớ tới câu hỏi mà Ngài từng hỏi hắn.",
-
       '" Con có biết tình yêu là gì không? "',
-
       "Nếu hắn có câu trả lời. Hắn sẽ nói ngay.",
-
       "Nếu không hắn sẽ kiếm lời nói dối.",
-
       "Chỉ là lần này chẳng có phương án nào tồn đọng để hắn chọn lựa.",
-
       '" Có lẽ con sẽ không bao giờ biết. "',
-
       "Bàn tay trên ngực hắn nhẹ nhàng rơi xuống.",
-
       "Hắn vội chụp lấy.",
-
       '" Kristin? "',
-
       "Hắn chờ lời phản hồi của nàng.",
-
       "Ánh sáng của The Eye phai dần.",
-
       "Như thể Dấu Chỉ cho phép nàng trở thành người phàm lần cuối.",
-
       "Không còn màu mất mát. Chỉ còn võng mạc bị che bởi cườm mắt. In rõ bóng hình hắn.",
-
-      "Hai mí khẽ khép lại. Nụ cười cũng dần biến mất.",
-
+      "Chỉ mỗi mình hắn.",
+      "Hai mí khẽ khép lại. Nụ cười cũng dần tan mất.",
       "Có lẽ nàng chỉ ngủ một chút.",
-
       "Có lẽ chốc nữa nàng sẽ dậy.",
-
       "Ở nhà thờ nàng cũng từng làm thế.",
-
       "Hắn nghĩ vậy. Ít nhất là vậy.",
-
       "Hắn chờ. Lâu hơn.",
-
       "Rồi lâu hơn.",
-
       "Chẳng còn hơi ấm quen thuộc mà hắn từng khoác lên lưng.",
-
       "Chẳng còn bờ môi nàng trao cho hắn.",
-
       '" Xin em.. "',
-
       '" Đừng bỏ anh lại.. "',
-
       '" Trái tim anh lạc lối.. "',
-
       "Hắn tựa trán mình vào đầu nàng. Hai tay nhẹ nhàng ôm trọn lấy người phụ nữ ấy.",
-
       '" Anh xin em mà.. "',
-
       "Một giọt máu khẽ rơi xuống má nàng.",
-
       "Nó lăn xuống, rồi chạm vào một cánh hoa trắng bên dưới.",
-
-      '" Anh.. Yêu em. Krisanta. "',
-
+      '" Anh.. Yêu em. Kristin. "',
       "Có lẽ quá muộn màng cho câu nói ấy.",
-
       "Từng chữ nặng trĩu vốn mắc nghẽn lại trong vòm họng hắn bấy lâu.",
-
       "Chỉ tại lúc này, nó lại trông nhẹ nhỏm hơn bao giờ hết.",
-
       "Bỗng nhiên hắn nghe một thanh âm nhỏ.",
-
       '" Kristin? "',
-
       "Hắn cúi người xuống. Áp tai vào lồng ngực nàng.",
-
       "Kình kịch",
-
       "Hắn áp tai mình sâu hơn.",
-
       "Nhưng âm thanh ấy chả lớn hơn.",
-
       "Hắn nhận ra thứ ấy không xuất phát ở trong nàng.",
-
       "Mà nó xuất phát từ hắn.",
-
       "Hắn đưa tay chạm vào ngực mình.",
-
       "Trái tim hắn vẫn đập.",
-
       "Nhanh tới mức hắn cảm thấy buồn nôn.",
-
       "Giá mà hắn có thể hoán trái tim này cho nàng. Giá mà thứ trong người hắn ngừng lại.",
-
       "Thứ lời nguyền chết tiệt mà hắn phải nhận lấy.",
-
       "Hắn nguyền rủa thân xác bất diệt của mình.",
-
       "Hai ngón tay hắn giơ lên chỉa vào lồng ngực mãnh liệt.",
-
       "Quả cầu máu xuất hiện. Chỉ cần một phát, lồng ngực hắn sẽ nổ tung.",
-
       "Nhưng rồi hắn nhớ ước nguyện của nàng.",
-
       "Từng chữ như khắc sâu vào tâm khảm của hắn.",
-
       '" Anh không biết phải làm thế nào.. "',
-
       '" Anh sợ anh không làm được. "',
-
       "Hắn đưa tay lên tóc nàng. vuốt phần tóc sang bên.",
-
       "Như cố ghi nhớ lại khuôn mặt ấy.",
-
       "Hắn ngắm nhìn mùa thu lần cuối.",
-
       "Mùa thu đẹp nhất mà nàng trao cho hắn.",
     ],
   },
-  {
-    id: 12,
-    title: "-MỘT CÁI ÔM-",
-    storyTitle: "L'ORGUEIL.",
-    detailImage: "/Detail/detail-mark.png",
-    image: "/Artworks/HVL-artwork12.png",
-    preview1: "/Artworks/preview1/HVL-artwork12.png",
-    preview2: "/Artworks/preview2/HVL-artwork12.png",
-    preview3: "/Artworks/preview3/HVL-artwork12.png",
-    audio: "/Music/HVL-Mot-Cai-Om.mp3",
-    background: "#ff0100",
-    uiTheme: "black",
-    story: [
-      "This is the first paragraph of the story.",
+  // {
+  //   id: 12,
+  //   title: "-MỘT CÁI ÔM-",
+  //   storyTitle: "L'ORGUEIL.",
+  //   detailImage: "/Detail/detail-mark.png",
+  //   image: "/Artworks/HVL-artwork12.png",
+  //   preview1: "/Artworks/preview1/HVL-artwork12.png",
+  //   preview2: "/Artworks/preview2/HVL-artwork12.png",
+  //   preview3: "/Artworks/preview3/HVL-artwork12.png",
+  //   audio: "/Music/HVL-Mot-Cai-Om.mp3",
+  //   background: "#ff0100",
+  //   uiTheme: "black",
+  //   story: [
+  //     "This is the first paragraph of the story.",
 
-      "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
+  //     "This is the second paragraph. It can be longer than the first paragraph and React will automatically create another paragraph for it.",
 
-      "This is the third paragraph.",
+  //     "This is the third paragraph.",
 
-      "You can add as many paragraphs as you want.",
-    ],
-  },
+  //     "You can add as many paragraphs as you want.",
+  //   ],
+  // },
   // {
   //   id: 13,
   //   title: "-KHÔNG CẦN LO CHO TAO-",
