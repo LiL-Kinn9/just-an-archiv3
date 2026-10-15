@@ -5,13 +5,17 @@
 .nav-overlay {
   position: fixed;
   inset: 0;
+
   z-index: 999;
 
   opacity: 0;
+
   pointer-events: none;
 
   background: rgba(0, 0, 0, 0.08);
+
   backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
 
   transition:
     opacity 0.6s ease,
@@ -20,14 +24,15 @@
 
 .nav-overlay.is-active {
   opacity: 1;
+
   pointer-events: auto;
 
   backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 /* ========================================================= */
 /* NAV BUTTON WRAPPER */
-/* fade in / fade out */
 /* ========================================================= */
 
 .nav-btn-wrapper {
@@ -68,7 +73,6 @@
 
 /* ========================================================= */
 /* NAV BUTTON */
-/* hover animation only */
 /* ========================================================= */
 
 .nav-btn {
@@ -78,6 +82,7 @@
   padding: 0;
 
   border: none;
+
   background: transparent;
 
   display: block;
@@ -87,12 +92,6 @@
   transition:
     transform 0.6s ease,
     filter 0.6s ease;
-}
-
-.nav-btn:hover {
-  transform: translateX(-2px);
-
-  filter: drop-shadow(0 4px 5px rgba(128, 128, 128, 0.4));
 }
 
 .nav-btn img {
@@ -108,11 +107,6 @@
   transform: translateX(-2px);
 
   filter: drop-shadow(0 4px 5px rgba(128, 128, 128, 0.4));
-}
-
-.nav-btn img {
-  width: 22px;
-  height: 22px;
 }
 
 /* ========================================================= */
@@ -137,17 +131,13 @@
   gap: 12px;
 
   z-index: 1000;
+
+  color: var(--nav-color);
 }
 
-.nav-menu .nav-item:last-child {
-  align-self: flex-start;
-
-  margin-left: 90px;
-}
-
-/* ------------------------- */
+/* ========================================================= */
 /* MENU INITIAL */
-/* ------------------------- */
+/* ========================================================= */
 
 .nav-menu.not-started {
   opacity: 0;
@@ -159,9 +149,9 @@
   opacity: 0;
 }
 
-/* ------------------------- */
+/* ========================================================= */
 /* MENU OPEN / CLOSE */
-/* ------------------------- */
+/* ========================================================= */
 
 .nav-menu.is-closed {
   pointer-events: none;
@@ -182,16 +172,16 @@
 @keyframes slideFromRight {
   from {
     transform: translateX(100px);
+
     opacity: 0;
   }
 
   to {
     transform: translateX(0);
+
     opacity: 1;
   }
 }
-
-/* MENU OPEN DELAY */
 
 .nav-menu.is-opened .nav-item:nth-child(1) {
   animation-delay: 0s;
@@ -205,10 +195,6 @@
   animation-delay: 0.2s;
 }
 
-.nav-menu.is-opened .nav-item:nth-child(4) {
-  animation-delay: 0.3s;
-}
-
 /* ========================================================= */
 /* MENU CLOSE ANIMATION */
 /* ========================================================= */
@@ -220,16 +206,16 @@
 @keyframes slideToRight {
   from {
     transform: translateX(0);
+
     opacity: 1;
   }
 
   to {
     transform: translateX(100px);
+
     opacity: 0;
   }
 }
-
-/* MENU CLOSE DELAY */
 
 .nav-menu.is-closed .nav-item:nth-child(1) {
   animation-delay: 0.2s;
@@ -243,18 +229,23 @@
   animation-delay: 0s;
 }
 
-.nav-menu.is-closed .nav-item:nth-child(4) {
-  animation-delay: 0s;
-}
-
 /* ========================================================= */
 /* MENU BUTTON */
 /* ========================================================= */
 
 .nav-menu button {
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
   color: var(--nav-color);
 
+  font: inherit;
   font-weight: 500;
+
+  cursor: pointer;
 
   transition:
     transform 0.6s ease,
@@ -270,4 +261,222 @@
   );
 
   font-weight: 700;
+}
+
+/* ========================================================= */
+/* SECRET */
+/* ========================================================= */
+
+.secret-nav-item {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  color: var(--nav-color);
+}
+
+/* ========================================================= */
+/* OUTER CONTROL */
+/* luôn bám mép phải */
+/* ========================================================= */
+
+.secret-control {
+  width: 160px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  overflow: visible;
+
+  color: var(--nav-color);
+  position: relative;
+  right: 6px;
+}
+
+/* ========================================================= */
+/* INNER GROUP */
+/* ENTER + CONTENT trượt cùng nhau */
+/* ========================================================= */
+
+.secret-control-inner {
+  width: 160px;
+
+  display: grid;
+
+  grid-template-columns: 52px 96px;
+
+  align-items: center;
+
+  column-gap: 12px;
+
+  transform: translateX(108px);
+
+  transition: transform 0.5s ease;
+}
+
+/*
+  Khi mở:
+  cả ENTER + DD/MM/YYYY
+  trượt cùng nhau sang trái
+*/
+
+.secret-control.is-expanded .secret-control-inner {
+  transform: translateX(0);
+}
+
+/* ========================================================= */
+/* SECRET BUTTON */
+/* ========================================================= */
+
+.secret-button {
+  width: 52px;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: var(--nav-color);
+
+  font: inherit;
+  font-weight: 500;
+
+  text-align: right;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition:
+    filter 0.6s ease,
+    font-weight 0.6s ease;
+}
+
+.secret-button:hover {
+  filter: drop-shadow(
+    0 4px 5px color-mix(in srgb, var(--nav-color) 30%, transparent)
+  );
+
+  font-weight: 700;
+}
+
+/* ========================================================= */
+/* SECRET CONTENT */
+/* ========================================================= */
+
+.secret-content {
+  width: 96px;
+  min-width: 96px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--nav-color);
+
+  font: inherit;
+  font-weight: 500;
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  transition: opacity 0.3s ease 0.1s;
+}
+
+.secret-content.is-visible {
+  opacity: 1;
+
+  pointer-events: auto;
+}
+
+/* ========================================================= */
+/* SECRET DATE */
+/* ========================================================= */
+
+.secret-date {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1px;
+
+  color: var(--nav-color);
+
+  font: inherit;
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+.secret-date span {
+  color: var(--nav-color);
+
+  font: inherit;
+  font-weight: 500;
+
+  opacity: 1;
+}
+
+/* ========================================================= */
+/* SECRET INPUT */
+/* ========================================================= */
+
+.secret-date-part {
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: var(--nav-color);
+
+  font: inherit;
+  font-weight: 500;
+
+  line-height: inherit;
+
+  text-align: center;
+
+  caret-color: var(--nav-color);
+}
+
+.secret-day,
+.secret-month {
+  width: 20px;
+}
+
+.secret-year {
+  width: 40px;
+}
+
+.secret-date-part::placeholder {
+  color: var(--nav-color);
+
+  opacity: 0.45;
+}
+
+/* ========================================================= */
+/* SECRET RESULT */
+/* ========================================================= */
+
+.secret-result {
+  width: 100%;
+
+  margin: 0;
+
+  color: var(--nav-color);
+
+  font: inherit;
+  font-weight: 500;
+
+  text-align: center;
+
+  white-space: nowrap;
 }

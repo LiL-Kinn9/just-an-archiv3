@@ -79,6 +79,12 @@ function App() {
     };
   }, [uiTransitionLocked, hasStarted]);
 
+  const [isSecretUnlocked, setIsSecretUnlocked] = useState(false);
+
+  function handleSecretUnlock() {
+    setIsSecretUnlocked(true);
+  }
+
   /* ========================================================= */
   /* START WEBSITE */
   /* ========================================================= */
@@ -107,6 +113,7 @@ function App() {
             layout={layout}
             setLayout={setLayout}
             uiTheme={uiTheme}
+            onSecretUnlock={handleSecretUnlock}
             isUiVisible={hasStarted && shouldShowUi}
           />
 
@@ -120,6 +127,7 @@ function App() {
             isUiVisible={shouldShowUi}
             setForceHideUi={setForceHideUi}
             setUiTransitionLocked={setUiTransitionLocked}
+            isSecretUnlocked={isSecretUnlocked}
           />
         </>
       )}

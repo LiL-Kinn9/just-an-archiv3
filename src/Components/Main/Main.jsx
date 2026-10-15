@@ -45,6 +45,8 @@ function Main({
 
   setForceHideUi,
   setUiTransitionLocked,
+
+  isSecretUnlocked,
 }) {
   const artworkContainerRef = useRef(null);
 
@@ -642,6 +644,11 @@ function Main({
     };
   }, [layout, currentIndex]);
 
+  const visibleArtworks = artworks.filter((artwork) => {
+    if (!artwork.isSecret) return true;
+
+    return isSecretUnlocked;
+  });
   return (
     <main className={`main ${layout}`}>
       {/* ===================================================== */}
@@ -1009,12 +1016,16 @@ function Main({
       {layout === "grid" && (
         <div className="grid-view">
           <div className="grid-container">
-            {artworks.map((artwork, index) => (
+            {visibleArtworks.map((artwork) => (
               <button
                 className="grid-item"
                 key={artwork.id}
                 onClick={() => {
-                  setCurrentIndex(index);
+                  const realIndex = artworks.findIndex(
+                    (item) => item.id === artwork.id,
+                  );
+
+                  setCurrentIndex(realIndex);
                   setLayout("center");
                 }}
                 style={{
