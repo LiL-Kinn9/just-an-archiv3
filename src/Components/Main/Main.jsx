@@ -88,27 +88,44 @@ function Main({
   /* CURRENT / PREV / NEXT */
   /* ========================================================= */
 
+  const allowedIndexes = artworks
+    .map((artwork, index) => ({
+      artwork,
+      index,
+    }))
+    .filter(({ artwork }) => {
+      return !artwork.isSecret || isSecretUnlocked;
+    })
+    .map(({ index }) => index);
+
+  const currentAllowedPosition = allowedIndexes.indexOf(currentIndex);
+
+  const prevIndex =
+    currentAllowedPosition > 0
+      ? allowedIndexes[currentAllowedPosition - 1]
+      : null;
+
+  const nextIndex =
+    currentAllowedPosition >= 0 &&
+    currentAllowedPosition < allowedIndexes.length - 1
+      ? allowedIndexes[currentAllowedPosition + 1]
+      : null;
+
   const currentItem = artworks[currentIndex];
 
-  const prevItem = currentIndex > 0 ? artworks[currentIndex - 1] : null;
+  const prevItem = prevIndex !== null ? artworks[prevIndex] : null;
 
-  const nextItem =
-    currentIndex < artworks.length - 1 ? artworks[currentIndex + 1] : null;
+  const nextItem = nextIndex !== null ? artworks[nextIndex] : null;
 
   useEffect(() => {
-    const prevPreview =
-      currentIndex > 0 ? artworks[currentIndex - 1]?.preview3 : null;
-
-    const nextPreview =
-      currentIndex < artworks.length - 1
-        ? artworks[currentIndex + 1]?.preview3
-        : null;
+    const prevPreview = prevItem?.preview3 || null;
+    const nextPreview = nextItem?.preview3 || null;
 
     [prevPreview, nextPreview].filter(Boolean).forEach((src) => {
       const img = new Image();
       img.src = src;
     });
-  }, [currentIndex, artworks]);
+  }, [prevItem, nextItem]);
 
   /* ========================================================= */
   /* CONTROL ICONS */
@@ -294,12 +311,12 @@ function Main({
       return;
     }
 
-    if (direction === "next") {
-      setCurrentIndex((prev) => prev + 1);
+    if (direction === "next" && nextIndex !== null) {
+      setCurrentIndex(nextIndex);
     }
 
-    if (direction === "prev") {
-      setCurrentIndex((prev) => prev - 1);
+    if (direction === "prev" && prevIndex !== null) {
+      setCurrentIndex(prevIndex);
     }
 
     setDirection(null);
@@ -425,9 +442,10 @@ function Main({
     if (isNext && !nextItem) return;
     if (!isNext && !prevItem) return;
 
-    const targetIndex = isNext ? currentIndex + 1 : currentIndex - 1;
+    const targetIndex = isNext ? nextIndex : prevIndex;
 
-    // CHỐT item đích ngay từ đầu
+    if (targetIndex === null) return;
+
     setDetailSwipeTargetIndex(targetIndex);
 
     setDetailSwipeDirection(direction);
@@ -451,7 +469,6 @@ function Main({
           setDetailSwipePhase("idle");
           setDetailSwipeDirection(null);
 
-          // animation xong mới bỏ snapshot
           setDetailSwipeTargetIndex(null);
 
           setIsCloseVisible(true);
