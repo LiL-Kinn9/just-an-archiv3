@@ -279,7 +279,6 @@
 
 /* ========================================================= */
 /* OUTER CONTROL */
-/* luôn bám mép phải */
 /* ========================================================= */
 
 .secret-control {
@@ -292,6 +291,7 @@
   overflow: visible;
 
   color: var(--nav-color);
+
   position: relative;
   right: 6px;
 }
@@ -316,12 +316,6 @@
 
   transition: transform 0.5s ease;
 }
-
-/*
-  Khi mở:
-  cả ENTER + DD/MM/YYYY
-  trượt cùng nhau sang trái
-*/
 
 .secret-control.is-expanded .secret-control-inner {
   transform: translateX(0);
@@ -351,16 +345,34 @@
   white-space: nowrap;
 
   transition:
+    transform 0.6s ease,
     filter 0.6s ease,
     font-weight 0.6s ease;
 }
 
 .secret-button:hover {
+  transform: translateX(-2px);
+
   filter: drop-shadow(
     0 4px 5px color-mix(in srgb, var(--nav-color) 30%, transparent)
   );
 
   font-weight: 700;
+}
+
+/* ========================================================= */
+/* SECRET RIGHT SIDE */
+/* ========================================================= */
+
+.secret-right {
+  width: 120px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 4px;
 }
 
 /* ========================================================= */
@@ -479,4 +491,103 @@
   text-align: center;
 
   white-space: nowrap;
+}
+
+/* ========================================================= */
+/* SECRET CAPTION */
+/* ========================================================= */
+
+.secret-caption {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  color: var(--nav-color);
+
+  font-size: 13px;
+  font-weight: 600;
+
+  line-height: 1.2;
+
+  text-align: center;
+
+  opacity: 0;
+
+  transform: translateY(-8px);
+
+  pointer-events: none;
+}
+
+.secret-caption.is-visible {
+  animation: secretCaptionDrop 0.35s ease 0.5s both;
+
+  pointer-events: auto;
+}
+
+@keyframes secretCaptionDrop {
+  from {
+    opacity: 0;
+
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 0.65;
+
+    transform: translateY(0);
+  }
+}
+
+/* ========================================================= */
+/* CAPTION TEXT */
+/* hover animation nằm ở đây để không phá drop animation */
+/* ========================================================= */
+
+.secret-caption-text {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    transform 0.6s ease,
+    filter 0.6s ease,
+    font-weight 0.6s ease;
+}
+
+.secret-caption-text span {
+  display: block;
+
+  width: 100%;
+
+  text-align: center;
+
+  white-space: nowrap;
+}
+
+/* BIRTHDAY lệch trái 3px như vị trí bạn đang thích */
+
+.secret-caption-text span:last-child {
+  transform: translateX(-3px);
+}
+
+/* ========================================================= */
+/* HOVER ENTER -> YOUR BIRTHDAY CŨNG ANIMATE */
+/* ========================================================= */
+
+.secret-control-inner:has(.secret-button:hover) .secret-caption-text {
+  transform: translateX(-2px);
+
+  filter: drop-shadow(
+    0 4px 5px color-mix(in srgb, var(--nav-color) 30%, transparent)
+  );
+
+  font-weight: 700;
 }

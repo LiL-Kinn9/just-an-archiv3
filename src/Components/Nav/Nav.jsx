@@ -381,7 +381,7 @@ function Nav({ layout, setLayout, uiTheme, isUiVisible, onSecretUnlock }) {
                       ref={secretDayRef}
                       value={secretDay}
                       onChange={handleSecretDayChange}
-                      placeholder="DD"
+                      placeholder="--"
                       inputMode="numeric"
                       maxLength={2}
                       className="secret-date-part secret-day"
@@ -394,7 +394,7 @@ function Nav({ layout, setLayout, uiTheme, isUiVisible, onSecretUnlock }) {
                       value={secretMonth}
                       onChange={handleSecretMonthChange}
                       onKeyDown={handleMonthKeyDown}
-                      placeholder="MM"
+                      placeholder="--"
                       inputMode="numeric"
                       maxLength={2}
                       className="secret-date-part secret-month"
@@ -407,7 +407,7 @@ function Nav({ layout, setLayout, uiTheme, isUiVisible, onSecretUnlock }) {
                       value={secretYear}
                       onChange={handleSecretYearChange}
                       onKeyDown={handleYearKeyDown}
-                      placeholder="YYYY"
+                      placeholder="----"
                       inputMode="numeric"
                       maxLength={4}
                       className="secret-date-part secret-year"
@@ -422,6 +422,14 @@ function Nav({ layout, setLayout, uiTheme, isUiVisible, onSecretUnlock }) {
                 {secretStatus === "failed" && (
                   <span className="secret-result">FAILED ONE</span>
                 )}
+              </div>
+              <div
+                className={`secret-caption ${isSecretOpen ? "is-visible" : ""}`}
+              >
+                <div className="secret-caption-text">
+                  <span>YOUR</span>
+                  <span>BIRTHDAY</span>
+                </div>
               </div>
             </div>
           </div>
