@@ -9,12 +9,17 @@ import menuUnopenWhite from "../../assets/Icon/menu-unopen-white.svg";
 import menuOpenBlack from "../../assets/Icon/menu-open-black.svg";
 import menuUnopenBlack from "../../assets/Icon/menu-unopen-black.svg";
 
+/* Thời gian chữ của ô Secret xáo trộn khi hiện/ẩn (ms). */
+
+const SECRET_RESET_TIME = 450;
+
 function Nav({
   layout,
   setLayout,
   uiTheme,
   isUiVisible,
   onSecretUnlock,
+  isSecretUnlocked,
   lang,
   onToggleLang,
 }) {
@@ -47,17 +52,27 @@ function Nav({
   const [secretYear, setSecretYear] = useState("");
 
   const [secretStatus, setSecretStatus] = useState("idle");
-  // idle | failed | success
+  // idle | failed | resetting
+  // Nhập đúng thì không cần trạng thái riêng: isSecretUnlocked từ App giữ luôn.
 
   const secretDayRef = useRef(null);
   const secretMonthRef = useRef(null);
   const secretYearRef = useRef(null);
+
+  const secretTimersRef = useRef([]);
+
+  function clearSecretTimers() {
+    secretTimersRef.current.forEach(clearTimeout);
+    secretTimersRef.current = [];
+  }
 
   /* ========================================================= */
   /* RESET SECRET */
   /* ========================================================= */
 
   function resetSecret() {
+    clearSecretTimers();
+
     setIsSecretOpen(false);
 
     setSecretStatus("idle");
@@ -191,7 +206,25 @@ function Nav({
   /* BACKSPACE NAVIGATION */
   /* ========================================================= */
 
+  /* Nhấn Enter trên bàn phím ở ô nào cũng gửi luôn, như bấm ENTER. */
+
+  function handleEnterKey(event) {
+    if (event.key !== "Enter") return false;
+
+    event.preventDefault();
+
+    handleSecretSubmit();
+
+    return true;
+  }
+
+  function handleDayKeyDown(event) {
+    handleEnterKey(event);
+  }
+
   function handleMonthKeyDown(event) {
+    if (handleEnterKey(event)) return;
+
     if (event.key === "Backspace" && secretMonth === "") {
       secretDayRef.current?.focus({
         preventScroll: true,
@@ -200,6 +233,8 @@ function Nav({
   }
 
   function handleYearKeyDown(event) {
+    if (handleEnterKey(event)) return;
+
     if (event.key === "Backspace" && secretYear === "") {
       secretMonthRef.current?.focus({
         preventScroll: true,
@@ -220,6 +255,8 @@ function Nav({
 
     setSecretStatus("idle");
 
+    if (isSecretUnlocked) return;
+
     requestAnimationFrame(() => {
       secretDayRef.current?.focus({
         preventScroll: true,
@@ -232,6 +269,9 @@ function Nav({
   /* ========================================================= */
 
   function handleSecretSubmit() {
+    // Đã mở khóa, hoặc đang hiện FAILED ONE: bấm ENTER không làm gì.
+    if (isSecretUnlocked || secretStatus !== "idle") return;
+
     const enteredDate = `${secretDay}/${secretMonth}/${secretYear}`;
 
     /*
@@ -240,33 +280,42 @@ function Nav({
 
     const SECRET_DATE = "06/11/2003";
 
-    if (enteredDate === SECRET_DATE) {
-      setSecretStatus("success");
+    /*
+      Đúng: CHOSEN ONE xáo trộn hiện ra rồi nằm luôn ở đó,
+      YOUR BIRTHDAY đổi thành CHAPTER UNLOCK.
+    */
 
+    if (enteredDate === SECRET_DATE) {
       onSecretUnlock?.();
-    } else {
-      setSecretStatus("failed");
+      return;
     }
 
     /*
-      Sau 3 giây:
-      SUCCESS / FAILED
-      quay lại DD/MM/YYYY
+      Sai: FAILED ONE xáo trộn hiện ra, giữ 3 giây,
+      xáo trộn biến mất (SECRET_RESET_TIME) rồi mới hiện lại ô nhập.
     */
 
-    setTimeout(() => {
-      setSecretStatus("idle");
+    setSecretStatus("failed");
 
-      setSecretDay("");
-      setSecretMonth("");
-      setSecretYear("");
+    clearSecretTimers();
 
-      requestAnimationFrame(() => {
-        secretDayRef.current?.focus({
-          preventScroll: true,
+    secretTimersRef.current = [
+      setTimeout(() => setSecretStatus("resetting"), 3000),
+
+      setTimeout(() => {
+        setSecretStatus("idle");
+
+        setSecretDay("");
+        setSecretMonth("");
+        setSecretYear("");
+
+        requestAnimationFrame(() => {
+          secretDayRef.current?.focus({
+            preventScroll: true,
+          });
         });
-      });
-    }, 3000);
+      }, 3000 + SECRET_RESET_TIME),
+    ];
   }
 
   /* ========================================================= */
@@ -422,12 +471,13 @@ function Nav({
               <div
                 className={`secret-content ${isSecretOpen ? "is-visible" : ""}`}
               >
-                {secretStatus === "idle" && (
+                {!isSecretUnlocked && secretStatus === "idle" && (
                   <div className="secret-date">
                     <input
                       ref={secretDayRef}
                       value={secretDay}
                       onChange={handleSecretDayChange}
+                      onKeyDown={handleDayKeyDown}
                       placeholder="--"
                       inputMode="numeric"
                       maxLength={2}
@@ -462,20 +512,47 @@ function Nav({
                   </div>
                 )}
 
-                {secretStatus === "success" && (
-                  <span className="secret-result">CHOSEN ONE</span>
+                {isSecretUnlocked && (
+                  <ShuffleText
+                    key="chosen"
+                    as="span"
+                    className="secret-result"
+                    text="CHOSEN ONE"
+                    duration={SECRET_RESET_TIME}
+                    revealOnMount
+                  />
                 )}
 
-                {secretStatus === "failed" && (
-                  <span className="secret-result">FAILED ONE</span>
+                {!isSecretUnlocked && secretStatus !== "idle" && (
+                  <ShuffleText
+                    key="failed"
+                    as="span"
+                    className="secret-result"
+                    text="FAILED ONE"
+                    isRevealed={secretStatus === "failed"}
+                    duration={SECRET_RESET_TIME}
+                    revealOnMount
+                  />
                 )}
               </div>
               <div
                 className={`secret-caption ${isSecretOpen ? "is-visible" : ""}`}
               >
-                <div className="secret-caption-text">
-                  <span>YOUR</span>
-                  <span>BIRTHDAY</span>
+                <div
+                  className={`secret-caption-text ${
+                    isSecretUnlocked ? "is-unlocked" : ""
+                  }`}
+                >
+                  <ShuffleText
+                    as="span"
+                    text={isSecretUnlocked ? "CHAPTER" : "YOUR"}
+                    duration={SECRET_RESET_TIME}
+                  />
+                  <ShuffleText
+                    as="span"
+                    text={isSecretUnlocked ? "UNLOCK" : "BIRTHDAY"}
+                    duration={SECRET_RESET_TIME}
+                  />
                 </div>
               </div>
             </div>

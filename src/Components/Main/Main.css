@@ -1156,6 +1156,36 @@
     transform: translateY(0);
   }
 
+  /*
+    Artwork chữ nhật (is-reshaping, xem getArtworkReshapeScale):
+    bắt đầu bằng đúng kích thước ở center, thu nhỏ tại chỗ (0.45s)
+    rồi mới đẩy lên (0.8s). Tổng 1.25s, vẫn trong 1.4s của phase opening.
+  */
+
+  .current-slide.detail-opening.is-reshaping .mobile-detail-artwork {
+    animation: mobileArtworkReshapeOpening 1.25s both;
+  }
+
+  @keyframes mobileArtworkReshapeOpening {
+    0% {
+      transform: translateY(calc(50svh - var(--mobile-detail-width) / 2 - 70px))
+        scale(var(--artwork-reshape-scale));
+
+      animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+    }
+
+    36% {
+      transform: translateY(calc(50svh - var(--mobile-detail-width) / 2 - 70px))
+        scale(1);
+
+      animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+    }
+
+    100% {
+      transform: translateY(0) scale(1);
+    }
+  }
+
   /* ======================================================= */
   /* AUDIO SPACE */
   /* ======================================================= */
@@ -1449,6 +1479,28 @@
     pointer-events: none;
 
     transition: none;
+  }
+
+  /*
+    Artwork chữ nhật khi đóng: hạ xuống ở phase closing như cũ,
+    sang returning thì bắt đầu từ kích thước của detail rồi phóng to lại
+    bằng center, thay vì nhảy kích thước.
+  */
+
+  .current-slide.detail-returning.is-reshaping .slide-artwork {
+    animation: centerArtworkReshapeReturning 0.5s cubic-bezier(0.65, 0, 0.35, 1)
+      both;
+  }
+
+  @keyframes centerArtworkReshapeReturning {
+    from {
+      transform: translate(-50%, -50%)
+        scale(calc(1 / var(--artwork-reshape-scale)));
+    }
+
+    to {
+      transform: translate(-50%, -50%) scale(1);
+    }
   }
 }
 
@@ -2153,8 +2205,14 @@
 /*
   Vùng bấm hai bên có z-index 100, nút X nằm trong slide (z-index 10)
   nên không thể nổi lên trên. Trong detail, vùng bấm bắt đầu dưới nút X.
+
+  Vùng bấm cũng chỉ rộng bằng khoảng trống hai bên khối detail
+  (khối rộng min(80vw, 80svh), giống --mobile-detail-width),
+  để cửa sổ hẹp không bị vùng bấm đè lên nút play, thanh nhạc và chữ.
 */
 
 .gallery-zone.is-detail {
   top: 64px;
+
+  width: min(20%, calc((100vw - min(80vw, 80svh)) / 2));
 }

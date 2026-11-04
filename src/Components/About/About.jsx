@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import "./About.css";
 
 import ShuffleText from "../ShuffleText/ShuffleText";
+import TypewriterText from "../TypewriterText/TypewriterText";
 
 /*
   Nội dung About theo ngôn ngữ.
@@ -54,24 +55,54 @@ const DEVELOPMENT_TEXT = [
 
 const ITEM_SETTLE_TIMES = [700, 1300, 1900];
 
-/* Nội dung một khối: tiêu đề + các đoạn, cùng nhảy loạn rồi cùng chốt. */
+/*
+  Khi đóng: chữ giữ nguyên (không nhảy loạn) và mờ đi trước
+  (aboutDisappear 0.35s trong About.css), rồi lớp blur của menu mới tắt hẳn (0.6s).
+  Trong khoảng này chữ vẫn được giữ hiện để không bị mất giữa chừng.
+*/
 
-function AboutItemText({ title, paragraphs, isOpen, isScrambling }) {
+const CLOSE_TIME = 600;
+
+/*
+  Nội dung một khối: tiêu đề nhảy loạn cho tới khi khối trượt xong,
+  rồi các đoạn bên dưới được gõ ra lần lượt.
+*/
+
+function AboutItemText({
+  title,
+  paragraphs,
+  isOpen,
+  isScrambling,
+  isClosing,
+  typedCount,
+  onParagraphDone,
+}) {
+  // Đang đóng thì đoạn đang gõ dở cứ gõ tiếp trong lúc mờ đi.
+  const canType = (isOpen || isClosing) && !isScrambling;
+
+  function getStatus(index) {
+    if (index < typedCount) return "done";
+
+    if (canType && index === typedCount) return "typing";
+
+    return "hidden";
+  }
+
   return (
     <div className="about-item-content">
       <ShuffleText
         as="h2"
         text={title}
-        isRevealed={isOpen}
+        isRevealed={isOpen || isClosing}
         isScrambling={isScrambling}
       />
 
       {paragraphs.map((paragraph, index) => (
-        <ShuffleText
+        <TypewriterText
           key={index}
           text={paragraph}
-          isRevealed={isOpen}
-          isScrambling={isScrambling}
+          status={getStatus(index)}
+          onDone={() => onParagraphDone(index)}
         />
       ))}
     </div>
@@ -87,21 +118,63 @@ function About({ isAboutOpen, hasAboutStarted, uiTheme, lang = "vi" }) {
 
   const [settledCount, setSettledCount] = useState(0);
 
+  /*
+    Số đoạn đã gõ xong của từng khối.
+    Đóng About thì giữ nguyên chữ khi trượt ra, mở lại mới gõ lại từ đầu.
+  */
+
+  const [typedCounts, setTypedCounts] = useState([0, 0, 0]);
+
+  const [isClosing, setIsClosing] = useState(false);
+
   useEffect(() => {
     if (!isAboutOpen) {
-      const resetTimer = setTimeout(() => setSettledCount(0), 0);
+      if (!hasAboutStarted) return;
 
-      return () => clearTimeout(resetTimer);
+      const closeTimers = [
+        setTimeout(() => {
+          setSettledCount(0);
+          setIsClosing(true);
+        }, 0),
+
+        setTimeout(() => setIsClosing(false), CLOSE_TIME),
+      ];
+
+      return () => closeTimers.forEach(clearTimeout);
     }
 
-    const timers = ITEM_SETTLE_TIMES.map((time, index) =>
-      setTimeout(() => setSettledCount(index + 1), time),
-    );
+    const timers = [
+      setTimeout(() => {
+        setTypedCounts([0, 0, 0]);
+        setIsClosing(false);
+      }, 0),
+
+      ...ITEM_SETTLE_TIMES.map((time, index) =>
+        setTimeout(() => setSettledCount(index + 1), time),
+      ),
+    ];
 
     return () => timers.forEach(clearTimeout);
-  }, [isAboutOpen]);
+  }, [isAboutOpen, hasAboutStarted]);
 
   const isItemScrambling = (index) => isAboutOpen && settledCount <= index;
+
+  function handleParagraphDone(itemIndex, paragraphIndex) {
+    setTypedCounts((prev) =>
+      prev.map((count, index) =>
+        index === itemIndex ? Math.max(count, paragraphIndex + 1) : count,
+      ),
+    );
+  }
+
+  const itemProps = (index) => ({
+    isOpen: isAboutOpen,
+    isScrambling: isItemScrambling(index),
+    isClosing,
+    typedCount: typedCounts[index],
+    onParagraphDone: (paragraphIndex) =>
+      handleParagraphDone(index, paragraphIndex),
+  });
 
   return (
     <div
@@ -118,8 +191,7 @@ function About({ isAboutOpen, hasAboutStarted, uiTheme, lang = "vi" }) {
         <AboutItemText
           title="ABOUT PROJECT"
           paragraphs={text.project}
-          isOpen={isAboutOpen}
-          isScrambling={isItemScrambling(0)}
+          {...itemProps(0)}
         />
       </div>
 
@@ -127,8 +199,7 @@ function About({ isAboutOpen, hasAboutStarted, uiTheme, lang = "vi" }) {
         <AboutItemText
           title="JUST AN ARCHIV3"
           paragraphs={text.archive}
-          isOpen={isAboutOpen}
-          isScrambling={isItemScrambling(1)}
+          {...itemProps(1)}
         />
       </div>
 
@@ -136,8 +207,7 @@ function About({ isAboutOpen, hasAboutStarted, uiTheme, lang = "vi" }) {
         <AboutItemText
           title="DEVELOPMENT"
           paragraphs={DEVELOPMENT_TEXT}
-          isOpen={isAboutOpen}
-          isScrambling={isItemScrambling(2)}
+          {...itemProps(2)}
         />
       </div>
     </div>

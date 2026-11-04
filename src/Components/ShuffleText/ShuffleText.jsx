@@ -1,27 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./ShuffleText.css";
-
-const UPPER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const LOWER = "abcdefghijklmnopqrstuvwxyz";
-const OTHER = "0123456789#%&*+=?!/<>";
-
-function pick(set) {
-  return set[Math.floor(Math.random() * set.length)];
-}
-
-/*
-  Giữ kiểu chữ của ký tự đích:
-  chữ hoa nhảy chữ hoa, chữ thường nhảy chữ thường.
-*/
-
-function randomGlyph(shapeChar) {
-  const upper = shapeChar.toUpperCase();
-  const lower = shapeChar.toLowerCase();
-
-  if (upper === lower) return pick(OTHER + UPPER);
-
-  return shapeChar === upper ? pick(UPPER) : pick(LOWER);
-}
+import { randomGlyph } from "./glyphs";
 
 /*
   Khi `text` đổi, từng ký tự lần lượt:
@@ -35,6 +14,9 @@ function randomGlyph(shapeChar) {
 
   isScrambling = true: chữ nhảy loạn liên tục (giữ hình dạng từ),
   khi chuyển sang false mới chốt về chữ thật.
+
+  revealOnMount = true: vừa hiện ra đã xáo trộn rồi mới thành chữ
+  (mặc định chữ hiện ngay ở lần render đầu).
 */
 
 function ShuffleText({
@@ -44,12 +26,15 @@ function ShuffleText({
   duration = 700,
   isRevealed = true,
   isScrambling = false,
+  revealOnMount = false,
   ...rest
 }) {
   const target = isRevealed ? text : "";
 
-  const [displayText, setDisplayText] = useState(target);
-  const displayRef = useRef(target);
+  const initialText = revealOnMount ? "" : target;
+
+  const [displayText, setDisplayText] = useState(initialText);
+  const displayRef = useRef(initialText);
 
   /* Nhảy loạn liên tục cho tới khi isScrambling tắt. */
 

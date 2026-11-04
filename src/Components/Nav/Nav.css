@@ -639,8 +639,10 @@
     font-weight 0.6s ease;
 }
 
-.secret-caption-text span {
-  display: block;
+/* Mỗi dòng là một ShuffleText (display: grid để chữ xáo trộn chồng lên chỗ giữ). */
+
+.secret-caption-text > span {
+  display: grid;
 
   width: 100%;
 
@@ -649,9 +651,9 @@
   white-space: nowrap;
 }
 
-/* BIRTHDAY lệch trái 3px như vị trí bạn đang thích */
+/* BIRTHDAY lệch trái 3px như vị trí bạn đang thích (UNLOCK thì không lệch) */
 
-.secret-caption-text span:last-child {
+.secret-caption-text:not(.is-unlocked) > span:last-child {
   transform: translateX(-3px);
 }
 

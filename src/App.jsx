@@ -145,6 +145,7 @@ function App() {
             setLayout={setLayout}
             uiTheme={uiTheme}
             onSecretUnlock={handleSecretUnlock}
+            isSecretUnlocked={isSecretUnlocked}
             isUiVisible={hasStarted && shouldShowUi}
             lang={lang}
             onToggleLang={handleToggleLang}

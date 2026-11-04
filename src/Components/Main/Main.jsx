@@ -4,6 +4,7 @@ import "./Main.css";
 import ProgressiveArtwork from "../ProgressiveArtwork/Progressive";
 import AudioPlayer from "../AudioPlayer/AudioPlayer";
 import ShuffleText from "../ShuffleText/ShuffleText";
+import TypewriterText from "../TypewriterText/TypewriterText";
 import { getStory } from "../../data/StoryEn";
 
 /*
@@ -61,18 +62,19 @@ function GridArtwork({ artwork }) {
 }
 
 /* ========================================================= */
-/* SCRAMBLE STORY */
+/* TYPEWRITER STORY */
 /* ========================================================= */
 
 /*
-  Cuộn tới đâu, đoạn truyện xáo trộn rồi hiện ra tới đó,
+  Cuộn tới đâu, đoạn truyện được gõ ra tới đó,
   luôn đi trước đoạn đang thấy REVEAL_AHEAD đoạn.
+  Các đoạn cùng hiện ra thì cùng gõ một lúc.
   Đoạn đã hiện thì giữ nguyên, không chạy lại.
 */
 
-const REVEAL_AHEAD = 2;
+const REVEAL_AHEAD = 1;
 
-function ScrambleStory({ paragraphs, isActive, scrollRootRef, children }) {
+function TypewriterStory({ paragraphs, isActive, scrollRootRef, children }) {
   const containerRef = useRef(null);
 
   const [revealUntil, setRevealUntil] = useState(-1);
@@ -113,14 +115,19 @@ function ScrambleStory({ paragraphs, isActive, scrollRootRef, children }) {
     };
   }, [isActive, paragraphs, scrollRootRef]);
 
+  /* Gõ xong thì con trỏ nhấp nháy ở cuối đoạn cuối cùng đã hiện. */
+
+  const cursorIndex = Math.min(revealUntil, paragraphs.length - 1);
+
   return (
     <div className="mobile-detail-story" ref={containerRef}>
       {paragraphs.map((paragraph, index) => (
-        <ShuffleText
+        <TypewriterText
           key={index}
           data-story-index={index}
           text={paragraph}
-          isRevealed={isActive && index <= revealUntil}
+          status={isActive && index <= revealUntil ? "typing" : "hidden"}
+          showCursor={isActive && index === cursorIndex}
         />
       ))}
 
@@ -259,9 +266,55 @@ function Main({
   /* OPEN DETAIL */
   /* ========================================================= */
 
+  /*
+    Artwork chữ nhật: ở center nằm trong khung 80% x 80% màn hình,
+    còn ở detail nằm trong khung vuông, nên hiện nhỏ hơn.
+    Tỉ lệ này cho animation thu nhỏ tại chỗ trước khi đẩy lên (mở)
+    và phóng to lại sau khi hạ xuống (đóng), thay vì nhảy kích thước.
+    Artwork vuông (hoặc trên điện thoại) thì bằng 1, giữ animation cũ.
+  */
+
+  const [artworkReshapeScale, setArtworkReshapeScale] = useState(1);
+
+  function getArtworkReshapeScale() {
+    const img = artworkImgRef.current;
+
+    if (!img?.naturalWidth || !img?.naturalHeight) return 1;
+
+    const ratio = img.naturalWidth / img.naturalHeight;
+
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+
+    const slideRect = img.closest(".gallery-slide")?.getBoundingClientRect();
+
+    const isPhone = viewportWidth <= 600;
+
+    const centerBoxWidth = isPhone
+      ? viewportWidth * 0.8
+      : (slideRect?.width ?? viewportWidth) * 0.8;
+
+    const centerBoxHeight = isPhone
+      ? viewportWidth * 0.8
+      : (slideRect?.height ?? viewportHeight) * 0.8;
+
+    const centerWidth = Math.min(centerBoxWidth, centerBoxHeight * ratio);
+
+    // Khung vuông của detail: --mobile-detail-width = min(80vw, 80svh).
+    const detailBox = Math.min(viewportWidth * 0.8, viewportHeight * 0.8);
+
+    const detailWidth = Math.min(detailBox, detailBox * ratio);
+
+    const scale = centerWidth / detailWidth;
+
+    return Math.abs(scale - 1) < 0.02 ? 1 : scale;
+  }
+
   function handleOpenDetail() {
     if (phase !== "idle") return;
     if (detailPhase !== "closed") return;
+
+    setArtworkReshapeScale(getArtworkReshapeScale());
 
     setUiTransitionLocked(true);
     setForceHideUi(true);
@@ -311,6 +364,9 @@ function Main({
 
   function handleCloseDetail() {
     if (detailPhase !== "open") return;
+
+    // Có thể đã next/back sang artwork khác trong detail.
+    setArtworkReshapeScale(getArtworkReshapeScale());
 
     setUiTransitionLocked(true);
 
@@ -885,6 +941,8 @@ function Main({
 
     ${detailPhase === "closed" ? "detail-closed" : `detail-${detailPhase}`}
 
+    ${artworkReshapeScale !== 1 ? "is-reshaping" : ""}
+
     ${
       detailSwipePhase !== "idle"
         ? `detail-swipe-${detailSwipePhase}-${detailSwipeDirection}`
@@ -892,6 +950,8 @@ function Main({
     }
   `}
               style={{
+                "--artwork-reshape-scale": artworkReshapeScale,
+
                 backgroundColor: getBackground(currentItem),
 
                 "--detail-bg": getBackground(currentItem),
@@ -1054,7 +1114,7 @@ function Main({
 
                   {/* MOBILE STORY */}
 
-                  <ScrambleStory
+                  <TypewriterStory
                     key={currentIndex}
                     paragraphs={currentStory}
                     isActive={isDetailTitleRevealed}
@@ -1067,7 +1127,7 @@ function Main({
                     >
                       <img src="/Detail/return-mark.png" alt="" />
                     </button>
-                  </ScrambleStory>
+                  </TypewriterStory>
                 </div>
               )}
               {/* =============================================== */}

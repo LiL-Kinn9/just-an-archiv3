@@ -1,0 +1,70 @@
+/* ========================================================= */
+/* TYPEWRITER TEXT */
+/* ========================================================= */
+
+/* Phần chưa gõ: giữ chỗ nhưng không hiện. */
+
+.typewriter-rest {
+  visibility: hidden;
+}
+
+/*
+  Con trỏ không chiếm chỗ (span rỗng, khối vẽ bằng ::after),
+  nên không làm chữ xuống dòng khác đi.
+  Con trỏ cùng màu với chữ,
+  muốn đổi thì đặt --typewriter-cursor-color.
+*/
+
+.typewriter-cursor {
+  position: relative;
+}
+
+.typewriter-cursor::after {
+  content: "";
+
+  position: absolute;
+
+  left: 1px;
+  top: 50%;
+
+  /* Khối to bằng một ký tự (font chữ đang dùng là monospace). */
+  width: 1ch;
+  height: 1.1em;
+
+  transform: translateY(-50%);
+
+  background: var(--typewriter-cursor-color, currentColor);
+
+  animation: typewriterBlink 1s steps(1) infinite;
+}
+
+/* Đang gõ thì con trỏ đứng yên. */
+
+.typewriter-cursor.is-typing::after {
+  animation: none;
+}
+
+@keyframes typewriterBlink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Chữ thật cho trình đọc màn hình, không hiển thị. */
+
+.typewriter-sr {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  overflow: hidden;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+
+  white-space: nowrap;
+
+  user-select: none;
+  -webkit-user-select: none;
+}
