@@ -91,7 +91,8 @@
 
   transition:
     transform 0.6s ease,
-    filter 0.6s ease;
+    filter 0.6s ease,
+    text-shadow 0.6s ease;
 }
 
 .nav-btn img {
@@ -294,15 +295,14 @@
   transition:
     transform 0.6s ease,
     filter 0.6s ease,
+    text-shadow 0.6s ease,
     color 0.6s ease;
 }
 
 .nav-lang-btn:hover {
   transform: translateX(2px);
 
-  filter: drop-shadow(
-    0 4px 5px color-mix(in srgb, var(--nav-color) 30%, transparent)
-  );
+  text-shadow: 0 4px 5px color-mix(in srgb, var(--nav-color) 30%, transparent);
 
   font-weight: 700;
 }
@@ -328,15 +328,14 @@
   transition:
     transform 0.6s ease,
     filter 0.6s ease,
+    text-shadow 0.6s ease,
     color 0.6s ease;
 }
 
 .nav-menu button:hover {
   transform: translateX(-2px);
 
-  filter: drop-shadow(
-    0 4px 5px color-mix(in srgb, var(--nav-color) 30%, transparent)
-  );
+  text-shadow: 0 4px 5px color-mix(in srgb, var(--nav-color) 30%, transparent);
 
   font-weight: 700;
 }
@@ -425,15 +424,14 @@
   transition:
     transform 0.6s ease,
     filter 0.6s ease,
+    text-shadow 0.6s ease,
     font-weight 0.6s ease;
 }
 
 .secret-button:hover {
   transform: translateX(-2px);
 
-  filter: drop-shadow(
-    0 4px 5px color-mix(in srgb, var(--nav-color) 30%, transparent)
-  );
+  text-shadow: 0 4px 5px color-mix(in srgb, var(--nav-color) 30%, transparent);
 
   font-weight: 700;
 }
@@ -637,6 +635,7 @@
   transition:
     transform 0.6s ease,
     filter 0.6s ease,
+    text-shadow 0.6s ease,
     font-weight 0.6s ease;
 }
 
@@ -663,9 +662,7 @@
 .secret-control-inner:has(.secret-button:hover) .secret-caption-text {
   transform: translateX(-2px);
 
-  filter: drop-shadow(
-    0 4px 5px color-mix(in srgb, var(--nav-color) 30%, transparent)
-  );
+  text-shadow: 0 4px 5px color-mix(in srgb, var(--nav-color) 30%, transparent);
 
   font-weight: 700;
 }
