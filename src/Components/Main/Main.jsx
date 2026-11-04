@@ -3,6 +3,17 @@ import "./Main.css";
 
 import ProgressiveArtwork from "../ProgressiveArtwork/Progressive";
 import AudioPlayer from "../AudioPlayer/AudioPlayer";
+import ShuffleText from "../ShuffleText/ShuffleText";
+
+/*
+  Ảnh hiện ở ô secret khi chưa unlock.
+*/
+
+const LOCKED_SECRET_ARTWORK = {
+  title: "Secret",
+  image: "/Artworks/HVL-artwork116.jpg",
+  preview1: "/Artworks/preview1/HVL-artwork116.jpg",
+};
 
 function GridArtwork({ artwork }) {
   const [isOriginalLoaded, setIsOriginalLoaded] = useState(false);
@@ -31,6 +42,75 @@ function GridArtwork({ artwork }) {
   );
 }
 
+/* ========================================================= */
+/* SCRAMBLE STORY */
+/* ========================================================= */
+
+/*
+  Cuộn tới đâu, đoạn truyện xáo trộn rồi hiện ra tới đó,
+  luôn đi trước đoạn đang thấy REVEAL_AHEAD đoạn.
+  Đoạn đã hiện thì giữ nguyên, không chạy lại.
+*/
+
+const REVEAL_AHEAD = 2;
+
+function ScrambleStory({ paragraphs, isActive, scrollRootRef, children }) {
+  const containerRef = useRef(null);
+
+  const [revealUntil, setRevealUntil] = useState(-1);
+
+  useEffect(() => {
+    if (!isActive) return;
+
+    const container = containerRef.current;
+
+    if (!container) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        let lastVisible = -1;
+
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          lastVisible = Math.max(
+            lastVisible,
+            Number(entry.target.dataset.storyIndex),
+          );
+        });
+
+        if (lastVisible < 0) return;
+
+        setRevealUntil((prev) => Math.max(prev, lastVisible + REVEAL_AHEAD));
+      },
+      { root: scrollRootRef.current },
+    );
+
+    container
+      .querySelectorAll("[data-story-index]")
+      .forEach((element) => observer.observe(element));
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [isActive, paragraphs, scrollRootRef]);
+
+  return (
+    <div className="mobile-detail-story" ref={containerRef}>
+      {paragraphs.map((paragraph, index) => (
+        <ShuffleText
+          key={index}
+          data-story-index={index}
+          text={paragraph}
+          isRevealed={isActive && index <= revealUntil}
+        />
+      ))}
+
+      {children}
+    </div>
+  );
+}
+
 function Main({
   layout,
   setLayout,
@@ -41,22 +121,18 @@ function Main({
   setCurrentIndex,
 
   uiTheme,
-  isUiVisible,
 
   setForceHideUi,
   setUiTransitionLocked,
 
   isSecretUnlocked,
 }) {
-  const artworkContainerRef = useRef(null);
-
   const touchStartXRef = useRef(0);
   const touchStartYRef = useRef(0);
 
   const detailSlideRef = useRef(null);
   const artworkImgRef = useRef(null);
 
-  const [centerAudioPosition, setCenterAudioPosition] = useState(null);
   const [isAudioReady, setIsAudioReady] = useState(false);
 
   const [detailSwipePhase, setDetailSwipePhase] = useState("idle");
@@ -112,6 +188,13 @@ function Main({
       : null;
 
   const currentItem = artworks[currentIndex];
+
+  /*
+    Số thứ tự theo id chương, mẫu số là id lớn nhất (17),
+    để vẫn đúng khi các chương chưa viết đang bị ẩn.
+  */
+
+  const totalChapters = Math.max(...artworks.map((artwork) => artwork.id));
 
   const prevItem = prevIndex !== null ? artworks[prevIndex] : null;
 
@@ -330,7 +413,18 @@ function Main({
   /* DETAIL AUDIO VISIBILITY */
   /* ========================================================= */
 
-  const shouldShowAudio = isDetailOpen ? detailPhase === "open" : isUiVisible;
+  /*
+    Audio chỉ hiện trong detail, không còn ở center.
+  */
+
+  const shouldShowAudio = isDetailOpen && detailPhase === "open";
+
+  /*
+    Tiêu đề chỉ xáo trộn rồi hiện ra sau khi artwork trượt xong.
+  */
+
+  const isDetailTitleRevealed =
+    detailPhase === "open" || detailPhase === "closing";
 
   function handleStoryWheel(event) {
     if (detailPhase !== "open") return;
@@ -618,29 +712,6 @@ function Main({
     }
   }
 
-  function updateCenterAudioPosition() {
-    if (!artworkContainerRef.current) return;
-
-    const rect = artworkContainerRef.current.getBoundingClientRect();
-
-    setCenterAudioPosition({
-      top: rect.bottom + 24,
-      width: rect.width,
-    });
-  }
-
-  useEffect(() => {
-    if (detailPhase !== "closed") return;
-
-    updateCenterAudioPosition();
-
-    window.addEventListener("resize", updateCenterAudioPosition);
-
-    return () => {
-      window.removeEventListener("resize", updateCenterAudioPosition);
-    };
-  }, [currentIndex, detailPhase]);
-
   const detailSwipeTargetItem =
     detailSwipeTargetIndex !== null ? artworks[detailSwipeTargetIndex] : null;
 
@@ -661,11 +732,32 @@ function Main({
     };
   }, [layout, currentIndex]);
 
-  const visibleArtworks = artworks.filter((artwork) => {
-    if (!artwork.isSecret) return true;
+  /* ========================================================= */
+  /* GRID: CHAPTERS + SECRET */
+  /* ========================================================= */
 
-    return isSecretUnlocked;
-  });
+  const gridChapters = artworks.filter((artwork) => !artwork.isSecret);
+
+  const secretArtwork = artworks.find((artwork) => artwork.isSecret);
+
+  /*
+    Desktop xếp so le: mỗi 3 ảnh chiếm 2 hàng (cột 1 + cột 3, rồi cột 2),
+    mỗi hàng được kéo lên nửa ô. Ô secret phải kéo lên bằng đúng hàng
+    của ảnh cuối, để nằm ngay dưới ảnh đó.
+  */
+
+  function getGridRow(position) {
+    const group = Math.floor((position - 1) / 3);
+    const slot = (position - 1) % 3;
+
+    return group * 2 + (slot < 2 ? 1 : 2);
+  }
+
+  const secretLift =
+    gridChapters.length > 0
+      ? (getGridRow(gridChapters.length) - 1) * 0.5
+      : 0;
+
   return (
     <main className={`main ${layout}`}>
       {/* ===================================================== */}
@@ -747,14 +839,6 @@ function Main({
 
                 "--detail-story-line-color":
                   uiTheme === "white" ? "#f5f5f56e" : "#000000",
-
-                "--center-audio-top": centerAudioPosition
-                  ? `${centerAudioPosition.top}px`
-                  : "auto",
-
-                "--center-audio-width": centerAudioPosition
-                  ? `${centerAudioPosition.width}px`
-                  : "35vw",
               }}
               onScroll={handleDetailScroll}
               onAnimationEnd={handleSlideEnd}
@@ -763,17 +847,12 @@ function Main({
               {/* =============================================== */}
               {/* CENTER / DESKTOP ARTWORK */}
               {/* =============================================== */}
-              <div
-                ref={artworkContainerRef}
-                className="slide-artwork"
-                onClick={handleOpenDetail}
-              >
+              <div className="slide-artwork" onClick={handleOpenDetail}>
                 <ProgressiveArtwork
                   key={currentItem.image}
                   artwork={currentItem}
                   imageRef={artworkImgRef}
                   alt={currentItem.title}
-                  onImageLoad={updateCenterAudioPosition}
                 />
               </div>
               {/* =============================================== */}
@@ -787,8 +866,8 @@ function Main({
 
                       <div className="detail-info">
                         <p className="detail-index">
-                          {String(currentIndex + 1).padStart(2, "0")} /{" "}
-                          {String(artworks.length).padStart(2, "0")}
+                          {String(currentItem.id).padStart(2, "0")} /{" "}
+                          {String(totalChapters).padStart(2, "0")}
                         </p>
 
                         <p className="detail-artwork-title">
@@ -815,31 +894,13 @@ function Main({
                         onTouchEnd={handleStoryTouchEnd}
                       >
                         <div className="detail-story-track">
-                          {currentItem.story?.map((paragraph, index) => {
-                            const offset = index - activeStoryIndex;
-                            const distance = Math.abs(offset);
-
-                            return (
-                              <p
-                                key={index}
-                                className={`detail-story-paragraph ${
-                                  offset === 0 ? "is-active" : ""
-                                }`}
-                                style={{
-                                  "--story-offset": offset,
-                                  "--story-opacity":
-                                    distance === 0
-                                      ? 1
-                                      : distance === 1
-                                        ? 0.3
-                                        : 0,
-                                  "--story-scale": distance === 0 ? 1 : 0.94,
-                                }}
-                              >
-                                {paragraph}
-                              </p>
-                            );
-                          })}
+                          {currentItem.story?.length > 0 && (
+                            <ShuffleText
+                              key={currentIndex}
+                              className="detail-story-paragraph"
+                              text={currentItem.story[activeStoryIndex] ?? ""}
+                            />
+                          )}
                         </div>
 
                         <button
@@ -888,32 +949,41 @@ function Main({
 
                   <div className="mobile-detail-info">
                     <p className="mobile-detail-index">
-                      {String(currentIndex + 1).padStart(2, "0")} /{" "}
-                      {String(artworks.length).padStart(2, "0")}
+                      {String(currentItem.id).padStart(2, "0")} /{" "}
+                      {String(totalChapters).padStart(2, "0")}
                     </p>
 
-                    <p className="mobile-detail-artwork-title">
-                      {currentItem.title}
-                    </p>
+                    <ShuffleText
+                      className="mobile-detail-artwork-title"
+                      text={currentItem.title}
+                      isRevealed={isDetailTitleRevealed}
+                    />
 
-                    <h1 className="mobile-detail-story-title">
-                      {currentItem.storyTitle}
-                    </h1>
+                    <ShuffleText
+                      as="h1"
+                      className="mobile-detail-story-title"
+                      text={currentItem.storyTitle}
+                      isRevealed={isDetailTitleRevealed}
+                      duration={900}
+                    />
+                  </div>
 
-                    <div className="mobile-detail-images">
-                      <img src="/Detail/detail-mark.png" alt="" />
-                      <img src="/Detail/detail-mark.png" alt="" />
-                      <img src="/Detail/detail-mark.png" alt="" />
-                    </div>
+                  {/* MOBILE MARK LINE (desktop: kéo ngang hết khối) */}
+
+                  <div className="mobile-detail-images">
+                    <img src="/Detail/detail-mark.png" alt="" />
+                    <img src="/Detail/detail-mark.png" alt="" />
+                    <img src="/Detail/detail-mark.png" alt="" />
                   </div>
 
                   {/* MOBILE STORY */}
 
-                  <div className="mobile-detail-story">
-                    {currentItem.story?.map((paragraph, index) => (
-                      <p key={index}>{paragraph}</p>
-                    ))}
-
+                  <ScrambleStory
+                    key={currentIndex}
+                    paragraphs={currentItem.story ?? []}
+                    isActive={isDetailTitleRevealed}
+                    scrollRootRef={detailSlideRef}
+                  >
                     <button
                       className="mobile-return-btn"
                       onClick={handleReturnMobileDetail}
@@ -921,13 +991,13 @@ function Main({
                     >
                       <img src="/Detail/return-mark.png" alt="" />
                     </button>
-                  </div>
+                  </ScrambleStory>
                 </div>
               )}
               {/* =============================================== */}
               {/* AUDIO */}
               {/* =============================================== */}
-              {currentItem.audio && (
+              {isDetailOpen && currentItem.audio && (
                 <div className="desktop-main-audio">
                   <AudioPlayer
                     audioSrc={currentItem.audio}
@@ -1033,7 +1103,7 @@ function Main({
       {layout === "grid" && (
         <div className="grid-view">
           <div className="grid-container">
-            {visibleArtworks.map((artwork) => (
+            {gridChapters.map((artwork) => (
               <button
                 className="grid-item"
                 key={artwork.id}
@@ -1053,6 +1123,42 @@ function Main({
                 <GridArtwork artwork={artwork} />
               </button>
             ))}
+
+            {/* SECRET: luôn ở cuối, chiếm hết một hàng */}
+
+            {secretArtwork && isSecretUnlocked && (
+              <button
+                className="grid-item grid-item-secret"
+                onClick={() => {
+                  const realIndex = artworks.findIndex(
+                    (item) => item.id === secretArtwork.id,
+                  );
+
+                  setCurrentIndex(realIndex);
+                  setLayout("center");
+                }}
+                style={{
+                  backgroundColor: secretArtwork.background,
+                  "--secret-lift": secretLift,
+                }}
+                aria-label={`Open ${secretArtwork.title}`}
+              >
+                <GridArtwork artwork={secretArtwork} />
+              </button>
+            )}
+
+            {secretArtwork && !isSecretUnlocked && (
+              <div
+                className="grid-item grid-item-secret is-locked"
+                style={{
+                  backgroundColor: secretArtwork.background,
+                  "--secret-lift": secretLift,
+                }}
+                aria-label="Secret artwork"
+              >
+                <GridArtwork artwork={LOCKED_SECRET_ARTWORK} />
+              </div>
+            )}
           </div>
         </div>
       )}

@@ -1,0 +1,37 @@
+/* ========================================================= */
+/* SHUFFLE TEXT */
+/* ========================================================= */
+
+.shuffle-text {
+  display: grid;
+}
+
+/* Lớp giữ chỗ và lớp chữ đang chạy nằm chồng lên nhau. */
+
+.shuffle-text-reserve,
+.shuffle-text-live {
+  grid-area: 1 / 1;
+}
+
+.shuffle-text-reserve {
+  visibility: hidden;
+}
+
+/* Chữ thật cho trình đọc màn hình, không hiển thị. */
+
+.shuffle-text-sr {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  overflow: hidden;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+
+  white-space: nowrap;
+
+  user-select: none;
+  -webkit-user-select: none;
+}

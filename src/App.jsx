@@ -124,7 +124,6 @@ function App() {
             currentIndex={currentIndex}
             setCurrentIndex={setCurrentIndex}
             uiTheme={uiTheme}
-            isUiVisible={shouldShowUi}
             setForceHideUi={setForceHideUi}
             setUiTransitionLocked={setUiTransitionLocked}
             isSecretUnlocked={isSecretUnlocked}

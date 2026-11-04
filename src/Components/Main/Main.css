@@ -491,27 +491,14 @@
 
   margin: 0;
 
-  color: var(--detail-story-color);
+  color: var(--detail-story-title-color);
 
   font-size: clamp(14px, 1vw, 17px);
-  font-weight: 500;
+  font-weight: 600;
 
   line-height: 1.6;
 
-  opacity: var(--story-opacity);
-
-  transform: translateY(calc(-50% + (var(--story-offset) * 110px)))
-    scale(var(--story-scale));
-
-  transition:
-    transform 0.7s cubic-bezier(0.76, 0, 0.24, 1),
-    opacity 0.5s ease;
-}
-
-.detail-story-paragraph.is-active {
-  color: var(--detail-story-title-color);
-
-  font-weight: 600;
+  transform: translateY(-50%);
 }
 
 /* ========================================================= */
@@ -1024,7 +1011,8 @@
 /* MOBILE */
 /* ========================================================= */
 
-@media (max-width: 600px) {
+/* TẠM: desktop dùng detail của mobile. Muốn trả desktop detail, xóa ", (min-width: 601px)". */
+@media (max-width: 600px), (min-width: 601px) {
   .desktop-detail {
     display: none;
   }
@@ -1092,8 +1080,18 @@
   /* MOBILE DETAIL */
   /* ======================================================= */
 
+  /*
+    Điện thoại: 80vw như cũ.
+    Desktop: giới hạn theo chiều cao để artwork vuông
+    bằng đúng artwork ở center (80% chiều cao).
+  */
+
+  .current-slide {
+    --mobile-detail-width: min(80vw, 80svh);
+  }
+
   .mobile-detail {
-    width: 80%;
+    width: var(--mobile-detail-width);
 
     margin: 0 auto;
 
@@ -1146,7 +1144,7 @@
 
   @keyframes mobileArtworkOpening {
     from {
-      transform: translateY(calc(50svh - 40vw - 70px));
+      transform: translateY(calc(50svh - var(--mobile-detail-width) / 2 - 70px));
     }
 
     to {
@@ -1241,15 +1239,22 @@
   /* INFO IMAGES */
   /* ======================================================= */
 
+  /*
+    Dải mark giờ nằm ngoài .mobile-detail-info.
+    margin-top 29px = gap 14px + margin 15px như khi còn nằm trong info.
+  */
+
   .mobile-detail-images {
     --overlap: 20px;
 
     width: 100%;
 
-    margin-top: 15px;
+    margin-top: 29px;
 
     display: flex;
     align-items: center;
+
+    opacity: 0;
   }
 
   .mobile-detail-images img {
@@ -1270,7 +1275,8 @@
   /* INFO APPEARS AFTER ARTWORK */
   /* ======================================================= */
 
-  .current-slide.detail-open .mobile-detail-info {
+  .current-slide.detail-open .mobile-detail-info,
+  .current-slide.detail-open .mobile-detail-images {
     opacity: 1;
 
     transition: opacity 0.5s ease 0.15s;
@@ -1322,7 +1328,8 @@
     right: 12px;
   }
 }
-@media (max-width: 600px) {
+/* TẠM: desktop dùng detail của mobile. Muốn trả desktop detail, xóa ", (min-width: 601px)". */
+@media (max-width: 600px), (min-width: 601px) {
   .current-slide.detail-hiding-ui .mobile-detail {
     visibility: hidden;
     pointer-events: none;
@@ -1334,7 +1341,8 @@
     visibility: visible;
   }
 }
-@media (max-width: 600px) {
+/* TẠM: desktop dùng detail của mobile. Muốn trả desktop detail, xóa ", (min-width: 601px)". */
+@media (max-width: 600px), (min-width: 601px) {
   .current-slide.detail-returning {
     overflow: hidden;
   }
@@ -1348,7 +1356,8 @@
     pointer-events: none;
   }
 }
-@media (max-width: 600px) {
+/* TẠM: desktop dùng detail của mobile. Muốn trả desktop detail, xóa ", (min-width: 601px)". */
+@media (max-width: 600px), (min-width: 601px) {
   /* ======================================================= */
   /* MOBILE DETAIL CLOSING */
   /* ======================================================= */
@@ -1367,7 +1376,8 @@
   /* INFO -> RIGHT */
   /* ======================================================= */
 
-  .current-slide.detail-closing .mobile-detail-info {
+  .current-slide.detail-closing .mobile-detail-info,
+  .current-slide.detail-closing .mobile-detail-images {
     opacity: 0;
 
     transform: translateX(80px);
@@ -1409,7 +1419,7 @@
     }
 
     to {
-      transform: translateY(calc(50svh - 40vw - 70px));
+      transform: translateY(calc(50svh - var(--mobile-detail-width) / 2 - 70px));
     }
   }
 
@@ -1442,7 +1452,8 @@
   }
 }
 
-@media (max-width: 600px) {
+/* TẠM: desktop dùng detail của mobile. Muốn trả desktop detail, xóa ", (min-width: 601px)". */
+@media (max-width: 600px), (min-width: 601px) {
   .detail-close-btn {
     transition:
       opacity 0.35s ease,
@@ -1464,7 +1475,8 @@
   }
 }
 
-@media (max-width: 600px) {
+/* TẠM: desktop dùng detail của mobile. Muốn trả desktop detail, xóa ", (min-width: 601px)". */
+@media (max-width: 600px), (min-width: 601px) {
   .current-slide.detail-open .detail-close-btn.is-scroll-visible {
     opacity: 1;
     transform: translateY(0);
@@ -1680,35 +1692,31 @@
 }
 
 /* ========================================================= */
-/* CENTER AUDIO - FOLLOW REAL ARTWORK */
+/* DESKTOP DETAIL AUDIO */
 /* ========================================================= */
 
-.current-slide.detail-closed .audio-player,
-.current-slide.detail-hiding-ui .audio-player {
-  width: var(--center-audio-width);
+/*
+  Audio chỉ còn ở detail.
+  - Rộng đúng bằng cột phải (35%), thẳng mép với artwork.
+  - Đáy nằm ở 10%, cùng đường đáy với nút return bên cột trái.
+*/
 
-  left: 50%;
-  top: var(--center-audio-top);
-  bottom: auto;
-
-  transform: translateX(-50%);
-}
-/* DESKTOP DETAIL */
 .current-slide.detail-opening .audio-player,
 .current-slide.detail-open .audio-player,
 .current-slide.detail-closing .audio-player {
   left: 72.5%;
 
   top: auto;
-  bottom: 15%;
+  bottom: 10%;
 
-  width: 30vw;
+  width: 35%;
 
   transform: translateX(-50%);
 }
 
 /* MOBILE DETAIL */
-@media (max-width: 600px) {
+/* TẠM: desktop dùng detail của mobile. Muốn trả desktop detail, xóa ", (min-width: 601px)". */
+@media (max-width: 600px), (min-width: 601px) {
   .current-slide.detail-hiding-ui .audio-player,
   .current-slide.detail-opening .audio-player {
     opacity: 0;
@@ -1746,19 +1754,12 @@
   }
 }
 
-/* PC */
-@media (min-width: 601px) {
-  .current-slide.detail-closed .audio-player,
-  .current-slide.detail-hiding-ui .audio-player {
-    width: min(var(--center-audio-width), 720px);
-  }
-}
-
 .mobile-return-btn {
   display: none;
 }
 
-@media (max-width: 600px) {
+/* TẠM: desktop dùng detail của mobile. Muốn trả desktop detail, xóa ", (min-width: 601px)". */
+@media (max-width: 600px), (min-width: 601px) {
   .mobile-return-btn {
     display: flex;
 
@@ -1815,7 +1816,8 @@
   user-select: none;
 }
 
-@media (max-width: 600px) {
+/* TẠM: desktop dùng detail của mobile. Muốn trả desktop detail, xóa ", (min-width: 601px)". */
+@media (max-width: 600px), (min-width: 601px) {
   .desktop-return-btn {
     display: none;
   }
@@ -1948,7 +1950,8 @@
   display: contents;
 }
 
-@media (max-width: 600px) {
+/* TẠM: desktop dùng detail của mobile. Muốn trả desktop detail, xóa ", (min-width: 601px)". */
+@media (max-width: 600px), (min-width: 601px) {
   .desktop-main-audio {
     display: none;
   }
@@ -1976,8 +1979,8 @@
 
     position: absolute;
 
-    left: -12.5%;
-    right: -12.5%;
+    left: calc((var(--mobile-detail-width) - 100vw) / 2);
+    right: calc((var(--mobile-detail-width) - 100vw) / 2);
 
     top: -24px;
     bottom: 0px;
@@ -2055,4 +2058,44 @@
   pointer-events: auto;
 
   z-index: 50;
+}
+
+/* ========================================================= */
+/* GRID: SECRET (luôn ở cuối, chiếm hết một hàng) */
+/* ========================================================= */
+
+.grid-view {
+  container-type: inline-size;
+}
+
+.grid-item.grid-item-secret {
+  grid-column: 1 / -1;
+
+  aspect-ratio: 16 / 9;
+}
+
+.grid-item-secret.is-locked {
+  cursor: default;
+}
+
+/* Mobile đặt ảnh grid height: auto, ô secret cần ảnh lấp khung. */
+
+.grid-item-secret img {
+  height: 100%;
+}
+
+@media (min-width: 601px) {
+  /*
+    Một ô vuông = (90% bề ngang - 2 khoảng cách 50px) / 3.
+    --secret-lift (số ô, Main.jsx tính) kéo ô secret lên ngay dưới ảnh cuối.
+    margin-bottom âm cắt bớt khoảng trống thừa ở cuối grid do việc kéo lên.
+  */
+
+  .grid-item.grid-item-secret {
+    --grid-cell: calc((90cqi - 100px) / 3);
+
+    transform: translateY(calc(var(--secret-lift, 0) * -1 * var(--grid-cell)));
+
+    margin-bottom: calc(var(--secret-lift, 0) * -1 * var(--grid-cell));
+  }
 }

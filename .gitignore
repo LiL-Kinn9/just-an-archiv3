@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 public/Videos/IDK1.mp4
+# Ghi chú truyện (giữ trên máy, không đưa lên GitHub)
+story/
+CLAUDE.md
