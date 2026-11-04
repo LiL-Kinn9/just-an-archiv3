@@ -2099,3 +2099,15 @@
     margin-bottom: calc(var(--secret-lift, 0) * -1 * var(--grid-cell));
   }
 }
+
+/* ========================================================= */
+/* DESKTOP: CHỮ TRUYỆN TO HƠN (mobile giữ 14px) */
+/* ========================================================= */
+
+@media (min-width: 601px) {
+  .mobile-detail-story p {
+    font-size: 16px;
+
+    line-height: 1.75;
+  }
+}
