@@ -1971,11 +1971,19 @@
 
     z-index: 100;
 
-    isolation: isolate;
+    /* (bỏ isolation: blur giờ là thẻ thật, xếp lớp bằng z-index dương) */
   }
 
-  .current-slide.detail-open .mobile-audio-sticky::before {
-    content: "";
+  .mobile-audio-blur {
+    display: none;
+  }
+
+  .mobile-audio-sticky .audio-player {
+    z-index: 1;
+  }
+
+  .current-slide.detail-open .mobile-audio-sticky .mobile-audio-blur {
+    display: block;
 
     position: absolute;
 
@@ -1985,7 +1993,7 @@
     top: -24px;
     bottom: 0px;
 
-    z-index: -1;
+    z-index: 0;
 
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
@@ -2007,14 +2015,14 @@
     pointer-events: none;
   }
 
-  .current-slide.detail-closing .mobile-audio-sticky::before,
-  .current-slide.detail-returning .mobile-audio-sticky::before {
+  .current-slide.detail-closing .mobile-audio-sticky .mobile-audio-blur,
+  .current-slide.detail-returning .mobile-audio-sticky .mobile-audio-blur {
     opacity: 0;
     backdrop-filter: blur(0);
     -webkit-backdrop-filter: blur(0);
   }
 
-  .current-slide.detail-open .mobile-audio-sticky::before {
+  .current-slide.detail-open .mobile-audio-sticky .mobile-audio-blur {
     opacity: 1;
 
     transition:
@@ -2022,8 +2030,8 @@
       backdrop-filter 0.3s ease;
   }
 
-  .current-slide.detail-closing .mobile-audio-sticky::before,
-  .current-slide.detail-returning .mobile-audio-sticky::before {
+  .current-slide.detail-closing .mobile-audio-sticky .mobile-audio-blur,
+  .current-slide.detail-returning .mobile-audio-sticky .mobile-audio-blur {
     opacity: 0;
     backdrop-filter: blur(0);
     -webkit-backdrop-filter: blur(0);
@@ -2110,4 +2118,30 @@
 
     line-height: 1.75;
   }
+}
+
+/* ========================================================= */
+/* AUDIO: DẢI MỜ DẦN THAY BLUR (CHỈ CHROME / EDGE) */
+/* ========================================================= */
+
+/*
+  Chrome/Edge không hiện backdrop-filter ở đây.
+  Thay bằng màu nền của chương, đặc ở trên rồi mờ dần xuống,
+  để chữ cuộn tới dưới thanh audio vẫn bị che êm như blur.
+  Không dùng mask để tránh thêm lỗi vẽ.
+*/
+
+.current-slide.detail-open .mobile-audio-sticky .mobile-audio-blur.is-fade {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+
+  mask-image: none;
+  -webkit-mask-image: none;
+
+  background: linear-gradient(
+    to bottom,
+    var(--detail-bg, #000) 0%,
+    var(--detail-bg, #000) 55%,
+    transparent 100%
+  );
 }

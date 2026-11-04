@@ -6,6 +6,23 @@ import AudioPlayer from "../AudioPlayer/AudioPlayer";
 import ShuffleText from "../ShuffleText/ShuffleText";
 
 /*
+  Chrome và Edge không hiện blur sau thanh audio, nên ở đó dùng dải màu nền
+  mờ dần thay thế. VS Code (Electron) chỉ báo "Chromium", Safari không có
+  userAgentData, nên cả hai vẫn giữ blur thật.
+*/
+
+const USE_AUDIO_FADE_FALLBACK = (() => {
+  const brands =
+    typeof navigator !== "undefined"
+      ? (navigator.userAgentData?.brands ?? []).map((item) => item.brand)
+      : [];
+
+  return brands.some(
+    (brand) => brand === "Google Chrome" || brand === "Microsoft Edge",
+  );
+})();
+
+/*
   Ảnh hiện ở ô secret khi chưa unlock.
 */
 
@@ -589,6 +606,36 @@ function Main({
     }
   }
 
+  /* ========================================================= */
+  /* PREV / NEXT CONTROLS (center + detail) */
+  /* ========================================================= */
+
+  /*
+    Ở center: nút trượt sang artwork khác như cũ.
+    Ở detail: nút dùng chung animation trượt của detail (handleDetailSwipe).
+  */
+
+  const isGalleryControlPhase =
+    detailPhase === "closed" || detailPhase === "open";
+
+  /*
+    Vùng bấm hai bên nằm đè lên vùng cuộn của detail,
+    nên chuyển tiếp lăn chuột để vẫn cuộn được truyện ở mép màn hình.
+  */
+
+  function handleGalleryZoneWheel(event) {
+    if (detailPhase !== "open") return;
+
+    const isHorizontal = Math.abs(event.deltaX) > Math.abs(event.deltaY);
+
+    if (isHorizontal) {
+      handleDetailNavigationWheel(event);
+      return;
+    }
+
+    detailSlideRef.current?.scrollBy({ top: event.deltaY });
+  }
+
   function getTouchDistance(touches) {
     if (touches.length < 2) return null;
 
@@ -793,11 +840,18 @@ function Main({
             {/* LEFT 20% INTERACTION ZONE */}
             {/* ================================================= */}
 
-            {prevItem && detailPhase === "closed" && (
-              <div className="gallery-zone gallery-zone-left">
+            {prevItem && isGalleryControlPhase && (
+              <div
+                className="gallery-zone gallery-zone-left"
+                onWheel={handleGalleryZoneWheel}
+              >
                 <button
                   className="gallery-control gallery-control-prev"
-                  onClick={handlePrev}
+                  onClick={() =>
+                    detailPhase === "open"
+                      ? handleDetailSwipe("prev")
+                      : handlePrev()
+                  }
                   aria-label="Previous artwork"
                 >
                   <img src={prevIcon} alt="" />
@@ -827,6 +881,8 @@ function Main({
   `}
               style={{
                 backgroundColor: getBackground(currentItem),
+
+                "--detail-bg": getBackground(currentItem),
 
                 "--detail-color":
                   uiTheme === "white" ? "#f5f5f5d6" : "#000000d6",
@@ -936,6 +992,14 @@ function Main({
 
                   {currentItem.audio && (
                     <div className="mobile-audio-sticky">
+                      {/* Lớp blur là thẻ thật (không dùng ::before) cho Chrome/Edge */}
+                      <div
+                        className={`mobile-audio-blur ${
+                          USE_AUDIO_FADE_FALLBACK ? "is-fade" : ""
+                        }`}
+                        aria-hidden="true"
+                      />
+
                       <AudioPlayer
                         audioSrc={currentItem.audio}
                         uiTheme={uiTheme}
@@ -1039,11 +1103,18 @@ function Main({
             {/* RIGHT 20% INTERACTION ZONE */}
             {/* ================================================= */}
 
-            {nextItem && detailPhase === "closed" && (
-              <div className="gallery-zone gallery-zone-right">
+            {nextItem && isGalleryControlPhase && (
+              <div
+                className="gallery-zone gallery-zone-right"
+                onWheel={handleGalleryZoneWheel}
+              >
                 <button
                   className="gallery-control gallery-control-next"
-                  onClick={handleNext}
+                  onClick={() =>
+                    detailPhase === "open"
+                      ? handleDetailSwipe("next")
+                      : handleNext()
+                  }
                   aria-label="Next artwork"
                 >
                   <img src={nextIcon} alt="" />
