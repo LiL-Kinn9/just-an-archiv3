@@ -2145,3 +2145,16 @@
     transparent 100%
   );
 }
+
+/* ========================================================= */
+/* DETAIL: VÙNG NEXT/BACK KHÔNG ĐÈ LÊN NÚT X */
+/* ========================================================= */
+
+/*
+  Vùng bấm hai bên có z-index 100, nút X nằm trong slide (z-index 10)
+  nên không thể nổi lên trên. Trong detail, vùng bấm bắt đầu dưới nút X.
+*/
+
+.gallery-zone.is-detail {
+  top: 64px;
+}

@@ -2,13 +2,22 @@ import { useRef, useState } from "react";
 import "./Nav.css";
 
 import About from "../About/About";
+import ShuffleText from "../ShuffleText/ShuffleText";
 
 import menuOpenWhite from "../../assets/Icon/menu-open-white.svg";
 import menuUnopenWhite from "../../assets/Icon/menu-unopen-white.svg";
 import menuOpenBlack from "../../assets/Icon/menu-open-black.svg";
 import menuUnopenBlack from "../../assets/Icon/menu-unopen-black.svg";
 
-function Nav({ layout, setLayout, uiTheme, isUiVisible, onSecretUnlock }) {
+function Nav({
+  layout,
+  setLayout,
+  uiTheme,
+  isUiVisible,
+  onSecretUnlock,
+  lang,
+  onToggleLang,
+}) {
   const [isOpen, setIsOpen] = useState(false);
   const [hasStarted, setHasStarted] = useState(false);
 
@@ -285,6 +294,39 @@ function Nav({ layout, setLayout, uiTheme, isUiVisible, onSecretUnlock }) {
       </div>
 
       {/* ===================================================== */}
+      {/* LANGUAGE (góc trái, ẩn khi menu hoặc About đang mở) */}
+      {/* ===================================================== */}
+
+      {/*
+        Nút ghi ngôn ngữ sẽ chuyển sang:
+        đang tiếng Việt thì ghi EN, đang tiếng Anh thì ghi VI.
+      */}
+
+      <div
+        className={`nav-lang-wrapper ${
+          isUiVisible && !isOpen && !isAboutOpen ? "ui-visible" : "ui-hidden"
+        }`}
+        style={{
+          "--nav-color": navColor,
+        }}
+      >
+        <button
+          className="nav-lang-btn"
+          onClick={onToggleLang}
+          aria-label={
+            lang === "vi" ? "Switch story to English" : "Chuyển sang tiếng Việt"
+          }
+        >
+          <ShuffleText
+            as="span"
+            className="nav-shuffle-label"
+            text={lang === "vi" ? "EN" : "VI"}
+            duration={450}
+          />
+        </button>
+      </div>
+
+      {/* ===================================================== */}
       {/* OVERLAY */}
       {/* ===================================================== */}
 
@@ -324,7 +366,12 @@ function Nav({ layout, setLayout, uiTheme, isUiVisible, onSecretUnlock }) {
               setLayout((prev) => (prev === "center" ? "grid" : "center"));
             }}
           >
-            {layout === "center" ? "GRID" : "CENTER"}
+            <ShuffleText
+              as="span"
+              className="nav-shuffle-label"
+              text={layout === "center" ? "GRID" : "CENTER"}
+              duration={450}
+            />
           </button>
         </div>
 
@@ -444,6 +491,7 @@ function Nav({ layout, setLayout, uiTheme, isUiVisible, onSecretUnlock }) {
         isAboutOpen={isAboutOpen}
         hasAboutStarted={hasAboutStarted}
         uiTheme={uiTheme}
+        lang={lang}
       />
     </>
   );

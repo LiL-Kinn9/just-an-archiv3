@@ -4,6 +4,7 @@ import "./Main.css";
 import ProgressiveArtwork from "../ProgressiveArtwork/Progressive";
 import AudioPlayer from "../AudioPlayer/AudioPlayer";
 import ShuffleText from "../ShuffleText/ShuffleText";
+import { getStory } from "../../data/StoryEn";
 
 /*
   Chrome và Edge không hiện blur sau thanh audio, nên ở đó dùng dải màu nền
@@ -143,6 +144,8 @@ function Main({
   setUiTransitionLocked,
 
   isSecretUnlocked,
+
+  lang = "vi",
 }) {
   const touchStartXRef = useRef(0);
   const touchStartYRef = useRef(0);
@@ -205,6 +208,13 @@ function Main({
       : null;
 
   const currentItem = artworks[currentIndex];
+
+  /*
+    Story theo ngôn ngữ (tiếng Anh nằm trong src/data/story-en).
+    Hai bản có cùng số đoạn nên mọi chỉ số đoạn dùng chung được.
+  */
+
+  const currentStory = getStory(currentItem, lang);
 
   /*
     Số thứ tự theo id chương, mẫu số là id lớn nhất (17),
@@ -842,7 +852,9 @@ function Main({
 
             {prevItem && isGalleryControlPhase && (
               <div
-                className="gallery-zone gallery-zone-left"
+                className={`gallery-zone gallery-zone-left ${
+                  detailPhase === "open" ? "is-detail" : ""
+                }`}
                 onWheel={handleGalleryZoneWheel}
               >
                 <button
@@ -950,11 +962,11 @@ function Main({
                         onTouchEnd={handleStoryTouchEnd}
                       >
                         <div className="detail-story-track">
-                          {currentItem.story?.length > 0 && (
+                          {currentStory.length > 0 && (
                             <ShuffleText
                               key={currentIndex}
                               className="detail-story-paragraph"
-                              text={currentItem.story[activeStoryIndex] ?? ""}
+                              text={currentStory[activeStoryIndex] ?? ""}
                             />
                           )}
                         </div>
@@ -1044,7 +1056,7 @@ function Main({
 
                   <ScrambleStory
                     key={currentIndex}
-                    paragraphs={currentItem.story ?? []}
+                    paragraphs={currentStory}
                     isActive={isDetailTitleRevealed}
                     scrollRootRef={detailSlideRef}
                   >
@@ -1105,7 +1117,9 @@ function Main({
 
             {nextItem && isGalleryControlPhase && (
               <div
-                className="gallery-zone gallery-zone-right"
+                className={`gallery-zone gallery-zone-right ${
+                  detailPhase === "open" ? "is-detail" : ""
+                }`}
                 onWheel={handleGalleryZoneWheel}
               >
                 <button

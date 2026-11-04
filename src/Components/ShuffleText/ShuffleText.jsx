@@ -32,6 +32,9 @@ function randomGlyph(shapeChar) {
 
   isRevealed = false: chưa hiện chữ (nhưng vẫn giữ chỗ),
   khi chuyển sang true, chữ xáo trộn rồi hiện ra.
+
+  isScrambling = true: chữ nhảy loạn liên tục (giữ hình dạng từ),
+  khi chuyển sang false mới chốt về chữ thật.
 */
 
 function ShuffleText({
@@ -40,6 +43,7 @@ function ShuffleText({
   className = "",
   duration = 700,
   isRevealed = true,
+  isScrambling = false,
   ...rest
 }) {
   const target = isRevealed ? text : "";
@@ -47,7 +51,41 @@ function ShuffleText({
   const [displayText, setDisplayText] = useState(target);
   const displayRef = useRef(target);
 
+  /* Nhảy loạn liên tục cho tới khi isScrambling tắt. */
+
   useEffect(() => {
+    if (!isScrambling || !target) return;
+
+    const chars = Array.from(target);
+
+    let frameId;
+    let lastTime = 0;
+
+    function loop(now) {
+      if (now - lastTime > 55) {
+        lastTime = now;
+
+        const output = chars
+          .map((char) => (/\s/.test(char) ? char : randomGlyph(char)))
+          .join("");
+
+        displayRef.current = output;
+        setDisplayText(output);
+      }
+
+      frameId = requestAnimationFrame(loop);
+    }
+
+    frameId = requestAnimationFrame(loop);
+
+    return () => {
+      cancelAnimationFrame(frameId);
+    };
+  }, [isScrambling, target]);
+
+  useEffect(() => {
+    if (isScrambling) return;
+
     const fromChars = Array.from(displayRef.current);
     const toChars = Array.from(target);
 
@@ -116,7 +154,7 @@ function ShuffleText({
     return () => {
       cancelAnimationFrame(frameId);
     };
-  }, [target, duration]);
+  }, [target, duration, isScrambling]);
 
   return (
     <Tag className={`shuffle-text ${className}`} {...rest}>

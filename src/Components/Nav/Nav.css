@@ -229,6 +229,84 @@
   animation-delay: 0s;
 }
 
+/* Nhãn chạy ShuffleText (GRID/CENTER, EN/VI): dạng inline trong nút. */
+
+.nav-shuffle-label {
+  display: inline-grid;
+}
+
+/* ========================================================= */
+/* LANGUAGE (góc trái, đối xứng với nút menu) */
+/* ========================================================= */
+
+.nav-lang-wrapper {
+  position: fixed;
+
+  top: 8px;
+  left: 8px;
+
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+
+  z-index: 1000;
+
+  transition:
+    opacity 0.4s ease,
+    visibility 0s linear 0s;
+}
+
+.nav-lang-wrapper.ui-visible {
+  opacity: 1;
+
+  visibility: visible;
+
+  pointer-events: auto;
+}
+
+.nav-lang-wrapper.ui-hidden {
+  opacity: 0;
+
+  visibility: hidden;
+
+  pointer-events: none;
+
+  transition:
+    opacity 0.4s ease,
+    visibility 0s linear 0.4s;
+}
+
+.nav-lang-btn {
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--nav-color);
+
+  font: inherit;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.6s ease,
+    filter 0.6s ease,
+    color 0.6s ease;
+}
+
+.nav-lang-btn:hover {
+  transform: translateX(2px);
+
+  filter: drop-shadow(
+    0 4px 5px color-mix(in srgb, var(--nav-color) 30%, transparent)
+  );
+
+  font-weight: 700;
+}
+
 /* ========================================================= */
 /* MENU BUTTON */
 /* ========================================================= */

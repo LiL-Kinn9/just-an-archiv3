@@ -79,6 +79,37 @@ function App() {
     };
   }, [uiTransitionLocked, hasStarted]);
 
+  /* ========================================================= */
+  /* LANGUAGE (vi | en) */
+  /* ========================================================= */
+
+  /*
+    Chỉ story và trang About đổi ngôn ngữ.
+    Tên bài nhạc và tên chương tiếng Pháp giữ nguyên.
+  */
+
+  const [lang, setLang] = useState(() => {
+    try {
+      return localStorage.getItem("lang") === "en" ? "en" : "vi";
+    } catch {
+      return "vi";
+    }
+  });
+
+  function handleToggleLang() {
+    setLang((prev) => {
+      const next = prev === "vi" ? "en" : "vi";
+
+      try {
+        localStorage.setItem("lang", next);
+      } catch {
+        // Không lưu được thì thôi, vẫn đổi ngôn ngữ.
+      }
+
+      return next;
+    });
+  }
+
   const [isSecretUnlocked, setIsSecretUnlocked] = useState(false);
 
   function handleSecretUnlock() {
@@ -115,6 +146,8 @@ function App() {
             uiTheme={uiTheme}
             onSecretUnlock={handleSecretUnlock}
             isUiVisible={hasStarted && shouldShowUi}
+            lang={lang}
+            onToggleLang={handleToggleLang}
           />
 
           <Main
@@ -127,6 +160,7 @@ function App() {
             setForceHideUi={setForceHideUi}
             setUiTransitionLocked={setUiTransitionLocked}
             isSecretUnlocked={isSecretUnlocked}
+            lang={lang}
           />
         </>
       )}
