@@ -75,6 +75,10 @@ function GridArtwork({ artwork }) {
 const CHAPTER_DIGIT_DELAY = 700;
 const CHAPTER_DIGIT_STEP = 350;
 
+/* Grid: khoảng cách giữa hai ô trượt lên liên tiếp khi cuộn (ms). */
+
+const GRID_REVEAL_STEP = 140;
+
 function ChapterNumber({ value }) {
   const target = String(value).padStart(2, "0");
 
@@ -187,6 +191,26 @@ function TypewriterStory({ paragraphs, isActive, scrollRootRef, children }) {
     };
   }, [isActive, paragraphs, scrollRootRef]);
 
+  /*
+    Lời thoại (" ... ") và suy nghĩ (-...-) thụt vào từ lề trái (is-dialogue),
+    lời kể là is-narration, dòng ngăn cảnh "   " không gắn gì.
+    Cả đoạn phải mở và đóng bằng cùng dấu, nên lời kể không bị bắt nhầm.
+  */
+
+  function getParagraphClass(paragraph) {
+    const text = paragraph.trim();
+
+    if (!text) return "";
+
+    const isDialogue =
+      text.length > 1 && text.startsWith('"') && text.endsWith('"');
+
+    const isThought =
+      text.length > 1 && text.startsWith("-") && text.endsWith("-");
+
+    return isDialogue || isThought ? "is-dialogue" : "is-narration";
+  }
+
   /* Gõ xong thì con trỏ nhấp nháy ở cuối đoạn cuối cùng đã hiện. */
 
   const cursorIndex = Math.min(revealUntil, paragraphs.length - 1);
@@ -197,6 +221,7 @@ function TypewriterStory({ paragraphs, isActive, scrollRootRef, children }) {
         <TypewriterText
           key={index}
           data-story-index={index}
+          className={getParagraphClass(paragraph)}
           text={paragraph}
           status={isActive && index <= revealUntil ? "typing" : "hidden"}
           showCursor={isActive && index === cursorIndex}
@@ -943,6 +968,109 @@ function Main({
       ? (getGridRow(gridChapters.length) - 1) * 0.5
       : 0;
 
+  /* ========================================================= */
+  /* GRID REVEAL */
+  /* ========================================================= */
+
+  /*
+    Ô nào đã thấy lúc mới vào Grid thì hiện luôn ("instant").
+    Ô còn ở dưới: cuộn tới thì trượt lên, lần lượt theo thứ tự,
+    mỗi ô cách nhau GRID_REVEAL_STEP ms (giá trị lưu là độ trễ).
+    Rời Grid rồi vào lại thì tính lại từ đầu.
+  */
+
+  const gridViewRef = useRef(null);
+
+  const [gridReveal, setGridReveal] = useState({});
+
+  const [gridRevealLayout, setGridRevealLayout] = useState(layout);
+
+  if (gridRevealLayout !== layout) {
+    setGridRevealLayout(layout);
+    setGridReveal({});
+  }
+
+  useEffect(() => {
+    if (layout !== "grid") return;
+
+    const root = gridViewRef.current;
+
+    if (!root) return;
+
+    let isFirstBatch = true;
+    let nextStartTime = 0;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const now = performance.now();
+
+        const entering = entries
+          .filter((entry) => entry.isIntersecting)
+          .map((entry) => entry.target)
+          .sort(
+            (a, b) => Number(a.dataset.gridOrder) - Number(b.dataset.gridOrder),
+          );
+
+        const updates = {};
+
+        entering.forEach((element) => {
+          observer.unobserve(element);
+
+          const key = element.dataset.gridKey;
+
+          if (isFirstBatch) {
+            updates[key] = "instant";
+            return;
+          }
+
+          const startTime = Math.max(now, nextStartTime);
+
+          updates[key] = Math.round(startTime - now);
+
+          nextStartTime = startTime + GRID_REVEAL_STEP;
+        });
+
+        isFirstBatch = false;
+
+        if (entering.length) {
+          setGridReveal((prev) => ({ ...updates, ...prev }));
+        }
+      },
+      { root, threshold: 0.15 },
+    );
+
+    root
+      .querySelectorAll("[data-grid-key]")
+      .forEach((element) => observer.observe(element));
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [layout, isSecretUnlocked]);
+
+  function getGridRevealClass(key) {
+    const state = gridReveal[key];
+
+    if (state === undefined) return "grid-reveal";
+
+    return state === "instant"
+      ? "grid-reveal is-revealed is-instant"
+      : "grid-reveal is-revealed";
+  }
+
+  function getGridRevealProps(key, order) {
+    return {
+      "data-grid-key": key,
+      "data-grid-order": order,
+    };
+  }
+
+  function getGridRevealStyle(key) {
+    const state = gridReveal[key];
+
+    return typeof state === "number" ? { transitionDelay: `${state}ms` } : {};
+  }
+
   return (
     <main className={`main ${layout}`}>
       {/* ===================================================== */}
@@ -1318,11 +1446,12 @@ function Main({
       {/* ===================================================== */}
 
       {layout === "grid" && (
-        <div className="grid-view">
+        <div className="grid-view" ref={gridViewRef}>
           <div className="grid-container">
-            {gridChapters.map((artwork) => (
+            {gridChapters.map((artwork, index) => (
               <button
-                className="grid-item"
+                className={`grid-item ${getGridRevealClass(artwork.id)}`}
+                {...getGridRevealProps(artwork.id, index)}
                 key={artwork.id}
                 onClick={() => {
                   const realIndex = artworks.findIndex(
@@ -1334,6 +1463,7 @@ function Main({
                 }}
                 style={{
                   backgroundColor: artwork.background,
+                  ...getGridRevealStyle(artwork.id),
                 }}
                 aria-label={`Open ${artwork.title}`}
               >
@@ -1345,7 +1475,10 @@ function Main({
 
             {secretArtwork && isSecretUnlocked && (
               <button
-                className="grid-item grid-item-secret"
+                className={`grid-item grid-item-secret ${getGridRevealClass(
+                  "secret",
+                )}`}
+                {...getGridRevealProps("secret", gridChapters.length)}
                 onClick={() => {
                   const realIndex = artworks.findIndex(
                     (item) => item.id === secretArtwork.id,
@@ -1357,6 +1490,7 @@ function Main({
                 style={{
                   backgroundColor: secretArtwork.background,
                   "--secret-lift": secretLift,
+                  ...getGridRevealStyle("secret"),
                 }}
                 aria-label={`Open ${secretArtwork.title}`}
               >
@@ -1366,10 +1500,14 @@ function Main({
 
             {secretArtwork && !isSecretUnlocked && (
               <div
-                className="grid-item grid-item-secret is-locked"
+                className={`grid-item grid-item-secret is-locked ${getGridRevealClass(
+                  "secret",
+                )}`}
+                {...getGridRevealProps("secret", gridChapters.length)}
                 style={{
                   backgroundColor: secretArtwork.background,
                   "--secret-lift": secretLift,
+                  ...getGridRevealStyle("secret"),
                 }}
                 aria-label="Secret artwork"
               >

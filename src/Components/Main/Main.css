@@ -1000,6 +1000,41 @@
   }
 }
 
+/* ========================================================= */
+/* GRID REVEAL (xem GRID REVEAL trong Main.jsx) */
+/* ========================================================= */
+
+/*
+  Dùng thuộc tính translate (không phải transform)
+  để không đè lên transform xếp so le của từng ô.
+*/
+
+.grid-item.grid-reveal {
+  opacity: 0;
+
+  translate: 0 80px;
+
+  transition:
+    opacity 0.7s ease,
+    translate 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.grid-item.grid-reveal.is-revealed {
+  opacity: 1;
+
+  translate: 0 0;
+}
+
+.grid-item.grid-reveal.is-instant {
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grid-item.grid-reveal {
+    transition: none;
+  }
+}
+
 /* MOBILE DETAIL DEFAULT */
 /* ========================================================= */
 
@@ -1343,6 +1378,31 @@
     line-height: 1.7;
   }
 
+  /*
+    Lời thoại và suy nghĩ (Main.jsx, getParagraphClass):
+    thụt vào một khoảng nhỏ từ lề trái, đậm hơn lời kể (500) một bậc.
+  */
+
+  .mobile-detail-story p.is-dialogue {
+    /* border-box để width 100% không bị cộng thêm phần thụt vào. */
+    box-sizing: border-box;
+
+    padding-left: 24px;
+
+    font-weight: 600;
+  }
+
+  /*
+    Chỗ chuyển giữa lời kể và lời thoại (cả hai chiều) thoáng hơn.
+    Margin dọc gộp lại, nên khoảng cách = 44px thay vì 24px.
+    Thoại liền thoại vẫn 24px.
+  */
+
+  .mobile-detail-story p.is-narration + p.is-dialogue,
+  .mobile-detail-story p.is-dialogue + p.is-narration {
+    margin-top: 44px;
+  }
+
   .mobile-detail-story p:last-child {
     margin-bottom: 0;
   }
@@ -1633,6 +1693,23 @@
   text-shadow:
     0 2px 1px rgba(0, 0, 0, 0.22),
     0 2px 8px rgba(0, 0, 0, 0.22);
+}
+
+/*
+  Lời thoại và suy nghĩ (is-dialogue): bóng đổ rõ hơn lời kể,
+  cùng kiểu bóng của tiêu đề (đổ xuống dưới).
+*/
+
+.current-slide.ui-white .mobile-detail-story p.is-dialogue {
+  text-shadow:
+    0 3px 2px rgba(255, 255, 255, 0.3),
+    0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+.current-slide.ui-black .mobile-detail-story p.is-dialogue {
+  text-shadow:
+    0 3px 2px rgba(0, 0, 0, 0.3),
+    0 4px 12px rgba(0, 0, 0, 0.3);
 }
 /* ======================================================= */
 /* DETAIL SWIPE */
