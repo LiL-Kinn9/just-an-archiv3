@@ -62,6 +62,78 @@ function GridArtwork({ artwork }) {
 }
 
 /* ========================================================= */
+/* CHAPTER NUMBER */
+/* ========================================================= */
+
+/*
+  Số chương trong detail (01, 02...). Khi sang chương khác:
+  giữ số cũ CHAPTER_DIGIT_DELAY ms, rồi chữ số nào đổi thì xáo trộn,
+  lần lượt từ hàng đơn vị sang hàng chục (09 -> 10: số 9 trước, số 0 sau).
+  Chữ số giữ nguyên thì đứng yên.
+*/
+
+const CHAPTER_DIGIT_DELAY = 700;
+const CHAPTER_DIGIT_STEP = 350;
+
+function ChapterNumber({ value }) {
+  const target = String(value).padStart(2, "0");
+
+  const [shown, setShown] = useState(target);
+
+  const shownRef = useRef(target);
+
+  useEffect(() => {
+    shownRef.current = shown;
+  });
+
+  useEffect(() => {
+    const from = shownRef.current.padStart(target.length, "0");
+
+    const timers = [];
+    let step = 0;
+
+    for (let i = target.length - 1; i >= 0; i--) {
+      if (from[i] === target[i]) continue;
+
+      const digitIndex = i;
+
+      timers.push(
+        setTimeout(
+          () => {
+            setShown((prev) => {
+              const digits = prev.padStart(target.length, "0").split("");
+
+              digits[digitIndex] = target[digitIndex];
+
+              return digits.join("");
+            });
+          },
+          CHAPTER_DIGIT_DELAY + step * CHAPTER_DIGIT_STEP,
+        ),
+      );
+
+      step++;
+    }
+
+    return () => timers.forEach(clearTimeout);
+  }, [target]);
+
+  return (
+    <span className="chapter-number">
+      {Array.from(shown).map((digit, index) => (
+        <ShuffleText
+          key={index}
+          as="span"
+          className="chapter-digit"
+          text={digit}
+          duration={CHAPTER_DIGIT_STEP}
+        />
+      ))}
+    </span>
+  );
+}
+
+/* ========================================================= */
 /* TYPEWRITER STORY */
 /* ========================================================= */
 
@@ -1085,7 +1157,7 @@ function Main({
 
                   <div className="mobile-detail-info">
                     <p className="mobile-detail-index">
-                      {String(currentItem.id).padStart(2, "0")} /{" "}
+                      <ChapterNumber value={currentItem.id} /> /{" "}
                       {String(totalChapters).padStart(2, "0")}
                     </p>
 

@@ -1230,8 +1230,14 @@
 
     color: var(--detail-story-line-color);
 
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 500;
+  }
+
+  /* Mỗi chữ số là một ShuffleText, nằm cùng dòng. */
+
+  .mobile-detail-index .chapter-digit {
+    display: inline-grid;
   }
 
   .mobile-detail-artwork-title {
@@ -1241,7 +1247,7 @@
 
     color: var(--detail-color);
 
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 600;
 
     line-height: 1.3;
@@ -2169,6 +2175,16 @@
     font-size: 16px;
 
     line-height: 1.75;
+  }
+
+  /* Số chương và tên bài nhạc (mobile 13px / 15px). */
+
+  .mobile-detail-index {
+    font-size: 15px;
+  }
+
+  .mobile-detail-artwork-title {
+    font-size: 18px;
   }
 }
 

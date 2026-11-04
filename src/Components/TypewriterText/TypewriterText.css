@@ -35,6 +35,9 @@
 
   background: var(--typewriter-cursor-color, currentColor);
 
+  /* Nhạt hơn màu chữ. */
+  opacity: 0.45;
+
   animation: typewriterBlink 1s steps(1) infinite;
 }
 

@@ -108,6 +108,8 @@
     11.7px 2px no-repeat;
 
   border-radius: 0;
+
+  box-shadow: var(--audio-shadow);
 }
 
 /* ========================================================= */
@@ -135,15 +137,24 @@
   background: transparent;
 
   border-radius: 0;
+
+  box-shadow: var(--audio-shadow);
 }
 
 /* ========================================================= */
 /* PLAY / PAUSE */
 /* ========================================================= */
 
+/*
+  Kích thước icon tính theo font-size của nút (1em = cạnh nút),
+  nên desktop chỉ cần đổi font-size là to theo.
+*/
+
 .audio-play-btn {
-  width: 22px;
-  height: 22px;
+  width: 1em;
+  height: 1em;
+
+  font-size: 22px;
 
   flex-shrink: 0;
 
@@ -160,19 +171,112 @@
   align-items: center;
 }
 
-.audio-play-btn img {
+/* Khung vuông, cùng nét và cùng bóng đổ với ô kéo. */
+
+.audio-icon {
+  position: relative;
+
   width: 100%;
   height: 100%;
 
-  display: block;
+  box-sizing: border-box;
 
-  transition:
-    transform 0.6s ease,
-    filter 0.6s ease;
+  border: 0.11em solid var(--thumb-color);
+
+  box-shadow: var(--audio-shadow);
+
+  transition: transform 0.6s ease;
 }
 
-.audio-play-btn:hover img {
+.audio-play-btn:hover .audio-icon {
   transform: translateX(-2px);
+}
+
+/* ▶ : tam giác đặc vẽ bằng border. */
+
+.audio-icon.is-play::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 0;
+  height: 0;
+
+  border-top: 0.2em solid transparent;
+  border-bottom: 0.2em solid transparent;
+  border-left: 0.32em solid var(--thumb-color);
+
+  transform: translate(-40%, -50%);
+}
+
+/* ❚❚ : hai vạch đứng. */
+
+.audio-icon.is-pause::before,
+.audio-icon.is-pause::after {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+
+  width: 0.1em;
+  height: 0.34em;
+
+  background: var(--thumb-color);
+
+  transform: translateY(-50%);
+}
+
+.audio-icon.is-pause::before {
+  left: calc(50% - 0.15em);
+}
+
+.audio-icon.is-pause::after {
+  left: calc(50% + 0.05em);
+}
+
+/* ========================================================= */
+/* DESKTOP: THANH NHẠC DÀY HƠN */
+/* ========================================================= */
+
+@media (min-width: 601px) {
+  .audio-seek-slider {
+    height: 18px;
+  }
+
+  .audio-seek-slider::-webkit-slider-runnable-track {
+    height: 4px;
+  }
+
+  .audio-seek-slider::-webkit-slider-thumb {
+    width: 18px;
+    height: 18px;
+
+    margin-top: -7px;
+
+    border-width: 3.5px;
+
+    background-size: 100% 3px;
+  }
+
+  .audio-seek-slider::-moz-range-track,
+  .audio-seek-slider::-moz-range-progress {
+    height: 4px;
+  }
+
+  .audio-seek-slider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+
+    border-width: 3px;
+  }
+
+  .audio-play-btn {
+    font-size: 30px;
+  }
 }
 
 .audio-player.audio-locked {

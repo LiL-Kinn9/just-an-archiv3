@@ -16,16 +16,6 @@ function AudioPlayer({ audioSrc, uiTheme, isUiVisible, isReady }) {
   const progress = duration > 0 ? (currentTime / duration) * 100 : 0;
 
   /* ========================================================= */
-  /* ICONS */
-  /* ========================================================= */
-
-  const playIcon =
-    uiTheme === "white" ? "/Icon/play-white.svg" : "/Icon/play-black.svg";
-
-  const pauseIcon =
-    uiTheme === "white" ? "/Icon/pause-white.svg" : "/Icon/pause-black.svg";
-
-  /* ========================================================= */
   /* PLAY / PAUSE */
   /* ========================================================= */
 
@@ -142,6 +132,12 @@ function AudioPlayer({ audioSrc, uiTheme, isUiVisible, isReady }) {
         "--thumb-color": uiTheme === "white" ? "#f5f5f2" : "#000000",
 
         "--thumb-past-color": uiTheme === "white" ? "#8c1616" : "#000000",
+
+        /* Bóng đổ chung cho ô kéo và nút play/pause. */
+        "--audio-shadow":
+          uiTheme === "white"
+            ? "0 2px 6px rgba(245, 245, 242, 0.35)"
+            : "0 2px 6px rgba(0, 0, 0, 0.35)",
       }}
     >
       {/* ===================================================== */}
@@ -207,7 +203,11 @@ function AudioPlayer({ audioSrc, uiTheme, isUiVisible, isReady }) {
         onClick={handlePlayPause}
         aria-label={isPlaying ? "Pause music" : "Play music"}
       >
-        <img src={isPlaying ? pauseIcon : playIcon} alt="" />
+        {/* Icon vẽ bằng CSS: khung vuông giống ô kéo, trong là ▶ hoặc ❚❚ */}
+        <span
+          className={`audio-icon ${isPlaying ? "is-pause" : "is-play"}`}
+          aria-hidden="true"
+        />
       </button>
     </div>
   );
