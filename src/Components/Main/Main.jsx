@@ -8,23 +8,6 @@ import TypewriterText from "../TypewriterText/TypewriterText";
 import { getStory } from "../../data/StoryEn";
 
 /*
-  Chrome và Edge không hiện blur sau thanh audio, nên ở đó dùng dải màu nền
-  mờ dần thay thế. VS Code (Electron) chỉ báo "Chromium", Safari không có
-  userAgentData, nên cả hai vẫn giữ blur thật.
-*/
-
-const USE_AUDIO_FADE_FALLBACK = (() => {
-  const brands =
-    typeof navigator !== "undefined"
-      ? (navigator.userAgentData?.brands ?? []).map((item) => item.brand)
-      : [];
-
-  return brands.some(
-    (brand) => brand === "Google Chrome" || brand === "Microsoft Edge",
-  );
-})();
-
-/*
   Ảnh hiện ở ô secret khi chưa unlock.
 */
 
@@ -1154,8 +1137,6 @@ function Main({
 
                 backgroundColor: getBackground(currentItem),
 
-                "--detail-bg": getBackground(currentItem),
-
                 "--detail-color":
                   uiTheme === "white" ? "#f5f5f5d6" : "#000000d6",
 
@@ -1265,12 +1246,7 @@ function Main({
                   {currentItem.audio && (
                     <div className="mobile-audio-sticky">
                       {/* Lớp blur là thẻ thật (không dùng ::before) cho Chrome/Edge */}
-                      <div
-                        className={`mobile-audio-blur ${
-                          USE_AUDIO_FADE_FALLBACK ? "is-fade" : ""
-                        }`}
-                        aria-hidden="true"
-                      />
+                      <div className="mobile-audio-blur" aria-hidden="true" />
 
                       <AudioPlayer
                         audioSrc={currentItem.audio}
