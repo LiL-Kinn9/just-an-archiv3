@@ -13,6 +13,10 @@ import menuUnopenBlack from "../../assets/Icon/menu-unopen-black.svg";
 
 const SECRET_RESET_TIME = 450;
 
+/* Nhập đúng: giữ CHOSEN ONE bao lâu rồi mới đóng menu sang Grid (ms). */
+
+const SECRET_UNLOCK_HOLD = 1200;
+
 function Nav({
   layout,
   setLayout,
@@ -39,7 +43,7 @@ function Nav({
 
   const menuClosedIcon = isWhiteUI ? menuUnopenWhite : menuUnopenBlack;
 
-  const navColor = isWhiteUI ? "#ffffff" : "#000000";
+  const navColor = isWhiteUI ? "#ffffff" : "#040606";
 
   /* ========================================================= */
   /* SECRET STATE */
@@ -52,8 +56,9 @@ function Nav({
   const [secretYear, setSecretYear] = useState("");
 
   const [secretStatus, setSecretStatus] = useState("idle");
-  // idle | failed | resetting
-  // Nhập đúng thì không cần trạng thái riêng: isSecretUnlocked từ App giữ luôn.
+  // idle | failed | resetting | success
+  // success: vừa nhập đúng, đang hiện CHOSEN ONE trước khi đóng menu sang Grid.
+  // Sau đó isSecretUnlocked từ App giữ trạng thái đã mở khoá.
 
   const secretDayRef = useRef(null);
   const secretMonthRef = useRef(null);
@@ -61,9 +66,25 @@ function Nav({
 
   const secretTimersRef = useRef([]);
 
+  /* Đã nhập đúng nhưng chưa báo App (đang chờ SECRET_UNLOCK_HOLD). */
+
+  const isUnlockPendingRef = useRef(false);
+
   function clearSecretTimers() {
     secretTimersRef.current.forEach(clearTimeout);
     secretTimersRef.current = [];
+  }
+
+  const isSecretShownUnlocked = isSecretUnlocked || secretStatus === "success";
+
+  /* Báo App mở khoá: App chuyển sang Grid và cuộn tới artwork 17. */
+
+  function finishSecretUnlock() {
+    if (!isUnlockPendingRef.current) return;
+
+    isUnlockPendingRef.current = false;
+
+    onSecretUnlock?.();
   }
 
   /* ========================================================= */
@@ -72,6 +93,9 @@ function Nav({
 
   function resetSecret() {
     clearSecretTimers();
+
+    // Đóng menu giữa chừng thì vẫn mở khoá luôn, không bỏ dở.
+    finishSecretUnlock();
 
     setIsSecretOpen(false);
 
@@ -269,8 +293,8 @@ function Nav({
   /* ========================================================= */
 
   function handleSecretSubmit() {
-    // Đã mở khóa, hoặc đang hiện FAILED ONE: bấm ENTER không làm gì.
-    if (isSecretUnlocked || secretStatus !== "idle") return;
+    // Đã mở khóa, vừa nhập đúng, hoặc đang hiện FAILED ONE: bấm ENTER không làm gì.
+    if (isSecretShownUnlocked || secretStatus !== "idle") return;
 
     const enteredDate = `${secretDay}/${secretMonth}/${secretYear}`;
 
@@ -281,12 +305,25 @@ function Nav({
     const SECRET_DATE = "06/11/2003";
 
     /*
-      Đúng: CHOSEN ONE xáo trộn hiện ra rồi nằm luôn ở đó,
-      YOUR BIRTHDAY đổi thành CHAPTER UNLOCK.
+      Đúng: CHOSEN ONE xáo trộn hiện ra, YOUR BIRTHDAY đổi thành CHAPTER UNLOCK,
+      giữ SECRET_UNLOCK_HOLD ms cho người xem đọc, rồi đóng menu
+      và báo App (sang Grid, cuộn tới artwork 17).
     */
 
     if (enteredDate === SECRET_DATE) {
-      onSecretUnlock?.();
+      setSecretStatus("success");
+
+      isUnlockPendingRef.current = true;
+
+      clearSecretTimers();
+
+      secretTimersRef.current = [
+        setTimeout(() => {
+          setIsOpen(false);
+          resetSecret();
+        }, SECRET_UNLOCK_HOLD),
+      ];
+
       return;
     }
 
@@ -471,7 +508,7 @@ function Nav({
               <div
                 className={`secret-content ${isSecretOpen ? "is-visible" : ""}`}
               >
-                {!isSecretUnlocked && secretStatus === "idle" && (
+                {!isSecretShownUnlocked && secretStatus === "idle" && (
                   <div className="secret-date">
                     <input
                       ref={secretDayRef}
@@ -512,7 +549,7 @@ function Nav({
                   </div>
                 )}
 
-                {isSecretUnlocked && (
+                {isSecretShownUnlocked && (
                   <ShuffleText
                     key="chosen"
                     as="span"
@@ -523,7 +560,7 @@ function Nav({
                   />
                 )}
 
-                {!isSecretUnlocked && secretStatus !== "idle" && (
+                {!isSecretShownUnlocked && secretStatus !== "idle" && (
                   <ShuffleText
                     key="failed"
                     as="span"
@@ -540,17 +577,17 @@ function Nav({
               >
                 <div
                   className={`secret-caption-text ${
-                    isSecretUnlocked ? "is-unlocked" : ""
+                    isSecretShownUnlocked ? "is-unlocked" : ""
                   }`}
                 >
                   <ShuffleText
                     as="span"
-                    text={isSecretUnlocked ? "CHAPTER" : "YOUR"}
+                    text={isSecretShownUnlocked ? "CHAPTER" : "YOUR"}
                     duration={SECRET_RESET_TIME}
                   />
                   <ShuffleText
                     as="span"
-                    text={isSecretUnlocked ? "UNLOCK" : "BIRTHDAY"}
+                    text={isSecretShownUnlocked ? "UNLOCK" : "BIRTHDAY"}
                     duration={SECRET_RESET_TIME}
                   />
                 </div>

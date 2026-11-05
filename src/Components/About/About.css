@@ -246,13 +246,13 @@
 .about-container.is-opened .about-item-left .about-item-content:hover {
   transform: translateX(-2px);
 
-  text-shadow: 0 4px 5px color-mix(in srgb, black 30%, transparent);
+  text-shadow: 0 4px 5px color-mix(in srgb, #040606 30%, transparent);
 }
 
 .about-container.is-opened .about-item-left .about-item-content:hover h2 {
   transform: translateX(-2px);
 
-  text-shadow: 0 4px 5px color-mix(in srgb, black 30%, transparent);
+  text-shadow: 0 4px 5px color-mix(in srgb, #040606 30%, transparent);
 }
 
 .about-container.is-opened .about-item-left .about-item-content:hover p {
@@ -266,13 +266,13 @@
 .about-container.is-opened .about-item-right .about-item-content:hover {
   transform: translateX(2px);
 
-  text-shadow: 0 4px 5px color-mix(in srgb, black 30%, transparent);
+  text-shadow: 0 4px 5px color-mix(in srgb, #040606 30%, transparent);
 }
 
 .about-container.is-opened .about-item-right .about-item-content:hover h2 {
   transform: translateX(2px);
 
-  text-shadow: 0 4px 5px color-mix(in srgb, black 30%, transparent);
+  text-shadow: 0 4px 5px color-mix(in srgb, #040606 30%, transparent);
 }
 
 .about-container.is-opened .about-item-right .about-item-content:hover p {

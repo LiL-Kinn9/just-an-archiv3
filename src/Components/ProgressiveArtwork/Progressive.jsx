@@ -2,7 +2,18 @@ import { useEffect, useMemo, useRef, useState } from "react";
 
 import "./Progressive.css";
 
-function ProgressiveArtwork({ artwork, alt, imageRef, onImageLoad }) {
+/*
+  minimumDisplayTime: mỗi lớp (preview2, preview1, ảnh gốc) hiện ít nhất bấy nhiêu ms.
+  Mặc định rất ngắn; tăng lên khi muốn người xem thấy rõ ảnh nét dần (vd. secret).
+*/
+
+function ProgressiveArtwork({
+  artwork,
+  alt,
+  imageRef,
+  onImageLoad,
+  minimumDisplayTime = 30,
+}) {
   const progressiveSources = useMemo(() => {
     return [
       {
@@ -20,6 +31,8 @@ function ProgressiveArtwork({ artwork, alt, imageRef, onImageLoad }) {
     ].filter((item) => item.src);
   }, [artwork.preview2, artwork.preview1, artwork.image]);
 
+  const baseSrc = artwork.preview3 ?? artwork.preview2 ?? artwork.preview1;
+
   const [loadedLayers, setLoadedLayers] = useState([]);
   const [activeIndex, setActiveIndex] = useState(-1);
 
@@ -29,10 +42,16 @@ function ProgressiveArtwork({ artwork, alt, imageRef, onImageLoad }) {
     onImageLoadRef.current = onImageLoad;
   }, [onImageLoad]);
 
+  /* Đọc qua ref để đổi giá trị giữa chừng không làm chạy lại từ đầu. */
+
+  const minimumDisplayTimeRef = useRef(minimumDisplayTime);
+
+  useEffect(() => {
+    minimumDisplayTimeRef.current = minimumDisplayTime;
+  }, [minimumDisplayTime]);
+
   useEffect(() => {
     let cancelled = false;
-
-    const minimumDisplayTime = 30;
 
     function wait(ms) {
       return new Promise((resolve) => {
@@ -73,7 +92,7 @@ function ProgressiveArtwork({ artwork, alt, imageRef, onImageLoad }) {
 
       const elapsed = performance.now() - startTime;
 
-      const remaining = Math.max(0, minimumDisplayTime - elapsed);
+      const remaining = Math.max(0, minimumDisplayTimeRef.current - elapsed);
 
       if (remaining > 0) {
         await wait(remaining);
@@ -104,12 +123,17 @@ function ProgressiveArtwork({ artwork, alt, imageRef, onImageLoad }) {
 
   return (
     <div className="progressive-artwork">
-      {/* PREVIEW 3 LUÔN LÀ BASE */}
-      <img
-        className={`progressive-base ${activeIndex === -1 ? "is-active" : ""}`}
-        src={artwork.preview3}
-        alt=""
-      />
+      {/*
+        BASE: bản nhẹ nhất đang có (thường là preview3), hiện ngay khi vừa render
+        nên ô ảnh không bao giờ trống trong lúc chờ các lớp sau.
+      */}
+      {baseSrc && (
+        <img
+          className={`progressive-base ${activeIndex === -1 ? "is-active" : ""}`}
+          src={baseSrc}
+          alt=""
+        />
+      )}
 
       {/* PREVIEW 2 -> PREVIEW 1 -> ORIGINAL */}
       {loadedLayers.map((layer) => {

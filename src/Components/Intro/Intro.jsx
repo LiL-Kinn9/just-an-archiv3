@@ -2,7 +2,15 @@ import { useEffect, useRef, useState } from "react";
 
 import "./Intro.css";
 
-function Intro({ onStart, firstArtworkSrc }) {
+import {
+  getPreviewSources,
+  preloadImage,
+  preloadInOrder,
+} from "../../utils/preload";
+
+import LOCKED_SECRET_ARTWORK from "../../data/LockedSecret";
+
+function Intro({ onStart, artworks = [] }) {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [isArtworkLoaded, setIsArtworkLoaded] = useState(false);
 
@@ -10,32 +18,40 @@ function Intro({ onStart, firstArtworkSrc }) {
   const hasFinishedRef = useRef(false);
 
   /* ========================================== */
-  /* PRELOAD FIRST ARTWORK */
+  /* PRELOAD ARTWORKS */
   /* ========================================== */
 
+  /*
+    Trước khi hiện "Touch To Start": mọi bản nhẹ (preview3/2/1) của tất cả
+    artwork, kể cả ảnh ô secret còn khoá trong Grid (ảnh này rất nhẹ nên tải
+    luôn bản gốc), và ảnh gốc của chương 1.
+    Sau đó ảnh gốc các chương còn lại tải ngầm lần lượt theo thứ tự chương,
+    chạy tiếp cả khi đã vào trang.
+  */
+
   useEffect(() => {
-    if (!firstArtworkSrc) return;
+    let cancelled = false;
 
-    const img = new Image();
+    const [first, ...rest] = artworks.map((artwork) => artwork.image);
 
-    function handleLoad() {
+    Promise.all([
+      ...getPreviewSources([...artworks, LOCKED_SECRET_ARTWORK]).map(
+        preloadImage,
+      ),
+      preloadImage(LOCKED_SECRET_ARTWORK.image),
+      preloadImage(first),
+    ]).then(() => {
+      if (cancelled) return;
+
       setIsArtworkLoaded(true);
-    }
 
-    function handleError() {
-      setIsArtworkLoaded(true);
-    }
-
-    img.addEventListener("load", handleLoad);
-    img.addEventListener("error", handleError);
-
-    img.src = firstArtworkSrc;
+      preloadInOrder(rest);
+    });
 
     return () => {
-      img.removeEventListener("load", handleLoad);
-      img.removeEventListener("error", handleError);
+      cancelled = true;
     };
-  }, [firstArtworkSrc]);
+  }, [artworks]);
 
   function finishIntro() {
     if (hasFinishedRef.current) return;
@@ -71,10 +87,19 @@ function Intro({ onStart, firstArtworkSrc }) {
       {!isTransitioning && (
         <>
           <div className="intro-disclaimer">
-            <h1>DISCLAIMER</h1>
+            <section className="intro-disclaimer-block" lang="en">
+              <h1>DISCLAIMER</h1>
 
-            <p>This website contains explicit content.</p>
-            <p>Viewer discretion is advised.</p>
+              <p>This website contains explicit content.</p>
+              <p>Viewer discretion is advised.</p>
+            </section>
+
+            <section className="intro-disclaimer-block" lang="vi">
+              <h2>LƯU Ý</h2>
+
+              <p>Trang web này chứa nội dung nhạy cảm.</p>
+              <p>Người xem nên tự cân nhắc.</p>
+            </section>
 
             <img
               className="intro-advisory"

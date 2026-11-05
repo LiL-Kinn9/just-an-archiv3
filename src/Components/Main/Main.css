@@ -57,6 +57,26 @@
 }
 
 /* ========================================================= */
+/* NỀN HẠT (backgroundNoise trong Artworks.js) */
+/* ========================================================= */
+
+/*
+  Hạt vẽ bằng SVG feTurbulence (giữ chút màu như hạt trong ảnh 4),
+  trộn overlay lên màu nền: xám 50% giữ nguyên màu,
+  sáng hơn/tối hơn tạo hạt quanh màu nền.
+  Độ đậm của hạt là opacity của <rect> trong SVG (đã đo khớp ảnh 4).
+  Không dùng filter/backdrop-filter của CSS, chỉ là ảnh nền.
+*/
+
+.gallery-slide.has-noise {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0.35'/%3E%3CfeComponentTransfer%3E%3CfeFuncR type='linear' slope='3' intercept='-1'/%3E%3CfeFuncG type='linear' slope='3' intercept='-1'/%3E%3CfeFuncB type='linear' slope='3' intercept='-1'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.52'/%3E%3C/svg%3E");
+
+  background-size: 256px 256px;
+
+  background-blend-mode: overlay;
+}
+
+/* ========================================================= */
 /* CURRENT SLIDE */
 /* ========================================================= */
 
@@ -950,53 +970,108 @@
     grid-column: 3;
   }
 
-  .grid-item:nth-child(1),
-  .grid-item:nth-child(2) {
-    transform: translateY(0);
-  }
+  /*
+    Mỗi ô kéo lên --grid-lift nửa ô (Main.jsx, getGridLift), tính theo vị trí,
+    nên thêm chương bao nhiêu cũng xếp đúng: 1,2: 0 / 3: 1 / 4,5: 2 / 6: 3 / ...
+  */
 
-  .grid-item:nth-child(3) {
-    transform: translateY(-50%);
-  }
-
-  .grid-item:nth-child(4),
-  .grid-item:nth-child(5) {
-    transform: translateY(-100%);
-  }
-
-  .grid-item:nth-child(6) {
-    transform: translateY(-150%);
-  }
-
-  .grid-item:nth-child(7),
-  .grid-item:nth-child(8) {
-    transform: translateY(-200%);
-  }
-
-  .grid-item:nth-child(9) {
-    transform: translateY(-250%);
-  }
-
-  .grid-item:nth-child(10),
-  .grid-item:nth-child(11) {
-    transform: translateY(-300%);
-  }
-
-  .grid-item:nth-child(12) {
-    transform: translateY(-350%);
-  }
-
-  .grid-item:nth-child(13),
-  .grid-item:nth-child(14) {
-    transform: translateY(-400%);
-  }
-
-  .grid-item:nth-child(15) {
-    transform: translateY(-450%);
+  .grid-item {
+    transform: translateY(calc(var(--grid-lift, 0) * -50%));
   }
 
   .grid-item:nth-child(3n) {
     grid-column: 2;
+  }
+}
+
+/* ========================================================= */
+/* GRID CAPTION (CHAPTER 01 / RESSENTIMENT.) */
+/* ========================================================= */
+
+/*
+  Nằm ngay dưới ô, ngoài khung ảnh, trong khoảng trống giữa các ô,
+  để không đổi chiều cao ô (bố cục so le kéo ô lên theo % chiều cao).
+  Ảnh tự cắt trong khung của nó thay cho overflow: hidden của ô.
+*/
+
+.grid-item {
+  position: relative;
+
+  overflow: visible;
+}
+
+.grid-item .progressive-artwork {
+  overflow: hidden;
+}
+
+.grid-caption {
+  position: absolute;
+
+  left: 50%;
+  top: calc(100% + 12px);
+
+  transform: translateX(-50%);
+
+  width: max-content;
+  max-width: 100%;
+
+  margin: 0;
+
+  color: rgba(245, 245, 242, 0.55);
+
+  font-family: "Geist Mono", monospace;
+  font-size: 10px;
+  font-weight: 600;
+
+  line-height: 1.3;
+
+  letter-spacing: 0.06em;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+
+  pointer-events: none;
+
+  transition: color 0.4s ease;
+}
+
+.grid-item:hover .grid-caption {
+  color: rgba(245, 245, 242, 0.85);
+}
+
+/*
+  Hover: ảnh phóng to nhẹ bên trong khung (khung .progressive-artwork cắt phần thừa),
+  ô giữ nguyên kích thước. Chỉ máy có chuột; ô secret còn khoá thì không.
+*/
+
+.grid-item .progressive-artwork img {
+  transition:
+    opacity 0.45s ease,
+    filter 0.6s ease,
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (hover: hover) {
+  .grid-item:not(.is-locked):hover .progressive-artwork img {
+    transform: scale(1.05);
+  }
+}
+
+/* Điện thoại: ô hẹp, tên dài được xuống dòng thay vì tràn sang cột bên. */
+
+@media (max-width: 600px) {
+  .grid-caption {
+    top: calc(100% + 8px);
+
+    width: 100%;
+
+    font-size: 9px;
+
+    line-height: 1.25;
+
+    white-space: normal;
   }
 }
 
@@ -1675,8 +1750,8 @@
 .current-slide.ui-black .mobile-detail-story-title,
 .current-slide.ui-black .mobile-detail-story p {
   text-shadow:
-    0 1px 1px rgba(0, 0, 0, 0.22),
-    0 2px 8px rgba(0, 0, 0, 0.22);
+    0 1px 1px rgba(4, 6, 6, 0.22),
+    0 2px 8px rgba(4, 6, 6, 0.22);
 }
 
 .current-slide.ui-black .detail-artwork-title,
@@ -1684,15 +1759,15 @@
 .current-slide.ui-black .mobile-detail-artwork-title,
 .current-slide.ui-black .mobile-detail-story-title {
   text-shadow:
-    0 3px 1px rgba(0, 0, 0, 0.22),
-    0 2px 8px rgba(0, 0, 0, 0.22);
+    0 3px 1px rgba(4, 6, 6, 0.22),
+    0 2px 8px rgba(4, 6, 6, 0.22);
 }
 
 .current-slide.ui-black .detail-artwork-title,
 .current-slide.ui-black .mobile-detail-artwork-title {
   text-shadow:
-    0 2px 1px rgba(0, 0, 0, 0.22),
-    0 2px 8px rgba(0, 0, 0, 0.22);
+    0 2px 1px rgba(4, 6, 6, 0.22),
+    0 2px 8px rgba(4, 6, 6, 0.22);
 }
 
 /*
@@ -1708,8 +1783,8 @@
 
 .current-slide.ui-black .mobile-detail-story p.is-dialogue {
   text-shadow:
-    0 3px 2px rgba(0, 0, 0, 0.3),
-    0 4px 12px rgba(0, 0, 0, 0.3);
+    0 3px 2px rgba(4, 6, 6, 0.3),
+    0 4px 12px rgba(4, 6, 6, 0.3);
 }
 /* ======================================================= */
 /* DETAIL SWIPE */
@@ -1805,12 +1880,12 @@
 /* UI BLACK */
 
 .current-slide.ui-black ::selection {
-  background: #000;
+  background: #040606;
   color: #fff;
 }
 
 .current-slide.ui-black ::-moz-selection {
-  background: #000;
+  background: #040606;
   color: #fff;
 }
 
@@ -1818,12 +1893,12 @@
 
 .current-slide.ui-white ::selection {
   background: #fff;
-  color: #000;
+  color: #040606;
 }
 
 .current-slide.ui-white ::-moz-selection {
   background: #fff;
-  color: #000;
+  color: #040606;
 }
 
 /* ========================================================= */
@@ -1958,46 +2033,6 @@
   }
 }
 
-.grid-artwork {
-  position: relative;
-
-  width: 100%;
-  height: 100%;
-}
-
-.grid-artwork-preview,
-.grid-artwork-original {
-  position: absolute;
-
-  inset: 0;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: contain;
-
-  pointer-events: none;
-}
-
-.grid-artwork-preview {
-  opacity: 1;
-
-  transition: opacity 0.4s ease;
-}
-
-.grid-artwork-preview.is-hidden {
-  opacity: 0;
-}
-
-.grid-artwork-original {
-  opacity: 0;
-
-  transition: opacity 0.4s ease;
-}
-
-.grid-artwork-original.is-loaded {
-  opacity: 1;
-}
 /* ========================================================= */
 /* GRID MOBILE */
 /* ========================================================= */
@@ -2221,6 +2256,17 @@
   cursor: default;
 }
 
+/*
+  Điện thoại: ô secret rộng bằng grid (80% bề ngang), tỉ lệ 16:9.
+  Khoảng trống dưới cùng để cuộn tới cuối thì ô secret nằm giữa màn hình.
+*/
+
+@media (max-width: 600px) {
+  .grid-container.has-secret {
+    padding-bottom: max(80px, calc((100svh - 80cqi * 9 / 16) / 2));
+  }
+}
+
 /* Mobile đặt ảnh grid height: auto, ô secret cần ảnh lấp khung. */
 
 .grid-item-secret img {
@@ -2231,15 +2277,72 @@
   /*
     Một ô vuông = (90% bề ngang - 2 khoảng cách 50px) / 3.
     --secret-lift (số ô, Main.jsx tính) kéo ô secret lên ngay dưới ảnh cuối.
-    margin-bottom âm cắt bớt khoảng trống thừa ở cuối grid do việc kéo lên.
+
+    Bề ngang: từ giữa cột trái tới giữa cột phải
+    (nửa phải ảnh 10, trọn ảnh 12, nửa trái ảnh 11)
+    = 2 ô + 2 khoảng cách 50px, căn giữa theo cột giữa.
   */
 
   .grid-item.grid-item-secret {
     --grid-cell: calc((90cqi - 100px) / 3);
 
-    transform: translateY(calc(var(--secret-lift, 0) * -1 * var(--grid-cell)));
+    width: calc(var(--grid-cell) * 2 + 100px);
 
-    margin-bottom: calc(var(--secret-lift, 0) * -1 * var(--grid-cell));
+    justify-self: center;
+
+    /*
+      Kéo lên ngay dưới ảnh cuối, chừa 60px (2 khoảng cách hàng) như
+      khoảng cách giữa hai ảnh trong cùng một cột: hàng đã có sẵn 30px,
+      bù thêm --secret-extra-gap.
+    */
+    --secret-extra-gap: 30px;
+
+    transform: translateY(
+      calc(
+        var(--secret-lift, 0) * -1 * var(--grid-cell) + var(--secret-extra-gap)
+      )
+    );
+  }
+
+  /*
+    Chiều cao thật của grid sau khi các ô bị kéo lên.
+    Không đặt thì grid vẫn giữ chỗ cũ của các ô, để lại một khoảng đen
+    rất dài ở cuối trang (càng nhiều chương càng dài).
+
+    h = một ô, 30px = khoảng cách hàng, R = --grid-rows (hàng của ảnh cuối):
+    - đáy ảnh cuối  = (R - 1) * (h / 2 + 30px) + h
+    - có ô secret   = (R + 1) * h / 2 + R * 30px + 30px (khoảng bù thêm)
+      + chiều cao ô secret (rộng 2h + 100px, tỉ lệ 16:9)
+  */
+
+  .grid-container {
+    --grid-cell: calc((90cqi - 100px) / 3);
+
+    /* height bên dưới là phần nội dung, padding trên/dưới cộng thêm ngoài. */
+    box-sizing: content-box;
+
+    height: calc(
+      (var(--grid-rows, 1) - 1) * (var(--grid-cell) / 2 + 30px) +
+        var(--grid-cell)
+    );
+  }
+
+  /*
+    Khoảng trống dưới cùng: cuộn tới cuối thì ô secret nằm giữa màn hình
+    (nửa phần chiều cao màn hình còn lại sau khi trừ ô secret).
+  */
+
+  .grid-container.has-secret {
+    padding-bottom: max(
+      100px,
+      calc((100svh - (var(--grid-cell) * 2 + 100px) * 9 / 16) / 2)
+    );
+
+    height: calc(
+      (var(--grid-rows, 1) + 1) * var(--grid-cell) / 2 +
+        var(--grid-rows, 1) * 30px + 30px +
+        (var(--grid-cell) * 2 + 100px) * 9 / 16
+    );
   }
 }
 

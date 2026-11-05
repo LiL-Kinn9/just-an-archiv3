@@ -127,17 +127,17 @@ function AudioPlayer({ audioSrc, uiTheme, isUiVisible, isReady }) {
         ${isReturning ? "is-returning" : ""}
       `}
       style={{
-        "--audio-color": uiTheme === "white" ? "#ffffff3d" : "#000000",
+        "--audio-color": uiTheme === "white" ? "#ffffff3d" : "#040606",
 
-        "--thumb-color": uiTheme === "white" ? "#f5f5f2" : "#000000",
+        "--thumb-color": uiTheme === "white" ? "#f5f5f2" : "#040606",
 
-        "--thumb-past-color": uiTheme === "white" ? "#8c1616" : "#000000",
+        "--thumb-past-color": uiTheme === "white" ? "#8c1616" : "#040606",
 
         /* Bóng đổ chung cho ô kéo và nút play/pause. */
         "--audio-shadow":
           uiTheme === "white"
             ? "0 2px 6px rgba(245, 245, 242, 0.35)"
-            : "0 2px 6px rgba(0, 0, 0, 0.35)",
+            : "0 2px 6px rgba(4, 6, 6, 0.35)",
       }}
     >
       {/* ===================================================== */}

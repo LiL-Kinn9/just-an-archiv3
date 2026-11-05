@@ -110,7 +110,7 @@ function AboutItemText({
 }
 
 function About({ isAboutOpen, hasAboutStarted, uiTheme, lang = "vi" }) {
-  const aboutColor = uiTheme === "white" ? "#f5f5f2" : "#000000";
+  const aboutColor = uiTheme === "white" ? "#f5f5f2" : "#040606";
 
   const text = ABOUT_TEXT[lang] ?? ABOUT_TEXT.vi;
 

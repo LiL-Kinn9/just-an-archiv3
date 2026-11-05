@@ -6,42 +6,70 @@ import AudioPlayer from "../AudioPlayer/AudioPlayer";
 import ShuffleText from "../ShuffleText/ShuffleText";
 import TypewriterText from "../TypewriterText/TypewriterText";
 import { getStory } from "../../data/StoryEn";
+import LOCKED_SECRET_ARTWORK from "../../data/LockedSecret";
 
 /*
-  Ảnh hiện ở ô secret khi chưa unlock.
+  Ảnh trong Grid dùng chung ProgressiveArtwork với center và detail:
+  preview3 -> preview2 -> preview1 -> ảnh gốc, mờ dần thành nét.
 */
 
-const LOCKED_SECRET_ARTWORK = {
-  title: "Secret",
-  image: "/Artworks/HVL-artwork116.jpg",
-  preview1: "/Artworks/preview1/HVL-artwork116.jpg",
-};
+function GridArtwork({ artwork, ...rest }) {
+  return <ProgressiveArtwork artwork={artwork} alt={artwork.title} {...rest} />;
+}
 
-function GridArtwork({ artwork }) {
-  const [isOriginalLoaded, setIsOriginalLoaded] = useState(false);
+/*
+  Thẻ tên chương dưới mỗi ô Grid (CHAPTER 01 / RESSENTIMENT.).
+  Xáo trộn rồi hiện ra khi ô trượt lên xong (revealDelay = độ trễ của ô),
+  rê chuột vào ô thì xáo trộn lại một nhịp (replayKey đổi mỗi lần rê).
+*/
+
+const GRID_CAPTION_REVEAL_AFTER = 350;
+const GRID_CAPTION_HOVER_SCRAMBLE = 380;
+
+function GridCaption({ text, isRevealed, revealDelay = 0, replayKey = 0 }) {
+  const [isShown, setIsShown] = useState(false);
+  const [isScrambling, setIsScrambling] = useState(false);
+
+  useEffect(() => {
+    if (!isRevealed) return;
+
+    const timer = setTimeout(
+      () => setIsShown(true),
+      revealDelay + GRID_CAPTION_REVEAL_AFTER,
+    );
+
+    return () => clearTimeout(timer);
+  }, [isRevealed, revealDelay]);
+
+  useEffect(() => {
+    if (!replayKey) return;
+
+    const start = setTimeout(() => setIsScrambling(true), 0);
+    const stop = setTimeout(
+      () => setIsScrambling(false),
+      GRID_CAPTION_HOVER_SCRAMBLE,
+    );
+
+    return () => {
+      clearTimeout(start);
+      clearTimeout(stop);
+    };
+  }, [replayKey]);
 
   return (
-    <div className="grid-artwork">
-      <img
-        src={artwork.preview1}
-        alt=""
-        className={`grid-artwork-preview ${
-          isOriginalLoaded ? "is-hidden" : ""
-        }`}
-      />
-
-      <img
-        src={artwork.image}
-        alt={artwork.title}
-        className={`grid-artwork-original ${
-          isOriginalLoaded ? "is-loaded" : ""
-        }`}
-        onLoad={() => {
-          setIsOriginalLoaded(true);
-        }}
-      />
-    </div>
+    <ShuffleText
+      as="span"
+      className="grid-caption"
+      text={text}
+      isRevealed={isShown}
+      isScrambling={isShown && isScrambling}
+      duration={600}
+    />
   );
+}
+
+function getGridCaptionText(artwork) {
+  return `CHAPTER ${String(artwork.id).padStart(2, "0")} / ${artwork.storyTitle}`;
 }
 
 /* ========================================================= */
@@ -50,22 +78,45 @@ function GridArtwork({ artwork }) {
 
 /*
   Số chương trong detail (01, 02...). Khi sang chương khác:
-  giữ số cũ CHAPTER_DIGIT_DELAY ms, rồi chữ số nào đổi thì xáo trộn,
-  lần lượt từ hàng đơn vị sang hàng chục (09 -> 10: số 9 trước, số 0 sau).
+  - giữ số cũ CHAPTER_DIGIT_HOLD ms,
+  - chữ số nào đổi thì nhảy liên tục, hàng đơn vị bắt đầu trước,
+    mỗi hàng sau trễ thêm CHAPTER_DIGIT_STAGGER ms (09 -> 10: số 9 trước, số 0 sau),
+  - đúng CHAPTER_DIGIT_HOLD + CHAPTER_DIGIT_SCRAMBLE ms thì cùng chốt về số mới.
   Chữ số giữ nguyên thì đứng yên.
 */
 
-const CHAPTER_DIGIT_DELAY = 700;
-const CHAPTER_DIGIT_STEP = 350;
+const CHAPTER_DIGIT_HOLD = 400;
+const CHAPTER_DIGIT_SCRAMBLE = 500;
+const CHAPTER_DIGIT_STAGGER = 150;
+
+/* Lúc chốt: chữ đang nhảy chuyển sang số đúng thật nhanh. */
+
+const CHAPTER_DIGIT_SETTLE = 120;
 
 /* Grid: khoảng cách giữa hai ô trượt lên liên tiếp khi cuộn (ms). */
 
 const GRID_REVEAL_STEP = 140;
 
+/*
+  Vừa nhập đúng secret (ms):
+  chờ Grid hiện rồi mới cuộn, ô secret trượt lên xong mới hiện ảnh 17,
+  mỗi lớp preview của ảnh 17 giữ SECRET_LAYER_TIME,
+  ảnh gốc hiện xong SECRET_CAPTION_AFTER thì tên chương xáo trộn hiện ra.
+*/
+
+const SECRET_SCROLL_DELAY = 250;
+const SECRET_TILE_SETTLE = 700;
+const SECRET_LAYER_TIME = 280;
+const SECRET_CAPTION_AFTER = 200;
+
 function ChapterNumber({ value }) {
   const target = String(value).padStart(2, "0");
 
   const [shown, setShown] = useState(target);
+
+  /* Vị trí các chữ số đang nhảy liên tục. */
+
+  const [scrambling, setScrambling] = useState([]);
 
   const shownRef = useRef(target);
 
@@ -75,6 +126,8 @@ function ChapterNumber({ value }) {
 
   useEffect(() => {
     const from = shownRef.current.padStart(target.length, "0");
+
+    if (from === target) return;
 
     const timers = [];
     let step = 0;
@@ -86,23 +139,25 @@ function ChapterNumber({ value }) {
 
       timers.push(
         setTimeout(
-          () => {
-            setShown((prev) => {
-              const digits = prev.padStart(target.length, "0").split("");
-
-              digits[digitIndex] = target[digitIndex];
-
-              return digits.join("");
-            });
-          },
-          CHAPTER_DIGIT_DELAY + step * CHAPTER_DIGIT_STEP,
+          () => setScrambling((prev) => [...prev, digitIndex]),
+          CHAPTER_DIGIT_HOLD + step * CHAPTER_DIGIT_STAGGER,
         ),
       );
 
       step++;
     }
 
-    return () => timers.forEach(clearTimeout);
+    timers.push(
+      setTimeout(() => {
+        setScrambling([]);
+        setShown(target);
+      }, CHAPTER_DIGIT_HOLD + CHAPTER_DIGIT_SCRAMBLE),
+    );
+
+    return () => {
+      timers.forEach(clearTimeout);
+      setScrambling([]);
+    };
   }, [target]);
 
   return (
@@ -113,7 +168,8 @@ function ChapterNumber({ value }) {
           as="span"
           className="chapter-digit"
           text={digit}
-          duration={CHAPTER_DIGIT_STEP}
+          isScrambling={scrambling.includes(index)}
+          duration={CHAPTER_DIGIT_SETTLE}
         />
       ))}
     </span>
@@ -231,6 +287,7 @@ function Main({
   setUiTransitionLocked,
 
   isSecretUnlocked,
+  secretRevealToken = 0,
 
   lang = "vi",
 }) {
@@ -340,6 +397,15 @@ function Main({
 
   function getBackground(item) {
     return item.background;
+  }
+
+  /*
+    Artwork có nền hạt (backgroundNoise: true trong Artworks.js):
+    phủ lớp noise lên màu nền để mép ảnh liền với nền trang.
+  */
+
+  function getBackgroundClass(item) {
+    return item?.backgroundNoise ? "has-noise" : "";
   }
 
   /* ========================================================= */
@@ -946,6 +1012,12 @@ function Main({
     return group * 2 + (slot < 2 ? 1 : 2);
   }
 
+  /* Số nửa ô mà ô thứ `position` được kéo lên (CSS --grid-lift). */
+
+  function getGridLift(position) {
+    return getGridRow(position) - 1;
+  }
+
   const secretLift =
     gridChapters.length > 0
       ? (getGridRow(gridChapters.length) - 1) * 0.5
@@ -983,6 +1055,10 @@ function Main({
     let isFirstBatch = true;
     let nextStartTime = 0;
 
+    /* Các ô chưa hiện (còn đang theo dõi). */
+
+    const waiting = new Set();
+
     const observer = new IntersectionObserver(
       (entries) => {
         const now = performance.now();
@@ -996,8 +1072,27 @@ function Main({
 
         const updates = {};
 
+        /*
+          Cuộn quá nhanh (kéo thanh cuộn) có thể lướt qua ô mà không kịp báo:
+          ô nào đã nằm hẳn phía trên màn hình mà chưa hiện thì hiện luôn.
+        */
+
+        if (entering.length) {
+          const rootTop = root.getBoundingClientRect().top;
+
+          waiting.forEach((element) => {
+            if (element.getBoundingClientRect().bottom >= rootTop) return;
+
+            observer.unobserve(element);
+            waiting.delete(element);
+
+            updates[element.dataset.gridKey] = "instant";
+          });
+        }
+
         entering.forEach((element) => {
           observer.unobserve(element);
+          waiting.delete(element);
 
           const key = element.dataset.gridKey;
 
@@ -1022,9 +1117,10 @@ function Main({
       { root, threshold: 0.15 },
     );
 
-    root
-      .querySelectorAll("[data-grid-key]")
-      .forEach((element) => observer.observe(element));
+    root.querySelectorAll("[data-grid-key]").forEach((element) => {
+      waiting.add(element);
+      observer.observe(element);
+    });
 
     return () => {
       observer.disconnect();
@@ -1052,6 +1148,114 @@ function Main({
     const state = gridReveal[key];
 
     return typeof state === "number" ? { transitionDelay: `${state}ms` } : {};
+  }
+
+  /* Thẻ tên chương: hiện theo nhịp trượt lên của ô, rê chuột thì xáo lại. */
+
+  const [gridCaptionReplay, setGridCaptionReplay] = useState({});
+
+  function replayGridCaption(key) {
+    setGridCaptionReplay((prev) => ({ ...prev, [key]: (prev[key] ?? 0) + 1 }));
+  }
+
+  /* ========================================================= */
+  /* SECRET REVEAL (vừa nhập đúng secret) */
+  /* ========================================================= */
+
+  /*
+    waiting:   ô secret vẫn trông như còn khoá, Grid cuộn tới ô đó,
+    revealing: ô trượt lên xong thì artwork 17 hiện qua 3 lớp preview (chậm),
+    done:      ảnh gốc hiện xong thì SECRET xáo trộn thành tên chương 17,
+    idle:      các lần vào Grid khác, hiện bình thường.
+  */
+
+  const [secretReveal, setSecretReveal] = useState({
+    token: secretRevealToken,
+    phase: "idle",
+  });
+
+  if (secretReveal.token !== secretRevealToken) {
+    setSecretReveal({ token: secretRevealToken, phase: "waiting" });
+  } else if (layout !== "grid" && secretReveal.phase === "done") {
+    // Rời Grid rồi vào lại thì ô secret hiện bình thường, không chạy lại.
+    setSecretReveal({ ...secretReveal, phase: "idle" });
+  }
+
+  const secretPhase = secretReveal.phase;
+
+  /* Cuộn tới ô secret, đặt nó giữa màn hình. */
+
+  useEffect(() => {
+    if (secretPhase !== "waiting" || layout !== "grid") return;
+
+    const timer = setTimeout(() => {
+      const view = gridViewRef.current;
+      const tile = view?.querySelector('[data-grid-key="secret"]');
+
+      if (!view || !tile) return;
+
+      const viewRect = view.getBoundingClientRect();
+      const tileRect = tile.getBoundingClientRect();
+
+      view.scrollTo({
+        top:
+          view.scrollTop +
+          tileRect.top -
+          viewRect.top -
+          (view.clientHeight - tileRect.height) / 2,
+        behavior: "smooth",
+      });
+    }, SECRET_SCROLL_DELAY);
+
+    return () => clearTimeout(timer);
+  }, [secretPhase, layout]);
+
+  /* Ô secret trượt lên xong (độ trễ của ô + thời gian trượt) thì bắt đầu hiện ảnh. */
+
+  const secretTileReveal = gridReveal.secret;
+
+  useEffect(() => {
+    if (secretPhase !== "waiting" || secretTileReveal === undefined) return;
+
+    const delay =
+      (typeof secretTileReveal === "number" ? secretTileReveal : 0) +
+      SECRET_TILE_SETTLE;
+
+    const timer = setTimeout(() => {
+      setSecretReveal((prev) =>
+        prev.phase === "waiting" ? { ...prev, phase: "revealing" } : prev,
+      );
+    }, delay);
+
+    return () => clearTimeout(timer);
+  }, [secretPhase, secretTileReveal]);
+
+  function handleSecretArtworkLoaded() {
+    setTimeout(() => {
+      setSecretReveal((prev) =>
+        prev.phase === "revealing" ? { ...prev, phase: "done" } : prev,
+      );
+    }, SECRET_CAPTION_AFTER);
+  }
+
+  const isSecretShownUnlocked = isSecretUnlocked && secretPhase !== "waiting";
+
+  const secretCaptionText =
+    isSecretUnlocked && (secretPhase === "idle" || secretPhase === "done")
+      ? getGridCaptionText(secretArtwork)
+      : "SECRET";
+
+  function renderGridCaption(key, text) {
+    const state = gridReveal[key];
+
+    return (
+      <GridCaption
+        text={text}
+        isRevealed={state !== undefined}
+        revealDelay={typeof state === "number" ? state : 0}
+        replayKey={gridCaptionReplay[key] ?? 0}
+      />
+    );
   }
 
   return (
@@ -1122,6 +1326,8 @@ function Main({
 
     ui-${uiTheme}
 
+    ${getBackgroundClass(currentItem)}
+
     ${detailPhase === "closed" ? "detail-closed" : `detail-${detailPhase}`}
 
     ${artworkReshapeScale !== 1 ? "is-reshaping" : ""}
@@ -1138,16 +1344,16 @@ function Main({
                 backgroundColor: getBackground(currentItem),
 
                 "--detail-color":
-                  uiTheme === "white" ? "#f5f5f5d6" : "#000000d6",
+                  uiTheme === "white" ? "#f5f5f5d6" : "#040606d6",
 
                 "--detail-story-color":
-                  uiTheme === "white" ? "#f5f5f5b8" : "#000000b8",
+                  uiTheme === "white" ? "#f5f5f5b8" : "#040606b8",
 
                 "--detail-story-title-color":
-                  uiTheme === "white" ? "#f5f5f5" : "#000000",
+                  uiTheme === "white" ? "#f5f5f5" : "#040606",
 
                 "--detail-story-line-color":
-                  uiTheme === "white" ? "#f5f5f56e" : "#000000",
+                  uiTheme === "white" ? "#f5f5f56e" : "#040606",
               }}
               onScroll={handleDetailScroll}
               onAnimationEnd={handleSlideEnd}
@@ -1378,7 +1584,9 @@ function Main({
 
             {phase === "sliding" && direction === "next" && nextItem && (
               <div
-                className="gallery-slide incoming-slide incoming-next"
+                className={`gallery-slide incoming-slide incoming-next ${getBackgroundClass(
+                  nextItem,
+                )}`}
                 style={{
                   backgroundColor: getBackground(nextItem),
                 }}
@@ -1399,7 +1607,9 @@ function Main({
 
             {phase === "sliding" && direction === "prev" && prevItem && (
               <div
-                className="gallery-slide incoming-slide incoming-prev"
+                className={`gallery-slide incoming-slide incoming-prev ${getBackgroundClass(
+                  prevItem,
+                )}`}
                 style={{
                   backgroundColor: getBackground(prevItem),
                 }}
@@ -1423,7 +1633,13 @@ function Main({
 
       {layout === "grid" && (
         <div className="grid-view" ref={gridViewRef}>
-          <div className="grid-container">
+          <div
+            className={`grid-container ${secretArtwork ? "has-secret" : ""}`}
+            style={{
+              "--grid-rows":
+                gridChapters.length > 0 ? getGridRow(gridChapters.length) : 1,
+            }}
+          >
             {gridChapters.map((artwork, index) => (
               <button
                 className={`grid-item ${getGridRevealClass(artwork.id)}`}
@@ -1439,23 +1655,33 @@ function Main({
                 }}
                 style={{
                   backgroundColor: artwork.background,
+                  "--grid-lift": getGridLift(index + 1),
                   ...getGridRevealStyle(artwork.id),
                 }}
                 aria-label={`Open ${artwork.title}`}
+                onMouseEnter={() => replayGridCaption(artwork.id)}
               >
                 <GridArtwork artwork={artwork} />
+
+                {renderGridCaption(artwork.id, getGridCaptionText(artwork))}
               </button>
             ))}
 
-            {/* SECRET: luôn ở cuối, chiếm hết một hàng */}
+            {/*
+              SECRET: luôn ở cuối. Một ô duy nhất cho cả lúc khoá và đã mở,
+              để tên chương xáo trộn liền từ SECRET sang CHAPTER 17 (xem SECRET REVEAL).
+            */}
 
-            {secretArtwork && isSecretUnlocked && (
+            {secretArtwork && (
               <button
-                className={`grid-item grid-item-secret ${getGridRevealClass(
-                  "secret",
-                )}`}
+                className={`grid-item grid-item-secret ${
+                  isSecretShownUnlocked ? "" : "is-locked"
+                } ${getGridRevealClass("secret")}`}
                 {...getGridRevealProps("secret", gridChapters.length)}
+                aria-disabled={!isSecretShownUnlocked}
                 onClick={() => {
+                  if (!isSecretShownUnlocked) return;
+
                   const realIndex = artworks.findIndex(
                     (item) => item.id === secretArtwork.id,
                   );
@@ -1468,27 +1694,32 @@ function Main({
                   "--secret-lift": secretLift,
                   ...getGridRevealStyle("secret"),
                 }}
-                aria-label={`Open ${secretArtwork.title}`}
+                aria-label={
+                  isSecretShownUnlocked
+                    ? `Open ${secretArtwork.title}`
+                    : "Secret artwork"
+                }
+                onMouseEnter={() => replayGridCaption("secret")}
               >
-                <GridArtwork artwork={secretArtwork} />
-              </button>
-            )}
+                <GridArtwork
+                  key={isSecretShownUnlocked ? "unlocked" : "locked"}
+                  artwork={
+                    isSecretShownUnlocked ? secretArtwork : LOCKED_SECRET_ARTWORK
+                  }
+                  minimumDisplayTime={
+                    isSecretShownUnlocked && secretPhase !== "idle"
+                      ? SECRET_LAYER_TIME
+                      : undefined
+                  }
+                  onImageLoad={
+                    secretPhase === "revealing"
+                      ? handleSecretArtworkLoaded
+                      : undefined
+                  }
+                />
 
-            {secretArtwork && !isSecretUnlocked && (
-              <div
-                className={`grid-item grid-item-secret is-locked ${getGridRevealClass(
-                  "secret",
-                )}`}
-                {...getGridRevealProps("secret", gridChapters.length)}
-                style={{
-                  backgroundColor: secretArtwork.background,
-                  "--secret-lift": secretLift,
-                  ...getGridRevealStyle("secret"),
-                }}
-                aria-label="Secret artwork"
-              >
-                <GridArtwork artwork={LOCKED_SECRET_ARTWORK} />
-              </div>
+                {renderGridCaption("secret", secretCaptionText)}
+              </button>
             )}
           </div>
         </div>

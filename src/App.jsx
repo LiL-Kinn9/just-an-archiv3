@@ -112,8 +112,19 @@ function App() {
 
   const [isSecretUnlocked, setIsSecretUnlocked] = useState(false);
 
+  /*
+    Mỗi lần nhập đúng secret: sang Grid, Main cuộn tới artwork 17
+    và cho nó hiện ra (secretRevealToken tăng lên để Main biết).
+  */
+
+  const [secretRevealToken, setSecretRevealToken] = useState(0);
+
   function handleSecretUnlock() {
     setIsSecretUnlocked(true);
+
+    setLayout("grid");
+
+    setSecretRevealToken((prev) => prev + 1);
   }
 
   /* ========================================================= */
@@ -161,6 +172,7 @@ function App() {
             setForceHideUi={setForceHideUi}
             setUiTransitionLocked={setUiTransitionLocked}
             isSecretUnlocked={isSecretUnlocked}
+            secretRevealToken={secretRevealToken}
             lang={lang}
           />
         </>
@@ -171,7 +183,7 @@ function App() {
       {/* ===================================================== */}
 
       {!hasStarted && (
-        <Intro onStart={handleStart} firstArtworkSrc={artworks[0]?.image} />
+        <Intro onStart={handleStart} artworks={artworks} />
       )}
     </>
   );
